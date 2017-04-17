@@ -1,0 +1,11 @@
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterObjects\obj\Release\CardMasterObjects.Resources.resources
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterObjects\obj\Release\CardMasterObjects.vbproj.GenerateResource.Cache
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterObjects\bin\Release\CardMasterObjects.dll
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterObjects\bin\Release\CardMasterObjects.pdb
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterObjects\bin\Release\CardMasterObjects.xml
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterObjects\obj\Release\CardMasterObjects.dll
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterObjects\obj\Release\CardMasterObjects.xml
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterObjects\obj\Release\CardMasterObjects.pdb
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\bin\Release\CardMasterObjects.dll
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\bin\Release\CardMasterObjects.pdb
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\bin\Release\CardMasterObjects.xml
