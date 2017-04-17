@@ -1,0 +1,9 @@
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\bin\Release\CardMasterImageBuilder.dll
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\bin\Release\CardMasterImageBuilder.pdb
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\bin\Release\CardMasterImageBuilder.xml
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterImageBuilder\obj\Release\CardMasterImageBuilder.Resources.resources
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterImageBuilder\obj\Release\CardMasterImageBuilder.vbproj.GenerateResource.Cache
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterImageBuilder\obj\Release\CardMasterImageBuilder.dll
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterImageBuilder\obj\Release\CardMasterImageBuilder.xml
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterImageBuilder\obj\Release\CardMasterImageBuilder.pdb
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterImageBuilder\obj\Release\CardMasterImageBuilder.vbprojResolveAssemblyReference.cache
