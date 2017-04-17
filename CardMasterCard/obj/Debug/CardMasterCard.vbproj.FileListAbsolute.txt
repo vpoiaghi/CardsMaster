@@ -1,0 +1,8 @@
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterCard\bin\Debug\CardMasterCard.dll
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterCard\bin\Debug\CardMasterCard.pdb
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterCard\bin\Debug\CardMasterCard.xml
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterCard\obj\Debug\CardMasterCard.Resources.resources
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterCard\obj\Debug\CardMasterCard.vbproj.GenerateResource.Cache
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterCard\obj\Debug\CardMasterCard.dll
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterCard\obj\Debug\CardMasterCard.xml
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterCard\obj\Debug\CardMasterCard.pdb
