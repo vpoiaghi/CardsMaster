@@ -1,0 +1,9 @@
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\bin\Release\CardMasterSkinEditor.exe.config
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\bin\Release\CardMasterSkinEditor.exe
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\bin\Release\CardMasterSkinEditor.pdb
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\bin\Release\CardMasterSkinEditor.xml
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterSkinEditor\obj\Release\CardMasterSkinEditor.Resources.resources
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterSkinEditor\obj\Release\CardMasterSkinEditor.vbproj.GenerateResource.Cache
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterSkinEditor\obj\Release\CardMasterSkinEditor.exe
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterSkinEditor\obj\Release\CardMasterSkinEditor.xml
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterSkinEditor\obj\Release\CardMasterSkinEditor.pdb

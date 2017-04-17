@@ -1,0 +1,9 @@
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\bin\Release\CardMasterViewer.dll
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\bin\Release\CardMasterViewer.pdb
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\bin\Release\CardMasterViewer.xml
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterViewer\obj\Release\CardMasterViewer.Resources.resources
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterViewer\obj\Release\CardMasterViewer.vbproj.GenerateResource.Cache
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterViewer\obj\Release\CardMasterViewer.dll
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterViewer\obj\Release\CardMasterViewer.xml
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterViewer\obj\Release\CardMasterViewer.pdb
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterViewer\obj\Release\CardMasterViewer.vbprojResolveAssemblyReference.cache
