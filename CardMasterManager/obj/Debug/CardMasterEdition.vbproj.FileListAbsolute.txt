@@ -1,0 +1,10 @@
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterEdition\CardMasterEdition\obj\Debug\CardMasterEdition.Resources.resources
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterEdition\CardMasterEdition\obj\Debug\CardMasterEdition.vbproj.GenerateResource.Cache
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterEdition\CardMasterEdition\bin\Debug\CardMasterEdition.dll
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterEdition\CardMasterEdition\bin\Debug\CardMasterEdition.pdb
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterEdition\CardMasterEdition\bin\Debug\CardMasterEdition.xml
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterEdition\CardMasterEdition\obj\Debug\CardMasterEdition.Frm_Edition.resources
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterEdition\CardMasterEdition\obj\Debug\CardMasterEdition.Frm_Parameters.resources
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterEdition\CardMasterEdition\obj\Debug\CardMasterEdition.dll
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterEdition\CardMasterEdition\obj\Debug\CardMasterEdition.xml
+F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterEdition\CardMasterEdition\obj\Debug\CardMasterEdition.pdb
