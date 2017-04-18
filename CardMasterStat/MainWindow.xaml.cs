@@ -30,7 +30,8 @@ namespace CardMasterStat
         private void LoadCards()
         {
             List<Card> cards = MockCards.GetSamples();
-            MessageBox.Show("Size : " + cards.Count);
+            CardComputer computer = new CardComputer(cards);
+            computer.GetRepartitionByCost();
         }
     }
 }
