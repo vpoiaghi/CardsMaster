@@ -1,8 +1,0 @@
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\bin\Release\CardMasterExport.dll
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\bin\Release\CardMasterExport.pdb
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\bin\Release\CardMasterExport.xml
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterExport\obj\Release\CardMasterExport.Resources.resources
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterExport\obj\Release\CardMasterExport.vbproj.GenerateResource.Cache
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterExport\obj\Release\CardMasterExport.dll
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterExport\obj\Release\CardMasterExport.xml
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterExport\obj\Release\CardMasterExport.pdb

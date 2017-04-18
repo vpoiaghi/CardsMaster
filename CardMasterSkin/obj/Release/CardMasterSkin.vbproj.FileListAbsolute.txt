@@ -1,8 +1,0 @@
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterSkin\obj\Release\CardMasterSkin.Resources.resources
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterSkin\obj\Release\CardMasterSkin.vbproj.GenerateResource.Cache
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\bin\Release\CardMasterSkin.dll
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\bin\Release\CardMasterSkin.pdb
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\bin\Release\CardMasterSkin.xml
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterSkin\obj\Release\CardMasterSkin.dll
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterSkin\obj\Release\CardMasterSkin.xml
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterSkin\obj\Release\CardMasterSkin.pdb

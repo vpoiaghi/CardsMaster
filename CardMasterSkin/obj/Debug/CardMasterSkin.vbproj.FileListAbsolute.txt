@@ -1,8 +1,0 @@
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterSkin\bin\Debug\CardMasterSkin.dll
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterSkin\bin\Debug\CardMasterSkin.pdb
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterSkin\bin\Debug\CardMasterSkin.xml
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterSkin\obj\Debug\CardMasterSkin.Resources.resources
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterSkin\obj\Debug\CardMasterSkin.vbproj.GenerateResource.Cache
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterSkin\obj\Debug\CardMasterSkin.dll
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterSkin\obj\Debug\CardMasterSkin.xml
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterSkin\obj\Debug\CardMasterSkin.pdb
