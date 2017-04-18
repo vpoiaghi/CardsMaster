@@ -13,18 +13,3 @@ F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterImageBuilder\obj\Debu
 F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterImageBuilder\obj\Debug\CardMasterImageBuilder.dll
 F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterImageBuilder\obj\Debug\CardMasterImageBuilder.xml
 F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterImageBuilder\obj\Debug\CardMasterImageBuilder.pdb
-D:\workspace\Workspace-perso\CardsMaster\CardMasterImageBuilder\bin\Debug\CardMasterImageBuilder.dll
-D:\workspace\Workspace-perso\CardsMaster\CardMasterImageBuilder\bin\Debug\CardMasterImageBuilder.pdb
-D:\workspace\Workspace-perso\CardsMaster\CardMasterImageBuilder\bin\Debug\CardMasterImageBuilder.xml
-D:\workspace\Workspace-perso\CardsMaster\CardMasterImageBuilder\bin\Debug\CardMasterCard.dll
-D:\workspace\Workspace-perso\CardsMaster\CardMasterImageBuilder\bin\Debug\CardMasterSkin.dll
-D:\workspace\Workspace-perso\CardsMaster\CardMasterImageBuilder\bin\Debug\CardMasterCard.pdb
-D:\workspace\Workspace-perso\CardsMaster\CardMasterImageBuilder\bin\Debug\CardMasterCard.xml
-D:\workspace\Workspace-perso\CardsMaster\CardMasterImageBuilder\bin\Debug\CardMasterSkin.pdb
-D:\workspace\Workspace-perso\CardsMaster\CardMasterImageBuilder\bin\Debug\CardMasterSkin.xml
-D:\workspace\Workspace-perso\CardsMaster\CardMasterImageBuilder\obj\Debug\CardMasterImageBuilder.vbprojResolveAssemblyReference.cache
-D:\workspace\Workspace-perso\CardsMaster\CardMasterImageBuilder\obj\Debug\CardMasterImageBuilder.Resources.resources
-D:\workspace\Workspace-perso\CardsMaster\CardMasterImageBuilder\obj\Debug\CardMasterImageBuilder.vbproj.GenerateResource.Cache
-D:\workspace\Workspace-perso\CardsMaster\CardMasterImageBuilder\obj\Debug\CardMasterImageBuilder.dll
-D:\workspace\Workspace-perso\CardsMaster\CardMasterImageBuilder\obj\Debug\CardMasterImageBuilder.xml
-D:\workspace\Workspace-perso\CardsMaster\CardMasterImageBuilder\obj\Debug\CardMasterImageBuilder.pdb

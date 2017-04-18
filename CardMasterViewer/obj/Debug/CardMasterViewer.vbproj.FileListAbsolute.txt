@@ -16,21 +16,3 @@ F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterViewer\obj\Debug\Card
 F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterViewer\obj\Debug\CardMasterViewer.dll
 F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterViewer\obj\Debug\CardMasterViewer.xml
 F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterViewer\obj\Debug\CardMasterViewer.pdb
-D:\workspace\Workspace-perso\CardsMaster\CardMasterViewer\bin\Debug\CardMasterViewer.dll
-D:\workspace\Workspace-perso\CardsMaster\CardMasterViewer\bin\Debug\CardMasterViewer.pdb
-D:\workspace\Workspace-perso\CardsMaster\CardMasterViewer\bin\Debug\CardMasterViewer.xml
-D:\workspace\Workspace-perso\CardsMaster\CardMasterViewer\bin\Debug\CardMasterCard.dll
-D:\workspace\Workspace-perso\CardsMaster\CardMasterViewer\bin\Debug\CardMasterImageBuilder.dll
-D:\workspace\Workspace-perso\CardsMaster\CardMasterViewer\bin\Debug\CardMasterSkin.dll
-D:\workspace\Workspace-perso\CardsMaster\CardMasterViewer\bin\Debug\CardMasterCard.pdb
-D:\workspace\Workspace-perso\CardsMaster\CardMasterViewer\bin\Debug\CardMasterCard.xml
-D:\workspace\Workspace-perso\CardsMaster\CardMasterViewer\bin\Debug\CardMasterImageBuilder.pdb
-D:\workspace\Workspace-perso\CardsMaster\CardMasterViewer\bin\Debug\CardMasterImageBuilder.xml
-D:\workspace\Workspace-perso\CardsMaster\CardMasterViewer\bin\Debug\CardMasterSkin.pdb
-D:\workspace\Workspace-perso\CardsMaster\CardMasterViewer\bin\Debug\CardMasterSkin.xml
-D:\workspace\Workspace-perso\CardsMaster\CardMasterViewer\obj\Debug\CardMasterViewer.vbprojResolveAssemblyReference.cache
-D:\workspace\Workspace-perso\CardsMaster\CardMasterViewer\obj\Debug\CardMasterViewer.Resources.resources
-D:\workspace\Workspace-perso\CardsMaster\CardMasterViewer\obj\Debug\CardMasterViewer.vbproj.GenerateResource.Cache
-D:\workspace\Workspace-perso\CardsMaster\CardMasterViewer\obj\Debug\CardMasterViewer.dll
-D:\workspace\Workspace-perso\CardsMaster\CardMasterViewer\obj\Debug\CardMasterViewer.xml
-D:\workspace\Workspace-perso\CardsMaster\CardMasterViewer\obj\Debug\CardMasterViewer.pdb

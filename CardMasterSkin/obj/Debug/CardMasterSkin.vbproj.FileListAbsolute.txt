@@ -6,11 +6,3 @@ F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterSkin\obj\Debug\CardMa
 F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterSkin\obj\Debug\CardMasterSkin.dll
 F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterSkin\obj\Debug\CardMasterSkin.xml
 F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterSkin\obj\Debug\CardMasterSkin.pdb
-D:\workspace\Workspace-perso\CardsMaster\CardMasterSkin\bin\Debug\CardMasterSkin.dll
-D:\workspace\Workspace-perso\CardsMaster\CardMasterSkin\bin\Debug\CardMasterSkin.pdb
-D:\workspace\Workspace-perso\CardsMaster\CardMasterSkin\bin\Debug\CardMasterSkin.xml
-D:\workspace\Workspace-perso\CardsMaster\CardMasterSkin\obj\Debug\CardMasterSkin.Resources.resources
-D:\workspace\Workspace-perso\CardsMaster\CardMasterSkin\obj\Debug\CardMasterSkin.vbproj.GenerateResource.Cache
-D:\workspace\Workspace-perso\CardsMaster\CardMasterSkin\obj\Debug\CardMasterSkin.dll
-D:\workspace\Workspace-perso\CardsMaster\CardMasterSkin\obj\Debug\CardMasterSkin.xml
-D:\workspace\Workspace-perso\CardsMaster\CardMasterSkin\obj\Debug\CardMasterSkin.pdb

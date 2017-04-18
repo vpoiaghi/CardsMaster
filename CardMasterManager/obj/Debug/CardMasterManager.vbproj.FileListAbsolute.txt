@@ -20,25 +20,3 @@ F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterManager\obj\Debug\Car
 F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterManager\obj\Debug\CardMasterManager.xml
 F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterManager\obj\Debug\CardMasterManager.pdb
 F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterManager\obj\Debug\CardMasterManager.Frm_Main.resources
-D:\workspace\Workspace-perso\CardsMaster\CardMasterManager\bin\Debug\CardMasterManager.exe
-D:\workspace\Workspace-perso\CardsMaster\CardMasterManager\bin\Debug\CardMasterManager.pdb
-D:\workspace\Workspace-perso\CardsMaster\CardMasterManager\bin\Debug\CardMasterManager.xml
-D:\workspace\Workspace-perso\CardsMaster\CardMasterManager\bin\Debug\CardMasterCard.dll
-D:\workspace\Workspace-perso\CardsMaster\CardMasterManager\bin\Debug\CardMasterViewer.dll
-D:\workspace\Workspace-perso\CardsMaster\CardMasterManager\bin\Debug\CardMasterImageBuilder.dll
-D:\workspace\Workspace-perso\CardsMaster\CardMasterManager\bin\Debug\CardMasterSkin.dll
-D:\workspace\Workspace-perso\CardsMaster\CardMasterManager\bin\Debug\CardMasterCard.pdb
-D:\workspace\Workspace-perso\CardsMaster\CardMasterManager\bin\Debug\CardMasterCard.xml
-D:\workspace\Workspace-perso\CardsMaster\CardMasterManager\bin\Debug\CardMasterViewer.pdb
-D:\workspace\Workspace-perso\CardsMaster\CardMasterManager\bin\Debug\CardMasterViewer.xml
-D:\workspace\Workspace-perso\CardsMaster\CardMasterManager\bin\Debug\CardMasterImageBuilder.pdb
-D:\workspace\Workspace-perso\CardsMaster\CardMasterManager\bin\Debug\CardMasterImageBuilder.xml
-D:\workspace\Workspace-perso\CardsMaster\CardMasterManager\bin\Debug\CardMasterSkin.pdb
-D:\workspace\Workspace-perso\CardsMaster\CardMasterManager\bin\Debug\CardMasterSkin.xml
-D:\workspace\Workspace-perso\CardsMaster\CardMasterManager\obj\Debug\CardMasterManager.vbprojResolveAssemblyReference.cache
-D:\workspace\Workspace-perso\CardsMaster\CardMasterManager\obj\Debug\CardMasterManager.Frm_Main.resources
-D:\workspace\Workspace-perso\CardsMaster\CardMasterManager\obj\Debug\CardMasterManager.Resources.resources
-D:\workspace\Workspace-perso\CardsMaster\CardMasterManager\obj\Debug\CardMasterManager.vbproj.GenerateResource.Cache
-D:\workspace\Workspace-perso\CardsMaster\CardMasterManager\obj\Debug\CardMasterManager.exe
-D:\workspace\Workspace-perso\CardsMaster\CardMasterManager\obj\Debug\CardMasterManager.xml
-D:\workspace\Workspace-perso\CardsMaster\CardMasterManager\obj\Debug\CardMasterManager.pdb

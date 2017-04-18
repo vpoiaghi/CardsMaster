@@ -19,6 +19,12 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CardMasterExport", "CardMas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardMasterStat", "CardMasterStat\CardMasterStat.csproj", "{BD1C43A2-F01A-4D73-B605-03524FECE3C9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F322133C-585E-4487-A45E-ACF0D92A63E6}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
