@@ -6,18 +6,20 @@ CardMasterSkin
 </name>
 </assembly>
 <members>
+<member name="T:CardMasterSkin.My.Resources.Resources">
+<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member>
 <member name="P:CardMasterSkin.My.Resources.Resources.ResourceManager">
-	<summary>
+<summary>
   Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
 </summary>
-</member><member name="P:CardMasterSkin.My.Resources.Resources.Culture">
-	<summary>
+</member>
+<member name="P:CardMasterSkin.My.Resources.Resources.Culture">
+<summary>
   Remplace la propriété CurrentUICulture du thread actuel pour toutes
   les recherches de ressources à l'aide de cette classe de ressource fortement typée.
-</summary>
-</member><member name="T:CardMasterSkin.My.Resources.Resources">
-	<summary>
-  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
 </summary>
 </member>
 </members>

@@ -1,9 +1,0 @@
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\bin\Release\CardMasterStat.exe.config
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\bin\Release\CardMasterStat.exe
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\bin\Release\CardMasterStat.pdb
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\bin\Release\CardMasterStat.xml
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterStat\obj\Release\CardMasterStat.Resources.resources
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterStat\obj\Release\CardMasterStat.vbproj.GenerateResource.Cache
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterStat\obj\Release\CardMasterStat.exe
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterStat\obj\Release\CardMasterStat.xml
-F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterStat\obj\Release\CardMasterStat.pdb

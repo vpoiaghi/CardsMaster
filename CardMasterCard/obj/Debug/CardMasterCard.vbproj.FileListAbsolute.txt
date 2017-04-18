@@ -6,3 +6,11 @@ F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterCard\obj\Debug\CardMa
 F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterCard\obj\Debug\CardMasterCard.dll
 F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterCard\obj\Debug\CardMasterCard.xml
 F:\Programmation\VB .Net\Cartes Bruno\CardMaster\CardMasterCard\obj\Debug\CardMasterCard.pdb
+D:\workspace\Workspace-perso\CardsMaster\CardMasterCard\bin\Debug\CardMasterCard.dll
+D:\workspace\Workspace-perso\CardsMaster\CardMasterCard\bin\Debug\CardMasterCard.pdb
+D:\workspace\Workspace-perso\CardsMaster\CardMasterCard\bin\Debug\CardMasterCard.xml
+D:\workspace\Workspace-perso\CardsMaster\CardMasterCard\obj\Debug\CardMasterCard.Resources.resources
+D:\workspace\Workspace-perso\CardsMaster\CardMasterCard\obj\Debug\CardMasterCard.vbproj.GenerateResource.Cache
+D:\workspace\Workspace-perso\CardsMaster\CardMasterCard\obj\Debug\CardMasterCard.dll
+D:\workspace\Workspace-perso\CardsMaster\CardMasterCard\obj\Debug\CardMasterCard.xml
+D:\workspace\Workspace-perso\CardsMaster\CardMasterCard\obj\Debug\CardMasterCard.pdb

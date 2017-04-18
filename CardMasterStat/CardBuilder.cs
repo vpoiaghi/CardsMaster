@@ -1,0 +1,109 @@
+﻿using CardMasterCard.Card;
+using System;
+using System.Collections.Generic;
+
+namespace CardMasterStat
+{
+    class CardBuilder
+    {
+        private Card m_card;
+
+        private CardBuilder()
+        {
+            m_card = new Card();
+        }
+
+        public static CardBuilder newCard()
+        {
+            return new CardBuilder();
+        }
+
+        public Card build()
+        {
+            return this.m_card;
+        }
+
+        public CardBuilder withName(String name)
+        {
+            this.m_card.Name = name;
+            return this;
+        }
+
+        public CardBuilder withKind(String kind)
+        {
+            this.m_card.Kind = kind;
+            return this;
+        }
+
+        public CardBuilder withRank(String rank)
+        {
+            this.m_card.Rank = rank;
+            return this;
+        }
+
+        public CardBuilder withTeam(String team)
+        {
+            this.m_card.Team = team;
+            return this;
+        }
+
+        public CardBuilder withChakra(String chakra)
+        {
+            this.m_card.Chakra = chakra;
+            return this;
+        }
+
+        public CardBuilder withElement(String element)
+        {
+            this.m_card.Element = element;
+            return this;
+        }
+
+        public CardBuilder withCost(int cost)
+        {
+            this.m_card.Cost = cost;
+            return this;
+        }
+
+        public CardBuilder withAttack(int attack)
+        {
+            this.m_card.Attack = attack;
+            return this;
+        }
+
+        public CardBuilder withDefense(int defense)
+        {
+            this.m_card.Defense = defense;
+            return this;
+        }
+        public CardBuilder withCitation(String citation)
+        {
+            this.m_card.Citation = citation;
+            return this;
+        }
+
+        public CardBuilder withComment(String comments)
+        {
+            this.m_card.Comments = comments;
+            return this;
+        }
+
+        public CardBuilder withBackground(Texture texture)
+        {
+            this.m_card.Background = texture;
+            return this;
+        }
+
+        public CardBuilder withPowers(List<Power> power)
+        {
+            this.m_card.Powers = power;
+            return this;
+        }
+
+        public CardBuilder withPower(Power power)
+        {
+            this.m_card.Powers.Add(power);
+            return this;
+        }
+    }
+}

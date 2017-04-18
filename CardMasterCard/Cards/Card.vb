@@ -2,22 +2,23 @@
 
     Public Class Card
 
-        Private m_name As String
         Private m_powers As List(Of Power)
 
         Public Property Kind As String
+        Public Property Name As String
         Public Property Rank As String
         Public Property Team As String
         Public Property Chakra As String
         Public Property Element As String
-        Public Property Cost As String
-        Public Property Attack As String
-        Public Property Defense As String
+        Public Property Cost As Integer
+        Public Property Attack As Integer
+        Public Property Defense As Integer
         Public Property Citation As String
         Public Property Comments As String
         Public Property Background As New Texture
 
-        Private Sub New()
+        Public Sub New()
+            m_powers = New List(Of Power)
         End Sub
 
         Public Sub New(name As String)
@@ -39,15 +40,6 @@
             Me.Background = Nothing
 
         End Sub
-
-        Public Property Name As String
-            Get
-                Return m_name
-            End Get
-            Set(value As String)
-                m_name = value
-            End Set
-        End Property
 
         Public Property Powers As List(Of Power)
             Get
