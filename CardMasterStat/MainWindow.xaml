@@ -3,8 +3,27 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:DV="clr-namespace:System.Windows.Controls.DataVisualization;assembly=System.Windows.Controls.DataVisualization.Toolkit"
+        xmlns:DVC="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"
         xmlns:local="clr-namespace:CardMasterStat"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid/>
+        Title="MainWindow" Height="700" Width="900">
+    <Grid>
+        <RichTextBox x:Name="richTextBox" HorizontalAlignment="Left" Height="600" Margin="34,36,0,0" VerticalAlignment="Top" Width="368">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="mcChart" Background="LightSteelBlue" Margin="407,36,27,224">
+            <DVC:Chart.Series>
+                <DVC:LineSeries Title=" Répartition par coût" 
+                                IndependentValueBinding="{Binding Path=Key}" 
+                                DependentValueBinding="{Binding Path=Value}">
+                   
+                </DVC:LineSeries>
+            </DVC:Chart.Series>
+        </DVC:Chart>
+    </Grid>
 </Window>

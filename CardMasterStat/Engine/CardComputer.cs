@@ -18,11 +18,18 @@ namespace CardMasterStat
             SortedDictionary<int, int> toReturn = new SortedDictionary<int, int>();
             for (int i = 0; i < 10; i++)
             {
-                toReturn.Add(i,m_listCards.Where(c => c.Cost == i).Count());
+                toReturn.Add(i,this.m_listCards.Where(c => c.Cost == i).Count());
 
             }
 
             return toReturn;
         }
+
+        public int GetTotalCount()
+        {
+            return this.m_listCards.Count;
+        }
+
+       
     }
 }
