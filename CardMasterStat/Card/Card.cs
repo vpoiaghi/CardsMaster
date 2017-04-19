@@ -35,6 +35,13 @@ namespace CardMasterStat
             Equipement
         }
 
+        public static Card.NatureCard parseNature(String nature)
+        {
+            NatureCard toReturn;
+            NatureCard.TryParse(nature,out toReturn);
+            return toReturn;
+        }
+
         public static Card ConvertCard(CardMasterCard.Card.Card sourceCard)
         {
             NatureCard nature;

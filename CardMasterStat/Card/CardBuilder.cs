@@ -47,9 +47,15 @@ namespace CardMasterStat
             return this;
         }
 
-        public CardBuilder withNature(Card.NatureCard chakra)
+        public CardBuilder withNature(Card.NatureCard nature)
         {
-            this.m_card.Nature = chakra;
+            this.m_card.Nature = nature;
+            return this;
+        }
+
+        public CardBuilder withNature(String nature)
+        {
+            this.m_card.Nature = Card.parseNature(nature);
             return this;
         }
 
