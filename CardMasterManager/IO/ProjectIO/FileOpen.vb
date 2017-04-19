@@ -1,8 +1,6 @@
 ﻿Imports CardMasterCard.Card
 Imports System.Drawing
 Imports System.IO
-Imports System.Runtime.Serialization.Json
-Imports System.Xml.Serialization
 Imports System.Windows.Forms
 
 Public Class FileOpen
@@ -35,50 +33,7 @@ Public Class FileOpen
 
     End Function
 
-    Public Function LoadProject(file As FileInfo) As CardsProject
 
-        Dim cardsProject As CardsProject = Nothing
-
-        Select Case LCase(file.Extension)
-            Case ".xml" : cardsProject = LoadXmlProject(file)
-            Case ".json" : cardsProject = LoadJsonProject(file)
-        End Select
-
-        Return cardsProject
-
-    End Function
-
-    Private Function LoadXmlProject(file As FileInfo) As CardsProject
-
-        Dim CardsProject As CardsProject
-
-        Dim myFileStream As Stream = file.OpenRead()
-        Dim xs As New XmlSerializer(GetType(CardsProject))
-
-        CardsProject = xs.Deserialize(myFileStream)
-
-        myFileStream.Close()
-        myFileStream.Dispose()
-
-        Return CardsProject
-
-    End Function
-
-    Private Function LoadJsonProject(file As FileInfo) As CardsProject
-
-        Dim CardsProject As CardsProject
-
-        Dim jrd As New FileStream(file.FullName, FileMode.Open)
-        Dim js As New DataContractJsonSerializer(GetType(CardsProject))
-
-        CardsProject = CType(js.ReadObject(jrd), CardsProject)
-
-        jrd.Close()
-        jrd.Dispose()
-
-        Return CardsProject
-
-    End Function
 
 
 End Class

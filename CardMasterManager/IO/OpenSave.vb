@@ -13,7 +13,7 @@ Partial Public Class Frm_Main
         file = op.GetFile(GetCurrentDir(m_file))
 
         If file IsNot Nothing Then
-            cardsProject = op.LoadProject(file)
+            cardsProject = CardsProject.LoadProject(file)
 
             If cardsProject IsNot Nothing Then
 
