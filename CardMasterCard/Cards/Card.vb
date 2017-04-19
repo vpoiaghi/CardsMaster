@@ -10,9 +10,9 @@
         Public Property Team As String
         Public Property Chakra As String
         Public Property Element As String
-        Public Property Cost As Integer
-        Public Property Attack As Integer
-        Public Property Defense As Integer
+        Public Property Cost As String
+        Public Property Attack As String
+        Public Property Defense As String
         Public Property Citation As String
         Public Property Comments As String
         Public Property Background As New Texture
