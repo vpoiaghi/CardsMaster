@@ -32,24 +32,13 @@ namespace CardMasterStat
         private void LoadCards()
         {
             List<Card> cards = MockCards.GetSamples();
-            CardComputer computer = new CardComputer(cards);
-            SortedDictionary<int, int> repartitionCost = computer.GetRepartitionByCost();
-            StringBuilder sb = new StringBuilder();
-            sb.Append("Répartition par coût").Append("\n");
-            foreach(KeyValuePair<int,int> pair in repartitionCost)
-            {
-                sb.Append(pair.Key).Append(" : ").Append(pair.Value).Append(" éléments. \r\n");
-            }
-            sb.Append("\n").Append("Nombre total de cartes : " + computer.GetTotalCount());
-            richTextBox.AppendText(sb.ToString());
-            LoadLineChartData(repartitionCost);
+            CardComputer computer = new CardComputer(cards);  
+            ((ColumnSeries)chartCost.Series[0]).ItemsSource = computer.GetRepartitionByCost();
+            ((ColumnSeries)chartAtk.Series[0]).ItemsSource = computer.GetRepartitionByAttack();
+            ((ColumnSeries)chartDef.Series[0]).ItemsSource = computer.GetRepartitionByDefense();
+            ((ColumnSeries)chartNature.Series[0]).ItemsSource = computer.GetRepartitionByNature();
         }
 
-        private void LoadLineChartData(SortedDictionary<int, int>  repartitionCost)
-        {
-            ((LineSeries)mcChart.Series[0]).ItemsSource = repartitionCost;
-            
-        }
-
+   
     }
 }

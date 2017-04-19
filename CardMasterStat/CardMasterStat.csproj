@@ -71,6 +71,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Card\Card.cs" />
     <Compile Include="Card\CardBuilder.cs" />
     <Compile Include="Engine\CardComputer.cs" />
     <Compile Include="MainWindow.xaml.cs">

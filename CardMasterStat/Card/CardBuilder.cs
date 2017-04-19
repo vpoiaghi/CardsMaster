@@ -1,4 +1,4 @@
-﻿using CardMasterCard.Card;
+﻿
 using System;
 using System.Collections.Generic;
 
@@ -47,9 +47,9 @@ namespace CardMasterStat
             return this;
         }
 
-        public CardBuilder withChakra(String chakra)
+        public CardBuilder withNature(Card.NatureCard chakra)
         {
-            this.m_card.Chakra = chakra;
+            this.m_card.Nature = chakra;
             return this;
         }
 
@@ -76,6 +76,8 @@ namespace CardMasterStat
             this.m_card.Defense = defense;
             return this;
         }
+
+      
         public CardBuilder withCitation(String citation)
         {
             this.m_card.Citation = citation;
@@ -88,19 +90,19 @@ namespace CardMasterStat
             return this;
         }
 
-        public CardBuilder withBackground(Texture texture)
+        public CardBuilder withBackground(CardMasterCard.Card.Texture texture)
         {
             this.m_card.Background = texture;
             return this;
         }
 
-        public CardBuilder withPowers(List<Power> power)
+        public CardBuilder withPowers(List<CardMasterCard.Card.Power> power)
         {
             this.m_card.Powers = power;
             return this;
         }
 
-        public CardBuilder withPower(Power power)
+        public CardBuilder withPower(CardMasterCard.Card.Power power)
         {
             this.m_card.Powers.Add(power);
             return this;

@@ -9,21 +9,37 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="700" Width="900">
     <Grid>
-        <RichTextBox x:Name="richTextBox" HorizontalAlignment="Left" Height="600" Margin="34,36,0,0" VerticalAlignment="Top" Width="368">
-            <FlowDocument>
-                <Paragraph>
-                    <Run Text=""/>
-                </Paragraph>
-            </FlowDocument>
-        </RichTextBox>
-        <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="mcChart" Background="LightSteelBlue" Margin="407,36,27,224">
-            <DVC:Chart.Series>
-                <DVC:LineSeries Title=" Répartition par coût" 
-                                IndependentValueBinding="{Binding Path=Key}" 
-                                DependentValueBinding="{Binding Path=Value}">
-                   
-                </DVC:LineSeries>
-            </DVC:Chart.Series>
-        </DVC:Chart>
+        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="649" Margin="10,10,0,0" VerticalAlignment="Top" Width="872">
+            <TabItem Header="Répartition par coùt">
+                <Grid Background="#FFE5E5E5">
+                    <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="chartCost" Background="LightSteelBlue" Margin="10">
+                        <DVC:ColumnSeries DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" />
+                    </DVC:Chart>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Répartition par Attaque">
+                <Grid Background="#FFE5E5E5">
+                    <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="chartAtk" Background="LightSteelBlue" Margin="10">
+                        <DVC:ColumnSeries DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" />
+                    </DVC:Chart>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Répartition par Défense">
+                <Grid Background="#FFE5E5E5">
+                    <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="chartDef" Background="LightSteelBlue" Margin="10">
+                        <DVC:ColumnSeries DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" />
+                    </DVC:Chart>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Répartition par Nature">
+                <Grid Background="#FFE5E5E5">
+                    <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="chartNature" Background="LightSteelBlue" Margin="10">
+                        <DVC:ColumnSeries DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" />
+                    </DVC:Chart>
+                </Grid>
+            </TabItem>
+            
+        </TabControl>
+
     </Grid>
 </Window>
