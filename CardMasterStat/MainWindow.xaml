@@ -9,9 +9,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="700" Width="900">
     <Grid>
-        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="649" Margin="10,10,0,0" VerticalAlignment="Top" Width="872">
+        <Menu>
+            <MenuItem Header="File">
+                <MenuItem Header="_Open">
+                    <MenuItem Header="_Xml Project File" Click="MenuItemXml_Click"/>
+                    <MenuItem Header="_Json Project File" Click="MenuItemJson_Click"/>
+                </MenuItem>
+                <MenuItem Header="_Close" Click="MenuItemClose_Click"/>
+            </MenuItem>
+        </Menu>
+        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="649" Margin="0,20,0,0" VerticalAlignment="Top" Width="872">
             <TabItem Header="Répartition par coùt">
-                <Grid Background="#FFE5E5E5">
+                <Grid Background="#FFE5E5E5" Margin="0,-1,0,1">
                     <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="chartCost" Background="LightSteelBlue" Margin="10">
                         <DVC:ColumnSeries DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" />
                     </DVC:Chart>
@@ -39,6 +48,7 @@
                 </Grid>
             </TabItem>
             
+
         </TabControl>
 
     </Grid>

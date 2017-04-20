@@ -71,9 +71,35 @@ namespace CardMasterStat
             return this;
         }
 
+        public CardBuilder withCost(String cost)
+        {
+          
+            this.m_card.Cost = GetIntValue(cost);
+            return this;
+        }
+
+        private int GetIntValue(String value)
+        {
+            int intCost;
+            try
+            {
+                intCost = int.Parse(value);
+            }
+            catch (FormatException e)
+            {
+                intCost = -1;
+            }
+            return intCost;
+        }
         public CardBuilder withAttack(int attack)
         {
             this.m_card.Attack = attack;
+            return this;
+        }
+
+        public CardBuilder withAttack(String attack)
+        {
+            this.m_card.Attack = GetIntValue(attack);
             return this;
         }
 
@@ -83,7 +109,13 @@ namespace CardMasterStat
             return this;
         }
 
-      
+        public CardBuilder withDefense(String defense)
+        {
+            this.m_card.Defense = GetIntValue(defense);
+            return this;
+        }
+
+
         public CardBuilder withCitation(String citation)
         {
             this.m_card.Citation = citation;
