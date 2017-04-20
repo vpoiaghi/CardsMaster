@@ -32,7 +32,10 @@ namespace CardMasterStat
             Terre,
             Special,
             Physique,
-            Equipement
+            Equipement,
+            Ninjutsu,
+            Environnement,
+            Zone
         }
 
         public static Card.NatureCard parseNature(String nature)
