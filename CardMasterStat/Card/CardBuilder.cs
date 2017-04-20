@@ -80,7 +80,7 @@ namespace CardMasterStat
 
         private int GetIntValue(String value)
         {
-            int intCost;
+            int intCost=-1;
             try
             {
                 intCost = int.Parse(value);
