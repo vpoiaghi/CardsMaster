@@ -1,4 +1,5 @@
-﻿Imports System.Drawing
+﻿Imports CardMasterCard.Card
+Imports System.Drawing
 Imports System.Windows.Forms
 
 Public Class GridDataRow
@@ -9,6 +10,8 @@ Public Class GridDataRow
     Private m_cells As New List(Of GridDataCell)
     Private m_lefts As New List(Of Integer)
     Private m_widths As New List(Of Integer)
+
+    Private m_card As Card = Nothing
 
     Event ValueChanged(sender As Object, e As EventArgs)
     Event SelectionChanged(sender As Object, e As GridDataSelectionChangedEventArgs)
@@ -26,15 +29,13 @@ Public Class GridDataRow
             m_lefts.Add(col.Left)
             m_widths.Add(col.Width)
 
-
-
             AddCell(col.CellType)
         Next
 
 
     End Sub
 
-    Public Function AddCell(cellType As CellTypes) As GridDataCell
+    Private Function AddCell(cellType As CellTypes) As GridDataCell
 
         Dim c As New GridDataCell(Me, cellType)
 
@@ -65,10 +66,6 @@ Public Class GridDataRow
         Return m_cells.ToList
     End Function
 
-    Private Sub m_rowPanel_Click(sender As Object, e As EventArgs) Handles Me.Click
-        SelectRow()
-    End Sub
-
     Public Sub SelectRow()
 
         m_parentGrid.UnselectAll()
@@ -91,6 +88,10 @@ Public Class GridDataRow
             c.BackColor = Color.White
         Next
 
+    End Sub
+
+    Private Sub m_rowPanel_Click(sender As Object, e As EventArgs) Handles Me.Click
+        SelectRow()
     End Sub
 
     Private Sub m_rowPanel_Paint(sender As Object, e As PaintEventArgs) Handles Me.Paint

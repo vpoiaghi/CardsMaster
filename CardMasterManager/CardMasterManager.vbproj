@@ -94,7 +94,7 @@
     <Compile Include="Forms\Main\Frm_Main.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IO\OpenSave.vb">
+    <Compile Include="Forms\Main\OpenSave.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />

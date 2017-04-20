@@ -23,34 +23,24 @@ Partial Class Frm_Main
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_Main))
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.TSB_Open = New System.Windows.Forms.ToolStripButton()
         Me.TSB_Save = New System.Windows.Forms.ToolStripButton()
         Me.TSB_SaveAs = New System.Windows.Forms.ToolStripButton()
+        Me.Vwv_CardViewer = New CardMasterViewer.Viewer()
         Me.GridData1 = New CardMasterManager.GridData()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip1.SuspendLayout()
+        CType(Me.Vwv_CardViewer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 25)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(389, 603)
-        Me.PictureBox1.TabIndex = 2
-        Me.PictureBox1.TabStop = False
         '
         'Panel2
         '
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel2.Location = New System.Drawing.Point(389, 585)
+        Me.Panel2.Location = New System.Drawing.Point(0, 585)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(879, 43)
+        Me.Panel2.Size = New System.Drawing.Size(1268, 43)
         Me.Panel2.TabIndex = 4
         '
         'ToolStrip1
@@ -89,14 +79,23 @@ Partial Class Frm_Main
         Me.TSB_SaveAs.Size = New System.Drawing.Size(95, 22)
         Me.TSB_SaveAs.Text = "Enregistrer Sous"
         '
+        'Vwv_CardViewer
+        '
+        Me.Vwv_CardViewer.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Vwv_CardViewer.Location = New System.Drawing.Point(0, 25)
+        Me.Vwv_CardViewer.Name = "Vwv_CardViewer"
+        Me.Vwv_CardViewer.Size = New System.Drawing.Size(383, 560)
+        Me.Vwv_CardViewer.TabIndex = 7
+        Me.Vwv_CardViewer.TabStop = False
+        '
         'GridData1
         '
         Me.GridData1.AutoScroll = True
         Me.GridData1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.GridData1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridData1.Location = New System.Drawing.Point(389, 25)
+        Me.GridData1.Location = New System.Drawing.Point(383, 25)
         Me.GridData1.Name = "GridData1"
-        Me.GridData1.Size = New System.Drawing.Size(879, 560)
+        Me.GridData1.Size = New System.Drawing.Size(885, 560)
         Me.GridData1.TabIndex = 5
         '
         'Frm_Main
@@ -105,24 +104,24 @@ Partial Class Frm_Main
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1268, 628)
         Me.Controls.Add(Me.GridData1)
+        Me.Controls.Add(Me.Vwv_CardViewer)
         Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Name = "Frm_Main"
         Me.Text = "CardMasterEdition 0.1"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
+        CType(Me.Vwv_CardViewer, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents GridData1 As GridData
     Friend WithEvents ToolStrip1 As System.Windows.Forms.ToolStrip
     Friend WithEvents TSB_Open As System.Windows.Forms.ToolStripButton
     Friend WithEvents TSB_Save As System.Windows.Forms.ToolStripButton
     Friend WithEvents TSB_SaveAs As System.Windows.Forms.ToolStripButton
+    Friend WithEvents Vwv_CardViewer As CardMasterViewer.Viewer
 
 End Class

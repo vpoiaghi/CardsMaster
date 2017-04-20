@@ -54,6 +54,8 @@ Public Class Frm_Main
 
         'PictureBox1.Image = img
 
+        Vwv_CardViewer.ShowCard(CType(e.GetRow.Tag, Card))
+
     End Sub
 
     Private Sub GridData1_ValueChanged(sender As Object, e As EventArgs) Handles GridData1.ValueChanged

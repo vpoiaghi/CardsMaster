@@ -10,20 +10,14 @@ Public Class Drawer
 
     Public Function DrawCard(card As Card) As Image
 
-        Dim skin As New Skin(300, 500, Nothing, Nothing)
+        Dim skin As Skin = SkinFactory.GetSkin(card)
 
-        Return DrawCard(card, skin)
-
-    End Function
-
-    Public Function DrawCard(card As Card, skin As Skin) As Image
-
-        Dim img As New Bitmap(Skin.Width, Skin.Height)
+        Dim img As New Bitmap(skin.Width, skin.Height)
         img.SetResolution(96, 96)
 
         Dim g As Graphics = Graphics.FromImage(img)
 
-        For Each e As SkinElement In Skin.Elements
+        For Each e As SkinElement In skin.Elements
             DrawElement(g, e, card)
         Next
 
@@ -35,64 +29,66 @@ Public Class Drawer
 
     Private Sub DrawElement(g As Graphics, e As SkinElement, card As Card)
 
-        Select Case e.Type
-            Case SkinElementTypes.Rectangle : DrawRectangle(g, e, card)
-            Case SkinElementTypes.RoundedRectangle : DrawRoundedRectangle(g, e, card)
-            Case SkinElementTypes.Square : DrawSquare(g, e, card)
-            Case SkinElementTypes.Square : DrawRound(g, e, card)
-            Case SkinElementTypes.Square : DrawTextArea(g, e, card)
+        Select Case e.GetType
+            Case GetType(SERectangle) : DrawRectangle(g, e, card)
+            Case GetType(SERoundedRectangle) : DrawRoundedRectangle(g, e, card)
+            Case GetType(SESquare) : DrawSquare(g, e, card)
+            Case GetType(SECircle) : DrawCircle(g, e, card)
+            Case GetType(SETextArea) : DrawTextArea(g, e, card)
         End Select
 
     End Sub
 
     Private Sub DrawRectangle(g As Graphics, e As SkinElement, card As Card)
 
-        Dim brush As New SolidBrush(Color.Black)
-        Dim w As Integer = e.Width
-        Dim h As Integer = e.Height
-
-        g.FillRectangle(brush, e.X, e.Y, e.Width, e.Height)
+        g.FillRectangle(e.GetBackground, e.X, e.Y, e.Width, e.Height)
 
     End Sub
 
     Private Sub DrawRoundedRectangle(g As Graphics, e As SkinElement, card As Card)
 
-        Dim brush As New SolidBrush(Color.Black)
-        Dim w As Integer = e.Width
-        Dim h As Integer = e.Height
-        Dim r As Integer = 15
+        With CType(e, SERoundedRectangle)
 
-        ' Coin haut/gauche
-        g.FillPie(brush, 0, 0, r, r, 180, 90)
+            Dim brush As Brush = e.GetBackground
+            Dim w As Integer = e.Width
+            Dim h As Integer = e.Height
+            Dim b As Integer = .GetCornerRadius
+            Dim r As Integer = 2 * b
 
-        ' Coin haut/droit
-        g.FillPie(brush, w - r, 0, r, r, 270, 90)
+            Dim br As New SolidBrush(Color.Yellow)
 
-        ' Coin bas/gauche
-        g.FillPie(brush, w - r, h - r, r, r, 0, 90)
+            ' Côté haut
+            g.FillRectangle(brush, b, 0, w - (2 * b), b)
 
-        ' Coin bas/droit
-        g.FillPie(brush, 0, h - r, r, r, 90, 90)
+            ' Côté droit
+            g.FillRectangle(brush, w - b, b, b, h - (2 * b))
 
-        ' Côté haut
-        g.FillRectangle(brush, r, 0, w - (2 * r), r)
+            ' Côté bas
+            g.FillRectangle(brush, b, h - b, w - (2 * b), b)
 
-        ' Côté droit
-        g.FillRectangle(brush, w - r, r, r, h - (2 * r))
+            ' Côté gauche
+            g.FillRectangle(brush, 0, b, b, h - (2 * b))
 
-        ' Côté bas
-        g.FillRectangle(brush, r, h - r, w - (2 * r), r)
+            ' Coin haut/gauche
+            g.FillPie(brush, 0, 0, r, r, 180, 90)
 
-        ' Côté gauche
-        g.FillRectangle(brush, 0, r, r, h - (2 * r))
+            ' Coin haut/droit
+            g.FillPie(brush, w - r, 0, r, r, 270, 90)
 
+            ' Coin bas/droit
+            g.FillPie(brush, w - r, h - r, r, r, 0, 90)
+
+            ' Coin bas/gauche
+            g.FillPie(brush, 0, h - r, r, r, 90, 90)
+
+        End With
 
     End Sub
 
     Private Sub DrawSquare(g As Graphics, e As SkinElement, card As Card)
     End Sub
 
-    Private Sub DrawRound(g As Graphics, e As SkinElement, card As Card)
+    Private Sub DrawCircle(g As Graphics, e As SkinElement, card As Card)
     End Sub
 
     Private Sub DrawTextArea(g As Graphics, e As SkinElement, card As Card)
