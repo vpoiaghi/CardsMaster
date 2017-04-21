@@ -10,11 +10,8 @@
         Title="MainWindow" Height="700" Width="900">
     <Grid>
         <Menu>
-            <MenuItem Header="File">
-                <MenuItem Header="_Open">
-                    <MenuItem Header="_Xml Project File" Click="MenuItemXml_Click"/>
-                    <MenuItem Header="_Json Project File" Click="MenuItemJson_Click"/>
-                </MenuItem>
+            <MenuItem Header="_File">
+                <MenuItem Header="_Open Json Project File" Click="MenuItemJson_Click"/>
                 <MenuItem Header="_Close" Click="MenuItemClose_Click"/>
             </MenuItem>
         </Menu>

@@ -14,7 +14,6 @@ Public Class GridDataRichTextBox
 
         m_textBox.BorderStyle = Windows.Forms.BorderStyle.None
         m_textBox.Margin = New Padding(5)
-
     End Sub
 
     Public Overrides Property Value As Object

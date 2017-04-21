@@ -38,31 +38,12 @@ namespace CardMasterStat
             ((ColumnSeries)chartDef.Series[0]).ItemsSource = computer.GetRepartitionByDefense();
             ((ColumnSeries)chartNature.Series[0]).ItemsSource = computer.GetRepartitionByNature();
         }
-
-       
+  
 
         private void MenuItemClose_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
-
-        private void MenuItemXml_Click(object sender, RoutedEventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Xml files (*.xml)|*.xml|All files (*.*)|*.*";
-            if (openFileDialog.ShowDialog() == true)
-            {
-                CardsProject cardProjet = CardsProject.LoadProject(new FileInfo(openFileDialog.FileName));
-                List<Card> cards = new List<Card>();
-                foreach (CardMasterCard.Card.Card card in cardProjet.Cards)         
-                {
-                    Card c = Card.ConvertCard(card);
-                    cards.Add(c);
-                }
-                LoadCards(cards);
-            }
-        }
-
 
         private void MenuItemJson_Click(object sender, RoutedEventArgs e)
         {

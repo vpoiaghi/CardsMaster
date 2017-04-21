@@ -26,6 +26,11 @@ Public Class GridDataCell
             .Parent = m_parentRow
             .Height = GridData.ROW_HEIGHT
             .Visible = True
+            If (cellType.Equals(CellTypes.RichText)) Then
+                .Top += 3
+                .Height -= 3
+
+            End If
         End With
 
     End Sub

@@ -50,7 +50,14 @@ namespace CardMasterStat
             SortedDictionary<String, int> toReturn = new SortedDictionary<String, int>();
             foreach (Card.NatureCard nature in Enum.GetValues(typeof(Card.NatureCard)))
             {
-                toReturn.Add(nature.ToString(), this.m_listCards.Where(c => c.Nature == nature).Count());
+                if (nature.Equals(Card.NatureCard.Zone))
+                {
+                    toReturn.Add("Lieu légendaire", this.m_listCards.Where(c => c.Nature == nature).Count());
+                }
+                else
+                {
+                    toReturn.Add(nature.ToString(), this.m_listCards.Where(c => c.Nature == nature).Count());
+                }
             }
             return toReturn;
         }

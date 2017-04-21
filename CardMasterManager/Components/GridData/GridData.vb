@@ -4,7 +4,7 @@ Imports System.Windows.Forms
 Public Class GridData
     Inherits Panel
 
-    Public Const ROW_HEIGHT As Integer = 21
+    Public Const ROW_HEIGHT As Integer = 50
     Public Shared ReadOnly BORDER_COLOR As Color = Color.FromArgb(255, 219, 223, 230)
 
     Private WithEvents m_hScrollBar As HScrollBar

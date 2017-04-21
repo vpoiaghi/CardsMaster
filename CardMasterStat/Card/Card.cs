@@ -42,19 +42,20 @@ namespace CardMasterStat
         {
             NatureCard toReturn;
             NatureCard.TryParse(nature,out toReturn);
+            if (nature.Equals("Lieu légendaire"))
+                toReturn = NatureCard.Zone;
             return toReturn;
         }
 
         public static Card ConvertCard(CardMasterCard.Card.Card sourceCard)
         {
             NatureCard nature;
-            Enum.TryParse(sourceCard.Chakra, out nature);
             Card toReturn = CardBuilder.newCard()
                                 .withName(sourceCard.Name)
                                 .withCost(sourceCard.Cost)
                                 .withAttack(sourceCard.Attack)
                                 .withBackground(sourceCard.Background)
-                                .withNature(nature)
+                                .withNature(sourceCard.Chakra)
                                 .withCitation(sourceCard.Citation)
                                 .withComment(sourceCard.Comments)
                                 .withDefense(sourceCard.Defense)
