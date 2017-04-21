@@ -1,4 +1,6 @@
-﻿Namespace Skins
+﻿Imports System.Drawing
+
+Namespace Skins
 
     Public Class SECircle
         Inherits SkinElement
@@ -13,6 +15,12 @@
             MyBase.New(x, y, width, height)
 
             m_radius = radius
+
+        End Sub
+
+        Public Overrides Sub Draw(g As Graphics)
+
+            g.FillEllipse(GetBackground, X, Y, Width, Height)
 
         End Sub
 

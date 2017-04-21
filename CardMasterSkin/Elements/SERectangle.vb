@@ -1,4 +1,6 @@
-﻿Namespace Skins
+﻿Imports System.Drawing
+
+Namespace Skins
 
     Public Class SERectangle
         Inherits SkinElement
@@ -9,6 +11,12 @@
 
         Public Sub New(x As Integer, y As Integer, width As Integer, height As Integer)
             MyBase.New(x, y, width, height)
+        End Sub
+
+        Public Overrides Sub Draw(g As Graphics)
+
+            g.FillRectangle(GetBackground, X, Y, Width, Height)
+
         End Sub
 
     End Class

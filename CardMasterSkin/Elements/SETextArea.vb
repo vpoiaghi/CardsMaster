@@ -1,4 +1,6 @@
-﻿Namespace Skins
+﻿Imports System.Drawing
+
+Namespace Skins
 
     Public Class SETextArea
         Inherits SkinElement
@@ -21,6 +23,14 @@
             MyBase.New(x, y, width, height)
 
             m_text = text
+
+        End Sub
+
+        Public Overrides Sub Draw(g As Graphics)
+
+            Dim f As New Font("Arial", 15)
+
+            g.DrawString(m_text, f, Brushes.Black, X, Y)
 
         End Sub
 

@@ -1,4 +1,7 @@
-﻿Namespace Skins
+﻿Imports System.Drawing
+Imports System.Drawing.Drawing2D
+
+Namespace Skins
 
     Public Class SERoundedRectangle
         Inherits SkinElement
@@ -22,6 +25,39 @@
 
         Public Sub SetCornerRadius(cornerRadius As Integer)
             m_cornerRadius = cornerRadius
+        End Sub
+
+        Public Overrides Sub Draw(g As Drawing.Graphics)
+
+            Dim w As Integer = Width
+            Dim h As Integer = Height
+            Dim b As Integer = GetCornerRadius()
+            Dim r As Integer = 2 * b
+
+            Dim path As New GraphicsPath()
+
+            path.StartFigure()
+
+            ' Coin haut/gauche
+            path.AddArc(0, 0, r, r, 180, 90)
+            ' Côté haut
+            path.AddLine(b, 0, w - b, 0)
+            ' Coin haut/droit
+            path.AddArc(w - r, 0, r, r, 270, 90)
+            ' Côté droit
+            path.AddLine(w, b, w, h - b)
+            ' Coin bas/droit
+            path.AddArc(w - r, h - r, r, r, 0, 90)
+            ' Côté bas
+            path.AddLine(w - b, h, b, h)
+            ' Coin bas/gauche
+            path.AddArc(0, h - r, r, r, 90, 90)
+
+            path.CloseFigure()
+
+            g.FillPath(GetBackground, path)
+
+
         End Sub
 
     End Class

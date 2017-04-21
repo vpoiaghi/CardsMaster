@@ -22,7 +22,7 @@ Public Class ProjectToGridData
                 i += 1 : .Cells(i).Value = ""
                 i += 1 : .Cells(i).Value = c.Citation
                 i += 1 : .Cells(i).Value = c.Comments
-                i += 1 : .Cells(i).Value = c.Background.ToString
+                i += 1 : .Cells(i).Value = c.Background
 
                 .Tag = c
             End With

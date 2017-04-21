@@ -11,6 +11,8 @@ Namespace Skins
 
         Private m_background As Brush
 
+        Public MustOverride Sub Draw(g As Graphics)
+
         Protected Sub New(width As Integer, height As Integer)
             Me.New(0, 0, width, height)
         End Sub
