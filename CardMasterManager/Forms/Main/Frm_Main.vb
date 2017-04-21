@@ -23,7 +23,7 @@ Public Class Frm_Main
         GridData1.AddColumn("Coût").Width = 40
         GridData1.AddColumn("Atk").Width = 40
         GridData1.AddColumn("Def.").Width = 40
-        GridData1.AddColumn("Pouvoir").Width = 120
+        GridData1.AddColumn("Pouvoir", CellTypes.RichText).Width = 400
         GridData1.AddColumn("Citation").Width = 120
         GridData1.AddColumn("Commentaires").Width = 120
         GridData1.AddColumn("Texture de fond").Width = 100

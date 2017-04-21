@@ -86,6 +86,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Components\GridData\GridDataSelectionChangedEventArgs.vb" />
+    <Compile Include="Components\GridData\GridDataRichTextBox.vb" />
     <Compile Include="Components\GridData\GridDataTextBox.vb" />
     <Compile Include="Components\GridData\IGridDataComponent.vb" />
     <Compile Include="Forms\Main\Frm_Main.Designer.vb">

@@ -18,6 +18,7 @@ Public Class GridDataCell
             Case CellTypes.Text : m_ctrl = New GridDataTextBox
             Case CellTypes.Check : m_ctrl = New GridDataCheckBox
             Case CellTypes.Combo : m_ctrl = New GridDataComboBox
+            Case CellTypes.RichText : m_ctrl = New GridDataRichTextBox
             Case CellTypes.StaticText : m_ctrl = New GridDataLabel
         End Select
 

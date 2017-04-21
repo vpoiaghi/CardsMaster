@@ -1,6 +1,7 @@
 ﻿Public Class CellTypes
 
     Public Shared ReadOnly Text = New CellTypes()
+    Public Shared ReadOnly RichText = New CellTypes()
     Public Shared ReadOnly Check = New CellTypes()
     Public Shared ReadOnly Combo = New CellTypes()
     Public Shared ReadOnly StaticText = New CellTypes()

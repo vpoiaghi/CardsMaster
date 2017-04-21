@@ -6,6 +6,7 @@ Public Class GridDataTextBox
 
     Private WithEvents m_textBox As TextBox
 
+
     Public Sub New()
         MyBase.New(New TextBox)
         m_textBox = m_control

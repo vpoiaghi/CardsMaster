@@ -43,6 +43,9 @@ Public Class GridDataRow
             Case CellTypes.Text
                 c.Left = m_lefts(m_cells.Count) + 5
                 c.Width = m_widths(m_cells.Count) - 5
+            Case CellTypes.RichText
+                c.Left = m_lefts(m_cells.Count) + 5
+                c.Width = m_widths(m_cells.Count) - 5
             Case CellTypes.Check
                 c.Left = m_lefts(m_cells.Count) + 1
                 c.Width = m_widths(m_cells.Count) - 1
