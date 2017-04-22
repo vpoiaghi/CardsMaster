@@ -47,7 +47,7 @@ Public Class Frm_Main
     End Sub
 
 
-    Private Sub GridData1_SelectionChanged(sender As Object, e As GridDataSelectionChangedEventArgs)
+    Private Sub GridData1_SelectionChanged(sender As Object, e As GridDataSelectionChangedEventArgs) Handles GridData1.SelectionChanged
 
         Vwv_CardViewer.ShowCard(CType(e.GetRow.Tag, Card))
 
