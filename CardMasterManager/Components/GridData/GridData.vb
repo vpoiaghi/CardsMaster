@@ -7,8 +7,8 @@ Public Class GridData
     Public Shared ReadOnly BORDER_COLOR As Color = Color.FromArgb(255, 219, 223, 230)
 
     Private m_backHeaderPanel As New Panel
-    Private m_headerPanel As New Panel
-    Private WithEvents m_flowLayout As New FlowLayoutPanel
+    Private m_headerPanel As New HeaderPanel
+    Private WithEvents m_flowLayout As New FlowLayout
 
     Private m_columns As List(Of GridDataColumn)
     Private m_rows As List(Of GridDataRow)
@@ -40,7 +40,6 @@ Public Class GridData
         Me.SuspendLayout()
 
         With m_backHeaderPanel
-            '.Parent = m_hPanel
             .Parent = Me
             .Dock = DockStyle.Top
             .Height = 25
@@ -54,7 +53,6 @@ Public Class GridData
         End With
 
         With m_flowLayout
-            '.Parent = m_hPanel
             .Parent = Me
             .BringToFront()
             .Dock = DockStyle.Fill
@@ -64,6 +62,7 @@ Public Class GridData
         With Me
             .AutoScroll = True
             .BorderStyle = Windows.Forms.BorderStyle.FixedSingle
+            .DoubleBuffered = True
         End With
 
         Me.ResumeLayout(True)
@@ -158,11 +157,84 @@ Public Class GridData
 
     Private Sub m_flowLayout_Scroll(sender As Object, e As ScrollEventArgs) Handles m_flowLayout.Scroll
 
-        If e.ScrollOrientation = ScrollOrientation.HorizontalScroll Then
+        Console.Write(e.Type)
+
+        If e.ScrollOrientation = ScrollOrientation.HorizontalScroll AndAlso e.Type = ScrollEventType.ThumbTrack Then
 
             m_headerPanel.Left = -e.NewValue
 
         End If
 
     End Sub
+
+    Private Class FlowLayout
+        Inherits FlowLayoutPanel
+
+        Public Sub New()
+            MyBase.New()
+
+            Me.DoubleBuffered = True
+
+            Me.SetStyle(ControlStyles.UserPaint, True)
+            Me.SetStyle(ControlStyles.AllPaintingInWmPaint, True)
+            Me.SetStyle(ControlStyles.OptimizedDoubleBuffer, True)
+
+        End Sub
+
+        Protected Overrides Sub OnScroll(se As ScrollEventArgs)
+
+            Me.Invalidate()
+            MyBase.OnScroll(se)
+
+        End Sub
+
+        Protected Overrides ReadOnly Property CreateParams As CreateParams
+            Get
+                Dim cp As CreateParams = MyBase.CreateParams
+
+                'WS_CLIPCHILDREN
+                cp.ExStyle = cp.ExStyle Or &H2000000
+
+                Return cp
+
+            End Get
+        End Property
+
+    End Class
+
+    Private Class HeaderPanel
+        Inherits Panel
+
+        Public Sub New()
+            MyBase.New()
+
+            Me.DoubleBuffered = True
+
+            Me.SetStyle(ControlStyles.UserPaint, True)
+            Me.SetStyle(ControlStyles.AllPaintingInWmPaint, True)
+            Me.SetStyle(ControlStyles.OptimizedDoubleBuffer, True)
+
+        End Sub
+
+        Protected Overrides Sub OnScroll(se As ScrollEventArgs)
+
+            Me.Invalidate()
+            MyBase.OnScroll(se)
+
+        End Sub
+
+        Protected Overrides ReadOnly Property CreateParams As CreateParams
+            Get
+                Dim cp As CreateParams = MyBase.CreateParams
+
+                'WS_CLIPCHILDREN
+                cp.ExStyle = cp.ExStyle Or &H2000000
+
+                Return cp
+
+            End Get
+        End Property
+
+    End Class
+
 End Class
