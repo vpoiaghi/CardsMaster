@@ -87,6 +87,7 @@ namespace CardMasterStat
             }
             catch (FormatException e)
             {
+                Console.Write(e.Message);
                 intCost = -1;
             }
             return intCost;

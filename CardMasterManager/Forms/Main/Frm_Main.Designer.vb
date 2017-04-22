@@ -96,7 +96,7 @@ Partial Class Frm_Main
         Me.GridData1.Location = New System.Drawing.Point(383, 25)
         Me.GridData1.Name = "GridData1"
         Me.GridData1.Size = New System.Drawing.Size(885, 560)
-        Me.GridData1.TabIndex = 5
+        Me.GridData1.TabIndex = 8
         '
         'Frm_Main
         '
@@ -117,11 +117,11 @@ Partial Class Frm_Main
 
     End Sub
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
-    Friend WithEvents GridData1 As GridData
     Friend WithEvents ToolStrip1 As System.Windows.Forms.ToolStrip
     Friend WithEvents TSB_Open As System.Windows.Forms.ToolStripButton
     Friend WithEvents TSB_Save As System.Windows.Forms.ToolStripButton
     Friend WithEvents TSB_SaveAs As System.Windows.Forms.ToolStripButton
     Friend WithEvents Vwv_CardViewer As CardMasterViewer.Viewer
+    Friend WithEvents GridData1 As CardMasterManager.GridData
 
 End Class

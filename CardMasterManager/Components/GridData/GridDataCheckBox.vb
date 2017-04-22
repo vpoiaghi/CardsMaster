@@ -1,17 +1,21 @@
 ﻿Imports System.Windows.Forms
 
 Public Class GridDataCheckBox
-    Inherits GridDataControl
-    Implements IGridDataComponent
-
+    Inherits GridDataCell
 
     Private WithEvents m_checkBox As CheckBox
 
-    Public Sub New()
-        MyBase.New(New CheckBox)
-        m_checkBox = m_control
+    Public Sub New(parentRow As GridDataRow)
+        MyBase.New(parentRow, CellTypes.Check)
 
-        m_checkBox.Text = ""
+        m_checkBox = New CheckBox
+        With m_checkBox
+            .Text = ""
+            .Left = 0
+            .Parent = Me
+        End With
+
+        m_mainControl = m_checkBox
 
     End Sub
 
@@ -23,6 +27,13 @@ Public Class GridDataCheckBox
             m_checkBox.Checked = value
         End Set
     End Property
+
+    Private Sub GridDataCheckBox_SizeChanged(sender As Object, e As EventArgs) Handles Me.SizeChanged, Me.SizeChanged
+
+        m_checkBox.Top = (Me.Height - m_checkBox.Height) / 2
+        m_checkBox.Width = Me.Width
+
+    End Sub
 
     Private Sub m_checkBox_CheckedChanged(sender As Object, e As EventArgs) Handles m_checkBox.CheckedChanged
         SendValueChangedEvent(sender, e)

@@ -1,18 +1,20 @@
-﻿Imports System.Windows.Forms
-
-Public Class GridDataLabel
-    Inherits GridDataControl
-    Implements IGridDataComponent
-
+﻿Public Class GridDataLabel
+    Inherits GridDataCell
 
     Private m_label As Label
 
-    Public Sub New()
-        MyBase.New(New Label)
-        m_label = m_control
+    Public Sub New(parentRow As GridDataRow)
+        MyBase.New(parentRow, CellTypes.Combo)
 
-        m_label.BorderStyle = Windows.Forms.BorderStyle.None
-        m_label.Margin = New Padding(5)
+        m_label = New Label
+        With m_label
+            .Left = 0
+            .BorderStyle = Windows.Forms.BorderStyle.None
+            .AutoSize = False
+            .Parent = Me
+        End With
+
+        m_mainControl = m_label
 
     End Sub
 
@@ -24,5 +26,12 @@ Public Class GridDataLabel
             m_label.Text = value
         End Set
     End Property
+
+    Private Sub GridDataLabel_SizeChanged(sender As Object, e As EventArgs) Handles Me.SizeChanged, Me.SizeChanged
+
+        m_label.Top = (Me.Height - m_label.Height) / 2
+        m_label.Width = Me.Width
+
+    End Sub
 
 End Class

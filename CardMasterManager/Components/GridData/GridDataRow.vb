@@ -1,5 +1,4 @@
-﻿Imports CardMasterCard.Card
-Imports System.Drawing
+﻿Imports System.Drawing
 Imports System.Windows.Forms
 
 Public Class GridDataRow
@@ -8,62 +7,63 @@ Public Class GridDataRow
     Private m_parentGrid As GridData
 
     Private m_cells As New List(Of GridDataCell)
-    Private m_lefts As New List(Of Integer)
-    Private m_widths As New List(Of Integer)
-
-    Private m_card As Card = Nothing
+    Private m_columns As List(Of GridDataColumn)
 
     Event ValueChanged(sender As Object, e As EventArgs)
     Event SelectionChanged(sender As Object, e As GridDataSelectionChangedEventArgs)
 
     Public Sub New(parentGrid As GridData, columns As List(Of GridDataColumn))
+
         m_parentGrid = parentGrid
+        m_columns = columns
 
         With Me
             .Height = GridData.ROW_HEIGHT
             .BorderStyle = Windows.Forms.BorderStyle.None
             .BackColor = Color.White
+            .Margin = New Padding(0)
         End With
 
-        For Each col As GridDataColumn In columns
-            m_lefts.Add(col.Left)
-            m_widths.Add(col.Width)
-
-            AddCell(col.CellType)
-        Next
-
+        AddCells(m_columns)
 
     End Sub
 
-    Private Function AddCell(cellType As CellTypes) As GridDataCell
+    Private Sub AddCells(columns As List(Of GridDataColumn))
 
-        Dim c As New GridDataCell(Me, cellType)
+        Dim w As Integer = 0
 
-        Select Case cellType
-            Case CellTypes.Text
-                c.Left = m_lefts(m_cells.Count) + 5
-                c.Width = m_widths(m_cells.Count) - 5
-            Case CellTypes.RichText
-                c.Left = m_lefts(m_cells.Count) + 5
-                c.Width = m_widths(m_cells.Count) - 5
-            Case CellTypes.Check
-                c.Left = m_lefts(m_cells.Count) + 1
-                c.Width = m_widths(m_cells.Count) - 1
-            Case CellTypes.Combo
-                c.Left = m_lefts(m_cells.Count)
-                c.Width = m_widths(m_cells.Count) + 1
-            Case CellTypes.StaticText
-                c.Left = m_lefts(m_cells.Count) + 5
-                c.Width = m_widths(m_cells.Count) - 5
+        For Each col As GridDataColumn In columns
+            AddCell(col)
+            w += col.Width
+        Next
+
+        Me.Width = w
+
+    End Sub
+
+    Private Sub AddCell(col As GridDataColumn)
+
+        Dim c As GridDataCell = Nothing
+
+        Select Case col.CellType
+            Case CellTypes.Text : c = New GridDataTextBox(Me)
+            Case CellTypes.Check : c = New GridDataCheckBox(Me)
+            Case CellTypes.Combo : c = New GridDataComboBox(Me)
+            Case CellTypes.RichText : c = New GridDataRichTextBox(Me)
+            Case CellTypes.StaticText : c = New GridDataLabel(Me)
         End Select
 
-        AddHandler c.ValueChanged, AddressOf Cell_ValueChanged
+        If c IsNot Nothing Then
 
-        m_cells.Add(c)
+            c.Left = col.Left + 3
+            c.Width = col.Width - 6
 
-        Return c
+            AddHandler c.ValueChanged, AddressOf Cell_ValueChanged
 
-    End Function
+            m_cells.Add(c)
+        End If
+
+    End Sub
 
     Public Function Cells() As List(Of GridDataCell)
         Return m_cells.ToList
@@ -73,11 +73,7 @@ Public Class GridDataRow
 
         m_parentGrid.UnselectAll()
 
-        Me.BackColor = Color.Aquamarine
-
-        For Each c As GridDataCell In m_cells
-            c.BackColor = Color.Aquamarine
-        Next
+        ColorRow(Color.Aquamarine)
 
         RaiseEvent SelectionChanged(m_parentGrid, New GridDataSelectionChangedEventArgs(Me))
 
@@ -85,10 +81,20 @@ Public Class GridDataRow
 
     Public Sub UnselectRow()
 
-        Me.BackColor = Color.White
+        ColorRow(Color.White)
+
+    End Sub
+
+    Private Sub ColorRow(color As Color)
+
+        Me.BackColor = color
 
         For Each c As GridDataCell In m_cells
-            c.BackColor = Color.White
+            c.BackColor = color
+
+            For Each ctrl As Control In c.Controls
+                ctrl.BackColor = color
+            Next
         Next
 
     End Sub
@@ -102,8 +108,10 @@ Public Class GridDataRow
         Dim i As Integer = 0
         Dim p As Pen = New Pen(GridData.BORDER_COLOR, 1)
 
-        For i = 0 To m_lefts.Count - 1
-            e.Graphics.DrawRectangle(p, New Rectangle(m_lefts(i), 0, m_widths(i), GridData.ROW_HEIGHT))
+        For i = 0 To m_columns.Count - 1
+            With m_columns(i)
+                e.Graphics.DrawRectangle(p, New Rectangle(.Left, 0, .Width, GridData.ROW_HEIGHT))
+            End With
         Next
 
     End Sub

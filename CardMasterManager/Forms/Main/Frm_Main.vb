@@ -12,10 +12,9 @@ Public Class Frm_Main
         ' Cet appel est requis par le concepteur.
         InitializeComponent()
 
-        ' Ajoutez une initialisation quelconque après l'appel InitializeComponent().
+
         GridData1.AddColumn("Nom").Width = 120
         GridData1.AddColumn("Genre", CellTypes.Combo).Width = 60
-        'GridData1.AddColumn("Genre").Width = 60
         GridData1.AddColumn("Rareté/Grade").Width = 85
         GridData1.AddColumn("Equipe").Width = 60
         GridData1.AddColumn("Nature chakra").Width = 90
@@ -28,6 +27,7 @@ Public Class Frm_Main
         GridData1.AddColumn("Commentaires").Width = 120
         GridData1.AddColumn("Texture de fond").Width = 100
         GridData1.AddColumn("Texture zones de texte").Width = 100
+
 
         TSB_Save.Enabled = False
         TSB_SaveAs.Enabled = False
@@ -47,19 +47,11 @@ Public Class Frm_Main
     End Sub
 
 
-    Private Sub GridData1_SelectionChanged(sender As Object, e As GridDataSelectionChangedEventArgs) Handles GridData1.SelectionChanged
-
-        'Dim skin As New SkinAlly(375, 523, New DirectoryInfo(m_cardsProject.ImagesDirectory), New DirectoryInfo(m_cardsProject.TexturesDirectory))
-        'Dim img As Image = skin.DrawCard(e.GetRow.Tag)
-
-        'PictureBox1.Image = img
+    Private Sub GridData1_SelectionChanged(sender As Object, e As GridDataSelectionChangedEventArgs)
 
         Vwv_CardViewer.ShowCard(CType(e.GetRow.Tag, Card))
 
     End Sub
 
-    Private Sub GridData1_ValueChanged(sender As Object, e As EventArgs) Handles GridData1.ValueChanged
-
-    End Sub
 
 End Class

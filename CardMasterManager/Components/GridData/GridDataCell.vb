@@ -1,85 +1,49 @@
 ﻿Imports System.Drawing
 
-Public Class GridDataCell
+Public MustInherit Class GridDataCell
+    Inherits Panel
 
     Private m_parentRow As GridDataRow
-    Private WithEvents m_ctrl As IGridDataComponent
+    Protected m_cellType As CellTypes
+    Protected WithEvents m_mainControl As Control
 
-    Public Property CellType As CellTypes
+    Public MustOverride Property Value As Object
 
     Public Event ValueChanged(sender As Object, e As EventArgs)
 
     Public Sub New(parentRow As GridDataRow, cellType As CellTypes)
+        MyBase.New()
 
-        Me.CellType = cellType
         m_parentRow = parentRow
 
-        Select Case cellType
-            Case CellTypes.Text : m_ctrl = New GridDataTextBox
-            Case CellTypes.Check : m_ctrl = New GridDataCheckBox
-            Case CellTypes.Combo : m_ctrl = New GridDataComboBox
-            Case CellTypes.RichText : m_ctrl = New GridDataRichTextBox
-            Case CellTypes.StaticText : m_ctrl = New GridDataLabel
-        End Select
-
-        With m_ctrl
+        With Me
             .Parent = m_parentRow
-            .Height = GridData.ROW_HEIGHT
+            .Top = 1
+            .Height = GridData.ROW_HEIGHT - 2
             .Visible = True
-            If (cellType.Equals(CellTypes.RichText)) Then
-                .Top += 3
-                .Height -= 3
-
-            End If
+            .Margin = New Padding(0)
         End With
 
     End Sub
 
-    Private Sub m_ctrl_GotFocus(sender As Object, e As EventArgs) Handles m_ctrl.GotFocus
+    Protected Sub SendValueChangedEvent(sender, e)
+        RaiseEvent ValueChanged(sender, e)
+    End Sub
+
+    Private Sub GridDataCell_GotFocus(sender As Object, e As EventArgs) Handles Me.GotFocus
         m_parentRow.SelectRow()
     End Sub
 
-    Private Sub m_ctrl_SizeChanged(sender As Object, e As EventArgs) Handles m_ctrl.SizeChanged
-        sender.top = (GridData.ROW_HEIGHT - sender.height) / 2
+    Protected Sub SelectRow()
+        m_parentRow.SelectRow()
     End Sub
 
-    Public Property Value As Object
-        Get
-            Return m_ctrl.Value
-        End Get
-        Set(value As Object)
-            m_ctrl.Value = value
-        End Set
-    End Property
-
-    Public Property Left As Integer
-        Get
-            Return m_ctrl.Left
-        End Get
-        Set(value As Integer)
-            m_ctrl.Left = value
-        End Set
-    End Property
-
-    Public Property Width As Integer
-        Get
-            Return m_ctrl.Width
-        End Get
-        Set(value As Integer)
-            m_ctrl.Width = value
-        End Set
-    End Property
-
-    Public Property BackColor As Color
-        Get
-            Return m_ctrl.BackColor
-        End Get
-        Set(value As Color)
-            m_ctrl.BackColor = value
-        End Set
-    End Property
-
-    Private Sub m_ctrl_ValueChanged(sender As Object, e As EventArgs) Handles m_ctrl.ValueChanged
-        RaiseEvent ValueChanged(sender, e)
+    Private Sub m_mainControl_GotFocus(sender As Object, e As EventArgs) Handles m_mainControl.GotFocus
+        SelectRow()
     End Sub
+
+    Private Sub GridDataCell_MouseClick(sender As Object, e As MouseEventArgs) Handles Me.MouseClick
+        SelectRow()
+    End Sub
+
 End Class

@@ -49,7 +49,6 @@ namespace CardMasterStat
 
         public static Card ConvertCard(CardMasterCard.Card.Card sourceCard)
         {
-            NatureCard nature;
             Card toReturn = CardBuilder.newCard()
                                 .withName(sourceCard.Name)
                                 .withCost(sourceCard.Cost)
