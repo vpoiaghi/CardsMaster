@@ -28,8 +28,9 @@ Partial Class Frm_Main
         Me.TSB_Open = New System.Windows.Forms.ToolStripButton()
         Me.TSB_Save = New System.Windows.Forms.ToolStripButton()
         Me.TSB_SaveAs = New System.Windows.Forms.ToolStripButton()
-        Me.Vwv_CardViewer = New CardMasterViewer.Viewer()
+        Me.TSB_Parameters = New System.Windows.Forms.ToolStripButton()
         Me.GridData1 = New CardMasterManager.GridData()
+        Me.Vwv_CardViewer = New CardMasterViewer.Viewer()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.Vwv_CardViewer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -45,7 +46,7 @@ Partial Class Frm_Main
         '
         'ToolStrip1
         '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSB_Open, Me.TSB_Save, Me.TSB_SaveAs})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSB_Open, Me.TSB_Save, Me.TSB_SaveAs, Me.TSB_Parameters})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(1268, 25)
@@ -79,14 +80,14 @@ Partial Class Frm_Main
         Me.TSB_SaveAs.Size = New System.Drawing.Size(95, 22)
         Me.TSB_SaveAs.Text = "Enregistrer Sous"
         '
-        'Vwv_CardViewer
+        'TSB_Parameters
         '
-        Me.Vwv_CardViewer.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Vwv_CardViewer.Location = New System.Drawing.Point(0, 25)
-        Me.Vwv_CardViewer.Name = "Vwv_CardViewer"
-        Me.Vwv_CardViewer.Size = New System.Drawing.Size(383, 560)
-        Me.Vwv_CardViewer.TabIndex = 7
-        Me.Vwv_CardViewer.TabStop = False
+        Me.TSB_Parameters.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.TSB_Parameters.Image = CType(resources.GetObject("TSB_Parameters.Image"), System.Drawing.Image)
+        Me.TSB_Parameters.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.TSB_Parameters.Name = "TSB_Parameters"
+        Me.TSB_Parameters.Size = New System.Drawing.Size(70, 22)
+        Me.TSB_Parameters.Text = "Paramètres"
         '
         'GridData1
         '
@@ -97,6 +98,15 @@ Partial Class Frm_Main
         Me.GridData1.Name = "GridData1"
         Me.GridData1.Size = New System.Drawing.Size(885, 560)
         Me.GridData1.TabIndex = 8
+        '
+        'Vwv_CardViewer
+        '
+        Me.Vwv_CardViewer.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Vwv_CardViewer.Location = New System.Drawing.Point(0, 25)
+        Me.Vwv_CardViewer.Name = "Vwv_CardViewer"
+        Me.Vwv_CardViewer.Size = New System.Drawing.Size(383, 560)
+        Me.Vwv_CardViewer.TabIndex = 7
+        Me.Vwv_CardViewer.TabStop = False
         '
         'Frm_Main
         '
@@ -123,5 +133,6 @@ Partial Class Frm_Main
     Friend WithEvents TSB_SaveAs As System.Windows.Forms.ToolStripButton
     Friend WithEvents Vwv_CardViewer As CardMasterViewer.Viewer
     Friend WithEvents GridData1 As CardMasterManager.GridData
+    Friend WithEvents TSB_Parameters As System.Windows.Forms.ToolStripButton
 
 End Class

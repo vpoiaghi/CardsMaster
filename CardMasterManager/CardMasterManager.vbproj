@@ -47,22 +47,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
     <Import Include="System.Collections" />
     <Import Include="System.Collections.Generic" />
-    <Import Include="System.Data" />
     <Import Include="System.Diagnostics" />
     <Import Include="System.Linq" />
     <Import Include="System.Runtime.Serialization" />
@@ -109,6 +104,13 @@
     <Compile Include="Forms\Main\OpenSave.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Parameters\Frm_Parameters.Designer.vb">
+      <DependentUpon>Frm_Parameters.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parameters\Frm_Parameters.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parameters\ParametersResult.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -128,10 +130,14 @@
     <Compile Include="IO\ProjectIO\FileOpen.vb" />
     <Compile Include="IO\ProjectIO\FileSave.vb" />
     <Compile Include="IO\GridData\GridDataToProject.vb" />
+    <Compile Include="Forms\Parameters\Parameters.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Forms\Main\Frm_Main.resx">
       <DependentUpon>Frm_Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parameters\Frm_Parameters.resx">
+      <DependentUpon>Frm_Parameters.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

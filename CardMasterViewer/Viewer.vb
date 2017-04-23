@@ -1,5 +1,6 @@
 ﻿Imports CardMasterCard.Card
 Imports CardMasterImageBuilder
+Imports System.IO
 Imports System.Windows.Forms
 
 Public Class Viewer
@@ -9,10 +10,17 @@ Public Class Viewer
         MyBase.New()
     End Sub
 
-    Public Sub ShowCard(card As Card)
+    Public Sub ShowCard(card As Card, texturesDirectory As DirectoryInfo)
 
-        Dim cardDrawer As New Drawer(card)
-        Me.Image = cardDrawer.DrawCard()
+        With New Drawer(card, texturesDirectory)
+            Me.Image = .DrawCard()
+        End With
+
+    End Sub
+
+    Public Sub EraseCard()
+
+        Me.Image = Nothing
 
     End Sub
 

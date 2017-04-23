@@ -12,7 +12,7 @@ Public Class GridData
 
     Private m_columns As List(Of GridDataColumn)
     Private m_rows As List(Of GridDataRow)
-
+    Private m_selectedRow As GridDataRow
 
     Event ValueChanged(sender As Object, e As EventArgs)
     Event SelectionChanged(sender As Object, e As GridDataSelectionChangedEventArgs)
@@ -22,6 +22,7 @@ Public Class GridData
 
         m_columns = New List(Of GridDataColumn)
         m_rows = New List(Of GridDataRow)
+        m_selectedRow = Nothing
 
         InitComponents()
 
@@ -127,18 +128,31 @@ Public Class GridData
             r.UnselectRow()
         Next
 
+        m_selectedRow = Nothing
+
+        Dim e As New GridDataSelectionChangedEventArgs(Nothing)
+
+        RaiseEvent SelectionChanged(Me, e)
+
     End Sub
+
+    Public ReadOnly Property SelectedRow As GridDataRow
+        Get
+            Return m_selectedRow
+        End Get
+    End Property
 
     Private Sub ColumnSizeChanged(sender As Object, e As EventArgs)
         ApplyWidth()
     End Sub
 
     Private Sub OnValueChanged(sender As Object, e As EventArgs)
-        RaiseEvent ValueChanged(sender, e)
+        RaiseEvent ValueChanged(Me, e)
     End Sub
 
     Private Sub OnSelectionChanged(sender As Object, e As GridDataSelectionChangedEventArgs)
-        RaiseEvent SelectionChanged(sender, e)
+        m_selectedRow = e.GetRow
+        RaiseEvent SelectionChanged(Me, e)
     End Sub
 
     Private Sub ApplyWidth()

@@ -1,6 +1,7 @@
 ﻿Imports System.IO
 Imports System.Xml.Serialization
-Imports System.Runtime.Serialization.Json
+Imports Newtonsoft.Json
+
 
 Namespace Card
 
@@ -41,19 +42,55 @@ Namespace Card
 
         Private Shared Function LoadJsonProject(file As FileInfo) As CardsProject
 
-            Dim CardsProject As CardsProject
+            Dim sr As New StreamReader(file.FullName)
+            Dim js As String = sr.ReadToEnd
 
-            Dim jrd As New FileStream(file.FullName, FileMode.Open)
-            Dim js As New DataContractJsonSerializer(GetType(CardsProject))
+            Dim cardsProject As CardsProject = JsonConvert.DeserializeObject(Of CardsProject)(js)
 
-            CardsProject = CType(js.ReadObject(jrd), CardsProject)
+            sr.Close()
+            sr.Dispose()
 
-            jrd.Close()
-            jrd.Dispose()
+            cardsProject.TexturesDirectory = cardsProject.TexturesDirectory.Replace("\\", "\")
+            cardsProject.ImagesDirectory = cardsProject.ImagesDirectory.Replace("\\", "\")
 
             Return CardsProject
 
         End Function
+
+        Public Sub Save(ByRef file As FileInfo)
+
+            Select Case LCase(file.Extension)
+                Case ".xml" : SaveXmlProject(file)
+                Case ".json" : SaveJsonProject(file)
+            End Select
+
+        End Sub
+
+        Private Sub SaveXmlProject(ByRef file As FileInfo)
+
+            Dim xs As New XmlSerializer(GetType(CardsProject))
+            Dim xwr As New StreamWriter(file.FullName)
+
+            xs.Serialize(xwr, Me)
+
+            xwr.Close()
+            xwr.Dispose()
+
+        End Sub
+
+        Private Sub SaveJsonProject(ByRef file As FileInfo)
+
+            file.Delete()
+
+            Dim js As String = JsonConvert.SerializeObject(Me, Formatting.Indented)
+            Dim sw As New StreamWriter(file.FullName, FileMode.OpenOrCreate)
+
+            sw.Write(js)
+
+            sw.Close()
+            sw.Dispose()
+
+        End Sub
 
     End Class
 

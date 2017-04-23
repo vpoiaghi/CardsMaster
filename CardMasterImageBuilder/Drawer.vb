@@ -8,9 +8,9 @@ Public Class Drawer
     Private m_card As Card
     Private m_skin As Skin
 
-    Public Sub New(card As Card)
+    Public Sub New(card As Card, texturesDirectory As DirectoryInfo)
         m_card = card
-        m_skin = SkinFactory.GetSkin(m_card)
+        m_skin = SkinFactory.GetSkin(m_card, texturesDirectory)
     End Sub
 
     Public Function DrawCard() As Image

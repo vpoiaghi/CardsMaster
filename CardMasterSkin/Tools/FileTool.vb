@@ -6,24 +6,29 @@ Public Class FileTool
 
         Dim f As FileInfo = Nothing
 
-        Dim fileName As String = Dir(Path.Combine(Root.FullName, FileNamePattern), FileAttribute.Normal)
+        If Root IsNot Nothing AndAlso Root.Exists Then
 
-        If String.IsNullOrEmpty(fileName) Then
 
-            Dim directories() As DirectoryInfo = Root.GetDirectories()
-            Dim directoriesCount As Integer = directories.Length
-            Dim directoryIndex As Integer = 0
+            Dim fileName As String = Dir(Path.Combine(Root.FullName, FileNamePattern), FileAttribute.Normal)
 
-            While (f Is Nothing) AndAlso (directoryIndex < directoriesCount)
+            If String.IsNullOrEmpty(fileName) Then
 
-                f = FindImage(directories(directoryIndex), FileNamePattern)
+                Dim directories() As DirectoryInfo = Root.GetDirectories()
+                Dim directoriesCount As Integer = directories.Length
+                Dim directoryIndex As Integer = 0
 
-                directoryIndex += 1
+                While (f Is Nothing) AndAlso (directoryIndex < directoriesCount)
 
-            End While
+                    f = FindImage(directories(directoryIndex), FileNamePattern)
 
-        Else
-            f = New FileInfo(Path.Combine(Root.FullName, fileName))
+                    directoryIndex += 1
+
+                End While
+
+            Else
+                f = New FileInfo(Path.Combine(Root.FullName, fileName))
+
+            End If
 
         End If
 

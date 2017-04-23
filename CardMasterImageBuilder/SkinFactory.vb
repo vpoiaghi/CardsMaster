@@ -5,7 +5,7 @@ Imports System.IO
 
 Public Class SkinFactory
 
-    Public Shared Function GetSkin(card As Card) As Skin
+    Public Shared Function GetSkin(card As Card, texturesDirectory As DirectoryInfo) As Skin
 
         Dim w As Integer = 375
         Dim h As Integer = 523
@@ -13,9 +13,9 @@ Public Class SkinFactory
         Dim margin As Integer
 
         Dim imagesDir As New DirectoryInfo("F:\Programmation\VBA\Cartes Bruno\Cartes\Images")
-        Dim texturesDir As New DirectoryInfo("F:\Programmation\VBA\Cartes Bruno\Cartes\Textures")
+        'Dim texturesDir As New DirectoryInfo("F:\Programmation\VBA\Cartes Bruno\Cartes\Textures")
 
-        Dim skin As New Skin(w, h, imagesDir, texturesDir)
+        Dim skin As New Skin(w, h, imagesDir, texturesDirectory)
         Dim skinElement As SkinElement
 
         ' Bordures
@@ -25,13 +25,13 @@ Public Class SkinFactory
 
         ' Texture de fond
         skinElement = New SERectangle(borderSize, borderSize, w - borderSize * 2, h - borderSize * 2)
-        skinElement.SetBackground("eau")
+        skinElement.SetBackground(texturesDirectory, "eau")
         skin.Elements.Add(skinElement)
 
         ' Zone entête
         margin = 7
         skinElement = New SECurvedRectangle(borderSize + margin, borderSize + margin, w - ((borderSize + margin) * 2), 40, 8)
-        skinElement.SetBackground("Pierre 01")
+        skinElement.SetBackground(texturesDirectory, "Pierre 01")
         skin.Elements.Add(skinElement)
 
         ' Image
@@ -41,12 +41,12 @@ Public Class SkinFactory
 
         ' Zone équipe
         skinElement = New SECurvedRectangle(borderSize + margin, borderSize + margin + 40 + 220, w - ((borderSize + margin) * 2), 40, 8)
-        skinElement.SetBackground("Pierre 01")
+        skinElement.SetBackground(texturesDirectory, "Pierre 01")
         skin.Elements.Add(skinElement)
 
         ' Zone de pouvoirs
         skinElement = New SERectangle(borderSize + margin + 8, borderSize + margin + 40 + 220 + 40, w - ((borderSize + margin + 8) * 2), 150)
-        skinElement.SetBackground("Pierre 01")
+        skinElement.SetBackground(texturesDirectory, "Pierre 01")
         skin.Elements.Add(skinElement)
 
         ' Zone de coût

@@ -1,5 +1,6 @@
 ﻿Imports System.Drawing
 Imports System.Drawing.Drawing2D
+Imports System.IO
 
 Namespace Skins
 
@@ -27,7 +28,7 @@ Namespace Skins
             m_cornerRadius = cornerRadius
         End Sub
 
-        Public Overrides Sub Draw(g As Drawing.Graphics)
+        Public Overrides Sub Draw(g As Graphics)
 
             Dim w As Integer = Width
             Dim h As Integer = Height

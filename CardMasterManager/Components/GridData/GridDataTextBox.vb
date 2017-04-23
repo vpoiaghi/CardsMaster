@@ -24,7 +24,11 @@ Public Class GridDataTextBox
             Return m_textBox.Text
         End Get
         Set(value As Object)
-            m_textBox.Text = value
+            If value Is Nothing Then
+                m_textBox.Text = ""
+            Else
+                m_textBox.Text = value.ToString
+            End If
         End Set
     End Property
 

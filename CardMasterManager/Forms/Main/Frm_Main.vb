@@ -31,6 +31,7 @@ Public Class Frm_Main
 
         TSB_Save.Enabled = False
         TSB_SaveAs.Enabled = False
+        TSB_Parameters.Enabled = False
 
     End Sub
 
@@ -46,12 +47,55 @@ Public Class Frm_Main
         SaveAs()
     End Sub
 
+    Private Sub TSB_Parameters_Click(sender As Object, e As EventArgs) Handles TSB_Parameters.Click
 
-    Private Sub GridData1_SelectionChanged(sender As Object, e As GridDataSelectionChangedEventArgs) Handles GridData1.SelectionChanged
+        If m_cardsProject IsNot Nothing Then
 
-        Vwv_CardViewer.ShowCard(CType(e.GetRow.Tag, Card))
+            Dim prm As New Parameters
+            prm.ImagesDirectory = m_cardsProject.ImagesDirectory
+            prm.TexturesDirectory = m_cardsProject.TexturesDirectory
+
+            Dim result As ParametersResult = Frm_Parameters.ChangeParameters(Me, prm)
+
+            If result.DialogResult = Windows.Forms.DialogResult.OK Then
+
+                m_cardsProject.TexturesDirectory = result.Parameters.TexturesDirectory
+                m_cardsProject.ImagesDirectory = result.Parameters.ImagesDirectory
+
+                DrawCard(CType(GridData1.SelectedRow().Tag, Card))
+
+                If m_file IsNot Nothing Then
+                    Save()
+                End If
+
+            End If
+
+        End If
 
     End Sub
 
+    Private Sub GridData1_SelectionChanged(sender As Object, e As GridDataSelectionChangedEventArgs) Handles GridData1.SelectionChanged
+
+        If e.GetRow Is Nothing Then
+            EraseCard()
+        Else
+            DrawCard(CType(e.GetRow.Tag, Card))
+        End If
+
+    End Sub
+
+    Private Sub DrawCard(card As Card)
+
+        If card Is Nothing Then
+            EraseCard()
+        Else
+            Vwv_CardViewer.ShowCard(card, New DirectoryInfo(m_cardsProject.TexturesDirectory))
+        End If
+
+    End Sub
+
+    Private Sub EraseCard()
+        Vwv_CardViewer.EraseCard()
+    End Sub
 
 End Class

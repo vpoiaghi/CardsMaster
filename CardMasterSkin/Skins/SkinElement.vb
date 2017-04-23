@@ -20,6 +20,7 @@ Namespace Skins
         Private m_color1 As Color
         Private m_color2 As Color
         Private m_imageName As String
+        Private m_texturesDirectory As DirectoryInfo
         Private m_type As TextureTypes
 
         Public MustOverride Sub Draw(g As Graphics)
@@ -41,6 +42,7 @@ Namespace Skins
         Public Sub SetBackground(color As Color)
             m_color1 = color
             m_color2 = Nothing
+            m_texturesDirectory = Nothing
             m_imageName = Nothing
             m_type = TextureTypes.Color
         End Sub
@@ -48,13 +50,15 @@ Namespace Skins
         Public Sub SetBackground(color1 As Color, color2 As Color)
             m_color1 = color1
             m_color2 = color2
+            m_texturesDirectory = Nothing
             m_imageName = Nothing
             m_type = TextureTypes.GradientColor
         End Sub
 
-        Public Sub SetBackground(imageName As String)
+        Public Sub SetBackground(texturesDirectory As DirectoryInfo, imageName As String)
             m_color1 = Nothing
             m_color2 = Nothing
+            m_texturesDirectory = texturesDirectory
             m_imageName = imageName
             m_type = TextureTypes.Image
         End Sub
@@ -71,8 +75,7 @@ Namespace Skins
                     bkg = New LinearGradientBrush(New Point(X, 1), New Point(Height, 1), m_color1, m_color2)
 
                 Case TextureTypes.Image
-                    Dim d As DirectoryInfo = New DirectoryInfo("F:\Programmation\VBA\Cartes Bruno\Cartes\Textures")
-                    Dim f As FileInfo = FileTool.FindImage(d, m_imageName & ".*")
+                    Dim f As FileInfo = FileTool.FindImage(m_texturesDirectory, m_imageName & ".*")
 
                     If f IsNot Nothing Then
                         Dim img As Image = New Bitmap(f.FullName)
@@ -80,6 +83,10 @@ Namespace Skins
                     End If
 
             End Select
+
+            If bkg Is Nothing Then
+                bkg = New SolidBrush(Color.Black)
+            End If
 
             Return bkg
 

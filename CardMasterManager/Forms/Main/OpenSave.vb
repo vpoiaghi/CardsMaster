@@ -27,7 +27,7 @@ Partial Public Class Frm_Main
 
                 TSB_Save.Enabled = True
                 TSB_SaveAs.Enabled = True
-
+                TSB_Parameters.Enabled = True
             End If
 
         End If
@@ -35,7 +35,13 @@ Partial Public Class Frm_Main
     End Sub
 
     Private Sub Save()
-        Save(m_file)
+
+        If m_file Is Nothing Then
+            SaveAs()
+        Else
+            Save(m_file)
+        End If
+
     End Sub
 
     Private Sub SaveAs()
@@ -54,8 +60,11 @@ Partial Public Class Frm_Main
 
             prjUpdater.SaveProject(GridData1, cardsProject)
 
+            cardsProject.TexturesDirectory = m_cardsProject.TexturesDirectory
+            cardsProject.ImagesDirectory = m_cardsProject.ImagesDirectory
+
             With New FileSave
-                .Save(cardsProject, targetFile)
+                cardsProject.Save(targetFile)
             End With
 
             m_file = targetFile
