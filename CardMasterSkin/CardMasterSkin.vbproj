@@ -84,6 +84,7 @@
     <Compile Include="Skins\Skin.vb" />
     <Compile Include="Skins\SkinElement.vb" />
     <Compile Include="Skins\SkinElements.vb" />
+    <Compile Include="Tools\FileTool.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

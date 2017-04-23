@@ -25,13 +25,13 @@ Public Class SkinFactory
 
         ' Texture de fond
         skinElement = New SERectangle(borderSize, borderSize, w - borderSize * 2, h - borderSize * 2)
-        skinElement.SetBackground(Color.Green)
+        skinElement.SetBackground("eau")
         skin.Elements.Add(skinElement)
 
         ' Zone entête
         margin = 7
         skinElement = New SECurvedRectangle(borderSize + margin, borderSize + margin, w - ((borderSize + margin) * 2), 40, 8)
-        skinElement.SetBackground(Color.Yellow)
+        skinElement.SetBackground("Pierre 01")
         skin.Elements.Add(skinElement)
 
         ' Image
@@ -41,12 +41,12 @@ Public Class SkinFactory
 
         ' Zone équipe
         skinElement = New SECurvedRectangle(borderSize + margin, borderSize + margin + 40 + 220, w - ((borderSize + margin) * 2), 40, 8)
-        skinElement.SetBackground(Color.Yellow)
+        skinElement.SetBackground("Pierre 01")
         skin.Elements.Add(skinElement)
 
         ' Zone de pouvoirs
         skinElement = New SERectangle(borderSize + margin + 8, borderSize + margin + 40 + 220 + 40, w - ((borderSize + margin + 8) * 2), 150)
-        skinElement.SetBackground(Color.Blue)
+        skinElement.SetBackground("Pierre 01")
         skin.Elements.Add(skinElement)
 
         ' Zone de coût

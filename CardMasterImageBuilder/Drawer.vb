@@ -5,22 +5,25 @@ Imports System.IO
 
 Public Class Drawer
 
-    Public Sub New()
+    Private m_card As Card
+    Private m_skin As Skin
+
+    Public Sub New(card As Card)
+        m_card = card
+        m_skin = SkinFactory.GetSkin(m_card)
     End Sub
 
-    Public Function DrawCard(card As Card) As Image
+    Public Function DrawCard() As Image
 
-        Dim skin As Skin = SkinFactory.GetSkin(card)
-
-        Dim img As New Bitmap(skin.Width, skin.Height)
+        Dim img As New Bitmap(m_skin.Width, m_skin.Height)
         img.SetResolution(96, 96)
 
         Dim g As Graphics = Graphics.FromImage(img)
 
         g.SmoothingMode = Drawing2D.SmoothingMode.AntiAlias
 
-        For Each e As SkinElement In skin.Elements
-            DrawElement(g, e, card)
+        For Each e As SkinElement In m_skin.Elements
+            DrawElement(g, e)
         Next
 
         g.Dispose()
@@ -29,40 +32,40 @@ Public Class Drawer
 
     End Function
 
-    Private Sub DrawElement(g As Graphics, e As SkinElement, card As Card)
+    Private Sub DrawElement(g As Graphics, e As SkinElement)
 
         Select Case e.GetType
-            Case GetType(SERectangle) : DrawRectangle(g, e, card)
-            Case GetType(SERoundedRectangle) : DrawRoundedRectangle(g, e, card)
-            Case GetType(SECurvedRectangle) : DrawCurvedRectangle(g, e, card)
-            Case GetType(SESquare) : DrawSquare(g, e, card)
-            Case GetType(SECircle) : DrawCircle(g, e, card)
-            Case GetType(SETextArea) : DrawTextArea(g, e, card)
+            Case GetType(SERectangle) : DrawRectangle(g, e)
+            Case GetType(SERoundedRectangle) : DrawRoundedRectangle(g, e)
+            Case GetType(SECurvedRectangle) : DrawCurvedRectangle(g, e)
+            Case GetType(SESquare) : DrawSquare(g, e)
+            Case GetType(SECircle) : DrawCircle(g, e)
+            Case GetType(SETextArea) : DrawTextArea(g, e)
         End Select
 
     End Sub
 
-    Private Sub DrawRectangle(g As Graphics, e As SkinElement, card As Card)
+    Private Sub DrawRectangle(g As Graphics, e As SkinElement)
         e.Draw(g)
     End Sub
 
-    Private Sub DrawRoundedRectangle(g As Graphics, e As SkinElement, card As Card)
+    Private Sub DrawRoundedRectangle(g As Graphics, e As SkinElement)
         e.Draw(g)
     End Sub
 
-    Private Sub DrawCurvedRectangle(g As Graphics, e As SkinElement, card As Card)
+    Private Sub DrawCurvedRectangle(g As Graphics, e As SkinElement)
         e.Draw(g)
     End Sub
 
-    Private Sub DrawSquare(g As Graphics, e As SkinElement, card As Card)
+    Private Sub DrawSquare(g As Graphics, e As SkinElement)
         e.Draw(g)
     End Sub
 
-    Private Sub DrawCircle(g As Graphics, e As SkinElement, card As Card)
+    Private Sub DrawCircle(g As Graphics, e As SkinElement)
         e.Draw(g)
     End Sub
 
-    Private Sub DrawTextArea(g As Graphics, e As SkinElement, card As Card)
+    Private Sub DrawTextArea(g As Graphics, e As SkinElement)
         e.Draw(g)
     End Sub
 
