@@ -169,17 +169,15 @@ Public Class GridData
 
     End Sub
 
-    Private Sub m_flowLayout_Scroll(sender As Object, e As ScrollEventArgs) Handles m_flowLayout.Scroll
+    'Private Sub m_flowLayout_Scroll(sender As Object, e As ScrollEventArgs) Handles m_flowLayout.Scroll
 
-        Console.Write(e.Type)
+    '    If e.ScrollOrientation = ScrollOrientation.HorizontalScroll AndAlso e.Type = ScrollEventType.ThumbTrack Then
 
-        If e.ScrollOrientation = ScrollOrientation.HorizontalScroll AndAlso e.Type = ScrollEventType.ThumbTrack Then
+    '        m_headerPanel.Left = -e.NewValue
 
-            m_headerPanel.Left = -e.NewValue
+    '    End If
 
-        End If
-
-    End Sub
+    'End Sub
 
     Private Class FlowLayout
         Inherits FlowLayoutPanel
@@ -197,8 +195,19 @@ Public Class GridData
 
         Protected Overrides Sub OnScroll(se As ScrollEventArgs)
 
-            Me.Invalidate()
-            MyBase.OnScroll(se)
+            With CType(Parent, GridData)
+
+                .SuspendLayout()
+
+                Me.Invalidate()
+                MyBase.OnScroll(se)
+
+                .m_headerPanel.Left = -Me.HorizontalScroll.Value
+                .Refresh()
+
+                .ResumeLayout(False)
+
+            End With
 
         End Sub
 
