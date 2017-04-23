@@ -12,7 +12,6 @@ Public Class Frm_Main
         ' Cet appel est requis par le concepteur.
         InitializeComponent()
 
-
         GridData1.AddColumn("Nom").Width = 120
         GridData1.AddColumn("Genre", CellTypes.Combo).Width = 60
         GridData1.AddColumn("Rareté/Grade").Width = 85
