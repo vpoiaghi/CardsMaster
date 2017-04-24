@@ -1,6 +1,6 @@
 {
-  "ImagesDirectory": "F:\\Programmation\\VBA\\Cartes Bruno\\Cartes\\Images",
-  "TexturesDirectory": "F:\\Programmation\\VBA\\Cartes Bruno\\Cartes\\Textures",
+  "ImagesDirectory": "D:\\workspace\\Workspace-perso\\CardsMaster\\data\\Images",
+  "TexturesDirectory": "D:\\workspace\\Workspace-perso\\CardsMaster\\data\\Textures",
   "Cards": [
     {
       "Kind": "Ninja",
