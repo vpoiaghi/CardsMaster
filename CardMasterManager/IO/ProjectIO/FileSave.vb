@@ -12,7 +12,6 @@ Public Class FileSave
         With New SaveFileDialog()
 
             .Filter = "JSON|*.json|XML|*.xml"
-            .CheckFileExists = True
 
             If currentDir Is Nothing Then
                 .InitialDirectory = Application.ExecutablePath
@@ -20,7 +19,7 @@ Public Class FileSave
                 .InitialDirectory = currentDir.FullName
             End If
 
-            .ShowDialog(Me)
+            .ShowDialog()
 
             If .FileName <> "" Then
                 file = New FileInfo(.FileName)
