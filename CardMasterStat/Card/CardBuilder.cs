@@ -31,7 +31,7 @@ namespace CardMasterStat
 
         public CardBuilder withKind(String kind)
         {
-            this.m_card.Kind = kind;
+            this.m_card.Kind = Card.parseKind(kind);
             return this;
         }
 

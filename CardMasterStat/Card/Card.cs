@@ -8,7 +8,7 @@ namespace CardMasterStat
 {
     public class Card
     {
-        public String Kind { get; set; }
+        public CardKind Kind { get; set; }
         public String Name { get; set; }
         public String Rank { get; set; }
         public String Team { get; set; }
@@ -21,6 +21,16 @@ namespace CardMasterStat
         public String Comments { get; set; }
         public CardMasterCard.Card.Texture Background { get; set; }
         public List<CardMasterCard.Card.Power> Powers { get; set; }
+
+        public enum CardKind
+        {
+            Environnement,
+            Equipement,
+            Lieu,
+            Ninja,
+            Ninjutsu,
+            Quête  
+        }
 
         public enum NatureCard
 
@@ -38,12 +48,21 @@ namespace CardMasterStat
             Zone
         }
 
-        public static Card.NatureCard parseNature(String nature)
+        public static NatureCard parseNature(String nature)
         {
             NatureCard toReturn;
             NatureCard.TryParse(nature,out toReturn);
             if (nature.Equals("Lieu légendaire"))
                 toReturn = NatureCard.Zone;
+            return toReturn;
+        }
+
+        public static CardKind parseKind(String kind)
+        {
+            CardKind toReturn;
+            CardKind.TryParse(kind, out toReturn);
+            if (kind.Equals("Lieu légendaire"))
+                toReturn = CardKind.Lieu;
             return toReturn;
         }
 

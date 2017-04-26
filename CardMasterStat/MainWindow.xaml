@@ -7,7 +7,7 @@
         xmlns:DVC="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"
         xmlns:local="clr-namespace:CardMasterStat"
         mc:Ignorable="d"
-        Title="MainWindow" Height="700" Width="900">
+        Title="MainWindow" Height="782" Width="1227">
     <Grid>
         <Menu>
             <MenuItem Header="_File">
@@ -15,11 +15,11 @@
                 <MenuItem Header="_Close" Click="MenuItemClose_Click"/>
             </MenuItem>
         </Menu>
-        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="649" Margin="0,20,0,0" VerticalAlignment="Top" Width="872">
+        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="728" Margin="0,23,0,0" VerticalAlignment="Top" Width="1219">
             <TabItem Header="Répartition par coùt">
                 <Grid Background="#FFE5E5E5" Margin="0,-1,0,1">
-                    <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="chartCost" Background="LightSteelBlue" Margin="10">
-                        <DVC:ColumnSeries DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" />
+                    <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="chartCost" Background="LightSteelBlue" Margin="10,10,0,0">
+                        <DVC:ColumnSeries DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" Margin="0,0,-130,-24" />
                     </DVC:Chart>
                 </Grid>
             </TabItem>
@@ -44,7 +44,11 @@
                     </DVC:Chart>
                 </Grid>
             </TabItem>
-            
+            <TabItem Header="Grille WPF Test">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid Name="cardGrid"/>
+                </Grid>
+            </TabItem>
 
         </TabControl>
 
