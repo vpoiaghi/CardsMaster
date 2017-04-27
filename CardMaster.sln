@@ -7,7 +7,7 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CardMasterCard", "CardMaste
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CardMasterSkin", "CardMasterSkin\CardMasterSkin.vbproj", "{995C5577-EEB1-4270-A937-75CDF6065822}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CardMasterManager", "CardMasterManager\CardMasterManager.vbproj", "{13F0F0D9-9E5E-4BAF-A275-B6C36B2D7DAA}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CardMasterManager_wfa", "CardMasterManager_wfa\CardMasterManager_wfa.vbproj", "{13F0F0D9-9E5E-4BAF-A275-B6C36B2D7DAA}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CardMasterSkinEditor", "CardMasterSkinEditor\CardMasterSkinEditor.vbproj", "{878D0DA7-9A7D-4C5B-808C-9980286D94BD}"
 EndProject
@@ -24,6 +24,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardMasterManager", "CardMasterManager\CardMasterManager.csproj", "{5802607E-400F-44DC-8A11-796E991EB995}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{BD1C43A2-F01A-4D73-B605-03524FECE3C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD1C43A2-F01A-4D73-B605-03524FECE3C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD1C43A2-F01A-4D73-B605-03524FECE3C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5802607E-400F-44DC-8A11-796E991EB995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5802607E-400F-44DC-8A11-796E991EB995}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5802607E-400F-44DC-8A11-796E991EB995}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5802607E-400F-44DC-8A11-796E991EB995}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
