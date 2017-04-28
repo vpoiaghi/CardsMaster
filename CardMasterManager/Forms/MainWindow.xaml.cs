@@ -1,7 +1,10 @@
 ﻿using CardMasterCard.Card;
+using CardMasterImageBuilder;
+using CardMasterManager.Utils;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -23,6 +26,7 @@ namespace CardMasterManager
     /// </summary>
     public partial class MainWindow : Window
     {
+        private CardsProject cardProjet;
         public MainWindow()
         {
             InitializeComponent();
@@ -34,7 +38,7 @@ namespace CardMasterManager
             openFileDialog.Filter = "Json files (*.json)|*.json|All files (*.*)|*.*";
             if (openFileDialog.ShowDialog() == true)
             {
-                CardsProject cardProjet = CardsProject.LoadProject(new FileInfo(openFileDialog.FileName));
+                cardProjet = CardsProject.LoadProject(new FileInfo(openFileDialog.FileName));
                 List<Card> cards = new List<Card>();
                 foreach (CardMasterCard.Card.Card card in cardProjet.Cards)
                 {
@@ -70,12 +74,22 @@ namespace CardMasterManager
         {
             if (cardGrid.SelectedItem != null)
             { 
-                String i = ((Card)cardGrid.SelectedItem).Name;
-                debug.Text = "ligne sélectionnée : " + i;
-                String url = Environment.CurrentDirectory + @"\Yamato.jpg";
-                cardImage.Source = new BitmapImage(new Uri(url));
+                Card c = ((Card)cardGrid.SelectedItem);
+                debug.Text = "ligne sélectionnée : " + c.Name;
+
+                //Select Card from Collection from Name
+                CardMasterCard.Card.Card businessCard = cardProjet.Cards.Where(card => card.Name == c.Name).First();
+                //Refresh Image Component
+                cardImage.Source = imageSourceForImageControl(new Drawer(businessCard, new DirectoryInfo(cardProjet.TexturesDirectory)).DrawCard());
             }
            
         }
+
+        private ImageSource imageSourceForImageControl(System.Drawing.Image image)
+        {
+            DrawingImageToImageSourceConverter c = new DrawingImageToImageSourceConverter();
+            return (ImageSource)c.Convert(image, null,null, System.Globalization.CultureInfo.CurrentCulture);
+        }
+
     }
 }
