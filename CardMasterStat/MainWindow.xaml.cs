@@ -37,7 +37,6 @@ namespace CardMasterStat
             ((ColumnSeries)chartAtk.Series[0]).ItemsSource = computer.GetRepartitionByAttack();
             ((ColumnSeries)chartDef.Series[0]).ItemsSource = computer.GetRepartitionByDefense();
             ((ColumnSeries)chartNature.Series[0]).ItemsSource = computer.GetRepartitionByNature();
-            cardGrid.ItemsSource = cards;
         }
   
 

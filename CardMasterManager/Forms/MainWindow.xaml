@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CardMasterManager"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
+        Title="MainWindow" Height="960" Width="1700">
+    <StackPanel >
         <Menu>
             <MenuItem Header="_Fichier">
                 <MenuItem Header="_Ouvrir" Click="MenuItemOpen_Click"/>
@@ -15,6 +15,21 @@
                 <MenuItem Header="_Quitter" Click="MenuItemClose_Click"/>
             </MenuItem>
         </Menu>
+        <DockPanel LastChildFill="True">
+            <StatusBar DockPanel.Dock="Bottom">
+                <StatusBarItem>
+                    <TextBlock x:Name="debug" Text="" Height="40" Width="1466"/>
+                </StatusBarItem>
+            </StatusBar>
+            <DockPanel Width="375" Height="523" Background="Aqua" Name="panelViewer" Margin="15" DockPanel.Dock="Left">
+                <Image Name="cardImage" Source="Yamato.jpg"></Image>
+            </DockPanel>
+            <DataGrid DockPanel.Dock="Right" Name="cardGrid" Margin="5" Width="1269" Height="847" SelectionMode="Single" SelectionChanged="cardGrid_SelectionChanged"/>
 
-    </Grid>
+        </DockPanel>
+      
+
+
+
+    </StackPanel>
 </Window>

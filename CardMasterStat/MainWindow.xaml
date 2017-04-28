@@ -44,12 +44,6 @@
                     </DVC:Chart>
                 </Grid>
             </TabItem>
-            <TabItem Header="Grille WPF Test">
-                <Grid Background="#FFE5E5E5">
-                    <DataGrid Name="cardGrid"/>
-                </Grid>
-            </TabItem>
-
         </TabControl>
 
     </Grid>
