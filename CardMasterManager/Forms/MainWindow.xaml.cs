@@ -8,6 +8,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -78,18 +79,26 @@ namespace CardMasterManager
                 Card c = ((Card)cardGrid.SelectedItem);
                 debug.Text = "ligne sélectionnée : " + c.Name;
 
-                //Select Card from Collection from Name
-                CardMasterCard.Card.Card businessCard = cardProjet.Cards.Where(card => card.Name == c.Name).First();
-                //Refresh Image Component
-                cardImage.Source = imageSourceForImageControl(new Drawer(businessCard, new DirectoryInfo(cardProjet.TexturesDirectory)).DrawCard());
+                new Thread(() => DisplayCard(c,cardImage)).Start();
+            
             }
            
         }
 
-        private ImageSource imageSourceForImageControl(System.Drawing.Image image)
+        private void DisplayCard(Card c, System.Windows.Controls.Image image)
         {
-            DrawingImageToImageSourceConverter c = new DrawingImageToImageSourceConverter();
-            return (ImageSource)c.Convert(image, null,null, System.Globalization.CultureInfo.CurrentCulture);
+            //Select Card from Collection from Name
+            CardMasterCard.Card.Card businessCard = Card.ConvertToMasterCard(c);
+            Drawer drawer = new Drawer(businessCard, new DirectoryInfo(cardProjet.TexturesDirectory));
+            //Refresh Image Component
+          
+            DrawingImageToImageSourceConverter converter = new DrawingImageToImageSourceConverter();
+            Dispatcher.BeginInvoke(new Action(delegate ()
+            {
+                image.Source = (ImageSource)converter.Convert(drawer.DrawCard(), null, null, System.Globalization.CultureInfo.CurrentCulture);
+            }));
+          
+            
         }
 
     }

@@ -66,6 +66,27 @@ namespace CardMasterManager
             return toReturn;
         }
 
+        public static CardMasterCard.Card.Card ConvertToMasterCard(Card card)
+        {
+            CardMasterCard.Card.Card toReturn = new CardMasterCard.Card.Card();
+            toReturn.Attack = card.Attack.ToString();
+            toReturn.Background = card.Background;
+            toReturn.Chakra = card.Nature.ToString();
+            toReturn.Citation = card.Citation;
+            toReturn.Comments = card.Citation;
+            toReturn.Cost = card.Cost.ToString();
+            toReturn.Defense = card.Defense.ToString();
+            toReturn.Element = card.Element;
+            toReturn.Kind = card.Kind.ToString();
+            toReturn.Name = card.Name;
+            toReturn.Powers = card.Powers;
+            toReturn.Rank = card.Rank;
+            toReturn.Team = card.Team;
+            
+            return toReturn;
+
+        }
+
         public static Card ConvertCard(CardMasterCard.Card.Card sourceCard)
         {
             Card toReturn = CardBuilder.newCard()
