@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Menu x:Name="menu" Height="24" VerticalAlignment="Top">
+        <Menu>
             <MenuItem Header="_Fichier">
                 <MenuItem Header="_Ouvrir" Click="MenuItemOpen_Click"/>
                 <MenuItem Header="_Enregistrer" Click="MenuItemSave_Click"/>
@@ -15,8 +15,6 @@
                 <MenuItem Header="_Quitter" Click="MenuItemClose_Click"/>
             </MenuItem>
         </Menu>
-        <DataGrid x:Name="cardsDataGrid"/>
-
 
     </Grid>
 </Window>
