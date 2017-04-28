@@ -30,6 +30,7 @@ namespace CardMasterManager
         public MainWindow()
         {
             InitializeComponent();
+            cardImage.Source = new BitmapImage(new Uri(Environment.CurrentDirectory + @"\Yamato.jpg"));
         }
 
         private void MenuItemOpen_Click(object sender, RoutedEventArgs e)
