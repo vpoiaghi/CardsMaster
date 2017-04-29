@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CardMasterManager"
         mc:Ignorable="d"
-        Title="MainWindow" Height="960" Width="1700">
+        Title="Card Manager" Height="960" Width="1700" ResizeMode="NoResize">
     <StackPanel >
         <Menu>
             <MenuItem Header="_Fichier">
@@ -24,8 +24,52 @@
             <DockPanel Width="375" Height="523" Background="Aqua" Name="panelViewer" Margin="15" DockPanel.Dock="Left">
                 <Image Name="cardImage" Source="Yamato.jpg"></Image>
             </DockPanel>
-            <DataGrid DockPanel.Dock="Right" Name="cardGrid" Margin="5" Width="1269" Height="847" SelectionMode="Single" SelectionChanged="cardGrid_SelectionChanged"/>
+            <DataGrid DockPanel.Dock="Right" AutoGenerateColumns="False" Name="cardGrid" Margin="5" 
+                      Width="1269" Height="847" SelectionMode="Single" SelectionChanged="cardGrid_SelectionChanged"
+                      AlternatingRowBackground="Azure"  AlternationCount="2">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Kind" Binding="{Binding Path=Kind}">
 
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}">
+                        
+                    </DataGridTextColumn>
+                   
+                    <DataGridTextColumn Header="Rank" Binding="{Binding Path=Rank}">
+
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Team" Binding="{Binding Path=Team}">
+
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Nature" Binding="{Binding Path=Nature}">
+
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Element" Binding="{Binding Path=Element}">
+
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Coût" Binding="{Binding Path=Cost}">
+
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Attack" Binding="{Binding Path=Attack}">
+
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Defense" Binding="{Binding Path=Defense}">
+
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Powers" Binding="{Binding Path=Powers}">
+
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Citation" Binding="{Binding Path=Citation}">
+
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Comments" Binding="{Binding Path=Comments}">
+
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Background" Binding="{Binding Path=Background}">
+
+                    </DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
         </DockPanel>
       
 
