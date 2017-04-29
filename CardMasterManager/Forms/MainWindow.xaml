@@ -4,8 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CardMasterManager"
+        xmlns:utils="clr-namespace:CardMasterManager.Utils"
+        xmlns:card="CardMasterManager.Card"
         mc:Ignorable="d"
         Title="MainWindow" Height="960" Width="1700">
+
+    <Window.Resources>
+        <utils:GeneralEnumConverter x:Key="GeneralEnumConverter"/>
+    </Window.Resources>
+    
     <StackPanel >
         <Menu>
             <MenuItem Header="_Fichier">
@@ -24,7 +31,52 @@
             <DockPanel Width="375" Height="523" Background="Aqua" Name="panelViewer" Margin="15" DockPanel.Dock="Left">
                 <Image Name="cardImage" Source="Yamato.jpg"></Image>
             </DockPanel>
-            <DataGrid DockPanel.Dock="Right" Name="cardGrid" Margin="5" Width="1269" Height="847" SelectionMode="Single" SelectionChanged="cardGrid_SelectionChanged"/>
+
+            <DataGrid DockPanel.Dock="Right" Name="cardGrid" Margin="5" Width="1269" Height="847" SelectionMode="Single" SelectionChanged="cardGrid_SelectionChanged">
+                <DataGrid.Columns>
+
+                    <DataGridTextColumn Header="Nom" MinWidth="120" Binding="{Binding Name}"/>
+
+                    <DataGridTemplateColumn Header="Genre" Width="60">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <ComboBox IsEditable="True" Text="{Binding Kind}" ItemsSource="{Binding Source={utils:EnumBindingSource {x:Type local:CardKind}}}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTextColumn Header="Rareté/Grade" MinWidth="100" Binding="{Binding Rank}"/>
+                    <DataGridTextColumn Header="Equipe" MinWidth="80" Binding="{Binding Team}"/>
+
+                    <DataGridTemplateColumn Header="Nature chakra" MinWidth="110">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <ComboBox IsEditable="True" 
+                                          Text="{Binding Nature, Converter={StaticResource GeneralEnumConverter}, UpdateSourceTrigger=PropertyChanged}" 
+                                          BorderBrush="Transparent"
+                                          ItemsSource="{Binding Source={utils:EnumBindingSource {x:Type local:NatureCard}}}"
+                                          >
+                                    <ComboBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Converter={StaticResource GeneralEnumConverter}}"/>
+                                        </DataTemplate>
+                                    </ComboBox.ItemTemplate>
+                                </ComboBox>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTextColumn Header="Element" MinWidth="120" Binding="{Binding Element}"/>
+                    <DataGridTextColumn Header="Cout" MinWidth="60" Binding="{Binding Cost}"/>
+                    <DataGridTextColumn Header="Atk" MinWidth="60" Binding="{Binding Attack}"/>
+                    <DataGridTextColumn Header="Def." MinWidth="60" Binding="{Binding Defense}"/>
+                    <DataGridTextColumn Header="Pouvoirs" MinWidth="200" Binding="{Binding Powers}"/>
+                    
+                </DataGrid.Columns>
+
+            </DataGrid>
+
+
 
         </DockPanel>
       

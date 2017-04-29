@@ -77,6 +77,8 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Utils\DrawingImageToImageSourceConverter.cs" />
+    <Compile Include="Utils\EnumBindingSourceExtension.cs" />
+    <Compile Include="Utils\GeneralEnumConverter.cs" />
     <Page Include="Forms\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -32,7 +32,7 @@ namespace CardMasterManager
         public MainWindow()
         {
             InitializeComponent();
-            cardImage.Source = new BitmapImage(new Uri(Environment.CurrentDirectory + @"\Yamato.jpg"));
+            //cardImage.Source = new BitmapImage(new Uri(Environment.CurrentDirectory + @"\Yamato.jpg"));
         }
 
         private void MenuItemOpen_Click(object sender, RoutedEventArgs e)
@@ -54,7 +54,13 @@ namespace CardMasterManager
 
         private void LoadCards(List<Card> cards)
         {
-            cardGrid.ItemsSource = cards;
+            //cardGrid.ItemsSource = cards;
+
+            foreach ( Card card in cards )
+            {
+                cardGrid.Items.Add(card);
+            }
+
         }
 
         private void MenuItemSave_Click(object sender, RoutedEventArgs e)
@@ -76,18 +82,18 @@ namespace CardMasterManager
         private void cardGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (cardGrid.SelectedItem != null)
-            { 
+            {
                 Card c = ((Card)cardGrid.SelectedItem);
                 debug.Text = "ligne sélectionnée : " + c.Name;
                 if (!c.Equals(previousCard))
                 {
                     previousCard = c;
-                    new Thread(() => DisplayCard(c,cardImage)).Start();
+                    new Thread(() => DisplayCard(c, cardImage)).Start();
                 }
 
 
             }
-           
+
         }
 
         private void DisplayCard(Card c, System.Windows.Controls.Image image)
@@ -106,5 +112,9 @@ namespace CardMasterManager
             
         }
 
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

@@ -3,9 +3,35 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
 
 namespace CardMasterManager
 {
+    public enum CardKind
+    {
+        Environnement,
+        Equipement,
+        Lieu,
+        Ninja,
+        Ninjutsu,
+        Quête
+    }
+
+    public enum NatureCard
+    {
+        Feu,
+        Eau,
+        Vent,
+        Foudre,
+        Terre,
+        Special,
+        Physique,
+        Equipement,
+        Ninjutsu,
+        Environnement,
+        [Description("Lieu légendaire")] Zone
+    }
+
     public class Card
     {
         public CardKind Kind { get; set; }
@@ -22,36 +48,10 @@ namespace CardMasterManager
         public CardMasterCard.Card.Texture Background { get; set; }
         public List<CardMasterCard.Card.Power> Powers { get; set; }
 
-        public enum CardKind
-        {
-            Environnement,
-            Equipement,
-            Lieu,
-            Ninja,
-            Ninjutsu,
-            Quête  
-        }
-
-        public enum NatureCard
-
-        {
-            Feu,
-            Eau,
-            Vent,
-            Foudre,
-            Terre,
-            Special,
-            Physique,
-            Equipement,
-            Ninjutsu,
-            Environnement,
-            Zone
-        }
-
         public static NatureCard parseNature(String nature)
         {
             NatureCard toReturn;
-            NatureCard.TryParse(nature,out toReturn);
+            NatureCard.TryParse(nature, out toReturn);
             if (nature.Equals("Lieu légendaire"))
                 toReturn = NatureCard.Zone;
             return toReturn;

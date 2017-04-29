@@ -47,13 +47,7 @@ namespace CardMasterManager
             return this;
         }
 
-        public CardBuilder withNature(Card.NatureCard nature)
-        {
-            this.m_card.Nature = nature;
-            return this;
-        }
-
-        public CardBuilder withNature(String nature)
+        public CardBuilder withNature(string nature)
         {
             this.m_card.Nature = Card.parseNature(nature);
             return this;
