@@ -7,7 +7,7 @@
         xmlns:utils="clr-namespace:CardMasterManager.Utils"
         xmlns:card="CardMasterManager.Card"
         mc:Ignorable="d"
-        Title="MainWindow" Height="960" Width="1700">
+        Title="Card Manager" Height="960" Width="1700" ResizeMode="NoResize">
 
     <Window.Resources>
         <utils:GeneralEnumConverter x:Key="GeneralEnumConverter"/>
@@ -32,7 +32,8 @@
                 <Image Name="cardImage" Source="Yamato.jpg"></Image>
             </DockPanel>
 
-            <DataGrid DockPanel.Dock="Right" Name="cardGrid" Margin="5" Width="1269" Height="847" SelectionMode="Single" SelectionChanged="cardGrid_SelectionChanged">
+            <DataGrid DockPanel.Dock="Right" Name="cardGrid" Margin="5" Width="1269" Height="847" SelectionMode="Single" SelectionChanged="cardGrid_SelectionChanged"
+                      AlternatingRowBackground="Azure"  AlternationCount="2">
                 <DataGrid.Columns>
 
                     <DataGridTextColumn Header="Nom" MinWidth="120" Binding="{Binding Name}"/>
@@ -76,12 +77,7 @@
 
             </DataGrid>
 
-
-
         </DockPanel>
-      
-
-
 
     </StackPanel>
 </Window>
