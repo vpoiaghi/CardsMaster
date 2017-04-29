@@ -32,12 +32,18 @@
                 <Image Name="cardImage" Source="Yamato.jpg"></Image>
             </DockPanel>
 
-            <DataGrid DockPanel.Dock="Right" Name="cardGrid" Margin="5" Width="1269" Height="847" SelectionMode="Single" SelectionChanged="cardGrid_SelectionChanged"
-                      AlternatingRowBackground="Azure"  AlternationCount="2">
+            <DataGrid DockPanel.Dock="Right" Name="cardGrid" Margin="5" Width="1269" Height="847" SelectionMode="Single" AutoGenerateColumns="False" AlternatingRowBackground="Azure"  AlternationCount="2"
+                      SelectionChanged="cardGrid_SelectionChanged" >
                 <DataGrid.Columns>
 
-                    <DataGridTextColumn Header="Nom" MinWidth="120" Binding="{Binding Name}"/>
-
+                    <DataGridTemplateColumn Header="Nom" MinWidth="120">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding Name}" BorderBrush="Transparent"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    
                     <DataGridTemplateColumn Header="Genre" MinWidth="60">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
@@ -56,8 +62,21 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
 
-                    <DataGridTextColumn Header="Rareté/Grade" MinWidth="100" Binding="{Binding Rank}"/>
-                    <DataGridTextColumn Header="Equipe" MinWidth="80" Binding="{Binding Team}"/>
+                    <DataGridTemplateColumn Header="Rareté/Grade" MinWidth="100">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding Rank}" BorderBrush="Transparent"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTemplateColumn Header="Equipe" MinWidth="80">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding Team}" BorderBrush="Transparent"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
 
                     <DataGridTemplateColumn Header="Nature chakra" MinWidth="110">
                         <DataGridTemplateColumn.CellTemplate>
@@ -77,11 +96,45 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
 
-                    <DataGridTextColumn Header="Element" MinWidth="120" Binding="{Binding Element}"/>
-                    <DataGridTextColumn Header="Cout" MinWidth="60" Binding="{Binding Cost}"/>
-                    <DataGridTextColumn Header="Atk" MinWidth="60" Binding="{Binding Attack}"/>
-                    <DataGridTextColumn Header="Def." MinWidth="60" Binding="{Binding Defense}"/>
-                    <DataGridTextColumn Header="Pouvoirs" MinWidth="200" Binding="{Binding Powers}"/>
+                    <DataGridTemplateColumn Header="Element" MinWidth="120">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding Element}" BorderBrush="Transparent"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTemplateColumn Header="Cout" MinWidth="60">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding Cost}" BorderBrush="Transparent"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTemplateColumn Header="Atk" MinWidth="60">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding Attack}" BorderBrush="Transparent"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTemplateColumn Header="Def." MinWidth="60">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding Defense}" BorderBrush="Transparent"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTemplateColumn Header="Pouvoirs" MinWidth="200">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding Powers}" BorderBrush="Transparent"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
                     
                 </DataGrid.Columns>
 
