@@ -38,10 +38,20 @@
 
                     <DataGridTextColumn Header="Nom" MinWidth="120" Binding="{Binding Name}"/>
 
-                    <DataGridTemplateColumn Header="Genre" Width="60">
+                    <DataGridTemplateColumn Header="Genre" MinWidth="60">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <ComboBox IsEditable="True" Text="{Binding Kind}" ItemsSource="{Binding Source={utils:EnumBindingSource {x:Type local:CardKind}}}" />
+                                <ComboBox IsEditable="True" 
+                                          Text="{Binding Kind, Converter={StaticResource GeneralEnumConverter}, UpdateSourceTrigger=PropertyChanged}" 
+                                          BorderBrush="Transparent"
+                                          ItemsSource="{Binding Source={utils:EnumBindingSource {x:Type local:CardKind}}}"
+                                          >
+                                    <ComboBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Converter={StaticResource GeneralEnumConverter}}"/>
+                                        </DataTemplate>
+                                    </ComboBox.ItemTemplate>
+                                </ComboBox>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
