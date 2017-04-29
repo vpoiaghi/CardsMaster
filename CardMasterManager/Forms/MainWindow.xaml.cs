@@ -28,6 +28,7 @@ namespace CardMasterManager
     public partial class MainWindow : Window
     {
         private CardsProject cardProjet;
+        private Card previousCard;
         public MainWindow()
         {
             InitializeComponent();
@@ -78,9 +79,13 @@ namespace CardMasterManager
             { 
                 Card c = ((Card)cardGrid.SelectedItem);
                 debug.Text = "ligne sélectionnée : " + c.Name;
+                if (!c.Equals(previousCard))
+                {
+                    previousCard = c;
+                    new Thread(() => DisplayCard(c,cardImage)).Start();
+                }
 
-                new Thread(() => DisplayCard(c,cardImage)).Start();
-            
+
             }
            
         }
