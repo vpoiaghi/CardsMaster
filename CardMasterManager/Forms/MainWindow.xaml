@@ -51,6 +51,7 @@
                                           Text="{Binding Kind, Converter={StaticResource GeneralEnumConverter}, UpdateSourceTrigger=PropertyChanged}" 
                                           BorderBrush="Transparent"
                                           ItemsSource="{Binding Source={utils:EnumBindingSource {x:Type local:CardKind}}}"
+                                          GotFocus="ComboBox_GotFocus"
                                           >
                                     <ComboBox.ItemTemplate>
                                         <DataTemplate>
@@ -81,11 +82,11 @@
                     <DataGridTemplateColumn Header="Nature chakra" MinWidth="110">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <ComboBox IsEditable="True" 
+                                <ComboBox IsEditable="True"  
                                           Text="{Binding Nature, Converter={StaticResource GeneralEnumConverter}, UpdateSourceTrigger=PropertyChanged}" 
                                           BorderBrush="Transparent"
                                           ItemsSource="{Binding Source={utils:EnumBindingSource {x:Type local:NatureCard}}}"
-                                          >
+                                          GotFocus="ComboBox_GotFocus">
                                     <ComboBox.ItemTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding Converter={StaticResource GeneralEnumConverter}}"/>

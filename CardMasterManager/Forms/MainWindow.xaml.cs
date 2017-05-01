@@ -112,5 +112,11 @@ namespace CardMasterManager
             
         }
 
+        private void ComboBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            ComboBox cb = (ComboBox)sender;
+            Card card = (Card)cb.DataContext;
+            cardGrid.SelectedItem = card;
+        }
     }
 }
