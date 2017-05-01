@@ -23,7 +23,7 @@ Public Class Drawer
         g.SmoothingMode = Drawing2D.SmoothingMode.AntiAlias
 
         For Each e As SkinElement In m_skin.Elements
-            DrawElement(g, e)
+            e.Draw(g, m_card)
         Next
 
         g.Dispose()
@@ -31,42 +31,5 @@ Public Class Drawer
         Return img
 
     End Function
-
-    Private Sub DrawElement(g As Graphics, e As SkinElement)
-
-        Select Case e.GetType
-            Case GetType(SERectangle) : DrawRectangle(g, e)
-            Case GetType(SERoundedRectangle) : DrawRoundedRectangle(g, e)
-            Case GetType(SECurvedRectangle) : DrawCurvedRectangle(g, e)
-            Case GetType(SESquare) : DrawSquare(g, e)
-            Case GetType(SECircle) : DrawCircle(g, e)
-            Case GetType(SETextArea) : DrawTextArea(g, e)
-        End Select
-
-    End Sub
-
-    Private Sub DrawRectangle(g As Graphics, e As SkinElement)
-        e.Draw(g)
-    End Sub
-
-    Private Sub DrawRoundedRectangle(g As Graphics, e As SkinElement)
-        e.Draw(g)
-    End Sub
-
-    Private Sub DrawCurvedRectangle(g As Graphics, e As SkinElement)
-        e.Draw(g)
-    End Sub
-
-    Private Sub DrawSquare(g As Graphics, e As SkinElement)
-        e.Draw(g)
-    End Sub
-
-    Private Sub DrawCircle(g As Graphics, e As SkinElement)
-        e.Draw(g)
-    End Sub
-
-    Private Sub DrawTextArea(g As Graphics, e As SkinElement)
-        e.Draw(g)
-    End Sub
 
 End Class

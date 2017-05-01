@@ -1,4 +1,6 @@
-﻿Namespace Card
+﻿Imports CardMasterCard.Utils
+
+Namespace Card
 
     Public Class Card
 

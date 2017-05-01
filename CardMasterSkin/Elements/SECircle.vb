@@ -1,4 +1,6 @@
-﻿Imports System.Drawing
+﻿Imports CardMasterCard.Card
+Imports System.Drawing
+Imports System.Drawing.Drawing2D
 Imports System.IO
 
 Namespace Skins
@@ -19,11 +21,16 @@ Namespace Skins
 
         End Sub
 
-        Public Overrides Sub Draw(g As Graphics)
+        Public Overrides Function GetPath(card As Card) As GraphicsPath
 
-            g.FillEllipse(GetBackground, X, Y, Width, Height)
+            Dim path As New GraphicsPath()
 
-        End Sub
+            path.AddEllipse(X, Y, Width, Height)
+
+            Return path
+
+        End Function
+
 
     End Class
 

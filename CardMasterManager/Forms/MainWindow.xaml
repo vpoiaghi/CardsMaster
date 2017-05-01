@@ -133,7 +133,7 @@
                     <DataGridTemplateColumn Header="Pouvoirs" MinWidth="200">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBox Text="{Binding Powers, Converter={StaticResource GeneralListConverter}}" BorderBrush="Transparent"/>
+                                <TextBox Text="{Binding Powers, Converter={StaticResource GeneralListConverter}, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>

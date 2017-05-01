@@ -1,4 +1,5 @@
-﻿Imports System.Drawing
+﻿Imports CardMasterCard.Card
+Imports System.Drawing
 Imports System.Drawing.Drawing2D
 Imports System.IO
 
@@ -23,7 +24,10 @@ Namespace Skins
         Private m_texturesDirectory As DirectoryInfo
         Private m_type As TextureTypes
 
-        Public MustOverride Sub Draw(g As Graphics)
+        Private m_shadowSize As Integer
+        Private m_shadowAngle As Integer
+
+        Public MustOverride Function GetPath(card As Card) As GraphicsPath
 
         Protected Sub New(width As Integer, height As Integer)
             Me.New(0, 0, width, height)
@@ -35,7 +39,38 @@ Namespace Skins
             Me.Width = width
             Me.Height = height
 
+            m_shadowSize = 0
+            m_shadowAngle = 0
+
             SetBackground(Color.Black)
+
+        End Sub
+
+        Public Sub Draw(g As Graphics, card As Card)
+
+            Dim path As GraphicsPath = GetPath(card)
+
+            If m_shadowSize > 0 Then
+
+                Dim radianAngle As Double = m_shadowAngle * Math.PI / 180
+
+                Dim transactionX As Integer = Math.Cos(radianAngle) * m_shadowSize
+                Dim transactionY As Integer = Math.Sin(radianAngle) * m_shadowSize
+
+                Dim translateMatrix As New Matrix
+                translateMatrix.Translate(transactionX, transactionY)
+
+                Dim shadowPath As GraphicsPath = path.Clone()
+                shadowPath.Transform(translateMatrix)
+
+                Dim b As Brush = New SolidBrush(Color.FromArgb(120, 0, 0, 0))
+
+                g.FillPath(b, shadowPath)
+
+            End If
+
+            g.FillPath(GetBackground, path)
+
 
         End Sub
 
@@ -91,6 +126,11 @@ Namespace Skins
             Return bkg
 
         End Function
+
+        Public Sub SetShadow(size As Integer, angle As Integer)
+            m_shadowSize = size
+            m_shadowAngle = angle
+        End Sub
 
     End Class
 
