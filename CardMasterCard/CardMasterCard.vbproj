@@ -85,7 +85,6 @@
     <Compile Include="Cards\Power.vb" />
     <Compile Include="Cards\Texture.vb" />
     <Compile Include="Utils\List.vb" />
-    <Compile Include="Utils\ListItem.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

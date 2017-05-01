@@ -1,7 +1,6 @@
 ﻿Namespace Card
 
     Public Class Power
-        Inherits ListItem
 
         Private m_description As String
 
@@ -24,10 +23,6 @@
         Public Overrides Function ToString() As String
             Return Me.Description
         End Function
-
-        Public Overrides Sub FromString(value As String)
-            Me.Description = value
-        End Sub
 
     End Class
 

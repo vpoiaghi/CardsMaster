@@ -1,6 +1,6 @@
 ﻿Namespace Utils
 
-    Public Class List(Of T As ListItem)
+    Public Class List(Of T)
         Inherits System.Collections.Generic.List(Of T)
 
         Public Overrides Function ToString() As String
@@ -27,27 +27,6 @@
             Return result
 
         End Function
-
-        Public Shared Narrowing Operator CType(ByVal value As String) As List(Of T)
-
-            Dim list As New List(Of T)
-
-            If Not String.IsNullOrEmpty(value) Then
-
-                Dim values() As String = value.Split(Environment.NewLine)
-
-                For Each v As String In values
-
-                    Dim item As T = GetType(T).GetConstructor(Type.EmptyTypes).Invoke(Nothing)
-                    item.FromString(v)
-
-                Next
-
-            End If
-
-            Return list
-
-        End Operator
 
     End Class
 
