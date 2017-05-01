@@ -1,9 +1,9 @@
 ﻿using CardMasterCard.Card;
-using CardMasterCard.Utils;
 using CardMasterImageBuilder;
 using CardMasterManager.Utils;
 using Microsoft.Win32;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 using System.Windows;
@@ -77,7 +77,7 @@ namespace CardMasterManager
             {
                 Card c = ((Card)cardGrid.SelectedItem);
                 //debug.Text = "ligne sélectionnée : " + c.Name;
-                if (! (c == previousCard))
+                if (!(c == previousCard))
                 {
                     previousCard = c;
                     new Thread(() => DisplayCard(c, cardImage)).Start();
@@ -94,14 +94,14 @@ namespace CardMasterManager
             CardMasterCard.Card.Card businessCard = Card.ConvertToMasterCard(c);
             Drawer drawer = new Drawer(businessCard, new DirectoryInfo(cardProjet.TexturesDirectory));
             //Refresh Image Component
-          
+
             DrawingImageToImageSourceConverter converter = new DrawingImageToImageSourceConverter();
             Dispatcher.BeginInvoke(new Action(delegate ()
             {
                 image.Source = (ImageSource)converter.Convert(drawer.DrawCard(), null, null, System.Globalization.CultureInfo.CurrentCulture);
             }));
-          
-            
+
+
         }
 
         private void ComboBox_GotFocus(object sender, RoutedEventArgs e)

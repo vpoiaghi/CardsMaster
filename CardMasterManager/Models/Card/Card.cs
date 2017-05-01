@@ -76,7 +76,10 @@ namespace CardMasterManager
             toReturn.Element = card.Element;
             toReturn.Kind = card.Kind.ToString();
             toReturn.Name = card.Name;
-            toReturn.Powers = card.Powers;
+
+            toReturn.Powers = new List<CardMasterCard.Card.Power>();
+            toReturn.Powers.AddRange(card.Powers);
+
             toReturn.Rank = card.Rank;
             toReturn.Team = card.Team;
             

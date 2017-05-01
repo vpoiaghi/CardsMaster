@@ -1,13 +1,8 @@
-﻿using System;
+﻿using CardMasterCard.Utils;
+using System;
+using System.Diagnostics;
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Data;
-using System.ComponentModel;
-using System.Reflection;
-using System.Windows;
 
 namespace CardMasterManager.Utils
 {
@@ -17,20 +12,13 @@ namespace CardMasterManager.Utils
 
         public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
-            string r = ListToString((IEnumerable)value);
-
-            //if (r == null || r.Length==0)
-            //{
-            //    MessageBox.Show("vide");
-            //}
-
-            return r;
-
+            return value.ToString();
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
-            throw new NotImplementedException();
+            Debug.WriteLine("=== back");
+            return value;
         }
 
         public static string ListToString(IEnumerable list)
@@ -57,7 +45,5 @@ namespace CardMasterManager.Utils
 
         }
 
-
-        
     }
 }
