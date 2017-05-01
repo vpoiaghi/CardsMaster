@@ -11,6 +11,7 @@
 
     <Window.Resources>
         <utils:GeneralEnumConverter x:Key="GeneralEnumConverter"/>
+        <utils:GeneralListConverter x:Key="GeneralListConverter"/>
     </Window.Resources>
     
     <StackPanel >
@@ -32,8 +33,8 @@
                 <Image Name="cardImage" Source="Yamato.jpg"></Image>
             </DockPanel>
 
-            <DataGrid DockPanel.Dock="Right" Name="cardGrid" Margin="5" Width="1269" Height="847" SelectionMode="Single" AutoGenerateColumns="False" AlternatingRowBackground="Azure"  AlternationCount="2"
-                      SelectionChanged="cardGrid_SelectionChanged" >
+            <DataGrid DockPanel.Dock="Right" Name="cardGrid" Margin="5" Width="1269" Height="847" SelectionMode="Single" AutoGenerateColumns="False" AlternatingRowBackground="Azure" AlternationCount="2" IsReadOnly="False"
+                      SelectionChanged="cardGrid_SelectionChanged" ItemsSource="{Binding}">
                 <DataGrid.Columns>
 
                     <DataGridTemplateColumn Header="Nom" MinWidth="120">
@@ -132,7 +133,7 @@
                     <DataGridTemplateColumn Header="Pouvoirs" MinWidth="200">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBox Text="{Binding Powers}" BorderBrush="Transparent"/>
+                                <TextBox Text="{Binding Powers, Converter={StaticResource GeneralListConverter}}" BorderBrush="Transparent"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>

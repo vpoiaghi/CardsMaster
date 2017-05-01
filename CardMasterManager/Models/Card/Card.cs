@@ -103,6 +103,7 @@ namespace CardMasterManager
                                 .withPowers(sourceCard.Powers)
                                 .withRank(sourceCard.Rank)
                                 .withTeam(sourceCard.Team)
+                                .withPowers(sourceCard.Powers)
                                 .build();
             return toReturn;
         }

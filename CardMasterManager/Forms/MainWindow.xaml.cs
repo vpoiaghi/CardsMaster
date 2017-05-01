@@ -56,6 +56,8 @@ namespace CardMasterManager
         {
             //cardGrid.ItemsSource = cards;
 
+            cardGrid.Items.Clear();
+
             foreach ( Card card in cards )
             {
                 cardGrid.Items.Add(card);
@@ -84,8 +86,8 @@ namespace CardMasterManager
             if (cardGrid.SelectedItem != null)
             {
                 Card c = ((Card)cardGrid.SelectedItem);
-                debug.Text = "ligne sélectionnée : " + c.Name;
-                if (!c.Equals(previousCard))
+                //debug.Text = "ligne sélectionnée : " + c.Name;
+                if (! (c == previousCard))
                 {
                     previousCard = c;
                     new Thread(() => DisplayCard(c, cardImage)).Start();
@@ -118,5 +120,6 @@ namespace CardMasterManager
             Card card = (Card)cb.DataContext;
             cardGrid.SelectedItem = card;
         }
+
     }
 }

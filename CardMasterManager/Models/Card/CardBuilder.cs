@@ -129,9 +129,9 @@ namespace CardMasterManager
             return this;
         }
 
-        public CardBuilder withPowers(List<CardMasterCard.Card.Power> power)
+        public CardBuilder withPowers(List<CardMasterCard.Card.Power> powers)
         {
-            this.m_card.Powers = power;
+            this.m_card.Powers = powers;
             return this;
         }
 
