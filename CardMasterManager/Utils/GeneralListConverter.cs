@@ -19,10 +19,10 @@ namespace CardMasterManager.Utils
         {
             string r = ListToString((IEnumerable)value);
 
-            if (r == null || r.Length==0)
-            {
-                MessageBox.Show("vide");
-            }
+            //if (r == null || r.Length==0)
+            //{
+            //    MessageBox.Show("vide");
+            //}
 
             return r;
 
@@ -30,9 +30,7 @@ namespace CardMasterManager.Utils
 
         public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
-            MessageBox.Show("ok");
-            return null;
-
+            throw new NotImplementedException();
         }
 
         public static string ListToString(IEnumerable list)
