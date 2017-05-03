@@ -27,7 +27,9 @@ Namespace Skins
         Private m_shadowSize As Integer
         Private m_shadowAngle As Integer
 
-        Public MustOverride Function GetPath(card As Card) As GraphicsPath
+        Protected m_graphics As Graphics
+
+        Public MustOverride Function GetPathes(card As Card) As List(Of GraphicsPath)
 
         Protected Sub New(width As Integer, height As Integer)
             Me.New(0, 0, width, height)
@@ -48,29 +50,21 @@ Namespace Skins
 
         Public Sub Draw(g As Graphics, card As Card)
 
-            Dim path As GraphicsPath = GetPath(card)
+            m_graphics = g
 
-            If m_shadowSize > 0 Then
+            Dim pathes As List(Of GraphicsPath) = GetPathes(card)
 
-                Dim radianAngle As Double = m_shadowAngle * Math.PI / 180
+            For Each path As GraphicsPath In pathes
 
-                Dim transactionX As Integer = Math.Cos(radianAngle) * m_shadowSize
-                Dim transactionY As Integer = Math.Sin(radianAngle) * m_shadowSize
+                If m_shadowSize > 0 Then
+                    DrawShadow(path)
+                End If
 
-                Dim translateMatrix As New Matrix
-                translateMatrix.Translate(transactionX, transactionY)
+                DrawElement(path)
 
-                Dim shadowPath As GraphicsPath = path.Clone()
-                shadowPath.Transform(translateMatrix)
+            Next
 
-                Dim b As Brush = New SolidBrush(Color.FromArgb(120, 0, 0, 0))
-
-                g.FillPath(b, shadowPath)
-
-            End If
-
-            g.FillPath(GetBackground, path)
-
+            m_graphics = Nothing
 
         End Sub
 
@@ -130,6 +124,33 @@ Namespace Skins
         Public Sub SetShadow(size As Integer, angle As Integer)
             m_shadowSize = size
             m_shadowAngle = angle
+        End Sub
+
+        Protected Function GetGraphics() As Graphics
+            Return m_graphics
+        End Function
+
+        Protected Overridable Sub DrawElement(path As GraphicsPath)
+            m_graphics.FillPath(GetBackground, path)
+        End Sub
+
+        Protected Overridable Sub DrawShadow(path As GraphicsPath)
+
+            Dim radianAngle As Double = m_shadowAngle * Math.PI / 180
+
+            Dim transactionX As Integer = Math.Cos(radianAngle) * m_shadowSize
+            Dim transactionY As Integer = Math.Sin(radianAngle) * m_shadowSize
+
+            Dim translateMatrix As New Matrix
+            translateMatrix.Translate(transactionX, transactionY)
+
+            Dim shadowPath As GraphicsPath = path.Clone()
+            shadowPath.Transform(translateMatrix)
+
+            Dim b As Brush = New SolidBrush(Color.FromArgb(120, 0, 0, 0))
+
+            m_graphics.FillPath(b, shadowPath)
+
         End Sub
 
     End Class

@@ -21,6 +21,8 @@ Public Class Drawer
         Dim g As Graphics = Graphics.FromImage(img)
 
         g.SmoothingMode = Drawing2D.SmoothingMode.AntiAlias
+        g.TextRenderingHint = Text.TextRenderingHint.AntiAlias
+        g.CompositingQuality = Drawing2D.CompositingQuality.HighQuality
 
         For Each e As SkinElement In m_skin.Elements
             e.Draw(g, m_card)

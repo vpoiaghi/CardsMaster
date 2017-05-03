@@ -16,13 +16,16 @@ Namespace Skins
             MyBase.New(x, y, width, height)
         End Sub
 
-        Public Overrides Function GetPath(card As Card) As GraphicsPath
+        Public Overrides Function GetPathes(card As Card) As List(Of GraphicsPath)
 
+            Dim pathes As New List(Of GraphicsPath)()
             Dim path As New GraphicsPath()
 
             path.AddRectangle(New Rectangle(X, Y, Width, Height))
 
-            Return path
+            pathes.Add(path)
+
+            Return pathes
 
         End Function
 

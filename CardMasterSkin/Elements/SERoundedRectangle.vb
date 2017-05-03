@@ -29,19 +29,20 @@ Namespace Skins
             m_cornerRadius = cornerRadius
         End Sub
 
-        Public Overrides Function GetPath(card As Card) As GraphicsPath
+        Public Overrides Function GetPathes(card As Card) As List(Of GraphicsPath)
+
+            Dim pathes As New List(Of GraphicsPath)()
+            Dim path As New GraphicsPath()
 
             Dim w As Integer = Width
             Dim h As Integer = Height
             Dim b As Integer = GetCornerRadius()
             Dim r As Integer = 2 * b
 
-            Dim path As New GraphicsPath()
-
-            path.StartFigure()
+            Path.StartFigure()
 
             ' Coin haut/gauche
-            path.AddArc(0, 0, r, r, 180, 90)
+            Path.AddArc(0, 0, r, r, 180, 90)
             ' Côté haut
             path.AddLine(b, 0, w - b, 0)
             ' Coin haut/droit
@@ -57,7 +58,9 @@ Namespace Skins
 
             path.CloseFigure()
 
-            Return path
+            pathes.Add(path)
+
+            Return pathes
 
         End Function
 

@@ -29,13 +29,14 @@ Namespace Skins
             m_curveSize = curveSize
         End Sub
 
-        Public Overrides Function GetPath(card As Card) As GraphicsPath
+        Public Overrides Function GetPathes(card As Card) As List(Of GraphicsPath)
 
             Dim w As Integer = Width
             Dim h As Integer = Height
             Dim c As Integer = GetCurveSize()
             Dim d As Integer = 2 * c
 
+            Dim pathes As New List(Of GraphicsPath)()
             Dim path As New GraphicsPath()
 
             path.StartFigure()
@@ -50,7 +51,9 @@ Namespace Skins
             ' Côté bas
             path.CloseFigure()
 
-            Return path
+            pathes.Add(path)
+
+            Return pathes
 
         End Function
 

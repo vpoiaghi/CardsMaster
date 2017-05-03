@@ -34,6 +34,7 @@ Public Class SkinFactory
 
         skinElement = New SETextArea(22, 22, w - 44, 40, "<Nom>")
         CType(skinElement, SETextArea).TextAttribute = "Name"
+        CType(skinElement, SETextArea).TextVerticalAlign = VerticalAlignment.Center
         skin.Elements.Add(skinElement)
 
         ' Zone de coût
@@ -45,6 +46,7 @@ Public Class SkinFactory
         skinElement = New SETextArea(w - 65, 27, 30, 30, "?")
         CType(skinElement, SETextArea).TextAttribute = "Cost"
         CType(skinElement, SETextArea).TextAlign = HorizontalAlignment.Center
+        CType(skinElement, SETextArea).TextVerticalAlign = VerticalAlignment.Center
         skin.Elements.Add(skinElement)
 
         ' Image
@@ -59,6 +61,7 @@ Public Class SkinFactory
 
         skinElement = New SETextArea(22, 282, w - 44, 40, "<Equipe>")
         CType(skinElement, SETextArea).TextAttribute = "Team"
+        CType(skinElement, SETextArea).TextVerticalAlign = VerticalAlignment.Center
         skin.Elements.Add(skinElement)
 
         ' Zone de pouvoirs
@@ -66,7 +69,7 @@ Public Class SkinFactory
         skinElement.SetBackground(texturesDirectory, "Pierre 01")
         skin.Elements.Add(skinElement)
 
-        skinElement = New SETextArea(30, 322, w - 60, 160, "<Epouvoirs>")
+        skinElement = New SETextArea(30, 322, w - 60, 150, "<Epouvoirs>")
         CType(skinElement, SETextArea).TextAttribute = "Powers"
         skin.Elements.Add(skinElement)
 
