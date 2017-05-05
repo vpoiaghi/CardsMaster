@@ -1,6 +1,4 @@
 {
-  "ImagesDirectory": "F:\\Programmation\\VB .Net\\Cartes Bruno\\CardsMaster\\data\\Images",
-  "TexturesDirectory": "F:\\Programmation\\VB .Net\\Cartes Bruno\\CardsMaster\\data\\Textures",
   "Cards": [
     {
       "Kind": "Ninja",

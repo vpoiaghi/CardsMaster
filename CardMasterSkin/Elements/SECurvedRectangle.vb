@@ -9,12 +9,12 @@ Namespace Skins
 
         Private m_curveSize As Integer
 
-        Public Sub New(width As Integer, height As Integer, curveSize As Integer)
-            Me.New(0, 0, width, height, curveSize)
+        Public Sub New(skin As Skin, width As Integer, height As Integer, curveSize As Integer)
+            Me.New(skin, 0, 0, width, height, curveSize)
         End Sub
 
-        Public Sub New(x As Integer, y As Integer, width As Integer, height As Integer, curveSize As Integer)
-            MyBase.New(x, y, width, height)
+        Public Sub New(skin As Skin, x As Integer, y As Integer, width As Integer, height As Integer, curveSize As Integer)
+            MyBase.New(skin, x, y, width, height)
 
             m_curveSize = curveSize
 

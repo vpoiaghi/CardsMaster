@@ -9,12 +9,12 @@ Namespace Skins
 
         Private m_cornerRadius As Integer
 
-        Public Sub New(width As Integer, height As Integer, cornerRadius As Integer)
-            Me.New(0, 0, width, height, cornerRadius)
+        Public Sub New(skin As Skin, width As Integer, height As Integer, cornerRadius As Integer)
+            Me.New(skin, 0, 0, width, height, cornerRadius)
         End Sub
 
-        Public Sub New(x As Integer, y As Integer, width As Integer, height As Integer, cornerRadius As Integer)
-            MyBase.New(x, y, width, height)
+        Public Sub New(skin As Skin, x As Integer, y As Integer, width As Integer, height As Integer, cornerRadius As Integer)
+            MyBase.New(skin, x, y, width, height)
 
             m_cornerRadius = cornerRadius
 

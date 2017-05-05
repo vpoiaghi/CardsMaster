@@ -9,12 +9,12 @@ Namespace Skins
 
         Dim m_radius As Integer
 
-        Public Sub New(radius As Integer)
-            Me.New(0, 0, radius * 2, radius * 2, radius)
+        Public Sub New(skin As Skin, radius As Integer)
+            Me.New(skin, 0, 0, radius * 2, radius * 2, radius)
         End Sub
 
-        Public Sub New(x As Integer, y As Integer, width As Integer, height As Integer, radius As Integer)
-            MyBase.New(x, y, width, height)
+        Public Sub New(skin As Skin, x As Integer, y As Integer, width As Integer, height As Integer, radius As Integer)
+            MyBase.New(skin, x, y, width, height)
 
             m_radius = radius
 

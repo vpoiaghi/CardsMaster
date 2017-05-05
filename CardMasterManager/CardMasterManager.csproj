@@ -131,10 +131,6 @@
       <Project>{31DE2344-D98B-4B42-AAFA-95C1B59909E8}</Project>
       <Name>CardMasterImageBuilder</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CardMasterViewer_wfa\CardMasterViewer_wfa.vbproj">
-      <Project>{9ed4aa00-2e15-4655-895c-ebb71e8d46cb}</Project>
-      <Name>CardMasterViewer_wfa</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">

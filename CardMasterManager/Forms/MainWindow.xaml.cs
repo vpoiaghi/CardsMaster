@@ -18,6 +18,7 @@ namespace CardMasterManager
     public partial class MainWindow : Window
     {
         private CardsProject cardProjet;
+        private FileInfo skinsFile;
         private Card previousCard;
         public MainWindow()
         {
@@ -31,13 +32,19 @@ namespace CardMasterManager
             openFileDialog.Filter = "Json files (*.json)|*.json|All files (*.*)|*.*";
             if (openFileDialog.ShowDialog() == true)
             {
-                cardProjet = CardsProject.LoadProject(new FileInfo(openFileDialog.FileName));
+                FileInfo cardsFile = new FileInfo(openFileDialog.FileName);
+                string skinsFileName = cardsFile.Name.Replace(cardsFile.Extension, ".skin");
+                skinsFile = new FileInfo(Path.Combine(cardsFile.Directory.FullName, skinsFileName));
+
+                cardProjet = CardsProject.LoadProject(cardsFile);
+                
                 List<Card> cards = new List<Card>();
                 foreach (CardMasterCard.Card.Card card in cardProjet.Cards)
                 {
                     Card c = Card.ConvertCard(card);
                     cards.Add(c);
                 }
+
                 LoadCards(cards);
             }
         }
@@ -92,9 +99,9 @@ namespace CardMasterManager
         {
             //Select Card from Collection from Name
             CardMasterCard.Card.Card businessCard = Card.ConvertToMasterCard(c);
-            Drawer drawer = new Drawer(businessCard, new DirectoryInfo(cardProjet.TexturesDirectory));
+            Drawer drawer = new Drawer(businessCard, skinsFile, null);
+            
             //Refresh Image Component
-
             DrawingImageToImageSourceConverter converter = new DrawingImageToImageSourceConverter();
             Dispatcher.BeginInvoke(new Action(delegate ()
             {

@@ -20,25 +20,27 @@ Namespace Skins
         Public Property Height As Integer = 0
         Public Property Shadow As SkinShadow = Nothing
 
-        Private m_color1 As Color = Nothing
-        Private m_color2 As Color = Nothing
-        Private m_imageName As String = Nothing
-        Private m_texturesDirectory As DirectoryInfo = Nothing
+        Protected m_color1 As Color = Nothing
+        Protected m_color2 As Color = Nothing
+        Protected m_imageName As String = Nothing
         Private m_type As TextureTypes
+        Protected m_skin As Skin
 
         Protected m_graphics As Graphics = Nothing
 
         Protected MustOverride Function GetGraphicElements(card As Card) As List(Of GraphicElement)
 
-        Protected Sub New(width As Integer, height As Integer)
-            Me.New(0, 0, width, height)
+        Protected Sub New(skin As Skin, width As Integer, height As Integer)
+            Me.New(skin, 0, 0, width, height)
         End Sub
 
-        Protected Sub New(x As Integer, y As Integer, width As Integer, height As Integer)
+        Protected Sub New(skin As Skin, x As Integer, y As Integer, width As Integer, height As Integer)
             Me.X = x
             Me.Y = y
             Me.Width = width
             Me.Height = height
+
+            Me.m_skin = skin
 
             SetBackground(Color.Black)
 
@@ -62,7 +64,6 @@ Namespace Skins
         Public Sub SetBackground(color As Color)
             m_color1 = color
             m_color2 = Nothing
-            m_texturesDirectory = Nothing
             m_imageName = Nothing
             m_type = TextureTypes.Color
         End Sub
@@ -70,15 +71,13 @@ Namespace Skins
         Public Sub SetBackground(color1 As Color, color2 As Color)
             m_color1 = color1
             m_color2 = color2
-            m_texturesDirectory = Nothing
             m_imageName = Nothing
             m_type = TextureTypes.GradientColor
         End Sub
 
-        Public Sub SetBackground(texturesDirectory As DirectoryInfo, imageName As String)
+        Public Sub SetBackground(imageName As String)
             m_color1 = Nothing
             m_color2 = Nothing
-            m_texturesDirectory = texturesDirectory
             m_imageName = imageName
             m_type = TextureTypes.Image
         End Sub
@@ -95,11 +94,16 @@ Namespace Skins
                     bkg = New LinearGradientBrush(New Point(X, 1), New Point(Height, 1), m_color1, m_color2)
 
                 Case TextureTypes.Image
-                    Dim files() As FileInfo = m_texturesDirectory.GetFiles(m_imageName & ".*", SearchOption.AllDirectories)
 
-                    If files.Count > 0 Then
-                        Dim img As Image = New Bitmap(files.First.FullName)
-                        bkg = New TextureBrush(img, WrapMode.Clamp)
+                    If (m_skin.TexturesDirectory IsNot Nothing) AndAlso (m_skin.TexturesDirectory.Exists) Then
+
+                        Dim files() As FileInfo = m_skin.TexturesDirectory.GetFiles(m_imageName & ".*", SearchOption.AllDirectories)
+
+                        If files.Count > 0 Then
+                            Dim img As Image = New Bitmap(files.First.FullName)
+                            bkg = New TextureBrush(img, WrapMode.Clamp)
+                        End If
+
                     End If
 
             End Select

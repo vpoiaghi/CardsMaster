@@ -30,7 +30,6 @@ Partial Class Frm_Main
         Me.TSB_SaveAs = New System.Windows.Forms.ToolStripButton()
         Me.TSB_Parameters = New System.Windows.Forms.ToolStripButton()
         Me.GridData1 = New CardMasterManager.GridData()
-        Me.Vwv_CardViewer = New CardMasterViewer.Viewer()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.Vwv_CardViewer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -131,7 +130,6 @@ Partial Class Frm_Main
     Friend WithEvents TSB_Open As System.Windows.Forms.ToolStripButton
     Friend WithEvents TSB_Save As System.Windows.Forms.ToolStripButton
     Friend WithEvents TSB_SaveAs As System.Windows.Forms.ToolStripButton
-    Friend WithEvents Vwv_CardViewer As CardMasterViewer.Viewer
     Friend WithEvents GridData1 As CardMasterManager.GridData
     Friend WithEvents TSB_Parameters As System.Windows.Forms.ToolStripButton
 

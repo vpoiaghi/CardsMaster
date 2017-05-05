@@ -29,22 +29,21 @@ Namespace Skins
         Public Property TextAttribute As String
         Public Property TextAlign As HorizontalAlignment = HorizontalAlignment.Left
         Public Property TextVerticalAlign As VerticalAlignment = VerticalAlignment.Top
-        Public Property SymbolsDirectory As DirectoryInfo = Nothing
 
-        Public Sub New(width As Integer, height As Integer)
-            Me.New(0, 0, width, height, Nothing)
+        Public Sub New(skin As Skin, width As Integer, height As Integer)
+            Me.New(skin, 0, 0, width, height, Nothing)
         End Sub
 
-        Public Sub New(width As Integer, height As Integer, text As String)
-            Me.New(0, 0, width, height, text)
+        Public Sub New(skin As Skin, width As Integer, height As Integer, text As String)
+            Me.New(skin, 0, 0, width, height, text)
         End Sub
 
-        Public Sub New(x As Integer, y As Integer, width As Integer, height As Integer)
-            Me.New(x, y, width, height, Nothing)
+        Public Sub New(skin As Skin, x As Integer, y As Integer, width As Integer, height As Integer)
+            Me.New(skin, x, y, width, height, Nothing)
         End Sub
 
-        Public Sub New(x As Integer, y As Integer, width As Integer, height As Integer, text As String)
-            MyBase.New(x, y, width, height)
+        Public Sub New(skin As Skin, x As Integer, y As Integer, width As Integer, height As Integer, text As String)
+            MyBase.New(skin, x, y, width, height)
 
             m_text = text
             SetBackground(Color.Black)
@@ -161,7 +160,9 @@ Namespace Skins
 
             Dim searchPattern As String
 
-            Dim symbolsDirExists As Boolean = (Me.SymbolsDirectory IsNot Nothing AndAlso Me.SymbolsDirectory.Exists)
+            Dim symbolsDirectory = m_skin.TexturesDirectory
+
+            Dim symbolsDirExists As Boolean = (symbolsDirectory IsNot Nothing AndAlso symbolsDirectory.Exists)
 
             For Each element As TextElement In TextElementsList
 
@@ -171,7 +172,7 @@ Namespace Skins
                     searchPattern = element.Text & ".*"
 
                     If symbolsDirExists Then
-                        With Me.SymbolsDirectory.GetFiles(searchPattern, SearchOption.AllDirectories)
+                        With symbolsDirectory.GetFiles(searchPattern, SearchOption.AllDirectories)
 
                             If .Count > 0 Then
                                 element.Image = Bitmap.FromFile(.First.FullName)

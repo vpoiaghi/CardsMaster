@@ -164,10 +164,6 @@
       <Project>{93a728fd-01fa-4d3b-a4c3-19d48903a131}</Project>
       <Name>CardMasterCard</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CardMasterViewer_wfa\CardMasterViewer_wfa.vbproj">
-      <Project>{9ed4aa00-2e15-4655-895c-ebb71e8d46cb}</Project>
-      <Name>CardMasterViewer_wfa</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -7,8 +7,6 @@ Namespace Card
 
     Public Class CardsProject
 
-        Public Property ImagesDirectory As String
-        Public Property TexturesDirectory As String
         Public Property Cards As CardsSet
 
         Public Shared Function LoadProject(file As FileInfo) As CardsProject
@@ -50,10 +48,7 @@ Namespace Card
             sr.Close()
             sr.Dispose()
 
-            cardsProject.TexturesDirectory = cardsProject.TexturesDirectory.Replace("\\", "\")
-            cardsProject.ImagesDirectory = cardsProject.ImagesDirectory.Replace("\\", "\")
-
-            Return CardsProject
+            Return cardsProject
 
         End Function
 
