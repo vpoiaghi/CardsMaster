@@ -46,6 +46,7 @@ Public Class SkinFactory
         CType(skinElement, SETextArea).TextAttribute = "Cost"
         CType(skinElement, SETextArea).TextAlign = HorizontalAlignment.Center
         CType(skinElement, SETextArea).TextVerticalAlign = VerticalAlignment.Center
+        'CType(skinElement, SETextArea).SetSymbolsDirectory(texturesDirectory)
         skin.Elements.Add(skinElement)
 
         ' Image

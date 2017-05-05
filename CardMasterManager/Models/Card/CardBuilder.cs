@@ -58,16 +58,11 @@ namespace CardMasterManager
             return this;
         }
 
-        public CardBuilder withCost(int cost)
-        {
-            this.m_card.Cost = cost;
-            return this;
-        }
 
         public CardBuilder withCost(String cost)
         {
           
-            this.m_card.Cost = GetIntValue(cost);
+            this.m_card.Cost = cost;
             return this;
         }
 
@@ -85,27 +80,16 @@ namespace CardMasterManager
             }
             return intCost;
         }
-        public CardBuilder withAttack(int attack)
+
+        public CardBuilder withAttack(String attack)
         {
             this.m_card.Attack = attack;
             return this;
         }
 
-        public CardBuilder withAttack(String attack)
-        {
-            this.m_card.Attack = GetIntValue(attack);
-            return this;
-        }
-
-        public CardBuilder withDefense(int defense)
-        {
-            this.m_card.Defense = defense;
-            return this;
-        }
-
         public CardBuilder withDefense(String defense)
         {
-            this.m_card.Defense = GetIntValue(defense);
+            this.m_card.Defense = defense;
             return this;
         }
 

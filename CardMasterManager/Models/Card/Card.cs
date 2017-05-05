@@ -37,9 +37,9 @@ namespace CardMasterManager
         public String Team { get; set; }
         public NatureCard Nature { get; set; }
         public String Element { get; set; }
-        public int Cost { get; set; }
-        public int Attack { get; set; }
-        public int Defense { get; set; }
+        public String Cost { get; set; }
+        public String Attack { get; set; }
+        public String Defense { get; set; }
         public String Citation { get; set; }
         public String Comments { get; set; }
         public CardMasterCard.Card.Texture Background { get; set; }

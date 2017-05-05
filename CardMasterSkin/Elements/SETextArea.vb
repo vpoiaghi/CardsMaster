@@ -144,7 +144,6 @@ Namespace Skins
 
             Dim textElementsList As New List(Of TextElement)
             Dim textElement As TextElement
-            Dim index As Integer = 0
 
             Dim separators() As Char = {WORDS_SEPARATOR}
 
@@ -152,17 +151,9 @@ Namespace Skins
 
             For Each word As String In wordsArray
 
-                If index > 0 Then
-                    textElement = New TextElement()
-                    textElement.Text = WORDS_SEPARATOR
-                    'textElementsList.Add(textElement)
-                End If
-
                 textElement = New TextElement()
                 textElement.Text = word
                 textElementsList.Add(textElement)
-
-                index += 1
 
             Next
 
@@ -172,16 +163,18 @@ Namespace Skins
 
         Private Sub LoadSymbolsImages(TextElementsList As List(Of TextElement))
 
-            If m_symbolsDirectory IsNot Nothing AndAlso m_symbolsDirectory.Exists Then
+            Dim searchPattern As String
 
-                Dim searchPattern As String
+            Dim symbolsDirExists As Boolean = (m_symbolsDirectory IsNot Nothing AndAlso m_symbolsDirectory.Exists)
 
-                For Each element As TextElement In TextElementsList
+            For Each element As TextElement In TextElementsList
 
-                    If element.Text Like "<<*>>" Then
+                If element.Text Like "<<*>>" Then
 
-                        searchPattern = element.Text.Substring(2, element.Text.Length - 4) & ".*"
+                    element.Text = element.Text.Substring(2, element.Text.Length - 4)
+                    searchPattern = element.Text & ".*"
 
+                    If symbolsDirExists Then
                         With m_symbolsDirectory.GetFiles(searchPattern, SearchOption.AllDirectories)
 
                             If .Count > 0 Then
@@ -189,12 +182,11 @@ Namespace Skins
                             End If
 
                         End With
-
                     End If
 
-                Next
+                End If
 
-            End If
+            Next
 
         End Sub
 
