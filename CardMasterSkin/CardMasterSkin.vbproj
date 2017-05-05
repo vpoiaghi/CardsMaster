@@ -67,6 +67,9 @@
     <Compile Include="Elements\SESquare.vb" />
     <Compile Include="Elements\SERoundedRectangle.vb" />
     <Compile Include="Elements\SETextArea.vb" />
+    <Compile Include="GraphicsElements\GraphicElement.vb" />
+    <Compile Include="GraphicsElements\ImageElement.vb" />
+    <Compile Include="GraphicsElements\PathElement.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -85,7 +88,7 @@
     <Compile Include="Skins\Skin.vb" />
     <Compile Include="Skins\SkinElement.vb" />
     <Compile Include="Skins\SkinElements.vb" />
-    <Compile Include="Tools\FileTool.vb" />
+    <Compile Include="Skins\SkinShadow.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -112,6 +115,7 @@
       <Name>CardMasterCard</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

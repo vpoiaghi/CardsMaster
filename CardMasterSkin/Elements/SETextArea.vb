@@ -1,7 +1,9 @@
-﻿Imports System.Drawing
+﻿Imports CardMasterCard.Card
+Imports System.Drawing
 Imports System.Drawing.Drawing2D
+Imports System.IO
 Imports System.Reflection
-Imports CardMasterCard.Card
+Imports CardMasterSkin.GraphicsElement
 
 Namespace Skins
 
@@ -20,11 +22,14 @@ Namespace Skins
     Public Class SETextArea
         Inherits SkinElement
 
+        Private WORDS_SEPARATOR As Char = " ".Chars(0)
+
         Private m_text As String
+        Private m_symbolsDirectory As DirectoryInfo = Nothing
 
         Public Property TextAttribute As String
         Public Property TextAlign As HorizontalAlignment = HorizontalAlignment.Left
-        Public Property TextVerticalAlign As VerticalAlignment = VerticalAlignment.top
+        Public Property TextVerticalAlign As VerticalAlignment = VerticalAlignment.Top
 
         Public Sub New(width As Integer, height As Integer)
             Me.New(0, 0, width, height, Nothing)
@@ -46,10 +51,13 @@ Namespace Skins
 
         End Sub
 
-        Public Overrides Function GetPathes(card As Card) As List(Of GraphicsPath)
+        Public Sub SetSymbolsDirectory(symbolsDirectory As DirectoryInfo)
+            m_symbolsDirectory = symbolsDirectory
+        End Sub
 
-            Dim pathes As New List(Of GraphicsPath)()
-            Dim path As New GraphicsPath()
+        Protected Overrides Function GetGraphicElements(card As Card) As List(Of GraphicElement)
+
+            Dim graphicElementsList As New List(Of GraphicElement)()
 
             Dim textFontFamily As New FontFamily("Bell MT")
             Dim textFontStyle As FontStyle = FontStyle.Regular
@@ -58,24 +66,43 @@ Namespace Skins
             Dim textFont As Font = New Font(textFontFamily, textFontSize, textFontStyle)
             Dim textFormat As StringFormat = StringFormat.GenericDefault
 
+            Dim rowsList As New List(Of TextRow)
+            Dim rowTop As Integer = 0
+
+            ' Découpage en bloc de chaînes (découpage par "retour à la ligne")
             Dim textList As List(Of String) = GetTextList(card)
-            Dim rectList As List(Of Rectangle) = GetRectList(textList, textFont, textEmFontSize, textFormat)
+
+            'Dim rectList As List(Of Rectangle) = GetRectList(textList, textFont, textEmFontSize, textFormat)
 
             ' Dessine le contour de la zone max du texte
             'm_graphics.DrawRectangle(Pens.Red, Me.X, Me.Y, Me.Width, Me.Height)
 
-            For i As Integer = 0 To textList.Count - 1
+            For Each txt As String In textList
 
-                path.AddString(textList(i), textFontFamily, textFontStyle, textEmFontSize, rectList(i), textFormat)
+                ' Recherche des symboles à charger.
+                ' --> Retourne une liste composée de StringElement qui sont soit un mot soit un symbole.
+                ' Si la chaine ne contient pas de mot à remplacer par un symbole, un string element contenant
+                '  l'ensemble de la chaîne sera retourné.
+                Dim textElementsList As List(Of TextElement) = GetTextElements(txt)
 
-                ' Dessine le contour de la zone "au plus près" du texte
-                'm_graphics.DrawRectangle(Pens.Black, rectList(i))
+                ' Chargement des images (symboles)
+                LoadSymbolsImages(textElementsList)
+
+                ' Calcul de la taille et de la position en X,Y des TextElement (mots et symboles) composant le texte,
+                ' et retourne une liste de lignes de texte composées de mots et de symboles.
+                rowsList.AddRange(GetRows(textElementsList, textFont, textFormat, rowTop))
+
+                ' Calcul de la position verticale de la prochaine ligne
+                If rowsList.Count > 0 Then
+                    rowTop = rowsList.Last.Bottom
+                End If
+
+                ' Construit un GraphicsPath à partir des TextRow.
+                graphicElementsList.AddRange(GetTextPathes(rowsList, textFont, textEmFontSize, textFormat))
 
             Next
 
-            pathes.Add(path)
-
-            Return pathes
+            Return graphicElementsList
 
 
         End Function
@@ -116,70 +143,232 @@ Namespace Skins
 
         End Function
 
-        Private Function GetRectList(textList As List(Of String), textFont As Font, textEmFontSize As Single, textFormat As StringFormat) As List(Of Rectangle)
+        Private Function GetTextElements(Text As String) As List(Of TextElement)
 
-            Dim rectList As New List(Of Rectangle)
+            Dim textElementsList As New List(Of TextElement)
+            Dim textElement As TextElement
+            Dim index As Integer = 0
 
-            Dim textRectangle As Rectangle
-            Dim textX As Integer = Me.X
-            Dim textY As Integer = Me.Y
-            Dim textSize As SizeF
-            Dim maxWidth As Integer = Me.Width
-            Dim maxHeight As Integer = Me.Height
+            Dim separators() As Char = {WORDS_SEPARATOR}
 
-            Dim totalHeight As Integer = 0
-            Dim translateY As Integer = 0
+            Dim wordsArray() As String = Text.Split(separators, StringSplitOptions.RemoveEmptyEntries)
 
-            For Each txt As String In textList
+            For Each word As String In wordsArray
 
-                Dim f As New Font(textFont.FontFamily, textEmFontSize, textFont.Style)
+                If index > 0 Then
+                    textElement = New TextElement()
+                    textElement.Text = WORDS_SEPARATOR
+                    'textElementsList.Add(textElement)
+                End If
 
-                textSize = m_graphics.MeasureString(txt, textFont, maxWidth, textFormat)
+                textElement = New TextElement()
+                textElement.Text = word
+                textElementsList.Add(textElement)
 
-                Select Case Me.TextAlign
-                    Case HorizontalAlignment.Left
-                        textX = Me.X
-                    Case HorizontalAlignment.Center
-                        textX = Me.X + (maxWidth - textSize.Width) \ 2
-                    Case HorizontalAlignment.Right
-                        textX = Me.X + maxWidth - textSize.Width
-                End Select
-
-                If textX < 0 Then textX = 0
-                If textY < 0 Then textY = 0
-
-                textRectangle = New Rectangle(textX, textY, Me.Width, textSize.Height)
-                rectList.Add(textRectangle)
-
-                textY += textSize.Height
-                maxHeight = maxHeight - textSize.Height
-                totalHeight += textSize.Height
+                index += 1
 
             Next
 
-            Select Case Me.TextVerticalAlign
-                Case VerticalAlignment.Top
-                    translateY = 0
-                Case VerticalAlignment.Center
-                    translateY = (Me.Height - totalHeight) \ 2
-                Case VerticalAlignment.Bottom
-                    translateY = Me.Height - totalHeight
-            End Select
-
-            If translateY <> 0 Then
-
-                Dim r As Rectangle
-
-                For i As Integer = 0 To rectList.Count - 1
-                    r = rectList(i)
-                    r.Offset(0, translateY)
-                    rectList(i) = r
-                Next
-            End If
-
-            Return rectList
+            Return textElementsList
 
         End Function
+
+        Private Sub LoadSymbolsImages(TextElementsList As List(Of TextElement))
+
+            If m_symbolsDirectory IsNot Nothing AndAlso m_symbolsDirectory.Exists Then
+
+                Dim searchPattern As String
+
+                For Each element As TextElement In TextElementsList
+
+                    If element.Text Like "<<*>>" Then
+
+                        searchPattern = element.Text.Substring(2, element.Text.Length - 4) & ".*"
+
+                        With m_symbolsDirectory.GetFiles(searchPattern, SearchOption.AllDirectories)
+
+                            If .Count > 0 Then
+                                element.Image = Bitmap.FromFile(.First.FullName)
+                            End If
+
+                        End With
+
+                    End If
+
+                Next
+
+            End If
+
+        End Sub
+
+        Private Function GetRows(TextElementsList As List(Of TextElement), textFont As Font, textFormat As StringFormat, rowTop As Integer) As List(Of TextRow)
+
+            Dim rowsList As New List(Of TextRow)
+            Dim row As TextRow = Nothing
+
+            Dim elementSize As SizeF = Nothing
+
+            Dim refSize As SizeF = Nothing
+            Dim initSize As SizeF = Nothing
+            Dim ratio As Single = 0
+
+            Dim elementX As Integer = 0
+            Dim rowY As Integer = rowTop
+
+            Dim isSeparator As Boolean = False
+
+            For Each textElement As TextElement In TextElementsList
+
+                isSeparator = False
+
+                If row Is Nothing Then
+                    row = New TextRow
+                    row.Y = rowY
+                    rowsList.Add(row)
+                End If
+
+                If textElement.IsText Then
+                    ' Ajout d'un mot à une ligne
+                    elementSize = m_graphics.MeasureString(textElement.Text, textFont, Me.Width, textFormat)
+                    isSeparator = (textElement.Text = WORDS_SEPARATOR)
+                Else
+                    ' Ajout d'un symbole à une ligne
+
+                    If refSize = Nothing Then
+                        refSize = m_graphics.MeasureString("O", textFont, Me.Width, textFormat)
+                    End If
+
+                    initSize = textElement.Image.GetBounds(m_graphics.PageUnit).Size
+
+                    ratio = initSize.Height / refSize.Height
+                    elementSize = New SizeF(initSize.Width / ratio, refSize.Height)
+
+                End If
+
+                If elementX + elementSize.Width > Me.Width Then
+
+                    If isSeparator Then
+                        ' Si le nouvel élément à ajouter dépasse la zone autorisée et est un séparateur de mots (caractère espace)
+                        ' alors il est ignoré
+
+                        ' Force la création d'une nouvelle ligne si il y a un nouvel élément à ajouter
+                        row = Nothing
+
+                        ' Ignore le textElement courant en forçant le Next
+                        Continue For
+                    End If
+
+                    rowY = row.Bottom
+                    row = New TextRow
+                    row.Y = rowY
+                    elementX = 0
+                    rowsList.Add(row)
+
+                End If
+
+                textElement.Bounds = New Rectangle(elementX, 0, Math.Ceiling(elementSize.Width), Math.Ceiling(elementSize.Height))
+                row.AddElement(textElement)
+                elementX += textElement.Bounds.Width
+            Next
+
+            Return rowsList
+
+        End Function
+
+        Private Function GetTextPathes(RowsList As List(Of TextRow), textFont As Font, textEmFontSize As Single, textFormat As StringFormat) As List(Of GraphicElement)
+
+            Dim graphicElementsList As New List(Of GraphicElement)
+            Dim textPath As GraphicsPath = Nothing
+            Dim imagePath As GraphicsPath = Nothing
+
+            Dim r As Rectangle
+
+            For Each row As TextRow In RowsList
+
+                For Each textElement As TextElement In row.Elements
+
+                    If textElement.IsText Then
+
+                        If textPath Is Nothing Then
+                            textPath = New GraphicsPath
+                            graphicElementsList.Add(New PathElement(textPath, GetBackground))
+                        End If
+
+                        r = New Rectangle(Me.X + row.X + textElement.Bounds.X, Me.Y + row.Y + textElement.Bounds.Y, textElement.Bounds.Width, textElement.Bounds.Height)
+
+                        textPath.AddString(textElement.Text, textFont.FontFamily, textFont.Style, textEmFontSize, r, textFormat)
+
+                        ' Dessine le contour de la zone "au plus près" du texte
+                        m_graphics.DrawRectangle(Pens.Black, r)
+
+                    Else
+                        r = New Rectangle(Me.X + row.X + textElement.Bounds.X, Me.Y + row.Y + textElement.Bounds.Y, textElement.Bounds.Width, textElement.Bounds.Height)
+                        graphicElementsList.Add(New ImageElement(textElement.Image, r))
+
+                    End If
+
+                Next
+            Next
+
+            Return graphicElementsList
+
+        End Function
+
+        Private Class TextElement
+
+            Public Property Text As String = ""
+            Public Property Image As Image = Nothing
+            Public Property Bounds As Rectangle = Nothing
+
+            Public Function IsText() As Boolean
+                Return Image Is Nothing
+            End Function
+            Public Function IsImage() As Boolean
+                Return Image IsNot Nothing
+            End Function
+
+        End Class
+
+        Private Class TextRow
+
+            Public Property Elements As New List(Of TextElement)
+
+            Public Property X As Integer = 0
+            Public Property Y As Integer = 0
+            Public Property Width As Integer = 0
+            Public Property Height As Integer = 0
+
+            Public ReadOnly Property Bottom As Integer
+                Get
+                    Return Me.Y + Me.Height
+                End Get
+            End Property
+
+            Public ReadOnly Property Right As Integer
+                Get
+                    Return Me.X + Me.Width
+                End Get
+            End Property
+
+            Public Sub AddElement(element As TextElement)
+
+                Me.Elements.Add(element)
+
+                With element.Bounds
+
+                    If Me.Height < .Height Then
+                        Me.Height = .Height
+                    End If
+
+                    If Me.Width < .Right Then
+                        Me.Width = .Right
+                    End If
+
+                End With
+
+            End Sub
+
+        End Class
 
     End Class
 

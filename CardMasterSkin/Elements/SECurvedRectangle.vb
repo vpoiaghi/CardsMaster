@@ -1,7 +1,6 @@
-﻿Imports CardMasterCard.Card
-Imports System.Drawing
-Imports System.Drawing.Drawing2D
-Imports System.IO
+﻿Imports System.Drawing.Drawing2D
+Imports CardMasterCard.Card
+Imports CardMasterSkin.GraphicsElement
 
 Namespace Skins
 
@@ -29,14 +28,14 @@ Namespace Skins
             m_curveSize = curveSize
         End Sub
 
-        Public Overrides Function GetPathes(card As Card) As List(Of GraphicsPath)
+        Protected Overrides Function GetGraphicElements(card As Card) As List(Of GraphicElement)
 
             Dim w As Integer = Width
             Dim h As Integer = Height
             Dim c As Integer = GetCurveSize()
             Dim d As Integer = 2 * c
 
-            Dim pathes As New List(Of GraphicsPath)()
+            Dim graphicElementsList As New List(Of GraphicElement)()
             Dim path As New GraphicsPath()
 
             path.StartFigure()
@@ -51,9 +50,9 @@ Namespace Skins
             ' Côté bas
             path.CloseFigure()
 
-            pathes.Add(path)
+            graphicElementsList.Add(New PathElement(path, GetBackground))
 
-            Return pathes
+            Return graphicElementsList
 
         End Function
 

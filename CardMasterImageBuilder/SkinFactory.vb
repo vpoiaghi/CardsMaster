@@ -12,7 +12,6 @@ Public Class SkinFactory
         Dim borderSize As Integer = 15
 
         Dim imagesDir As New DirectoryInfo("F:\Programmation\VBA\Cartes Bruno\Cartes\Images")
-        'Dim texturesDir As New DirectoryInfo("F:\Programmation\VBA\Cartes Bruno\Cartes\Textures")
 
         Dim skin As New Skin(w, h, imagesDir, texturesDirectory)
         Dim skinElement As SkinElement
@@ -40,7 +39,7 @@ Public Class SkinFactory
         ' Zone de coût
         skinElement = New SECircle(w - 65, 27, 30, 30, 360)
         skinElement.SetBackground(texturesDirectory, "Pierre 01")
-        skinElement.SetShadow(3, 135)
+        skinElement.Shadow = New SkinShadow(3, 135)
         skin.Elements.Add(skinElement)
 
         skinElement = New SETextArea(w - 65, 27, 30, 30, "?")
@@ -71,6 +70,7 @@ Public Class SkinFactory
 
         skinElement = New SETextArea(30, 322, w - 60, 150, "<Epouvoirs>")
         CType(skinElement, SETextArea).TextAttribute = "Powers"
+        CType(skinElement, SETextArea).SetSymbolsDirectory(texturesDirectory)
         skin.Elements.Add(skinElement)
 
 

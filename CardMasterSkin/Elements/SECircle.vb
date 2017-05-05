@@ -1,7 +1,6 @@
-﻿Imports CardMasterCard.Card
-Imports System.Drawing
-Imports System.Drawing.Drawing2D
-Imports System.IO
+﻿Imports System.Drawing.Drawing2D
+Imports CardMasterCard.Card
+Imports CardMasterSkin.GraphicsElement
 
 Namespace Skins
 
@@ -21,16 +20,16 @@ Namespace Skins
 
         End Sub
 
-        Public Overrides Function GetPathes(card As Card) As List(Of GraphicsPath)
+        Protected Overrides Function GetGraphicElements(card As Card) As List(Of GraphicElement)
 
-            Dim pathes As New List(Of GraphicsPath)()
+            Dim graphicElementsList As New List(Of GraphicElement)()
             Dim path As New GraphicsPath()
 
             path.AddEllipse(X, Y, Width, Height)
 
-            pathes.Add(path)
+            graphicElementsList.Add(New PathElement(path, GetBackground))
 
-            Return pathes
+            Return graphicElementsList
 
         End Function
 

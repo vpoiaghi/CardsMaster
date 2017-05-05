@@ -1,7 +1,6 @@
-﻿Imports CardMasterCard.Card
-Imports System.Drawing
-Imports System.Drawing.Drawing2D
-Imports System.IO
+﻿Imports System.Drawing.Drawing2D
+Imports CardMasterCard.Card
+Imports CardMasterSkin.GraphicsElement
 
 Namespace Skins
 
@@ -29,9 +28,9 @@ Namespace Skins
             m_cornerRadius = cornerRadius
         End Sub
 
-        Public Overrides Function GetPathes(card As Card) As List(Of GraphicsPath)
+        Protected Overrides Function GetGraphicElements(card As Card) As List(Of GraphicElement)
 
-            Dim pathes As New List(Of GraphicsPath)()
+            Dim graphicElementsList As New List(Of GraphicElement)()
             Dim path As New GraphicsPath()
 
             Dim w As Integer = Width
@@ -39,10 +38,10 @@ Namespace Skins
             Dim b As Integer = GetCornerRadius()
             Dim r As Integer = 2 * b
 
-            Path.StartFigure()
+            path.StartFigure()
 
             ' Coin haut/gauche
-            Path.AddArc(0, 0, r, r, 180, 90)
+            path.AddArc(0, 0, r, r, 180, 90)
             ' Côté haut
             path.AddLine(b, 0, w - b, 0)
             ' Coin haut/droit
@@ -58,9 +57,9 @@ Namespace Skins
 
             path.CloseFigure()
 
-            pathes.Add(path)
+            graphicElementsList.Add(New PathElement(path, GetBackground))
 
-            Return pathes
+            Return graphicElementsList
 
         End Function
 

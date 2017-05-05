@@ -1,6 +1,6 @@
 {
-  "ImagesDirectory": "F:\\Programmation\\VBA\\Cartes Bruno\\Cartes\\Images",
-  "TexturesDirectory": "F:\\Programmation\\VBA\\Cartes Bruno\\Cartes\\Textures",
+  "ImagesDirectory": "F:\\Programmation\\VB .Net\\Cartes Bruno\\CardsMaster\\data\\Images",
+  "TexturesDirectory": "F:\\Programmation\\VB .Net\\Cartes Bruno\\CardsMaster\\data\\Textures",
   "Cards": [
     {
       "Kind": "Ninja",
@@ -20,7 +20,7 @@
       },
       "Powers": [
         {
-          "Description": "Permanent : Insensible aux dégats non physiques"
+          "Description": "<<Permanent>> : Insensible aux dégats non physiques"
         },
         {
           "Description": "1 fois : Astre Divin : Détruit un ninja ennemi"
@@ -183,7 +183,7 @@
       },
       "Powers": [
         {
-          "Description": "Permanent : Soigne X PV à un allié. (Utilisable 1 fois par tour)"
+          "Description": "Permanent : Soigne <<X>> PV à un allié. (Utilisable 1 fois par tour)"
         }
       ]
     },
