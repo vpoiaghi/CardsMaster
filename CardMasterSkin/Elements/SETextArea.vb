@@ -57,8 +57,6 @@ Namespace Skins
 
         Protected Overrides Function GetGraphicElements(card As Card) As List(Of GraphicElement)
 
-            Dim graphicElementsList As New List(Of GraphicElement)()
-
             Dim textFontFamily As New FontFamily("Bell MT")
             Dim textFontStyle As FontStyle = FontStyle.Regular
             Dim textFontSize As Single = 13
@@ -97,12 +95,11 @@ Namespace Skins
                     rowTop = rowsList.Last.Bottom
                 End If
 
-                ' Construit un GraphicsPath à partir des TextRow.
-                graphicElementsList.AddRange(GetTextPathes(rowsList, textFont, textEmFontSize, textFormat))
-
             Next
 
-            Return graphicElementsList
+            ApplyAlignments(rowsList)
+
+            Return GetGraphicElementsList(rowsList, textFont, textEmFontSize, textFormat)
 
 
         End Function
@@ -275,7 +272,46 @@ Namespace Skins
 
         End Function
 
-        Private Function GetTextPathes(RowsList As List(Of TextRow), textFont As Font, textEmFontSize As Single, textFormat As StringFormat) As List(Of GraphicElement)
+        Private Sub ApplyAlignments(rowsList As List(Of TextRow))
+
+            If TextAlign = HorizontalAlignment.Right Then
+
+                For Each row As TextRow In rowsList
+                    row.X = Me.Width - row.Width
+                Next
+
+            ElseIf TextAlign = HorizontalAlignment.Center Then
+
+                For Each row As TextRow In rowsList
+                    row.X = (Me.Width - row.Width) \ 2
+                Next
+
+            End If
+
+            If TextVerticalAlign <> VerticalAlignment.Top Then
+
+                Dim rowsHeight As Integer = 0
+                Dim y As Integer = 0
+
+                For Each row As TextRow In rowsList
+                    rowsHeight += row.Height
+                Next
+
+                If TextVerticalAlign = VerticalAlignment.Center Then
+                    y = (Me.Height - rowsHeight) \ 2
+                ElseIf TextVerticalAlign = VerticalAlignment.Bottom Then
+                    y = Me.Height - rowsHeight
+                End If
+
+                For Each row As TextRow In rowsList
+                    row.Y += y
+                Next
+
+            End If
+
+        End Sub
+
+        Private Function GetGraphicElementsList(rowsList As List(Of TextRow), textFont As Font, textEmFontSize As Single, textFormat As StringFormat) As List(Of GraphicElement)
 
             Dim graphicElementsList As New List(Of GraphicElement)
             Dim textPath As GraphicsPath = Nothing
@@ -283,7 +319,7 @@ Namespace Skins
 
             Dim r As Rectangle
 
-            For Each row As TextRow In RowsList
+            For Each row As TextRow In rowsList
 
                 For Each textElement As TextElement In row.Elements
 
@@ -299,7 +335,7 @@ Namespace Skins
                         textPath.AddString(textElement.Text, textFont.FontFamily, textFont.Style, textEmFontSize, r, textFormat)
 
                         ' Dessine le contour de la zone "au plus près" du texte
-                        m_graphics.DrawRectangle(Pens.Black, r)
+                        'm_graphics.DrawRectangle(Pens.Black, r)
 
                     Else
                         r = New Rectangle(Me.X + row.X + textElement.Bounds.X, Me.Y + row.Y + textElement.Bounds.Y, textElement.Bounds.Width, textElement.Bounds.Height)

@@ -68,7 +68,7 @@ Public Class SkinFactory
         skinElement.SetBackground(texturesDirectory, "Pierre 01")
         skin.Elements.Add(skinElement)
 
-        skinElement = New SETextArea(30, 322, w - 60, 150, "<Epouvoirs>")
+        skinElement = New SETextArea(35, 327, w - 70, 140, "<Epouvoirs>")
         CType(skinElement, SETextArea).TextAttribute = "Powers"
         CType(skinElement, SETextArea).SetSymbolsDirectory(texturesDirectory)
         skin.Elements.Add(skinElement)
