@@ -61,6 +61,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Elements\SEImage.vb" />
     <Compile Include="Elements\SECurvedRectangle.vb" />
     <Compile Include="Elements\SECircle.vb" />
     <Compile Include="Elements\SERectangle.vb" />

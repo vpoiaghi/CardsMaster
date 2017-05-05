@@ -25,11 +25,11 @@ Namespace Skins
         Private WORDS_SEPARATOR As Char = " ".Chars(0)
 
         Private m_text As String
-        Private m_symbolsDirectory As DirectoryInfo = Nothing
 
         Public Property TextAttribute As String
         Public Property TextAlign As HorizontalAlignment = HorizontalAlignment.Left
         Public Property TextVerticalAlign As VerticalAlignment = VerticalAlignment.Top
+        Public Property SymbolsDirectory As DirectoryInfo = Nothing
 
         Public Sub New(width As Integer, height As Integer)
             Me.New(0, 0, width, height, Nothing)
@@ -51,14 +51,10 @@ Namespace Skins
 
         End Sub
 
-        Public Sub SetSymbolsDirectory(symbolsDirectory As DirectoryInfo)
-            m_symbolsDirectory = symbolsDirectory
-        End Sub
-
         Protected Overrides Function GetGraphicElements(card As Card) As List(Of GraphicElement)
 
             Dim textFontFamily As New FontFamily("Bell MT")
-            Dim textFontStyle As FontStyle = FontStyle.Regular
+            Dim textFontStyle As FontStyle = FontStyle.Bold
             Dim textFontSize As Single = 13
             Dim textEmFontSize As Single = m_graphics.DpiY * textFontSize / 72
             Dim textFont As Font = New Font(textFontFamily, textFontSize, textFontStyle)
@@ -165,7 +161,7 @@ Namespace Skins
 
             Dim searchPattern As String
 
-            Dim symbolsDirExists As Boolean = (m_symbolsDirectory IsNot Nothing AndAlso m_symbolsDirectory.Exists)
+            Dim symbolsDirExists As Boolean = (Me.SymbolsDirectory IsNot Nothing AndAlso Me.SymbolsDirectory.Exists)
 
             For Each element As TextElement In TextElementsList
 
@@ -175,7 +171,7 @@ Namespace Skins
                     searchPattern = element.Text & ".*"
 
                     If symbolsDirExists Then
-                        With m_symbolsDirectory.GetFiles(searchPattern, SearchOption.AllDirectories)
+                        With Me.SymbolsDirectory.GetFiles(searchPattern, SearchOption.AllDirectories)
 
                             If .Count > 0 Then
                                 element.Image = Bitmap.FromFile(.First.FullName)

@@ -37,16 +37,19 @@ Public Class SkinFactory
         skin.Elements.Add(skinElement)
 
         ' Zone de coût
-        skinElement = New SECircle(w - 65, 27, 30, 30, 360)
-        skinElement.SetBackground(texturesDirectory, "Pierre 01")
-        skinElement.Shadow = New SkinShadow(3, 135)
+        'skinElement = New SECircle(w - 65, 27, 30, 30, 360)
+        'skinElement.SetBackground(texturesDirectory, "Pierre 01")
+        'skinElement.Shadow = New SkinShadow(3, 135)
+        'skin.Elements.Add(skinElement)
+
+        skinElement = New SEImage(w - 65, 27, 30, 30, "mana_circle")
+        CType(skinElement, SEImage).RootDirectory = texturesDirectory
         skin.Elements.Add(skinElement)
 
         skinElement = New SETextArea(w - 65, 27, 30, 30, "?")
         CType(skinElement, SETextArea).TextAttribute = "Cost"
         CType(skinElement, SETextArea).TextAlign = HorizontalAlignment.Center
         CType(skinElement, SETextArea).TextVerticalAlign = VerticalAlignment.Center
-        'CType(skinElement, SETextArea).SetSymbolsDirectory(texturesDirectory)
         skin.Elements.Add(skinElement)
 
         ' Image
@@ -71,7 +74,7 @@ Public Class SkinFactory
 
         skinElement = New SETextArea(35, 327, w - 70, 140, "<Epouvoirs>")
         CType(skinElement, SETextArea).TextAttribute = "Powers"
-        CType(skinElement, SETextArea).SetSymbolsDirectory(texturesDirectory)
+        CType(skinElement, SETextArea).SymbolsDirectory = texturesDirectory
         skin.Elements.Add(skinElement)
 
 
