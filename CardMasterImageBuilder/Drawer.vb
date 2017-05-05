@@ -15,20 +15,26 @@ Public Class Drawer
 
     Public Function DrawCard() As Image
 
-        Dim img As New Bitmap(m_skin.Width, m_skin.Height)
-        img.SetResolution(96, 96)
+        Dim img As Bitmap = Nothing
 
-        Dim g As Graphics = Graphics.FromImage(img)
+        If m_skin IsNot Nothing Then
 
-        g.SmoothingMode = Drawing2D.SmoothingMode.AntiAlias
-        g.TextRenderingHint = Text.TextRenderingHint.AntiAlias
-        g.CompositingQuality = Drawing2D.CompositingQuality.HighQuality
+            img = New Bitmap(m_skin.Width, m_skin.Height)
+            img.SetResolution(96, 96)
 
-        For Each e As SkinElement In m_skin.Elements
-            e.Draw(g, m_card)
-        Next
+            Dim g As Graphics = Graphics.FromImage(img)
 
-        g.Dispose()
+            g.SmoothingMode = Drawing2D.SmoothingMode.AntiAlias
+            g.TextRenderingHint = Text.TextRenderingHint.AntiAlias
+            g.CompositingQuality = Drawing2D.CompositingQuality.HighQuality
+
+            For Each e As SkinElement In m_skin.Elements
+                e.Draw(g, m_card)
+            Next
+
+            g.Dispose()
+
+        End If
 
         Return img
 

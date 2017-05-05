@@ -10,16 +10,22 @@ Namespace Skins
 
         Public Shared Function LoadProject(file As FileInfo) As SkinsProject
 
-            Dim sr As New StreamReader(file.FullName)
-            Dim js As String = sr.ReadToEnd
+            Dim skinsProject As SkinsProject = Nothing
 
-            Dim skinsProject As SkinsProject = JsonConvert.DeserializeObject(Of SkinsProject)(js)
+            If file IsNot Nothing AndAlso file.Exists Then
 
-            sr.Close()
-            sr.Dispose()
+                Dim sr As New StreamReader(file.FullName)
+                Dim js As String = sr.ReadToEnd
 
-            skinsProject.TexturesDirectory = skinsProject.TexturesDirectory.Replace("\\", "\")
-            skinsProject.ImagesDirectory = skinsProject.ImagesDirectory.Replace("\\", "\")
+                skinsProject = JsonConvert.DeserializeObject(Of SkinsProject)(js)
+
+                sr.Close()
+                sr.Dispose()
+
+                skinsProject.TexturesDirectory = skinsProject.TexturesDirectory.Replace("\\", "\")
+                skinsProject.ImagesDirectory = skinsProject.ImagesDirectory.Replace("\\", "\")
+
+            End If
 
             Return skinsProject
 
