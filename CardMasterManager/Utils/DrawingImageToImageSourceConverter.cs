@@ -40,7 +40,7 @@ namespace CardMasterManager.Utils
         private byte[] ConvertImageToByteArray(Image img)
         {
             MemoryStream ms = new MemoryStream();
-            img.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+            img.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
 
             return ms.ToArray();
         }

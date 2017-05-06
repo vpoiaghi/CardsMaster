@@ -27,6 +27,9 @@ Public Class Drawer
             g.SmoothingMode = Drawing2D.SmoothingMode.AntiAlias
             g.TextRenderingHint = Text.TextRenderingHint.AntiAlias
             g.CompositingQuality = Drawing2D.CompositingQuality.HighQuality
+            g.CompositingMode = Drawing2D.CompositingMode.SourceOver
+            g.InterpolationMode = Drawing2D.InterpolationMode.HighQualityBicubic
+            g.PixelOffsetMode = Drawing2D.PixelOffsetMode.HighQuality
 
             For Each e As SkinElement In m_skin.Elements
                 e.Draw(g, m_card)
@@ -35,6 +38,8 @@ Public Class Drawer
             g.Dispose()
 
         End If
+
+        'img.Save("F:\Programmation\VB .Net\Cartes Bruno\Cartes générées\" & m_card.Name & ".png")
 
         Return img
 
