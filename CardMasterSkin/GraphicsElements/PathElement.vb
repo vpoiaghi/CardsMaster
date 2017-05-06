@@ -18,6 +18,14 @@ Namespace GraphicsElement
 
         End Sub
 
+        Protected Overrides Sub Finalize()
+
+            m_path = Nothing
+            m_background = Nothing
+
+            MyBase.Finalize()
+        End Sub
+
         Public Overrides Sub Draw(g As Graphics)
 
             g.FillPath(m_background, m_path)

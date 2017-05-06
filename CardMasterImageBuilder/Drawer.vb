@@ -13,6 +13,13 @@ Public Class Drawer
         m_skin = SkinFactory.GetSkin(m_card, skinsFile, skinName)
     End Sub
 
+    Protected Overrides Sub Finalize()
+        m_skin = Nothing
+        m_card = Nothing
+
+        MyBase.Finalize()
+    End Sub
+
     Public Function DrawCard() As Image
 
         Dim img As Bitmap = Nothing
@@ -35,11 +42,12 @@ Public Class Drawer
                 e.Draw(g, m_card)
             Next
 
+            m_skin.Elements.Clear()
+
             g.Dispose()
+            g = Nothing
 
         End If
-
-        'img.Save("F:\Programmation\VB .Net\Cartes Bruno\Cartes générées\" & m_card.Name & ".png")
 
         Return img
 

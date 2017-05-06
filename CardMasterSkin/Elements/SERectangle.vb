@@ -19,11 +19,14 @@ Namespace Skins
         Protected Overrides Function GetGraphicElements(card As Card) As List(Of GraphicElement)
 
             Dim graphicElementsList As New List(Of GraphicElement)()
+
             Dim path As New GraphicsPath()
 
             path.AddRectangle(New Rectangle(X, Y, Width, Height))
 
             graphicElementsList.Add(New PathElement(path, GetBackground))
+
+            path = Nothing
 
             Return graphicElementsList
 

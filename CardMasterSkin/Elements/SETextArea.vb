@@ -62,6 +62,8 @@ Namespace Skins
             Dim rowsList As New List(Of TextRow)
             Dim rowTop As Integer = 0
 
+            Dim textElementsList As List(Of TextElement) = Nothing
+
             ' Découpage en bloc de chaînes (découpage par "retour à la ligne")
             Dim textList As List(Of String) = GetTextList(card)
 
@@ -76,7 +78,7 @@ Namespace Skins
                 ' --> Retourne une liste composée de StringElement qui sont soit un mot soit un symbole.
                 ' Si la chaine ne contient pas de mot à remplacer par un symbole, un string element contenant
                 '  l'ensemble de la chaîne sera retourné.
-                Dim textElementsList As List(Of TextElement) = GetTextElements(txt)
+                textElementsList = GetTextElements(txt)
 
                 ' Chargement des images (symboles)
                 LoadSymbolsImages(textElementsList)
@@ -90,12 +92,22 @@ Namespace Skins
                     rowTop = rowsList.Last.Bottom
                 End If
 
+                textElementsList.Clear()
+                textElementsList = Nothing
+
             Next
 
             ApplyAlignments(rowsList)
 
-            Return GetGraphicElementsList(rowsList, textFont, textEmFontSize, textFormat)
+            Dim graphicElementsList As List(Of GraphicElement) = GetGraphicElementsList(rowsList, textFont, textEmFontSize, textFormat)
 
+            rowsList.Clear()
+            rowsList = Nothing
+
+            textList.Clear()
+            textList = Nothing
+
+            Return graphicElementsList
 
         End Function
 

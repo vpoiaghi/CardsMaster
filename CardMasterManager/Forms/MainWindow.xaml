@@ -22,6 +22,9 @@
                 <MenuItem Header="_Enregistrer Sous..." Click="MenuItemSaveAs_Click"/>
                 <MenuItem Header="_Quitter" Click="MenuItemClose_Click"/>
             </MenuItem>
+            <MenuItem Header="_Edition">
+                <MenuItem Header="_Exporter tout en .png" Click="MenuItemExportAllToPngFile_Click"/>
+            </MenuItem>
         </Menu>
         <DockPanel LastChildFill="True">
             <StatusBar DockPanel.Dock="Bottom">

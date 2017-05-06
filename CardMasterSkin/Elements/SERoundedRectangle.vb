@@ -31,6 +31,7 @@ Namespace Skins
         Protected Overrides Function GetGraphicElements(card As Card) As List(Of GraphicElement)
 
             Dim graphicElementsList As New List(Of GraphicElement)()
+
             Dim path As New GraphicsPath()
 
             Dim w As Integer = Width
@@ -58,6 +59,8 @@ Namespace Skins
             path.CloseFigure()
 
             graphicElementsList.Add(New PathElement(path, GetBackground))
+
+            path = Nothing
 
             Return graphicElementsList
 

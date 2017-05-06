@@ -9,7 +9,6 @@ using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
 
 namespace CardMasterManager
 {
@@ -21,6 +20,7 @@ namespace CardMasterManager
         private CardsProject cardProjet;
         private FileInfo skinsFile;
         private Card previousCard;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -117,6 +117,30 @@ namespace CardMasterManager
             ComboBox cb = (ComboBox)sender;
             Card card = (Card)cb.DataContext;
             cardGrid.SelectedItem = card;
+        }
+
+        private void MenuItemExportAllToPngFile_Click(object sender, RoutedEventArgs e)
+        {
+            List<Card> cardsList = new List<Card>();
+
+            foreach (object item in cardGrid.Items)
+            {
+                cardsList.Add((Card)item);
+            }
+            
+            if (cardsList.Count > 0) {
+
+                PngExport exp = new PngExport(this);
+                exp.progressChangedEvent += new PngExport.ProgressChanged(ExportProgressChanged);
+                exp.Export(cardsList, skinsFile);
+                
+            }
+
+        }
+
+        private void ExportProgressChanged(object sender, PngExport.ProgressChangedArg args)
+        {
+            debug.Text = args.Message;
         }
 
     }

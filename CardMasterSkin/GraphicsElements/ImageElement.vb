@@ -18,6 +18,15 @@ Namespace GraphicsElement
 
         End Sub
 
+        Protected Overrides Sub Finalize()
+
+            m_image = Nothing
+            m_rectangle = Nothing
+
+            MyBase.Finalize()
+        End Sub
+
+
         Public Overrides Sub Draw(g As Graphics)
 
             g.DrawImage(m_image, m_rectangle)

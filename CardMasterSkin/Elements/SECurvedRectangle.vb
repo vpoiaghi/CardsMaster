@@ -1,4 +1,5 @@
-﻿Imports System.Drawing.Drawing2D
+﻿Imports System.Drawing
+Imports System.Drawing.Drawing2D
 Imports CardMasterCard.Card
 Imports CardMasterSkin.GraphicsElement
 
@@ -30,13 +31,14 @@ Namespace Skins
 
         Protected Overrides Function GetGraphicElements(card As Card) As List(Of GraphicElement)
 
+            Dim graphicElementsList As New List(Of GraphicElement)()
+
+            Dim path As New GraphicsPath()
+
             Dim w As Integer = Width
             Dim h As Integer = Height
             Dim c As Integer = GetCurveSize()
             Dim d As Integer = 2 * c
-
-            Dim graphicElementsList As New List(Of GraphicElement)()
-            Dim path As New GraphicsPath()
 
             path.StartFigure()
 
@@ -50,7 +52,9 @@ Namespace Skins
             ' Côté bas
             path.CloseFigure()
 
-            graphicElementsList.Add(New PathElement(path, GetBackground))
+            graphicElementsList.Add(New PathElement(path, GetBackground()))
+
+            path = Nothing
 
             Return graphicElementsList
 

@@ -33,6 +33,7 @@ Namespace Card
 
             myFileStream.Close()
             myFileStream.Dispose()
+            myFileStream = Nothing
 
             Return CardsProject
 
@@ -47,6 +48,7 @@ Namespace Card
 
             sr.Close()
             sr.Dispose()
+            sr = Nothing
 
             Return cardsProject
 
@@ -70,6 +72,7 @@ Namespace Card
 
             xwr.Close()
             xwr.Dispose()
+            xwr = Nothing
 
         End Sub
 
@@ -84,6 +87,7 @@ Namespace Card
 
             sw.Close()
             sw.Dispose()
+            sw = Nothing
 
         End Sub
 

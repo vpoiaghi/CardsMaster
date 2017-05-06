@@ -29,6 +29,8 @@ Namespace Skins
 
             graphicElementsList.Add(New PathElement(path, GetBackground))
 
+            path = Nothing
+
             Return graphicElementsList
 
         End Function

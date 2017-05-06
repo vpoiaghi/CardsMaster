@@ -88,6 +88,9 @@ Namespace Skins
                 End If
 
                 If fileName IsNot Nothing Then
+
+                    fileName = fileName.Replace(":", "-").Replace("""", "'")
+
                     With rootDirectory.GetFiles(fileName & ".*", SearchOption.AllDirectories)
                         If .Count > 0 Then
                             fileFullname = .First.FullName

@@ -13,7 +13,6 @@ Namespace Skins
 
 
         Protected Sub New()
-
         End Sub
 
         Public Sub New(width As Integer, height As Integer, imagesDirectory As DirectoryInfo, texturesDirectory As DirectoryInfo)
@@ -25,8 +24,14 @@ Namespace Skins
 
         End Sub
 
+        Protected Overrides Sub Finalize()
 
+            Me.ImagesDirectory = Nothing
+            Me.TexturesDirectory = Nothing
+            Me.Elements.Clear()
 
+            MyBase.Finalize()
+        End Sub
     End Class
 
 End Namespace

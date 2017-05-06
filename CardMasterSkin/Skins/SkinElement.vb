@@ -8,6 +8,8 @@ Namespace Skins
 
     Public MustInherit Class SkinElement
 
+        Private Shared ImgTexturesMap As New Hashtable()
+
         Private Enum TextureTypes
             Color
             GradientColor
@@ -46,6 +48,18 @@ Namespace Skins
 
         End Sub
 
+        Protected Overrides Sub Finalize()
+
+            m_color1 = Nothing
+            m_color2 = Nothing
+            Me.Shadow = Nothing
+            m_skin = Nothing
+            m_graphics = Nothing
+
+            MyBase.Finalize()
+
+        End Sub
+
         Public Sub Draw(g As Graphics, card As Card)
 
             m_graphics = g
@@ -56,6 +70,9 @@ Namespace Skins
                 graphicElement.DrawShadow(g, Shadow)
                 graphicElement.Draw(g)
             Next
+
+            graphicElements.Clear()
+            graphicElements = Nothing
 
             m_graphics = Nothing
 
@@ -100,9 +117,24 @@ Namespace Skins
                         Dim files() As FileInfo = m_skin.TexturesDirectory.GetFiles(m_imageName & ".*", SearchOption.AllDirectories)
 
                         If files.Count > 0 Then
-                            Dim img As Image = New Bitmap(files.First.FullName)
-                            bkg = New TextureBrush(img, WrapMode.Clamp)
+
+                            Dim fileName As String = files.First.FullName
+
+                            bkg = CType(ImgTexturesMap.Item(fileName), TextureBrush)
+
+                            If bkg Is Nothing Then
+
+                                Dim img As Image = New Bitmap(fileName)
+                                bkg = New TextureBrush(img, WrapMode.Clamp)
+                                img.Dispose()
+                                img = Nothing
+
+                                ImgTexturesMap.Add(fileName, bkg)
+
+                            End If
                         End If
+
+                        files = Nothing
 
                     End If
 
