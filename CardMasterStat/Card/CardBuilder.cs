@@ -1,4 +1,4 @@
-﻿
+﻿using CardMasterCard.Card;
 using System;
 using System.Collections.Generic;
 
@@ -129,19 +129,19 @@ namespace CardMasterStat
             return this;
         }
 
-        public CardBuilder withBackground(CardMasterCard.Card.Texture texture)
+        public CardBuilder withBackground(Texture texture)
         {
             this.m_card.Background = texture;
             return this;
         }
 
-        public CardBuilder withPowers(List<CardMasterCard.Card.Power> power)
+        public CardBuilder withPowers(List<Power> power)
         {
             this.m_card.Powers = power;
             return this;
         }
 
-        public CardBuilder withPower(CardMasterCard.Card.Power power)
+        public CardBuilder withPower(Power power)
         {
             this.m_card.Powers.Add(power);
             return this;

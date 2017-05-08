@@ -1,0 +1,62 @@
+﻿using CardMasterCard.Card;
+using CardMasterSkin.GraphicsElements;
+using CardMasterSkin.Skins;
+using System.Collections.Generic;
+using System.Drawing.Drawing2D;
+
+namespace CardMasterSkin.Elements
+{
+    public class SERoundedRectangle : SkinElement
+    {
+        public int CornerRadius { get; set; } = 0;
+
+        public SERoundedRectangle(Skin skin, int width, int height, int cornerRadius) : this(skin, 0, 0, width, height, cornerRadius)
+        { }
+
+        public SERoundedRectangle(Skin skin, int x, int y, int width, int height, int cornerRadius) : base(skin, x, y, width, height)
+        {
+            this.CornerRadius = cornerRadius;
+        }
+        protected override List<GraphicElement> GetGraphicElements(Card card)
+        {
+            var graphicElementsList = new List<GraphicElement>();
+            var path = new GraphicsPath();
+
+            int w = Width;
+            int h = Height;
+            int b = this.CornerRadius;
+            int r = 2 * b;
+
+            // début de la forme
+            path.StartFigure();
+
+            // Coin haut/gauche
+            path.AddArc(0, 0, r, r, 180, 90);
+            // Côté haut
+            path.AddLine(b, 0, w - b, 0);
+            // Coin haut/droit
+            path.AddArc(w - r, 0, r, r, 270, 90);
+            // Côté droit
+            path.AddLine(w, b, w, h - b);
+            // Coin bas/droit
+            path.AddArc(w - r, h - r, r, r, 0, 90);
+            // Côté bas
+            path.AddLine(w - b, h, b, h);
+            // Coin bas/gauche
+            path.AddArc(0, h - r, r, r, 90, 90);
+            // Côté gauche
+            // Généré par la fermeture de la forme
+
+            // Fermeture de la forme
+            path.CloseFigure();
+
+            graphicElementsList.Add(new PathElement(path, GetBackground()));
+
+            path = null;
+
+            return graphicElementsList;
+
+        }
+
+    }
+}

@@ -6,10 +6,9 @@ namespace CardMasterManager.Utils
 {
     static class FolderDialog
     {
-
         public static string SelectFolder()
         {
-            FileInfo f = new FileInfo(Application.ExecutablePath);
+            var f = new FileInfo(Application.ExecutablePath);
             return SelectFolder(f.Directory.FullName);
         }
 

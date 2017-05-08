@@ -126,16 +126,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CardMasterCard\CardMasterCard.vbproj">
-      <Project>{93a728fd-01fa-4d3b-a4c3-19d48903a131}</Project>
-      <Name>CardMasterCard</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CardMasterImageBuilder\CardMasterImageBuilder.vbproj">
-      <Project>{31DE2344-D98B-4B42-AAFA-95C1B59909E8}</Project>
-      <Name>CardMasterImageBuilder</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
@@ -148,9 +138,14 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Yamato.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    <ProjectReference Include="..\CardMasterCard\CardMasterCard.csproj">
+      <Project>{1ba2630b-04ab-4910-8792-04e48f2319db}</Project>
+      <Name>CardMasterCard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CardMasterImageBuilder\CardMasterImageBuilder.csproj">
+      <Project>{65056a8a-d3de-467d-ac89-31b3a051099f}</Project>
+      <Name>CardMasterImageBuilder</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

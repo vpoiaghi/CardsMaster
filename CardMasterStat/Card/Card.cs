@@ -1,8 +1,6 @@
-﻿using System;
+﻿using CardMasterCard.Card;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CardMasterStat
 {
@@ -19,8 +17,8 @@ namespace CardMasterStat
         public int Defense { get; set; }
         public String Citation { get; set; }
         public String Comments { get; set; }
-        public CardMasterCard.Card.Texture Background { get; set; }
-        public List<CardMasterCard.Card.Power> Powers { get; set; }
+        public Texture Background { get; set; }
+        public List<Power> Powers { get; set; }
 
         public enum CardKind
         {

@@ -1,21 +1,17 @@
 ﻿using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
 using System.Windows.Markup;
 
 namespace CardMasterManager.Utils
 {
     public class EnumBindingSourceExtension : MarkupExtension
     {
-        private Type _enumType;
+        private Type enumType;
         public Type EnumType
         {
-            get { return this._enumType; }
+            get { return this.enumType; }
             set
             {
-                if (value != this._enumType)
+                if (value != this.enumType)
                 {
                     if (null != value)
                     {
@@ -25,7 +21,7 @@ namespace CardMasterManager.Utils
                             throw new ArgumentException("Type must be for an Enum.");
                     }
 
-                    this._enumType = value;
+                    this.enumType = value;
                 }
             }
         }
@@ -39,13 +35,13 @@ namespace CardMasterManager.Utils
 
         public override object ProvideValue(IServiceProvider serviceProvider)
         {
-            if (null == this._enumType)
+            if (null == this.enumType)
                 throw new InvalidOperationException("The EnumType must be specified.");
 
-            Type actualEnumType = Nullable.GetUnderlyingType(this._enumType) ?? this._enumType;
+            Type actualEnumType = Nullable.GetUnderlyingType(this.enumType) ?? this.enumType;
             Array enumValues = Enum.GetValues(actualEnumType);
 
-            if (actualEnumType == this._enumType)
+            if (actualEnumType == this.enumType)
                 return enumValues;
 
             Array tempArray = Array.CreateInstance(actualEnumType, enumValues.Length + 1);

@@ -9,7 +9,7 @@ namespace CardMasterManager.Utils
 {
     class PngExport : IDisposable
     {
-        private static Object _lock = new Object();
+        private static object _lock = new Object();
 
         private bool exportRunning = false;
         private string targetFolder = null;
@@ -18,7 +18,7 @@ namespace CardMasterManager.Utils
         private List<Card> cardsList = null;
         private FileInfo skinsFile = null;
 
-        public delegate void ShowExportProgress(int index, int total);
+        public delegate void ProgressChangedEvent(int index, int total);
         public delegate void ProgressChanged(object sender, ProgressChangedArg args);
 
         public event ProgressChanged progressChangedEvent;
@@ -26,8 +26,7 @@ namespace CardMasterManager.Utils
         public PngExport(Window owner) {
             this.owner = owner;
         }
-
-
+        
         public void Export(List<Card> cardsList, FileInfo skinsFile)
         {
             if ((cardsList != null) && (skinsFile != null) && (!exportRunning))
@@ -41,7 +40,7 @@ namespace CardMasterManager.Utils
                     
                 if (targetFolder != null)
                 {
-                    Thread t = new Thread(new ThreadStart(ExportCard));
+                    var t = new Thread(new ThreadStart(ExportCard));
 
                     exportRunning = true;
 
@@ -86,9 +85,11 @@ namespace CardMasterManager.Utils
 
                 cardIndex = cardIndex + 1;
 
+                // Affiche la progression
                 ShowProgress(cardIndex, cardCount);
             }
 
+            // Attend quatre secondes avant d'effacer le dernier message
             Thread.Sleep(4000);
             ShowProgress(0, 0);
 
@@ -100,7 +101,7 @@ namespace CardMasterManager.Utils
         {
             try
             {
-                owner.Dispatcher.Invoke((ShowExportProgress)Progres, index, total);
+                owner.Dispatcher.Invoke((ProgressChangedEvent)SendProgressChangedEvent, index, total);
             }
             catch (Exception ex)
             {
@@ -110,7 +111,7 @@ namespace CardMasterManager.Utils
 
         }
 
-        private void Progres(int index, int total)
+        private void SendProgressChangedEvent(int index, int total)
         {
 
             string message = "";
