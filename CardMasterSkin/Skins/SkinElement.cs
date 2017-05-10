@@ -19,13 +19,15 @@ namespace CardMasterSkin.Skins
         public int Y { get; set; } = 0;
         public int Width { get; set; } = 0;
         public int Height { get; set; } = 0;
-        public SkinShadow Shadow { get; set; } = null;
+        public SkinElementShadow Shadow { get; set; } = null;
+        public SkinElementBorder Border { get; set; } = null;
 
         protected Color color1;
         protected Color color2;
         protected string imageName = null;
         private TextureTypes type;
         protected Skin skin = null;
+
 
         protected Graphics graphics = null;
 
@@ -60,8 +62,17 @@ namespace CardMasterSkin.Skins
 
             foreach(GraphicElement graphicElement in graphicElements)
             {
-                graphicElement.DrawShadow(g, Shadow);
+                if (this.Shadow != null)
+                {
+                    graphicElement.DrawShadow(g, this.Shadow);
+                }
+
                 graphicElement.Draw(g);
+
+                if (this.Border != null)
+                {
+                    graphicElement.DrawBorder(g, this.Border);
+                }
             }
 
             graphicElements.Clear();

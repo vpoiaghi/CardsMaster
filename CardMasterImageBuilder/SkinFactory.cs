@@ -41,6 +41,7 @@ namespace CardMasterImageBuilder
                 // Zone entête
                 skinElement = new SECurvedRectangle(skin, 22, 22, w - 44, 40, 8);
                 skinElement.SetBackground("Pierre 01");
+                skinElement.Border = new SkinElementBorder(Color.DarkGreen, 3);
                 skin.Elements.Add(skinElement);
 
                 skinElement = new SETextArea(skin, 22, 22, w - 44, 40, "<Nom>");
@@ -62,11 +63,13 @@ namespace CardMasterImageBuilder
                 skinElement = new SEImage(skin, 30, 62, w - 60, 220);
                 ((SEImage)skinElement).NameAttribute = "Name";
                 ((SEImage)skinElement).ResourceType = ResourceTypes.Image;
+                skinElement.Border = new SkinElementBorder(Color.DarkGreen, 3);
                 skin.Elements.Add(skinElement);
 
                 // Zone équipe
                 skinElement = new SECurvedRectangle(skin, 22, 282, w - 44, 40, 8);
                 skinElement.SetBackground("Pierre 01");
+                skinElement.Border = new SkinElementBorder(Color.DarkGreen, 3);
                 skin.Elements.Add(skinElement);
 
                 skinElement = new SETextArea(skin, 22, 282, w - 44, 40, "<Equipe>");
@@ -77,6 +80,7 @@ namespace CardMasterImageBuilder
                 // Zone de pouvoirs
                 skinElement = new SERectangle(skin, 30, 322, w - 60, 150);
                 skinElement.SetBackground("Pierre 01");
+                skinElement.Border = new SkinElementBorder(Color.DarkGreen, 3);
                 skin.Elements.Add(skinElement);
 
                 skinElement = new SETextArea(skin, 35, 327, w - 70, 140, "<Epouvoirs>");

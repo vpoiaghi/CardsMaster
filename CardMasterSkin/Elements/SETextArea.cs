@@ -52,7 +52,7 @@ namespace CardMasterSkin.Elements
 
         protected override List<GraphicElement> GetGraphicElements(Card card)
         {
-            float textFontSize = 13;
+            float textFontSize = 14;
             float textEmFontSize = this.graphics.DpiY * textFontSize / 72;
             var textFontFamily = new FontFamily("Bell MT");
             var textFontStyle = FontStyle.Bold;

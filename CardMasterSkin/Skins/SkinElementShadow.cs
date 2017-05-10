@@ -1,11 +1,11 @@
 ﻿namespace CardMasterSkin.Skins
 {
-    public class SkinShadow
+    public class SkinElementShadow
     {
         public int Size { get; set; }
         public int Angle { get; set; }
 
-        public SkinShadow(int size, int angle)
+        public SkinElementShadow(int size, int angle)
         {
             this.Size = size;
             this.Angle = angle;

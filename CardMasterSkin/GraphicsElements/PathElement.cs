@@ -27,25 +27,27 @@ namespace CardMasterSkin.GraphicsElements
             g.FillPath(this.background, this.path);
         }
 
-        public override void DrawShadow(Graphics g, SkinShadow shadow)
+        public override void DrawShadow(Graphics g, SkinElementShadow shadow)
         {
-            if (shadow != null)
-            {
-                double radianAngle = shadow.Angle * Math.PI / 180;
+            double radianAngle = shadow.Angle * Math.PI / 180;
 
-                float transactionX = (float)Math.Cos(radianAngle) * shadow.Size;
-                float transactionY = (float)Math.Sin(radianAngle) * shadow.Size;
+            float transactionX = (float)Math.Cos(radianAngle) * shadow.Size;
+            float transactionY = (float)Math.Sin(radianAngle) * shadow.Size;
 
-                var translateMatrix = new Matrix();
-                translateMatrix.Translate(transactionX, transactionY);
+            var translateMatrix = new Matrix();
+            translateMatrix.Translate(transactionX, transactionY);
 
-                var shadowPath = (GraphicsPath)this.path.Clone();
-                shadowPath.Transform(translateMatrix);
+            var shadowPath = (GraphicsPath)this.path.Clone();
+            shadowPath.Transform(translateMatrix);
 
-                var b = new SolidBrush(Color.FromArgb(120, 0, 0, 0));
+            var b = new SolidBrush(Color.FromArgb(120, 0, 0, 0));
 
-                g.FillPath(b, shadowPath);
-            }
+            g.FillPath(b, shadowPath);
+        }
+
+        public override void DrawBorder(Graphics g, SkinElementBorder border)
+        {
+            g.DrawPath(new Pen(border.BorderColor, border.BorderWidth), this.path);
         }
 
     }
