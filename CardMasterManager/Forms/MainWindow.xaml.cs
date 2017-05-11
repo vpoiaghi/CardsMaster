@@ -1,4 +1,5 @@
 ﻿using CardMasterCard.Card;
+using CardMasterExport.FileExport;
 using CardMasterImageBuilder;
 using CardMasterManager.Utils;
 using Microsoft.Win32;
@@ -52,8 +53,6 @@ namespace CardMasterManager
 
         private void LoadCards(List<Card> cards)
         {
-            //cardGrid.ItemsSource = cards;
-
             cardGrid.Items.Clear();
 
             foreach ( Card card in cards )
@@ -121,11 +120,11 @@ namespace CardMasterManager
 
         private void MenuItemExportAllToPngFile_Click(object sender, RoutedEventArgs e)
         {
-            List<Card> cardsList = new List<Card>();
+            var cardsList = new List<CardMasterCard.Card.Card>();
 
             foreach (object item in cardGrid.Items)
             {
-                cardsList.Add((Card)item);
+                cardsList.Add(Card.ConvertToMasterCard((Card)item));
             }
             
             if (cardsList.Count > 0) {

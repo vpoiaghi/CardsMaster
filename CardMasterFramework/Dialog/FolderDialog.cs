@@ -2,9 +2,9 @@
 using System.Threading;
 using System.IO;
 
-namespace CardMasterManager.Utils
+namespace CardMasterFramework.Dialog
 {
-    static class FolderDialog
+    public static class FolderDialog
     {
         public static string SelectFolder()
         {

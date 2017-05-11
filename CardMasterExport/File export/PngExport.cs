@@ -1,13 +1,17 @@
-﻿using CardMasterImageBuilder;
+﻿using CardMasterCard.Card;
+using CardMasterImageBuilder;
+using CardMasterFramework.Dialog;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 using System.Windows;
+using System.Drawing;
 
-namespace CardMasterManager.Utils
+namespace CardMasterExport.FileExport
+
 {
-    class PngExport : IDisposable
+    public class PngExport : IDisposable
     {
         private static object _lock = new Object();
 
@@ -57,7 +61,7 @@ namespace CardMasterManager.Utils
         private void ExportCard()
         {
             Drawer drawer = null;
-            System.Drawing.Image img = null;
+            Image img = null;
 
             List<Card> cards = null;
             string targetFolder = null;
@@ -74,7 +78,7 @@ namespace CardMasterManager.Utils
             {
                 string fileName = card.Name.Replace(":", "-").Replace("\"", "'").Replace("*", " ");
 
-                drawer = new Drawer(Card.ConvertToMasterCard(card), skinsFile, null);
+                drawer = new Drawer(card, skinsFile, null);
                 img = drawer.DrawCard();
 
                 img.Save(Path.Combine(targetFolder, fileName + ".png"));

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4D96048A-0232-4743-97AF-5E52C5087A29}</ProjectGuid>
+    <ProjectGuid>{38CDB275-FF7F-48A8-8CAB-6C582E2540AA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CardMasterExport</RootNamespace>
-    <AssemblyName>CardMasterExport</AssemblyName>
+    <RootNamespace>CardMasterFramework</RootNamespace>
+    <AssemblyName>CardMasterFramework</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -31,38 +31,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="File export\PngExport.cs" />
+    <Compile Include="Dialog\FolderDialog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <ProjectReference Include="..\CardMasterCard\CardMasterCard.csproj">
-      <Project>{1ba2630b-04ab-4910-8792-04e48f2319db}</Project>
-      <Name>CardMasterCard</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CardMasterFramework\CardMasterFramework.csproj">
-      <Project>{38cdb275-ff7f-48a8-8cab-6c582e2540aa}</Project>
-      <Name>CardMasterFramework</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CardMasterImageBuilder\CardMasterImageBuilder.csproj">
-      <Project>{65056a8a-d3de-467d-ac89-31b3a051099f}</Project>
-      <Name>CardMasterImageBuilder</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

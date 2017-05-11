@@ -79,10 +79,8 @@
     </ApplicationDefinition>
     <Compile Include="Utils\DrawingImageToImageSourceConverter.cs" />
     <Compile Include="Utils\EnumBindingSourceExtension.cs" />
-    <Compile Include="Utils\FolderDialog.cs" />
     <Compile Include="Utils\GeneralListConverter.cs" />
     <Compile Include="Utils\GeneralEnumConverter.cs" />
-    <Compile Include="Utils\PngExport.cs" />
     <Page Include="Forms\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -141,6 +139,10 @@
     <ProjectReference Include="..\CardMasterCard\CardMasterCard.csproj">
       <Project>{1ba2630b-04ab-4910-8792-04e48f2319db}</Project>
       <Name>CardMasterCard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CardMasterExport\CardMasterExport.csproj">
+      <Project>{4d96048a-0232-4743-97af-5e52c5087a29}</Project>
+      <Name>CardMasterExport</Name>
     </ProjectReference>
     <ProjectReference Include="..\CardMasterImageBuilder\CardMasterImageBuilder.csproj">
       <Project>{65056a8a-d3de-467d-ac89-31b3a051099f}</Project>
