@@ -19,6 +19,7 @@ namespace CardMasterManager
     public partial class MainWindow : Window
     {
         private CardsProject cardProjet;
+        private FileInfo cardsFile;
         private FileInfo skinsFile;
         private Card previousCard;
 
@@ -32,9 +33,10 @@ namespace CardMasterManager
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Json files (*.json)|*.json|All files (*.*)|*.*";
+
             if (openFileDialog.ShowDialog() == true)
             {
-                FileInfo cardsFile = new FileInfo(openFileDialog.FileName);
+                cardsFile = new FileInfo(openFileDialog.FileName);
                 string skinsFileName = cardsFile.Name.Replace(cardsFile.Extension, ".skin");
                 skinsFile = new FileInfo(Path.Combine(cardsFile.Directory.FullName, skinsFileName));
 
@@ -51,25 +53,28 @@ namespace CardMasterManager
             }
         }
 
-        private void LoadCards(List<Card> cards)
-        {
-            cardGrid.Items.Clear();
-
-            foreach ( Card card in cards )
-            {
-                cardGrid.Items.Add(card);
-            }
-
-        }
-
         private void MenuItemSave_Click(object sender, RoutedEventArgs e)
         {
-
+            SaveProject(cardsFile);
         }
 
         private void MenuItemSaveAs_Click(object sender, RoutedEventArgs e)
         {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Json files (*.json)|*.json|All files (*.*)|*.*";
 
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                FileInfo newCardsFile = new FileInfo(saveFileDialog.FileName);
+                string skinsFileName = cardsFile.Name.Replace(newCardsFile.Extension, ".skin");
+                FileInfo newSkinsFile = new FileInfo(Path.Combine(cardsFile.Directory.FullName, skinsFileName));
+
+                SaveProject(newCardsFile);
+                skinsFile.CopyTo(newSkinsFile.FullName);
+
+                cardsFile = newCardsFile;
+                skinsFile = newSkinsFile;
+            }
         }
 
         private void MenuItemClose_Click(object sender, RoutedEventArgs e)
@@ -142,5 +147,47 @@ namespace CardMasterManager
             debug.Text = args.Message;
         }
 
+        private void LoadCards(List<Card> cards)
+        {
+            cardGrid.Items.Clear();
+
+            foreach (Card card in cards)
+            {
+                cardGrid.Items.Add(card);
+            }
+
+        }
+
+        private void SaveProject(FileInfo cardsFile)
+        {
+            if ((cardProjet != null) && (cardsFile != null))
+            {
+                CardMasterCard.Card.Card c = null;
+
+                List<Card> cards = GetCardsFromGrid();
+
+                cardProjet.Cards.Clear();
+
+                foreach (Card card in cards)
+                {
+                    c = Card.ConvertToMasterCard(card);
+                    cardProjet.Cards.Add(c);
+                }
+
+                cardProjet.Save(cardsFile);
+            }
+        }
+
+        private List<Card> GetCardsFromGrid()
+        {
+            var cards = new List<Card>();
+
+            foreach (Card card in cardGrid.Items)
+            {
+                cards.Add(card);
+            }
+
+            return cards;
+        }
     }
 }
