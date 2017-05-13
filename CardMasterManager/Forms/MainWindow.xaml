@@ -10,8 +10,8 @@
         Title="Card Manager" Height="960" Width="1700" ResizeMode="NoResize">
 
     <Window.Resources>
-        <utils:GeneralEnumConverter x:Key="GeneralEnumConverter"/>
-        <utils:GeneralListConverter x:Key="GeneralListConverter"/>
+        <utils:EnumConverter x:Key="EnumConverter"/>
+        <utils:ListConverter x:Key="ListConverter"/>
     </Window.Resources>
     
     <StackPanel >
@@ -33,7 +33,7 @@
                 </StatusBarItem>
             </StatusBar>
             <DockPanel Width="375" Height="523" Background="Aqua" Name="panelViewer" Margin="15" DockPanel.Dock="Left">
-                <Image Name="cardImage" Source="Yamato.jpg"></Image>
+                <Image Name="cardImage"></Image>
             </DockPanel>
 
             <DataGrid DockPanel.Dock="Right" Name="cardGrid" Margin="5" Width="1269" Height="847" SelectionMode="Single" AutoGenerateColumns="False" AlternatingRowBackground="Azure" AlternationCount="2" IsReadOnly="False"
@@ -43,7 +43,7 @@
                     <DataGridTemplateColumn Header="Nom" MinWidth="120">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBox Text="{Binding Name}" BorderBrush="Transparent"/>
+                                <TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
@@ -52,14 +52,14 @@
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <ComboBox IsEditable="True" 
-                                          Text="{Binding Kind, Converter={StaticResource GeneralEnumConverter}, UpdateSourceTrigger=PropertyChanged}" 
+                                          Text="{Binding Kind, Converter={StaticResource EnumConverter}, UpdateSourceTrigger=PropertyChanged}" 
                                           BorderBrush="Transparent"
                                           ItemsSource="{Binding Source={utils:EnumBindingSource {x:Type local:CardKind}}}"
                                           GotFocus="ComboBox_GotFocus"
                                           >
                                     <ComboBox.ItemTemplate>
                                         <DataTemplate>
-                                            <TextBlock Text="{Binding Converter={StaticResource GeneralEnumConverter}}"/>
+                                            <TextBlock Text="{Binding Converter={StaticResource EnumConverter}}"/>
                                         </DataTemplate>
                                     </ComboBox.ItemTemplate>
                                 </ComboBox>
@@ -70,7 +70,7 @@
                     <DataGridTemplateColumn Header="Rareté/Grade" MinWidth="100">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBox Text="{Binding Rank}" BorderBrush="Transparent"/>
+                                <TextBox Text="{Binding Rank, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
@@ -78,7 +78,7 @@
                     <DataGridTemplateColumn Header="Equipe" MinWidth="80">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBox Text="{Binding Team}" BorderBrush="Transparent"/>
+                                <TextBox Text="{Binding Team, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
@@ -87,13 +87,13 @@
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <ComboBox IsEditable="True"  
-                                          Text="{Binding Nature, Converter={StaticResource GeneralEnumConverter}, UpdateSourceTrigger=PropertyChanged}" 
+                                          Text="{Binding Nature, Converter={StaticResource EnumConverter}, UpdateSourceTrigger=PropertyChanged}" 
                                           BorderBrush="Transparent"
                                           ItemsSource="{Binding Source={utils:EnumBindingSource {x:Type local:NatureCard}}}"
                                           GotFocus="ComboBox_GotFocus">
                                     <ComboBox.ItemTemplate>
                                         <DataTemplate>
-                                            <TextBlock Text="{Binding Converter={StaticResource GeneralEnumConverter}}"/>
+                                            <TextBlock Text="{Binding Converter={StaticResource EnumConverter}}"/>
                                         </DataTemplate>
                                     </ComboBox.ItemTemplate>
                                 </ComboBox>
@@ -104,7 +104,7 @@
                     <DataGridTemplateColumn Header="Element" MinWidth="120">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBox Text="{Binding Element}" BorderBrush="Transparent"/>
+                                <TextBox Text="{Binding Element, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
@@ -112,7 +112,7 @@
                     <DataGridTemplateColumn Header="Cout" MinWidth="60">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBox Text="{Binding Cost}" BorderBrush="Transparent"/>
+                                <TextBox Text="{Binding Cost, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
@@ -120,7 +120,7 @@
                     <DataGridTemplateColumn Header="Atk" MinWidth="60">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBox Text="{Binding Attack}" BorderBrush="Transparent"/>
+                                <TextBox Text="{Binding Attack, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
@@ -128,7 +128,7 @@
                     <DataGridTemplateColumn Header="Def." MinWidth="60">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBox Text="{Binding Defense}" BorderBrush="Transparent"/>
+                                <TextBox Text="{Binding Defense, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
@@ -136,7 +136,7 @@
                     <DataGridTemplateColumn Header="Pouvoirs" Width="Auto" MinWidth="200">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBox Text="{Binding Powers, Converter={StaticResource GeneralListConverter}}" BorderBrush="Transparent"/>
+                                <TextBox Text="{Binding Powers, Converter={StaticResource ListConverter}, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>

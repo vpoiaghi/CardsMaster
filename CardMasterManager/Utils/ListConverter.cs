@@ -4,7 +4,7 @@ using System.Windows.Data;
 namespace CardMasterManager.Utils
 {
 
-    public class GeneralListConverter : IValueConverter
+    public class ListConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {

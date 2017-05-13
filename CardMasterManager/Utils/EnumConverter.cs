@@ -6,7 +6,7 @@ using System.Windows.Data;
 namespace CardMasterManager.Utils
 {
 
-    public class GeneralEnumConverter : IValueConverter
+    public class EnumConverter : IValueConverter
     {
         private Type enumType = null;
 
