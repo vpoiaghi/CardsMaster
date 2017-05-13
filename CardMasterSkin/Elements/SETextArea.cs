@@ -8,6 +8,7 @@ using System.Drawing.Drawing2D;
 using System.IO;
 using System.Reflection;
 using System.Linq;
+using CardMasterSkin.Converters;
 
 namespace CardMasterSkin.Elements
 {
@@ -123,7 +124,8 @@ namespace CardMasterSkin.Elements
 
                 if (propertyValue != null)
                 {
-                    fullText = propertyValue.ToString();
+                    var converter = new PowersListConverter();
+                    fullText = (string)converter.Convert(propertyValue, typeof(string), null, System.Globalization.CultureInfo.CurrentCulture);
                 }
             }
             else

@@ -2,7 +2,7 @@
 using System.Threading;
 using System.IO;
 
-namespace CardMasterFramework.Dialog
+namespace CardMasterCommon.Dialog
 {
     public static class FolderDialog
     {

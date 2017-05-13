@@ -1,6 +1,6 @@
 ﻿using CardMasterCard.Card;
 using CardMasterImageBuilder;
-using CardMasterFramework.Dialog;
+using CardMasterCommon.Dialog;
 using System;
 using System.Collections.Generic;
 using System.IO;

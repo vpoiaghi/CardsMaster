@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Windows.Data;
 
-namespace CardMasterManager.Converters
+namespace CardMasterCommon.Converters
 {
 
     public abstract class ListConverter<T> : IValueConverter
@@ -57,7 +57,7 @@ namespace CardMasterManager.Converters
             string strResult = "";
             bool firstLine = true;
 
-            foreach (object item in enumerableValue)
+            foreach (T item in enumerableValue)
             {
                 if (firstLine)
                 {

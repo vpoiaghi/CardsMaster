@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converters\PowersListConverter.cs" />
     <Compile Include="Elements\SECircle.cs" />
     <Compile Include="Elements\SECurvedRectangle.cs" />
     <Compile Include="Elements\SEImage.cs" />
@@ -67,6 +68,10 @@
     <ProjectReference Include="..\CardMasterCard\CardMasterCard.csproj">
       <Project>{1ba2630b-04ab-4910-8792-04e48f2319db}</Project>
       <Name>CardMasterCard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CardMasterCommon\CardMasterCommon.csproj">
+      <Project>{38cdb275-ff7f-48a8-8cab-6c582e2540aa}</Project>
+      <Name>CardMasterCommon</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

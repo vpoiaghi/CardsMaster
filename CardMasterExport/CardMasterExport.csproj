@@ -55,9 +55,9 @@
       <Project>{1ba2630b-04ab-4910-8792-04e48f2319db}</Project>
       <Name>CardMasterCard</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CardMasterFramework\CardMasterFramework.csproj">
+    <ProjectReference Include="..\CardMasterCommon\CardMasterCommon.csproj">
       <Project>{38cdb275-ff7f-48a8-8cab-6c582e2540aa}</Project>
-      <Name>CardMasterFramework</Name>
+      <Name>CardMasterCommon</Name>
     </ProjectReference>
     <ProjectReference Include="..\CardMasterImageBuilder\CardMasterImageBuilder.csproj">
       <Project>{65056a8a-d3de-467d-ac89-31b3a051099f}</Project>

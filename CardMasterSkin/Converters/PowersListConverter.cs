@@ -1,7 +1,7 @@
 ﻿using CardMasterCard.Card;
 using CardMasterCommon.Converters;
 
-namespace CardMasterManager.Converters
+namespace CardMasterSkin.Converters
 {
     public class PowersListConverter : ListConverter<Power>
     {

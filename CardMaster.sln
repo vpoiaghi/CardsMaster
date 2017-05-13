@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardMasterImageBuilder", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardMasterSkin", "CardMasterSkin\CardMasterSkin.csproj", "{8E132EEF-1E9C-4B96-8BF7-A513AD1E4EC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardMasterFramework", "CardMasterFramework\CardMasterFramework.csproj", "{38CDB275-FF7F-48A8-8CAB-6C582E2540AA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardMasterCommon", "CardMasterCommon\CardMasterCommon.csproj", "{38CDB275-FF7F-48A8-8CAB-6C582E2540AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
