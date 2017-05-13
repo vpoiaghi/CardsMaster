@@ -1,7 +1,7 @@
 ﻿using CardMasterCard.Card;
 using CardMasterExport.FileExport;
 using CardMasterImageBuilder;
-using CardMasterManager.Utils;
+using CardMasterManager.Converters;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
@@ -26,7 +26,8 @@ namespace CardMasterManager
         public MainWindow()
         {
             InitializeComponent();
-            //cardImage.Source = new BitmapImage(new Uri(Environment.CurrentDirectory + @"\Yamato.jpg"));
+
+            this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
         }
 
         private void MenuItemOpen_Click(object sender, RoutedEventArgs e)

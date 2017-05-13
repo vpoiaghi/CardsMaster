@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
 
-namespace CardMasterManager.Utils
+namespace CardMasterManager.Converters
 {
     public class DrawingImageToImageSourceConverter : System.Windows.Data.IValueConverter
     {

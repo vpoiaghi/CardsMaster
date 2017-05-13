@@ -77,10 +77,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Utils\DrawingImageToImageSourceConverter.cs" />
-    <Compile Include="Utils\EnumBindingSourceExtension.cs" />
-    <Compile Include="Utils\ListConverter.cs" />
-    <Compile Include="Utils\EnumConverter.cs" />
+    <Compile Include="Converters\DrawingImageToImageSourceConverter.cs" />
+    <Compile Include="Binding\EnumBindingSourceExtension.cs" />
+    <Compile Include="Converters\ListConverter.cs" />
+    <Compile Include="Converters\EnumConverter.cs" />
     <Page Include="Forms\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -89,6 +89,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Converters\PowersListConverter.cs" />
     <Compile Include="Forms\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

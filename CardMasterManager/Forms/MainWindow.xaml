@@ -4,14 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CardMasterManager"
-        xmlns:utils="clr-namespace:CardMasterManager.Utils"
+        xmlns:binding="clr-namespace:CardMasterManager.Binding"
+        xmlns:converters="clr-namespace:CardMasterManager.Converters"
         xmlns:card="CardMasterManager.Card"
         mc:Ignorable="d"
         Title="Card Manager" Height="960" Width="1700" ResizeMode="NoResize">
 
     <Window.Resources>
-        <utils:EnumConverter x:Key="EnumConverter"/>
-        <utils:ListConverter x:Key="ListConverter"/>
+        <converters:EnumConverter x:Key="EnumConverter"/>
+        <converters:PowersListConverter x:Key="PowerListConverter"/>
     </Window.Resources>
     
     <StackPanel >
@@ -54,7 +55,7 @@
                                 <ComboBox IsEditable="True" 
                                           Text="{Binding Kind, Converter={StaticResource EnumConverter}, UpdateSourceTrigger=PropertyChanged}" 
                                           BorderBrush="Transparent"
-                                          ItemsSource="{Binding Source={utils:EnumBindingSource {x:Type local:CardKind}}}"
+                                          ItemsSource="{Binding Source={binding:EnumBindingSource {x:Type local:CardKind}}}"
                                           GotFocus="ComboBox_GotFocus"
                                           >
                                     <ComboBox.ItemTemplate>
@@ -89,7 +90,7 @@
                                 <ComboBox IsEditable="True"  
                                           Text="{Binding Nature, Converter={StaticResource EnumConverter}, UpdateSourceTrigger=PropertyChanged}" 
                                           BorderBrush="Transparent"
-                                          ItemsSource="{Binding Source={utils:EnumBindingSource {x:Type local:NatureCard}}}"
+                                          ItemsSource="{Binding Source={binding:EnumBindingSource {x:Type local:NatureCard}}}"
                                           GotFocus="ComboBox_GotFocus">
                                     <ComboBox.ItemTemplate>
                                         <DataTemplate>
@@ -136,7 +137,7 @@
                     <DataGridTemplateColumn Header="Pouvoirs" Width="Auto" MinWidth="200">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBox Text="{Binding Powers, Converter={StaticResource ListConverter}, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
+                                <TextBox Text="{Binding Powers, Converter={StaticResource PowerListConverter}, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>

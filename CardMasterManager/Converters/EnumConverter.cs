@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Reflection;
 using System.Windows.Data;
 
-namespace CardMasterManager.Utils
+namespace CardMasterManager.Converters
 {
 
     public class EnumConverter : IValueConverter
@@ -23,11 +23,10 @@ namespace CardMasterManager.Utils
 
         public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
-            if (value != null && value.GetType().IsEnum)
+            if (value == null || value.GetType().IsEnum)
                 return value;
             else
                 return searchItemByName(value.ToString());
-
         }
 
         private string getDescription(object enumValue)
