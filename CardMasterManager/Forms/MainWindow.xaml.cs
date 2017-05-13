@@ -1,4 +1,5 @@
 ﻿using CardMasterCard.Card;
+using CardMasterExport;
 using CardMasterExport.FileExport;
 using CardMasterImageBuilder;
 using CardMasterManager.Converters;
@@ -135,15 +136,15 @@ namespace CardMasterManager
             
             if (cardsList.Count > 0) {
 
-                PngExport exp = new PngExport(this);
+                PngExport exp = new PngExport(this, cardsList, skinsFile);
                 exp.progressChangedEvent += new PngExport.ProgressChanged(ExportProgressChanged);
-                exp.Export(cardsList, skinsFile);
+                exp.Export();
                 
             }
 
         }
 
-        private void ExportProgressChanged(object sender, PngExport.ProgressChangedArg args)
+        private void ExportProgressChanged(object sender, ProgressChangedArg args)
         {
             debug.Text = args.Message;
         }

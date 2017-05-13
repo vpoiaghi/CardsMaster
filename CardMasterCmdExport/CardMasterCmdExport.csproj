@@ -4,16 +4,18 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4D96048A-0232-4743-97AF-5E52C5087A29}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{E2A4C710-6782-45E4-B9E3-59B00CB3EDB8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CardMasterExport</RootNamespace>
-    <AssemblyName>CardMasterExport</AssemblyName>
+    <RootNamespace>CardMasterCmdExport</RootNamespace>
+    <AssemblyName>CardMasterCmdExport</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +25,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -31,39 +34,33 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProgressChangedArg.cs" />
-    <Compile Include="Exporter.cs" />
-    <Compile Include="File export\PngExport.cs" />
+    <Compile Include="Parameters.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usage.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CardMasterCard\CardMasterCard.csproj">
       <Project>{1ba2630b-04ab-4910-8792-04e48f2319db}</Project>
       <Name>CardMasterCard</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CardMasterCommon\CardMasterCommon.csproj">
-      <Project>{38cdb275-ff7f-48a8-8cab-6c582e2540aa}</Project>
-      <Name>CardMasterCommon</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CardMasterImageBuilder\CardMasterImageBuilder.csproj">
-      <Project>{65056a8a-d3de-467d-ac89-31b3a051099f}</Project>
-      <Name>CardMasterImageBuilder</Name>
+    <ProjectReference Include="..\CardMasterExport\CardMasterExport.csproj">
+      <Project>{4d96048a-0232-4743-97af-5e52c5087a29}</Project>
+      <Name>CardMasterExport</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,64 +1,43 @@
 ﻿using CardMasterCard.Card;
-using CardMasterImageBuilder;
 using CardMasterCommon.Dialog;
+using CardMasterImageBuilder;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Threading;
-using System.Windows;
 using System.Drawing;
+using System.IO;
+using System.Windows;
 
 namespace CardMasterExport.FileExport
 
 {
-    public class PngExport : IDisposable
+    public class PngExport : Exporter, IDisposable
     {
-        private static object _lock = new Object();
+        private DirectoryInfo targetFolder = null;
 
-        private bool exportRunning = false;
-        private string targetFolder = null;
+        public PngExport(Window owner, List<Card> cardsList, FileInfo skinsFile) : this(owner, cardsList, skinsFile, null)
+        { }
 
-        private Window owner;
-        private List<Card> cardsList = null;
-        private FileInfo skinsFile = null;
-
-        public delegate void ProgressChangedEvent(int index, int total);
-        public delegate void ProgressChanged(object sender, ProgressChangedArg args);
-
-        public event ProgressChanged progressChangedEvent;
-
-        public PngExport(Window owner) {
-            this.owner = owner;
-        }
-        
-        public void Export(List<Card> cardsList, FileInfo skinsFile)
+        public PngExport(List<Card> cardsList, FileInfo skinsFile, DirectoryInfo targetFolder) : base(cardsList, skinsFile)
         {
-            if ((cardsList != null) && (skinsFile != null) && (!exportRunning))
+            this.targetFolder = targetFolder;
+        }
+
+        public PngExport(Window owner, List<Card> cardsList, FileInfo skinsFile, DirectoryInfo targetFolder) : base(owner, cardsList, skinsFile)
+        {
+            this.targetFolder = targetFolder;
+        }   
+
+        protected override bool BeforeCardsExport()
+        {
+            if (this.targetFolder == null)
             {
-                lock (_lock)
-                {
-                    this.cardsList = cardsList;
-                    this.skinsFile = skinsFile;
-                    this.targetFolder = FolderDialog.SelectFolder();
-                }
-                    
-                if (targetFolder != null)
-                {
-                    var t = new Thread(new ThreadStart(ExportCard));
-
-                    exportRunning = true;
-
-                    t.IsBackground = true;
-                    t.Start();
-                }
-
-                exportRunning = false;
-
+                this.targetFolder = FolderDialog.SelectFolder();
             }
 
+            return (this.targetFolder != null);
         }
-        
-        private void ExportCard()
+
+        protected override void MakeCardExport(Card card)
         {
             Drawer drawer = null;
             Image img = null;
@@ -67,98 +46,48 @@ namespace CardMasterExport.FileExport
             string targetFolder = null;
 
             lock (_lock){
-                cards = cardsList;
-                targetFolder = this.targetFolder;
+                cards = this.cardsList;
+                targetFolder = this.targetFolder.FullName;
             }
 
-            int cardIndex = 0;
-            int cardCount = cards.Count;
+            string fileName = card.Name
+                .Replace("\\", " ")
+                .Replace("/", " ")
+                .Replace(":", "-")
+                .Replace("*", " ")
+                .Replace("?", " ")
+                .Replace("\"", "'")
+                .Replace("<", " ")
+                .Replace(">", " ")
+                .Replace("|", " ");
 
-            foreach (Card card in cards)
-            {
-                string fileName = card.Name.Replace(":", "-").Replace("\"", "'").Replace("*", " ");
+            drawer = new Drawer(card, skinsFile, null);
+            img = drawer.DrawCard();
 
-                drawer = new Drawer(card, skinsFile, null);
-                img = drawer.DrawCard();
+            img.Save(Path.Combine(targetFolder, fileName + ".png"));
+            img.Dispose();
 
-                img.Save(Path.Combine(targetFolder, fileName + ".png"));
-                img.Dispose();
-
-                drawer = null;
-                img = null;
-
-                cardIndex = cardIndex + 1;
-
-                // Affiche la progression
-                ShowProgress(cardIndex, cardCount);
-            }
-
-            // Attend quatre secondes avant d'effacer le dernier message
-            Thread.Sleep(4000);
-            ShowProgress(0, 0);
-
-            exportRunning = false;
+            drawer = null;
+            img = null;
 
         }
 
-        private void ShowProgress(int index, int total)
+        protected override string GetProgressMessage(ProgressState state, int index, int total)
         {
-            try
-            {
-                owner.Dispatcher.Invoke((ProgressChangedEvent)SendProgressChangedEvent, index, total);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                return;
-            }
-
-        }
-
-        private void SendProgressChangedEvent(int index, int total)
-        {
-
             string message = "";
 
-            if (index < total)
+            if (state == ProgressState.ExportInProgress)
             {
                 message = "Export en cours : " + index + " / " + total;
             }
-            else if ((index == 0) && (total == 0))
-            {
-                message = "";
-            }
-            else if (index == total)
+            else if (state == ProgressState.ExportEnded)
             {
                 message = "Export terminé";
             }
-            
-            Console.WriteLine(message);
 
-            progressChangedEvent(this, new ProgressChangedArg(index, total, message));
-
+            return message;
         }
 
-        public void Dispose()
-        {
-            owner = null;
-            cardsList = null;
-            skinsFile = null;
-        }
-
-        public class ProgressChangedArg
-        {
-            public ProgressChangedArg(int index, int total, string message)
-            {
-                this.Index = index;
-                this.Total = total;
-                this.Message = message;
-            }
-        
-            public int Index { get; }
-            public int Total { get; }
-            public string Message { get; }
-        }
-        
     }
+
 }
