@@ -18,7 +18,15 @@ namespace CardMasterCmdExport
         public Parameters(string[] args)
         {
 
-            if ((args == null) || (args.Length < 2))
+            if (args == null)
+            {
+                throw new ArgumentException("Nombre de paramètres invalide.");
+            }
+            else if ((args.Length == 1) && (args[0].Equals("/?")))
+            {
+                throw new ArgumentException("");
+            }
+            else if  (args.Length < 2)
             {
                 throw new ArgumentException("Nombre de paramètres invalide.");
             }
