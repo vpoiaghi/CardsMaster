@@ -4,6 +4,7 @@ using CardMasterSkin.Elements;
 using System;
 using System.Drawing;
 using System.IO;
+using System.Collections.Generic;
 
 namespace CardMasterImageBuilder
 {
@@ -88,7 +89,6 @@ namespace CardMasterImageBuilder
                 skin.Elements.Add(skinElement);
 
             }
-
             return skin;
 
         }
