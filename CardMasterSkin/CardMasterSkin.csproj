@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converters\AttributeParser.cs" />
     <Compile Include="Converters\PowersListConverter.cs" />
     <Compile Include="Elements\SECircle.cs" />
     <Compile Include="Elements\SECurvedRectangle.cs" />
