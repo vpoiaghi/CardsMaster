@@ -102,7 +102,7 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
 
-                    <DataGridTemplateColumn Header="Element" MinWidth="120">
+                    <DataGridTemplateColumn Header="Element" MinWidth="90">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBox Text="{Binding Element, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
@@ -110,7 +110,7 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
 
-                    <DataGridTemplateColumn Header="Cout" MinWidth="60">
+                    <DataGridTemplateColumn Header="Cout" MinWidth="30">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBox Text="{Binding Cost, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
@@ -118,7 +118,7 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
 
-                    <DataGridTemplateColumn Header="Atk" MinWidth="60">
+                    <DataGridTemplateColumn Header="Atk" MinWidth="30">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBox Text="{Binding Attack, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
@@ -126,7 +126,7 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
 
-                    <DataGridTemplateColumn Header="Def." MinWidth="60">
+                    <DataGridTemplateColumn Header="Def." MinWidth="30">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBox Text="{Binding Defense, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
@@ -141,7 +141,14 @@
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
-
+                    
+                    <DataGridTemplateColumn Header="Citation" MinWidth="150">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding Citation, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
                 </DataGrid.Columns>
 
             </DataGrid>

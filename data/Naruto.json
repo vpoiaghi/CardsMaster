@@ -1,6 +1,4 @@
 {
-  "ImagesDirectory" : "F:\\\\Programmation\\\\VBA\\\\Cartes Bruno\\\\Cartes\\\\Images",
-  "TexturesDirectory" : "F:\\\\Programmation\\\\VBA\\\\Cartes Bruno\\\\Cartes\\\\Textures",
   "Cards" : [ {
     "Powers" : [ {
       "Description" : "Permanent : Insensible aux dégats non physiques"
