@@ -1,954 +1,956 @@
 {
+  "TexturesDirectory" : "F:\\\\Programmation\\\\VBA\\\\Cartes Bruno\\\\Cartes\\\\Textures",
+  "ImagesDirectory" : "F:\\\\Programmation\\\\VBA\\\\Cartes Bruno\\\\Cartes\\\\Images",
   "Cards" : [ {
     "Powers" : [ {
-      "Description" : "Permanent : Insensible aux dégats non physiques"
+      "Description" : "<<Permanent>> : Insensible aux dégats non physiques"
     }, {
-      "Description" : "1 fois : Astre Divin : Détruit un ninja ennemi"
+      "Description" : "<<activate>> : Astre Divin : Détruit un ninja ennemi"
     } ],
     "Name" : "Hagoromo Ôtsutsuki",
     "Element" : "Rinnegan",
-    "Chakra" : "Special",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Chibaku Tensei",
+    "Attack" : "6",
+    "Chakra" : "Special",
     "Cost" : "9",
     "Rank" : "Légendaire",
-    "Kind" : "Ninja",
-    "Attack" : "6",
     "Defense" : "5",
-    "Team" : "Ancêtres",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Ancêtres"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Insensible aux dégats non physiques"
+      "Description" : "<<Permanent>> : Insensible aux dégats non physiques"
     }, {
-      "Description" : "1 fois : Inglige 2 dégats à tous les ennemis"
+      "Description" : "<<activate>> : Inglige 2 dégats à tous les ennemis"
     } ],
     "Name" : "Kaguya Ôtsutsuki",
     "Element" : "Genjustsu",
-    "Chakra" : "Special",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Togebari",
+    "Attack" : "6",
+    "Chakra" : "Special",
     "Cost" : "9",
     "Rank" : "Légendaire",
-    "Kind" : "Ninja",
-    "Attack" : "6",
     "Defense" : "5",
-    "Team" : "Ancêtres",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Ancêtres"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Les ninjas de vent gagnent +3/+3"
+      "Description" : "<<Permanent>> : Les ninjas de vent gagnent +3/+3"
     } ],
     "Name" : "Ashura Ôtsutsuki",
     "Element" : "Vent",
-    "Chakra" : "Vent",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Rikudô Sennin Môdo",
+    "Attack" : "4",
+    "Chakra" : "Vent",
     "Cost" : "7",
     "Rank" : "Légendaire",
-    "Kind" : "Ninja",
-    "Attack" : "4",
     "Defense" : "4",
-    "Team" : "Ancêtres",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Ancêtres"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Les ninjas de feu gagnent +3/+3"
+      "Description" : "<<Permanent>> : Les ninjas de feu gagnent +3/+3"
     } ],
     "Name" : "Indra Ôtsutsuki",
     "Element" : "Feu",
-    "Chakra" : "Feu",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Amaterasu",
+    "Attack" : "4",
+    "Chakra" : "Feu",
     "Cost" : "7",
     "Rank" : "Légendaire",
-    "Kind" : "Ninja",
-    "Attack" : "4",
     "Defense" : "4",
-    "Team" : "Ancêtres",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Ancêtres"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Détruit un bijù ennemi au choix"
+      "Description" : "<<Instantané>> : Détruit un bijù ennemi au choix"
     } ],
     "Name" : "Yamato",
     "Element" : "Terre",
-    "Chakra" : "Terre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Bijù Fûinjutsu",
+    "Attack" : "2",
+    "Chakra" : "Terre",
     "Cost" : "3",
     "Rank" : "Rare",
-    "Kind" : "Ninja",
-    "Attack" : "2",
     "Defense" : "3",
-    "Team" : "La Racine",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "La Racine"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Copie et lance le jutsu d'un ninja présent sur le champs de bataille"
+      "Description" : "<<Instantané>> : Copie et lance le jutsu d'un ninja présent sur le champs de bataille"
     } ],
     "Name" : "Kakashi Hatake",
     "Element" : "Foudre",
-    "Chakra" : "Foudre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Sharingan",
+    "Attack" : "3",
+    "Chakra" : "Foudre",
     "Cost" : "3",
     "Rank" : "Rare",
-    "Kind" : "Ninja",
-    "Attack" : "3",
     "Defense" : "2",
-    "Team" : "Equipe 7",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe 7"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Rasengan : Inflige 1D6 dégats à un ninja ennemi"
+      "Description" : "<<activate>> : Rasengan : Inflige 1D6 dégats à un ninja ennemi"
     }, {
-      "Description" : "1 fois : Se transforme en  Kyûbi"
+      "Description" : "<<activate>> : Se transforme en  Kyûbi"
     } ],
     "Name" : "Naruto Uzumaki",
     "Element" : "Vent",
-    "Chakra" : "Vent",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Raaasengan",
+    "Attack" : "5",
+    "Chakra" : "Vent",
     "Cost" : "6",
     "Rank" : "Légendaire",
-    "Kind" : "Ninja",
-    "Attack" : "5",
     "Defense" : "4",
-    "Team" : "Equipe 7",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe 7"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Soigne X PV à un allié. (Utilisable 1 fois par tour)"
+      "Description" : "<<Permanent>> : Soigne X PV à un allié. (Utilisable <<activate>> par tour)"
     } ],
     "Name" : "Sakura Haruno",
     "Element" : "Soin",
-    "Chakra" : "Eau",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Shôsen Jutsu",
+    "Attack" : "2",
+    "Chakra" : "Eau",
     "Cost" : "3",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "2",
     "Defense" : "3",
-    "Team" : "Equipe 7",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe 7"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Invoque le Tigre d'encre"
+      "Description" : "<<activate>> : Invoque le Tigre d'encre"
     } ],
     "Name" : "Saï",
     "Element" : "Physique",
-    "Chakra" : "Physique",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Koshi Tandan Fûinjutsu",
+    "Attack" : "2",
+    "Chakra" : "Physique",
     "Cost" : "3",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "2",
     "Defense" : "2",
-    "Team" : "Equipe 7",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe 7"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Charge"
+      "Description" : "<<Instantané>> : Charge"
     } ],
     "Name" : "Tigre d'encre",
     "Element" : "Physique",
-    "Chakra" : "Physique",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Roaaaaaar",
+    "Attack" : "3",
+    "Chakra" : "Physique",
     "Cost" : "0",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "3",
     "Defense" : "1",
-    "Team" : "Invocation",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Invocation"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Etourdit un ninja pour 2 tours"
+      "Description" : "<<activate>> : Etourdit un ninja pour 2 tours"
     } ],
     "Name" : "Asuma Sarutobi",
     "Element" : "Vent",
-    "Chakra" : "Vent",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Raigô : Senjusatsu",
+    "Attack" : "",
+    "Chakra" : "Vent",
     "Cost" : "X",
     "Rank" : "Rare",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Equipe 10",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe 10"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Décuplement partiel : Protection"
+      "Description" : "<<Permanent>> : Décuplement partiel : Protection"
     }, {
-      "Description" : "Instantané : Charge"
+      "Description" : "<<Instantané>> : Charge"
     } ],
     "Name" : "Chôji Akimichi",
     "Element" : "Physique",
-    "Chakra" : "Physique",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Chô Baika No Jutsu",
+    "Attack" : "2",
+    "Chakra" : "Physique",
     "Cost" : "4",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "2",
     "Defense" : "6",
-    "Team" : "Equipe 10",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe 10"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Prends le contrôle d'un adversaire"
+      "Description" : "<<activate>> : Prends le contrôle d'un adversaire"
     } ],
     "Name" : "Ino Yamanaka",
     "Element" : "Genjustsu",
-    "Chakra" : "Special",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Shintenshin No Jutsu",
+    "Attack" : "1",
+    "Chakra" : "Special",
     "Cost" : "3",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "1",
     "Defense" : "3",
-    "Team" : "Equipe 10",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe 10"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Prends le contrôle d'un adversaire"
+      "Description" : "<<activate>> : Prends le contrôle d'un adversaire"
     } ],
     "Name" : "Shikamaru Nara",
     "Element" : "Ombre",
-    "Chakra" : "Special",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kagemane No jutsu",
+    "Attack" : "1",
+    "Chakra" : "Special",
     "Cost" : "3",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "1",
     "Defense" : "3",
-    "Team" : "Equipe 10",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe 10"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Prends le contrôle de 2 adversaires"
+      "Description" : "<<activate>> : Prends le contrôle de 2 adversaires"
     } ],
     "Name" : "Shikaku Nara",
     "Element" : "Ombre",
-    "Chakra" : "Special",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kage Kubishibari No jutsu",
+    "Attack" : "2",
+    "Chakra" : "Special",
     "Cost" : "5",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "2",
     "Defense" : "2",
-    "Team" : "Ino-Shika-Cho",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Ino-Shika-Cho"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Grande confusion : Choisissez 2 ennemis qui doivent s'affronter"
+      "Description" : "<<Instantané>> : Grande confusion : Choisissez 2 ennemis qui doivent s'affronter"
     } ],
     "Name" : "Inoichi Yamanaka",
     "Element" : "Genjustsu",
-    "Chakra" : "Special",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Shinranshin No Jutsu",
+    "Attack" : "2",
+    "Chakra" : "Special",
     "Cost" : "5",
     "Rank" : "Rare",
-    "Kind" : "Ninja",
-    "Attack" : "2",
     "Defense" : "2",
-    "Team" : "Ino-Shika-Cho",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Ino-Shika-Cho"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Décuplement partiel : Protection"
+      "Description" : "<<Permanent>> : Décuplement partiel : Protection"
     }, {
-      "Description" : "Instantané : Charge"
+      "Description" : "<<Instantané>> : Charge"
     } ],
     "Name" : "Chôza Akimichi",
     "Element" : "Physique",
-    "Chakra" : "Physique",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Chôharite",
+    "Attack" : "5",
+    "Chakra" : "Physique",
     "Cost" : "5",
     "Rank" : "Rare",
-    "Kind" : "Ninja",
-    "Attack" : "5",
     "Defense" : "5",
-    "Team" : "Ino-Shika-Cho",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Ino-Shika-Cho"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Ses attaque ignorent l'armure de l'adversaire"
+      "Description" : "<<Permanent>> : Ses attaque ignorent l'armure de l'adversaire"
     } ],
     "Name" : "Ibiki Morino",
     "Element" : "Genjustsu",
-    "Chakra" : "Special",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kokutô ",
+    "Attack" : "4",
+    "Chakra" : "Special",
     "Cost" : "4",
     "Rank" : "Rare",
-    "Kind" : "Ninja",
-    "Attack" : "4",
     "Defense" : "3",
-    "Team" : "Examinateur",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Examinateur"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Ses attaques ne subissent pas de contre attaque"
+      "Description" : "<<Permanent>> : Ses attaques ne subissent pas de contre attaque"
     } ],
     "Name" : "Genma Shiranui",
     "Element" : "Foudre",
-    "Chakra" : "Foudre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Senbon",
+    "Attack" : "2",
+    "Chakra" : "Foudre",
     "Cost" : "3",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "2",
     "Defense" : "3",
-    "Team" : "Examinateur",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Examinateur"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Insensible au Genjutsu"
+      "Description" : "<<Permanent>> : Insensible au Genjutsu"
     } ],
     "Name" : "Kotetsu Hagane",
     "Element" : "Genjustsu",
-    "Chakra" : "Special",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Magen: Kokoni Arazu no Jutsu",
+    "Attack" : "2",
+    "Chakra" : "Special",
     "Cost" : "3",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "2",
     "Defense" : "2",
-    "Team" : "Examinateur",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Examinateur"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Marée de mucus : Immobilise 2 ninja pendant 1 tour"
+      "Description" : "<<activate>> : Marée de mucus : Immobilise 2 ninja pendant 1 tour"
     } ],
     "Name" : "Izumo Kamizuki",
     "Element" : "Eau",
-    "Chakra" : "Eau",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Suiton : Mizuame Nabara",
+    "Attack" : "2",
+    "Chakra" : "Eau",
     "Cost" : "3",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "2",
     "Defense" : "2",
-    "Team" : "Examinateur",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Examinateur"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Prends le contrôle d'un adversaire"
+      "Description" : "<<Instantané>> : Prends le contrôle d'un adversaire"
     } ],
     "Name" : "Kurenaï Yûhi",
     "Element" : "Genjustsu",
-    "Chakra" : "Special",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Fûja hôin",
+    "Attack" : "",
+    "Chakra" : "Special",
     "Cost" : "X",
     "Rank" : "Rare",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Equipe 8",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe 8"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Protection"
+      "Description" : "<<Permanent>> : Protection"
     }, {
-      "Description" : "1 fois : Byakugan : Révèle 3 cartes de pioche, en garde une , défausse les autres"
+      "Description" : "<<activate>> : Byakugan : Révèle 3 cartes de pioche, en garde une , défausse les autres"
     } ],
     "Name" : "Hinata Hyûga",
     "Element" : "Physique",
-    "Chakra" : "Physique",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Byakugan",
+    "Attack" : "",
+    "Chakra" : "Physique",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Equipe 8",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe 8"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Furie des vents : Attaque 2 fois"
+      "Description" : "<<Permanent>> : Furie des vents : Attaque 2 fois"
     } ],
     "Name" : "Kiba Inuzuka et Akamaru",
     "Element" : "Vent",
-    "Chakra" : "Vent",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Shikyaku no Jutsu",
+    "Attack" : "3",
+    "Chakra" : "Vent",
     "Cost" : "4",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "3",
     "Defense" : "2",
-    "Team" : "Equipe 8",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe 8"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Détruit 2 points de chakra de l'adversaire"
+      "Description" : "<<Instantané>> : Détruit 2 points de chakra de l'adversaire"
     } ],
     "Name" : "Shino Aburame",
     "Element" : "Physique",
-    "Chakra" : "Physique",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kikaichu",
+    "Attack" : "",
+    "Chakra" : "Physique",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Equipe 8",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe 8"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Protection"
+      "Description" : "<<Permanent>> : Protection"
     } ],
     "Name" : "Gaï Maito",
     "Element" : "Physique",
-    "Chakra" : "Physique",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Hachimon",
+    "Attack" : "",
+    "Chakra" : "Physique",
     "Cost" : "X",
     "Rank" : "Rare",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Equipe 9",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe 9"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Protection"
+      "Description" : "<<Permanent>> : Protection"
     }, {
-      "Description" : "1 fois : Byakugan : Révéle 3 cartes de pioche, en garde une, défausse les autres"
+      "Description" : "<<activate>> : Byakugan : Révéle 3 cartes de pioche, en garde une, défausse les autres"
     } ],
     "Name" : "Neji Hyûga",
     "Element" : "Physique",
-    "Chakra" : "Physique",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Byakugan",
+    "Attack" : "",
+    "Chakra" : "Physique",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Equipe 9",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe 9"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Protection"
+      "Description" : "<<Permanent>> : Protection"
     } ],
     "Name" : "Rock Lee",
     "Element" : "Physique",
-    "Chakra" : "Physique",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Hachimon",
+    "Attack" : "",
+    "Chakra" : "Physique",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Equipe 9",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe 9"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Ses attaques ne subissent pas de contre attaque"
+      "Description" : "<<Permanent>> : Ses attaques ne subissent pas de contre attaque"
     } ],
     "Name" : "Tenten",
     "Element" : "Physique",
-    "Chakra" : "Physique",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Sôshôryû",
+    "Attack" : "2",
+    "Chakra" : "Physique",
     "Cost" : "2",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "2",
     "Defense" : "2",
-    "Team" : "Equipe 9",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe 9"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Invoque un clône d'ombre qui encaisse les dégats devant tuer Ebisu"
+      "Description" : "<<activate>> : Invoque un clône d'ombre qui encaisse les dégats devant tuer Ebisu"
     } ],
     "Name" : "Ebisu",
     "Element" : "Physique",
-    "Chakra" : "Physique",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kage bunshin No Jutsu",
+    "Attack" : "",
+    "Chakra" : "Physique",
     "Cost" : "X",
     "Rank" : "Rare",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Équipe Ebisu",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Équipe Ebisu"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Annule le pouvoir d'un adversaire"
+      "Description" : "<<activate>> : Annule le pouvoir d'un adversaire"
     } ],
     "Name" : "Konohamaru Sarutobi",
     "Element" : "Sexy-Jutsu",
-    "Chakra" : "Special",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Oiroke : Onna No Ko Dôshi No Jutsu",
+    "Attack" : "",
+    "Chakra" : "Special",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Équipe Ebisu",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Équipe Ebisu"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Annule le pouvoir d'un adversaire"
+      "Description" : "<<activate>> : Annule le pouvoir d'un adversaire"
     } ],
     "Name" : "Moegi",
     "Element" : "Sexy-Jutsu",
-    "Chakra" : "Special",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Oiroke : Onna No Ko Dôshi No Jutsu",
+    "Attack" : "",
+    "Chakra" : "Special",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Équipe Ebisu",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Équipe Ebisu"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Annule le pouvoir d'un adversaire"
+      "Description" : "<<activate>> : Annule le pouvoir d'un adversaire"
     } ],
     "Name" : "Udon",
     "Element" : "Sexy-Jutsu",
-    "Chakra" : "Special",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Oiroke : Onna No Ko Dôshi No Jutsu",
+    "Attack" : "",
+    "Chakra" : "Special",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Équipe Ebisu",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Équipe Ebisu"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Détruit l'adversaire d'une puissance frappe"
+      "Description" : "<<Instantané>> : Détruit l'adversaire d'une puissance frappe"
     }, {
-      "Description" : "1 fois : Invocation Gamabunta"
+      "Description" : "<<activate>> : Invocation Gamabunta"
     } ],
     "Name" : "Jiraya",
     "Element" : "Vent",
-    "Chakra" : "Vent",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Doton : Yomi Numa",
+    "Attack" : "",
+    "Chakra" : "Vent",
     "Cost" : "9",
     "Rank" : "Légendaire",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Sanin",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Sanin"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Détruit l'adversaire d'une puissance frappe"
+      "Description" : "<<Instantané>> : Détruit l'adversaire d'une puissance frappe"
     }, {
-      "Description" : "1 fois : Invoque katsuyu"
+      "Description" : "<<activate>> : Invoque katsuyu"
     } ],
     "Name" : "Tsunade",
     "Element" : "Eau",
-    "Chakra" : "Eau",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Byakugô No Jutsu",
+    "Attack" : "",
+    "Chakra" : "Eau",
     "Cost" : "9",
     "Rank" : "Légendaire",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Sanin",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Sanin"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Insensible aux attaques physiques, de Terre et d'eau "
+      "Description" : "<<Permanent>> : Insensible aux attaques physiques, de Terre et d'eau "
     } ],
     "Name" : "Guren",
     "Element" : "Cristal",
-    "Chakra" : "Special",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Shôton : Kesshô No Yoroï",
+    "Attack" : "3",
+    "Chakra" : "Special",
     "Cost" : "4",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "3",
     "Defense" : "3",
-    "Team" : "Ninja",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Ninja"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et disparait"
+      "Description" : "<<activate>> : Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et disparait"
     } ],
     "Name" : "Shukaku (Ichibi)",
     "Element" : "Orbe Biju",
-    "Chakra" : "Feu",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Bijûdama",
+    "Attack" : "",
+    "Chakra" : "Feu",
     "Cost" : "8",
     "Rank" : "Légendaire",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Bijù",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Bijù"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et disparait"
+      "Description" : "<<activate>> : Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et disparait"
     } ],
     "Name" : "Matatabi (Nibi)",
     "Element" : "Orbe Biju",
-    "Chakra" : "Feu",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Bijûdama",
+    "Attack" : "",
+    "Chakra" : "Feu",
     "Cost" : "8",
     "Rank" : "Légendaire",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Bijù",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Bijù"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et disparait"
+      "Description" : "<<activate>> : Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et disparait"
     } ],
     "Name" : "Isobu (Sanbi)",
     "Element" : "Orbe Biju",
-    "Chakra" : "Feu",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Bijûdama",
+    "Attack" : "",
+    "Chakra" : "Feu",
     "Cost" : "8",
     "Rank" : "Légendaire",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Bijù",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Bijù"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et disparait"
+      "Description" : "<<activate>> : Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et disparait"
     } ],
     "Name" : "Son Gokû (Yonbi)",
     "Element" : "Orbe Biju",
-    "Chakra" : "Feu",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Bijûdama",
+    "Attack" : "",
+    "Chakra" : "Feu",
     "Cost" : "8",
     "Rank" : "Légendaire",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Bijù",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Bijù"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et disparait"
+      "Description" : "<<activate>> : Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et disparait"
     } ],
     "Name" : "Kokuô (Gobi)",
     "Element" : "Orbe Biju",
-    "Chakra" : "Feu",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Bijûdama",
+    "Attack" : "",
+    "Chakra" : "Feu",
     "Cost" : "8",
     "Rank" : "Légendaire",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Bijù",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Bijù"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et disparait"
+      "Description" : "<<activate>> : Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et disparait"
     } ],
     "Name" : "Saiken (Rokubi)",
     "Element" : "Orbe Biju",
-    "Chakra" : "Feu",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Bijûdama",
+    "Attack" : "",
+    "Chakra" : "Feu",
     "Cost" : "8",
     "Rank" : "Légendaire",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Bijù",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Bijù"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et disparait"
+      "Description" : "<<activate>> : Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et disparait"
     } ],
     "Name" : "Chômei (Nanabi)",
     "Element" : "Orbe Biju",
-    "Chakra" : "Feu",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Bijûdama",
+    "Attack" : "",
+    "Chakra" : "Feu",
     "Cost" : "8",
     "Rank" : "Légendaire",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Bijù",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Bijù"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et redevient son Hôte"
+      "Description" : "<<activate>> : Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et redevient son Hôte"
     } ],
     "Name" : "Gyûki (Hachibi)",
     "Element" : "Orbe Biju",
-    "Chakra" : "Feu",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Bijûdama",
+    "Attack" : "",
+    "Chakra" : "Feu",
     "Cost" : "8",
     "Rank" : "Légendaire",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Bijù",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Bijù"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et redevient son Hôte"
+      "Description" : "<<activate>> : Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et redevient son Hôte"
     } ],
     "Name" : "Kurama (Kyûbi)",
     "Element" : "Orbe Biju",
-    "Chakra" : "Feu",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Bijûdama",
+    "Attack" : "",
+    "Chakra" : "Feu",
     "Cost" : "8",
     "Rank" : "Légendaire",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Bijù",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Bijù"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Prends le contrôle d'un adversaire"
+      "Description" : "<<Instantané>> : Prends le contrôle d'un adversaire"
     } ],
     "Name" : "Itachi Uchiwa",
     "Element" : "Genjustsu",
-    "Chakra" : "Special",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Mangekyô Sharingan",
+    "Attack" : "",
+    "Chakra" : "Special",
     "Cost" : "5",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Akatsuki",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Akatsuki"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Clone aqueu : Invoque un clone aqueu"
+      "Description" : "<<activate>> : Clone aqueu : Invoque un clone aqueu"
     } ],
     "Name" : "Kisame Hoshigaki",
     "Element" : "Eau",
-    "Chakra" : "Eau",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Suiton : Daikôdan No jutsu",
+    "Attack" : "",
+    "Chakra" : "Eau",
     "Cost" : "4",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Akatsuki",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Akatsuki"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Protection"
+      "Description" : "<<Permanent>> : Protection"
     }, {
-      "Description" : "Instantané : Charge"
+      "Description" : "<<Instantané>> : Charge"
     } ],
     "Name" : "Clone aqueu de Kisame",
     "Element" : "Eau",
-    "Chakra" : "Eau",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Suiton : Daikôdan No jutsu",
+    "Attack" : "1",
+    "Chakra" : "Eau",
     "Cost" : "0",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "1",
     "Defense" : "1",
-    "Team" : "Invocation",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Invocation"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Renvoie tous les autres ninjas adverses dans la main de leur propriétaire"
+      "Description" : "<<Instantané>> : Renvoie tous les autres ninjas adverses dans la main de leur propriétaire"
     } ],
     "Name" : "Madara Uchiwa",
     "Element" : "Feu",
-    "Chakra" : "Feu",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Mugen Tsukuyomi",
+    "Attack" : "5",
+    "Chakra" : "Feu",
     "Cost" : "9",
     "Rank" : "Légendaire",
-    "Kind" : "Ninja",
-    "Attack" : "5",
     "Defense" : "5",
-    "Team" : "Akatsuki",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Akatsuki"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Invoque autant de clones Zetsu que d'adversaires"
+      "Description" : "<<Instantané>> : Invoque autant de clones Zetsu que d'adversaires"
     } ],
     "Name" : "Zetsu Noir",
     "Element" : "Terre",
-    "Chakra" : "Terre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Hôshi No Jutsu",
+    "Attack" : "3",
+    "Chakra" : "Terre",
     "Cost" : "7",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "3",
     "Defense" : "5",
-    "Team" : "Akatsuki",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Akatsuki"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Invoque autant de clones Zetsu que d'adversaires"
+      "Description" : "<<Instantané>> : Invoque autant de clones Zetsu que d'adversaires"
     } ],
     "Name" : "Zetsu Blanc",
     "Element" : "Terre",
-    "Chakra" : "Terre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Hôshi No Jutsu",
+    "Attack" : "3",
+    "Chakra" : "Terre",
     "Cost" : "7",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "3",
     "Defense" : "5",
-    "Team" : "Akatsuki",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Akatsuki"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Charge"
+      "Description" : "<<Instantané>> : Charge"
     } ],
     "Name" : "Clone Zetsu",
     "Element" : "Terre",
-    "Chakra" : "Terre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Rhaaaaaaaaaaaaaaa",
+    "Attack" : "2",
+    "Chakra" : "Terre",
     "Cost" : "0",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "2",
     "Defense" : "2",
-    "Team" : "Invocation",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Invocation"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Bombe d'argile explosive : inflige 2 dégats à tous les ennemis. (Utilisable 1 fois par tour)"
+      "Description" : "<<activate>> : Bombe d'argile explosive : inflige 2 dégats à tous les ennemis. (Utilisable <<activate>> par tour)"
     } ],
     "Name" : "Deidara",
     "Element" : "Terre",
-    "Chakra" : "Terre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Jibaku Bunshin",
+    "Attack" : "",
+    "Chakra" : "Terre",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Akatsuki",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Akatsuki"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Invoque le Théatre des 100 marionettes"
+      "Description" : "<<activate>> : Invoque le Théatre des 100 marionettes"
     }, {
-      "Description" : "Permanent : Poison : Détruit le ninja blessé par Sasori à la fin du tour"
+      "Description" : "<<Permanent>> : Poison : Détruit le ninja blessé par Sasori à la fin du tour"
     } ],
     "Name" : "Akasuna no Sasori",
     "Element" : "Poison",
-    "Chakra" : "Vent",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Akahigi : Hyakki no Souen",
+    "Attack" : "",
+    "Chakra" : "Vent",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Akatsuki",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Akatsuki"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Charge"
+      "Description" : "<<Instantané>> : Charge"
     } ],
     "Name" : "Théatre des 100 marionettes",
     "Element" : "Poison",
-    "Chakra" : "Vent",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kiiiiiiiiiiiiiiiiiiiiiiiiiiiii",
+    "Attack" : "1",
+    "Chakra" : "Vent",
     "Cost" : "0",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "1",
     "Defense" : "2",
-    "Team" : "Invocation",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Invocation"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Donne +3 Def aux Uchiwa alliés"
+      "Description" : "<<Permanent>> : Donne +3 Def aux Uchiwa alliés"
     } ],
     "Name" : "Obito Uchiwa",
     "Element" : "Genjustsu",
-    "Chakra" : "Special",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Uchiha Kaenjin",
+    "Attack" : "",
+    "Chakra" : "Special",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Akatsuki",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Akatsuki"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Réssucite 2 allié du cimetière et les remets en jeu"
+      "Description" : "<<Instantané>> : Réssucite 2 allié du cimetière et les remets en jeu"
     } ],
     "Name" : "Hidan",
     "Element" : "Physique",
-    "Chakra" : "Physique",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Jujutsu : Shijihyôketsu",
+    "Attack" : "",
+    "Chakra" : "Physique",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Akatsuki",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Akatsuki"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Insensible aux attaques non physiques"
+      "Description" : "<<Permanent>> : Insensible aux attaques non physiques"
     } ],
     "Name" : "Kakuzu",
     "Element" : "Tous",
-    "Chakra" : "Terre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Jiongu",
+    "Attack" : "",
+    "Chakra" : "Terre",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Akatsuki",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Akatsuki"
   }, {
     "Powers" : [ {
       "Description" : "Mur de parchemin explosifs :"
@@ -957,1625 +959,1625 @@
     } ],
     "Name" : "Konan",
     "Element" : "Vent",
-    "Chakra" : "Vent",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Shikigami No Mai",
+    "Attack" : "",
+    "Chakra" : "Vent",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Akatsuki",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Akatsuki"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Répulsion céleste : renvoie tous ninja dans la main de son propriétaire"
+      "Description" : "<<Instantané>> : Répulsion céleste : renvoie tous ninja dans la main de son propriétaire"
     } ],
     "Name" : "Pain",
     "Element" : "Rinnegan",
-    "Chakra" : "Special",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Shinra Tensei",
+    "Attack" : "3",
+    "Chakra" : "Special",
     "Cost" : "6",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "3",
     "Defense" : "3",
-    "Team" : "Akatsuki",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Akatsuki"
   }, {
     "Powers" : [ {
       "Description" : "Réssucite 3 allié du cimetière lorsqu'il meure"
     } ],
     "Name" : "Nagato",
     "Element" : "Rinnegan",
-    "Chakra" : "Special",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Gedô Rinne Tensei No Jutsu",
+    "Attack" : "",
+    "Chakra" : "Special",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Akatsuki",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Akatsuki"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Mille oiseaux : Inflige 1D4 dégats à 2 ninjas côte à côte"
+      "Description" : "<<activate>> : Mille oiseaux : Inflige 1D4 dégats à 2 ninjas côte à côte"
     }, {
-      "Description" : "Instantané : invocation de Susanô"
+      "Description" : "<<Instantané>> : invocation de Susanô"
     } ],
     "Name" : "Sasuke Uchiwa",
     "Element" : "Foudre",
-    "Chakra" : "Foudre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Chidori",
+    "Attack" : "",
+    "Chakra" : "Foudre",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Equipe Sasuke",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe Sasuke"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Protection pour Sasuke uniquement"
+      "Description" : "<<Permanent>> : Protection pour Sasuke uniquement"
     } ],
     "Name" : "Susanô",
     "Element" : "Feu",
-    "Chakra" : "Feu",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Suuuuuuuuuuu",
+    "Attack" : "3",
+    "Chakra" : "Feu",
     "Cost" : "0",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "3",
     "Defense" : "",
-    "Team" : "Invocation",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Invocation"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Soigne X PV à un allié (Utilisable 1 fois par tour)"
+      "Description" : "<<activate>> : Soigne X PV à un allié (Utilisable <<activate>> par tour)"
     }, {
       "Description" : "Détruit 1 bijù adverse lorsqu'elle meure"
     } ],
     "Name" : "Karin",
     "Element" : "Soin",
-    "Chakra" : "Eau",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kongô Fûsa",
+    "Attack" : "",
+    "Chakra" : "Eau",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Equipe Sasuke",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe Sasuke"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Insensible aux attaques physiques"
+      "Description" : "<<Permanent>> : Insensible aux attaques physiques"
     } ],
     "Name" : "Suigetsu Hôzuki",
     "Element" : "Eau",
-    "Chakra" : "Eau",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Suika No Jutsu",
+    "Attack" : "3",
+    "Chakra" : "Eau",
     "Cost" : "3",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "3",
     "Defense" : "2",
-    "Team" : "Equipe Sasuke",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe Sasuke"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Protection"
+      "Description" : "<<Permanent>> : Protection"
     } ],
     "Name" : "Jûgo",
     "Element" : "Physique",
-    "Chakra" : "Physique",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Orochimaru No Juinjutsu",
+    "Attack" : "",
+    "Chakra" : "Physique",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Equipe Sasuke",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe Sasuke"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Volcan : Tous les ninjas de feu gagnent +2 Atk"
+      "Description" : "<<activate>> : Volcan : Tous les ninjas de feu gagnent +2 Atk"
     } ],
     "Name" : "Meï Terumi",
     "Element" : "Lave",
-    "Chakra" : "Feu",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Yôton : Yôkai No Jutsu",
+    "Attack" : "",
+    "Chakra" : "Feu",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "5* Misukage",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "5* Misukage"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Insensible aux attaques physiques et spéciales"
+      "Description" : "<<Permanent>> : Insensible aux attaques physiques et spéciales"
     } ],
     "Name" : "Chôjûrô",
     "Element" : "Eau",
-    "Chakra" : "Eau",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Chôjurô Style",
+    "Attack" : "",
+    "Chakra" : "Eau",
     "Cost" : "X",
     "Rank" : "Rare",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Garde du corps",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Garde du corps"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Protection"
+      "Description" : "<<Permanent>> : Protection"
     }, {
-      "Description" : "1 fois : Byakugan : Révéle 3 cartes de pioche, en garde une , défausse les autres"
+      "Description" : "<<activate>> : Byakugan : Révéle 3 cartes de pioche, en garde une , défausse les autres"
     } ],
     "Name" : "Ao",
     "Element" : "Eau",
-    "Chakra" : "Eau",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Byakugan",
+    "Attack" : "",
+    "Chakra" : "Eau",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Garde du corps",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Garde du corps"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Soin : Pile soigne 1, Face soigne 2"
+      "Description" : "<<activate>> : Soin : Pile soigne 1, Face soigne 2"
     } ],
     "Name" : "Shizune",
     "Element" : "Soin",
-    "Chakra" : "Eau",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Shôsen Jutsu",
+    "Attack" : "",
+    "Chakra" : "Eau",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Garde du corps",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Garde du corps"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Se transforme en Hachibi"
+      "Description" : "<<activate>> : Se transforme en Hachibi"
     } ],
     "Name" : "Blue Bee",
     "Element" : "Foudre",
-    "Chakra" : "Foudre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Hachibi : Bàjon Tsû",
+    "Attack" : "2",
+    "Chakra" : "Foudre",
     "Cost" : "4",
     "Rank" : "Légendaire",
-    "Kind" : "Ninja",
-    "Attack" : "2",
     "Defense" : "3",
-    "Team" : "Equipe foudre",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe foudre"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Charge"
+      "Description" : "<<Instantané>> : Charge"
     }, {
-      "Description" : "Permanent : Furie des vents : Déplacement instantanné"
+      "Description" : "<<Permanent>> : Furie des vents : Déplacement instantanné"
     } ],
     "Name" : "\"A\"",
     "Element" : "Foudre",
-    "Chakra" : "Foudre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Shunshin No Jutsu",
+    "Attack" : "",
+    "Chakra" : "Foudre",
     "Cost" : "X",
     "Rank" : "Rare",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "4* Raikage",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "4* Raikage"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Attaque 2 ninjas côte à côte"
+      "Description" : "<<Permanent>> : Attaque 2 ninjas côte à côte"
     }, {
-      "Description" : "1 fois : Se transforme en Hachibi"
+      "Description" : "<<activate>> : Se transforme en Hachibi"
     } ],
     "Name" : "Killer B",
     "Element" : "Foudre",
-    "Chakra" : "Foudre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Hachibi : Bàjon Tsû",
+    "Attack" : "4",
+    "Chakra" : "Foudre",
     "Cost" : "6",
     "Rank" : "Légendaire",
-    "Kind" : "Ninja",
-    "Attack" : "4",
     "Defense" : "4",
-    "Team" : "Equipe foudre",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe foudre"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Retire le pouvoir d'un ninja ennemi"
+      "Description" : "<<Instantané>> : Retire le pouvoir d'un ninja ennemi"
     } ],
     "Name" : "\"C\"",
     "Element" : "Foudre",
-    "Chakra" : "Foudre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Raigen : Raikôchû",
+    "Attack" : "",
+    "Chakra" : "Foudre",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Equipe foudre",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe foudre"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Envoie une panthere de foudre noire sur l'ennemie et inflige X dégats"
+      "Description" : "<<activate>> : Envoie une panthere de foudre noire sur l'ennemie et inflige X dégats"
     } ],
     "Name" : "Darui",
     "Element" : "Foudre",
-    "Chakra" : "Foudre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Raiton : Kuro pansa",
+    "Attack" : "",
+    "Chakra" : "Foudre",
     "Cost" : "X",
     "Rank" : "Rare",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Equipe foudre",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe foudre"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Protection"
+      "Description" : "<<Permanent>> : Protection"
     } ],
     "Name" : "Samui",
     "Element" : "Foudre",
-    "Chakra" : "Foudre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Yamete Senpaï",
+    "Attack" : "1",
+    "Chakra" : "Foudre",
     "Cost" : "2",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "1",
     "Defense" : "4",
-    "Team" : "Equipe foudre",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe foudre"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Katana de foudre : gagne +2 Atk contre la Terre."
+      "Description" : "<<Permanent>> : Katana de foudre : gagne +2 Atk contre la Terre."
     } ],
     "Name" : "Omoï",
     "Element" : "Foudre",
-    "Chakra" : "Foudre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Omoï Style",
+    "Attack" : "2",
+    "Chakra" : "Foudre",
     "Cost" : "4",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "2",
     "Defense" : "2",
-    "Team" : "Equipe foudre",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe foudre"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Katana de foudre : gagne +2 Atk contre la Terre."
+      "Description" : "<<Permanent>> : Katana de foudre : gagne +2 Atk contre la Terre."
     } ],
     "Name" : "Karui",
     "Element" : "Foudre",
-    "Chakra" : "Foudre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Omoï Style",
+    "Attack" : "2",
+    "Chakra" : "Foudre",
     "Cost" : "4",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "2",
     "Defense" : "2",
-    "Team" : "Equipe foudre",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe foudre"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Poison "
+      "Description" : "<<Permanent>> : Poison "
     }, {
       "Description" : "Détruit le ninja blessé par Torune à la fin du tour"
     } ],
     "Name" : "Torune Aburame",
     "Element" : "Poison",
-    "Chakra" : "Vent",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Rinkaichû",
+    "Attack" : "2",
+    "Chakra" : "Vent",
     "Cost" : "3",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "2",
     "Defense" : "4",
-    "Team" : "La Racine",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "La Racine"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Utilise le sceau des 4 anti-éléments et inflige 2 points de dégats à tous les adversaires en se donnant la mort"
+      "Description" : "<<activate>> : Utilise le sceau des 4 anti-éléments et inflige 2 points de dégats à tous les adversaires en se donnant la mort"
     } ],
     "Name" : "Danzô Shimura ",
     "Element" : "Feu",
-    "Chakra" : "Feu",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Ura Shishô Fûinjutsu",
+    "Attack" : "4",
+    "Chakra" : "Feu",
     "Cost" : "4",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "4",
     "Defense" : "4",
-    "Team" : "La Racine",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "La Racine"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Soigne tous les ninjas alliés"
+      "Description" : "<<Instantané>> : Soigne tous les ninjas alliés"
     }, {
-      "Description" : "Permanent : Soigne entierement un ninja au choix (Utilisable 1 fois par tour)"
+      "Description" : "<<Permanent>> : Soigne entierement un ninja au choix (Utilisable <<activate>> par tour)"
     } ],
     "Name" : "Genbu : l'Île-Tortue",
     "Element" : "Foudre",
-    "Chakra" : "Lieu légendaire",
+    "Kind" : "Lieu légendaire",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Shimagame",
+    "Attack" : "0",
+    "Chakra" : "Lieu légendaire",
     "Cost" : "5",
     "Rank" : "",
-    "Kind" : "Lieu légendaire",
-    "Attack" : "0",
     "Defense" : "5",
-    "Team" : "Lieu légendaire",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Lieu légendaire"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : les ninja alliés gagnent +2 ATK"
+      "Description" : "<<Permanent>> : les ninja alliés gagnent +2 ATK"
     } ],
     "Name" : "Vallée des Nuages et de la Foudre",
     "Element" : "Foudre",
-    "Chakra" : "Lieu légendaire",
+    "Kind" : "Lieu légendaire",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Unraikyô",
+    "Attack" : "0",
+    "Chakra" : "Lieu légendaire",
     "Cost" : "5",
     "Rank" : "",
-    "Kind" : "Lieu légendaire",
-    "Attack" : "0",
     "Defense" : "5",
-    "Team" : "Lieu légendaire",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Lieu légendaire"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Soigne tous les ninjas alliés"
+      "Description" : "<<Instantané>> : Soigne tous les ninjas alliés"
     }, {
-      "Description" : "1 fois : Soigne entierement un ninja au choix (Utilisable 1 fois par tour)"
+      "Description" : "<<activate>> : Soigne entierement un ninja au choix (Utilisable <<activate>> par tour)"
     } ],
     "Name" : "Dimension parallèle",
     "Element" : "Genjustsu",
-    "Chakra" : "Lieu légendaire",
+    "Kind" : "Lieu légendaire",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kamui",
+    "Attack" : "0",
+    "Chakra" : "Lieu légendaire",
     "Cost" : "5",
     "Rank" : "",
-    "Kind" : "Lieu légendaire",
-    "Attack" : "0",
     "Defense" : "5",
-    "Team" : "Lieu Légendaire",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Lieu Légendaire"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Défense ultime : Réduit les dégats reçus de 4"
+      "Description" : "<<Permanent>> : Défense ultime : Réduit les dégats reçus de 4"
     } ],
     "Name" : "Gaara",
     "Element" : "Sable",
-    "Chakra" : "Terre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Shukaku No Tate",
+    "Attack" : "2",
+    "Chakra" : "Terre",
     "Cost" : "5",
     "Rank" : "Rare",
-    "Kind" : "Ninja",
-    "Attack" : "2",
     "Defense" : "3",
-    "Team" : "Equipe Sable",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe Sable"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Lame du vent : Renvoie le ninja ciblé dans la main de son propriétaire"
+      "Description" : "<<Instantané>> : Lame du vent : Renvoie le ninja ciblé dans la main de son propriétaire"
     } ],
     "Name" : "Temari",
     "Element" : "Vent",
-    "Chakra" : "Vent",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kamaitachi No Jutsu",
+    "Attack" : "",
+    "Chakra" : "Vent",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Equipe Sable",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe Sable"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Invoque Karasu et Kuroari ses 2 marionettes"
+      "Description" : "<<Instantané>> : Invoque Karasu et Kuroari ses 2 marionettes"
     } ],
     "Name" : "Kankurô",
     "Element" : "Poison",
-    "Chakra" : "Vent",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kugutsu No Jutsu",
+    "Attack" : "",
+    "Chakra" : "Vent",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Equipe Sable",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Equipe Sable"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : un ninja au choix est invulnérable tant que les marionettes sont en vie"
+      "Description" : "<<Instantané>> : un ninja au choix est invulnérable tant que les marionettes sont en vie"
     } ],
     "Name" : "Karasu et Kuroari",
     "Element" : "Poison",
-    "Chakra" : "Vent",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kurohigi Kiki Ippatsu",
+    "Attack" : "2",
+    "Chakra" : "Vent",
     "Cost" : "0",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "2",
     "Defense" : "2",
-    "Team" : "Invocation",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Invocation"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Jinton, Détachement du monde primitif : Détruit le ninja ciblé"
+      "Description" : "<<activate>> : Jinton, Détachement du monde primitif : Détruit le ninja ciblé"
     } ],
     "Name" : "Oonoki ",
     "Element" : "Jinton",
-    "Chakra" : "Terre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Jinton : Genkai Hakuri No Jutsu",
+    "Attack" : "",
+    "Chakra" : "Terre",
     "Cost" : "X",
     "Rank" : "Rare",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "3* Tsuchikage ",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "3* Tsuchikage "
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Le ninja ciblé ne peut plus attaquer"
+      "Description" : "<<activate>> : Le ninja ciblé ne peut plus attaquer"
     } ],
     "Name" : "Kurotsuchi",
     "Element" : "Lave",
-    "Chakra" : "Feu",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Yôton : Sekkaigyô",
+    "Attack" : "",
+    "Chakra" : "Feu",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Garde du corps",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Garde du corps"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : les Ninja de terre gagnent +3 defense"
+      "Description" : "<<Permanent>> : les Ninja de terre gagnent +3 defense"
     } ],
     "Name" : "Akatsuchi",
     "Element" : "Terre",
-    "Chakra" : "Terre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Gôremu No Jutsu",
+    "Attack" : "",
+    "Chakra" : "Terre",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Garde du corps",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Garde du corps"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Sécrétion de la toile  Le ninja ciblé de peut plus attaquer tant que Kidômaru est en jeu"
+      "Description" : "<<Permanent>> : Sécrétion de la toile  Le ninja ciblé de peut plus attaquer tant que Kidômaru est en jeu"
     } ],
     "Name" : "Kidômaru",
     "Element" : "Poison",
-    "Chakra" : "Vent",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kyodaigumo",
+    "Attack" : "",
+    "Chakra" : "Vent",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Quartet d'Oto",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Quartet d'Oto"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Rempart de terre : les alliés gagnent +2 def"
+      "Description" : "<<Instantané>> : Rempart de terre : les alliés gagnent +2 def"
     } ],
     "Name" : "Jirôbô",
     "Element" : "Terre",
-    "Chakra" : "Terre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Doton : Doroku Kaeshi",
+    "Attack" : "1",
+    "Chakra" : "Terre",
     "Cost" : "3",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "1",
     "Defense" : "2",
-    "Team" : "Quartet d'Oto",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Quartet d'Oto"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois :  Invoque Triple Rempart"
+      "Description" : "<<activate>> :  Invoque Triple Rempart"
     } ],
     "Name" : "Sakon",
     "Element" : "Physique",
-    "Chakra" : "Physique",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kuchiyose : Sanjû Rashômon",
+    "Attack" : "2",
+    "Chakra" : "Physique",
     "Cost" : "3",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "2",
     "Defense" : "2",
-    "Team" : "Quartet d'Oto",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Quartet d'Oto"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Protection"
+      "Description" : "<<Permanent>> : Protection"
     } ],
     "Name" : "Triple rempart",
     "Element" : "Terre",
-    "Chakra" : "Terre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Orochimaru Tribute",
+    "Attack" : "0",
+    "Chakra" : "Terre",
     "Cost" : "0",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "0",
     "Defense" : "5",
-    "Team" : "Invocation",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Invocation"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Flute démoniaque: L'ennemi ciblé ne peut plus rien faire tant que Tauya est sur le terrain."
+      "Description" : "<<Permanent>> : Flute démoniaque: L'ennemi ciblé ne peut plus rien faire tant que Tauya est sur le terrain."
     } ],
     "Name" : "Tayuya",
     "Element" : "Genjustsu",
-    "Chakra" : "Special",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Mateki Mugen Onsa",
+    "Attack" : "",
+    "Chakra" : "Special",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Quartet d'Oto",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Quartet d'Oto"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Danse du camélia : Gagne +2 d'ATK contre les ninjas physiques"
+      "Description" : "<<Permanent>> : Danse du camélia : Gagne +2 d'ATK contre les ninjas physiques"
     } ],
     "Name" : "Kimimaro",
     "Element" : "Physique",
-    "Chakra" : "Physique",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Tsubaki No Mai",
+    "Attack" : "",
+    "Chakra" : "Physique",
     "Cost" : "X",
     "Rank" : "Rare",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Quartet d'Oto",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Quartet d'Oto"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Réssucite X allié du cimetière"
+      "Description" : "<<Instantané>> : Réssucite X allié du cimetière"
     }, {
-      "Description" : "1 fois : Invoque Manda"
+      "Description" : "<<activate>> : Invoque Manda"
     } ],
     "Name" : "Orochimaru",
     "Element" : "Poison",
-    "Chakra" : "Vent",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kuchiyose : Edo Tensei",
+    "Attack" : "",
+    "Chakra" : "Vent",
     "Cost" : "9",
     "Rank" : "Légendaire",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Sanin",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Sanin"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Réssucite 2 allié du cimetière et les remets en jeu"
+      "Description" : "<<activate>> : Réssucite 2 allié du cimetière et les remets en jeu"
     } ],
     "Name" : "Kabuto Yakushi",
     "Element" : "Soin",
-    "Chakra" : "Eau",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kuchiyose : Edo Tensei",
+    "Attack" : "",
+    "Chakra" : "Eau",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Garde du corps",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Garde du corps"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Elimine le ninja ciblé"
+      "Description" : "<<Instantané>> : Elimine le ninja ciblé"
     } ],
     "Name" : "Nidaime 2* Mizukage",
     "Element" : "Eau",
-    "Chakra" : "Eau",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Jinton : Genkai Hakuri No Jutsu",
+    "Attack" : "",
+    "Chakra" : "Eau",
     "Cost" : "X",
     "Rank" : "Rare",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Edo Tenseï",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Edo Tenseï"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Armure de foudre : "
+      "Description" : "<<Permanent>> : Armure de foudre : "
     }, {
       "Description" : "Insensible aux attaques de foudre"
     } ],
     "Name" : "Sandaime 3* Raikage ",
     "Element" : "Foudre",
-    "Chakra" : "Foudre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Raiton Chakura Môdo",
+    "Attack" : "",
+    "Chakra" : "Foudre",
     "Cost" : "X",
     "Rank" : "Rare",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Edo Tenseï",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Edo Tenseï"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Protection : Mur de poussière d'or"
+      "Description" : "<<Permanent>> : Protection : Mur de poussière d'or"
     } ],
     "Name" : "Rasa - Yondaime 4* Kazekage",
     "Element" : "Sable",
-    "Chakra" : "Terre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Sakin",
+    "Attack" : "2",
+    "Chakra" : "Terre",
     "Cost" : "4",
     "Rank" : "Rare",
-    "Kind" : "Ninja",
-    "Attack" : "2",
     "Defense" : "5",
-    "Team" : "Edo Tenseï",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Edo Tenseï"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Dissimulation du chakra : Intouchable tant qu'il n'a pas attaqué 1 fois"
+      "Description" : "<<Permanent>> : Dissimulation du chakra : Intouchable tant qu'il n'a pas attaqué <<activate>>"
     } ],
     "Name" : "Mû  2* Tsuchikage",
     "Element" : "Sable",
-    "Chakra" : "Terre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Mujin Meisai",
+    "Attack" : "",
+    "Chakra" : "Terre",
     "Cost" : "X",
     "Rank" : "Rare",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Edo Tenseï",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Edo Tenseï"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Insensible aux attaques Bijù"
+      "Description" : "<<Permanent>> : Insensible aux attaques Bijù"
     }, {
-      "Description" : "Permanent : Frappe 2 adversaires côte à côte"
+      "Description" : "<<Permanent>> : Frappe 2 adversaires côte à côte"
     } ],
     "Name" : "Shinju",
     "Element" : "Orbe Biju",
-    "Chakra" : "Feu",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Bijûdama",
+    "Attack" : "4",
+    "Chakra" : "Feu",
     "Cost" : "8",
     "Rank" : "Rare",
-    "Kind" : "Ninja",
-    "Attack" : "4",
     "Defense" : "6",
-    "Team" : "Bijù",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Bijù"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Sabre des 7 étoiles: Gagne +3/+3 si présence de Kinkaku à ses cotés"
+      "Description" : "<<Permanent>> : Sabre des 7 étoiles: Gagne +3/+3 si présence de Kinkaku à ses cotés"
     } ],
     "Name" : "Ginkaku",
     "Element" : "Feu",
-    "Chakra" : "Feu",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Shichiseiken",
+    "Attack" : "3",
+    "Chakra" : "Feu",
     "Cost" : "5",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "3",
     "Defense" : "2",
-    "Team" : "Edo Tenseï",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Edo Tenseï"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Gourde écarlate.Gagne +3/+3 si présence de Ginkaku à ses cotés"
+      "Description" : "<<Permanent>> : Gourde écarlate.Gagne +3/+3 si présence de Ginkaku à ses cotés"
     } ],
     "Name" : "Kinkaku",
     "Element" : "Feu",
-    "Chakra" : "Feu",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Benihisago",
+    "Attack" : "3",
+    "Chakra" : "Feu",
     "Cost" : "5",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "3",
     "Defense" : "2",
-    "Team" : "Edo Tenseï",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Edo Tenseï"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Poison : Détruit le ninja blessé par Hanzô à la fin du tour"
+      "Description" : "<<Permanent>> : Poison : Détruit le ninja blessé par Hanzô à la fin du tour"
     } ],
     "Name" : "Hanzô la salamandre",
     "Element" : "Poison",
-    "Chakra" : "Vent",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kusarigamajutsu",
+    "Attack" : "",
+    "Chakra" : "Vent",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Edo Tenseï",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Edo Tenseï"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Charge : Attaque éclair."
+      "Description" : "<<Instantané>> : Charge : Attaque éclair."
     }, {
-      "Description" : "Permanent : Déplacement instantané : Attaque 2 fois par tours"
+      "Description" : "<<Permanent>> : Déplacement instantané : Attaque 2 fois par tours"
     } ],
     "Name" : "Minato Namikaze",
     "Element" : "Vent",
-    "Chakra" : "Vent",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Shunshin No Jutsu",
+    "Attack" : "4",
+    "Chakra" : "Vent",
     "Cost" : "6",
     "Rank" : "Rare",
-    "Kind" : "Ninja",
-    "Attack" : "4",
     "Defense" : "6",
-    "Team" : "Edo Tenseï",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Edo Tenseï"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Soigne X PV à un allié (Utilisable 1 fois par tour)"
+      "Description" : "<<activate>> : Soigne X PV à un allié (Utilisable <<activate>> par tour)"
     } ],
     "Name" : "Hashirama Senju",
     "Element" : "Soin",
-    "Chakra" : "Eau",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Shôsen Jutsu",
+    "Attack" : "",
+    "Chakra" : "Eau",
     "Cost" : "X",
     "Rank" : "Rare",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Edo Tenseï",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Edo Tenseï"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Suiton - Dragon Aqueux : Inflige (Random D4) dommage à un adversaire"
+      "Description" : "<<activate>> : Suiton - Dragon Aqueux : Inflige (Random D4) dommage à un adversaire"
     } ],
     "Name" : "Tobirama Senju",
     "Element" : "Eau",
-    "Chakra" : "Eau",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Suiton : Suiryûdan no Jutsu",
+    "Attack" : "",
+    "Chakra" : "Eau",
     "Cost" : "X",
     "Rank" : "Rare",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Edo Tenseï",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Edo Tenseï"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois :  Emprisonnement des Morts : Pile ou face : Pile détruit l'ennemi avec Hiruzen, Face seul Hiruzen meure"
+      "Description" : "<<activate>> :  Emprisonnement des Morts : Pile ou face : Pile détruit l'ennemi avec Hiruzen, Face seul Hiruzen meure"
     } ],
     "Name" : "Hiruzen Sarutobi",
     "Element" : "Physique",
-    "Chakra" : "Physique",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Shiki Fûjin",
+    "Attack" : "",
+    "Chakra" : "Physique",
     "Cost" : "X",
     "Rank" : "Rare",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Edo Tenseï",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Edo Tenseï"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Protection"
+      "Description" : "<<Permanent>> : Protection"
     } ],
     "Name" : "Gamabunta",
     "Element" : "Physique",
-    "Chakra" : "Physique",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Gama Oyabun",
+    "Attack" : "2",
+    "Chakra" : "Physique",
     "Cost" : "0",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "2",
     "Defense" : "10",
-    "Team" : "Invocation",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Invocation"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Poison : Détruit le ninja blessé par Manda à la fin du tour"
+      "Description" : "<<Permanent>> : Poison : Détruit le ninja blessé par Manda à la fin du tour"
     } ],
     "Name" : "Manda",
     "Element" : "Poison",
-    "Chakra" : "Vent",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Ksssssssssssss",
+    "Attack" : "2",
+    "Chakra" : "Vent",
     "Cost" : "0",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "2",
     "Defense" : "4",
-    "Team" : "Invocation",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Invocation"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Soigne X pv à tous les alliés (Utilisable 1 fois par tour)"
+      "Description" : "<<activate>> : Soigne X pv à tous les alliés (Utilisable <<activate>> par tour)"
     } ],
     "Name" : "Katsuyu",
     "Element" : "Soin",
-    "Chakra" : "Eau",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Shôsen Jutsu",
+    "Attack" : "0",
+    "Chakra" : "Eau",
     "Cost" : "0",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "0",
     "Defense" : "5",
-    "Team" : "Invocation",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Invocation"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Camouflage : Bombe de fumée"
+      "Description" : "<<Instantané>> : Camouflage : Bombe de fumée"
     } ],
     "Name" : "Iruka Umino",
     "Element" : "Feu",
-    "Chakra" : "Feu",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Inpei",
+    "Attack" : "",
+    "Chakra" : "Feu",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Capitaine",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Capitaine"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Détruit tous les Bijù adverses"
+      "Description" : "<<Instantané>> : Détruit tous les Bijù adverses"
     } ],
     "Name" : "Kushina Uzumaki",
     "Element" : "Special",
-    "Chakra" : "Special",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kongô Fûsa",
+    "Attack" : "",
+    "Chakra" : "Special",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Capitaine",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Capitaine"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Camouflage"
+      "Description" : "<<Instantané>> : Camouflage"
     }, {
-      "Description" : "Permanent : Insensible aux attaques physiques et spéciales"
+      "Description" : "<<Permanent>> : Insensible aux attaques physiques et spéciales"
     }, {
-      "Description" : "Permanent : Ignore la Protection et l'armure d'un ennemi"
+      "Description" : "<<Permanent>> : Ignore la Protection et l'armure d'un ennemi"
     } ],
     "Name" : "Zabuza Momochi",
     "Element" : "Epéiste",
-    "Chakra" : "Eau",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kirigakure No Jutsu",
+    "Attack" : "",
+    "Chakra" : "Eau",
     "Cost" : "X",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "7 Epeistes",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "7 Epeistes"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Un ninja touché par une attaque ne peut plus attaquer tant que Kushimaru est vivant"
+      "Description" : "<<Permanent>> : Un ninja touché par une attaque ne peut plus attaquer tant que Kushimaru est vivant"
     }, {
-      "Description" : "Permanent : Ignore la Protection et l'armure d'un ennemi"
+      "Description" : "<<Permanent>> : Ignore la Protection et l'armure d'un ennemi"
     } ],
     "Name" : "Kushimaru Kuriarare",
     "Element" : "Epéiste",
-    "Chakra" : "Vent",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Chôtô Ninpô : Jigumo Nui",
+    "Attack" : "2",
+    "Chakra" : "Vent",
     "Cost" : "4",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "2",
     "Defense" : "6",
-    "Team" : "7 Epeistes",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "7 Epeistes"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Mort silencieuse : Elimine un ninja sans prendre de dégats si l'environnement ou un lieu légendaire est de type eau"
+      "Description" : "<<Instantané>> : Mort silencieuse : Elimine un ninja sans prendre de dégats si l'environnement ou un lieu légendaire est de type eau"
     }, {
-      "Description" : "Permanent : Ignore la Protection et l'armure d'un ennemi"
+      "Description" : "<<Permanent>> : Ignore la Protection et l'armure d'un ennemi"
     } ],
     "Name" : "Jinin Akebino",
     "Element" : "Epéiste",
-    "Chakra" : "Terre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Sairento Kiringu",
+    "Attack" : "1",
+    "Chakra" : "Terre",
     "Cost" : "2",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "1",
     "Defense" : "2",
-    "Team" : "7 Epeistes",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "7 Epeistes"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Forme aqueuse : Insensible aux attaques physiques"
+      "Description" : "<<Permanent>> : Forme aqueuse : Insensible aux attaques physiques"
     }, {
-      "Description" : "Permanent : Ignore la Protection et l'armure d'un ennemi"
+      "Description" : "<<Permanent>> : Ignore la Protection et l'armure d'un ennemi"
     } ],
     "Name" : "Mangetsu Hôzuki",
     "Element" : "Epéiste",
-    "Chakra" : "Eau",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Suika No Jutsu",
+    "Attack" : "2",
+    "Chakra" : "Eau",
     "Cost" : "3",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "2",
     "Defense" : "2",
-    "Team" : "7 Epeistes",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "7 Epeistes"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Porte du tonnerre : inflige 1 dégat de foudre à tous les ennemis"
+      "Description" : "<<Instantané>> : Porte du tonnerre : inflige 1 dégat de foudre à tous les ennemis"
     }, {
-      "Description" : "Permanent : Ignore la Protection et l'armure d'un ennemi"
+      "Description" : "<<Permanent>> : Ignore la Protection et l'armure d'un ennemi"
     } ],
     "Name" : "Ameyuri Ringo",
     "Element" : "Epéiste",
-    "Chakra" : "Foudre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Raiton : Sandâgêto",
+    "Attack" : "2",
+    "Chakra" : "Foudre",
     "Cost" : "4",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "2",
     "Defense" : "3",
-    "Team" : "7 Epeistes",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "7 Epeistes"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Mille aiguilles : Inflige 1 dégat de terre à tous les ennemis"
+      "Description" : "<<Instantané>> : Mille aiguilles : Inflige 1 dégat de terre à tous les ennemis"
     }, {
-      "Description" : "Permanent : Ignore la Protection et l'armure d'un ennemi"
+      "Description" : "<<Permanent>> : Ignore la Protection et l'armure d'un ennemi"
     } ],
     "Name" : "Fuguki Suikazan",
     "Element" : "Epéiste",
-    "Chakra" : "Terre",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Hari Senbon",
+    "Attack" : "3",
+    "Chakra" : "Terre",
     "Cost" : "5",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "3",
     "Defense" : "4",
-    "Team" : "7 Epeistes",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "7 Epeistes"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Explosions : inflige 1 dégat aux alliés a coté de la cible"
+      "Description" : "<<Permanent>> : Explosions : inflige 1 dégat aux alliés a coté de la cible"
     }, {
-      "Description" : "Permanent : Ignore la Protection et l'armure d'un ennemi"
+      "Description" : "<<Permanent>> : Ignore la Protection et l'armure d'un ennemi"
     } ],
     "Name" : "Jinpachi Munashi",
     "Element" : "Epéiste",
-    "Chakra" : "Feu",
+    "Kind" : "Ninja",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Shibuki ",
+    "Attack" : "3",
+    "Chakra" : "Feu",
     "Cost" : "4",
     "Rank" : "",
-    "Kind" : "Ninja",
-    "Attack" : "3",
     "Defense" : "4",
-    "Team" : "7 Epeistes",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "7 Epeistes"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Soigne tous les ninjas alliés"
+      "Description" : "<<Instantané>> : Soigne tous les ninjas alliés"
     }, {
-      "Description" : "Permanent : Soigne entierèment un ninja au choix (Utilisable 1 fois par tour)"
+      "Description" : "<<Permanent>> : Soigne entierèment un ninja au choix (Utilisable <<activate>> par tour)"
     } ],
     "Name" : "Ichiraku Ramen",
     "Element" : "Eau",
-    "Chakra" : "Eau",
+    "Kind" : "Lieu légendaire",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Naruto Rameeeeeen",
+    "Attack" : "0",
+    "Chakra" : "Eau",
     "Cost" : "5",
     "Rank" : "",
-    "Kind" : "Lieu légendaire",
-    "Attack" : "0",
     "Defense" : "5",
-    "Team" : "Lieu légendaire",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Lieu légendaire"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Les ninjas en affinité avec l'eau gagnent +3/+3"
+      "Description" : "<<Permanent>> : Les ninjas en affinité avec l'eau gagnent +3/+3"
     } ],
     "Name" : "Village d'ame",
     "Element" : "Eau",
-    "Chakra" : "Eau",
+    "Kind" : "Environnement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Amegakure No Sato",
+    "Attack" : "",
+    "Chakra" : "Eau",
     "Cost" : "-",
     "Rank" : "",
-    "Kind" : "Environnement",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Environnement",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Environnement"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Les ninjas physiques gagnent +3/+3"
+      "Description" : "<<Permanent>> : Les ninjas physiques gagnent +3/+3"
     } ],
     "Name" : "Arène de Konoha",
     "Element" : "Physique",
-    "Chakra" : "Physique",
+    "Kind" : "Environnement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Konoha Arinà",
+    "Attack" : "",
+    "Chakra" : "Physique",
     "Cost" : "-",
     "Rank" : "",
-    "Kind" : "Environnement",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Environnement",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Environnement"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Les ninjas en affinité avec le vent gagnent +3/+3"
+      "Description" : "<<Permanent>> : Les ninjas en affinité avec le vent gagnent +3/+3"
     } ],
     "Name" : "Village de Konoha",
     "Element" : "Vent",
-    "Chakra" : "Vent",
+    "Kind" : "Environnement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Konohagakure No Sato",
+    "Attack" : "",
+    "Chakra" : "Vent",
     "Cost" : "-",
     "Rank" : "",
-    "Kind" : "Environnement",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Environnement",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Environnement"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Les ninjas en affinité avec la foudre gagnent +3/+3"
+      "Description" : "<<Permanent>> : Les ninjas en affinité avec la foudre gagnent +3/+3"
     } ],
     "Name" : "Village de Kumo",
     "Element" : "Foudre",
-    "Chakra" : "Foudre",
+    "Kind" : "Environnement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kumogakure No Sato",
+    "Attack" : "",
+    "Chakra" : "Foudre",
     "Cost" : "-",
     "Rank" : "",
-    "Kind" : "Environnement",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Environnement",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Environnement"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Les ninjas en affinité avec la terre gagnent +3/+3"
+      "Description" : "<<Permanent>> : Les ninjas en affinité avec la terre gagnent +3/+3"
     } ],
     "Name" : "Village d'Iwa",
     "Element" : "Terre",
-    "Chakra" : "Terre",
+    "Kind" : "Environnement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Iwagakure No Sato",
+    "Attack" : "",
+    "Chakra" : "Terre",
     "Cost" : "-",
     "Rank" : "",
-    "Kind" : "Environnement",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Environnement",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Environnement"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Les ninjas en affinité spéciale gagnent +3/+3"
+      "Description" : "<<Permanent>> : Les ninjas en affinité spéciale gagnent +3/+3"
     } ],
     "Name" : "Champs de bataille 5* grande guerre",
     "Element" : "Special",
-    "Chakra" : "Special",
+    "Kind" : "Environnement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kumogakure No Sato",
+    "Attack" : "",
+    "Chakra" : "Special",
     "Cost" : "-",
     "Rank" : "",
-    "Kind" : "Environnement",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Environnement",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Environnement"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Les ninjas en affinité avec le feu gagnent +3/+3"
+      "Description" : "<<Permanent>> : Les ninjas en affinité avec le feu gagnent +3/+3"
     } ],
     "Name" : "Temple du feu ",
     "Element" : "Feu",
-    "Chakra" : "Feu",
+    "Kind" : "Environnement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Hi no Tera",
+    "Attack" : "",
+    "Chakra" : "Feu",
     "Cost" : "-",
     "Rank" : "",
-    "Kind" : "Environnement",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Environnement",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Environnement"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Réduit de 1 dégat tous les dégats recut par le héros pour chaque adversaire"
+      "Description" : "<<Permanent>> : Réduit de 1 dégat tous les dégats recut par le héros pour chaque adversaire"
     } ],
     "Name" : "Bandeau frontal",
     "Element" : "Tête",
-    "Chakra" : "Equipement",
+    "Kind" : "Equipement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Hitai-ate",
+    "Attack" : "0",
+    "Chakra" : "Equipement",
     "Cost" : "2",
     "Rank" : "",
-    "Kind" : "Equipement",
-    "Attack" : "0",
     "Defense" : "1",
-    "Team" : "Armure",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Armure"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Les ninjas coûtent 1 chakra de moins à invoquer"
+      "Description" : "<<Permanent>> : Les ninjas coûtent 1 chakra de moins à invoquer"
     } ],
     "Name" : "Pochettes à rouleau",
     "Element" : "Torse",
-    "Chakra" : "Equipement",
+    "Kind" : "Equipement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Yôhishi",
+    "Attack" : "0",
+    "Chakra" : "Equipement",
     "Cost" : "3",
     "Rank" : "",
-    "Kind" : "Equipement",
-    "Attack" : "0",
     "Defense" : "0",
-    "Team" : "Armure",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Armure"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Réduit de 3 dégats tous les dégats recut par le héros pour chaque adversaire"
+      "Description" : "<<Permanent>> : Réduit de 3 dégats tous les dégats recut par le héros pour chaque adversaire"
     } ],
     "Name" : "Gilet de protection",
     "Element" : "Torse",
-    "Chakra" : "Equipement",
+    "Kind" : "Equipement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Besuto",
+    "Attack" : "0",
+    "Chakra" : "Equipement",
     "Cost" : "6",
     "Rank" : "",
-    "Kind" : "Equipement",
-    "Attack" : "0",
     "Defense" : "3",
-    "Team" : "Armure",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Armure"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Réduit de 1 dégat tous les dégats recut par le héros pour chaque adversaire"
+      "Description" : "<<Permanent>> : Réduit de 1 dégat tous les dégats recut par le héros pour chaque adversaire"
     } ],
     "Name" : "Gants",
     "Element" : "Main",
-    "Chakra" : "Equipement",
+    "Kind" : "Equipement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Tebukuro",
+    "Attack" : "0",
+    "Chakra" : "Equipement",
     "Cost" : "2",
     "Rank" : "",
-    "Kind" : "Equipement",
-    "Attack" : "0",
     "Defense" : "1",
-    "Team" : "Armure",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Armure"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Soigne 2 PV au ninja ciblé (Utilisable 1 fois par tour)"
+      "Description" : "<<activate>> : Soigne 2 PV au ninja ciblé (Utilisable <<activate>> par tour)"
     } ],
     "Name" : "Pochette à pilules",
     "Element" : "Ceinture",
-    "Chakra" : "Equipement",
+    "Kind" : "Equipement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Yakkyoku",
+    "Attack" : "0",
+    "Chakra" : "Equipement",
     "Cost" : "3",
     "Rank" : "",
-    "Kind" : "Equipement",
-    "Attack" : "0",
     "Defense" : "0",
-    "Team" : "Armure",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Armure"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Inflige 1 dégat au ninja ciblé (Utilisable 1 fois par tour)"
+      "Description" : "<<activate>> : Inflige 1 dégat au ninja ciblé (Utilisable <<activate>> par tour)"
     } ],
     "Name" : "Etuis à shurikens",
     "Element" : "Cuisse",
-    "Chakra" : "Equipement",
+    "Kind" : "Equipement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Shuriken Kèsu",
+    "Attack" : "0",
+    "Chakra" : "Equipement",
     "Cost" : "3",
     "Rank" : "",
-    "Kind" : "Equipement",
-    "Attack" : "0",
     "Defense" : "0",
-    "Team" : "Armure",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Armure"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Réduit de 1 dégat tous les dégats recut par le héros pour chaque adversaire"
+      "Description" : "<<Permanent>> : Réduit de 1 dégat tous les dégats recut par le héros pour chaque adversaire"
     } ],
     "Name" : "Sandales",
     "Element" : "Pieds",
-    "Chakra" : "Equipement",
+    "Kind" : "Equipement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Surippa",
+    "Attack" : "0",
+    "Chakra" : "Equipement",
     "Cost" : "2",
     "Rank" : "",
-    "Kind" : "Equipement",
-    "Attack" : "0",
     "Defense" : "1",
-    "Team" : "Armure",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Armure"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Inflige 1 dégat à distance au ninja ciblé (utilisable 1 fois par tour)"
+      "Description" : "<<activate>> : Inflige 1 dégat à distance au ninja ciblé (utilisable <<activate>> par tour)"
     } ],
     "Name" : "Shuriken",
     "Element" : "1 main",
-    "Chakra" : "Equipement",
+    "Kind" : "Equipement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Shuriken",
+    "Attack" : "1",
+    "Chakra" : "Equipement",
     "Cost" : "3",
     "Rank" : "",
-    "Kind" : "Equipement",
-    "Attack" : "1",
     "Defense" : "0",
-    "Team" : "Arme",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Arme"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Inflige 2 dégats à distance au ninja ciblé (Utilisable 1 fois par tour)"
+      "Description" : "<<activate>> : Inflige 2 dégats à distance au ninja ciblé (Utilisable <<activate>> par tour)"
     } ],
     "Name" : "Shuriken géant",
     "Element" : "2 mains",
-    "Chakra" : "Equipement",
+    "Kind" : "Equipement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kyodaina Shuriken",
+    "Attack" : "2",
+    "Chakra" : "Equipement",
     "Cost" : "4",
     "Rank" : "",
-    "Kind" : "Equipement",
-    "Attack" : "2",
     "Defense" : "0",
-    "Team" : "Arme",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Arme"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Inflige 1 dégat à distance à 2 ninjas ciblés (Utilisable 1 fois par tour)"
+      "Description" : "<<activate>> : Inflige 1 dégat à distance à 2 ninjas ciblés (Utilisable <<activate>> par tour)"
     } ],
     "Name" : "Shuriken de l'ombre",
     "Element" : "2 mains",
-    "Chakra" : "Equipement",
+    "Kind" : "Equipement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Fuuma Shuriken",
+    "Attack" : "2",
+    "Chakra" : "Equipement",
     "Cost" : "4",
     "Rank" : "",
-    "Kind" : "Equipement",
-    "Attack" : "2",
     "Defense" : "0",
-    "Team" : "Arme",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Arme"
   }, {
     "Powers" : [ {
-      "Description" : "Permanent : Attaque normale au corps à corps"
+      "Description" : "<<Permanent>> : Attaque normale au corps à corps"
     } ],
     "Name" : "Kunai",
     "Element" : "1 main",
-    "Chakra" : "Equipement",
+    "Kind" : "Equipement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kunaï",
+    "Attack" : "1",
+    "Chakra" : "Equipement",
     "Cost" : "2",
     "Rank" : "",
-    "Kind" : "Equipement",
-    "Attack" : "1",
     "Defense" : "0",
-    "Team" : "Arme",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Arme"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Inflige 1 dégat à distance au ninja ciblé (utilisable 1 fois par tour)"
+      "Description" : "<<activate>> : Inflige 1 dégat à distance au ninja ciblé (utilisable <<activate>> par tour)"
     } ],
     "Name" : "Senbon",
     "Element" : "1 main",
-    "Chakra" : "Equipement",
+    "Kind" : "Equipement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Senbon",
+    "Attack" : "1",
+    "Chakra" : "Equipement",
     "Cost" : "4",
     "Rank" : "",
-    "Kind" : "Equipement",
-    "Attack" : "1",
     "Defense" : "0",
-    "Team" : "Arme",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Arme"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Inflige 2 dégat à distance au ninja ciblé (utilisable 1 fois par tour)"
+      "Description" : "<<activate>> : Inflige 2 dégat à distance au ninja ciblé (utilisable <<activate>> par tour)"
     } ],
     "Name" : "Katana",
     "Element" : "2 main",
-    "Chakra" : "Equipement",
+    "Kind" : "Equipement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Katana",
+    "Attack" : "2",
+    "Chakra" : "Equipement",
     "Cost" : "3",
     "Rank" : "",
-    "Kind" : "Equipement",
-    "Attack" : "2",
     "Defense" : "0",
-    "Team" : "Arme",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Arme"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Inflige 3 dégat à distance à 2 ninjas côte à cote"
+      "Description" : "<<activate>> : Inflige 3 dégat à distance à 2 ninjas côte à cote"
     } ],
     "Name" : "Notes Explosives",
     "Element" : "1 main",
-    "Chakra" : "Equipement",
+    "Kind" : "Equipement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Bakudan",
+    "Attack" : "3",
+    "Chakra" : "Equipement",
     "Cost" : "4",
     "Rank" : "",
-    "Kind" : "Equipement",
-    "Attack" : "3",
     "Defense" : "0",
-    "Team" : "Arme",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Arme"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Confère camouflage à l'allié ciblé (Utilisable 1 fois par tour)"
+      "Description" : "<<activate>> : Confère camouflage à l'allié ciblé (Utilisable <<activate>> par tour)"
     } ],
     "Name" : "Fumigène",
     "Element" : "1 main",
-    "Chakra" : "Equipement",
+    "Kind" : "Equipement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kemuri",
+    "Attack" : "0",
+    "Chakra" : "Equipement",
     "Cost" : "2",
     "Rank" : "",
-    "Kind" : "Equipement",
-    "Attack" : "0",
     "Defense" : "0",
-    "Team" : "Arme",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Arme"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Empêche un ninja ciblé d'attaquer pendant 2 tours"
+      "Description" : "<<activate>> : Empêche un ninja ciblé d'attaquer pendant 2 tours"
     } ],
     "Name" : "Clous",
     "Element" : "2 main",
-    "Chakra" : "Equipement",
+    "Kind" : "Equipement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Makibishis",
+    "Attack" : "1",
+    "Chakra" : "Equipement",
     "Cost" : "2",
     "Rank" : "",
-    "Kind" : "Equipement",
-    "Attack" : "1",
     "Defense" : "0",
-    "Team" : "Arme",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Arme"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Prends le contrôle du ninja ciblé"
+      "Description" : "<<activate>> : Prends le contrôle du ninja ciblé"
     }, {
-      "Description" : "Consomme 6 chakras ou inflige 6 dommages au Héro. (Utilisable 1 fois par tour)"
+      "Description" : "Consomme 6 chakras ou inflige 6 dommages au Héro. (Utilisable <<activate>> par tour)"
     } ],
     "Name" : "La corde dorée",
     "Element" : "Accessoire (1)",
-    "Chakra" : "Equipement",
+    "Kind" : "Equipement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kôkinjô",
+    "Attack" : "",
+    "Chakra" : "Equipement",
     "Cost" : "6",
     "Rank" : "Légendaire",
-    "Kind" : "Equipement",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Arme",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Arme"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Découpe et maudit l’âme : Inflige 3 dommages, et s'il reste 1 point de vie, détruit l'adversaire"
+      "Description" : "<<activate>> : Découpe et maudit l’âme : Inflige 3 dommages, et s'il reste 1 point de vie, détruit l'adversaire"
     }, {
-      "Description" : "Consomme 6 chakras ou inflige 6 dommages au Héro. (Utilisable 1 fois par tour)"
+      "Description" : "Consomme 6 chakras ou inflige 6 dommages au Héro. (Utilisable <<activate>> par tour)"
     } ],
     "Name" : "Le sabre des sept étoiles",
     "Element" : "Accessoire (1)",
-    "Chakra" : "Equipement",
+    "Kind" : "Equipement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Nunoboko No Ken",
+    "Attack" : "",
+    "Chakra" : "Equipement",
     "Cost" : "6",
     "Rank" : "Légendaire",
-    "Kind" : "Equipement",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Arme",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Arme"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Scelle un ninja définitivement"
+      "Description" : "<<activate>> : Scelle un ninja définitivement"
     }, {
-      "Description" : "Consomme 6 chakras ou inflige 6 dommages au Héro. (Utilisable 1 fois par tour)"
+      "Description" : "Consomme 6 chakras ou inflige 6 dommages au Héro. (Utilisable <<activate>> par tour)"
     } ],
     "Name" : "La gourde écarlate",
     "Element" : "Accessoire (1)",
-    "Chakra" : "Equipement",
+    "Kind" : "Equipement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Benihisago",
+    "Attack" : "",
+    "Chakra" : "Equipement",
     "Cost" : "6",
     "Rank" : "Légendaire",
-    "Kind" : "Equipement",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Arme",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Arme"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Inflige 4 dégats à distance de n'importe quelle nature au ninja ciblé"
+      "Description" : "<<activate>> : Inflige 4 dégats à distance de n'importe quelle nature au ninja ciblé"
     }, {
-      "Description" : "Consomme 6 chakras ou inflige 6 dommages au Héro. (Utilisable 1 fois par tour)"
+      "Description" : "Consomme 6 chakras ou inflige 6 dommages au Héro. (Utilisable <<activate>> par tour)"
     } ],
     "Name" : "L'éventail du Bananier",
     "Element" : "Accessoire (1)",
-    "Chakra" : "Equipement",
+    "Kind" : "Equipement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Bashôsen ",
+    "Attack" : "",
+    "Chakra" : "Equipement",
     "Cost" : "6",
     "Rank" : "Légendaire",
-    "Kind" : "Equipement",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Arme",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Arme"
   }, {
     "Powers" : [ {
-      "Description" : "1 fois : Scelle un ninja définitivement"
+      "Description" : "<<activate>> : Scelle un ninja définitivement"
     }, {
-      "Description" : "Consomme 6 chakras ou inflige 6 dommages au Héro. (Utilisable 1 fois par tour)"
+      "Description" : "Consomme 6 chakras ou inflige 6 dommages au Héro. (Utilisable <<activate>> par tour)"
     } ],
     "Name" : "Pôt de purification ambré",
     "Element" : "Accessoire (1)",
-    "Chakra" : "Equipement",
+    "Kind" : "Equipement",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kohaku No Jôhe",
+    "Attack" : "",
+    "Chakra" : "Equipement",
     "Cost" : "6",
     "Rank" : "Légendaire",
-    "Kind" : "Equipement",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Arme",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Arme"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Annule les pouvoirs d'un ninja ciblé. (Utilisable à n'importe quel moment)"
+      "Description" : "<<Instantané>> : Annule les pouvoirs d'un ninja ciblé. (Utilisable à n'importe quel moment)"
     } ],
     "Name" : "Kaï",
     "Element" : "Genjustsu",
-    "Chakra" : "Genjustsu",
+    "Kind" : "Ninjutsu",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Kaï",
+    "Attack" : "",
+    "Chakra" : "Genjustsu",
     "Cost" : "3",
     "Rank" : "",
-    "Kind" : "Ninjutsu",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Ninjutsu",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Ninjutsu"
   }, {
     "Powers" : [ {
-      "Description" : "Instantané : Détruit la pièce d'équipement ciblée (Ne peut être annulé par un Kaï)"
+      "Description" : "<<Instantané>> : Détruit la pièce d'équipement ciblée (Ne peut être annulé par un Kaï)"
     } ],
     "Name" : "Boule de feu suprême",
     "Element" : "Feu",
-    "Chakra" : "Feu",
+    "Kind" : "Ninjutsu",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "Katon : Gôkakyû No Jutsu",
+    "Attack" : "",
+    "Chakra" : "Feu",
     "Cost" : "4",
     "Rank" : "",
-    "Kind" : "Ninjutsu",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Ninjutsu",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Ninjutsu"
   }, {
     "Powers" : [ {
-      "Description" : "Conditions : 2 Bijùs sont envoyés au cimetière (peu importe le camp) "
+      "Description" : "<<Conditions>> : 2 Bijùs sont envoyés au cimetière (peu importe le camp) "
     }, {
-      "Description" : "Récompense : réssussite dans votre camp un bijù du cimetière"
+      "Description" : "<<Récompense>> : réssussite dans votre camp un bijù du cimetière"
     } ],
     "Name" : "La capture des Bijùs",
     "Element" : "",
-    "Chakra" : "Quête",
+    "Kind" : "Quête",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "",
+    "Attack" : "",
+    "Chakra" : "Quête",
     "Cost" : "3",
     "Rank" : "",
-    "Kind" : "Quête",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Quête",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Quête"
   }, {
     "Powers" : [ {
-      "Description" : "Conditions : 2 membres de l'akatsuki sont sur le champs de bataille (peu importe le camp)"
+      "Description" : "<<Conditions>> : 2 membres de l'akatsuki sont sur le champs de bataille (peu importe le camp)"
     }, {
-      "Description" : "Récompense : piochez 2 cartes"
+      "Description" : "<<Récompense>> : piochez 2 cartes"
     } ],
     "Name" : "L'akatsuki est de retour",
     "Element" : "",
-    "Chakra" : "Quête",
+    "Kind" : "Quête",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "",
+    "Attack" : "",
+    "Chakra" : "Quête",
     "Cost" : "3",
     "Rank" : "",
-    "Kind" : "Quête",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Quête",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Quête"
   }, {
     "Powers" : [ {
-      "Description" : "Conditions : Un membre de la famille Ôtsutsuki entre sur le champs de bataille (peu importe le camp)"
+      "Description" : "<<Conditions>> : Un membre de la famille Ôtsutsuki entre sur le champs de bataille (peu importe le camp)"
     }, {
-      "Description" : "Récompense : Vous gagnez un tour supplémentaire"
+      "Description" : "<<Récompense>> : Vous gagnez un tour supplémentaire"
     } ],
     "Name" : "Les légendes Ninja",
     "Element" : "",
-    "Chakra" : "Quête",
+    "Kind" : "Quête",
+    "Background" : null,
+    "Comments" : null,
     "Citation" : "",
+    "Attack" : "",
+    "Chakra" : "Quête",
     "Cost" : "3",
     "Rank" : "",
-    "Kind" : "Quête",
-    "Attack" : "",
     "Defense" : "",
-    "Team" : "Quête",
-    "Comments" : null,
-    "Background" : null
+    "Team" : "Quête"
   } ]
 }
