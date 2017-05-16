@@ -36,7 +36,7 @@ namespace CardMasterImageBuilder
 
                 // Texture de fond
                 skinElement = new SERectangle(skin, borderSize, borderSize, w - borderSize * 2, h - borderSize * 2);
-                skinElement.SetBackground("eau");
+                skinElement.SetBackground(GetMatchingBackground(card));
                 skin.Elements.Add(skinElement);
 
                 // Zone entête
@@ -102,5 +102,50 @@ namespace CardMasterImageBuilder
 
         }
 
+        private static String GetMatchingBackground(Card card)
+        {
+            switch (card.Kind)
+            {
+                case "Ninja":
+                    return GetMatchingChakraBackground(card.Chakra);
+                case "Lieu":
+                    return GetMatchingChakraBackground(card.Element);
+                case "Quête":
+                    return "Feu";    
+                case "Environnement":
+                    return "Pierre 01";     
+                case "Equipement":
+                    return "chaîne";
+                   
+                case "Ninjutsu":
+                    return "Serpent";     
+                default:
+                    return "blanc";
+            }
+        }
+
+        private static string GetMatchingChakraBackground(string chakra)
+        {
+            switch (chakra)
+            {
+                case "Special":
+                case "Genjustsu":
+                    return "feu";
+                case "Vent":
+                    return "feu";
+                case "Foudre":
+                    return "feu";
+                case "Eau":
+                    return "feu";
+                case "Terre":
+                    return "feu";
+                case "Feu":
+                    return "feu";
+                case "Physique":
+                    return "feu";
+                default:
+                    return "blanc";
+            }
+        }
     }
 }
