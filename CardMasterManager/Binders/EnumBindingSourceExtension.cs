@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Markup;
 
-namespace CardMasterManager.Binding
+namespace CardMasterManager.Binders
 {
     public class EnumBindingSourceExtension : MarkupExtension
     {

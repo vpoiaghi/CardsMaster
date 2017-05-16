@@ -77,9 +77,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Components\DGridTextColumn.xaml.cs">
+      <DependentUpon>DGridTextColumn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\MyButton.xaml.cs">
+      <DependentUpon>MyButton.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Converters\DrawingImageToImageSourceConverter.cs" />
-    <Compile Include="Binding\EnumBindingSourceExtension.cs" />
+    <Compile Include="Binders\EnumBindingSourceExtension.cs" />
     <Compile Include="Converters\EnumConverter.cs" />
+    <Page Include="Components\DGridTextColumn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Components\MyButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Forms\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

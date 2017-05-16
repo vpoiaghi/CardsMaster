@@ -11,6 +11,7 @@ using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using CardMasterManager.Components;
 
 namespace CardMasterManager
 {
@@ -19,6 +20,9 @@ namespace CardMasterManager
     /// </summary>
     public partial class MainWindow : Window
     {
+        private bool onLoading;
+        private static object locker = new object();
+
         private CardsProject cardProjet;
         private FileInfo cardsFile;
         private FileInfo skinsFile;
@@ -28,7 +32,11 @@ namespace CardMasterManager
         {
             InitializeComponent();
 
+            this.onLoading = false;
+
             this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            this.MenuItemSave.IsEnabled = false;
+            this.MenuItemSaveAs.IsEnabled = false;
         }
 
         private void MenuItemOpen_Click(object sender, RoutedEventArgs e)
@@ -57,7 +65,14 @@ namespace CardMasterManager
 
         private void MenuItemSave_Click(object sender, RoutedEventArgs e)
         {
-            SaveProject(cardsFile);
+            if (cardsFile == null)
+            {
+                MenuItemSaveAs_Click(sender, e);
+            }
+            else
+            {
+                SaveProject(cardsFile);
+            }
         }
 
         private void MenuItemSaveAs_Click(object sender, RoutedEventArgs e)
@@ -79,7 +94,7 @@ namespace CardMasterManager
             }
         }
 
-        private void MenuItemClose_Click(object sender, RoutedEventArgs e)
+        private void MenuItemExit_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
@@ -151,6 +166,8 @@ namespace CardMasterManager
 
         private void LoadCards(List<Card> cards)
         {
+            this.onLoading = true;
+
             cardGrid.Items.Clear();
 
             foreach (Card card in cards)
@@ -158,6 +175,7 @@ namespace CardMasterManager
                 cardGrid.Items.Add(card);
             }
 
+            this.onLoading = false;
         }
 
         private void SaveProject(FileInfo cardsFile)
@@ -177,6 +195,9 @@ namespace CardMasterManager
                 }
 
                 cardProjet.Save(cardsFile);
+
+                MenuItemSave.IsEnabled = false;
+                MenuItemSave.IsEnabled = false;
             }
         }
 
@@ -191,5 +212,25 @@ namespace CardMasterManager
 
             return cards;
         }
+
+        private void DataGrid_TextCellChanged(object sender, TextChangedEventArgs e)
+        {
+            DataGridValuesChanged();
+        }
+
+        private void DataGrid_ComboCellChanged(object sender, SelectionChangedEventArgs e)
+        {
+            DataGridValuesChanged();
+        }
+
+        private void DataGridValuesChanged()
+        {
+            if (!this.onLoading)
+            {
+                MenuItemSave.IsEnabled = true;
+                MenuItemSaveAs.IsEnabled = true;
+            }
+        }
+
     }
 }

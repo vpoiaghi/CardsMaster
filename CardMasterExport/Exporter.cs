@@ -10,7 +10,7 @@ namespace CardMasterExport
     public abstract class Exporter
     {
         private bool exportRunning = false;
-        protected static object _lock = new Object();
+        protected static object _lock = new object();
 
         private Window owner = null;
         protected List<Card> cardsList = null;

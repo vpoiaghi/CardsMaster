@@ -4,9 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CardMasterManager"
-        xmlns:binding="clr-namespace:CardMasterManager.Binding"
+        xmlns:binders="clr-namespace:CardMasterManager.Binders"
         xmlns:converters="clr-namespace:CardMasterManager.Converters"
         xmlns:card="CardMasterManager.Card"
+        xmlns:controls="clr-namespace:CardMasterManager.Components"
         mc:Ignorable="d"
         Title="Card Manager" Height="960" Width="1700" ResizeMode="NoResize">
 
@@ -14,50 +15,63 @@
         <converters:EnumConverter x:Key="EnumConverter"/>
         <converters:PowersListConverter x:Key="PowerListConverter"/>
     </Window.Resources>
-    
-    <StackPanel >
+
+    <StackPanel>
+
         <Menu>
             <MenuItem Header="_Fichier">
-                <MenuItem Header="_Ouvrir" Click="MenuItemOpen_Click"/>
-                <MenuItem Header="_Enregistrer" Click="MenuItemSave_Click"/>
-                <MenuItem Header="_Enregistrer Sous..." Click="MenuItemSaveAs_Click"/>
-                <MenuItem Header="_Quitter" Click="MenuItemClose_Click"/>
+                <MenuItem Name="MenuItemOpen" Header="_Ouvrir" Click="MenuItemOpen_Click"/>
+                <MenuItem Name="MenuItemSave" Header="_Enregistrer" Click="MenuItemSave_Click"/>
+                <MenuItem Name="MenuItemSaveAs" Header="_Enregistrer Sous..." Click="MenuItemSaveAs_Click"/>
+                <MenuItem Name="MenuItemExit" Header="_Quitter" Click="MenuItemExit_Click"/>
             </MenuItem>
             <MenuItem Header="_Edition">
                 <MenuItem Header="_Exporter tout en .png" Click="MenuItemExportAllToPngFile_Click"/>
             </MenuItem>
         </Menu>
+
         <DockPanel LastChildFill="True">
+
             <StatusBar DockPanel.Dock="Bottom">
                 <StatusBarItem>
                     <TextBlock x:Name="debug" Text="" Height="40" Width="1466"/>
                 </StatusBarItem>
             </StatusBar>
-            <DockPanel Width="375" Height="523" Background="Aqua" Name="panelViewer" Margin="15" DockPanel.Dock="Left">
-                <Image Name="cardImage"></Image>
+
+            <DockPanel DockPanel.Dock="Left">
+                <Border Width="375" Height="523" Margin="15,6,15,0" DockPanel.Dock="Top" BorderThickness="1" BorderBrush="#FF000000">
+                    <Image Name="cardImage"></Image>
+                </Border>
+                <controls:MyButton x:Name="btn1" Height="20" Width="100" SetToto="tentative 1" />
             </DockPanel>
 
-            <DataGrid DockPanel.Dock="Right" Name="cardGrid" Margin="5" Width="1269" Height="847" SelectionMode="Single" AutoGenerateColumns="False" AlternatingRowBackground="Azure" AlternationCount="2" IsReadOnly="False"
-                      SelectionChanged="cardGrid_SelectionChanged" ItemsSource="{Binding}">
+            <DataGrid DockPanel.Dock="Right" Name="cardGrid" Margin="5" Width="1269" Height="847" SelectionMode="Single" AutoGenerateColumns="False" AlternatingRowBackground="Azure" AlternationCount="2" IsReadOnly="False" ItemsSource="{Binding}"
+                        SelectionChanged="cardGrid_SelectionChanged">
                 <DataGrid.Columns>
+
+                    <!--
+                    <controls:DGridTextColumn Header="Nom" MinWidth="120" AttributeBinding="Name" />
+                    <controls:DGridTextColumn Header="Rareté/Grade" MinWidth="100" AttributeBinding="Rank" />
+                    -->
 
                     <DataGridTemplateColumn Header="Nom" MinWidth="120">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
+                                <TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
-                    
+
                     <DataGridTemplateColumn Header="Genre" MinWidth="60">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <ComboBox IsEditable="True" 
-                                          Text="{Binding Kind, Converter={StaticResource EnumConverter}, UpdateSourceTrigger=PropertyChanged}" 
-                                          BorderBrush="Transparent"
-                                          ItemsSource="{Binding Source={binding:EnumBindingSource {x:Type local:CardKind}}}"
-                                          GotFocus="ComboBox_GotFocus"
-                                          >
+                                            Text="{Binding Kind, Converter={StaticResource EnumConverter}, UpdateSourceTrigger=PropertyChanged}" 
+                                            BorderBrush="Transparent"
+                                            ItemsSource="{Binding Source={binders:EnumBindingSource {x:Type local:CardKind}}}"
+                                            GotFocus="ComboBox_GotFocus"
+                                            SelectionChanged="DataGrid_ComboCellChanged"
+                                            >
                                     <ComboBox.ItemTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding Converter={StaticResource EnumConverter}}"/>
@@ -71,7 +85,7 @@
                     <DataGridTemplateColumn Header="Rareté/Grade" MinWidth="100">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBox Text="{Binding Rank, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
+                                <TextBox Text="{Binding Rank, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
@@ -79,7 +93,7 @@
                     <DataGridTemplateColumn Header="Equipe" MinWidth="80">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBox Text="{Binding Team, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
+                                <TextBox Text="{Binding Team, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
@@ -88,10 +102,10 @@
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <ComboBox IsEditable="True"  
-                                          Text="{Binding Nature, Converter={StaticResource EnumConverter}, UpdateSourceTrigger=PropertyChanged}" 
-                                          BorderBrush="Transparent"
-                                          ItemsSource="{Binding Source={binding:EnumBindingSource {x:Type local:NatureCard}}}"
-                                          GotFocus="ComboBox_GotFocus">
+                                            Text="{Binding Nature, Converter={StaticResource EnumConverter}, UpdateSourceTrigger=PropertyChanged}" 
+                                            BorderBrush="Transparent"
+                                            ItemsSource="{Binding Source={binders:EnumBindingSource {x:Type local:NatureCard}}}"
+                                            GotFocus="ComboBox_GotFocus">
                                     <ComboBox.ItemTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding Converter={StaticResource EnumConverter}}"/>
@@ -105,7 +119,7 @@
                     <DataGridTemplateColumn Header="Element" MinWidth="120">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBox Text="{Binding Element, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
+                                <TextBox Text="{Binding Element, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
@@ -113,7 +127,7 @@
                     <DataGridTemplateColumn Header="Cout" MinWidth="60">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBox Text="{Binding Cost, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
+                                <TextBox Text="{Binding Cost, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
@@ -121,7 +135,7 @@
                     <DataGridTemplateColumn Header="Atk" MinWidth="60">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBox Text="{Binding Attack, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
+                                <TextBox Text="{Binding Attack, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
@@ -129,7 +143,7 @@
                     <DataGridTemplateColumn Header="Def." MinWidth="60">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBox Text="{Binding Defense, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
+                                <TextBox Text="{Binding Defense, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
@@ -149,4 +163,5 @@
         </DockPanel>
 
     </StackPanel>
+    
 </Window>
