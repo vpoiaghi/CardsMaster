@@ -87,6 +87,7 @@ namespace CardMasterImageBuilder
 
                 skinElement = new SETextArea(skin, 35, 327, w - 70, 140, "<Epouvoirs>");
                 ((SETextArea)skinElement).TextAttribute = "Powers";
+                ((SETextArea)skinElement).TextFont = new Font("Bell MT", 12, FontStyle.Bold);
                 skin.Elements.Add(skinElement);
 
                 // Zone Citation
