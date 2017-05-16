@@ -4,6 +4,7 @@ using CardMasterSkin.Elements;
 using System;
 using System.Drawing;
 using System.IO;
+using System.Collections.Generic;
 
 namespace CardMasterImageBuilder
 {
@@ -73,7 +74,7 @@ namespace CardMasterImageBuilder
                 skin.Elements.Add(skinElement);
 
                 skinElement = new SETextArea(skin, 22, 282, w - 44, 40, "<Equipe>");
-                ((SETextArea)skinElement).TextAttribute = "Team";
+                ((SETextArea)skinElement).TextAttribute = "@Team@ :  @Chakra@ %(@Element@)%";
                 ((SETextArea)skinElement).TextVerticalAlign = VerticalAlignment.Center;
                 skin.Elements.Add(skinElement);
 
@@ -88,7 +89,6 @@ namespace CardMasterImageBuilder
                 skin.Elements.Add(skinElement);
 
             }
-
             return skin;
 
         }

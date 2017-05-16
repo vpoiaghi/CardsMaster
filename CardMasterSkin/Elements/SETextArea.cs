@@ -115,24 +115,8 @@ namespace CardMasterSkin.Elements
             var txtList = new List<string>();
             string fullText = null;
 
-            if (! string.IsNullOrEmpty(this.TextAttribute))
-            {
-                Type cardType = card.GetType();
-                PropertyInfo cardProperty = cardType.GetProperty(this.TextAttribute);
-                MethodInfo cardGetMethod = cardProperty.GetGetMethod();
-                object propertyValue = cardGetMethod.Invoke(card, null);
 
-                if (propertyValue != null)
-                {
-                    var converter = new PowersListConverter();
-                    fullText = (string)converter.Convert(propertyValue, typeof(string), null, System.Globalization.CultureInfo.CurrentCulture);
-                }
-            }
-            else
-            {
-                fullText = this.text;
-            }
-
+            fullText = AttributeParser.Parse(card, this.TextAttribute,this.text);
 
             if (!string.IsNullOrEmpty(fullText))
             {
