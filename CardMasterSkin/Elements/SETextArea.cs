@@ -28,6 +28,10 @@ namespace CardMasterSkin.Elements
 
     public class SETextArea : SkinElement
     {
+        private const string DEFAULT_FONT_FAMILY = "Bell MT";
+        private const float DEFAULT_FONT_SIZE = 14;
+        private const FontStyle DEFAULT_FONT_STYLE = FontStyle.Bold;
+
         private const char WORDS_SEPARATOR = ' ';
 
         private string text = null;
@@ -35,6 +39,7 @@ namespace CardMasterSkin.Elements
         public string TextAttribute = null;
         public HorizontalAlignment TextAlign = HorizontalAlignment.Left;
         public VerticalAlignment TextVerticalAlign = VerticalAlignment.Top;
+        public Font TextFont { get; set; } = new Font(DEFAULT_FONT_FAMILY, DEFAULT_FONT_SIZE, DEFAULT_FONT_STYLE);
 
         public SETextArea(Skin skin, int width, int height) : this(skin, 0, 0, width, height, null)
         { }
@@ -53,14 +58,10 @@ namespace CardMasterSkin.Elements
 
         protected override List<GraphicElement> GetGraphicElements(Card card)
         {
-            float textFontSize = 14;
-            float textEmFontSize = this.graphics.DpiY * textFontSize / 72;
-            var textFontFamily = new FontFamily("Bell MT");
-            var textFontStyle = FontStyle.Bold;
-            var textFont = new Font(textFontFamily, textFontSize, textFontStyle);
-            var textFormat = StringFormat.GenericDefault;
+            float textEmFontSize = this.graphics.DpiY * this.TextFont.Size / 72;
+            StringFormat textFormat = StringFormat.GenericDefault;
 
-            var rowsList = new List<TextRow>();
+            List<TextRow> rowsList = new List<TextRow>();
             int rowTop = 0;
 
             List<TextElement> textElementsList = null;
@@ -84,7 +85,7 @@ namespace CardMasterSkin.Elements
 
                 // Calcul de la taille et de la position en X,Y des TextElement (mots et symboles) composant le texte,
                 // et retourne une liste de lignes de texte composées de mots et de symboles.
-                rowsList.AddRange(GetRows(textElementsList, textFont, textFormat, rowTop));
+                rowsList.AddRange(GetRows(textElementsList, this.TextFont, textFormat, rowTop));
 
                 // Calcul de la position verticale de la prochaine ligne
                 if (rowsList.Count > 0)
@@ -99,7 +100,7 @@ namespace CardMasterSkin.Elements
 
             ApplyAlignments(rowsList);
 
-            List<GraphicElement> graphicElementsList = GetGraphicElementsList(rowsList, textFont, textEmFontSize, textFormat);
+            List<GraphicElement> graphicElementsList = GetGraphicElementsList(rowsList, this.TextFont, textEmFontSize, textFormat);
 
             rowsList.Clear();
             rowsList = null;

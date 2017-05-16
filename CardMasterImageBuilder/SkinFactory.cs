@@ -48,6 +48,7 @@ namespace CardMasterImageBuilder
                 skinElement = new SETextArea(skin, 22, 22, w - 44, 40, "<Nom>");
                 ((SETextArea)skinElement).TextAttribute = "Name";
                 ((SETextArea)skinElement).TextVerticalAlign = VerticalAlignment.Center;
+                //((SETextArea)skinElement).TextFont = new Font("Arial", 26, FontStyle.Italic); // --> Exemple de définition de la police de caractère. Par défaut c'est new Font("Bell MT", 14, FontStyle.Bold);
                 skin.Elements.Add(skinElement);
 
                 // Zone de coût

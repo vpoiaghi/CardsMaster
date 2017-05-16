@@ -42,7 +42,7 @@
                 <Border Width="375" Height="523" Margin="15,6,15,0" DockPanel.Dock="Top" BorderThickness="1" BorderBrush="#FF000000">
                     <Image Name="cardImage"></Image>
                 </Border>
-                <controls:MyButton x:Name="btn1" Height="20" Width="100" SetToto="tentative 1" />
+                <!-- <controls:MyButton x:Name="btn1" Height="20" Width="100" SetToto="tentative 1" /> -->
             </DockPanel>
 
             <DataGrid DockPanel.Dock="Right" Name="cardGrid" Margin="5" Width="1269" Height="847" SelectionMode="Single" AutoGenerateColumns="False" AlternatingRowBackground="Azure" AlternationCount="2" IsReadOnly="False" ItemsSource="{Binding}"
