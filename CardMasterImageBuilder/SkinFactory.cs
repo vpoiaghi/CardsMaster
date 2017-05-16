@@ -89,6 +89,12 @@ namespace CardMasterImageBuilder
                 ((SETextArea)skinElement).TextAttribute = "Powers";
                 skin.Elements.Add(skinElement);
 
+                // Zone Citation
+                skinElement = new SETextArea(skin, 35, 380, w - 100, 140, "<Citation>");
+                ((SETextArea)skinElement).TextAttribute = "Citation";
+                ((SETextArea)skinElement).TextVerticalAlign = VerticalAlignment.Center;
+                ((SETextArea)skinElement).TextFont = new Font("Arial", 10, FontStyle.Italic); 
+                skin.Elements.Add(skinElement);
             }
             return skin;
 
