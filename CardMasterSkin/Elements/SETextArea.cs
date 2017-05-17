@@ -15,6 +15,7 @@ namespace CardMasterSkin.Elements
     public enum HorizontalAlignment
     {
         Left,
+        LeftWithIcon,
         Center,
         Right
     };
@@ -61,7 +62,10 @@ namespace CardMasterSkin.Elements
             float textEmFontSize = this.graphics.DpiY * this.TextFont.Size / 72;
             StringFormat textFormat = StringFormat.GenericDefault;
 
-            List<TextRow> rowsList = new List<TextRow>();
+            // Liste des paragraphes constituant le texte
+            List<TextSection> sectionsList = new List<TextSection>();
+            TextSection section = null;
+
             int rowTop = 0;
 
             List<TextElement> textElementsList = null;
@@ -70,10 +74,13 @@ namespace CardMasterSkin.Elements
             List<string> textList = GetTextList(card);
 
             // Dessine le contour de la zone max du texte --> A utiliser pour les tests
-            // m_graphics.DrawRectangle(Pens.Red, Me.X, Me.Y, Me.Width, Me.Height)
+            // this.graphics.DrawRectangle(Pens.Red, Me.X, Me.Y, Me.Width, Me.Height)
 
             foreach (string txt in textList)
             {
+                section = new TextSection();
+                sectionsList.Add(section);
+
                 // Recherche des symboles à charger.
                 // --> Retourne une liste composée de StringElement qui sont soit un mot soit un symbole.
                 // Si la chaine ne contient pas de mot à remplacer par un symbole, un string element contenant
@@ -85,12 +92,12 @@ namespace CardMasterSkin.Elements
 
                 // Calcul de la taille et de la position en X,Y des TextElement (mots et symboles) composant le texte,
                 // et retourne une liste de lignes de texte composées de mots et de symboles.
-                rowsList.AddRange(GetRows(textElementsList, this.TextFont, textFormat, rowTop));
+                section.AddRange(GetRows(textElementsList, this.TextFont, textFormat, rowTop));
 
                 // Calcul de la position verticale de la prochaine ligne
-                if (rowsList.Count > 0)
+                if (section.Count > 0)
                 {
-                    rowTop = rowsList.Last<TextRow>().Bottom;
+                    rowTop = section.Last<TextRow>().Bottom;
                 }
 
                 textElementsList.Clear();
@@ -98,12 +105,12 @@ namespace CardMasterSkin.Elements
 
             }
 
-            ApplyAlignments(rowsList);
+            ApplyAlignments(sectionsList);
 
-            List<GraphicElement> graphicElementsList = GetGraphicElementsList(rowsList, this.TextFont, textEmFontSize, textFormat);
+            List<GraphicElement> graphicElementsList = GetGraphicElementsList(sectionsList, this.TextFont, textEmFontSize, textFormat);
 
-            rowsList.Clear();
-            rowsList = null;
+            sectionsList.Clear();
+            sectionsList = null;
 
             textList.Clear();
             textList = null;
@@ -257,26 +264,21 @@ namespace CardMasterSkin.Elements
 
         }
 
-        private void ApplyAlignments(List<TextRow> rowsList)
+        private void ApplyAlignments(List<TextSection> sectionsList)
         {
             switch (this.TextAlign)
             {
-                case HorizontalAlignment.Right:
-                    foreach (TextRow row in rowsList)
-                    {
-                        row.X = this.Width - row.Width;
-                    }
-                    break;
-
-                case HorizontalAlignment.Center:
-                    foreach (TextRow row in rowsList)
-                    {
-                        row.X = (int)Math.Round((double)(this.Width - row.Width) / 2);
-                    }
-                    break;
-
                 case HorizontalAlignment.Left:
                     // rien à faire
+                    break;
+                case HorizontalAlignment.LeftWithIcon:
+                    ApplyHorizontalAlignementLeftWithIcon(sectionsList);
+                    break;
+                case HorizontalAlignment.Center:
+                    ApplyHorizontalAlignementCenter(sectionsList);
+                    break;
+                case HorizontalAlignment.Right:
+                    ApplyHorizontalAlignementRight(sectionsList);
                     break;
             }
 
@@ -285,66 +287,184 @@ namespace CardMasterSkin.Elements
                 case VerticalAlignment.Top :
                     // Rien à faire
                     break;
-
                 case VerticalAlignment.Center:
-                    // Même traitement que pour VerticalAlignment.Bottom
-
+                    ApplyVerticalAlignementCenter(sectionsList);
+                    break;
                 case VerticalAlignment.Bottom:
-                    int rowsHeight = 0;
-                    int y = 0;
-
-                    foreach (TextRow row in rowsList)
-                    {
-                        rowsHeight += row.Height;
-                    }
-
-                    if (TextVerticalAlign == VerticalAlignment.Center)
-                    {
-                        y = (int)Math.Round((double)(this.Height - rowsHeight) / 2);
-                    }
-                    else if (TextVerticalAlign == VerticalAlignment.Bottom)
-                    {
-                        y = this.Height - rowsHeight;
-                    }
-
-                    foreach (TextRow row in rowsList)
-                    {
-                        row.Y += y;
-                    }
-
+                    ApplyVerticalAlignementBottom(sectionsList);
                     break;
             }
         }
 
-        private List<GraphicElement> GetGraphicElementsList(List<TextRow> rowsList, Font textFont, float textEmFontSize, StringFormat textFormat)
+        private void ApplyHorizontalAlignementLeftWithIcon(List<TextSection> sectionsList)
+        {
+            TextElement element = null;
+            int iconWidth = 0;
+            int tmpIconWidth = 0;
+            int iconsCount = 0;
+
+            // Recherche de la plus grande taille d'icon de début de paragraphe
+            foreach (TextSection section in sectionsList)
+            {
+                try
+                {
+                    element = section.First<TextRow>().Elements.First<TextElement>();
+
+                    if (element.IsImage)
+                    {
+                        tmpIconWidth = element.Bounds.Width;
+                        if (tmpIconWidth > iconWidth)
+                        {
+                            iconWidth = tmpIconWidth;
+                        }
+                        iconsCount++;
+                    }
+                }
+                catch (NullReferenceException)
+                { }
+            }
+
+            if (iconsCount > 0)
+            {
+                // Rajout d'un espace
+                if (iconWidth > 0)
+                {
+                    iconWidth += 5;
+                }
+
+                foreach (TextSection section in sectionsList)
+                {
+                    int rowIndex = 0;
+                    int elementIndex = 0;
+                    int offsetX = 0;
+
+                    foreach (TextRow row in section)
+                    {
+                        if (rowIndex == 0)
+                        {
+                            if (row.Elements.Count > 1)
+                            {
+                                offsetX = iconWidth - row.Elements.ElementAt<TextElement>(1).Bounds.X;
+
+                                elementIndex = 1;
+                                while (elementIndex < row.Elements.Count)
+                                {
+                                    Rectangle r = row.Elements.ElementAt<TextElement>(elementIndex).Bounds;
+                                    r.X += offsetX;
+                                    row.Elements.ElementAt<TextElement>(elementIndex).Bounds = r;
+                                    elementIndex++;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            row.X = iconWidth;
+                        }
+                        rowIndex++;
+                    }
+                }
+            }
+        }
+
+        private void ApplyHorizontalAlignementCenter(List<TextSection> sectionsList)
+        {
+            foreach (TextSection section in sectionsList)
+            {
+                foreach (TextRow row in section)
+                {
+                    row.X = (int)Math.Round((double)(this.Width - row.Width) / 2);
+                }
+            }
+        }
+
+        private void ApplyHorizontalAlignementRight(List<TextSection> sectionsList)
+        {
+            foreach (TextSection section in sectionsList)
+            {
+                foreach (TextRow row in section)
+                {
+                    row.X = this.Width - row.Width;
+                }
+            }
+        }
+
+        private void ApplyVerticalAlignementCenter(List<TextSection> sectionsList)
+        {
+            foreach (TextSection section in sectionsList)
+            {
+                int rowsHeight = 0;
+                int y = 0;
+
+                foreach (TextRow row in section)
+                {
+                    rowsHeight += row.Height;
+                }
+
+                y = (int)Math.Round((double)(this.Height - rowsHeight) / 2);
+
+                foreach (TextRow row in section)
+                {
+                    row.Y += y;
+                }
+
+            }
+        }
+
+
+        private void ApplyVerticalAlignementBottom(List<TextSection> sectionsList)
+        {
+            foreach (TextSection section in sectionsList)
+            {
+                int rowsHeight = 0;
+                int y = 0;
+
+                foreach (TextRow row in section)
+                {
+                    rowsHeight += row.Height;
+                }
+
+                y = this.Height - rowsHeight;
+
+                foreach (TextRow row in section)
+                {
+                    row.Y += y;
+                }
+
+            }
+        }
+
+        private List<GraphicElement> GetGraphicElementsList(List<TextSection> sectionsList, Font textFont, float textEmFontSize, StringFormat textFormat)
         {
             var graphicElementsList = new List<GraphicElement>();
             GraphicsPath textPath = null;
 
             Rectangle r;
 
-            foreach (TextRow row in rowsList)
+            foreach (TextSection section in sectionsList)
             {
-                foreach (TextElement textElement in row.Elements)
+                foreach (TextRow row in section)
                 {
-                    if (textElement.IsText)
+                    foreach (TextElement textElement in row.Elements)
                     {
-                        if (textPath == null)
+                        r = new Rectangle(this.X + row.X + textElement.Bounds.X, this.Y + row.Y + textElement.Bounds.Y, textElement.Bounds.Width, textElement.Bounds.Height);
+
+                        if (textElement.IsText)
                         {
-                            textPath = new GraphicsPath();
-                            graphicElementsList.Add(new PathElement(textPath, GetBackground()));
+                            if (textPath == null)
+                            {
+                                textPath = new GraphicsPath();
+                                graphicElementsList.Add(new PathElement(textPath, GetBackground()));
+                            }
+
+                            textPath.AddString(textElement.Text, textFont.FontFamily, (int)textFont.Style, textEmFontSize, r, textFormat);
+
+                            // Dessine le contour de la zone "au plus près" du texte --> A utiliser pour les tests de positionnement
+                            //this.graphics.DrawRectangle(Pens.Black, r);
                         }
-
-                        r = new Rectangle(this.X + row.X + textElement.Bounds.X, this.Y + row.Y + textElement.Bounds.Y, textElement.Bounds.Width, textElement.Bounds.Height);
-                        textPath.AddString(textElement.Text, textFont.FontFamily, (int)textFont.Style, textEmFontSize, r, textFormat);
-
-                        // Dessine le contour de la zone "au plus près" du texte --> A utiliser pour les tests de positionnement
-                        // m_graphics.DrawRectangle(Pens.Black, r)
-                    }
-                    else
-                    {
-                        r = new Rectangle(this.X + row.X + textElement.Bounds.X, this.Y + row.Y + textElement.Bounds.Y, textElement.Bounds.Width, textElement.Bounds.Height);
-                        graphicElementsList.Add(new ImageElement(textElement.Image, r));
+                        else
+                        {
+                            graphicElementsList.Add(new ImageElement(textElement.Image, r));
+                        }
                     }
                 }
             }
@@ -390,6 +510,9 @@ namespace CardMasterSkin.Elements
             }
 
         }
+
+        private class TextSection : List<TextRow>
+        { }
 
     }
 }

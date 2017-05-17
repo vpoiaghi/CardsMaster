@@ -18,10 +18,10 @@
       },
       "Powers": [
         {
-          "Description": "<<Permanent>> : Insensible aux dégats non physiques"
+          "Description": "<<Permanent>> Insensible aux dégats non physiques"
         },
         {
-          "Description": "<<1fois>> : Astre Divin : Détruit un ninja ennemi"
+          "Description": "<<1fois>> Astre Divin : Détruit un ninja ennemi"
         }
       ]
     },
