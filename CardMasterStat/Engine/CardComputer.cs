@@ -48,16 +48,18 @@ namespace CardMasterStat
         public SortedDictionary<String, int> GetRepartitionByNature()
         {
             SortedDictionary<String, int> toReturn = new SortedDictionary<String, int>();
-            foreach (Card.NatureCard nature in Enum.GetValues(typeof(Card.NatureCard)))
+            foreach (Card.CardKind kind in Enum.GetValues(typeof(Card.CardKind)))
             {
-                if (nature.Equals(Card.NatureCard.Zone))
+                if (kind.Equals(Card.CardKind.Ninja))
                 {
-                    toReturn.Add("Lieu légendaire", this.m_listCards.Where(c => c.Nature == nature).Count());
+                    foreach (Card.NatureCard nature in Enum.GetValues(typeof(Card.NatureCard)))
+                        toReturn.Add(kind.ToString()+" "+nature.ToString(), this.m_listCards.Where(c => c.Kind == kind && c.Nature==nature).Count());
                 }
                 else
                 {
-                    toReturn.Add(nature.ToString(), this.m_listCards.Where(c => c.Nature == nature).Count());
+                    toReturn.Add(kind.ToString(), this.m_listCards.Where(c => c.Kind == kind).Count());
                 }
+               
             }
             return toReturn;
         }

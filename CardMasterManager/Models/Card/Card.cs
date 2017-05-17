@@ -42,6 +42,7 @@ namespace CardMasterManager
         public String Defense { get; set; }
         public String Citation { get; set; }
         public String Comments { get; set; }
+        public string Nb { get; set; }
         public CardMasterCard.Card.Texture Background { get; set; }
         public List<CardMasterCard.Card.Power> Powers { get; set; }
 
@@ -70,13 +71,12 @@ namespace CardMasterManager
             toReturn.Background = card.Background;
             toReturn.Chakra = card.Nature.ToString();
             toReturn.Citation = card.Citation;
-            toReturn.Comments = card.Citation;
+            toReturn.Comments = card.Comments;
             toReturn.Cost = card.Cost.ToString();
             toReturn.Defense = card.Defense.ToString();
             toReturn.Element = card.Element;
             toReturn.Kind = card.Kind.ToString();
             toReturn.Name = card.Name;
-
             toReturn.Powers = new List<CardMasterCard.Card.Power>();
             toReturn.Powers.AddRange(card.Powers);
 
@@ -102,6 +102,7 @@ namespace CardMasterManager
                                 .withKind(sourceCard.Kind)
                                 .withPowers(sourceCard.Powers)
                                 .withRank(sourceCard.Rank)
+                                .withNb(sourceCard.Nb)
                                 .withTeam(sourceCard.Team)
                                 .withPowers(sourceCard.Powers)
                                 .build();

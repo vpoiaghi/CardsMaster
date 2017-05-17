@@ -13,6 +13,7 @@ namespace CardMasterStat
         public NatureCard Nature { get; set; }
         public String Element { get; set; }
         public int Cost { get; set; }
+        public string Nb { get; set; }
         public int Attack { get; set; }
         public int Defense { get; set; }
         public String Citation { get; set; }
@@ -39,19 +40,13 @@ namespace CardMasterStat
             Foudre,
             Terre,
             Special,
-            Physique,
-            Equipement,
-            Ninjutsu,
-            Environnement,
-            Zone
+            Physique
         }
 
         public static NatureCard parseNature(String nature)
         {
             NatureCard toReturn;
             NatureCard.TryParse(nature,out toReturn);
-            if (nature.Equals("Lieu légendaire"))
-                toReturn = NatureCard.Zone;
             return toReturn;
         }
 
@@ -76,6 +71,7 @@ namespace CardMasterStat
                                 .withComment(sourceCard.Comments)
                                 .withDefense(sourceCard.Defense)
                                 .withElement(sourceCard.Element)
+                                .withNb(sourceCard.Nb)
                                 .withKind(sourceCard.Kind)
                                 .withPowers(sourceCard.Powers)
                                 .withRank(sourceCard.Rank)

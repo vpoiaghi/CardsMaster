@@ -12,6 +12,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using CardMasterManager.Components;
+using System.Diagnostics;
 
 namespace CardMasterManager
 {
@@ -121,6 +122,7 @@ namespace CardMasterManager
         {
             //Select Card from Collection from Name
             CardMasterCard.Card.Card businessCard = Card.ConvertToMasterCard(c);
+                      
             Drawer drawer = new Drawer(businessCard, skinsFile, null);
             
             //Refresh Image Component

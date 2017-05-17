@@ -34,7 +34,7 @@
 
             <StatusBar DockPanel.Dock="Bottom">
                 <StatusBarItem>
-                    <TextBlock x:Name="debug" Text="" Height="40" Width="1466"/>
+                    <TextBlock x:Name="debug" Height="40" Width="1466"/>
                 </StatusBarItem>
             </StatusBar>
 
@@ -155,7 +155,7 @@
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
-                    
+
                     <DataGridTemplateColumn Header="Citation" MinWidth="150">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
@@ -163,12 +163,24 @@
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="Nb" MinWidth="30">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding Nb, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="Commentaires" MinWidth="100">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding Comments, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    
                 </DataGrid.Columns>
-
             </DataGrid>
-
         </DockPanel>
-
     </StackPanel>
     
 </Window>

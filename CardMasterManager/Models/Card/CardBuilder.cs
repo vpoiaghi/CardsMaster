@@ -40,6 +40,12 @@ namespace CardMasterManager
             return this;
         }
 
+        public CardBuilder withNb(String nb)
+        {
+            this.m_card.Nb = nb;
+            return this;
+        }
+
         public CardBuilder withTeam(String team)
         {
             this.m_card.Team = team;
@@ -123,5 +129,7 @@ namespace CardMasterManager
             this.m_card.Powers.Add(power);
             return this;
         }
+
+       
     }
 }
