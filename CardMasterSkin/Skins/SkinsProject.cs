@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace CardMasterSkin.Skins
@@ -8,6 +9,9 @@ namespace CardMasterSkin.Skins
     {
         public string TexturesDirectory { get; set; }
         public string ImagesDirectory { get; set; }
+        public Dictionary<String, String> MapLibelleColor { get; set; }
+        public Dictionary<String, String> MapKindField { get; set; }
+        public string TeamStringFormat { get; set; }
 
         public static SkinsProject LoadProject(FileInfo file)
         {

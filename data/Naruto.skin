@@ -1,4 +1,28 @@
 {
-  "TexturesDirectory": "D:\\workspace\\Workspace-perso\\CardsMaster\\data\\Textures",
-  "ImagesDirectory": "D:\\workspace\\Workspace-perso\\CardsMaster\\data\\Images"
+	"TexturesDirectory": "D:\\workspace\\Workspace-perso\\CardsMaster\\data\\Textures",
+	"ImagesDirectory": "D:\\workspace\\Workspace-perso\\CardsMaster\\data\\Images",
+	"TeamStringFormat" : "@Team@ :  @Chakra@ %(@Element@)%",
+	"MapLibelleColor" : {
+		"Quête": "orange",
+		"Environnement": "Pierre 01",
+		"Equipement": "gris_foncé",
+		"Ninjutsu": "ninjutsu",
+		"Default": "blanc",
+		"Special": "violet",
+		"Genjutsu": "violet",
+		"Vent": "vert",
+		"Terre": "terre",
+		"Feu": "feu",
+		"Foudre": "foudre",
+		"Eau": "eau",
+		"Physique": "blanc_cassé"
+	},
+    "MapKindField": {
+		"Ninja": "Chakra",
+		"Lieu": "Element",
+		"Quête": "Kind",
+		"Environnement": "Kind",
+		"Equipement": "Kind",
+		"Ninjutsu": "Kind"
+	}
 }

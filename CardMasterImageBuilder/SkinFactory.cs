@@ -5,6 +5,7 @@ using System;
 using System.Drawing;
 using System.IO;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace CardMasterImageBuilder
 {
@@ -36,7 +37,7 @@ namespace CardMasterImageBuilder
 
                 // Texture de fond
                 skinElement = new SERectangle(skin, borderSize, borderSize, w - borderSize * 2, h - borderSize * 2);
-                skinElement.SetBackground(GetMatchingBackground(card));
+                skinElement.SetBackground(GetMatchingBackground(skinsProject,card));
                 skin.Elements.Add(skinElement);
 
                 // Zone entête
@@ -75,7 +76,7 @@ namespace CardMasterImageBuilder
                 skin.Elements.Add(skinElement);
 
                 skinElement = new SETextArea(skin, 22, 282, w - 44, 40, "<Equipe>");
-                ((SETextArea)skinElement).TextAttribute = "@Team@ :  @Chakra@ %(@Element@)%";
+                ((SETextArea)skinElement).TextAttribute = skinsProject.TeamStringFormat;
                 ((SETextArea)skinElement).TextVerticalAlign = VerticalAlignment.Center;
                 skin.Elements.Add(skinElement);
 
@@ -103,50 +104,14 @@ namespace CardMasterImageBuilder
 
         }
 
-        private static String GetMatchingBackground(Card card)
-        {
-            switch (card.Kind)
-            {
-                case "Ninja":
-                    return GetMatchingChakraBackground(card.Chakra);
-                case "Lieu":
-                    return GetMatchingChakraBackground(card.Element);
-                case "Quête":
-                    return "orange";    
-                case "Environnement":
-                    return "Pierre 01";     
-                case "Equipement":
-                    return "gris_foncé";
-                   
-                case "Ninjutsu":
-                    return "ninjutsu";     
-                default:
-                    return "blanc";
-            }
+        private static String GetMatchingBackground(SkinsProject skinsProject,Card card)
+        {   
+            String attributeName = skinsProject.MapKindField[card.Kind];
+            String attributeValue = (String)card.GetType().GetProperty(attributeName).GetValue(card, null);
+            return skinsProject.MapLibelleColor[attributeValue];
         }
 
-        private static string GetMatchingChakraBackground(string chakra)
-        {
-            switch (chakra)
-            {
-                case "Special":
-                case "Genjustsu":
-                    return "violet";
-                case "Vent":
-                    return "vert";
-                case "Foudre":
-                    return "jaune";
-                case "Eau":
-                    return "eau";
-                case "Terre":
-                    return "terre";
-                case "Feu":
-                    return "feu";
-                case "Physique":
-                    return "blanc_cassé";
-                default:
-                    return "blanc";
-            }
-        }
+
+ 
     }
 }
