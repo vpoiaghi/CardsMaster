@@ -92,7 +92,7 @@ namespace CardMasterImageBuilder
                 skin.Elements.Add(skinElement);
 
                 // Zone Citation
-                skinElement = new SETextArea(skin, 35, 380, w - 100, 140, "<Citation>");
+                skinElement = new SETextArea(skin, 50, 385, w - 100, 140, "<Citation>");
                 ((SETextArea)skinElement).TextAttribute = "Citation";
                 ((SETextArea)skinElement).TextVerticalAlign = VerticalAlignment.Center;
                 ((SETextArea)skinElement).TextAlign = HorizontalAlignment.Center;
@@ -112,14 +112,14 @@ namespace CardMasterImageBuilder
                 case "Lieu":
                     return GetMatchingChakraBackground(card.Element);
                 case "Quête":
-                    return "Feu";    
+                    return "orange";    
                 case "Environnement":
                     return "Pierre 01";     
                 case "Equipement":
-                    return "chaîne";
+                    return "gris_foncé";
                    
                 case "Ninjutsu":
-                    return "Serpent";     
+                    return "ninjutsu";     
                 default:
                     return "blanc";
             }
@@ -131,19 +131,19 @@ namespace CardMasterImageBuilder
             {
                 case "Special":
                 case "Genjustsu":
-                    return "feu";
+                    return "violet";
                 case "Vent":
-                    return "feu";
+                    return "vert";
                 case "Foudre":
-                    return "feu";
+                    return "jaune";
                 case "Eau":
-                    return "feu";
+                    return "eau";
                 case "Terre":
-                    return "feu";
+                    return "terre";
                 case "Feu":
                     return "feu";
                 case "Physique":
-                    return "feu";
+                    return "blanc_cassé";
                 default:
                     return "blanc";
             }
