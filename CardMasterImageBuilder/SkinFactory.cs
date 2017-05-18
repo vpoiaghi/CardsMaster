@@ -97,7 +97,7 @@ namespace CardMasterImageBuilder
                 ((SETextArea)skinElement).TextAttribute = "Citation";
                 ((SETextArea)skinElement).TextVerticalAlign = VerticalAlignment.Center;
                 ((SETextArea)skinElement).TextAlign = HorizontalAlignment.Center;
-                ((SETextArea)skinElement).TextFont = new Font("Arial", 10, FontStyle.Italic); 
+                ((SETextArea)skinElement).TextFont = new Font("Informal Roman", 12, FontStyle.Bold | FontStyle.Italic);
                 skin.Elements.Add(skinElement);
             }
             return skin;
