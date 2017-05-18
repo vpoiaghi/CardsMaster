@@ -2,7 +2,6 @@
 using CardMasterSkin.Skins;
 using System;
 using System.Drawing;
-using System.Drawing.Drawing2D;
 using System.IO;
 
 namespace CardMasterImageBuilder
@@ -11,6 +10,8 @@ namespace CardMasterImageBuilder
     {
         private Card card;
         private Skin skin;
+
+        public DrawingQuality Quality { get; set; } = new DrawingQuality();
 
         public Drawer(Card card, FileInfo skinsFile, String skinName)
         {
@@ -35,12 +36,21 @@ namespace CardMasterImageBuilder
 
                 Graphics g = Graphics.FromImage(img);
 
+                /*
                 g.SmoothingMode = SmoothingMode.AntiAlias;
                 g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
                 g.CompositingQuality = CompositingQuality.HighQuality;
                 g.CompositingMode = CompositingMode.SourceOver;
                 g.InterpolationMode = InterpolationMode.HighQualityBicubic;
                 g.PixelOffsetMode = PixelOffsetMode.HighQuality;
+                */
+
+                g.SmoothingMode = this.Quality.SmoothingMode;
+                g.TextRenderingHint = this.Quality.TextRenderingHint;
+                g.CompositingQuality = this.Quality.CompositingQuality;
+                g.CompositingMode = this.Quality.CompositingMode;
+                g.InterpolationMode = this.Quality.InterpolationMode;
+                g.PixelOffsetMode = this.Quality.PixelOffsetMode;
 
                 foreach (SkinElement e in this.skin.Elements)
                 {

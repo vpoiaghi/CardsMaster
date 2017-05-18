@@ -8,6 +8,8 @@
         xmlns:converters="clr-namespace:CardMasterManager.Converters"
         xmlns:card="CardMasterManager.Card"
         xmlns:controls="clr-namespace:CardMasterManager.Components"
+        xmlns:drawing2d="clr-namespace:System.Drawing.Drawing2D;assembly=System.Drawing"
+        xmlns:drawingtext="clr-namespace:System.Drawing.Text;assembly=System.Drawing"
         mc:Ignorable="d"
         Title="Card Manager" Height="960" Width="1700" ResizeMode="NoResize">
 
@@ -43,6 +45,48 @@
                     <Image Name="cardImage"></Image>
                 </Border>
                 <!-- <controls:MyButton x:Name="btn1" Height="20" Width="100" SetToto="tentative 1" /> -->
+                <DockPanel DockPanel.Dock="Left" Margin="15,6,15,0" LastChildFill="False">
+                    <DockPanel DockPanel.Dock="Top">
+                        <Label Width="130px">SmoothingMode</Label>
+                        <ComboBox Name="CmbSmoothingMode" 
+                                  Text="{Binding DQuality.SmoothingMode, Converter={StaticResource EnumConverter}, UpdateSourceTrigger=PropertyChanged}" 
+                                  ItemsSource="{Binding Source={binders:EnumBindingSource {x:Type drawing2d:SmoothingMode}}}"
+                                  SelectionChanged="CmbQuality_SelectionChanged">
+                        </ComboBox>
+                    </DockPanel>
+                    <DockPanel DockPanel.Dock="Top">
+                        <Label Width="130px">TextRenderingHint</Label>
+                        <ComboBox Name="CmbTextRenderingHint"
+                                  Text="{Binding DQuality.TextRenderingHint, Converter={StaticResource EnumConverter}, UpdateSourceTrigger=PropertyChanged}" 
+                                  ItemsSource="{Binding Source={binders:EnumBindingSource {x:Type drawingtext:TextRenderingHint}}}"
+                                  SelectionChanged="CmbQuality_SelectionChanged">
+                        </ComboBox>
+                    </DockPanel>
+                    <DockPanel DockPanel.Dock="Top">
+                        <Label Width="130px">CompositingQuality</Label>
+                        <ComboBox Name="CmbCompositingQuality"
+                                  Text="{Binding DQuality.CompositingQuality, Converter={StaticResource EnumConverter}, UpdateSourceTrigger=PropertyChanged}" 
+                                  ItemsSource="{Binding Source={binders:EnumBindingSource {x:Type drawing2d:CompositingQuality}}}"
+                                  SelectionChanged="CmbQuality_SelectionChanged">
+                        </ComboBox>
+                    </DockPanel>
+                    <DockPanel DockPanel.Dock="Top">
+                        <Label Width="130px">CompositingMode</Label>
+                        <ComboBox Name="CmbCompositingMode"
+                                  Text="{Binding DQuality.CompositingMode, Converter={StaticResource EnumConverter}, UpdateSourceTrigger=PropertyChanged}" 
+                                  ItemsSource="{Binding Source={binders:EnumBindingSource {x:Type drawing2d:CompositingMode}}}"
+                                  SelectionChanged="CmbQuality_SelectionChanged">
+                        </ComboBox>
+                    </DockPanel>
+                    <DockPanel DockPanel.Dock="Top">
+                        <Label Width="130px">PixelOffsetMode</Label>
+                        <ComboBox Name="CmbPixelOffsetMode"
+                                  Text="{Binding DQuality.PixelOffsetMode, Converter={StaticResource EnumConverter}, UpdateSourceTrigger=PropertyChanged}" 
+                                  ItemsSource="{Binding Source={binders:EnumBindingSource {x:Type drawing2d:PixelOffsetMode}}}"
+                                  SelectionChanged="CmbQuality_SelectionChanged">
+                        </ComboBox>
+                    </DockPanel>
+                </DockPanel>
             </DockPanel>
 
             <DataGrid DockPanel.Dock="Right" Name="cardGrid" Margin="5" Width="1269" Height="847" SelectionMode="Single" AutoGenerateColumns="False" AlternatingRowBackground="Azure" AlternationCount="2" IsReadOnly="False" ItemsSource="{Binding}"

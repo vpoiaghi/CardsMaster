@@ -13,6 +13,8 @@ using System.Windows.Controls;
 using System.Windows.Media;
 using CardMasterManager.Components;
 using System.Diagnostics;
+using System.Drawing.Drawing2D;
+using System.Drawing.Text;
 
 namespace CardMasterManager
 {
@@ -28,6 +30,8 @@ namespace CardMasterManager
         private FileInfo cardsFile;
         private FileInfo skinsFile;
         private Card previousCard;
+
+        public DrawingQuality DQuality { get; set; } = new DrawingQuality();
 
         public MainWindow()
         {
@@ -61,6 +65,13 @@ namespace CardMasterManager
                 }
 
                 LoadCards(cards);
+
+                CmbSmoothingMode.SelectedItem = DQuality.SmoothingMode;
+                CmbCompositingMode.SelectedItem = DQuality.CompositingMode;
+                CmbCompositingQuality.SelectedItem = DQuality.CompositingQuality;
+                CmbPixelOffsetMode.SelectedItem = DQuality.PixelOffsetMode;
+                CmbTextRenderingHint.SelectedItem = DQuality.TextRenderingHint;
+
             }
         }
 
@@ -124,6 +135,7 @@ namespace CardMasterManager
             CardMasterCard.Card.Card businessCard = Card.ConvertToMasterCard(c);
                       
             Drawer drawer = new Drawer(businessCard, skinsFile, null);
+            drawer.Quality = this.DQuality;
             
             //Refresh Image Component
             DrawingImageToImageSourceConverter converter = new DrawingImageToImageSourceConverter();
@@ -234,5 +246,24 @@ namespace CardMasterManager
             }
         }
 
+        private void CmbQuality_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            try
+            {
+                DQuality.SmoothingMode = (SmoothingMode)CmbSmoothingMode.SelectedItem;
+                DQuality.CompositingMode = (CompositingMode)CmbCompositingMode.SelectedItem;
+                DQuality.CompositingQuality = (CompositingQuality)CmbCompositingQuality.SelectedItem;
+                DQuality.PixelOffsetMode = (PixelOffsetMode)CmbPixelOffsetMode.SelectedItem;
+                DQuality.TextRenderingHint = (TextRenderingHint)CmbTextRenderingHint.SelectedItem;
+
+                Card c = ((Card)cardGrid.SelectedItem);
+                if (c != null)
+                {
+                    new Thread(() => DisplayCard(c, cardImage)).Start();
+                }
+            }
+            catch(NullReferenceException)
+            { }
+        }
     }
 }
