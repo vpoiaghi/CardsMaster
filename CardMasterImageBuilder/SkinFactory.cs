@@ -47,7 +47,7 @@ namespace CardMasterImageBuilder
                 skinElement.Border = new SkinElementBorder(GetMatchingBorderColor(skinsProject,card), skinsProject.BorderWidth);
                 skin.Elements.Add(skinElement);
 
-                skinElement = new SETextArea(skin, 30, 22, w - 44, 40, "<Nom>");
+                skinElement = new SETextArea(skin, 28, 22, w - 44, 40, "<Nom>");
                 ((SETextArea)skinElement).TextAttribute = "Name";
                 ((SETextArea)skinElement).TextVerticalAlign = VerticalAlignment.Center;
                 //((SETextArea)skinElement).TextFont = new Font("Arial", 26, FontStyle.Italic); // --> Exemple de définition de la police de caractère. Par défaut c'est new Font("Bell MT", 14, FontStyle.Bold);
@@ -76,7 +76,7 @@ namespace CardMasterImageBuilder
                 skinElement.Border = new SkinElementBorder(GetMatchingBorderColor(skinsProject, card), skinsProject.BorderWidth);
                 skin.Elements.Add(skinElement);
 
-                skinElement = new SETextArea(skin, 30, 282, w - 44, 40, "<Equipe>");
+                skinElement = new SETextArea(skin, 28, 282, w - 44, 40, "<Equipe>");
                 ((SETextArea)skinElement).TextAttribute = skinsProject.TeamStringFormat;
                 ((SETextArea)skinElement).TextVerticalAlign = VerticalAlignment.Center;
                 skin.Elements.Add(skinElement);
@@ -100,6 +100,32 @@ namespace CardMasterImageBuilder
                 ((SETextArea)skinElement).TextAlign = HorizontalAlignment.Center;
                 ((SETextArea)skinElement).TextFont = new Font("Informal Roman", 12, FontStyle.Bold | FontStyle.Italic);
                 skin.Elements.Add(skinElement);
+
+                // Zone de PV is non vide
+                if (card.Defense != "")
+                {
+                    skinElement = new SEImage(skin, w - 68, 440, 50, 50, "shield");
+                    skin.Elements.Add(skinElement);
+
+                    skinElement = new SETextArea(skin, w - 58, 450, 30, 30, "?");
+                    ((SETextArea)skinElement).TextAttribute = "Defense";
+                    ((SETextArea)skinElement).TextAlign = HorizontalAlignment.Center;
+                    ((SETextArea)skinElement).TextVerticalAlign = VerticalAlignment.Center;
+                    skin.Elements.Add(skinElement);
+                }
+
+                if (card.Attack != "")
+                {
+                    // Zone de Attack si non vide
+                    skinElement = new SEImage(skin, 10, 430, 80, 80, "star");
+                    skin.Elements.Add(skinElement);
+
+                    skinElement = new SETextArea(skin, 36, 457, 30, 30, "?");
+                    ((SETextArea)skinElement).TextAttribute = "Attack";
+                    ((SETextArea)skinElement).TextAlign = HorizontalAlignment.Center;
+                    ((SETextArea)skinElement).TextVerticalAlign = VerticalAlignment.Center;
+                    skin.Elements.Add(skinElement);
+                }
             }
             return skin;
 
