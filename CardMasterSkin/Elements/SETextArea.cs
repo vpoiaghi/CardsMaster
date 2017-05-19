@@ -340,20 +340,17 @@ namespace CardMasterSkin.Elements
 
                     foreach (TextRow row in section)
                     {
-                        if (rowIndex == 0)
+                        if ((rowIndex == 0) && (row.Elements.Count > 1) && (row.Elements.First<TextElement>().IsImage))
                         {
-                            if (row.Elements.Count > 1)
-                            {
-                                offsetX = iconWidth - row.Elements.ElementAt<TextElement>(1).Bounds.X;
+                            offsetX = iconWidth - row.Elements.ElementAt<TextElement>(1).Bounds.X;
 
-                                elementIndex = 1;
-                                while (elementIndex < row.Elements.Count)
-                                {
-                                    Rectangle r = row.Elements.ElementAt<TextElement>(elementIndex).Bounds;
-                                    r.X += offsetX;
-                                    row.Elements.ElementAt<TextElement>(elementIndex).Bounds = r;
-                                    elementIndex++;
-                                }
+                            elementIndex = 1;
+                            while (elementIndex < row.Elements.Count)
+                            {
+                                Rectangle r = row.Elements.ElementAt<TextElement>(elementIndex).Bounds;
+                                r.X += offsetX;
+                                row.Elements.ElementAt<TextElement>(elementIndex).Bounds = r;
+                                elementIndex++;
                             }
                         }
                         else
