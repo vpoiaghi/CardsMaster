@@ -47,7 +47,7 @@ namespace CardMasterImageBuilder
                 skinElement.Border = new SkinElementBorder(GetMatchingBorderColor(skinsProject,card), skinsProject.BorderWidth);
                 skin.Elements.Add(skinElement);
 
-                skinElement = new SETextArea(skin, 22, 22, w - 44, 40, "<Nom>");
+                skinElement = new SETextArea(skin, 30, 22, w - 44, 40, "<Nom>");
                 ((SETextArea)skinElement).TextAttribute = "Name";
                 ((SETextArea)skinElement).TextVerticalAlign = VerticalAlignment.Center;
                 //((SETextArea)skinElement).TextFont = new Font("Arial", 26, FontStyle.Italic); // --> Exemple de définition de la police de caractère. Par défaut c'est new Font("Bell MT", 14, FontStyle.Bold);
@@ -76,7 +76,7 @@ namespace CardMasterImageBuilder
                 skinElement.Border = new SkinElementBorder(GetMatchingBorderColor(skinsProject, card), skinsProject.BorderWidth);
                 skin.Elements.Add(skinElement);
 
-                skinElement = new SETextArea(skin, 22, 282, w - 44, 40, "<Equipe>");
+                skinElement = new SETextArea(skin, 30, 282, w - 44, 40, "<Equipe>");
                 ((SETextArea)skinElement).TextAttribute = skinsProject.TeamStringFormat;
                 ((SETextArea)skinElement).TextVerticalAlign = VerticalAlignment.Center;
                 skin.Elements.Add(skinElement);
@@ -87,7 +87,7 @@ namespace CardMasterImageBuilder
                 skinElement.Border = new SkinElementBorder(GetMatchingBorderColor(skinsProject, card), skinsProject.BorderWidth);
                 skin.Elements.Add(skinElement);
 
-                skinElement = new SETextArea(skin, 35, 327, w - 70, 140, "<Epouvoirs>");
+                skinElement = new SETextArea(skin, 35, 330, w - 70, 140, "<Epouvoirs>");
                 ((SETextArea)skinElement).TextAttribute = "Powers";
                 ((SETextArea)skinElement).TextFont = new Font("Bell MT", 12, FontStyle.Bold);
                 ((SETextArea)skinElement).TextAlign = HorizontalAlignment.LeftWithIcon;
