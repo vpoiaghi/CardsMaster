@@ -2,6 +2,7 @@
 	"TexturesDirectory": "F:\\Programmation\\VB .Net\\Cartes Bruno\\CardsMaster\\data\\Textures",
 	"ImagesDirectory": "F:\\Programmation\\VB .Net\\Cartes Bruno\\CardsMaster\\data\\Images",
 	"TeamStringFormat" : "@Team@ :  @Chakra@ %(@Element@)%",
+	"BorderWidth":3,
 	"MapLibelleColor" : {
 		"Quête": "orange",
 		"Environnement": "Pierre 01",
@@ -16,6 +17,21 @@
 		"Foudre": "foudre",
 		"Eau": "eau",
 		"Physique": "blanc_cassé"
+	},
+	"MapLibelleBorderColor" : {
+		"Quête": "#FF4500",
+		"Environnement": "#FFE4C4",
+		"Equipement": "#A9A9A9",
+		"Ninjutsu": "#4B0082",
+		"Default": "#4B0082",
+		"Special": "#4B0082",
+		"Genjutsu": "#4B0082",
+		"Vent": "#006400",
+		"Terre": "#8B4513",
+		"Feu": "#FF0000",
+		"Foudre": "#FFD700",
+		"Eau": "#1E90FF",
+		"Physique": "#FFDEAD"
 	},
     "MapKindField": {
 		"Ninja": "Chakra",

@@ -11,6 +11,7 @@ namespace CardMasterImageBuilder
 {
     public class SkinFactory
     {
+        static private ColorConverter colorConverter = new ColorConverter();
         public static Skin GetSkin(Card card, FileInfo skinsFile, String skinName)
         {
             Skin skin = null;
@@ -18,7 +19,7 @@ namespace CardMasterImageBuilder
             int w = 375;
             int h = 523;
             int borderSize = 15;
-
+          
             SkinsProject skinsProject = SkinsProject.LoadProject(skinsFile);
 
             if (skinsProject != null)
@@ -43,7 +44,7 @@ namespace CardMasterImageBuilder
                 // Zone entête
                 skinElement = new SECurvedRectangle(skin, 22, 22, w - 44, 40, 8);
                 skinElement.SetBackground("Pierre 01");
-                skinElement.Border = new SkinElementBorder(Color.DarkGreen, 3);
+                skinElement.Border = new SkinElementBorder(GetMatchingBorderColor(skinsProject,card), skinsProject.BorderWidth);
                 skin.Elements.Add(skinElement);
 
                 skinElement = new SETextArea(skin, 22, 22, w - 44, 40, "<Nom>");
@@ -66,13 +67,13 @@ namespace CardMasterImageBuilder
                 skinElement = new SEImage(skin, 30, 62, w - 60, 220);
                 ((SEImage)skinElement).NameAttribute = "Name";
                 ((SEImage)skinElement).ResourceType = ResourceTypes.Image;
-                skinElement.Border = new SkinElementBorder(Color.DarkGreen, 3);
+                skinElement.Border = new SkinElementBorder(GetMatchingBorderColor(skinsProject,card), skinsProject.BorderWidth);
                 skin.Elements.Add(skinElement);
 
                 // Zone équipe
                 skinElement = new SECurvedRectangle(skin, 22, 282, w - 44, 40, 8);
                 skinElement.SetBackground("Pierre 01");
-                skinElement.Border = new SkinElementBorder(Color.DarkGreen, 3);
+                skinElement.Border = new SkinElementBorder(GetMatchingBorderColor(skinsProject, card), skinsProject.BorderWidth);
                 skin.Elements.Add(skinElement);
 
                 skinElement = new SETextArea(skin, 22, 282, w - 44, 40, "<Equipe>");
@@ -83,7 +84,7 @@ namespace CardMasterImageBuilder
                 // Zone de pouvoirs
                 skinElement = new SERectangle(skin, 30, 322, w - 60, 150);
                 skinElement.SetBackground("Pierre 01");
-                skinElement.Border = new SkinElementBorder(Color.DarkGreen, 3);
+                skinElement.Border = new SkinElementBorder(GetMatchingBorderColor(skinsProject, card), skinsProject.BorderWidth);
                 skin.Elements.Add(skinElement);
 
                 skinElement = new SETextArea(skin, 35, 327, w - 70, 140, "<Epouvoirs>");
@@ -110,8 +111,14 @@ namespace CardMasterImageBuilder
             String attributeValue = (String)card.GetType().GetProperty(attributeName).GetValue(card, null);
             return skinsProject.MapLibelleColor[attributeValue];
         }
+        private static Color GetMatchingBorderColor(SkinsProject skinsProject, Card card)
+        {
+            String attributeName = skinsProject.MapKindField[card.Kind];
+            String attributeValue = (String)card.GetType().GetProperty(attributeName).GetValue(card, null);
+            String rgbCode = skinsProject.MapLibelleBorderColor[attributeValue];
+            return (Color)colorConverter.ConvertFromString(rgbCode);
+        }
 
 
- 
     }
 }
