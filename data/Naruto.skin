@@ -19,9 +19,11 @@
 		"Physique": "blanc_cassé"
 	},
 	"MapRareteColor" : {
-		"Rare": "Green",
 		"": "Black",
-		"Légendaire": "Orange"
+		"Capitaine": "Blue",
+		"Rare": "Green",
+		"Jinchūriki": "Orange",
+		"Légendaire": "Purple"
 	},
 	"MapLibelleBorderColor" : {
 		"Quête": "#FF4500",
