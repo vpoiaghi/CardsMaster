@@ -57,7 +57,7 @@ namespace CardMasterImageBuilder
                 skinElement = new SEImage(skin, w - 65, 27, 30, 30, "mana_circle");
                 skin.Elements.Add(skinElement);
 
-                skinElement = new SETextArea(skin, w - 65, 27, 30, 30, "?");
+                skinElement = new SETextArea(skin, w - 64, 27, 30, 30, "?");
                 ((SETextArea)skinElement).TextAttribute = "Cost";
                 ((SETextArea)skinElement).TextAlign = HorizontalAlignment.Center;
                 ((SETextArea)skinElement).TextVerticalAlign = VerticalAlignment.Center;
@@ -117,10 +117,10 @@ namespace CardMasterImageBuilder
                 if (card.Attack != "")
                 {
                     // Zone de Attack si non vide
-                    skinElement = new SEImage(skin, 10, 430, 80, 80, "star");
+                    skinElement = new SEImage(skin, 14, 435, 60, 60, "star2");
                     skin.Elements.Add(skinElement);
 
-                    skinElement = new SETextArea(skin, 36, 457, 30, 30, "?");
+                    skinElement = new SETextArea(skin, 31, 450, 30, 30, "?");
                     ((SETextArea)skinElement).TextAttribute = "Attack";
                     ((SETextArea)skinElement).TextAlign = HorizontalAlignment.Center;
                     ((SETextArea)skinElement).TextVerticalAlign = VerticalAlignment.Center;
