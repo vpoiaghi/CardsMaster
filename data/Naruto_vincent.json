@@ -1,7 +1,7 @@
 {
   "Cards" : [ {
     "Powers" : [ {
-      "Description" : "<<Permanent>>  Insensible aux dégats non physiques"
+      "Description" : "<<Permanent>>  Insensible aux dégâts non physiques"
     }, {
       "Description" : "<<activate>>  Astre Divin : Détruit un ninja ennemi"
     } ],
@@ -20,9 +20,9 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<Permanent>>  Insensible aux dégats non physiques"
+      "Description" : "<<Permanent>>  Insensible aux dégâts non physiques"
     }, {
-      "Description" : "<<activate>>  Inglige 2 dégats à tous les ennemis"
+      "Description" : "<<activate>>  Inflige 2 dégâts à tous les ennemis"
     } ],
     "Name" : "Kaguya Ôtsutsuki",
     "Kind" : "Ninja",
@@ -107,7 +107,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Rasengan : Inflige 1D6 dégats à un ninja ennemi"
+      "Description" : "<<activate>>  Rasengan : Inflige 1D6 dégâts à un ninja ennemi"
     }, {
       "Description" : "<<activate>>  Se transforme en  Kyûbi"
     } ],
@@ -177,7 +177,7 @@
     "Comments" : "Carte à part"
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Etourdit un ninja pour 2 tours"
+      "Description" : "<<activate>>  Étourdi un ninja pour 2 tours"
     } ],
     "Name" : "Asuma Sarutobi",
     "Kind" : "Ninja",
@@ -457,7 +457,7 @@
     "Powers" : [ {
       "Description" : "<<Permanent>>  Protection"
     }, {
-      "Description" : "<<activate>>  Byakugan : Révéle 3 cartes de pioche, en garde une, défausse les autres"
+      "Description" : "<<activate>>  Byakugan : Révèle 3 cartes de pioche, en garde une, défausse les autres"
     } ],
     "Name" : "Neji Hyûga",
     "Kind" : "Ninja",
@@ -508,7 +508,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Invoque un clône d'ombre qui encaisse les dégats devant tuer Ebisu"
+      "Description" : "<<activate>>  Invoque un clône d'ombre qui encaisse les dégâts devant tuer Ebisu"
     } ],
     "Name" : "Ebisu",
     "Kind" : "Ninja",
@@ -544,7 +544,7 @@
     "Powers" : [ {
       "Description" : "<<Instantané>>  Poigne du Serpent Spectral : Immobilise un ninja ennemi au choix tant qu'elle est en vie"
     }, {
-      "Description" : "<<Permanent>>  Insensible au dégats de poison"
+      "Description" : "<<Permanent>>  Insensible au dégâts de poison"
     } ],
     "Name" : "Anko Mitarashi",
     "Kind" : "Ninja",
@@ -595,7 +595,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<Instantané>>  Lame de chakra blanc : Inflige 4 points de dégats à un ninja énnemi"
+      "Description" : "<<Instantané>>  Lame de chakra blanc : Inflige 4 points de dégâts à un ninja ennemi"
     }, {
       "Description" : "<<Spécial>>  Attaque 2 fois par tour"
     } ],
@@ -669,7 +669,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et disparait"
+      "Description" : "<<activate>>  Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégâts à chacun et disparait"
     } ],
     "Name" : "Shukaku (Ichibi)",
     "Kind" : "Ninja",
@@ -686,7 +686,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et disparait"
+      "Description" : "<<activate>>  Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégâts à chacun et disparait"
     } ],
     "Name" : "Matatabi (Nibi)",
     "Kind" : "Ninja",
@@ -703,7 +703,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et disparait"
+      "Description" : "<<activate>>  Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégâts à chacun et disparait"
     } ],
     "Name" : "Isobu (Sanbi)",
     "Kind" : "Ninja",
@@ -720,7 +720,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et disparait"
+      "Description" : "<<activate>>  Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégâts à chacun et disparait"
     } ],
     "Name" : "Son Gokû (Yonbi)",
     "Kind" : "Ninja",
@@ -737,7 +737,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et disparait"
+      "Description" : "<<activate>>  Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégâts à chacun et disparait"
     } ],
     "Name" : "Kokuô (Gobi)",
     "Kind" : "Ninja",
@@ -754,7 +754,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et disparait"
+      "Description" : "<<activate>>  Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégâts à chacun et disparait"
     } ],
     "Name" : "Saiken (Rokubi)",
     "Kind" : "Ninja",
@@ -771,7 +771,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et disparait"
+      "Description" : "<<activate>>  Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégâts à chacun et disparait"
     } ],
     "Name" : "Chômei (Nanabi)",
     "Kind" : "Ninja",
@@ -788,7 +788,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et redevient son Hôte"
+      "Description" : "<<activate>>  Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégâts à chacun et redevient son Hôte"
     } ],
     "Name" : "Gyûki (Hachibi)",
     "Kind" : "Ninja",
@@ -805,7 +805,7 @@
     "Comments" : "Carte à part"
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégats à chacun et redevient son Hôte"
+      "Description" : "<<activate>>  Orbe Biju : Frappe 2 adversaires côte à côte et inflige 3 dégâts à chacun et redevient son Hôte"
     } ],
     "Name" : "Kurama (Kyûbi)",
     "Kind" : "Ninja",
@@ -860,7 +860,7 @@
     }, {
       "Description" : "<<Instantané>>  Charge"
     } ],
-    "Name" : "Clone aqueu de Kisame",
+    "Name" : "Clone aqueux de Kisame",
     "Kind" : "Ninja",
     "Chakra" : "Eau",
     "Attack" : "1",
@@ -943,7 +943,7 @@
     "Comments" : "Creer 16 cartes de clones Zetsu"
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Bombe d'argile explosive : inflige 2 dégats à tous les ennemis. (Utilisable 1 fois par tour)"
+      "Description" : "<<activate>>  Bombe d'argile explosive : inflige 2 dégâts à tous les ennemis. (Utilisable 1 fois par tour)"
     } ],
     "Name" : "Deidara",
     "Kind" : "Ninja",
@@ -960,7 +960,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Invoque le Théatre des 100 marionettes"
+      "Description" : "<<activate>>  Invoque le Théâtre des 100 marionettes"
     }, {
       "Description" : "<<Permanent>>  Poison : Détruit le ninja blessé par Sasori à la fin du tour"
     } ],
@@ -981,7 +981,7 @@
     "Powers" : [ {
       "Description" : "<<Instantané>>  Charge"
     } ],
-    "Name" : "Théatre des 100 marionettes",
+    "Name" : "Théâtre des 100 marionettes",
     "Kind" : "Ninja",
     "Chakra" : "Vent",
     "Attack" : "1",
@@ -993,7 +993,7 @@
     "Nb" : "8",
     "Defense" : "2",
     "Background" : null,
-    "Comments" : "Créer 8 cartes de Marionettes"
+    "Comments" : "Créer 8 cartes de Marionnettes"
   }, {
     "Powers" : [ {
       "Description" : "<<Permanent>>  Donne +3 Def aux Uchiwa alliés"
@@ -1049,7 +1049,7 @@
     "Powers" : [ {
       "Description" : "<<Spécial>>   Mur de parchemin explosifs :"
     }, {
-      "Description" : "Quand elle meure, Konan inflige 3 dégats à tous les ninjas du champs de bataille"
+      "Description" : "Quand elle meure, Konan inflige 3 dégâts à tous les ninjas du champs de bataille"
     } ],
     "Name" : "Konan",
     "Kind" : "Ninja",
@@ -1100,7 +1100,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Mille oiseaux : Inflige 1D4 dégats à 2 ninjas côte à côte"
+      "Description" : "<<activate>>  Mille oiseaux : Inflige 1D4 dégâts à 2 ninjas côte à côte"
     }, {
       "Description" : "<<Instantané>>  Invocation de Susanô"
     } ],
@@ -1111,7 +1111,7 @@
     "Citation" : "Chidori",
     "Cost" : "X",
     "Element" : "Foudre",
-    "Rank" : "",
+    "Rank" : "Légendaire",
     "Team" : "Equipe Sasuke",
     "Nb" : "1",
     "Defense" : "X",
@@ -1138,7 +1138,7 @@
     "Powers" : [ {
       "Description" : "<<activate>>  Soigne X PV à un allié (Utilisable 1 fois par tour)"
     }, {
-      "Description" : "<<Spécial>>  Détruit 1 bijù adverse lorsqu'elle meure"
+      "Description" : "<<Spécial>>  Détruit 1 bijù adverse lorsqu'elle meurt"
     } ],
     "Name" : "Karin",
     "Kind" : "Ninja",
@@ -1225,7 +1225,7 @@
     "Powers" : [ {
       "Description" : "<<Permanent>>  Protection"
     }, {
-      "Description" : "<<activate>>  Byakugan : Révéle 3 cartes de pioche, en garde une , défausse les autres"
+      "Description" : "<<activate>>  Byakugan : Révèle 3 cartes de pioche, en garde une , défausse les autres"
     } ],
     "Name" : "Ao",
     "Kind" : "Ninja",
@@ -1287,7 +1287,7 @@
     "Citation" : "Shunshin No Jutsu",
     "Cost" : "X",
     "Element" : "Foudre",
-    "Rank" : "Rare",
+    "Rank" : "Légendaire",
     "Team" : "Equipe 4° Raikage",
     "Nb" : "1",
     "Defense" : "X",
@@ -1331,7 +1331,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Envoie une panthere de foudre noire sur l'ennemie et inflige X dégats"
+      "Description" : "<<activate>>  Envoie une panthère de foudre noire sur l'ennemie et inflige X dégâts"
     } ],
     "Name" : "Darui",
     "Kind" : "Ninja",
@@ -1418,7 +1418,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Utilise le sceau des 4 anti-éléments et inflige 2 points de dégats à tous les adversaires en se donnant la mort"
+      "Description" : "<<activate>>  Utilise le sceau des 4 anti-éléments et inflige 2 points de dégâts à tous les adversaires en se donnant la mort"
     } ],
     "Name" : "Danzô Shimura",
     "Kind" : "Ninja",
@@ -1437,7 +1437,7 @@
     "Powers" : [ {
       "Description" : "<<Instantané>>  Soigne tous les ninjas alliés"
     }, {
-      "Description" : "<<Permanent>>  Soigne entierement un ninja au choix (Utilisable 1 fois par tour)"
+      "Description" : "<<Permanent>>  Soigne entièrement un ninja au choix (Utilisable 1 fois par tour)"
     } ],
     "Name" : "Genbu l'île-Tortue",
     "Kind" : "Lieu légendaire",
@@ -1490,7 +1490,7 @@
     "Comments" : "2 exemplaires"
   }, {
     "Powers" : [ {
-      "Description" : "<<Permanent>>  Défense ultime : Réduit les dégats reçus de 4"
+      "Description" : "<<Permanent>>  Défense ultime : Réduit les dégâts reçus de 4"
     } ],
     "Name" : "Gaara",
     "Kind" : "Ninja",
@@ -1524,7 +1524,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<Instantané>>  Invoque Karasu et Kuroari ses 2 marionettes"
+      "Description" : "<<Instantané>>  Invoque Karasu et Kuroari ses 2 marionnettes"
     } ],
     "Name" : "Kankurô",
     "Kind" : "Ninja",
@@ -1541,7 +1541,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<Instantané>>  un ninja au choix est invulnérable tant que les marionettes sont en vie"
+      "Description" : "<<Instantané>>  un ninja au choix est invulnérable tant que les marionnettes sont en vie"
     } ],
     "Name" : "Karasu et Kuroari",
     "Kind" : "Ninja",
@@ -1567,7 +1567,7 @@
     "Citation" : "Jinton : Genkai Hakuri No Jutsu",
     "Cost" : "X",
     "Element" : "Jinton",
-    "Rank" : "Rare",
+    "Rank" : "Légendaire",
     "Team" : "Equipe 3° Tsuchikage ",
     "Nb" : "1",
     "Defense" : "X",
@@ -1592,7 +1592,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<Permanent>>  les Ninja de terre gagnent +3 defense"
+      "Description" : "<<Permanent>>  les Ninja de terre gagnent +3 défense"
     } ],
     "Name" : "Akatsuchi",
     "Kind" : "Ninja",
@@ -1677,7 +1677,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<Permanent>>  Flute démoniaque: L'ennemi ciblé ne peut plus rien faire tant que Tauya est sur le terrain."
+      "Description" : "<<Permanent>>  Flûte démoniaque: L'ennemi ciblé ne peut plus rien faire tant que Tauya est sur le terrain."
     } ],
     "Name" : "Tayuya",
     "Kind" : "Ninja",
@@ -1747,7 +1747,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<Instantané>>  Elimine le ninja ciblé"
+      "Description" : "<<Instantané>>  Élimine le ninja ciblé"
     } ],
     "Name" : "Nidaime 2° Mizukage",
     "Kind" : "Ninja",
@@ -1768,7 +1768,7 @@
     }, {
       "Description" : "Insensible aux attaques de foudre"
     } ],
-    "Name" : "Sandaime 3° Raikage ",
+    "Name" : "Sandaime 3° Raikage",
     "Kind" : "Ninja",
     "Chakra" : "Foudre",
     "Attack" : "X",
@@ -1836,7 +1836,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<Permanent>>  Sabre des 7 étoiles: Gagne +3/+3 si présence de Kinkaku à ses cotés"
+      "Description" : "<<Permanent>>  Sabre des 7 étoiles: Gagne +3/+3 si présence de Kinkaku à ses côtés"
     } ],
     "Name" : "Ginkaku",
     "Kind" : "Ninja",
@@ -1845,7 +1845,7 @@
     "Citation" : "Shichiseiken",
     "Cost" : "5",
     "Element" : "Feu",
-    "Rank" : "",
+    "Rank" : "Légendaire",
     "Team" : "Edo Tenseï",
     "Nb" : "1",
     "Defense" : "2",
@@ -1853,7 +1853,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<Permanent>>  Gourde écarlate.Gagne +3/+3 si présence de Ginkaku à ses cotés"
+      "Description" : "<<Permanent>>  Gourde écarlate.Gagne +3/+3 si présence de Ginkaku à ses côtés"
     } ],
     "Name" : "Kinkaku",
     "Kind" : "Ninja",
@@ -1862,7 +1862,7 @@
     "Citation" : "Benihisago",
     "Cost" : "5",
     "Element" : "Feu",
-    "Rank" : "",
+    "Rank" : "Légendaire",
     "Team" : "Edo Tenseï",
     "Nb" : "1",
     "Defense" : "2",
@@ -1898,7 +1898,7 @@
     "Citation" : "Shunshin No Jutsu",
     "Cost" : "6",
     "Element" : "Vent",
-    "Rank" : "Rare",
+    "Rank" : "Légendaire",
     "Team" : "Edo Tenseï",
     "Nb" : "1",
     "Defense" : "6",
@@ -1915,7 +1915,7 @@
     "Citation" : "Shôsen Jutsu",
     "Cost" : "X",
     "Element" : "Soin",
-    "Rank" : "Rare",
+    "Rank" : "Légendaire",
     "Team" : "Edo Tenseï",
     "Nb" : "1",
     "Defense" : "X",
@@ -1932,7 +1932,7 @@
     "Citation" : "Suiton : Suiryûdan no Jutsu",
     "Cost" : "X",
     "Element" : "Eau",
-    "Rank" : "Rare",
+    "Rank" : "Légendaire",
     "Team" : "Edo Tenseï",
     "Nb" : "1",
     "Defense" : "X",
@@ -1949,7 +1949,7 @@
     "Citation" : "Shiki Fûjin",
     "Cost" : "X",
     "Element" : "Physique",
-    "Rank" : "Rare",
+    "Rank" : "Légendaire",
     "Team" : "Edo Tenseï",
     "Nb" : "1",
     "Defense" : "X",
@@ -2026,6 +2026,8 @@
   }, {
     "Powers" : [ {
       "Description" : "<<Instantané>>  Détruit tous les Bijù adverses"
+    }, {
+      "Description" : "<<Spécial>>  Donne +4 de défense aux Bijù alliés"
     } ],
     "Name" : "Kushina Uzumaki",
     "Kind" : "Ninja",
@@ -2034,7 +2036,7 @@
     "Citation" : "Kongô Fûsa",
     "Cost" : "X",
     "Element" : "Special",
-    "Rank" : "",
+    "Rank" : "Légendaire",
     "Team" : "Ancien de Konoha",
     "Nb" : "1",
     "Defense" : "X",
@@ -2055,7 +2057,7 @@
     "Citation" : "Kirigakure No Jutsu",
     "Cost" : "X",
     "Element" : "Epéiste",
-    "Rank" : "",
+    "Rank" : "Rare",
     "Team" : "7 Epeistes",
     "Nb" : "1",
     "Defense" : "X",
@@ -2074,7 +2076,7 @@
     "Citation" : "Chôtô Ninpô : Jigumo Nui",
     "Cost" : "4",
     "Element" : "Epéiste",
-    "Rank" : "",
+    "Rank" : "Rare",
     "Team" : "7 Epeistes",
     "Nb" : "1",
     "Defense" : "6",
@@ -2082,7 +2084,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<Instantané>>  Mort silencieuse : Elimine un ninja sans prendre de dégats si l'environnement ou un lieu légendaire est de type eau"
+      "Description" : "<<Instantané>>  Mort silencieuse : Élimine un ninja sans prendre de dégâts si l'environnement ou un lieu légendaire est de type eau"
     }, {
       "Description" : "<<Permanent>>  Ignore la Protection et l'armure d'un ennemi"
     } ],
@@ -2093,7 +2095,7 @@
     "Citation" : "Sairento Kiringu",
     "Cost" : "2",
     "Element" : "Epéiste",
-    "Rank" : "",
+    "Rank" : "Rare",
     "Team" : "7 Epeistes",
     "Nb" : "1",
     "Defense" : "2",
@@ -2112,7 +2114,7 @@
     "Citation" : "Suika No Jutsu",
     "Cost" : "3",
     "Element" : "Epéiste",
-    "Rank" : "",
+    "Rank" : "Rare",
     "Team" : "7 Epeistes",
     "Nb" : "1",
     "Defense" : "2",
@@ -2120,7 +2122,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<Instantané>>  Porte du tonnerre : inflige 1 dégat de foudre à tous les ennemis"
+      "Description" : "<<Instantané>>  Porte du tonnerre : inflige 1 dégât de foudre à tous les ennemis"
     }, {
       "Description" : "<<Permanent>>  Ignore la Protection et l'armure d'un ennemi"
     } ],
@@ -2131,7 +2133,7 @@
     "Citation" : "Raiton : Sandâgêto",
     "Cost" : "4",
     "Element" : "Epéiste",
-    "Rank" : "",
+    "Rank" : "Rare",
     "Team" : "7 Epeistes",
     "Nb" : "1",
     "Defense" : "3",
@@ -2139,7 +2141,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<Instantané>>  Mille aiguilles : Inflige 1 dégat de terre à tous les ennemis"
+      "Description" : "<<Instantané>>  Mille aiguilles : Inflige 1 dégât de terre à tous les ennemis"
     }, {
       "Description" : "<<Permanent>>  Ignore la Protection et l'armure d'un ennemi"
     } ],
@@ -2150,7 +2152,7 @@
     "Citation" : "Hari Senbon",
     "Cost" : "5",
     "Element" : "Epéiste",
-    "Rank" : "",
+    "Rank" : "Rare",
     "Team" : "7 Epeistes",
     "Nb" : "1",
     "Defense" : "4",
@@ -2158,7 +2160,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<Permanent>>  Explosions : inflige 1 dégat aux alliés a coté de la cible"
+      "Description" : "<<Permanent>>  Explosions : inflige 1 dégât aux alliés à côté de la cible"
     }, {
       "Description" : "<<Permanent>>  Ignore la Protection et l'armure d'un ennemi"
     } ],
@@ -2169,7 +2171,7 @@
     "Citation" : "Shibuki ",
     "Cost" : "4",
     "Element" : "Epéiste",
-    "Rank" : "",
+    "Rank" : "Rare",
     "Team" : "7 Epeistes",
     "Nb" : "1",
     "Defense" : "4",
@@ -2179,7 +2181,7 @@
     "Powers" : [ {
       "Description" : "<<Instantané>>  Soigne tous les ninjas alliés"
     }, {
-      "Description" : "<<Permanent>>  Soigne entierèment un ninja au choix (Utilisable 1 fois par tour)"
+      "Description" : "<<Permanent>>  Soigne entièrement un ninja au choix (Utilisable 1 fois par tour)"
     } ],
     "Name" : "Ichiraku Ramen",
     "Kind" : "Lieu légendaire",
@@ -2283,7 +2285,7 @@
     "Powers" : [ {
       "Description" : "<<Permanent>>  Les ninjas en affinité spéciale gagnent +3/+3"
     } ],
-    "Name" : "Champs de bataille 5° grande guerre",
+    "Name" : "Champs de bataille 4° grande guerre",
     "Kind" : "Environnement",
     "Chakra" : "Special",
     "Attack" : "",
@@ -2300,7 +2302,7 @@
     "Powers" : [ {
       "Description" : "<<Permanent>>  Les ninjas en affinité avec le feu gagnent +3/+3"
     } ],
-    "Name" : "Temple du feu ",
+    "Name" : "Temple du feu",
     "Kind" : "Environnement",
     "Chakra" : "Feu",
     "Attack" : "",
@@ -2315,7 +2317,7 @@
     "Comments" : "Carte à part"
   }, {
     "Powers" : [ {
-      "Description" : "<<Permanent>>  Réduit de 1 dégat tous les dégats recut par le héros pour chaque adversaire"
+      "Description" : "<<Permanent>>  Réduit de 1 dégât tous les dégâts reçus par le héros pour chaque adversaire"
     } ],
     "Name" : "Bandeau frontal",
     "Kind" : "Equipement",
@@ -2329,7 +2331,7 @@
     "Nb" : "3",
     "Defense" : "1",
     "Background" : null,
-    "Comments" : "3 éxemplaires"
+    "Comments" : "3 exemplaires"
   }, {
     "Powers" : [ {
       "Description" : "<<Permanent>>  Les ninjas coûtent 1 chakra de moins à invoquer"
@@ -2346,10 +2348,10 @@
     "Nb" : "3",
     "Defense" : "",
     "Background" : null,
-    "Comments" : "3 éxemplaires"
+    "Comments" : "3 exemplaires"
   }, {
     "Powers" : [ {
-      "Description" : "<<Permanent>>  Réduit de 3 dégats tous les dégats recut par le héros pour chaque adversaire"
+      "Description" : "<<Permanent>>  Réduit de 3 dégâts tous les dégâts reçus par le héros pour chaque adversaire"
     } ],
     "Name" : "Gilet de protection",
     "Kind" : "Equipement",
@@ -2363,10 +2365,10 @@
     "Nb" : "3",
     "Defense" : "3",
     "Background" : null,
-    "Comments" : "3 éxemplaires"
+    "Comments" : "3 exemplaires"
   }, {
     "Powers" : [ {
-      "Description" : "<<Permanent>>  Réduit de 1 dégat tous les dégats recut par le héros pour chaque adversaire"
+      "Description" : "<<Permanent>>  Réduit de 1 dégât tous les dégâts reçus par le héros pour chaque adversaire"
     } ],
     "Name" : "Gants",
     "Kind" : "Equipement",
@@ -2380,7 +2382,7 @@
     "Nb" : "3",
     "Defense" : "1",
     "Background" : null,
-    "Comments" : "3 éxemplaires"
+    "Comments" : "3 exemplaires"
   }, {
     "Powers" : [ {
       "Description" : "<<activate>>  Soigne 2 PV au ninja ciblé (Utilisable 1 fois par tour)"
@@ -2397,10 +2399,10 @@
     "Nb" : "3",
     "Defense" : "",
     "Background" : null,
-    "Comments" : "3 éxemplaires"
+    "Comments" : "3 exemplaires"
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Inflige 1 dégat au ninja ciblé (Utilisable 1 fois par tour)"
+      "Description" : "<<activate>>  Inflige 1 dégât au ninja ciblé (Utilisable 1 fois par tour)"
     } ],
     "Name" : "Etuis à shurikens",
     "Kind" : "Equipement",
@@ -2414,10 +2416,10 @@
     "Nb" : "3",
     "Defense" : "",
     "Background" : null,
-    "Comments" : "3 éxemplaires"
+    "Comments" : "3 exemplaires"
   }, {
     "Powers" : [ {
-      "Description" : "<<Permanent>>  Réduit de 1 dégat tous les dégats recut par le héros pour chaque adversaire"
+      "Description" : "<<Permanent>>  Réduit de 1 dégât tous les dégâts reçus par le héros pour chaque adversaire"
     } ],
     "Name" : "Sandales",
     "Kind" : "Equipement",
@@ -2431,10 +2433,10 @@
     "Nb" : "3",
     "Defense" : "1",
     "Background" : null,
-    "Comments" : "3 éxemplaires"
+    "Comments" : "3 exemplaires"
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Inflige 1 dégat à distance au ninja ciblé (utilisable 1 fois par tour)"
+      "Description" : "<<activate>>  Inflige 1 dégât à distance au ninja ciblé (utilisable 1 fois par tour)"
     } ],
     "Name" : "Shuriken",
     "Kind" : "Equipement",
@@ -2448,10 +2450,10 @@
     "Nb" : "3",
     "Defense" : "",
     "Background" : null,
-    "Comments" : "3 éxemplaires"
+    "Comments" : "3 exemplaires"
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Inflige 2 dégats à distance au ninja ciblé (Utilisable 1 fois par tour)"
+      "Description" : "<<activate>>  Inflige 2 dégâts à distance au ninja ciblé (Utilisable 1 fois par tour)"
     } ],
     "Name" : "Shuriken géant",
     "Kind" : "Equipement",
@@ -2465,10 +2467,10 @@
     "Nb" : "3",
     "Defense" : "",
     "Background" : null,
-    "Comments" : "3 éxemplaires"
+    "Comments" : "3 exemplaires"
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Inflige 1 dégat à distance à 2 ninjas ciblés (Utilisable 1 fois par tour)"
+      "Description" : "<<activate>>  Inflige 1 dégât à distance à 2 ninjas ciblés (Utilisable 1 fois par tour)"
     } ],
     "Name" : "Shuriken de l'ombre",
     "Kind" : "Equipement",
@@ -2482,7 +2484,7 @@
     "Nb" : "3",
     "Defense" : "",
     "Background" : null,
-    "Comments" : "3 éxemplaires"
+    "Comments" : "3 exemplaires"
   }, {
     "Powers" : [ {
       "Description" : "<<Permanent>>  Attaque normale au corps à corps"
@@ -2499,10 +2501,10 @@
     "Nb" : "3",
     "Defense" : "",
     "Background" : null,
-    "Comments" : "3 éxemplaires"
+    "Comments" : "3 exemplaires"
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Inflige 1 dégat à distance au ninja ciblé (utilisable 1 fois par tour)"
+      "Description" : "<<activate>>  Inflige 1 dégât à distance au ninja ciblé (utilisable 1 fois par tour)"
     } ],
     "Name" : "Senbon",
     "Kind" : "Equipement",
@@ -2516,10 +2518,10 @@
     "Nb" : "3",
     "Defense" : "",
     "Background" : null,
-    "Comments" : "3 éxemplaires"
+    "Comments" : "3 exemplaires"
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Inflige 2 dégat à distance au ninja ciblé (utilisable 1 fois par tour)"
+      "Description" : "<<activate>>  Inflige 2 dégât à distance au ninja ciblé (utilisable 1 fois par tour)"
     } ],
     "Name" : "Katana",
     "Kind" : "Equipement",
@@ -2527,16 +2529,16 @@
     "Attack" : "2",
     "Citation" : "Katana",
     "Cost" : "3",
-    "Element" : "2 main",
+    "Element" : "2 mains",
     "Rank" : "",
     "Team" : "Arme",
     "Nb" : "3",
     "Defense" : "",
     "Background" : null,
-    "Comments" : "3 éxemplaires"
+    "Comments" : "3 exemplaires"
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Inflige 3 dégat à distance à 2 ninjas côte à cote"
+      "Description" : "<<activate>>  Inflige 3 dégât à distance à 2 ninjas côte à côte"
     } ],
     "Name" : "Notes Explosives",
     "Kind" : "Equipement",
@@ -2550,7 +2552,7 @@
     "Nb" : "3",
     "Defense" : "",
     "Background" : null,
-    "Comments" : "3 éxemplaires"
+    "Comments" : "3 exemplaires"
   }, {
     "Powers" : [ {
       "Description" : "<<activate>>  Confère camouflage à l'allié ciblé (Utilisable 1 fois par tour)"
@@ -2567,7 +2569,7 @@
     "Nb" : "3",
     "Defense" : "",
     "Background" : null,
-    "Comments" : "3 éxemplaires"
+    "Comments" : "3 exemplaires"
   }, {
     "Powers" : [ {
       "Description" : "<<activate>>  Empêche un ninja ciblé d'attaquer pendant 2 tours"
@@ -2578,7 +2580,7 @@
     "Attack" : "1",
     "Citation" : "Makibishis",
     "Cost" : "2",
-    "Element" : "2 main",
+    "Element" : "2 mains",
     "Rank" : "",
     "Team" : "Arme",
     "Nb" : "1",
@@ -2606,7 +2608,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Découpe et maudit l’âme : Inflige 3 dommages, et s'il reste 1 point de vie, détruit l'adversaire"
+      "Description" : "<<activate>>  Découpe et maudit l'âme : Inflige 3 dommages, et s'il reste 1 point de vie, détruit l'adversaire"
     }, {
       "Description" : "<<Spécial>>  Consomme 6 chakras ou inflige 6 dommages au Héro. (Utilisable 1 fois par tour)"
     } ],
@@ -2644,7 +2646,7 @@
     "Comments" : ""
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Inflige 4 dégats à distance de n'importe quelle nature au ninja ciblé"
+      "Description" : "<<activate>>  Inflige 4 dégâts à distance de n'importe quelle nature au ninja ciblé"
     }, {
       "Description" : "<<Spécial>>  Consomme 6 chakras ou inflige 6 dommages au Héro. (Utilisable 1 fois par tour)"
     } ],

@@ -79,6 +79,7 @@ namespace CardMasterImageBuilder
                 skinElement = new SETextArea(skin, 28, 282, w - 44, 40, "<Equipe>");
                 ((SETextArea)skinElement).TextAttribute = skinsProject.TeamStringFormat;
                 ((SETextArea)skinElement).TextVerticalAlign = VerticalAlignment.Center;
+                ((SETextArea)skinElement).TextFont = new Font("Bell MT", 12, FontStyle.Bold);
                 skin.Elements.Add(skinElement);
 
                 // Zone de pouvoirs
@@ -126,6 +127,12 @@ namespace CardMasterImageBuilder
                     ((SETextArea)skinElement).TextVerticalAlign = VerticalAlignment.Center;
                     skin.Elements.Add(skinElement);
                 }
+
+                //Zone rareté
+                skinElement = new SECurvedRectangle(skin, 325, 293, 15, 15, 1);
+                skinElement.SetBackground(GetMatchingRarityColor(skinsProject,card));
+                skinElement.Border = new SkinElementBorder(Color.Black, 1);
+                skin.Elements.Add(skinElement);
             }
             return skin;
 
@@ -136,6 +143,11 @@ namespace CardMasterImageBuilder
             String attributeName = skinsProject.MapKindField[card.Kind];
             String attributeValue = (String)card.GetType().GetProperty(attributeName).GetValue(card, null);
             return skinsProject.MapLibelleColor[attributeValue];
+        }
+
+        private static Color GetMatchingRarityColor(SkinsProject skinsProject, Card card)
+        {
+            return (Color)colorConverter.ConvertFromString(skinsProject.MapRareteColor[card.Rank]);
         }
         private static Color GetMatchingBorderColor(SkinsProject skinsProject, Card card)
         {

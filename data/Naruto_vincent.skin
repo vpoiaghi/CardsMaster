@@ -18,6 +18,11 @@
 		"Eau": "eau",
 		"Physique": "blanc_cassé"
 	},
+	"MapRareteColor" : {
+		"Rare": "Green",
+		"": "Black",
+		"Légendaire": "Orange"
+	},
 	"MapLibelleBorderColor" : {
 		"Quête": "#FF4500",
 		"Environnement": "#FFE4C4",
