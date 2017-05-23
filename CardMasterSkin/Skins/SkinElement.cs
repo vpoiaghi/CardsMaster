@@ -21,7 +21,7 @@ namespace CardMasterSkin.Skins
         public int Height { get; set; } = 0;
         public SkinElementShadow Shadow { get; set; } = null;
         public SkinElementBorder Border { get; set; } = null;
-
+        public bool Visible { get; set; } = true;
         protected Color color1;
         protected Color color2;
         protected string imageName = null;
@@ -62,16 +62,19 @@ namespace CardMasterSkin.Skins
 
             foreach(GraphicElement graphicElement in graphicElements)
             {
-                if (this.Shadow != null)
+                if (Visible)
                 {
-                    graphicElement.DrawShadow(g, this.Shadow);
-                }
+                    if (this.Shadow != null)
+                    {
+                        graphicElement.DrawShadow(g, this.Shadow);
+                    }
 
-                graphicElement.Draw(g);
+                    graphicElement.Draw(g);
 
-                if (this.Border != null)
-                {
-                    graphicElement.DrawBorder(g, this.Border);
+                    if (this.Border != null)
+                    {
+                        graphicElement.DrawBorder(g, this.Border);
+                    }
                 }
             }
 

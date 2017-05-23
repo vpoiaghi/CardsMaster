@@ -19,7 +19,7 @@ namespace CardMasterImageBuilder
             int w = 375;
             int h = 523;
             int borderSize = 15;
-          
+
             SkinsProject skinsProject = SkinsProject.LoadProject(skinsFile);
 
             if (skinsProject != null)
@@ -38,13 +38,13 @@ namespace CardMasterImageBuilder
 
                 // Texture de fond
                 skinElement = new SERectangle(skin, borderSize, borderSize, w - borderSize * 2, h - borderSize * 2);
-                skinElement.SetBackground(GetMatchingBackground(skinsProject,card));
+                skinElement.SetBackground(GetMatchingBackground(skinsProject, card));
                 skin.Elements.Add(skinElement);
 
                 // Zone entête
                 skinElement = new SECurvedRectangle(skin, 22, 22, w - 44, 40, 8);
                 skinElement.SetBackground("Pierre 01");
-                skinElement.Border = new SkinElementBorder(GetMatchingBorderColor(skinsProject,card), skinsProject.BorderWidth);
+                skinElement.Border = new SkinElementBorder(GetMatchingBorderColor(skinsProject, card), skinsProject.BorderWidth);
                 skin.Elements.Add(skinElement);
 
                 skinElement = new SETextArea(skin, 28, 22, w - 44, 40, "<Nom>");
@@ -67,7 +67,7 @@ namespace CardMasterImageBuilder
                 skinElement = new SEImage(skin, 30, 62, w - 60, 220);
                 ((SEImage)skinElement).NameAttribute = "Name";
                 ((SEImage)skinElement).ResourceType = ResourceTypes.Image;
-                skinElement.Border = new SkinElementBorder(GetMatchingBorderColor(skinsProject,card), skinsProject.BorderWidth);
+                skinElement.Border = new SkinElementBorder(GetMatchingBorderColor(skinsProject, card), skinsProject.BorderWidth);
                 skin.Elements.Add(skinElement);
 
                 // Zone équipe
@@ -103,34 +103,32 @@ namespace CardMasterImageBuilder
                 skin.Elements.Add(skinElement);
 
                 // Zone de PV is non vide
-                if (card.Defense != "")
-                {
-                    skinElement = new SEImage(skin, w - 68, 440, 50, 50, "shield");
-                    skin.Elements.Add(skinElement);
+                skinElement = new SEImage(skin, w - 68, 440, 50, 50, "shield");
+                skin.Elements.Add(skinElement);
+                skinElement.Visible = IsAttributeNonEmpty(card, "Defense");
 
-                    skinElement = new SETextArea(skin, w - 58, 450, 30, 30, "?");
-                    ((SETextArea)skinElement).TextAttribute = "Defense";
-                    ((SETextArea)skinElement).TextAlign = HorizontalAlignment.Center;
-                    ((SETextArea)skinElement).TextVerticalAlign = VerticalAlignment.Center;
-                    skin.Elements.Add(skinElement);
-                }
+                skinElement = new SETextArea(skin, w - 58, 450, 30, 30, "?");
+                ((SETextArea)skinElement).TextAttribute = "Defense";
+                skinElement.Visible = IsAttributeNonEmpty(card, "Defense");
+                ((SETextArea)skinElement).TextAlign = HorizontalAlignment.Center;
+                ((SETextArea)skinElement).TextVerticalAlign = VerticalAlignment.Center;
+                skin.Elements.Add(skinElement);
 
-                if (card.Attack != "")
-                {
-                    // Zone de Attack si non vide
-                    skinElement = new SEImage(skin, 14, 435, 60, 60, "star2");
-                    skin.Elements.Add(skinElement);
+                // Zone de Attack si non vide
+                skinElement = new SEImage(skin, 14, 435, 60, 60, "star2");
+                skinElement.Visible = IsAttributeNonEmpty(card, "Attack");
+                skin.Elements.Add(skinElement);
 
-                    skinElement = new SETextArea(skin, 31, 450, 30, 30, "?");
-                    ((SETextArea)skinElement).TextAttribute = "Attack";
-                    ((SETextArea)skinElement).TextAlign = HorizontalAlignment.Center;
-                    ((SETextArea)skinElement).TextVerticalAlign = VerticalAlignment.Center;
-                    skin.Elements.Add(skinElement);
-                }
+                skinElement = new SETextArea(skin, 31, 450, 30, 30, "?");
+                ((SETextArea)skinElement).TextAttribute = "Attack";
+                skinElement.Visible = IsAttributeNonEmpty(card, "Attack");
+                ((SETextArea)skinElement).TextAlign = HorizontalAlignment.Center;
+                ((SETextArea)skinElement).TextVerticalAlign = VerticalAlignment.Center;
+                skin.Elements.Add(skinElement);
 
                 //Zone rareté
                 skinElement = new SECurvedRectangle(skin, 325, 293, 15, 15, 1);
-                skinElement.SetBackground(GetMatchingRarityColor(skinsProject,card));
+                skinElement.SetBackground(GetMatchingRarityColor(skinsProject, card));
                 skinElement.Border = new SkinElementBorder(Color.Black, 1);
                 skin.Elements.Add(skinElement);
             }
@@ -138,23 +136,36 @@ namespace CardMasterImageBuilder
 
         }
 
-        private static String GetMatchingBackground(SkinsProject skinsProject,Card card)
-        {   
+        private static String GetMatchingBackground(SkinsProject skinsProject, Card card)
+        {
             String attributeName = skinsProject.MapKindField[card.Kind];
-            String attributeValue = (String)card.GetType().GetProperty(attributeName).GetValue(card, null);
+            String attributeValue = getAttributeValueAsString(card, attributeName);
             return skinsProject.MapLibelleColor[attributeValue];
+        }
+
+        private static Boolean IsAttributeNonEmpty(Card card, String attributeName)
+        {
+            return getAttributeValueAsString(card, attributeName) != "";
+        }
+        private static String getAttributeValueAsString(Card card, String attributeName)
+        {
+            return (String)card.GetType().GetProperty(attributeName).GetValue(card, null);
         }
 
         private static Color GetMatchingRarityColor(SkinsProject skinsProject, Card card)
         {
-            return (Color)colorConverter.ConvertFromString(skinsProject.MapRareteColor[card.Rank]);
+            return ConvertColorFromString(skinsProject.MapRareteColor[card.Rank]);
+        }
+        private static Color ConvertColorFromString(String color)
+        {
+            return (Color)colorConverter.ConvertFromString(color);
         }
         private static Color GetMatchingBorderColor(SkinsProject skinsProject, Card card)
         {
             String attributeName = skinsProject.MapKindField[card.Kind];
-            String attributeValue = (String)card.GetType().GetProperty(attributeName).GetValue(card, null);
+            String attributeValue = getAttributeValueAsString(card,attributeName);
             String rgbCode = skinsProject.MapLibelleBorderColor[attributeValue];
-            return (Color)colorConverter.ConvertFromString(rgbCode);
+            return ConvertColorFromString(rgbCode);
         }
 
 
