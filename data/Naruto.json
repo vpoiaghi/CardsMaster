@@ -2478,15 +2478,15 @@
     "Comments" : "3 exemplaires"
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Inflige 2 dégâts à distance au ninja ciblé (Utilisable 1 fois par tour)"
+      "Description" : "<<activate>>  Inflige 2 dégâts àu corps à corps au ninja ciblé et reçoit normalement les dégats (Utilisable 1 fois par tour)"
     } ],
-    "Name" : "Shuriken géant",
+    "Name" : "Lames de chakra",
     "Kind" : "Equipement",
     "Chakra" : "Equipement",
     "Attack" : "2",
     "Citation" : "Kyodaina Shuriken",
     "Cost" : "4",
-    "Element" : "2 mains",
+    "Element" : "1 mains",
     "Rank" : "",
     "Team" : "Arme",
     "Nb" : "3",
@@ -2599,7 +2599,7 @@
     "Powers" : [ {
       "Description" : "<<activate>>  Empêche un ninja ciblé d'attaquer pendant 2 tours"
     } ],
-    "Name" : "Clous",
+    "Name" : "Chausse-trappe",
     "Kind" : "Equipement",
     "Chakra" : "Equipement",
     "Attack" : "1",

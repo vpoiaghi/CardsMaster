@@ -115,11 +115,11 @@ namespace CardMasterImageBuilder
                 skin.Elements.Add(skinElement);
 
                 // Zone de Attack si non vide
-                skinElement = new SEImage(skin, 14, 435, 60, 60, "star2");
+                skinElement = new SEImage(skin, 14, 438, 60, 60, "star2");
                 skinElement.Visible = IsAttributeNonEmpty(card, "Attack");
                 skin.Elements.Add(skinElement);
 
-                skinElement = new SETextArea(skin, 31, 450, 30, 30, "?");
+                skinElement = new SETextArea(skin, 31, 454, 30, 30, "?");
                 ((SETextArea)skinElement).TextAttribute = "Attack";
                 skinElement.Visible = IsAttributeNonEmpty(card, "Attack");
                 ((SETextArea)skinElement).TextAlign = HorizontalAlignment.Center;
