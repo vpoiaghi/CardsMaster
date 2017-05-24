@@ -104,9 +104,9 @@ namespace CardMasterImageBuilder
 
                 // Zone de PV is non vide
                 skinElement = new SEImage(skin, w - 68, 440, 50, 50, "shield");
-                skin.Elements.Add(skinElement);
                 skinElement.Visible = IsAttributeNonEmpty(card, "Defense");
-
+                skin.Elements.Add(skinElement);
+                
                 skinElement = new SETextArea(skin, w - 58, 450, 30, 30, "?");
                 ((SETextArea)skinElement).TextAttribute = "Defense";
                 skinElement.Visible = IsAttributeNonEmpty(card, "Defense");

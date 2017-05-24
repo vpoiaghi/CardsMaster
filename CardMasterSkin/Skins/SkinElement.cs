@@ -62,8 +62,7 @@ namespace CardMasterSkin.Skins
 
             foreach(GraphicElement graphicElement in graphicElements)
             {
-                if (Visible)
-                {
+              
                     if (this.Shadow != null)
                     {
                         graphicElement.DrawShadow(g, this.Shadow);
@@ -75,7 +74,7 @@ namespace CardMasterSkin.Skins
                     {
                         graphicElement.DrawBorder(g, this.Border);
                     }
-                }
+               
             }
 
             graphicElements.Clear();
