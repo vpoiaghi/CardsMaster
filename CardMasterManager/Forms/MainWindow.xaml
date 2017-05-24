@@ -28,7 +28,7 @@
                 <MenuItem Name="MenuItemExit" Header="_Quitter" Click="MenuItemExit_Click"/>
             </MenuItem>
             <MenuItem Header="_Edition">
-                <MenuItem Header="_Exporter tout en .png" Click="MenuItemExportAllToPngFile_Click"/>
+                <MenuItem Name="MenuItemExportAllToPngFile" Header="_Exporter tout en .png" Click="MenuItemExportAllToPngFile_Click"/>
             </MenuItem>
         </Menu>
 

@@ -1,4 +1,5 @@
 ﻿using CardMasterCard.Card;
+using CardMasterExport.Export;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -15,6 +16,7 @@ namespace CardMasterExport
         private Window owner = null;
         protected List<Card> cardsList = null;
         protected FileInfo skinsFile = null;
+        protected ExportParameters parameters = null;
         
         protected delegate void ProgressChangedEvent(ProgressChangedArg arg);
         public delegate void ProgressChanged(object sender, ProgressChangedArg args);
@@ -25,14 +27,25 @@ namespace CardMasterExport
         protected abstract void MakeCardExport(Card card);
         protected abstract string GetProgressMessage(ProgressState state, int index, int total);
 
-        protected Exporter(List<Card> cardsList, FileInfo skinsFile)
-        {
-            this.cardsList = cardsList;
-            this.skinsFile = skinsFile;
-        }
+        public abstract ExportParameters GetParameters();
+
+        //public Exporter()
+        //{ }
+
+        protected Exporter(List<Card> cardsList, FileInfo skinsFile) : this(null, cardsList, skinsFile)
+        { }
 
         protected Exporter(Window owner, List<Card> cardsList, FileInfo skinsFile)
         {
+            if (cardsList == null)
+            {
+                throw new ArgumentNullException("cardsList");
+            }
+            if (skinsFile == null)
+            {
+                throw new ArgumentNullException("skinsFile");
+            }
+
             this.owner = owner;
             this.cardsList = cardsList;
             this.skinsFile = skinsFile;
@@ -44,8 +57,17 @@ namespace CardMasterExport
             skinsFile = null;
         }
 
-        public void Export()
+        public void Export(ExportParameters parameters)
         {
+            if (parameters == null)
+            {
+                throw new ArgumentNullException("parameters");
+            }
+            else
+            {
+                this.parameters = parameters;
+            }
+
             if ((cardsList != null) && (skinsFile != null) && (!exportRunning))
             {
                 if (BeforeCardsExport())
@@ -66,6 +88,7 @@ namespace CardMasterExport
 
                 exportRunning = false;
             }
+
         }
 
         private void StartExport()

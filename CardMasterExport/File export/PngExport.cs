@@ -1,5 +1,6 @@
 ﻿using CardMasterCard.Card;
 using CardMasterCommon.Dialog;
+using CardMasterExport.Export;
 using CardMasterImageBuilder;
 using System;
 using System.Collections.Generic;
@@ -14,21 +15,21 @@ namespace CardMasterExport.FileExport
     {
         private DirectoryInfo targetFolder = null;
 
-        public PngExport(Window owner, List<Card> cardsList, FileInfo skinsFile) : this(owner, cardsList, skinsFile, null)
+        public PngExport(List<Card> cardsList, FileInfo skinsFile) : base(cardsList, skinsFile)
         { }
 
-        public PngExport(List<Card> cardsList, FileInfo skinsFile, DirectoryInfo targetFolder) : base(cardsList, skinsFile)
-        {
-            this.targetFolder = targetFolder;
-        }
+        public PngExport(Window owner, List<Card> cardsList, FileInfo skinsFile) : base(owner, cardsList, skinsFile)
+        { }
 
-        public PngExport(Window owner, List<Card> cardsList, FileInfo skinsFile, DirectoryInfo targetFolder) : base(owner, cardsList, skinsFile)
+        public override ExportParameters GetParameters()
         {
-            this.targetFolder = targetFolder;
-        }   
+            return new Parameters();
+        }
 
         protected override bool BeforeCardsExport()
         {
+            this.targetFolder = ((Parameters)this.parameters).TargetFolder;
+
             if (this.targetFolder == null)
             {
                 this.targetFolder = FolderDialog.SelectFolder();
@@ -86,6 +87,11 @@ namespace CardMasterExport.FileExport
             }
 
             return message;
+        }
+
+        public class Parameters : ExportParameters
+        {
+            public DirectoryInfo TargetFolder { get; set; } = null;
         }
 
     }

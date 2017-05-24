@@ -42,6 +42,7 @@ namespace CardMasterManager
             this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             this.MenuItemSave.IsEnabled = false;
             this.MenuItemSaveAs.IsEnabled = false;
+            this.MenuItemExportAllToPngFile.IsEnabled = false;
         }
 
         private void MenuItemOpen_Click(object sender, RoutedEventArgs e)
@@ -166,9 +167,9 @@ namespace CardMasterManager
             if (cardsList.Count > 0) {
 
                 PngExport exp = new PngExport(this, cardsList, skinsFile);
+                PngExport.Parameters parameters = (PngExport.Parameters)exp.GetParameters();
                 exp.progressChangedEvent += new PngExport.ProgressChanged(ExportProgressChanged);
-                exp.Export();
-                
+                exp.Export(parameters);
             }
 
         }
@@ -243,6 +244,7 @@ namespace CardMasterManager
             {
                 MenuItemSave.IsEnabled = true;
                 MenuItemSaveAs.IsEnabled = true;
+                MenuItemExportAllToPngFile.IsEnabled = true;
             }
         }
 

@@ -46,6 +46,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExportParameters\ExportParameters.cs" />
+    <Compile Include="File export\PdfExport.cs" />
     <Compile Include="ProgressChangedArg.cs" />
     <Compile Include="Exporter.cs" />
     <Compile Include="File export\PngExport.cs" />

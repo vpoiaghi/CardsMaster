@@ -32,7 +32,8 @@ namespace CardMasterImageBuilder
             if (this.skin != null)
             {
                 img = new Bitmap(this.skin.Width, this.skin.Height);
-                img.SetResolution(96, 96);
+                img.SetResolution(300, 300);
+                //img.SetResolution(96, 96);
 
                 Graphics g = Graphics.FromImage(img);
 

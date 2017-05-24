@@ -139,7 +139,8 @@ namespace CardMasterSkin.Skins
                             if (bkg == null)
                             {
                                 Image img = new Bitmap(fileName);
-                                bkg = new TextureBrush(img, WrapMode.Clamp);
+                                //bkg = new TextureBrush(img, WrapMode.Clamp);
+                                bkg = new TextureBrush(img, WrapMode.TileFlipXY);
                                 img.Dispose();
                                 img = null;
 
