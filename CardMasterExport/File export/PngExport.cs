@@ -43,11 +43,9 @@ namespace CardMasterExport.FileExport
             Drawer drawer = null;
             Image img = null;
 
-            List<Card> cards = null;
             string targetFolder = null;
 
             lock (_lock){
-                cards = this.cardsList;
                 targetFolder = this.targetFolder.FullName;
             }
 
@@ -72,6 +70,9 @@ namespace CardMasterExport.FileExport
             img = null;
 
         }
+
+        protected override void AfterCardsExport()
+        { }
 
         protected override string GetProgressMessage(ProgressState state, int index, int total)
         {

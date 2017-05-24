@@ -41,6 +41,9 @@ namespace CardMasterExport.FileExport
             //myDoc.createPDF(@"c:\test.pdf");
         }
 
+        protected override void AfterCardsExport()
+        { }
+
         public class Parameters : ExportParameters
         {
             public FileInfo TargetFile { get; set; } = null;

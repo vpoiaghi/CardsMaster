@@ -25,6 +25,7 @@ namespace CardMasterExport
 
         protected abstract bool BeforeCardsExport();
         protected abstract void MakeCardExport(Card card);
+        protected abstract void AfterCardsExport();
         protected abstract string GetProgressMessage(ProgressState state, int index, int total);
 
         public abstract ExportParameters GetParameters();
@@ -86,7 +87,7 @@ namespace CardMasterExport
 
                 }
 
-                exportRunning = false;
+                //exportRunning = false;
             }
 
         }
@@ -110,6 +111,8 @@ namespace CardMasterExport
                     cardIndex = cardIndex + 1;
                     ShowProgress(cardIndex, cardCount);
                 }
+
+                AfterCardsExport();
 
                 // Export terminé
                 ShowExportEnded();

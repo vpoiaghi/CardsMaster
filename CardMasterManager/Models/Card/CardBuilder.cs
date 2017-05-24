@@ -40,7 +40,7 @@ namespace CardMasterManager
             return this;
         }
 
-        public CardBuilder withNb(String nb)
+        public CardBuilder withNb(int nb)
         {
             this.m_card.Nb = nb;
             return this;

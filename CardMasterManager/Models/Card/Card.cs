@@ -42,7 +42,7 @@ namespace CardMasterManager
         public String Defense { get; set; }
         public String Citation { get; set; }
         public String Comments { get; set; }
-        public string Nb { get; set; }
+        public int Nb { get; set; }
         public CardMasterCard.Card.Texture Background { get; set; }
         public List<CardMasterCard.Card.Power> Powers { get; set; }
 
@@ -77,6 +77,7 @@ namespace CardMasterManager
             toReturn.Element = card.Element;
             toReturn.Kind = card.Kind.ToString();
             toReturn.Name = card.Name;
+            toReturn.Nb = card.Nb;
             toReturn.Powers = new List<CardMasterCard.Card.Power>();
             toReturn.Powers.AddRange(card.Powers);
 

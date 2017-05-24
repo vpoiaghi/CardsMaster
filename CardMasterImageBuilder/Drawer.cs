@@ -37,15 +37,6 @@ namespace CardMasterImageBuilder
 
                 Graphics g = Graphics.FromImage(img);
 
-                /*
-                g.SmoothingMode = SmoothingMode.AntiAlias;
-                g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
-                g.CompositingQuality = CompositingQuality.HighQuality;
-                g.CompositingMode = CompositingMode.SourceOver;
-                g.InterpolationMode = InterpolationMode.HighQualityBicubic;
-                g.PixelOffsetMode = PixelOffsetMode.HighQuality;
-                */
-
                 g.SmoothingMode = this.Quality.SmoothingMode;
                 g.TextRenderingHint = this.Quality.TextRenderingHint;
                 g.CompositingQuality = this.Quality.CompositingQuality;
@@ -60,7 +51,6 @@ namespace CardMasterImageBuilder
 
                 g.Dispose();
                 g = null;
-
             }
 
             return img;

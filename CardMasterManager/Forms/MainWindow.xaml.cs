@@ -43,6 +43,7 @@ namespace CardMasterManager
             this.MenuItemSave.IsEnabled = false;
             this.MenuItemSaveAs.IsEnabled = false;
             this.MenuItemExportAllToPngFile.IsEnabled = false;
+            this.MenuItemExportBoardsToPngFile.IsEnabled = false;
         }
 
         private void MenuItemOpen_Click(object sender, RoutedEventArgs e)
@@ -72,7 +73,6 @@ namespace CardMasterManager
                 CmbCompositingQuality.SelectedItem = DQuality.CompositingQuality;
                 CmbPixelOffsetMode.SelectedItem = DQuality.PixelOffsetMode;
                 CmbTextRenderingHint.SelectedItem = DQuality.TextRenderingHint;
-
             }
         }
 
@@ -124,10 +124,7 @@ namespace CardMasterManager
                     previousCard = c;
                     new Thread(() => DisplayCard(c, cardImage)).Start();
                 }
-
-
             }
-
         }
 
         private void DisplayCard(Card c, System.Windows.Controls.Image image)
@@ -144,8 +141,6 @@ namespace CardMasterManager
             {
                 image.Source = (ImageSource)converter.Convert(drawer.DrawCard(), null, null, System.Globalization.CultureInfo.CurrentCulture);
             }));
-
-
         }
 
         private void ComboBox_GotFocus(object sender, RoutedEventArgs e)
@@ -164,11 +159,30 @@ namespace CardMasterManager
                 cardsList.Add(Card.ConvertToMasterCard((Card)item));
             }
             
-            if (cardsList.Count > 0) {
-
+            if (cardsList.Count > 0)
+            {
                 PngExport exp = new PngExport(this, cardsList, skinsFile);
                 PngExport.Parameters parameters = (PngExport.Parameters)exp.GetParameters();
                 exp.progressChangedEvent += new PngExport.ProgressChanged(ExportProgressChanged);
+                exp.Export(parameters);
+            }
+
+        }
+
+        private void MenuItemExportBoardsToPngFile_Click(object sender, RoutedEventArgs e)
+        {
+            var cardsList = new List<CardMasterCard.Card.Card>();
+
+            foreach (object item in cardGrid.Items)
+            {
+                cardsList.Add(Card.ConvertToMasterCard((Card)item));
+            }
+
+            if (cardsList.Count > 0)
+            {
+                PngBoardExport exp = new PngBoardExport(this, cardsList, skinsFile);
+                PngBoardExport.Parameters parameters = (PngBoardExport.Parameters)exp.GetParameters();
+                exp.progressChangedEvent += new PngBoardExport.ProgressChanged(ExportProgressChanged);
                 exp.Export(parameters);
             }
 
@@ -242,9 +256,10 @@ namespace CardMasterManager
         {
             if (!this.onLoading)
             {
-                MenuItemSave.IsEnabled = true;
-                MenuItemSaveAs.IsEnabled = true;
-                MenuItemExportAllToPngFile.IsEnabled = true;
+                this.MenuItemSave.IsEnabled = true;
+                this.MenuItemSaveAs.IsEnabled = true;
+                this.MenuItemExportAllToPngFile.IsEnabled = true;
+                this.MenuItemExportBoardsToPngFile.IsEnabled = true;
             }
         }
 
@@ -267,5 +282,6 @@ namespace CardMasterManager
             catch(NullReferenceException)
             { }
         }
+
     }
 }

@@ -14,7 +14,7 @@
     "Element" : "Rinnegan",
     "Rank" : "Légendaire",
     "Team" : "Ancêtres",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : ""
@@ -33,7 +33,7 @@
     "Element" : "Genjutsu",
     "Rank" : "Légendaire",
     "Team" : "Ancêtres",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : ""
@@ -50,7 +50,7 @@
     "Element" : "Vent",
     "Rank" : "Légendaire",
     "Team" : "Ancêtres",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "4",
     "Background" : null,
     "Comments" : ""
@@ -67,7 +67,7 @@
     "Element" : "Feu",
     "Rank" : "Légendaire",
     "Team" : "Ancêtres",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "4",
     "Background" : null,
     "Comments" : ""
@@ -84,7 +84,7 @@
     "Element" : "Terre",
     "Rank" : "Capitaine",
     "Team" : "La Racine",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "3",
     "Background" : null,
     "Comments" : ""
@@ -101,7 +101,7 @@
     "Element" : "Foudre",
     "Rank" : "Capitaine",
     "Team" : "Equipe 7",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -120,7 +120,7 @@
     "Element" : "Vent",
     "Rank" : "Jinchūriki",
     "Team" : "Equipe 7",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "4",
     "Background" : null,
     "Comments" : "1d6"
@@ -137,7 +137,7 @@
     "Element" : "Soin",
     "Rank" : "",
     "Team" : "Equipe 7",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "3",
     "Background" : null,
     "Comments" : ""
@@ -154,7 +154,7 @@
     "Element" : "Physique",
     "Rank" : "",
     "Team" : "Equipe 7",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -171,7 +171,7 @@
     "Element" : "Physique",
     "Rank" : "",
     "Team" : "Invocation",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "1",
     "Background" : null,
     "Comments" : "Carte à part"
@@ -188,7 +188,7 @@
     "Element" : "Vent",
     "Rank" : "Capitaine",
     "Team" : "Equipe 10",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "X",
     "Background" : null,
     "Comments" : ""
@@ -207,7 +207,7 @@
     "Element" : "Physique",
     "Rank" : "",
     "Team" : "Equipe 10",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "6",
     "Background" : null,
     "Comments" : ""
@@ -224,7 +224,7 @@
     "Element" : "Genjutsu",
     "Rank" : "",
     "Team" : "Equipe 10",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "3",
     "Background" : null,
     "Comments" : ""
@@ -241,7 +241,7 @@
     "Element" : "Ombre",
     "Rank" : "",
     "Team" : "Equipe 10",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "3",
     "Background" : null,
     "Comments" : ""
@@ -258,7 +258,7 @@
     "Element" : "Ombre",
     "Rank" : "",
     "Team" : "Ino-Shika-Cho",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -275,7 +275,7 @@
     "Element" : "Genjutsu",
     "Rank" : "Capitaine",
     "Team" : "Ino-Shika-Cho",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -294,7 +294,7 @@
     "Element" : "Physique",
     "Rank" : "Capitaine",
     "Team" : "Ino-Shika-Cho",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : ""
@@ -311,7 +311,7 @@
     "Element" : "Genjutsu",
     "Rank" : "Capitaine",
     "Team" : "Examinateur",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "3",
     "Background" : null,
     "Comments" : ""
@@ -328,7 +328,7 @@
     "Element" : "Foudre",
     "Rank" : "",
     "Team" : "Examinateur",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "3",
     "Background" : null,
     "Comments" : ""
@@ -345,7 +345,7 @@
     "Element" : "Genjutsu",
     "Rank" : "",
     "Team" : "Examinateur",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -362,7 +362,7 @@
     "Element" : "Eau",
     "Rank" : "",
     "Team" : "Examinateur",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -379,7 +379,7 @@
     "Element" : "Genjutsu",
     "Rank" : "Capitaine",
     "Team" : "Equipe 8",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -398,7 +398,7 @@
     "Element" : "Physique",
     "Rank" : "",
     "Team" : "Equipe 8",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "3",
     "Background" : null,
     "Comments" : ""
@@ -415,7 +415,7 @@
     "Element" : "Vent",
     "Rank" : "",
     "Team" : "Equipe 8",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -432,7 +432,7 @@
     "Element" : "Physique",
     "Rank" : "",
     "Team" : "Equipe 8",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "3",
     "Background" : null,
     "Comments" : ""
@@ -449,7 +449,7 @@
     "Element" : "Physique",
     "Rank" : "Capitaine",
     "Team" : "Equipe 9",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : ""
@@ -468,7 +468,7 @@
     "Element" : "Physique",
     "Rank" : "",
     "Team" : "Equipe 9",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "3",
     "Background" : null,
     "Comments" : ""
@@ -485,7 +485,7 @@
     "Element" : "Physique",
     "Rank" : "",
     "Team" : "Equipe 9",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "4",
     "Background" : null,
     "Comments" : ""
@@ -502,7 +502,7 @@
     "Element" : "Physique",
     "Rank" : "",
     "Team" : "Equipe 9",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -519,7 +519,7 @@
     "Element" : "Physique",
     "Rank" : "Capitaine",
     "Team" : "Équipe Ebisu",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -536,7 +536,7 @@
     "Element" : "Sexy-Jutsu",
     "Rank" : "",
     "Team" : "Équipe Ebisu",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -555,7 +555,7 @@
     "Element" : "Feu",
     "Rank" : "",
     "Team" : "Examinateur",
-    "Nb" : "",
+    "Nb" : 0,
     "Defense" : "3",
     "Background" : null,
     "Comments" : ""
@@ -572,7 +572,7 @@
     "Element" : "Sexy-Jutsu",
     "Rank" : "",
     "Team" : "Équipe Ebisu",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -589,7 +589,7 @@
     "Element" : "Sexy-Jutsu",
     "Rank" : "",
     "Team" : "Équipe Ebisu",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -608,7 +608,7 @@
     "Element" : "Physique",
     "Rank" : "Capitaine",
     "Team" : "Ancien de Konoha",
-    "Nb" : "",
+    "Nb" : 0,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -627,7 +627,7 @@
     "Element" : "Vent",
     "Rank" : "Légendaire",
     "Team" : "Sanin",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "7",
     "Background" : null,
     "Comments" : ""
@@ -646,7 +646,7 @@
     "Element" : "Eau",
     "Rank" : "Légendaire",
     "Team" : "Sanin",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "7",
     "Background" : null,
     "Comments" : ""
@@ -665,7 +665,7 @@
     "Element" : "Cristal",
     "Rank" : "Rare",
     "Team" : "Ninja",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "3",
     "Background" : null,
     "Comments" : ""
@@ -682,7 +682,7 @@
     "Element" : "Orbe Biju",
     "Rank" : "Jinchūriki",
     "Team" : "Bijù",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : ""
@@ -699,7 +699,7 @@
     "Element" : "Orbe Biju",
     "Rank" : "Jinchūriki",
     "Team" : "Bijù",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : ""
@@ -716,7 +716,7 @@
     "Element" : "Orbe Biju",
     "Rank" : "Jinchūriki",
     "Team" : "Bijù",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : ""
@@ -733,7 +733,7 @@
     "Element" : "Orbe Biju",
     "Rank" : "Jinchūriki",
     "Team" : "Bijù",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : ""
@@ -750,7 +750,7 @@
     "Element" : "Orbe Biju",
     "Rank" : "Jinchūriki",
     "Team" : "Bijù",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : ""
@@ -767,7 +767,7 @@
     "Element" : "Orbe Biju",
     "Rank" : "Jinchūriki",
     "Team" : "Bijù",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : ""
@@ -784,7 +784,7 @@
     "Element" : "Orbe Biju",
     "Rank" : "Jinchūriki",
     "Team" : "Bijù",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : ""
@@ -801,7 +801,7 @@
     "Element" : "Orbe Biju",
     "Rank" : "Jinchūriki",
     "Team" : "Bijù",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : "Carte à part"
@@ -818,7 +818,7 @@
     "Element" : "Orbe Biju",
     "Rank" : "Jinchūriki",
     "Team" : "Bijù",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : "Carte à part"
@@ -835,7 +835,7 @@
     "Element" : "Genjutsu",
     "Rank" : "",
     "Team" : "Akatsuki",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "6",
     "Background" : null,
     "Comments" : ""
@@ -852,7 +852,7 @@
     "Element" : "Eau",
     "Rank" : "",
     "Team" : "Akatsuki",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : ""
@@ -871,7 +871,7 @@
     "Element" : "Eau",
     "Rank" : "",
     "Team" : "Invocation",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "1",
     "Background" : null,
     "Comments" : ""
@@ -888,7 +888,7 @@
     "Element" : "Feu",
     "Rank" : "Légendaire",
     "Team" : "Akatsuki",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : ""
@@ -905,7 +905,7 @@
     "Element" : "Terre",
     "Rank" : "",
     "Team" : "Akatsuki",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : ""
@@ -922,7 +922,7 @@
     "Element" : "Terre",
     "Rank" : "",
     "Team" : "Akatsuki",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : ""
@@ -939,7 +939,7 @@
     "Element" : "Terre",
     "Rank" : "",
     "Team" : "Invocation",
-    "Nb" : "16",
+    "Nb" : 16,
     "Defense" : "2",
     "Background" : null,
     "Comments" : "Creer 16 cartes de clones Zetsu"
@@ -956,7 +956,7 @@
     "Element" : "Terre",
     "Rank" : "",
     "Team" : "Akatsuki",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "3",
     "Background" : null,
     "Comments" : ""
@@ -975,7 +975,7 @@
     "Element" : "Poison",
     "Rank" : "",
     "Team" : "Akatsuki",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : ""
@@ -992,7 +992,7 @@
     "Element" : "Poison",
     "Rank" : "",
     "Team" : "Invocation",
-    "Nb" : "8",
+    "Nb" : 8,
     "Defense" : "2",
     "Background" : null,
     "Comments" : "Créer 8 cartes de Marionnettes"
@@ -1009,7 +1009,7 @@
     "Element" : "Genjutsu",
     "Rank" : "",
     "Team" : "Akatsuki",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -1026,7 +1026,7 @@
     "Element" : "Physique",
     "Rank" : "",
     "Team" : "Akatsuki",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -1043,7 +1043,7 @@
     "Element" : "Tous",
     "Rank" : "",
     "Team" : "Akatsuki",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -1062,7 +1062,7 @@
     "Element" : "Vent",
     "Rank" : "",
     "Team" : "Akatsuki",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -1079,7 +1079,7 @@
     "Element" : "Rinnegan",
     "Rank" : "",
     "Team" : "Akatsuki",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "3",
     "Background" : null,
     "Comments" : ""
@@ -1096,7 +1096,7 @@
     "Element" : "Rinnegan",
     "Rank" : "",
     "Team" : "Akatsuki",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "4",
     "Background" : null,
     "Comments" : ""
@@ -1115,7 +1115,7 @@
     "Element" : "Foudre",
     "Rank" : "Légendaire",
     "Team" : "Equipe Sasuke",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : "1D4"
@@ -1132,7 +1132,7 @@
     "Element" : "Feu",
     "Rank" : "",
     "Team" : "Invocation",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "7",
     "Background" : null,
     "Comments" : "Carte à part"
@@ -1151,7 +1151,7 @@
     "Element" : "Soin",
     "Rank" : "",
     "Team" : "Equipe Sasuke",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "3",
     "Background" : null,
     "Comments" : ""
@@ -1168,7 +1168,7 @@
     "Element" : "Eau",
     "Rank" : "",
     "Team" : "Equipe Sasuke",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -1187,7 +1187,7 @@
     "Element" : "Physique",
     "Rank" : "",
     "Team" : "Equipe Sasuke",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : ""
@@ -1204,7 +1204,7 @@
     "Element" : "Lave",
     "Rank" : "Rare",
     "Team" : "Equipe 5° Misukage",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "6",
     "Background" : null,
     "Comments" : ""
@@ -1221,7 +1221,7 @@
     "Element" : "Eau",
     "Rank" : "",
     "Team" : "Equipe 5° Misukage",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "3",
     "Background" : null,
     "Comments" : ""
@@ -1240,7 +1240,7 @@
     "Element" : "Eau",
     "Rank" : "",
     "Team" : "Equipe 5° Misukage",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "4",
     "Background" : null,
     "Comments" : ""
@@ -1257,7 +1257,7 @@
     "Element" : "Soin",
     "Rank" : "",
     "Team" : "Equipe 5° Misukage",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "3",
     "Background" : null,
     "Comments" : "Jeton pile ou face"
@@ -1274,7 +1274,7 @@
     "Element" : "Foudre",
     "Rank" : "Jinchūriki",
     "Team" : "Equipe de Kumo",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "3",
     "Background" : null,
     "Comments" : ""
@@ -1293,7 +1293,7 @@
     "Element" : "Foudre",
     "Rank" : "Légendaire",
     "Team" : "Equipe 4° Raikage",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : ""
@@ -1312,7 +1312,7 @@
     "Element" : "Foudre",
     "Rank" : "Jinchūriki",
     "Team" : "Equipe 4° Raikage",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "4",
     "Background" : null,
     "Comments" : ""
@@ -1329,7 +1329,7 @@
     "Element" : "Foudre",
     "Rank" : "",
     "Team" : "Equipe 4° Raikage",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -1346,7 +1346,7 @@
     "Element" : "Foudre",
     "Rank" : "Capitaine",
     "Team" : "Equipe 4° Raikage",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "4",
     "Background" : null,
     "Comments" : ""
@@ -1363,7 +1363,7 @@
     "Element" : "Foudre",
     "Rank" : "",
     "Team" : "Equipe 4° Raikage",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "4",
     "Background" : null,
     "Comments" : ""
@@ -1380,7 +1380,7 @@
     "Element" : "Foudre",
     "Rank" : "",
     "Team" : "Equipe 4° Raikage",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -1397,7 +1397,7 @@
     "Element" : "Foudre",
     "Rank" : "",
     "Team" : "Equipe 4° Raikage",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -1416,7 +1416,7 @@
     "Element" : "Poison",
     "Rank" : "",
     "Team" : "La Racine",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "4",
     "Background" : null,
     "Comments" : ""
@@ -1433,7 +1433,7 @@
     "Element" : "Feu",
     "Rank" : "Capitaine",
     "Team" : "La Racine",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "4",
     "Background" : null,
     "Comments" : ""
@@ -1452,7 +1452,7 @@
     "Element" : "Foudre",
     "Rank" : "",
     "Team" : "Lieu légendaire",
-    "Nb" : "2",
+    "Nb" : 2,
     "Defense" : "5",
     "Background" : null,
     "Comments" : "2 exemplaires"
@@ -1469,7 +1469,7 @@
     "Element" : "Foudre",
     "Rank" : "",
     "Team" : "Lieu légendaire",
-    "Nb" : "2",
+    "Nb" : 2,
     "Defense" : "5",
     "Background" : null,
     "Comments" : "2 exemplaires"
@@ -1488,7 +1488,7 @@
     "Element" : "Genjutsu",
     "Rank" : "",
     "Team" : "Lieu Légendaire",
-    "Nb" : "2",
+    "Nb" : 2,
     "Defense" : "5",
     "Background" : null,
     "Comments" : "2 exemplaires"
@@ -1507,7 +1507,7 @@
     "Element" : "Sable",
     "Rank" : "Jinchūriki",
     "Team" : "Equipe Sable",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "3",
     "Background" : null,
     "Comments" : ""
@@ -1524,7 +1524,7 @@
     "Element" : "Vent",
     "Rank" : "",
     "Team" : "Equipe Sable",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -1541,7 +1541,7 @@
     "Element" : "Poison",
     "Rank" : "",
     "Team" : "Equipe Sable",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -1558,7 +1558,7 @@
     "Element" : "Poison",
     "Rank" : "",
     "Team" : "Invocation",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : "Carte à part"
@@ -1575,7 +1575,7 @@
     "Element" : "Jinton",
     "Rank" : "Légendaire",
     "Team" : "Equipe 3° Tsuchikage ",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -1592,7 +1592,7 @@
     "Element" : "Lave",
     "Rank" : "",
     "Team" : "Equipe 3° Tsuchikage ",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "3",
     "Background" : null,
     "Comments" : ""
@@ -1609,7 +1609,7 @@
     "Element" : "Terre",
     "Rank" : "",
     "Team" : "Equipe 3° Tsuchikage ",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "3",
     "Background" : null,
     "Comments" : ""
@@ -1626,7 +1626,7 @@
     "Element" : "Poison",
     "Rank" : "",
     "Team" : "Quartet d'Oto",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "3",
     "Background" : null,
     "Comments" : ""
@@ -1643,7 +1643,7 @@
     "Element" : "Terre",
     "Rank" : "",
     "Team" : "Quartet d'Oto",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -1660,7 +1660,7 @@
     "Element" : "Physique",
     "Rank" : "",
     "Team" : "Quartet d'Oto",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -1677,7 +1677,7 @@
     "Element" : "Terre",
     "Rank" : "",
     "Team" : "Invocation",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : ""
@@ -1694,7 +1694,7 @@
     "Element" : "Genjutsu",
     "Rank" : "",
     "Team" : "Quartet d'Oto",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "4",
     "Background" : null,
     "Comments" : ""
@@ -1711,7 +1711,7 @@
     "Element" : "Physique",
     "Rank" : "Capitaine",
     "Team" : "Quartet d'Oto",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : ""
@@ -1730,7 +1730,7 @@
     "Element" : "Poison",
     "Rank" : "Légendaire",
     "Team" : "Duo Sanin",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "7",
     "Background" : null,
     "Comments" : "D4"
@@ -1747,7 +1747,7 @@
     "Element" : "Soin",
     "Rank" : "Rare",
     "Team" : "Duo Sanin",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "4",
     "Background" : null,
     "Comments" : ""
@@ -1764,7 +1764,7 @@
     "Element" : "Eau",
     "Rank" : "Rare",
     "Team" : "Edo Tenseï",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : ""
@@ -1783,7 +1783,7 @@
     "Element" : "Foudre",
     "Rank" : "Rare",
     "Team" : "Edo Tenseï",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : ""
@@ -1800,7 +1800,7 @@
     "Element" : "Sable",
     "Rank" : "Rare",
     "Team" : "Edo Tenseï",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : ""
@@ -1817,7 +1817,7 @@
     "Element" : "Sable",
     "Rank" : "Rare",
     "Team" : "Edo Tenseï",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "5",
     "Background" : null,
     "Comments" : ""
@@ -1836,7 +1836,7 @@
     "Element" : "Orbe Biju",
     "Rank" : "Rare",
     "Team" : "Bijù",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "6",
     "Background" : null,
     "Comments" : ""
@@ -1853,7 +1853,7 @@
     "Element" : "Feu",
     "Rank" : "Légendaire",
     "Team" : "Edo Tenseï",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -1870,7 +1870,7 @@
     "Element" : "Feu",
     "Rank" : "Légendaire",
     "Team" : "Edo Tenseï",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -1887,7 +1887,7 @@
     "Element" : "Poison",
     "Rank" : "Rare",
     "Team" : "Edo Tenseï",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "4",
     "Background" : null,
     "Comments" : ""
@@ -1906,7 +1906,7 @@
     "Element" : "Vent",
     "Rank" : "Légendaire",
     "Team" : "Edo Tenseï",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "6",
     "Background" : null,
     "Comments" : ""
@@ -1923,7 +1923,7 @@
     "Element" : "Soin",
     "Rank" : "Légendaire",
     "Team" : "Edo Tenseï",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "6",
     "Background" : null,
     "Comments" : "D4"
@@ -1940,7 +1940,7 @@
     "Element" : "Eau",
     "Rank" : "Légendaire",
     "Team" : "Edo Tenseï",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "3",
     "Background" : null,
     "Comments" : "D4"
@@ -1957,7 +1957,7 @@
     "Element" : "Physique",
     "Rank" : "Légendaire",
     "Team" : "Edo Tenseï",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "4",
     "Background" : null,
     "Comments" : "Jeton pile ou face"
@@ -1974,7 +1974,7 @@
     "Element" : "Physique",
     "Rank" : "Rare",
     "Team" : "Invocation",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "10",
     "Background" : null,
     "Comments" : "Carte à part"
@@ -1991,7 +1991,7 @@
     "Element" : "Poison",
     "Rank" : "Rare",
     "Team" : "Invocation",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "7",
     "Background" : null,
     "Comments" : "Carte à part"
@@ -2008,7 +2008,7 @@
     "Element" : "Soin",
     "Rank" : "Rare",
     "Team" : "Invocation",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "10",
     "Background" : null,
     "Comments" : "Carte à part"
@@ -2025,7 +2025,7 @@
     "Element" : "Feu",
     "Rank" : "",
     "Team" : "Examinateur",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -2044,7 +2044,7 @@
     "Element" : "Special",
     "Rank" : "Légendaire",
     "Team" : "Ancien de Konoha",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "4",
     "Background" : null,
     "Comments" : ""
@@ -2065,7 +2065,7 @@
     "Element" : "Epéiste",
     "Rank" : "Rare",
     "Team" : "7 Epeistes",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "4",
     "Background" : null,
     "Comments" : ""
@@ -2084,7 +2084,7 @@
     "Element" : "Eau",
     "Rank" : "",
     "Team" : "",
-    "Nb" : "",
+    "Nb" : 0,
     "Defense" : "3",
     "Background" : null,
     "Comments" : ""
@@ -2103,7 +2103,7 @@
     "Element" : "Epéiste",
     "Rank" : "Rare",
     "Team" : "7 Epeistes",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "6",
     "Background" : null,
     "Comments" : ""
@@ -2122,7 +2122,7 @@
     "Element" : "Epéiste",
     "Rank" : "Rare",
     "Team" : "7 Epeistes",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -2141,7 +2141,7 @@
     "Element" : "Epéiste",
     "Rank" : "Rare",
     "Team" : "7 Epeistes",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "2",
     "Background" : null,
     "Comments" : ""
@@ -2160,7 +2160,7 @@
     "Element" : "Epéiste",
     "Rank" : "Rare",
     "Team" : "7 Epeistes",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "3",
     "Background" : null,
     "Comments" : ""
@@ -2179,7 +2179,7 @@
     "Element" : "Epéiste",
     "Rank" : "Rare",
     "Team" : "7 Epeistes",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "4",
     "Background" : null,
     "Comments" : ""
@@ -2198,7 +2198,7 @@
     "Element" : "Epéiste",
     "Rank" : "Rare",
     "Team" : "7 Epeistes",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "4",
     "Background" : null,
     "Comments" : ""
@@ -2217,7 +2217,7 @@
     "Element" : "Eau",
     "Rank" : "",
     "Team" : "Lieu légendaire",
-    "Nb" : "2",
+    "Nb" : 2,
     "Defense" : "5",
     "Background" : null,
     "Comments" : "2 exemplaires"
@@ -2234,7 +2234,7 @@
     "Element" : "Eau",
     "Rank" : "",
     "Team" : "Environnement",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "",
     "Background" : null,
     "Comments" : "Carte à part"
@@ -2251,7 +2251,7 @@
     "Element" : "Physique",
     "Rank" : "",
     "Team" : "Environnement",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "",
     "Background" : null,
     "Comments" : "Carte à part"
@@ -2268,7 +2268,7 @@
     "Element" : "Vent",
     "Rank" : "",
     "Team" : "Environnement",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "",
     "Background" : null,
     "Comments" : "Carte à part"
@@ -2285,7 +2285,7 @@
     "Element" : "Foudre",
     "Rank" : "",
     "Team" : "Environnement",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "",
     "Background" : null,
     "Comments" : "Carte à part"
@@ -2302,7 +2302,7 @@
     "Element" : "Terre",
     "Rank" : "",
     "Team" : "Environnement",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "",
     "Background" : null,
     "Comments" : "Carte à part"
@@ -2319,7 +2319,7 @@
     "Element" : "Special",
     "Rank" : "",
     "Team" : "Environnement",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "",
     "Background" : null,
     "Comments" : "Carte à part"
@@ -2336,7 +2336,7 @@
     "Element" : "Feu",
     "Rank" : "",
     "Team" : "Environnement",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "",
     "Background" : null,
     "Comments" : "Carte à part"
@@ -2353,7 +2353,7 @@
     "Element" : "Tête",
     "Rank" : "",
     "Team" : "Armure",
-    "Nb" : "3",
+    "Nb" : 3,
     "Defense" : "1",
     "Background" : null,
     "Comments" : "3 exemplaires"
@@ -2370,7 +2370,7 @@
     "Element" : "Torse",
     "Rank" : "",
     "Team" : "Armure",
-    "Nb" : "3",
+    "Nb" : 3,
     "Defense" : "",
     "Background" : null,
     "Comments" : "3 exemplaires"
@@ -2387,7 +2387,7 @@
     "Element" : "Torse",
     "Rank" : "",
     "Team" : "Armure",
-    "Nb" : "3",
+    "Nb" : 3,
     "Defense" : "3",
     "Background" : null,
     "Comments" : "3 exemplaires"
@@ -2404,7 +2404,7 @@
     "Element" : "Main",
     "Rank" : "",
     "Team" : "Armure",
-    "Nb" : "3",
+    "Nb" : 3,
     "Defense" : "1",
     "Background" : null,
     "Comments" : "3 exemplaires"
@@ -2421,7 +2421,7 @@
     "Element" : "Ceinture",
     "Rank" : "",
     "Team" : "Armure",
-    "Nb" : "3",
+    "Nb" : 3,
     "Defense" : "",
     "Background" : null,
     "Comments" : "3 exemplaires"
@@ -2438,7 +2438,7 @@
     "Element" : "Cuisse",
     "Rank" : "",
     "Team" : "Armure",
-    "Nb" : "3",
+    "Nb" : 3,
     "Defense" : "",
     "Background" : null,
     "Comments" : "3 exemplaires"
@@ -2455,7 +2455,7 @@
     "Element" : "Pieds",
     "Rank" : "",
     "Team" : "Armure",
-    "Nb" : "3",
+    "Nb" : 3,
     "Defense" : "1",
     "Background" : null,
     "Comments" : "3 exemplaires"
@@ -2472,7 +2472,7 @@
     "Element" : "1 main",
     "Rank" : "",
     "Team" : "Arme",
-    "Nb" : "3",
+    "Nb" : 3,
     "Defense" : "",
     "Background" : null,
     "Comments" : "3 exemplaires"
@@ -2489,7 +2489,7 @@
     "Element" : "1 mains",
     "Rank" : "",
     "Team" : "Arme",
-    "Nb" : "3",
+    "Nb" : 3,
     "Defense" : "",
     "Background" : null,
     "Comments" : "3 exemplaires"
@@ -2506,7 +2506,7 @@
     "Element" : "2 mains",
     "Rank" : "",
     "Team" : "Arme",
-    "Nb" : "3",
+    "Nb" : 3,
     "Defense" : "",
     "Background" : null,
     "Comments" : "3 exemplaires"
@@ -2523,7 +2523,7 @@
     "Element" : "1 main",
     "Rank" : "",
     "Team" : "Arme",
-    "Nb" : "3",
+    "Nb" : 3,
     "Defense" : "",
     "Background" : null,
     "Comments" : "3 exemplaires"
@@ -2540,7 +2540,7 @@
     "Element" : "1 main",
     "Rank" : "",
     "Team" : "Arme",
-    "Nb" : "3",
+    "Nb" : 3,
     "Defense" : "",
     "Background" : null,
     "Comments" : "3 exemplaires"
@@ -2557,7 +2557,7 @@
     "Element" : "2 mains",
     "Rank" : "",
     "Team" : "Arme",
-    "Nb" : "3",
+    "Nb" : 3,
     "Defense" : "",
     "Background" : null,
     "Comments" : "3 exemplaires"
@@ -2574,7 +2574,7 @@
     "Element" : "1 main",
     "Rank" : "",
     "Team" : "Arme",
-    "Nb" : "3",
+    "Nb" : 3,
     "Defense" : "",
     "Background" : null,
     "Comments" : "3 exemplaires"
@@ -2591,7 +2591,7 @@
     "Element" : "1 main",
     "Rank" : "",
     "Team" : "Arme",
-    "Nb" : "3",
+    "Nb" : 3,
     "Defense" : "",
     "Background" : null,
     "Comments" : "3 exemplaires"
@@ -2608,7 +2608,7 @@
     "Element" : "2 mains",
     "Rank" : "",
     "Team" : "Arme",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "",
     "Background" : null,
     "Comments" : ""
@@ -2627,7 +2627,7 @@
     "Element" : "Accessoire (1)",
     "Rank" : "Légendaire",
     "Team" : "Arme",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "",
     "Background" : null,
     "Comments" : ""
@@ -2646,7 +2646,7 @@
     "Element" : "Accessoire (1)",
     "Rank" : "Légendaire",
     "Team" : "Arme",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "",
     "Background" : null,
     "Comments" : ""
@@ -2665,7 +2665,7 @@
     "Element" : "Accessoire (1)",
     "Rank" : "Légendaire",
     "Team" : "Arme",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "",
     "Background" : null,
     "Comments" : ""
@@ -2684,7 +2684,7 @@
     "Element" : "Accessoire (1)",
     "Rank" : "Légendaire",
     "Team" : "Arme",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "",
     "Background" : null,
     "Comments" : ""
@@ -2703,7 +2703,7 @@
     "Element" : "Accessoire (1)",
     "Rank" : "Légendaire",
     "Team" : "Arme",
-    "Nb" : "1",
+    "Nb" : 1,
     "Defense" : "",
     "Background" : null,
     "Comments" : ""
@@ -2720,7 +2720,7 @@
     "Element" : "Genjutsu",
     "Rank" : "",
     "Team" : "Ninjutsu",
-    "Nb" : "10",
+    "Nb" : 10,
     "Defense" : "",
     "Background" : null,
     "Comments" : "10 exemplaires"
@@ -2737,7 +2737,7 @@
     "Element" : "Feu",
     "Rank" : "",
     "Team" : "Ninjutsu",
-    "Nb" : "5",
+    "Nb" : 5,
     "Defense" : "",
     "Background" : null,
     "Comments" : "5 exemplaires"
@@ -2756,7 +2756,7 @@
     "Element" : "",
     "Rank" : "",
     "Team" : "Quête",
-    "Nb" : "2",
+    "Nb" : 2,
     "Defense" : "",
     "Background" : null,
     "Comments" : "2 exemplaires"
@@ -2775,7 +2775,7 @@
     "Element" : "",
     "Rank" : "",
     "Team" : "Quête",
-    "Nb" : "2",
+    "Nb" : 2,
     "Defense" : "",
     "Background" : null,
     "Comments" : "2 exemplaires"
@@ -2794,7 +2794,7 @@
     "Element" : "",
     "Rank" : "",
     "Team" : "Quête",
-    "Nb" : "2",
+    "Nb" : 2,
     "Defense" : "",
     "Background" : null,
     "Comments" : "2 exemplaires"
