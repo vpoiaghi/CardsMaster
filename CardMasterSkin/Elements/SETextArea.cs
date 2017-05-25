@@ -40,6 +40,7 @@ namespace CardMasterSkin.Elements
         public VerticalAlignment TextVerticalAlign { get; set; } = VerticalAlignment.Top;
         public Font TextFont { get; set; } = new Font(DEFAULT_FONT_FAMILY, DEFAULT_FONT_SIZE, DEFAULT_FONT_STYLE);
         public int WordSpaceOffsetX { get; set; } = 0;
+        public int RowSpaceOffsetY { get; set; } = 0;
 
         public SETextArea(Skin skin, int x, int y, int width, int height, string text) : base(skin, x, y, width, height)
         {
@@ -59,7 +60,7 @@ namespace CardMasterSkin.Elements
                 StringFormat textFormat = StringFormat.GenericDefault;
 
                 TextFormatter formatter = new TextFormatter(fullText);
-                FormattedText formattedText = formatter.format(this.graphics, GetSymbolsDirectory(), this.TextAlign, this.TextVerticalAlign, this.TextFont, textFormat, this.Width, this.Height, this.WordSpaceOffsetX);
+                FormattedText formattedText = formatter.format(this.graphics, GetSymbolsDirectory(), this.TextAlign, this.TextVerticalAlign, this.TextFont, textFormat, this.Width, this.Height, this.WordSpaceOffsetX, this.RowSpaceOffsetY);
                 
                 graphicElementsList = GetGraphicElementsList(formattedText, this.TextFont, textEmFontSize, textFormat);
 

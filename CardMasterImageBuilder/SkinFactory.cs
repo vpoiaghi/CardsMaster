@@ -234,6 +234,7 @@ namespace CardMasterImageBuilder
                 ((SETextArea)skinElement).TextFont = new Font("Bell MT", 8, FontStyle.Bold);
                 ((SETextArea)skinElement).TextAlign = HorizontalAlignment.LeftWithIcon;
                 ((SETextArea)skinElement).WordSpaceOffsetX = 0;  // <------------------------------------------------- C'EST LA !!!!!!!!!!!!!!
+                ((SETextArea)skinElement).RowSpaceOffsetY = 0;
                 skin.Elements.Add(skinElement);
 
                 // Zone Citation

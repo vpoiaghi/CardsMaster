@@ -41,7 +41,7 @@ namespace CardMasterSkin.Elements.TextFormat
 
         public List<TextRow> Rows { get { return rowsList; } }
 
-        internal void Format(Graphics g, Font TextFont, StringFormat TextFormat, int MaxWidth, int hAlignLeftWithIconOffsetX, int wordSpaceOffsetX)
+        internal void Format(Graphics g, Font TextFont, StringFormat TextFormat, int MaxWidth, int hAlignLeftWithIconOffsetX, int wordSpaceOffsetX, int rowSpaceOffsetY)
         {
             TextRow row = null;
             rowsList = new List<TextRow>();
@@ -62,7 +62,6 @@ namespace CardMasterSkin.Elements.TextFormat
                 if (row == null)
                 {
                     rowIndex++;
-                    rowY = 0;
                     row = new TextRow();
                     row.Y = rowY;
                     rowsList.Add(row);
@@ -82,13 +81,14 @@ namespace CardMasterSkin.Elements.TextFormat
 
                         // Force la création d'une nouvelle ligne si il y a un nouvel élément à ajouter
                         row = null;
+                        rowY = row.Bottom + rowSpaceOffsetY;
 
                         // Ignore le textElement courant en forçant le Next
                         continue;
                     }
 
                     rowIndex++;
-                    rowY = row.Bottom;
+                    rowY = row.Bottom + rowSpaceOffsetY;
                     row = new TextRow();
                     row.Y = rowY;
                     rowsList.Add(row);

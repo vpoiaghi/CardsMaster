@@ -38,7 +38,7 @@ namespace CardMasterSkin.Elements.TextFormat
             return sectionsList;
         }
 
-        internal void Format(Graphics g, DirectoryInfo SymbolsDirectory, HorizontalAlignment HAlignment, VerticalAlignment VAlignment, Font TextFont, StringFormat TextFormat, int MaxWidth, int MaxHeight, int wordSpaceOffsetX)
+        internal void Format(Graphics g, DirectoryInfo SymbolsDirectory, HorizontalAlignment HAlignment, VerticalAlignment VAlignment, Font TextFont, StringFormat TextFormat, int MaxWidth, int MaxHeight, int wordSpaceOffsetX, int rowSpaceOffsetY)
         {
             LoadSymbols(SymbolsDirectory);
 
@@ -48,9 +48,9 @@ namespace CardMasterSkin.Elements.TextFormat
 
             foreach (TextSection section in this.sectionsList)
             { 
-                section.Format(g, TextFont, TextFormat, MaxWidth, hAlignLeftWithIconOffsetX, wordSpaceOffsetX);
+                section.Format(g, TextFont, TextFormat, MaxWidth, hAlignLeftWithIconOffsetX, wordSpaceOffsetX, rowSpaceOffsetY);
                 section.Bounds = new Rectangle(section.Bounds.X, previousSectionBottom, section.Bounds.Width, section.Bounds.Height);
-                previousSectionBottom = section.Bounds.Bottom;
+                previousSectionBottom = section.Bounds.Bottom + rowSpaceOffsetY;
             }
         }
 

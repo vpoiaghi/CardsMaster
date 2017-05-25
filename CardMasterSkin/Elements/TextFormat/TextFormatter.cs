@@ -14,7 +14,8 @@ namespace CardMasterSkin.Elements.TextFormat
             this.formattedText = new FormattedText(text);
         }
 
-        public FormattedText format(Graphics g, DirectoryInfo SymbolsDirectory, HorizontalAlignment HAlignment, VerticalAlignment VAlignment, Font TextFont, StringFormat TextFormat, int MaxWidth, int MaxHeight, int wordSpaceOffsetX)
+        public FormattedText format(Graphics g, DirectoryInfo SymbolsDirectory, HorizontalAlignment HAlignment, VerticalAlignment VAlignment, Font TextFont, StringFormat TextFormat, 
+            int MaxWidth, int MaxHeight, int wordSpaceOffsetX, int rowSpaceOffsetY)
         {
             if (!SymbolsDirectory.Exists)
             {
@@ -33,7 +34,7 @@ namespace CardMasterSkin.Elements.TextFormat
                 throw new ArgumentException("Le paramètre MaxWith ne peut être inférieur ou égal à zéro.", "MaxWidth");
             }
 
-            this.formattedText.Format(g, SymbolsDirectory, HAlignment, VAlignment, TextFont, TextFormat, MaxWidth, MaxHeight, wordSpaceOffsetX);
+            this.formattedText.Format(g, SymbolsDirectory, HAlignment, VAlignment, TextFont, TextFormat, MaxWidth, MaxHeight, wordSpaceOffsetX, rowSpaceOffsetY);
 
             ApplyAlignments(this.formattedText.Sections, HAlignment, VAlignment, MaxWidth, MaxHeight);
 
