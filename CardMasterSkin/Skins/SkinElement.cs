@@ -33,9 +33,6 @@ namespace CardMasterSkin.Skins
 
         protected abstract List<GraphicElement> GetGraphicElements(Card card);
 
-        protected SkinElement(Skin skin, int width, int height) : this(skin, 0, 0, width, height)
-        { }
-
         protected SkinElement(Skin skin, int x, int y, int width, int height)
         {
             this.X = x;

@@ -40,7 +40,7 @@ namespace CardMasterImageBuilder
                 SkinElement skinElement;
 
                 // Bordures
-                skinElement = new SERoundedRectangle(skin, w, h, borderSize);
+                skinElement = new SERoundedRectangle(skin, 0, 0, w, h, borderSize);
                 skinElement.SetBackground(Color.Black);
                 skin.Elements.Add(skinElement);
 
@@ -165,7 +165,7 @@ namespace CardMasterImageBuilder
                 SkinElement skinElement;
 
                 // Bordures
-                skinElement = new SERoundedRectangle(skin, 744, 1038, borderSize);
+                skinElement = new SERoundedRectangle(skin, 0, 0, 744, 1038, borderSize);
                 skinElement.SetBackground(Color.Black);
                 skin.Elements.Add(skinElement);
 
@@ -233,6 +233,7 @@ namespace CardMasterImageBuilder
                 ((SETextArea)skinElement).TextAttribute = "Powers";
                 ((SETextArea)skinElement).TextFont = new Font("Bell MT", 8, FontStyle.Bold);
                 ((SETextArea)skinElement).TextAlign = HorizontalAlignment.LeftWithIcon;
+                ((SETextArea)skinElement).WordSpaceOffsetX = 0;  // <------------------------------------------------- C'EST LA !!!!!!!!!!!!!!
                 skin.Elements.Add(skinElement);
 
                 // Zone Citation

@@ -8,15 +8,11 @@ namespace CardMasterSkin.Elements
 {
     public class SECircle : SkinElement
     {
-        int radius = 0;
-
-        public SECircle(Skin skin, int radius) : this(skin, 0, 0, radius * 2, radius * 2, radius)
+        public SECircle(Skin skin, int x, int y, int radius) : base(skin, x, y, radius * 2, radius * 2)
         { }
 
-        public SECircle(Skin skin, int x, int y, int width, int height, int radius) : base(skin, x, y, width, height)
-        {
-            this.radius = radius;
-        }
+        public SECircle(Skin skin, int x, int y, int width, int height) : base(skin, x, y, width, height)
+        { }
 
         protected override List<GraphicElement> GetGraphicElements(Card card)
         {
@@ -31,6 +27,5 @@ namespace CardMasterSkin.Elements
 
             return graphicElementsList;
         }
-
     }
 }

@@ -99,7 +99,7 @@
                     <controls:DGridTextColumn Header="Rareté/Grade" MinWidth="100" AttributeBinding="Rank" />
                     -->
 
-                    <DataGridTemplateColumn Header="Nom" MinWidth="120">
+                    <DataGridTemplateColumn Header="Nom" MinWidth="120" CanUserSort="True" SortMemberPath="Name">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
@@ -107,7 +107,7 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
 
-                    <DataGridTemplateColumn Header="Genre" MinWidth="60">
+                    <DataGridTemplateColumn Header="Genre" MinWidth="60" CanUserSort="True" SortMemberPath="Kind">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <ComboBox IsEditable="True" 
@@ -127,7 +127,7 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
 
-                    <DataGridTemplateColumn Header="Rareté/Grade" MinWidth="100">
+                    <DataGridTemplateColumn Header="Rareté/Grade" MinWidth="100" CanUserSort="True" SortMemberPath="Rank">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBox Text="{Binding Rank, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
@@ -135,7 +135,7 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
 
-                    <DataGridTemplateColumn Header="Equipe" MinWidth="80">
+                    <DataGridTemplateColumn Header="Equipe" MinWidth="80" CanUserSort="True" SortMemberPath="Team">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBox Text="{Binding Team, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
@@ -143,7 +143,7 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
 
-                    <DataGridTemplateColumn Header="Nature chakra" MinWidth="110">
+                    <DataGridTemplateColumn Header="Nature chakra" MinWidth="110" CanUserSort="True" SortMemberPath="Nature">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <ComboBox IsEditable="True"  
@@ -161,7 +161,7 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
 
-                    <DataGridTemplateColumn Header="Element" MinWidth="90">
+                    <DataGridTemplateColumn Header="Element" MinWidth="90" CanUserSort="True" SortMemberPath="Element">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBox Text="{Binding Element, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
@@ -169,7 +169,7 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
 
-                    <DataGridTemplateColumn Header="Cout" MinWidth="30">
+                    <DataGridTemplateColumn Header="Cout" MinWidth="30" CanUserSort="True" SortMemberPath="Cost">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBox Text="{Binding Cost, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
@@ -177,7 +177,7 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
 
-                    <DataGridTemplateColumn Header="Atk" MinWidth="30">
+                    <DataGridTemplateColumn Header="Atk" MinWidth="30" CanUserSort="True" SortMemberPath="Attack">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBox Text="{Binding Attack, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
@@ -185,7 +185,7 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
 
-                    <DataGridTemplateColumn Header="Def." MinWidth="30">
+                    <DataGridTemplateColumn Header="Def." MinWidth="30" CanUserSort="True" SortMemberPath="Defense">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBox Text="{Binding Defense, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
@@ -201,21 +201,23 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
 
-                    <DataGridTemplateColumn Header="Citation" MinWidth="150">
+                    <DataGridTemplateColumn Header="Citation" MinWidth="150" CanUserSort="True" SortMemberPath="Citation">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBox Text="{Binding Citation, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
-                    <DataGridTemplateColumn Header="Nb" MinWidth="30">
+
+                    <DataGridTemplateColumn Header="Nb" MinWidth="30" CanUserSort="True" SortMemberPath="Nb">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBox Text="{Binding Nb, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
-                    <DataGridTemplateColumn Header="Commentaires" MinWidth="100">
+
+                    <DataGridTemplateColumn Header="Commentaires" MinWidth="100" CanUserSort="True" SortMemberPath="Comments">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBox Text="{Binding Comments, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>

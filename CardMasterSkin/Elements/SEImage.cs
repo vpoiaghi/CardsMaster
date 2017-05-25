@@ -21,13 +21,7 @@ namespace CardMasterSkin.Elements
         public string NameAttribute { get; set; } = null;
         public ResourceTypes ResourceType { get; set; } = ResourceTypes.Texture;
 
-        public SEImage(Skin skin, int width, int height) : this(skin, 0, 0, width, height, null)
-        { }
-
-        public SEImage(Skin skin, int width, int height, string imageName) : this(skin, 0, 0, width, height, imageName)
-        { }
-
-        public SEImage(Skin skin, int x, int y, int width, int height) : this(skin, x, y, width, height, null)
+        public SEImage(Skin skin, int x, int y, int width, int height) : base(skin, x, y, width, height)
         { }
 
         public SEImage(Skin skin, int x, int y, int width, int height, string imageName) : base(skin, x, y, width, height)

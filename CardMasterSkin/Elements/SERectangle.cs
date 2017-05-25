@@ -9,9 +9,6 @@ namespace CardMasterSkin.Elements
 {
     public class SERectangle : SkinElement
     {
-        public SERectangle(Skin skin, int width, int height) : this(skin, 0, 0, width, height)
-        { }
-
         public SERectangle(Skin skin, int x, int y, int width, int height) : base(skin, x, y, width, height)
         { }
 

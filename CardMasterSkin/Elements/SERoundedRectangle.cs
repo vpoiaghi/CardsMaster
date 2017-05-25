@@ -10,9 +10,6 @@ namespace CardMasterSkin.Elements
     {
         public int CornerRadius { get; set; } = 0;
 
-        public SERoundedRectangle(Skin skin, int width, int height, int cornerRadius) : this(skin, 0, 0, width, height, cornerRadius)
-        { }
-
         public SERoundedRectangle(Skin skin, int x, int y, int width, int height, int cornerRadius) : base(skin, x, y, width, height)
         {
             this.CornerRadius = cornerRadius;

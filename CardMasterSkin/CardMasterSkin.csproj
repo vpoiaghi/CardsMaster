@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Converters\AttributeParser.cs" />
+    <Compile Include="Elements\TextFormat\AttributeParser.cs" />
     <Compile Include="Converters\PowersListConverter.cs" />
     <Compile Include="Elements\SECircle.cs" />
     <Compile Include="Elements\SECurvedRectangle.cs" />
@@ -54,6 +54,11 @@
     <Compile Include="Elements\SERoundedRectangle.cs" />
     <Compile Include="Elements\SESquare.cs" />
     <Compile Include="Elements\SETextArea.cs" />
+    <Compile Include="Elements\TextFormat\FormattedText.cs" />
+    <Compile Include="Elements\TextFormat\TextElement.cs" />
+    <Compile Include="Elements\TextFormat\TextFormatter.cs" />
+    <Compile Include="Elements\TextFormat\TextRow.cs" />
+    <Compile Include="Elements\TextFormat\TextSection.cs" />
     <Compile Include="GraphicsElements\GraphicElement.cs" />
     <Compile Include="GraphicsElements\ImageElement.cs" />
     <Compile Include="GraphicsElements\PathElement.cs" />
