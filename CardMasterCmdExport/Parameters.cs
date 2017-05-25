@@ -3,6 +3,11 @@ using System.IO;
 
 namespace CardMasterCmdExport
 {
+    public enum ExportModes
+    {
+        all, board
+    };
+
     public enum ExportFormats
     {
         PNG, PDF
@@ -12,8 +17,9 @@ namespace CardMasterCmdExport
     {
         public FileInfo JsonProjectFile { get; set; } = null;
         public DirectoryInfo ExportTargetFolder { get; set; } = null;
-        public bool ExportAll { get; set; } = false;
+        public ExportModes ExportMode { get; set; } = ExportModes.all;
         public ExportFormats ExportFormat { get; set; } = ExportFormats.PNG;
+        public int BoardSpace { get; set; } = 0;
 
         public Parameters(string[] args)
         {
@@ -32,37 +38,50 @@ namespace CardMasterCmdExport
             }
             else
             {
-                this.JsonProjectFile = new FileInfo(args[0]);
-                if (!this.JsonProjectFile.Exists)
-                {
-                    throw new ArgumentException("Le projet json n'existe pas ou n'a pu être trouvé.");
-                }
+                ReadCardProject(args);
+                ReadTarget(args);
+                ReadParameters(args);
+            }
+        }
 
-                this.ExportTargetFolder = new DirectoryInfo(args[1]);
-                if (!this.ExportTargetFolder.Exists)
-                {
-                    throw new ArgumentException("Le dossier " + args[1] + " cible n'existe pas ou n'a pu être trouvé.");
-                }
+        private void ReadCardProject(string[] args)
+        {
+            this.JsonProjectFile = new FileInfo(args[0]);
+            if (!this.JsonProjectFile.Exists)
+            {
+                throw new ArgumentException("Le projet json n'existe pas ou n'a pu être trouvé.");
+            }
+        }
 
-                int i = 1;
-                while (++i < args.Length)
+        private void ReadTarget(string[] args)
+        {
+            this.ExportTargetFolder = new DirectoryInfo(args[1]);
+            if (!this.ExportTargetFolder.Exists)
+            {
+                throw new ArgumentException("Le dossier " + args[1] + " cible n'existe pas ou n'a pu être trouvé.");
+            }
+        }
+
+        private void ReadParameters(string[] args)
+        {
+            int i = 1;
+            while (++i < args.Length)
+            {
+                if (args[i].StartsWith("/m:"))
                 {
-                    if (args[i].Equals("/all"))
-                    {
-                        this.ExportAll = true;
-                    }
-                    else if (args[i].StartsWith("/f:"))
-                    {
-                        this.ExportFormat = StringArgToExportFormats(args[i]);
-                    }
-                    else if (args[i].Equals("/?"))
-                    {
-                        throw new ArgumentException();
-                    }
-                    else
-                    {
-                        throw new ArgumentException("Paramètre " + args[i] + " inconnu.");
-                    }
+                    this.ExportMode = StringArgToExportModes(args[i]);
+                }
+                else if (args[i].StartsWith("/f:"))
+                {
+                    this.ExportFormat = StringArgToExportFormats(args[i]);
+                }
+                else if (args[i].Equals("/?"))
+                {
+                    throw new ArgumentException();
+                }
+                else
+                {
+                    throw new ArgumentException("Paramètre " + args[i] + " inconnu.");
                 }
             }
         }
@@ -79,6 +98,18 @@ namespace CardMasterCmdExport
 
             throw new ArgumentException("Format " + f + " inconnu.");
         }
-    }
 
+        private ExportModes StringArgToExportModes(string value)
+        {
+            string m = value.Substring(3).Trim().ToLower();
+
+            switch (m)
+            {
+                case "all": return ExportModes.all;
+                case "board": return ExportModes.board;
+            }
+
+            throw new ArgumentException("Mode " + m + " inconnu.");
+        }
+    }
 }

@@ -23,10 +23,11 @@ namespace CardMasterCmdExport
 
         private static void Export(Parameters prms)
         {
-            Console.WriteLine("Projet            " + prms.JsonProjectFile.FullName);
-            Console.WriteLine("Dossier cible     " + prms.ExportTargetFolder);
-            Console.WriteLine("Tout exporter     " + (prms.ExportAll ? "oui" : "non"));
-            Console.WriteLine("Format d'export   " + prms.ExportFormat);
+            Console.WriteLine("Projet                   " + prms.JsonProjectFile.FullName);
+            Console.WriteLine("Dossier cible            " + prms.ExportTargetFolder);
+            Console.WriteLine("Mode d'exportation       " + prms.ExportMode);
+            Console.WriteLine("Espace entre les cartes  " + prms.BoardSpace);
+            Console.WriteLine("Format d'export          " + prms.ExportFormat);
             Console.WriteLine("");
 
             CardsProject project = CardsProject.LoadProject(prms.JsonProjectFile);
@@ -34,12 +35,35 @@ namespace CardMasterCmdExport
             string skinsFileName = prms.JsonProjectFile.Name.Replace(prms.JsonProjectFile.Extension, ".skin");
             FileInfo skinFile = new FileInfo(Path.Combine(prms.JsonProjectFile.Directory.FullName, skinsFileName));
 
-            PngExport exporter = new PngExport(project.Cards, skinFile);
-            PngExport.Parameters parameters = (PngExport.Parameters) exporter.GetParameters();
-            parameters.TargetFolder = prms.ExportTargetFolder;
-            exporter.Export(parameters);
+            switch (prms.ExportMode)
+            {
+                case ExportModes.all:
+                    ExportAll(project, skinFile, prms);
+                    break;
+
+                case ExportModes.board:
+                    ExportBoards(project, skinFile, prms);
+                    break;
+            }
 
             //Console.ReadKey(true);
+        }
+
+        private static void ExportAll(CardsProject project, FileInfo skinFile, Parameters prms)
+        {
+            PngExport exporter = new PngExport(project.Cards, skinFile);
+            PngExport.Parameters parameters = (PngExport.Parameters)exporter.GetParameters();
+            parameters.TargetFolder = prms.ExportTargetFolder;
+            exporter.Export(parameters);
+        }
+
+        private static void ExportBoards(CardsProject project, FileInfo skinFile, Parameters prms)
+        {
+            PngBoardExport exporter = new PngBoardExport(project.Cards, skinFile);
+            PngBoardExport.Parameters parameters = (PngBoardExport.Parameters)exporter.GetParameters();
+            parameters.TargetFolder = prms.ExportTargetFolder;
+            parameters.SpaceBetweenCards = prms.BoardSpace;
+            exporter.Export(parameters);
         }
 
     }
