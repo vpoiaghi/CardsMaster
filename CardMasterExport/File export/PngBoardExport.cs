@@ -18,6 +18,8 @@ namespace CardMasterExport.FileExport
         private const int CARD_COUNT_Y = 3;
 
         private DirectoryInfo targetFolder = null;
+        private int spaceBeetweenCards = 0;
+
         private int currentX = 0;
         private int currentY = 0;
         private int currentBoard = 0;
@@ -41,7 +43,10 @@ namespace CardMasterExport.FileExport
             this.currentBoard = 0;
             this.boardImage = null;
 
-            this.targetFolder = ((Parameters)this.parameters).TargetFolder;
+            Parameters prms = ((Parameters)this.parameters);
+
+            this.targetFolder = prms.TargetFolder;
+            this.spaceBeetweenCards = prms.SpaceBetweenCards;
 
             if (this.targetFolder == null)
             {
@@ -90,7 +95,9 @@ namespace CardMasterExport.FileExport
         {
             if (this.boardImage == null)
             {
-                boardImage = new Bitmap(CARD_WIDTH * CARD_COUNT_X, CARD_HEIGHT * CARD_COUNT_Y);
+                int w = CARD_WIDTH * CARD_COUNT_X + spaceBeetweenCards * (CARD_COUNT_X - 1);
+                int h = CARD_HEIGHT * CARD_COUNT_Y + spaceBeetweenCards * (CARD_COUNT_Y - 1);
+                boardImage = new Bitmap(w, h);
                 boardImage.SetResolution(300, 300);
             }
 
@@ -131,8 +138,11 @@ namespace CardMasterExport.FileExport
             drawer = new Drawer(card, skinsFile, null);
             cardImage = drawer.DrawCard();
 
+            int spaceX = (this.currentX > 0) ? this.spaceBeetweenCards: 0;
+            int spaceY = (this.currentY > 0) ? this.spaceBeetweenCards: 0;
+
             Graphics g = Graphics.FromImage(this.boardImage);
-            g.DrawImage(cardImage, new PointF(CARD_WIDTH * currentX, CARD_HEIGHT * currentY));
+            g.DrawImage(cardImage, new PointF((CARD_WIDTH + spaceX) * currentX, (CARD_HEIGHT + spaceY) * currentY));
             g.Dispose();
 
             g = null;
@@ -157,6 +167,7 @@ namespace CardMasterExport.FileExport
         public class Parameters : ExportParameters
         {
             public DirectoryInfo TargetFolder { get; set; } = null;
+            public int SpaceBetweenCards { get; set; } = 0;
         }
     }
 }

@@ -182,6 +182,7 @@ namespace CardMasterManager
             {
                 PngBoardExport exp = new PngBoardExport(this, cardsList, skinsFile);
                 PngBoardExport.Parameters parameters = (PngBoardExport.Parameters)exp.GetParameters();
+                parameters.SpaceBetweenCards = 0;
                 exp.progressChangedEvent += new PngBoardExport.ProgressChanged(ExportProgressChanged);
                 exp.Export(parameters);
             }
