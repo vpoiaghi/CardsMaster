@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace CardMasterCmdExport
@@ -75,6 +76,10 @@ namespace CardMasterCmdExport
                 {
                     this.ExportFormat = StringArgToExportFormats(args[i]);
                 }
+                else if (args[i].StartsWith("/s:"))
+                {
+                    this.BoardSpace = StringArgToInt("s", args[i]);
+                }
                 else if (args[i].Equals("/?"))
                 {
                     throw new ArgumentException();
@@ -110,6 +115,23 @@ namespace CardMasterCmdExport
             }
 
             throw new ArgumentException("Mode " + m + " inconnu.");
+        }
+
+        private int StringArgToInt(string argName, string arg)
+        {
+            string strValue = arg.Substring(argName.Length + 2).Trim().ToLower();
+            int intValue = 0;
+
+            try
+            {
+                intValue = int.Parse(strValue);
+            }
+            catch (FormatException ex)
+            {
+                throw new FormatException("Le paramètre " + argName + " " + " n'est pas un entier valide.", ex);
+            }
+
+            return intValue;
         }
     }
 }
