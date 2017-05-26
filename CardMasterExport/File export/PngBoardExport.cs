@@ -2,6 +2,7 @@
 using CardMasterCommon.Dialog;
 using CardMasterExport.Export;
 using CardMasterImageBuilder;
+using CardMasterSkin.Skins;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -15,7 +16,9 @@ namespace CardMasterExport.FileExport
         private const int CARD_WIDTH = 744;
         private const int CARD_HEIGHT = 1038;
         private const int CARD_COUNT_X = 3;
+        private const int CARD_COUNT_X_WITH_BACK = 1;
         private const int CARD_COUNT_Y = 3;
+        private const int CARD_COUNT_Y_WITH_BACK = 3;
 
         private DirectoryInfo targetFolder = null;
         private int spaceBeetweenCards = 0;
@@ -85,33 +88,39 @@ namespace CardMasterExport.FileExport
 
         protected override void MakeCardExport(Card card)
         {
+            bool withBack = true;
+
+            int countX = withBack ? CARD_COUNT_X_WITH_BACK : CARD_COUNT_X;
+            int countY = withBack ? CARD_COUNT_Y_WITH_BACK : CARD_COUNT_Y;
+            int cardSides = withBack ? 2 : 1;
+
             for (int i = 0; i < card.Nb; i++)
             {
-                MakeCardExportOneCopy(card);
+                MakeCardExportOneCopy(card, withBack, countX, countY, cardSides);
             }
         }
 
-        private void MakeCardExportOneCopy(Card card)
+        private void MakeCardExportOneCopy(Card card, bool withBack, int countX, int countY, int cardSides)
         {
             if (this.boardImage == null)
             {
-                int w = CARD_WIDTH * CARD_COUNT_X + spaceBeetweenCards * (CARD_COUNT_X - 1);
-                int h = CARD_HEIGHT * CARD_COUNT_Y + spaceBeetweenCards * (CARD_COUNT_Y - 1);
+                int w = CARD_WIDTH * countX * cardSides + spaceBeetweenCards * ((countX * cardSides) - 1);
+                int h = CARD_HEIGHT * countY + spaceBeetweenCards * (countY - 1);
                 boardImage = new Bitmap(w, h);
                 boardImage.SetResolution(300, 300);
             }
 
-            DrawCard(card);
+            DrawCard(card, withBack);
 
             this.currentX++;
 
-            if (this.currentX == CARD_COUNT_X)
+            if (this.currentX == countX)
             {
                 this.currentX = 0;
                 this.currentY++;
             }
 
-            if (this.currentY == CARD_COUNT_Y)
+            if (this.currentY == countY)
             {
                 this.currentBoard++;
 
@@ -124,10 +133,11 @@ namespace CardMasterExport.FileExport
             }
         }
 
-        private void DrawCard(Card card)
+        private void DrawCard(Card card, bool withBack)
         {
             Drawer drawer = null;
-            Image cardImage = null;
+            Image cardFrontImage = null;
+            Image cardBackImage;
             Image img = null;
 
             lock (_lock)
@@ -135,14 +145,21 @@ namespace CardMasterExport.FileExport
                 img = this.boardImage;
             }
 
-            drawer = new Drawer(card, skinsFile, null);
-            cardImage = drawer.DrawCard();
+            int spaceX = (this.currentX > 0) ? this.spaceBeetweenCards : 0;
+            int spaceY = (this.currentY > 0) ? this.spaceBeetweenCards : 0;
 
-            int spaceX = (this.currentX > 0) ? this.spaceBeetweenCards: 0;
-            int spaceY = (this.currentY > 0) ? this.spaceBeetweenCards: 0;
+            drawer = new Drawer(card, skinsFile, null);
+            cardFrontImage = drawer.DrawCard();
 
             Graphics g = Graphics.FromImage(this.boardImage);
-            g.DrawImage(cardImage, new PointF((CARD_WIDTH + spaceX) * currentX, (CARD_HEIGHT + spaceY) * currentY));
+            g.DrawImage(cardFrontImage, new PointF((CARD_WIDTH + spaceX) * currentX, (CARD_HEIGHT + spaceY) * currentY));
+
+            if (withBack)
+            {
+                cardBackImage = GetBackImage(card, skinsFile);
+                g.DrawImage(cardBackImage, new PointF((CARD_WIDTH + spaceX) * (currentX + 1), (CARD_HEIGHT + spaceY) * currentY));
+            }
+
             g.Dispose();
 
             g = null;
@@ -163,6 +180,13 @@ namespace CardMasterExport.FileExport
 
             this.boardImage.Save(Path.Combine(targetFolder, boardName));
         }
+
+        private Image GetBackImage(Card card, FileInfo skinFile)
+        {
+            Drawer drawer = new Drawer(card, skinFile, null);
+            return drawer.DrawCardBackground();
+        }
+
 
         public class Parameters : ExportParameters
         {

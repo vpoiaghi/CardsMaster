@@ -68,6 +68,10 @@
       <Project>{65056a8a-d3de-467d-ac89-31b3a051099f}</Project>
       <Name>CardMasterImageBuilder</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CardMasterSkin\CardMasterSkin.csproj">
+      <Project>{8E132EEF-1E9C-4B96-8BF7-A513AD1E4EC7}</Project>
+      <Name>CardMasterSkin</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
