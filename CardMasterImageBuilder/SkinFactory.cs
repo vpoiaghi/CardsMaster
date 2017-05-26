@@ -41,7 +41,7 @@ namespace CardMasterImageBuilder
 
                 // Bordures
                 skinElement = new SERoundedRectangle(skin, 0, 0, w, h, borderSize);
-                skinElement.SetBackground(Color.Black);
+                skinElement.SetBackground(card.Nb == 1 ? Color.Black : Color.Gold);
                 skin.Elements.Add(skinElement);
 
                 // Texture de fond
@@ -166,7 +166,7 @@ namespace CardMasterImageBuilder
 
                 // Bordures
                 skinElement = new SERoundedRectangle(skin, 0, 0, 744, 1038, borderSize);
-                skinElement.SetBackground(Color.Black);
+                skinElement.SetBackground(card.Nb == 1 ? Color.Black : Color.Gold);
                 skin.Elements.Add(skinElement);
 
                 // Texture de fond
