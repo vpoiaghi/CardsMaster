@@ -17,6 +17,7 @@ namespace CardMasterCard.Card
         public String Citation  { get; set; }
         public String Comments  { get; set; }
         public int Nb { get; set; }
+        public String BackSide { get; set; }
  
         public Texture Background { get; set; }
         public List<Power> Powers { get; set; }
