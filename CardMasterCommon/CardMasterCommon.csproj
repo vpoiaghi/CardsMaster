@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converters\EnumConverter.cs" />
     <Compile Include="Converters\ListConverter.cs" />
     <Compile Include="Dialog\FolderDialog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

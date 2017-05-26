@@ -58,6 +58,10 @@
       <Project>{1ba2630b-04ab-4910-8792-04e48f2319db}</Project>
       <Name>CardMasterCard</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CardMasterCommon\CardMasterCommon.csproj">
+      <Project>{38cdb275-ff7f-48a8-8cab-6c582e2540aa}</Project>
+      <Name>CardMasterCommon</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CardMasterExport\CardMasterExport.csproj">
       <Project>{4d96048a-0232-4743-97af-5e52c5087a29}</Project>
       <Name>CardMasterExport</Name>

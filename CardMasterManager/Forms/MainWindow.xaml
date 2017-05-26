@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CardMasterManager"
         xmlns:binders="clr-namespace:CardMasterManager.Binders"
-        xmlns:converters="clr-namespace:CardMasterManager.Converters"
+        xmlns:commonconverters="clr-namespace:CardMasterCommon.Converters;assembly=CardMasterCommon"
+        xmlns:localconverters="clr-namespace:CardMasterManager.Converters"
         xmlns:card="CardMasterManager.Card"
         xmlns:controls="clr-namespace:CardMasterManager.Components"
         xmlns:drawing2d="clr-namespace:System.Drawing.Drawing2D;assembly=System.Drawing"
@@ -14,8 +15,8 @@
         Title="Card Manager" Height="960" Width="1700" ResizeMode="NoResize">
 
     <Window.Resources>
-        <converters:EnumConverter x:Key="EnumConverter"/>
-        <converters:PowersListConverter x:Key="PowerListConverter"/>
+        <commonconverters:EnumConverter x:Key="EnumConverter"/>
+        <localconverters:PowersListConverter x:Key="PowerListConverter"/>
     </Window.Resources>
 
     <StackPanel>

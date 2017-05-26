@@ -3,18 +3,17 @@ using CardMasterExport;
 using CardMasterExport.FileExport;
 using CardMasterImageBuilder;
 using CardMasterManager.Converters;
+using CardMasterCommon.Converters;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.Drawing.Drawing2D;
+using System.Drawing.Text;
 using System.IO;
 using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using CardMasterManager.Components;
-using System.Diagnostics;
-using System.Drawing.Drawing2D;
-using System.Drawing.Text;
 
 namespace CardMasterManager
 {
