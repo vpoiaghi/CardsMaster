@@ -11,7 +11,8 @@ namespace CardMasterCmdExport
         {
             try
             {
-                var prms = new Parameters(args); ;
+                ParametersReader reader = new ParametersReader(); ;
+                Parameters prms = reader.Read(args);
                 Export(prms);
             }
             catch (ArgumentException ex)
@@ -23,11 +24,7 @@ namespace CardMasterCmdExport
 
         private static void Export(Parameters prms)
         {
-            Console.WriteLine("Projet                   " + prms.JsonProjectFile.FullName);
-            Console.WriteLine("Dossier cible            " + prms.ExportTargetFolder);
-            Console.WriteLine("Mode d'exportation       " + prms.ExportMode);
-            Console.WriteLine("Espace entre les cartes  " + prms.BoardSpace);
-            Console.WriteLine("Format d'export          " + prms.ExportFormat);
+            Console.WriteLine(prms.ToString());
             Console.WriteLine("");
 
             CardsProject project = CardsProject.LoadProject(prms.JsonProjectFile);
@@ -37,11 +34,11 @@ namespace CardMasterCmdExport
 
             switch (prms.ExportMode)
             {
-                case ExportModes.all:
+                case "all":
                     ExportAll(project, skinFile, prms);
                     break;
 
-                case ExportModes.board:
+                case "board":
                     ExportBoards(project, skinFile, prms);
                     break;
             }
@@ -62,7 +59,7 @@ namespace CardMasterCmdExport
             PngBoardExport exporter = new PngBoardExport(project.Cards, skinFile);
             PngBoardExport.Parameters parameters = (PngBoardExport.Parameters)exporter.GetParameters();
             parameters.TargetFolder = prms.ExportTargetFolder;
-            parameters.SpaceBetweenCards = prms.BoardSpace;
+            parameters.SpaceBetweenCards = prms.BoardSpace.Value;
             exporter.Export(parameters);
         }
 

@@ -88,7 +88,7 @@ namespace CardMasterExport.FileExport
 
         protected override void MakeCardExport(Card card)
         {
-            bool withBack = true;
+            bool withBack = false;
 
             int countX = withBack ? CARD_COUNT_X_WITH_BACK : CARD_COUNT_X;
             int countY = withBack ? CARD_COUNT_Y_WITH_BACK : CARD_COUNT_Y;
