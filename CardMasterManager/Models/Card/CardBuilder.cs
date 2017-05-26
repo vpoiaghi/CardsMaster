@@ -130,6 +130,12 @@ namespace CardMasterManager
             return this;
         }
 
-       
+        public CardBuilder withBackSide(String backSide)
+        {
+            this.m_card.BackSide = backSide;
+            return this;
+        }
+
+
     }
 }
