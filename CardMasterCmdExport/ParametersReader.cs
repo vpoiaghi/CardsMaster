@@ -8,12 +8,12 @@ namespace CardMasterCmdExport
     class ParametersReader
     {
         private Dictionary<string, PrmInfos> parameters = new Dictionary<string, PrmInfos>()
-            {
-                {"f",         new OptPrmInfos("ExportFormat", new string[] {"png", "pdf"}, "png") },
-                {"m",         new PrmInfos("ExportMode", new string[] {"all", "board"}) },
-                {"s",         new OptPrmInfos("BoardSpace", 0) },
-                {"backside",  new OptPrmInfos("WithBackSide", false) }
-            };
+        {
+            { "backside",  new OptPrmInfos("WithBackSide", false) },
+            { "f",         new OptPrmInfos("ExportFormat", new string[] {"png", "pdf"}, "png") },
+            { "m",         new PrmInfos("ExportMode", new string[] {"all", "board"}) },
+            { "s",         new OptPrmInfos("BoardSpace", 0) }
+        };
 
 
         public Parameters Read(string[] args)
@@ -163,8 +163,19 @@ namespace CardMasterCmdExport
 
         private string GetArgName(string arg)
         {
+            string name = null;
             int pos = arg.IndexOf(':');
-            return arg.Substring(1, pos - 1).Trim().ToLower();
+
+            if (pos == -1)
+            {
+                name = arg.Substring(1).Trim().ToLower();
+            }
+            else
+            {
+                name = arg.Substring(1, pos - 1).Trim().ToLower();
+            }
+
+            return name;
         }
 
         private string ArgToString(string arg, string argName, string[] allowedValues)

@@ -60,6 +60,7 @@ namespace CardMasterCmdExport
             PngBoardExport.Parameters parameters = (PngBoardExport.Parameters)exporter.GetParameters();
             parameters.TargetFolder = prms.ExportTargetFolder;
             parameters.SpaceBetweenCards = prms.BoardSpace.Value;
+            parameters.WithBackSides = prms.WithBackSide.Value;
             exporter.Export(parameters);
         }
 

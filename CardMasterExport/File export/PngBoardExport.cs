@@ -20,8 +20,10 @@ namespace CardMasterExport.FileExport
         private const int CARD_COUNT_Y = 3;
         private const int CARD_COUNT_Y_WITH_BACK = 3;
 
+        // Paramètres
         private DirectoryInfo targetFolder = null;
         private int spaceBeetweenCards = 0;
+        private bool withBackSides = false;
 
         private int currentX = 0;
         private int currentY = 0;
@@ -47,9 +49,9 @@ namespace CardMasterExport.FileExport
             this.boardImage = null;
 
             Parameters prms = ((Parameters)this.parameters);
-
             this.targetFolder = prms.TargetFolder;
             this.spaceBeetweenCards = prms.SpaceBetweenCards;
+            this.withBackSides = prms.WithBackSides;
 
             if (this.targetFolder == null)
             {
@@ -88,7 +90,7 @@ namespace CardMasterExport.FileExport
 
         protected override void MakeCardExport(Card card)
         {
-            bool withBack = false;
+            bool withBack = this.withBackSides;
 
             int countX = withBack ? CARD_COUNT_X_WITH_BACK : CARD_COUNT_X;
             int countY = withBack ? CARD_COUNT_Y_WITH_BACK : CARD_COUNT_Y;
@@ -192,6 +194,7 @@ namespace CardMasterExport.FileExport
         {
             public DirectoryInfo TargetFolder { get; set; } = null;
             public int SpaceBetweenCards { get; set; } = 0;
+            public bool WithBackSides { get; set; } = false;
         }
     }
 }
