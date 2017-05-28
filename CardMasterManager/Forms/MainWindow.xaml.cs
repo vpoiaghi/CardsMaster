@@ -14,6 +14,7 @@ using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using CardMasterExport.PrinterExport;
 
 namespace CardMasterManager
 {
@@ -43,6 +44,7 @@ namespace CardMasterManager
             this.MenuItemSaveAs.IsEnabled = false;
             this.MenuItemExportAllToPngFile.IsEnabled = false;
             this.MenuItemExportBoardsToPngFile.IsEnabled = false;
+            this.MenuItemPrintBoards.IsEnabled = false;
         }
 
         private void MenuItemOpen_Click(object sender, RoutedEventArgs e)
@@ -260,6 +262,7 @@ namespace CardMasterManager
                 this.MenuItemSaveAs.IsEnabled = true;
                 this.MenuItemExportAllToPngFile.IsEnabled = true;
                 this.MenuItemExportBoardsToPngFile.IsEnabled = true;
+                this.MenuItemPrintBoards.IsEnabled = true;
             }
         }
 
@@ -283,5 +286,25 @@ namespace CardMasterManager
             { }
         }
 
+        private void MenuItemPrintBoards_Click(object sender, RoutedEventArgs e)
+        {
+            var cardsList = new List<CardMasterCard.Card.Card>();
+
+            foreach (object item in cardGrid.Items)
+            {
+                cardsList.Add(Card.ConvertToMasterCard((Card)item));
+            }
+
+            if (cardsList.Count > 0)
+            {
+                PrinterBoardExport exp = new PrinterBoardExport(this, cardsList, skinsFile);
+                PrinterBoardExport.Parameters parameters = (PrinterBoardExport.Parameters)exp.GetParameters();
+                parameters.SpaceBetweenCards = 0;
+                parameters.WithBackSides = true;
+                exp.progressChangedEvent += new PngBoardExport.ProgressChanged(ExportProgressChanged);
+                exp.Export(parameters);
+            }
+
+        }
     }
 }

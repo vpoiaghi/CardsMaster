@@ -37,6 +37,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,6 +50,7 @@
     <Compile Include="ExportParameters\ExportParameters.cs" />
     <Compile Include="File export\PngBoardExport.cs" />
     <Compile Include="File export\PdfExport.cs" />
+    <Compile Include="Printer export\PrinterBoardExport.cs" />
     <Compile Include="ProgressChangedArg.cs" />
     <Compile Include="Exporter.cs" />
     <Compile Include="File export\PngExport.cs" />
