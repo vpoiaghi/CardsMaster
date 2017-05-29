@@ -1,5 +1,7 @@
 # CardsMaster
 
+-Bouvoir définir la couleur d'un texte (par ex sur les icones Atk / def, pouvoir écrire en Gold ou en White)
+
 - Bordures en dégradé
 
 - Boîte de dialogue de paramétrage des exports
@@ -32,21 +34,23 @@
 	En attendant un vrai fichier Skin.
 	
 - Bordure en or ou noir
-	Pas trop compris quelles bordure (face et/ou dos ?), ni l'utilité. Je te laisse compléter Bru.
+	Pouvoir choisir pour une carte donnée quelle sera la couleur de la bordure (choix de customisation ou autre)
 
 - Nettoyage
 	- Virer les boutons d’option de qualité de rendu que j’avais ajouté sous le viewer du Manager.
 
 - Organisation
-	Laisser les images de dos dans le dossier Image ? Ou les mettre dans Texture ?
+	Passer les images de dos dans Textures
 
 - Viewer de dos
 	Ajouter un viewer pour le dos sous le viewer de face du Manager
 	
 - Datagrid
 	- Rendre triable toutes les colonnes, seon leur valeur visible (je pense en particulier au colonnes liées à des Enum)
-	- Est-il intéressant de trier par la colonne pouvoirs ?
+	- Est-il intéressant de trier par la colonne pouvoirs ? tri par n'importe quelle colonne*
+	-Pouvoir faire des recherches (soit dans une colonne spécifique soit via un champs libre auquel cas c'est une recherche "Full Text" : recherche dans tous les champs -> recherche générique par réflection)
 	
 - Association d'une carte avec un skin de face (?)
 	Si un projet peut définir plusieurs Skin (à confirmer), il sera nécessaire d'associer une carte à une des Skin.
+	A préciser : je ne vois pas ce qu'est un skin de face
 
