@@ -44,7 +44,7 @@ A préciser : je ne vois pas ce qu'est un skin de face
 --> Ben, le skin de la face de la carte... par opposition au skin du dos de la carte. :)
 
 ### Nettoyage
-* Virer les boutons d’option de qualité de rendu que j’avais ajouté sous le viewer du Manager.
+* [DONE] [A VALIDER] Virer les boutons d’option de qualité de rendu que j’avais ajouté sous le viewer du Manager.
 
   
 ## Evolutions fonctionnelles
@@ -74,7 +74,7 @@ La possibilité de choisir la couleur de bordure pour la face et le dos est prê
 En particulier la partie exportation, où y aurait désormait un seul item qui ouvre sur une boîte de dialogue de choix du type d'export et des paramètres d'export.
 
 * Viewer de dos
-Ajouter un viewer pour le dos sous le viewer de face du Manager
+[DONE] Ajouter un viewer pour le dos sous le viewer de face du Manager
 
 * Datagrid
   * Rendre triable toutes les colonnes, selon leur valeur visible (je pense en particulier au colonnes liées à des Enum)
