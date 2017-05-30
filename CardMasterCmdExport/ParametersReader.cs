@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CardMasterCmdExport.ParametersTypes;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
@@ -9,12 +10,11 @@ namespace CardMasterCmdExport
     {
         private Dictionary<string, PrmInfos> parameters = new Dictionary<string, PrmInfos>()
         {
-            { "backside",  new OptPrmInfos("WithBackSide", false) },
+            { "backside",  new BoolPrmInfos("WithBackSide") },
             { "f",         new OptPrmInfos("ExportFormat", new string[] {"png", "pdf"}, "png") },
             { "m",         new PrmInfos("ExportMode", new string[] {"all", "board"}) },
             { "s",         new OptPrmInfos("BoardSpace", 0) }
         };
-
 
         public Parameters Read(string[] args)
         {
@@ -36,7 +36,7 @@ namespace CardMasterCmdExport
             {
                 ReadCardProject(args, prms);
                 ReadTarget(args, prms);
-                ReadParameters(args, prms);
+                SetOptionsTodParameters(args, prms);
             }
 
             return prms;
@@ -66,13 +66,18 @@ namespace CardMasterCmdExport
             prms.ExportTargetFolder = d;
         }
 
-        private void ReadParameters(string[] args, Parameters prms)
+        private void SetOptionsTodParameters(string[] args, Parameters prms)
+        {
+            ReadOptionsFromCommandLine(args, prms);
+            completeOptionsWithDefaultValues(prms);
+        }
+
+        private void ReadOptionsFromCommandLine(string[] args, Parameters prms)
         {
             string arg = null;
             string argName = null;
             PrmInfos prmInfo = null;
             MethodInfo setter = null;
-            MethodInfo getter = null;
             object value = null;
             Type attributeType = null;
 
@@ -132,23 +137,26 @@ namespace CardMasterCmdExport
                     }
                 }
             }
+        }
 
+        private void completeOptionsWithDefaultValues(Parameters prms)
+        {
             foreach (PrmInfos pInfo in parameters.Values)
             {
-                getter = prms.GetType().GetMethod("get_" + pInfo.AttibuteName);
-                setter = prms.GetType().GetMethod("set_" + pInfo.AttibuteName);
+                MethodInfo getter = prms.GetType().GetMethod("get_" + pInfo.AttibuteName);
+                MethodInfo setter = prms.GetType().GetMethod("set_" + pInfo.AttibuteName);
 
-                value = getter.Invoke(prms, null);
+                object value = getter.Invoke(prms, null);
 
                 if (value == null)
                 {
-                    if (pInfo.IsOptional)
+                    if ((pInfo.Kind == ParameterKinds.Optional) || (pInfo.Kind == ParameterKinds.Boolean))
                     {
                         setter.Invoke(prms, new object[] { ((OptPrmInfos)pInfo).DefaultValue });
                     }
-                    else
+                    else if(pInfo.Kind == ParameterKinds.NotOptional)
                     {
-                        foreach(string aName in parameters.Keys)
+                        foreach (string aName in parameters.Keys)
                         {
                             if (parameters[aName] == pInfo)
                             {
@@ -215,41 +223,5 @@ namespace CardMasterCmdExport
             }
 
         }
-
-        class PrmInfos
-        {
-            protected bool isOptional = false;
-
-            public string AttibuteName { get; set; } = null;
-            public string[] AllowedValues { get; set; } = null;
-            public bool IsOptional { get { return this.isOptional; } }
-
-            protected PrmInfos()
-            { }
-
-            public PrmInfos(string attributeName) : this(attributeName, null)
-            { }
-
-            public PrmInfos(string attributeName, string[] allowedValues)
-            {
-                this.AttibuteName = attributeName;
-                this.AllowedValues = allowedValues;
-            }
-        }
-
-        class OptPrmInfos : PrmInfos
-        {
-            public object DefaultValue { get; set; } = null;
-
-            public OptPrmInfos(string attributeName, object defaultValue) : this(attributeName, null, defaultValue)
-            { }
-
-            public OptPrmInfos(string attributeName, string[] allowedValues, object defaultValue) : base(attributeName, allowedValues)
-            {
-                this.isOptional = true;
-                this.DefaultValue = defaultValue;
-            }
-        }
-
     }
 }
