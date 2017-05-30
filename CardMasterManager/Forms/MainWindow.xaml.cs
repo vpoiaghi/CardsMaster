@@ -69,11 +69,7 @@ namespace CardMasterManager
 
                 LoadCards(cards);
 
-                CmbSmoothingMode.SelectedItem = DQuality.SmoothingMode;
-                CmbCompositingMode.SelectedItem = DQuality.CompositingMode;
-                CmbCompositingQuality.SelectedItem = DQuality.CompositingQuality;
-                CmbPixelOffsetMode.SelectedItem = DQuality.PixelOffsetMode;
-                CmbTextRenderingHint.SelectedItem = DQuality.TextRenderingHint;
+               
             }
         }
 
@@ -119,16 +115,16 @@ namespace CardMasterManager
             if (cardGrid.SelectedItem != null)
             {
                 Card c = ((Card)cardGrid.SelectedItem);
-                //debug.Text = "ligne sélectionnée : " + c.Name;
+
                 if (!(c == previousCard))
                 {
                     previousCard = c;
-                    new Thread(() => DisplayCard(c, cardImage)).Start();
+                    new Thread(() => DisplayCard(c, cardImage,backCardImage)).Start();
                 }
             }
         }
 
-        private void DisplayCard(Card c, System.Windows.Controls.Image image)
+        private void DisplayCard(Card c, System.Windows.Controls.Image frontImage, System.Windows.Controls.Image backImage)
         {
             //Select Card from Collection from Name
             CardMasterCard.Card.Card businessCard = Card.ConvertToMasterCard(c);
@@ -140,7 +136,8 @@ namespace CardMasterManager
             DrawingImageToImageSourceConverter converter = new DrawingImageToImageSourceConverter();
             Dispatcher.BeginInvoke(new Action(delegate ()
             {
-                image.Source = (ImageSource)converter.Convert(drawer.DrawCard(), null, null, System.Globalization.CultureInfo.CurrentCulture);
+               frontImage.Source = (ImageSource)converter.Convert(drawer.DrawCard(), null, null, System.Globalization.CultureInfo.CurrentCulture);
+               backCardImage.Source = (ImageSource)converter.Convert(drawer.DrawCardBackground(), null, null, System.Globalization.CultureInfo.CurrentCulture);
             }));
         }
 
@@ -266,25 +263,7 @@ namespace CardMasterManager
             }
         }
 
-        private void CmbQuality_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            try
-            {
-                DQuality.SmoothingMode = (SmoothingMode)CmbSmoothingMode.SelectedItem;
-                DQuality.CompositingMode = (CompositingMode)CmbCompositingMode.SelectedItem;
-                DQuality.CompositingQuality = (CompositingQuality)CmbCompositingQuality.SelectedItem;
-                DQuality.PixelOffsetMode = (PixelOffsetMode)CmbPixelOffsetMode.SelectedItem;
-                DQuality.TextRenderingHint = (TextRenderingHint)CmbTextRenderingHint.SelectedItem;
-
-                Card c = ((Card)cardGrid.SelectedItem);
-                if (c != null)
-                {
-                    new Thread(() => DisplayCard(c, cardImage)).Start();
-                }
-            }
-            catch(NullReferenceException)
-            { }
-        }
+       
 
         private void MenuItemPrintBoards_Click(object sender, RoutedEventArgs e)
         {
