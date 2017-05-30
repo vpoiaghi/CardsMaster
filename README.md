@@ -74,7 +74,7 @@ La possibilité de choisir la couleur de bordure pour la face et le dos est prê
 En particulier la partie exportation, où y aurait désormait un seul item qui ouvre sur une boîte de dialogue de choix du type d'export et des paramètres d'export.
 
 * Viewer de dos
-[DONE] Ajouter un viewer pour le dos sous le viewer de face du Manager
+  * [DONE] Ajouter un viewer pour le dos sous le viewer de face du Manager
 
 * Datagrid
   * Rendre triable toutes les colonnes, selon leur valeur visible (je pense en particulier au colonnes liées à des Enum)
