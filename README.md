@@ -50,7 +50,7 @@ A préciser : je ne vois pas ce qu'est un skin de face
 
 ### Aspect des cartes
 
-* Pouvoir définir la couleur d'un texte (par ex sur les icones Atk / def, pouvoir écrire en Gold ou en White)
+* [DONE] Pouvoir définir la couleur d'un texte (par ex sur les icones Atk / def, pouvoir écrire en Gold ou en White)
 
 * Bordures en dégradé
 

@@ -39,14 +39,16 @@ namespace CardMasterSkin.Elements
         public HorizontalAlignment TextAlign { get; set; } = HorizontalAlignment.Left;
         public VerticalAlignment TextVerticalAlign { get; set; } = VerticalAlignment.Top;
         public Font TextFont { get; set; } = new Font(DEFAULT_FONT_FAMILY, DEFAULT_FONT_SIZE, DEFAULT_FONT_STYLE);
+        public Color FontColor { get; set; } = Color.Black;
         public int WordSpaceOffsetX { get; set; } = 0;
         public int RowSpaceOffsetY { get; set; } = 0;
 
         public SETextArea(Skin skin, int x, int y, int width, int height, string text) : base(skin, x, y, width, height)
         {
             this.fullText = text;
-            SetBackground(Color.Black);
+            SetBackground(Color.Transparent);
         }
+
 
         protected override List<GraphicElement> GetGraphicElements(Card card)
         {
@@ -111,7 +113,7 @@ namespace CardMasterSkin.Elements
                             if (textPath == null)
                             {
                                 textPath = new GraphicsPath();
-                                graphicElementsList.Add(new PathElement(textPath, GetBackground()));
+                                graphicElementsList.Add(new PathElement(textPath, new SolidBrush(this.FontColor)));
                             }
 
                             textPath.AddString(textElement.Text, textFont.FontFamily, (int)textFont.Style, textEmFontSize, r, textFormat);
