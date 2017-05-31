@@ -16,8 +16,16 @@
 Actuellement il n'y a aucn système de contrat de service entre les projets, chaque projet voit tout ou presque des projets qu'il référencie.
 
 * Organisation
-Passer les images de dos dans Textures
+  * Passer les images de dos dans Textures (voir autre suggestion ci-dessous)
 
+  * Autre suggestion : regrouper toutes les images et textures dans un même dossier racine avec une arborescence de dossiers du genre :
+    * Textures
+	  * Dos : textures de dos des cartes
+      * Elements : les images telles que Atl, défense, manna
+	  * Fonds : les textures de fond de la carte ou des zones de texte
+	  * Images : les images centrales (personnages, lieux, etc..)
+	  * Symboles : les symboles utilisés dans les textes
+  * Permet de n'avoir qu'un chemin à gérer dans le C# et surtout évide le code spécifique : si c'est l'image centrale on tappe dans le dossier Images, si c'est un symbole on tappe le dossier Texture, etc..., là on donne le répertoire racine et le nom du fichier et le programme recherche l'image dans l'arborescence (c'est déjà codé comme ça sauf cqu'actuellement on a 2 dossiers racines: Images et Textures)
   
 ### Exportation
 
