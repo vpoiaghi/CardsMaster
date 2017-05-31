@@ -1,5 +1,5 @@
 ﻿using CardMasterCard.Card;
-using CardMasterSkin.Elements;
+using CardMasterImageBuilder.SkinFactories;
 using CardMasterSkin.Skins;
 using System;
 using System.Drawing;
@@ -11,6 +11,7 @@ namespace CardMasterImageBuilder
     {
         private Card card;
         private Skin skin;
+        private Skin backSideSkin;
 
         private Bitmap img = null;
         private Graphics g = null;
@@ -20,7 +21,8 @@ namespace CardMasterImageBuilder
         public Drawer(Card card, FileInfo skinsFile, String skinName)
         {
             this.card = card;
-            this.skin = SkinFactory.GetSkin(this.card, skinsFile, skinName);
+            this.skin = (new FrontSideSkinFactory()).GetSkin(this.card, skinsFile, skinName);
+            this.backSideSkin = (new BackSideFactory()).GetSkin(this.card, skinsFile, skinName);
         }
 
         ~Drawer()
@@ -31,13 +33,23 @@ namespace CardMasterImageBuilder
 
         public Image DrawCard()
         {
+            return DrawSkin(this.skin);
+        }
+
+        public Image DrawBackSideSkin()
+        {
+            return DrawSkin(this.backSideSkin);
+        }
+
+        public Image DrawSkin(Skin skin)
+        {
             this.img = null;
 
-            if (this.skin != null)
+            if (skin != null)
             {
                 InitBasicImage();
 
-                foreach (SkinElement e in this.skin.Elements)
+                foreach (SkinElement e in skin.Elements)
                 {
                     e.Draw(g, this.card);
                 }
@@ -47,33 +59,6 @@ namespace CardMasterImageBuilder
             }
 
             return this.img;
-        }
-
-        public Image DrawCardBackground()
-        {
-            this.img = null;
-
-            if (this.skin != null)
-            {
-                InitBasicImage();
-
-                // Bordure
-                SkinElement skinElement = new SERoundedRectangle(skin, 0, 0, this.skin.Width, this.skin.Height, 28);
-                skinElement.SetBackground(Color.Black);
-                skinElement.Draw(g, this.card);
-
-                // Image
-                skinElement = new SEImage(skin, 28, 28, 688, 982);
-                ((SEImage)skinElement).NameAttribute = "BackSide";
-                ((SEImage)skinElement).ResourceType = ResourceTypes.Image;
-                skinElement.Draw(g, this.card);
-
-                g.Dispose();
-                g = null;
-            }
-
-            return this.img;
-
         }
 
         private void InitBasicImage()

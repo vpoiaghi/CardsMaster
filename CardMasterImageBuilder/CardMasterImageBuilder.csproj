@@ -46,10 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SkinFactories\BackSideSkinFactory.cs" />
     <Compile Include="Drawer.cs" />
     <Compile Include="DrawingQuality.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SkinFactory.cs" />
+    <Compile Include="SkinFactories\FrontSideSkinFactory.cs" />
+    <Compile Include="SkinFactories\SkinFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CardMasterCard\CardMasterCard.csproj">

@@ -137,7 +137,7 @@ namespace CardMasterManager
             Dispatcher.BeginInvoke(new Action(delegate ()
             {
                frontImage.Source = (ImageSource)converter.Convert(drawer.DrawCard(), null, null, System.Globalization.CultureInfo.CurrentCulture);
-               backCardImage.Source = (ImageSource)converter.Convert(drawer.DrawCardBackground(), null, null, System.Globalization.CultureInfo.CurrentCulture);
+               backCardImage.Source = (ImageSource)converter.Convert(drawer.DrawBackSideSkin(), null, null, System.Globalization.CultureInfo.CurrentCulture);
             }));
         }
 

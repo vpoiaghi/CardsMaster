@@ -186,7 +186,7 @@ namespace CardMasterExport.FileExport
         private Image GetBackImage(Card card, FileInfo skinFile)
         {
             Drawer drawer = new Drawer(card, skinFile, null);
-            return drawer.DrawCardBackground();
+            return drawer.DrawBackSideSkin();
         }
 
 
