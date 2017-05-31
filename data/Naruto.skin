@@ -48,5 +48,31 @@
 		"Environnement": "Kind",
 		"Equipement": "Kind",
 		"Ninjutsu": "Kind"
-	}
+	},
+	"Skins" : [
+		{
+		"Name":"SkinBack1",
+		"Height" : 1038,
+		"Width" : 744,
+		"Items" : [
+			{
+				"Type":"SERoundedRectangle",
+				"X":0,
+				"Y":0,
+				"Width": 744,
+				"Height" : 1038,
+				"Radius" : 28,
+				"BackgroundColor" : "black",
+			},
+			{
+				"Type":"SEImage",
+				"X":28,
+				"Y":28,
+				"Width": 688,
+				"Height" : 982,
+				"NameAttribute" : "BackSide"
+			}
+		]
+		}
+	]
 }

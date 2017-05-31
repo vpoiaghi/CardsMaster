@@ -63,6 +63,8 @@
     <Compile Include="GraphicsElements\ImageElement.cs" />
     <Compile Include="GraphicsElements\PathElement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Skins\JsonSkin.cs" />
+    <Compile Include="Skins\JsonSkinItem.cs" />
     <Compile Include="Skins\Skin.cs" />
     <Compile Include="Skins\SkinElement.cs" />
     <Compile Include="Skins\SkinElementBorder.cs" />
