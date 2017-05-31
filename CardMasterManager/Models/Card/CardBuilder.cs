@@ -112,6 +112,12 @@ namespace CardMasterManager
             return this;
         }
 
+        public CardBuilder withSkinName(String skinName)
+        {
+            this.m_card.SkinName = skinName;
+            return this;
+        }
+
         public CardBuilder withBackground(CardMasterCard.Card.Texture texture)
         {
             this.m_card.Background = texture;

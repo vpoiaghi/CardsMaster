@@ -18,6 +18,7 @@ namespace CardMasterCard.Card
         public String Comments  { get; set; }
         public int Nb { get; set; }
         public String BackSide { get; set; }
+        public String SkinName { get; set; }
  
         public Texture Background { get; set; }
         public List<Power> Powers { get; set; }

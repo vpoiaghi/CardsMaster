@@ -46,6 +46,7 @@ namespace CardMasterManager
         public CardMasterCard.Card.Texture Background { get; set; }
         public List<CardMasterCard.Card.Power> Powers { get; set; }
         public String BackSide { get; set; }
+        public String SkinName { get; set; }
 
         public static NatureCard parseNature(String nature)
         {
@@ -85,6 +86,7 @@ namespace CardMasterManager
             toReturn.Rank = card.Rank;
             toReturn.Team = card.Team;
             toReturn.BackSide = card.BackSide;
+            toReturn.SkinName = card.SkinName;
             return toReturn;
 
         }
@@ -108,6 +110,7 @@ namespace CardMasterManager
                                 .withTeam(sourceCard.Team)
                                 .withPowers(sourceCard.Powers)
                                 .withBackSide(sourceCard.BackSide)
+                                .withSkinName(sourceCard.SkinName)
                                 .build();
             return toReturn;
         }

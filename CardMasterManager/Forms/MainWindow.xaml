@@ -187,14 +187,20 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
 
-                    <DataGridTemplateColumn Header="BackSide" MinWidth="100" CanUserSort="True" SortMemberPath="Comments">
+                    <DataGridTemplateColumn Header="Image Arrière" MinWidth="100" CanUserSort="True" SortMemberPath="BackSide">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBox Text="{Binding BackSide, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
-
+                    <DataGridTemplateColumn Header="Skin Name" MinWidth="100" CanUserSort="True" SortMemberPath="SkinName">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding SkinName, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
                 </DataGrid.Columns>
             </DataGrid>
         </DockPanel>
