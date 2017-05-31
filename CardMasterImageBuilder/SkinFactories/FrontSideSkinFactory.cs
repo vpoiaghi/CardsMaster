@@ -114,6 +114,7 @@ namespace CardMasterImageBuilder.SkinFactories
             ((SETextArea)skinElement).TextFont = new Font("Bell MT", 10, FontStyle.Bold);
             ((SETextArea)skinElement).TextAttribute = "Defense";
             skinElement.Visible = IsAttributeNonEmpty("Defense");
+            ((SETextArea)skinElement).FontColor = ConvertColorFromString("black");
             ((SETextArea)skinElement).TextAlign = HorizontalAlignment.Center;
             ((SETextArea)skinElement).TextVerticalAlign = VerticalAlignment.Center;
             skin.Elements.Add(skinElement);

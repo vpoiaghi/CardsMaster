@@ -2,9 +2,6 @@
 
 ## Documentation
 
-* Mettre ce README.md au format READM.md :) 
---> Je crois que c'est bon. Je te laisse valider.
-
 * Ajouter au DCG.ppt la liste des libs utilisées, par quels projets et où les trouver.
 
 
@@ -12,7 +9,7 @@
 
 ### Architecture
 
-* Utiliser des interaces.
+* Utiliser des interfaces.
 Actuellement il n'y a aucn système de contrat de service entre les projets, chaque projet voit tout ou presque des projets qu'il référencie.
 
 * Organisation
@@ -40,6 +37,8 @@ Un seul type d'objet de paramétrage doit être envoyé au projet d'export et c'
 ### Cartes
 
 * [DONE] Faire un BackSideFactory : En attendant un vrai fichier Skin, sortir la construction du skin du drawBackground.
+
+* Pouvoir ajouter / supprimer des lignes dans la grille pour ne pas avoir nécéssairement de Json en entrée
 
 * Mettre en place le fichier de Skin
 Skin de face + Skin de dos.
@@ -71,6 +70,9 @@ La possibilité de choisir la couleur de bordure pour la face et le dos est prê
   * A s'en servir comme valeur dans le Factory.
 
 ### IHM
+
+* Cartes
+  * Gérer les noms longs de cartes (passe sur 2 lignes mais se décalle vers le haut mais se retrouve hors cadre : ex : Vallée des nuages et de la foudre)
 
 * Boîte de dialogue de paramétrage des exports
   * Pouvoir paramétrer l'exportation par l'ihm via une boîte de dialogue (mode, format, dossier/fichier de destination, etc...). 

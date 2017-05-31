@@ -22,7 +22,7 @@ namespace CardMasterImageBuilder
             // Image
             skinElement = new SEImage(skin, 28, 28, 688, 982);
             ((SEImage)skinElement).NameAttribute = "BackSide";
-            ((SEImage)skinElement).ResourceType = ResourceTypes.Image;
+            ((SEImage)skinElement).ResourceType = ResourceTypes.Texture;
             skin.Elements.Add(skinElement);
 
             return skin;
