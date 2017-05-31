@@ -31,9 +31,7 @@ Un seul type d'objet de paramétrage doit être envoyé au projet d'export et c'
 
 ### Cartes
 
-* [DONE] Faire un BackSideFactory (?)
-[DONE] En attendant un vrai fichier Skin. 
-[DONE] Sortir la construction du skin du crawBackground
+* [DONE] Faire un BackSideFactory : En attendant un vrai fichier Skin, sortir la construction du skin du drawBackground.
 
 * Mettre en place le fichier de Skin
 Skin de face + Skin de dos.
