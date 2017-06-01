@@ -7,8 +7,6 @@ namespace CardMasterSkin.Skins
 {
     public class SkinsProject
     {
-        public string TexturesDirectory { get; set; }
-        public string ImagesDirectory { get; set; }
         public Dictionary<String, String> MapLibelleColor { get; set; }
         public Dictionary<String, String> MapKindField { get; set; }
         public Dictionary<String, String> MapLibelleBorderColor { get; set; }
@@ -30,10 +28,6 @@ namespace CardMasterSkin.Skins
 
                 sr.Close();
                 sr.Dispose();
-
-                skinsProject.TexturesDirectory = skinsProject.TexturesDirectory.Replace("\\\\", "\\");
-                skinsProject.ImagesDirectory = skinsProject.ImagesDirectory.Replace("\\\\", "\\");
-
             }
 
             return skinsProject;

@@ -8,7 +8,7 @@ namespace CardMasterImageBuilder.SkinFactories
     {
         protected override Skin GetSkin()
         {
-            Skin skin = new Skin(this.width, this.height, this.imagesDirectory, this.texturesDirectory);
+            Skin skin = new Skin(this.width, this.height, this.resourcesDirectory);
             SkinElement skinElement;
 
             // Bordures
@@ -47,7 +47,6 @@ namespace CardMasterImageBuilder.SkinFactories
             // Image
             skinElement = new SEImage(skin, 58, 120, 628, 445);
             ((SEImage)skinElement).NameAttribute = "Name";
-            ((SEImage)skinElement).ResourceType = ResourceTypes.Image;
             skinElement.Border = new SkinElementBorder(GetMatchingBorderColor(), skinsProject.BorderWidth);
             skin.Elements.Add(skinElement);
 

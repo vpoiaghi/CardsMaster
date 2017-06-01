@@ -9,17 +9,10 @@ using System.Reflection;
 
 namespace CardMasterSkin.Elements
 {
-    public enum ResourceTypes
-    {
-        Image,
-        Texture
-    };
-
     public class SEImage : SkinElement
     {
         public string ImageName { get; set; } = null;
         public string NameAttribute { get; set; } = null;
-        public ResourceTypes ResourceType { get; set; } = ResourceTypes.Texture;
 
         public SEImage(Skin skin, int x, int y, int width, int height) : base(skin, x, y, width, height)
         { }
@@ -47,18 +40,7 @@ namespace CardMasterSkin.Elements
         private string GetFileFullname(Card card)
         {
             string fileFullname = null;
-            DirectoryInfo rootDirectory = null;
-
-            switch (this.ResourceType)
-            {
-                case ResourceTypes.Image:
-                    rootDirectory = this.skin.ImagesDirectory;
-                    break;
-                default :
-                    rootDirectory = this.skin.TexturesDirectory;
-                    break;
-            }
-
+            DirectoryInfo rootDirectory = this.skin.ResourcesDirectory;
 
             if ((rootDirectory != null) && (rootDirectory.Exists))
             {

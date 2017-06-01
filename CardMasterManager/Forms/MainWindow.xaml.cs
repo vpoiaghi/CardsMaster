@@ -15,6 +15,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using CardMasterExport.PrinterExport;
+using CardMasterManager.Utils;
 
 namespace CardMasterManager
 {
@@ -28,7 +29,6 @@ namespace CardMasterManager
 
         private CardsProject cardProjet;
         private FileInfo cardsFile;
-        private FileInfo skinsFile;
         private Card previousCard;
 
         public DrawingQuality DQuality { get; set; } = new DrawingQuality();
@@ -55,9 +55,6 @@ namespace CardMasterManager
             if (openFileDialog.ShowDialog() == true)
             {
                 cardsFile = new FileInfo(openFileDialog.FileName);
-                string skinsFileName = cardsFile.Name.Replace(cardsFile.Extension, ".skin");
-                skinsFile = new FileInfo(Path.Combine(cardsFile.Directory.FullName, skinsFileName));
-
                 cardProjet = CardsProject.LoadProject(cardsFile);
                 
                 List<Card> cards = new List<Card>();
@@ -93,14 +90,20 @@ namespace CardMasterManager
             if (saveFileDialog.ShowDialog() == true)
             {
                 FileInfo newCardsFile = new FileInfo(saveFileDialog.FileName);
+
                 string skinsFileName = cardsFile.Name.Replace(newCardsFile.Extension, ".skin");
-                FileInfo newSkinsFile = new FileInfo(Path.Combine(cardsFile.Directory.FullName, skinsFileName));
+                FileInfo oldSkinsFile = new FileInfo(Path.Combine(cardsFile.Directory.FullName, skinsFileName));
+                FileInfo newSkinsFile = new FileInfo(Path.Combine(newCardsFile.Directory.FullName, skinsFileName));
 
                 SaveProject(newCardsFile);
-                skinsFile.CopyTo(newSkinsFile.FullName);
+                oldSkinsFile.CopyTo(newSkinsFile.FullName);
 
-                cardsFile = newCardsFile;
-                skinsFile = newSkinsFile;
+                DirectoryInfo oldResourceDir = new DirectoryInfo(Path.Combine(cardsFile.Directory.FullName, "Resources"));
+                DirectoryInfo newResourceDir = new DirectoryInfo(Path.Combine(newCardsFile.Directory.FullName, "Resources"));
+
+                DirectoryUtils.Copy(oldResourceDir, newResourceDir);
+
+                this.cardsFile = newCardsFile;
             }
         }
 
@@ -128,8 +131,8 @@ namespace CardMasterManager
         {
             //Select Card from Collection from Name
             CardMasterCard.Card.Card businessCard = Card.ConvertToMasterCard(c);
-                      
-            Drawer drawer = new Drawer(businessCard, skinsFile, null);
+
+            Drawer drawer = new Drawer(businessCard, GetSkinFile(), null);
             drawer.Quality = this.DQuality;
             
             //Refresh Image Component
@@ -159,7 +162,7 @@ namespace CardMasterManager
             
             if (cardsList.Count > 0)
             {
-                PngExport exp = new PngExport(this, cardsList, skinsFile);
+                PngExport exp = new PngExport(this, cardsList, GetSkinFile());
                 PngExport.Parameters parameters = (PngExport.Parameters)exp.GetParameters();
                 exp.progressChangedEvent += new PngExport.ProgressChanged(ExportProgressChanged);
                 exp.Export(parameters);
@@ -178,7 +181,7 @@ namespace CardMasterManager
 
             if (cardsList.Count > 0)
             {
-                PngBoardExport exp = new PngBoardExport(this, cardsList, skinsFile);
+                PngBoardExport exp = new PngBoardExport(this, cardsList, GetSkinFile());
                 PngBoardExport.Parameters parameters = (PngBoardExport.Parameters)exp.GetParameters();
                 parameters.SpaceBetweenCards = 0;
                 exp.progressChangedEvent += new PngBoardExport.ProgressChanged(ExportProgressChanged);
@@ -276,7 +279,7 @@ namespace CardMasterManager
 
             if (cardsList.Count > 0)
             {
-                PrinterBoardExport exp = new PrinterBoardExport(this, cardsList, skinsFile);
+                PrinterBoardExport exp = new PrinterBoardExport(this, cardsList, GetSkinFile());
                 PrinterBoardExport.Parameters parameters = (PrinterBoardExport.Parameters)exp.GetParameters();
                 parameters.SpaceBetweenCards = 0;
                 parameters.WithBackSides = true;
@@ -284,6 +287,12 @@ namespace CardMasterManager
                 exp.Export(parameters);
             }
 
+        }
+
+        private FileInfo GetSkinFile()
+        {
+            FileInfo skinFile = new FileInfo(Path.Combine(this.cardsFile.Directory.FullName, this.cardsFile.Name.Replace(this.cardsFile.Extension, ".skin")));
+            return skinFile.Exists ? skinFile : null;
         }
     }
 }

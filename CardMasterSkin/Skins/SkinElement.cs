@@ -116,9 +116,9 @@ namespace CardMasterSkin.Skins
                     break;
 
                 case TextureTypes.Image:
-                    if ((this.skin.TexturesDirectory != null) && (this.skin.TexturesDirectory.Exists))
+                    if ((this.skin.ResourcesDirectory != null) && (this.skin.ResourcesDirectory.Exists))
                     {
-                        FileInfo[] files = this.skin.TexturesDirectory.GetFiles(this.imageName + ".*", SearchOption.AllDirectories);
+                        FileInfo[] files = this.skin.ResourcesDirectory.GetFiles(this.imageName + ".*", SearchOption.AllDirectories);
 
                         if (files.Length > 0)
                         {
@@ -136,7 +136,6 @@ namespace CardMasterSkin.Skins
                             if (bkg == null)
                             {
                                 Image img = new Bitmap(fileName);
-                                //bkg = new TextureBrush(img, WrapMode.Clamp);
                                 bkg = new TextureBrush(img, WrapMode.TileFlipXY);
                                 img.Dispose();
                                 img = null;

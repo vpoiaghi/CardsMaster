@@ -8,11 +8,12 @@ namespace CardMasterImageBuilder
 {
     public abstract class SkinFactory
     {
+        public const string RESOURCES_DIRECTORY_NAME = "Resources";
+
         protected ColorConverter colorConverter = new ColorConverter();
 
         protected SkinsProject skinsProject = null;
-        protected DirectoryInfo texturesDirectory = null;
-        protected DirectoryInfo imagesDirectory = null;
+        protected DirectoryInfo resourcesDirectory = null;
         protected Card card = null;
         protected int width = 0;
         protected int height = 0;
@@ -34,8 +35,7 @@ namespace CardMasterImageBuilder
 
             if (skinsProject != null)
             {
-                this.texturesDirectory = new DirectoryInfo(skinsProject.TexturesDirectory);
-                this.imagesDirectory = new DirectoryInfo(skinsProject.ImagesDirectory);
+                this.resourcesDirectory = new DirectoryInfo(Path.Combine( skinsFile.Directory.FullName, RESOURCES_DIRECTORY_NAME));
 
                 skin = GetSkin();
             }

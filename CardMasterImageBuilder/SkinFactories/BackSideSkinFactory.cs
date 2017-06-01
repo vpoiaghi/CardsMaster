@@ -13,7 +13,7 @@ namespace CardMasterImageBuilder
         protected override Skin GetSkin()
         {
             JsonSkin jsonSkin = skinsProject.Skins.Single(c => c.Name == card.SkinName);
-            Skin skin = new Skin(jsonSkin.Width, jsonSkin.Height, this.imagesDirectory, this.texturesDirectory);
+            Skin skin = new Skin(jsonSkin.Width, jsonSkin.Height, this.resourcesDirectory);
             SkinElement skinElement;
            
             foreach (JsonSkinItem item in jsonSkin.Items)
@@ -27,7 +27,6 @@ namespace CardMasterImageBuilder
                 {
                     skinElement = new SEImage(skin, item.X, item.Y, item.Width, item.Height);
                     ((SEImage)skinElement).NameAttribute = item.NameAttribute;
-                    ((SEImage)skinElement).ResourceType = ResourceTypes.Texture;
                 }
                 else
                 {

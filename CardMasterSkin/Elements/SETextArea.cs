@@ -80,7 +80,7 @@ namespace CardMasterSkin.Elements
 
         private DirectoryInfo GetSymbolsDirectory()
         {
-            DirectoryInfo symbolsDirectory = this.skin.TexturesDirectory;
+            DirectoryInfo symbolsDirectory = this.skin.ResourcesDirectory;
             bool symbolsDirExists = (symbolsDirectory != null) && (symbolsDirectory.Exists);
 
             if (!symbolsDirExists)

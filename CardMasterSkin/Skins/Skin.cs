@@ -6,27 +6,24 @@ namespace CardMasterSkin.Skins
     {
         public int Width { get; set; }
         public int Height { get; set; }
-        public DirectoryInfo ImagesDirectory { get; set; }
-        public DirectoryInfo TexturesDirectory { get; set; }
+        public DirectoryInfo ResourcesDirectory { get; set; }
         public SkinElements Elements { get; set; }
 
 
         protected Skin()
         { }
 
-        public Skin(int width, int height, DirectoryInfo imagesDirectory, DirectoryInfo texturesDirectory)
+        public Skin(int width, int height, DirectoryInfo resourcesDirectory)
         {
             this.Width = width;
             this.Height = height;
-            this.ImagesDirectory = imagesDirectory;
-            this.TexturesDirectory = texturesDirectory;
+            this.ResourcesDirectory = resourcesDirectory;
             this.Elements = new SkinElements();
         }
 
         ~Skin()
         {
-            this.ImagesDirectory = null;
-            this.TexturesDirectory = null;
+            this.ResourcesDirectory = null;
             this.Elements.Clear();
         }
 
