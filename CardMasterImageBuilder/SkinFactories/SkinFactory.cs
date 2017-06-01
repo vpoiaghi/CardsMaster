@@ -43,36 +43,5 @@ namespace CardMasterImageBuilder
             return skin;
         }
 
-        protected String GetMatchingBackground()
-        {
-            String attributeName = this.skinsProject.MapKindField[this.card.Kind];
-            String attributeValue = getAttributeValueAsString(attributeName);
-            return skinsProject.MapLibelleColor[attributeValue];
-        }
-
-        protected Boolean IsAttributeNonEmpty(String attributeName)
-        {
-            return getAttributeValueAsString(attributeName) != "";
-        }
-        protected String getAttributeValueAsString(String attributeName)
-        {
-            return (String)this.card.GetType().GetProperty(attributeName).GetValue(this.card, null);
-        }
-
-        protected Color GetMatchingRarityColor()
-        {
-            return ConvertColorFromString(this.skinsProject.MapRareteColor[this.card.Rank]);
-        }
-        protected Color ConvertColorFromString(String color)
-        {
-            return (Color)colorConverter.ConvertFromString(color);
-        }
-        protected Color GetMatchingBorderColor()
-        {
-            String attributeName = this.skinsProject.MapKindField[this.card.Kind];
-            String attributeValue = getAttributeValueAsString(attributeName);
-            String rgbCode = this.skinsProject.MapLibelleBorderColor[attributeValue];
-            return ConvertColorFromString(rgbCode);
-        }
     }
 }

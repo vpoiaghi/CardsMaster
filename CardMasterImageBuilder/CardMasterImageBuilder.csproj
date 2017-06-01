@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Builders\AbstractBuilder.cs" />
+    <Compile Include="Builders\CustomColorConverter.cs" />
     <Compile Include="Builders\SETextAreaBuilder.cs" />
     <Compile Include="Builders\SECurvedRectangle.cs" />
     <Compile Include="Builders\SERectangleBuilder.cs" />

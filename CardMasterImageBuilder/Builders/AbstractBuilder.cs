@@ -11,8 +11,6 @@ namespace CardMasterImageBuilder.Builders
 {
     public class AbstractBuilder
     {
-        protected ColorConverter colorConverter = new ColorConverter();
-
         protected String GetMatchingBackground(SkinsProject skinsProject,Card card)
         {
             String attributeName = skinsProject.MapKindField[card.Kind];
@@ -35,7 +33,7 @@ namespace CardMasterImageBuilder.Builders
         }
         protected Color ConvertColorFromString(String color)
         {
-            return (Color)colorConverter.ConvertFromString(color);
+            return CustomColorConverter.Instance.ConvertFromString(color);
         }
         protected Color GetMatchingBorderColor(SkinsProject skinsProject, Card card)
         {
