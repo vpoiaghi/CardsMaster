@@ -16,5 +16,16 @@ namespace CardMasterSkin.Skins
         public int Radius { get; set; }
         public String BackgroundColor { get; set; }
         public String NameAttribute { get; set; }
+        public String Background { get; set; }
+        public String Comment { get; set; }
+        public int CurveSize { get; set; }
+        public String BorderColor { get; set; }
+        public String FontName { get; set; }
+        public int FontSize { get; set; }
+        public String Style { get; set; }
+        public String VerticalAlign { get; set; }
+        public String HorizontalAlign { get; set; }
+        public String VisibleConditionAttribute { get; set; }
+
     }
 }

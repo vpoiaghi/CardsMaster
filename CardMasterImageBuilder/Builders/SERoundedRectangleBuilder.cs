@@ -1,4 +1,5 @@
-﻿using CardMasterSkin.Elements;
+﻿using CardMasterCard.Card;
+using CardMasterSkin.Elements;
 using CardMasterSkin.Skins;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,16 @@ namespace CardMasterImageBuilder.Converters
 {
     public class SERoundedRectangleBuilder
     {
-        public static SERoundedRectangle Build(Skin skin, JsonSkinItem item)
+        private SkinsProject _skinsProject;
+        private Card _card;
+
+        public SERoundedRectangleBuilder(SkinsProject skinsProject, Card card)
+        {
+            _skinsProject = skinsProject;
+            _card = card;
+        }
+
+        public SERoundedRectangle Build(Skin skin, JsonSkinItem item)
         {
             SERoundedRectangle skinElement = new SERoundedRectangle(skin, item.X, item.Y, item.Width, item.Height, item.Radius);
             skinElement.SetBackground(item.BackgroundColor);

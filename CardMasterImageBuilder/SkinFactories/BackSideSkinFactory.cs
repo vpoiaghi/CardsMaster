@@ -22,10 +22,10 @@ namespace CardMasterImageBuilder
                 switch(item.Type)
                 {
                     case "SERoundedRectangle":
-                        skinElement = SERoundedRectangleBuilder.Build(skin, item);
+                        skinElement = new SERoundedRectangleBuilder(skinsProject,card).Build(skin, item);
                         break;
                     case "SEImage":
-                        skinElement = SEImageBuilder.Build(skin, item);
+                        skinElement = new SEImageBuilder(skinsProject, card).Build(skin, item);
                         break;
                     default:
                         throw new Exception("Type #" + item.Type + " not found");
