@@ -51,7 +51,7 @@
 	},
 	"Skins" : [
 		{
-		"Name":"SkinBack1",
+		"Name":"BackSkin1",
 		"Height" : 1038,
 		"Width" : 744,
 		"Items" : [
@@ -62,7 +62,7 @@
 				"Width": 744,
 				"Height" : 1038,
 				"Radius" : 28,
-				"BackgroundColor" : "black",
+				"BackgroundColor" : "#000000",
 			},
 			{
 				"Type":"SEImage",

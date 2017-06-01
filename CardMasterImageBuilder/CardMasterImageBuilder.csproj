@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builders\SEImageBuilder.cs" />
+    <Compile Include="Builders\SERoundedRectangleBuilder.cs" />
     <Compile Include="SkinFactories\BackSideSkinFactory.cs" />
     <Compile Include="Drawer.cs" />
     <Compile Include="DrawingQuality.cs" />

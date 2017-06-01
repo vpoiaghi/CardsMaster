@@ -46,7 +46,8 @@ namespace CardMasterManager
         public CardMasterCard.Card.Texture Background { get; set; }
         public List<CardMasterCard.Card.Power> Powers { get; set; }
         public String BackSide { get; set; }
-        public String SkinName { get; set; }
+        public String BackSkinName { get; set; }
+        public String FrontSkinName { get; set; }
 
         public static NatureCard parseNature(String nature)
         {
@@ -86,7 +87,8 @@ namespace CardMasterManager
             toReturn.Rank = card.Rank;
             toReturn.Team = card.Team;
             toReturn.BackSide = card.BackSide;
-            toReturn.SkinName = card.SkinName;
+            toReturn.FrontSkinName = card.FrontSkinName;
+            toReturn.BackSkinName = card.BackSkinName;
             return toReturn;
 
         }
@@ -110,9 +112,158 @@ namespace CardMasterManager
                                 .withTeam(sourceCard.Team)
                                 .withPowers(sourceCard.Powers)
                                 .withBackSide(sourceCard.BackSide)
-                                .withSkinName(sourceCard.SkinName)
+                                .withBackSkinName(sourceCard.BackSkinName)
+                                .withFrontSkinName(sourceCard.FrontSkinName)
                                 .build();
             return toReturn;
+        }
+
+        private class CardBuilder
+        {
+            private Card m_card;
+
+            private CardBuilder()
+            {
+                m_card = new Card();
+            }
+
+            public static CardBuilder newCard()
+            {
+                return new CardBuilder();
+            }
+
+            public Card build()
+            {
+                return this.m_card;
+            }
+
+            public CardBuilder withName(String name)
+            {
+                this.m_card.Name = name;
+                return this;
+            }
+
+            public CardBuilder withKind(String kind)
+            {
+                this.m_card.Kind = Card.parseKind(kind);
+                return this;
+            }
+
+            public CardBuilder withRank(String rank)
+            {
+                this.m_card.Rank = rank;
+                return this;
+            }
+
+            public CardBuilder withNb(int nb)
+            {
+                this.m_card.Nb = nb;
+                return this;
+            }
+
+            public CardBuilder withTeam(String team)
+            {
+                this.m_card.Team = team;
+                return this;
+            }
+
+            public CardBuilder withNature(string nature)
+            {
+                this.m_card.Nature = Card.parseNature(nature);
+                return this;
+            }
+
+            public CardBuilder withElement(String element)
+            {
+                this.m_card.Element = element;
+                return this;
+            }
+
+
+            public CardBuilder withCost(String cost)
+            {
+
+                this.m_card.Cost = cost;
+                return this;
+            }
+
+            private int GetIntValue(String value)
+            {
+                int intCost = -1;
+                try
+                {
+                    intCost = int.Parse(value);
+                }
+                catch (FormatException e)
+                {
+                    Console.Write(e.Message);
+                    intCost = -1;
+                }
+                return intCost;
+            }
+
+            public CardBuilder withAttack(String attack)
+            {
+                this.m_card.Attack = attack;
+                return this;
+            }
+
+            public CardBuilder withDefense(String defense)
+            {
+                this.m_card.Defense = defense;
+                return this;
+            }
+
+
+            public CardBuilder withCitation(String citation)
+            {
+                this.m_card.Citation = citation;
+                return this;
+            }
+
+            public CardBuilder withComment(String comments)
+            {
+                this.m_card.Comments = comments;
+                return this;
+            }
+
+            public CardBuilder withBackSkinName(String skinName)
+            {
+                this.m_card.BackSkinName = skinName;
+                return this;
+            }
+
+            public CardBuilder withFrontSkinName(String skinName)
+            {
+                this.m_card.FrontSkinName = skinName;
+                return this;
+            }
+
+            public CardBuilder withBackground(CardMasterCard.Card.Texture texture)
+            {
+                this.m_card.Background = texture;
+                return this;
+            }
+
+            public CardBuilder withPowers(List<CardMasterCard.Card.Power> powers)
+            {
+                this.m_card.Powers = powers;
+                return this;
+            }
+
+            public CardBuilder withPower(CardMasterCard.Card.Power power)
+            {
+                this.m_card.Powers.Add(power);
+                return this;
+            }
+
+            public CardBuilder withBackSide(String backSide)
+            {
+                this.m_card.BackSide = backSide;
+                return this;
+            }
+
+
         }
 
     }

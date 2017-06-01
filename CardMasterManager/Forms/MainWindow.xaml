@@ -194,10 +194,17 @@
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
-                    <DataGridTemplateColumn Header="Skin Name" MinWidth="100" CanUserSort="True" SortMemberPath="SkinName">
+                    <DataGridTemplateColumn Header="Back Skin Name" MinWidth="100" CanUserSort="True" SortMemberPath="BackSkinName">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBox Text="{Binding SkinName, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                                <TextBox Text="{Binding BackSkinName, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="Front Skin Name" MinWidth="100" CanUserSort="True" SortMemberPath="FrontSkinName">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding FrontSkinName, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>

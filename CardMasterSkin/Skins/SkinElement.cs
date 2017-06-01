@@ -27,6 +27,7 @@ namespace CardMasterSkin.Skins
         protected string imageName = null;
         private TextureTypes type;
         protected Skin skin = null;
+        private ColorConverter colorConverter = new ColorConverter();
 
 
         protected Graphics graphics = null;
@@ -97,8 +98,17 @@ namespace CardMasterSkin.Skins
 
         public void SetBackground(String imageName)
         {
-            this.imageName = imageName;
-            this.type = TextureTypes.Image;
+            if (imageName.StartsWith("#"))
+            {
+                this.color1 = (Color)colorConverter.ConvertFromString(imageName);
+                this.imageName = null;
+                this.type = TextureTypes.Color;
+            }
+            else
+            {
+                this.imageName = imageName;
+                this.type = TextureTypes.Image;
+            }
         }
 
         public Brush GetBackground()

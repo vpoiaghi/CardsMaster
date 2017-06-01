@@ -1,4 +1,5 @@
 ﻿using CardMasterCard.Card;
+using CardMasterImageBuilder.Converters;
 using CardMasterSkin.Elements;
 using CardMasterSkin.Skins;
 using System;
@@ -12,30 +13,25 @@ namespace CardMasterImageBuilder
     {
         protected override Skin GetSkin()
         {
-            JsonSkin jsonSkin = skinsProject.Skins.Single(c => c.Name == card.SkinName);
+            JsonSkin jsonSkin = skinsProject.Skins.Single(sk => sk.Name == card.BackSkinName);
             Skin skin = new Skin(jsonSkin.Width, jsonSkin.Height, this.resourcesDirectory);
             SkinElement skinElement;
            
             foreach (JsonSkinItem item in jsonSkin.Items)
-            {
-                if(item.Type== "SERoundedRectangle")
+            {            
+                switch(item.Type)
                 {
-                    skinElement = new SERoundedRectangle(skin,item.X, item.Y, item.Width, item.Height, item.Radius);
-                    skinElement.SetBackground(item.BackgroundColor);
+                    case "SERoundedRectangle":
+                        skinElement = SERoundedRectangleBuilder.Build(skin, item);
+                        break;
+                    case "SEImage":
+                        skinElement = SEImageBuilder.Build(skin, item);
+                        break;
+                    default:
+                        throw new Exception("Type #" + item.Type + " not found");
                 }
-                else if (item.Type== "SEImage")
-                {
-                    skinElement = new SEImage(skin, item.X, item.Y, item.Width, item.Height);
-                    ((SEImage)skinElement).NameAttribute = item.NameAttribute;
-                }
-                else
-                {
-                    throw new Exception("Type not found");
-                }
-               
                 skin.Elements.Add(skinElement);
             }       
-
             return skin;
         }
     }
