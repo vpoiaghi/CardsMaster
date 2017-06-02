@@ -14,9 +14,9 @@ namespace CardMasterImageBuilder.Builders
         {
             SkinElement skinElement = Initialize(skin, item);
 
-            if ((item.shadowAngle != 0) && (item.shadowSize != 0))
+            if ((item.shadowAngle != null) && (item.shadowAngle != 0) && (item.shadowSize != 0))
             {
-                skinElement.Shadow = new SkinElementShadow(item.shadowSize, item.shadowAngle);
+                skinElement.Shadow = new SkinElementShadow(item.shadowSize.Value, item.shadowAngle.Value);
             }
 
             return skinElement;

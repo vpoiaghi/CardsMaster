@@ -1,5 +1,4 @@
 ﻿using CardMasterCard.Card;
-using CardMasterImageBuilder.SkinFactories;
 using CardMasterImageBuilder.Skins;
 using System;
 using System.Drawing;
@@ -10,7 +9,7 @@ namespace CardMasterImageBuilder
     public class Drawer
     {
         private Card card;
-        private Skin skin;
+        private Skin frontSkin;
         private Skin backSideSkin;
 
         private Bitmap img = null;
@@ -21,19 +20,20 @@ namespace CardMasterImageBuilder
         public Drawer(Card card, FileInfo skinsFile, String skinName)
         {
             this.card = card;
-            this.skin = (new FrontSideSkinFactory()).GetSkin(this.card, skinsFile, skinName);
-            this.backSideSkin = (new BackSideFactory()).GetSkin(this.card, skinsFile, skinName);
+            this.frontSkin = (new SkinFactory()).GetSkin(this.card, skinsFile, skinName,SkinFactory.SkinSide.FRONT);
+            this.backSideSkin = (new SkinFactory()).GetSkin(this.card, skinsFile, skinName, SkinFactory.SkinSide.BACK);
         }
 
         ~Drawer()
         {
-            this.skin = null;
+            this.frontSkin = null;
             this.card = null;
+            this.backSideSkin = null;
         }
 
         public Image DrawCard()
         {
-            return DrawSkin(this.skin);
+            return DrawSkin(this.frontSkin);
         }
 
         public Image DrawBackSideSkin()
@@ -63,7 +63,7 @@ namespace CardMasterImageBuilder
 
         private void InitBasicImage()
         {
-            this.img = new Bitmap(this.skin.Width, this.skin.Height);
+            this.img = new Bitmap(this.frontSkin.Width, this.frontSkin.Height);
             this.img.SetResolution(300, 300);
 
             this.g = Graphics.FromImage(img);

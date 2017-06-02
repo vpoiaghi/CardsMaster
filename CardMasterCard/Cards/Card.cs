@@ -21,6 +21,17 @@ namespace CardMasterCard.Card
         public String BackSkinName { get; set; }
         public String FrontSkinName { get; set; }
 
+        //Custo
+        public String StringField1 { get; set; }
+        public String StringField2 { get; set; }
+        public String StringField3 { get; set; }
+        public String StringField4 { get; set; }
+
+        public int? IntField1 { get; set; }
+        public int? IntField2 { get; set; }
+        public int? IntField3 { get; set; }
+        public int? IntField4 { get; set; }
+
         public Texture Background { get; set; }
         public List<Power> Powers { get; set; }
 

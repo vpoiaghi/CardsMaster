@@ -54,11 +54,9 @@
     <Compile Include="Builders\SEImageBuilder.cs" />
     <Compile Include="Builders\SERoundedRectangleBuilder.cs" />
     <Compile Include="Converters\PowersListConverter.cs" />
-    <Compile Include="SkinFactories\BackSideSkinFactory.cs" />
     <Compile Include="Drawer.cs" />
     <Compile Include="DrawingQuality.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SkinFactories\FrontSideSkinFactory.cs" />
     <Compile Include="SkinFactories\SkinFactory.cs" />
     <Compile Include="Skins\GraphicsElements\GraphicElement.cs" />
     <Compile Include="Skins\GraphicsElements\ImageElement.cs" />

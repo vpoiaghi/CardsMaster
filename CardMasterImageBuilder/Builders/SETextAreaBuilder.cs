@@ -22,10 +22,10 @@ namespace CardMasterImageBuilder.Builders
             SETextArea skinElement = new SETextArea(skin, item.X, item.Y, item.Width, item.Height, "<Nom>");
             if(item.Style == "Bold")
             {
-                skinElement.TextFont = new Font(item.FontName, item.FontSize, FontStyle.Bold);
+                skinElement.TextFont = new Font(item.FontName, item.FontSize.Value, FontStyle.Bold);
             }else if (item.Style == "Bold,Italic" || item.Style =="Italic,Bold")
             {
-                skinElement.TextFont = new Font(item.FontName, item.FontSize, FontStyle.Bold | FontStyle.Italic);
+                skinElement.TextFont = new Font(item.FontName, item.FontSize.Value, FontStyle.Bold | FontStyle.Italic);
             }
             
             skinElement.TextAttribute = item.NameAttribute;

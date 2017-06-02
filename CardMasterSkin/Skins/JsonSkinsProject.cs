@@ -11,7 +11,7 @@ namespace CardMasterSkin.Skins
         public Dictionary<String, String> MapKindField { get; set; }
         public Dictionary<String, String> MapLibelleBorderColor { get; set; }
         public Dictionary<String, String> MapRareteColor { get; set; }
-        public int BorderWidth { get; set; }
+        public int? BorderWidth { get; set; }
         public List<JsonSkin> Skins { get; set; }
 
         public static JsonSkinsProject LoadProject(FileInfo file)

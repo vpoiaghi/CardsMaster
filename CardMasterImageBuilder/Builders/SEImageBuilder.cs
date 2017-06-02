@@ -36,11 +36,11 @@ namespace CardMasterImageBuilder.Builders
             {
                 if(item.BorderColor=="DYNAMIC")
                 {
-                    skinElement.Border = new SkinElementBorder(GetMatchingBorderColor(_skinsProject,_card), _skinsProject.BorderWidth);
+                    skinElement.Border = new SkinElementBorder(GetMatchingBorderColor(_skinsProject,_card), _skinsProject.BorderWidth.Value);
                 }
                 else
                 {
-                    skinElement.Border = new SkinElementBorder(ConvertColorFromString(item.BorderColor), _skinsProject.BorderWidth);
+                    skinElement.Border = new SkinElementBorder(ConvertColorFromString(item.BorderColor), _skinsProject.BorderWidth.Value);
                 }
                
             }

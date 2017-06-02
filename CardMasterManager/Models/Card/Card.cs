@@ -48,6 +48,16 @@ namespace CardMasterManager
         public String BackSide { get; set; }
         public String BackSkinName { get; set; }
         public String FrontSkinName { get; set; }
+        //Custo
+        public String StringField1 { get; set; }
+        public String StringField2 { get; set; }
+        public String StringField3 { get; set; }
+        public String StringField4 { get; set; }
+
+        public int? IntField1 { get; set; }
+        public int? IntField2 { get; set; }
+        public int? IntField3 { get; set; }
+        public int? IntField4 { get; set; }
 
         public static NatureCard parseNature(String nature)
         {
@@ -89,182 +99,59 @@ namespace CardMasterManager
             toReturn.BackSide = card.BackSide;
             toReturn.FrontSkinName = card.FrontSkinName;
             toReturn.BackSkinName = card.BackSkinName;
+            //custo
+            toReturn.StringField1 = card.StringField1;
+            toReturn.StringField2 = card.StringField2;
+            toReturn.StringField3 = card.StringField3;
+            toReturn.StringField4 = card.StringField4;
+            toReturn.IntField1 = card.IntField1;
+            toReturn.IntField2 = card.IntField2;
+            toReturn.IntField3 = card.IntField3;
+            toReturn.IntField4 = card.IntField4;
+
             return toReturn;
 
         }
 
-        public static Card ConvertCard(CardMasterCard.Card.Card sourceCard)
+        public static Card ConvertCard(CardMasterCard.Card.Card card)
         {
-            Card toReturn = CardBuilder.newCard()
-                                .withName(sourceCard.Name)
-                                .withCost(sourceCard.Cost)
-                                .withAttack(sourceCard.Attack)
-                                .withBackground(sourceCard.Background)
-                                .withNature(sourceCard.Chakra)
-                                .withCitation(sourceCard.Citation)
-                                .withComment(sourceCard.Comments)
-                                .withDefense(sourceCard.Defense)
-                                .withElement(sourceCard.Element)
-                                .withKind(sourceCard.Kind)
-                                .withPowers(sourceCard.Powers)
-                                .withRank(sourceCard.Rank)
-                                .withNb(sourceCard.Nb)
-                                .withTeam(sourceCard.Team)
-                                .withPowers(sourceCard.Powers)
-                                .withBackSide(sourceCard.BackSide)
-                                .withBackSkinName(sourceCard.BackSkinName)
-                                .withFrontSkinName(sourceCard.FrontSkinName)
-                                .build();
+            Card toReturn = new Card();
+            toReturn.Attack = card.Attack.ToString();
+            toReturn.Background = card.Background;
+            toReturn.Nature = parseNature(card.Chakra);
+            toReturn.Citation = card.Citation;
+            toReturn.Comments = card.Comments;
+            toReturn.Cost = card.Cost.ToString();
+            toReturn.Defense = card.Defense.ToString();
+            toReturn.Element = card.Element;
+            toReturn.Kind = parseKind(card.Kind);
+            toReturn.Name = card.Name;
+            toReturn.Nb = card.Nb;
+            toReturn.Powers = new List<CardMasterCard.Card.Power>();
+            toReturn.Powers.AddRange(card.Powers);
+
+            toReturn.Rank = card.Rank;
+            toReturn.Team = card.Team;
+            toReturn.BackSide = card.BackSide;
+            toReturn.FrontSkinName = card.FrontSkinName;
+            toReturn.BackSkinName = card.BackSkinName;
+            //custo
+            toReturn.StringField1 = card.StringField1;
+            toReturn.StringField2 = card.StringField2;
+            toReturn.StringField3 = card.StringField3;
+            toReturn.StringField4 = card.StringField4;
+            toReturn.IntField1 = card.IntField1;
+            toReturn.IntField2 = card.IntField2;
+            toReturn.IntField3 = card.IntField3;
+            toReturn.IntField4 = card.IntField4;
+
             return toReturn;
         }
 
-        private class CardBuilder
-        {
-            private Card m_card;
-
-            private CardBuilder()
-            {
-                m_card = new Card();
-            }
-
-            public static CardBuilder newCard()
-            {
-                return new CardBuilder();
-            }
-
-            public Card build()
-            {
-                return this.m_card;
-            }
-
-            public CardBuilder withName(String name)
-            {
-                this.m_card.Name = name;
-                return this;
-            }
-
-            public CardBuilder withKind(String kind)
-            {
-                this.m_card.Kind = Card.parseKind(kind);
-                return this;
-            }
-
-            public CardBuilder withRank(String rank)
-            {
-                this.m_card.Rank = rank;
-                return this;
-            }
-
-            public CardBuilder withNb(int nb)
-            {
-                this.m_card.Nb = nb;
-                return this;
-            }
-
-            public CardBuilder withTeam(String team)
-            {
-                this.m_card.Team = team;
-                return this;
-            }
-
-            public CardBuilder withNature(string nature)
-            {
-                this.m_card.Nature = Card.parseNature(nature);
-                return this;
-            }
-
-            public CardBuilder withElement(String element)
-            {
-                this.m_card.Element = element;
-                return this;
-            }
+       
 
 
-            public CardBuilder withCost(String cost)
-            {
-
-                this.m_card.Cost = cost;
-                return this;
-            }
-
-            private int GetIntValue(String value)
-            {
-                int intCost = -1;
-                try
-                {
-                    intCost = int.Parse(value);
-                }
-                catch (FormatException e)
-                {
-                    Console.Write(e.Message);
-                    intCost = -1;
-                }
-                return intCost;
-            }
-
-            public CardBuilder withAttack(String attack)
-            {
-                this.m_card.Attack = attack;
-                return this;
-            }
-
-            public CardBuilder withDefense(String defense)
-            {
-                this.m_card.Defense = defense;
-                return this;
-            }
-
-
-            public CardBuilder withCitation(String citation)
-            {
-                this.m_card.Citation = citation;
-                return this;
-            }
-
-            public CardBuilder withComment(String comments)
-            {
-                this.m_card.Comments = comments;
-                return this;
-            }
-
-            public CardBuilder withBackSkinName(String skinName)
-            {
-                this.m_card.BackSkinName = skinName;
-                return this;
-            }
-
-            public CardBuilder withFrontSkinName(String skinName)
-            {
-                this.m_card.FrontSkinName = skinName;
-                return this;
-            }
-
-            public CardBuilder withBackground(CardMasterCard.Card.Texture texture)
-            {
-                this.m_card.Background = texture;
-                return this;
-            }
-
-            public CardBuilder withPowers(List<CardMasterCard.Card.Power> powers)
-            {
-                this.m_card.Powers = powers;
-                return this;
-            }
-
-            public CardBuilder withPower(CardMasterCard.Card.Power power)
-            {
-                this.m_card.Powers.Add(power);
-                return this;
-            }
-
-            public CardBuilder withBackSide(String backSide)
-            {
-                this.m_card.BackSide = backSide;
-                return this;
-            }
-
-
-        }
+        
 
     }
 

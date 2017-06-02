@@ -18,7 +18,7 @@ namespace CardMasterImageBuilder.Builders
         protected override SkinElement Initialize(Skin skin, JsonSkinItem item)
         {
             // Zone entête
-            SECurvedRectangle skinElement = new SECurvedRectangle(skin, item.X, item.Y, item.Width, item.Height, item.CurveSize);
+            SECurvedRectangle skinElement = new SECurvedRectangle(skin, item.X, item.Y, item.Width, item.Height, item.CurveSize.Value);
             if(item.Background=="DYNAMIC-RARETE")
             {
                 skinElement.SetBackground(GetMatchingRarityColor(_skinsProject,_card));
@@ -30,11 +30,11 @@ namespace CardMasterImageBuilder.Builders
            
             if (item.BorderColor == "DYNAMIC")
             {
-                skinElement.Border = new SkinElementBorder(GetMatchingBorderColor(_skinsProject,_card), _skinsProject.BorderWidth);
+                skinElement.Border = new SkinElementBorder(GetMatchingBorderColor(_skinsProject,_card), _skinsProject.BorderWidth.Value);
             }
             else
             {
-                skinElement.Border = new SkinElementBorder(ConvertColorFromString(item.BorderColor), _skinsProject.BorderWidth);
+                skinElement.Border = new SkinElementBorder(ConvertColorFromString(item.BorderColor), _skinsProject.BorderWidth.Value);
             }
            
             skin.Elements.Add(skinElement);

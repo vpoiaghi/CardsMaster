@@ -40,6 +40,8 @@ Un seul type d'objet de paramétrage doit être envoyé au projet d'export et c'
 
 * Pouvoir ajouter / supprimer des lignes dans la grille pour ne pas avoir nécéssairement de Json en entrée
 
+* Pouvoir gérer autant de champs custo que l'on veut avec un AnyJsonGetter et une map d'extrafields sur une Card
+
 * Mettre en place le fichier de Skin
 Skin de face + Skin de dos.
 Voir si plusieurs Skin de face sont nécessaires.
