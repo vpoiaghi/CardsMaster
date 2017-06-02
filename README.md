@@ -100,3 +100,9 @@ Maintenant que la fonctionnalité est validée, voir comment elle sera intégré
 
 * SkinEditor
 A conceptualiser.
+
+
+## Bugs
+
+* Pendant un export par le manager si on clique sur un item de la grille l'application plante. J'ai du mal gérer quelquechose au niveau des threads.
+

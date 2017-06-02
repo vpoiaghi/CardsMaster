@@ -45,41 +45,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Elements\TextFormat\AttributeParser.cs" />
-    <Compile Include="Converters\PowersListConverter.cs" />
-    <Compile Include="Elements\SECircle.cs" />
-    <Compile Include="Elements\SECurvedRectangle.cs" />
-    <Compile Include="Elements\SEImage.cs" />
-    <Compile Include="Elements\SERectangle.cs" />
-    <Compile Include="Elements\SERoundedRectangle.cs" />
-    <Compile Include="Elements\SESquare.cs" />
-    <Compile Include="Elements\SETextArea.cs" />
-    <Compile Include="Elements\TextFormat\FormattedText.cs" />
-    <Compile Include="Elements\TextFormat\TextElement.cs" />
-    <Compile Include="Elements\TextFormat\TextFormatter.cs" />
-    <Compile Include="Elements\TextFormat\TextRow.cs" />
-    <Compile Include="Elements\TextFormat\TextSection.cs" />
-    <Compile Include="GraphicsElements\GraphicElement.cs" />
-    <Compile Include="GraphicsElements\ImageElement.cs" />
-    <Compile Include="GraphicsElements\PathElement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Skins\JsonSkin.cs" />
     <Compile Include="Skins\JsonSkinItem.cs" />
-    <Compile Include="Skins\Skin.cs" />
-    <Compile Include="Skins\SkinElement.cs" />
-    <Compile Include="Skins\SkinElementBorder.cs" />
-    <Compile Include="Skins\SkinElements.cs" />
-    <Compile Include="Skins\SkinElementShadow.cs" />
     <Compile Include="Skins\SkinsProject.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CardMasterCard\CardMasterCard.csproj">
       <Project>{1ba2630b-04ab-4910-8792-04e48f2319db}</Project>
       <Name>CardMasterCard</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CardMasterCommon\CardMasterCommon.csproj">
-      <Project>{38cdb275-ff7f-48a8-8cab-6c582e2540aa}</Project>
-      <Name>CardMasterCommon</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

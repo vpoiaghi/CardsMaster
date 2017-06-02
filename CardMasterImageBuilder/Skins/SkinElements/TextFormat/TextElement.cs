@@ -1,7 +1,7 @@
 ﻿using System.Drawing;
 using System.IO;
 
-namespace CardMasterSkin.Elements.TextFormat
+namespace CardMasterImageBuilder.Elements.TextFormat
 {
     class TextElement
     {

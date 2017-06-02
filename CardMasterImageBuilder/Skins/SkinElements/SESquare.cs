@@ -1,6 +1,6 @@
-﻿using CardMasterSkin.Skins;
+﻿using CardMasterImageBuilder.Skins;
 
-namespace CardMasterSkin.Elements
+namespace CardMasterImageBuilder.SkinElements
 {
     public class SESquare : SERectangle
     {

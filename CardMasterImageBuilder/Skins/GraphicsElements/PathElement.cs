@@ -1,9 +1,10 @@
-﻿using CardMasterSkin.Skins;
+﻿using CardMasterImageBuilder.Skins;
+using CardMasterSkin.Skins;
 using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 
-namespace CardMasterSkin.GraphicsElements
+namespace CardMasterImageBuilder.GraphicsElements
 {
     public class PathElement : GraphicElement
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace CardMasterSkin.Skins
+namespace CardMasterImageBuilder.Skins
 {
     public class SkinElements : List<SkinElement>
     {

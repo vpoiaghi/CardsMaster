@@ -1,9 +1,10 @@
-﻿using System;
+﻿using CardMasterImageBuilder.SkinElements;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 
-namespace CardMasterSkin.Elements.TextFormat
+namespace CardMasterImageBuilder.Elements.TextFormat
 {
     class FormattedText
     {

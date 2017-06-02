@@ -1,13 +1,13 @@
 ﻿using CardMasterCard.Card;
-using CardMasterSkin.GraphicsElements;
-using CardMasterSkin.Skins;
+using CardMasterImageBuilder.GraphicsElements;
+using CardMasterImageBuilder.Skins;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Reflection;
 
-namespace CardMasterSkin.Elements
+namespace CardMasterImageBuilder.SkinElements
 {
     public class SEImage : SkinElement
     {

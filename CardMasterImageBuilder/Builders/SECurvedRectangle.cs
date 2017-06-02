@@ -1,12 +1,8 @@
 ﻿using CardMasterCard.Card;
 using CardMasterImageBuilder.Builders;
-using CardMasterSkin.Elements;
+using CardMasterImageBuilder.SkinElements;
+using CardMasterImageBuilder.Skins;
 using CardMasterSkin.Skins;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CardMasterImageBuilder.Converters
 {

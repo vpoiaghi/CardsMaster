@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace CardMasterSkin.Skins
+namespace CardMasterImageBuilder.Skins
 {
     public class Skin
     {

@@ -1,4 +1,4 @@
-﻿namespace CardMasterSkin.Skins
+﻿namespace CardMasterImageBuilder.Skins
 {
     public class SkinElementShadow
     {

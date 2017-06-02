@@ -1,12 +1,9 @@
-﻿using CardMasterCard.Card;
-using CardMasterImageBuilder.Converters;
-using CardMasterSkin.Elements;
+﻿using CardMasterImageBuilder.Converters;
+using CardMasterImageBuilder.Skins;
 using CardMasterSkin.Skins;
 using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.IO;
 using System.Linq;
+
 namespace CardMasterImageBuilder
 {
     class BackSideFactory : SkinFactory

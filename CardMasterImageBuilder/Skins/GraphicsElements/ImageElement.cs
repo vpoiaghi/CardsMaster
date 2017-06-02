@@ -2,8 +2,9 @@
 using CardMasterSkin.Skins;
 using System;
 using System.Drawing.Drawing2D;
+using CardMasterImageBuilder.Skins;
 
-namespace CardMasterSkin.GraphicsElements
+namespace CardMasterImageBuilder.GraphicsElements
 {
     public class ImageElement : GraphicElement
     {

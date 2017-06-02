@@ -53,17 +53,43 @@
     <Compile Include="Builders\SERectangleBuilder.cs" />
     <Compile Include="Builders\SEImageBuilder.cs" />
     <Compile Include="Builders\SERoundedRectangleBuilder.cs" />
+    <Compile Include="Converters\PowersListConverter.cs" />
     <Compile Include="SkinFactories\BackSideSkinFactory.cs" />
     <Compile Include="Drawer.cs" />
     <Compile Include="DrawingQuality.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SkinFactories\FrontSideSkinFactory.cs" />
     <Compile Include="SkinFactories\SkinFactory.cs" />
+    <Compile Include="Skins\GraphicsElements\GraphicElement.cs" />
+    <Compile Include="Skins\GraphicsElements\ImageElement.cs" />
+    <Compile Include="Skins\GraphicsElements\PathElement.cs" />
+    <Compile Include="Skins\SkinElements\SECircle.cs" />
+    <Compile Include="Skins\SkinElements\SECurvedRectangle.cs" />
+    <Compile Include="Skins\SkinElements\SEImage.cs" />
+    <Compile Include="Skins\SkinElements\SERectangle.cs" />
+    <Compile Include="Skins\SkinElements\SERoundedRectangle.cs" />
+    <Compile Include="Skins\SkinElements\SESquare.cs" />
+    <Compile Include="Skins\SkinElements\SETextArea.cs" />
+    <Compile Include="Skins\SkinElements\TextFormat\AttributeParser.cs" />
+    <Compile Include="Skins\SkinElements\TextFormat\FormattedText.cs" />
+    <Compile Include="Skins\SkinElements\TextFormat\TextElement.cs" />
+    <Compile Include="Skins\SkinElements\TextFormat\TextFormatter.cs" />
+    <Compile Include="Skins\SkinElements\TextFormat\TextRow.cs" />
+    <Compile Include="Skins\SkinElements\TextFormat\TextSection.cs" />
+    <Compile Include="Skins\Skin.cs" />
+    <Compile Include="Skins\SkinElement.cs" />
+    <Compile Include="Skins\SkinElementBorder.cs" />
+    <Compile Include="Skins\SkinElements.cs" />
+    <Compile Include="Skins\SkinElementShadow.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CardMasterCard\CardMasterCard.csproj">
       <Project>{1ba2630b-04ab-4910-8792-04e48f2319db}</Project>
       <Name>CardMasterCard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CardMasterCommon\CardMasterCommon.csproj">
+      <Project>{38cdb275-ff7f-48a8-8cab-6c582e2540aa}</Project>
+      <Name>CardMasterCommon</Name>
     </ProjectReference>
     <ProjectReference Include="..\CardMasterSkin\CardMasterSkin.csproj">
       <Project>{8e132eef-1e9c-4b96-8bf7-a513ad1e4ec7}</Project>

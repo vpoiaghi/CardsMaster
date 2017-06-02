@@ -1,10 +1,10 @@
 ﻿using CardMasterCard.Card;
-using CardMasterSkin.GraphicsElements;
-using CardMasterSkin.Skins;
+using CardMasterImageBuilder.GraphicsElements;
+using CardMasterImageBuilder.Skins;
 using System.Collections.Generic;
 using System.Drawing.Drawing2D;
 
-namespace CardMasterSkin.Elements
+namespace CardMasterImageBuilder.SkinElements
 {
     public class SERoundedRectangle : SkinElement
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Drawing;
 
-namespace CardMasterSkin.Elements.TextFormat
+namespace CardMasterImageBuilder.Elements.TextFormat
 {
     class TextRow
     {

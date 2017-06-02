@@ -4,7 +4,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 
-namespace CardMasterSkin.Elements.TextFormat
+namespace CardMasterImageBuilder.Elements.TextFormat
 {
     class TextSection
     {

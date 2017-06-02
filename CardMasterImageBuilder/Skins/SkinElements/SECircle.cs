@@ -1,15 +1,17 @@
 ﻿using CardMasterCard.Card;
-using CardMasterSkin.GraphicsElements;
-using CardMasterSkin.Skins;
+using CardMasterImageBuilder.GraphicsElements;
+using CardMasterImageBuilder.Skins;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Drawing.Drawing2D;
 
-namespace CardMasterSkin.Elements
+namespace CardMasterImageBuilder.SkinElements
 {
-    public class SERectangle : SkinElement
+    public class SECircle : SkinElement
     {
-        public SERectangle(Skin skin, int x, int y, int width, int height) : base(skin, x, y, width, height)
+        public SECircle(Skin skin, int x, int y, int radius) : base(skin, x, y, radius * 2, radius * 2)
+        { }
+
+        public SECircle(Skin skin, int x, int y, int width, int height) : base(skin, x, y, width, height)
         { }
 
         protected override List<GraphicElement> GetGraphicElements(Card card)
@@ -17,15 +19,13 @@ namespace CardMasterSkin.Elements
             var graphicElementsList = new List<GraphicElement>();
             var path = new GraphicsPath();
 
-            path.AddRectangle(new Rectangle(this.X, this.Y, this.Width, this.Height));
+            path.AddEllipse(X, Y, Width, Height);
 
             graphicElementsList.Add(new PathElement(path, GetBackground()));
-
+            
             path = null;
 
             return graphicElementsList;
-
         }
-
     }
 }

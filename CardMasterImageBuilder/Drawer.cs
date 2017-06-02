@@ -1,6 +1,6 @@
 ﻿using CardMasterCard.Card;
 using CardMasterImageBuilder.SkinFactories;
-using CardMasterSkin.Skins;
+using CardMasterImageBuilder.Skins;
 using System;
 using System.Drawing;
 using System.IO;

@@ -1,8 +1,7 @@
 ﻿using CardMasterImageBuilder.Converters;
-using CardMasterSkin.Elements;
+using CardMasterImageBuilder.Skins;
 using CardMasterSkin.Skins;
 using System;
-using System.Drawing;
 using System.Linq;
 
 namespace CardMasterImageBuilder.SkinFactories

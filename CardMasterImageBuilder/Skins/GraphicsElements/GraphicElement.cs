@@ -1,7 +1,8 @@
-﻿using CardMasterSkin.Skins;
+﻿using CardMasterImageBuilder.Skins;
+using CardMasterSkin.Skins;
 using System.Drawing;
 
-namespace CardMasterSkin.GraphicsElements
+namespace CardMasterImageBuilder.GraphicsElements
 {
     public abstract class GraphicElement
     {

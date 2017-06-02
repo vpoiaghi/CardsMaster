@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using CardMasterCard.Card;
+using CardMasterImageBuilder.Converters;
+using System;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using CardMasterCard.Card;
 using System.Text.RegularExpressions;
-using System.Diagnostics;
-using CardMasterSkin.Converters;
 
-namespace CardMasterSkin.Elements.TextFormat
+namespace CardMasterImageBuilder.Elements.TextFormat
 {
     class AttributeParser
     {

@@ -1,13 +1,12 @@
 ﻿using CardMasterCard.Card;
-using CardMasterSkin.GraphicsElements;
+using CardMasterImageBuilder.GraphicsElements;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
 
-namespace CardMasterSkin.Skins
+namespace CardMasterImageBuilder.Skins
 {
     public abstract class SkinElement
     {

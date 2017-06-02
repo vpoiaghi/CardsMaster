@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace CardMasterSkin.Skins
+namespace CardMasterImageBuilder.Skins
 {
     public class SkinElementBorder
     {

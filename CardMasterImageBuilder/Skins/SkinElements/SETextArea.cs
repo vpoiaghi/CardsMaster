@@ -1,14 +1,13 @@
 ﻿using CardMasterCard.Card;
-using CardMasterSkin.Elements.TextFormat;
-using CardMasterSkin.GraphicsElements;
-using CardMasterSkin.Skins;
-using System;
+using CardMasterImageBuilder.Elements.TextFormat;
+using CardMasterImageBuilder.GraphicsElements;
+using CardMasterImageBuilder.Skins;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
 
-namespace CardMasterSkin.Elements
+namespace CardMasterImageBuilder.SkinElements
 {
     public enum HorizontalAlignment
     {
