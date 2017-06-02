@@ -4,18 +4,18 @@ using CardMasterImageBuilder.SkinElements;
 using CardMasterImageBuilder.Skins;
 using CardMasterSkin.Skins;
 
-namespace CardMasterImageBuilder.Converters
+namespace CardMasterImageBuilder.Builders
 {
     public class SERectangleBuilder : AbstractBuilder
     {
-        private SkinsProject _skinsProject;
+        private JsonSkinsProject _skinsProject;
         private Card _card;
-        public SERectangleBuilder(SkinsProject skinsProject, Card card)
+        public SERectangleBuilder(JsonSkinsProject skinsProject, Card card)
         {
             _skinsProject = skinsProject;
             _card = card;
         }
-        public SERectangle Build(Skin skin, JsonSkinItem item)
+        protected override SkinElement Initialize(Skin skin, JsonSkinItem item)
         {
             SERectangle skinElement = new SERectangle(skin, item.X, item.Y, item.Width, item.Height);
             if(item.Background == "DYNAMIC")

@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CardMasterSkin.Skins
 {
-   public class JsonSkinItem
+    public class JsonSkinItem
     {
         public String Type { get; set; }
         public int X { get; set; }
@@ -20,12 +16,15 @@ namespace CardMasterSkin.Skins
         public String Comment { get; set; }
         public int CurveSize { get; set; }
         public String BorderColor { get; set; }
+        public int BorderWidth { get; set; }
         public String FontName { get; set; }
         public int FontSize { get; set; }
         public String Style { get; set; }
         public String VerticalAlign { get; set; }
         public String HorizontalAlign { get; set; }
         public String VisibleConditionAttribute { get; set; }
+        public int shadowSize { get; set; }
+        public int shadowAngle { get; set; }
 
     }
 }

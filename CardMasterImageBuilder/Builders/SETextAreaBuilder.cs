@@ -5,18 +5,18 @@ using CardMasterImageBuilder.Skins;
 using CardMasterSkin.Skins;
 using System.Drawing;
 
-namespace CardMasterImageBuilder.Converters
+namespace CardMasterImageBuilder.Builders
 {
     public class SETextAreaBuilder : AbstractBuilder
     {
-        private SkinsProject _skinsProject;
+        private JsonSkinsProject _skinsProject;
         private Card _card;
-        public SETextAreaBuilder(SkinsProject skinsProject, Card card)
+        public SETextAreaBuilder(JsonSkinsProject skinsProject, Card card)
         {
             _skinsProject = skinsProject;
             _card = card;
         }
-        public SETextArea Build(Skin skin, JsonSkinItem item)
+        protected override SkinElement Initialize(Skin skin, JsonSkinItem item)
         {
             // Zone entête
             SETextArea skinElement = new SETextArea(skin, item.X, item.Y, item.Width, item.Height, "<Nom>");

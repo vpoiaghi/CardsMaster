@@ -4,20 +4,20 @@ using CardMasterImageBuilder.SkinElements;
 using CardMasterImageBuilder.Skins;
 using CardMasterSkin.Skins;
 
-namespace CardMasterImageBuilder.Converters
+namespace CardMasterImageBuilder.Builders
 {
     public class SEImageBuilder : AbstractBuilder
     {
-        private SkinsProject _skinsProject;
+        private JsonSkinsProject _skinsProject;
         private Card _card;
 
-        public SEImageBuilder(SkinsProject skinsProject, Card card)
+        public SEImageBuilder(JsonSkinsProject skinsProject, Card card)
         {
             _skinsProject = skinsProject;
             _card = card;
         }
 
-        public SEImage Build(Skin skin, JsonSkinItem item)
+        protected override SkinElement Initialize(Skin skin, JsonSkinItem item)
         {
             SEImage skinElement;
             if (item.Background == null)

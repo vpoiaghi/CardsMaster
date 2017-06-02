@@ -5,7 +5,7 @@ using System.IO;
 
 namespace CardMasterSkin.Skins
 {
-    public class SkinsProject
+    public class JsonSkinsProject
     {
         public Dictionary<String, String> MapLibelleColor { get; set; }
         public Dictionary<String, String> MapKindField { get; set; }
@@ -14,16 +14,16 @@ namespace CardMasterSkin.Skins
         public int BorderWidth { get; set; }
         public List<JsonSkin> Skins { get; set; }
 
-        public static SkinsProject LoadProject(FileInfo file)
+        public static JsonSkinsProject LoadProject(FileInfo file)
         {
-            SkinsProject skinsProject = null;
+            JsonSkinsProject skinsProject = null;
 
             if ((file != null) && (file.Exists))
             {
                 var sr = new StreamReader(file.FullName);
                 string js = sr.ReadToEnd();
 
-                skinsProject = JsonConvert.DeserializeObject<SkinsProject>(js);
+                skinsProject = JsonConvert.DeserializeObject<JsonSkinsProject>(js);
 
                 sr.Close();
                 sr.Dispose();

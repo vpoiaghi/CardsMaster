@@ -1,17 +1,28 @@
 ﻿using CardMasterCard.Card;
+using CardMasterImageBuilder.Skins;
 using CardMasterSkin.Skins;
 using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CardMasterImageBuilder.Builders
 {
-    public class AbstractBuilder
+    public abstract class AbstractBuilder
     {
-        protected String GetMatchingBackground(SkinsProject skinsProject,Card card)
+        protected abstract SkinElement Initialize(Skin skin, JsonSkinItem item);
+
+        public SkinElement Build(Skin skin, JsonSkinItem item)
+        {
+            SkinElement skinElement = Initialize(skin, item);
+
+            if ((item.shadowAngle != 0) && (item.shadowSize != 0))
+            {
+                skinElement.Shadow = new SkinElementShadow(item.shadowSize, item.shadowAngle);
+            }
+
+            return skinElement;
+        }
+
+        protected String GetMatchingBackground(JsonSkinsProject skinsProject,Card card)
         {
             String attributeName = skinsProject.MapKindField[card.Kind];
             String attributeValue = getAttributeValueAsString(card,attributeName);
@@ -27,7 +38,7 @@ namespace CardMasterImageBuilder.Builders
             return (String)card.GetType().GetProperty(attributeName).GetValue(card, null);
         }
 
-        protected Color GetMatchingRarityColor(SkinsProject skinsProject, Card card)
+        protected Color GetMatchingRarityColor(JsonSkinsProject skinsProject, Card card)
         {
             return ConvertColorFromString(skinsProject.MapRareteColor[card.Rank]);
         }
@@ -35,7 +46,7 @@ namespace CardMasterImageBuilder.Builders
         {
             return CustomColorConverter.Instance.ConvertFromString(color);
         }
-        protected Color GetMatchingBorderColor(SkinsProject skinsProject, Card card)
+        protected Color GetMatchingBorderColor(JsonSkinsProject skinsProject, Card card)
         {
             String attributeName = skinsProject.MapKindField[card.Kind];
             String attributeValue = getAttributeValueAsString(card,attributeName);

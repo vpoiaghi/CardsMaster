@@ -1,22 +1,23 @@
 ﻿using CardMasterCard.Card;
+using CardMasterImageBuilder.Builders;
 using CardMasterImageBuilder.SkinElements;
 using CardMasterImageBuilder.Skins;
 using CardMasterSkin.Skins;
 
-namespace CardMasterImageBuilder.Converters
+namespace CardMasterImageBuilder.Builders
 {
-    public class SERoundedRectangleBuilder
+    public class SERoundedRectangleBuilder : AbstractBuilder
     {
-        private SkinsProject _skinsProject;
+        private JsonSkinsProject _skinsProject;
         private Card _card;
 
-        public SERoundedRectangleBuilder(SkinsProject skinsProject, Card card)
+        public SERoundedRectangleBuilder(JsonSkinsProject skinsProject, Card card)
         {
             _skinsProject = skinsProject;
             _card = card;
         }
 
-        public SERoundedRectangle Build(Skin skin, JsonSkinItem item)
+        protected override SkinElement Initialize(Skin skin, JsonSkinItem item)
         {
             SERoundedRectangle skinElement = new SERoundedRectangle(skin, item.X, item.Y, item.Width, item.Height, item.Radius);
             skinElement.SetBackground(item.BackgroundColor);

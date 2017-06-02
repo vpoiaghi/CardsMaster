@@ -13,7 +13,7 @@ namespace CardMasterImageBuilder
 
         protected ColorConverter colorConverter = new ColorConverter();
 
-        protected SkinsProject skinsProject = null;
+        protected JsonSkinsProject skinsProject = null;
         protected DirectoryInfo resourcesDirectory = null;
         protected Card card = null;
         protected int width = 0;
@@ -31,7 +31,7 @@ namespace CardMasterImageBuilder
             this.height = 1038;
             // --> 6.3 x 8.79 cm
 
-            this.skinsProject = SkinsProject.LoadProject(skinsFile);
+            this.skinsProject = JsonSkinsProject.LoadProject(skinsFile);
             this.card = card;
 
             if (skinsProject != null)
