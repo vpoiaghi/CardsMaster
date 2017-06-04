@@ -31,6 +31,9 @@ namespace CardMasterManager
         private FileInfo cardsFile;
         private Card previousCard;
 
+        private DateTime d1;
+        private DateTime d2;
+
         public DrawingQuality DQuality { get; set; } = new DrawingQuality();
 
         public MainWindow()
@@ -193,6 +196,19 @@ namespace CardMasterManager
         private void ExportProgressChanged(object sender, ProgressChangedArg args)
         {
             debug.Text = args.Message;
+
+            if (args.Index == 1)
+            {
+                d1 = DateTime.Now;
+            }
+
+            if (args.State == ProgressState.ExportEnded)
+            {
+                d2 = DateTime.Now;
+
+                MessageBox.Show((d2.Subtract(d1)).TotalSeconds.ToString());
+            }
+
         }
 
         private void LoadCards(List<Card> cards)

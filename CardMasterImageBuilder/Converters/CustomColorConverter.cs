@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace CardMasterImageBuilder.Builders
+namespace CardMasterImageBuilder.Converters
 {
     public class CustomColorConverter
     {

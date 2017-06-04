@@ -1,4 +1,5 @@
 ﻿using CardMasterCard.Card;
+using CardMasterImageBuilder.Converters;
 using CardMasterImageBuilder.Skins;
 using CardMasterSkin.Skins;
 using System;

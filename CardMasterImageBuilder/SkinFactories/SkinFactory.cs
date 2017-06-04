@@ -16,6 +16,7 @@ namespace CardMasterImageBuilder
         protected ColorConverter colorConverter = new ColorConverter();
 
         protected JsonSkinsProject skinsProject = null;
+
         protected DirectoryInfo resourcesDirectory = null;
         protected Card card = null;
 
@@ -23,7 +24,8 @@ namespace CardMasterImageBuilder
         {
             Skin skin = null;
 
-            this.skinsProject = JsonSkinsProject.LoadProject(skinsFile);
+            skinsProject = JsonSkinsProject.LoadProject(skinsFile);
+
             this.card = card;
 
             if (skinsProject != null)

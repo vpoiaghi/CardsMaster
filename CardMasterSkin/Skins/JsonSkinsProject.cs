@@ -7,6 +7,9 @@ namespace CardMasterSkin.Skins
 {
     public class JsonSkinsProject
     {
+        private static JsonSkinsProject _skinsProject = null;
+        private static FileInfo _skinsFile = null;
+
         public Dictionary<String, String> MapLibelleColor { get; set; }
         public Dictionary<String, String> MapKindField { get; set; }
         public Dictionary<String, String> MapLibelleBorderColor { get; set; }
@@ -16,21 +19,25 @@ namespace CardMasterSkin.Skins
 
         public static JsonSkinsProject LoadProject(FileInfo file)
         {
-            JsonSkinsProject skinsProject = null;
-
-            if ((file != null) && (file.Exists))
+            if ((_skinsFile == null) || (!_skinsFile.FullName.Equals(file.FullName)) || (_skinsFile.LastWriteTimeUtc != file.LastWriteTimeUtc))
             {
-                var sr = new StreamReader(file.FullName);
-                string js = sr.ReadToEnd();
+                _skinsFile = file;
+                _skinsProject = JsonSkinsProject.LoadProject(_skinsFile);
 
-                skinsProject = JsonConvert.DeserializeObject<JsonSkinsProject>(js);
+                if ((file != null) && (file.Exists))
+                {
+                    var sr = new StreamReader(file.FullName);
+                    string js = sr.ReadToEnd();
 
-                sr.Close();
-                sr.Dispose();
+                    _skinsProject = JsonConvert.DeserializeObject<JsonSkinsProject>(js);
+
+                    sr.Close();
+                    sr.Dispose();
+                }
+
             }
 
-            return skinsProject;
-
+            return _skinsProject;
         }
 
         public void Save(FileInfo file)

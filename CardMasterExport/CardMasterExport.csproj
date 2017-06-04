@@ -30,6 +30,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo SkinEditor.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -56,7 +59,9 @@
     <Compile Include="File export\PngExport.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Logo SkinEditor.ico" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CardMasterCard\CardMasterCard.csproj">
       <Project>{1ba2630b-04ab-4910-8792-04e48f2319db}</Project>
