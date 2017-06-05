@@ -61,7 +61,7 @@ namespace CardMasterImageBuilder.SkinElements
                 StringFormat textFormat = StringFormat.GenericDefault;
 
                 TextFormatter formatter = new TextFormatter(fullText);
-                FormattedText formattedText = formatter.format(this.graphics, GetSymbolsDirectory(), this.TextAlign, this.TextVerticalAlign, this.TextFont, textFormat, this.Width, this.Height, this.WordSpaceOffsetX, this.RowSpaceOffsetY);
+                FormattedText formattedText = formatter.format(this.graphics, GetResourcessDirectory(), this.TextAlign, this.TextVerticalAlign, this.TextFont, textFormat, this.Width, this.Height, this.WordSpaceOffsetX, this.RowSpaceOffsetY);
                 
                 graphicElementsList = GetGraphicElementsList(formattedText, this.TextFont, textEmFontSize, textFormat);
 
@@ -75,19 +75,6 @@ namespace CardMasterImageBuilder.SkinElements
             }
 
             return graphicElementsList;
-        }
-
-        private DirectoryInfo GetSymbolsDirectory()
-        {
-            DirectoryInfo symbolsDirectory = this.skin.ResourcesDirectory;
-            bool symbolsDirExists = (symbolsDirectory != null) && (symbolsDirectory.Exists);
-
-            if (!symbolsDirExists)
-            {
-                throw new DirectoryNotFoundException();
-            }
-
-            return symbolsDirectory;
         }
 
         private List<GraphicElement> GetGraphicElementsList(FormattedText formattedText, Font textFont, float textEmFontSize, StringFormat textFormat)

@@ -18,9 +18,9 @@ namespace CardMasterImageBuilder.Builders
         }
         protected override SkinElement Initialize(Skin skin, JsonSkinItem item)
         {
-            // Zone entête
             SETextArea skinElement = new SETextArea(skin, item.X, item.Y, item.Width, item.Height, "<Nom>");
-            if(item.Style == "Bold")
+            //SETextArea2 skinElement = new SETextArea2(skin, item.X, item.Y, item.Width, item.Height, "<Nom>");
+            if (item.Style == "Bold")
             {
                 skinElement.TextFont = new Font(item.FontName, item.FontSize.Value, FontStyle.Bold);
             }else if (item.Style == "Bold,Italic" || item.Style =="Italic,Bold")
@@ -44,8 +44,6 @@ namespace CardMasterImageBuilder.Builders
             {
                 skinElement.Visible = IsAttributeNonEmpty(_card, item.VisibleConditionAttribute);
             }
-
-            skin.Elements.Add(skinElement);
 
             return skinElement;
         }

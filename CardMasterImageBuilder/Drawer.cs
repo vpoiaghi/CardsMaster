@@ -51,7 +51,7 @@ namespace CardMasterImageBuilder
 
                 foreach (SkinElement e in skin.Elements)
                 {
-                    e.Draw(g, this.card);
+                    e.Draw(this.g, this.card);
                 }
 
                 g.Dispose();

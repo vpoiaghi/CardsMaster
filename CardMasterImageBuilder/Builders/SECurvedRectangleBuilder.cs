@@ -36,8 +36,6 @@ namespace CardMasterImageBuilder.Builders
             {
                 skinElement.Border = new SkinElementBorder(ConvertColorFromString(item.BorderColor), _skinsProject.BorderWidth.Value);
             }
-           
-            skin.Elements.Add(skinElement);
 
             return skinElement;
         }

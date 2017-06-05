@@ -18,10 +18,6 @@ namespace CardMasterImageBuilder.Elements.TextFormat
         public FormattedText format(Graphics g, DirectoryInfo SymbolsDirectory, HorizontalAlignment HAlignment, VerticalAlignment VAlignment, Font TextFont, StringFormat TextFormat, 
             int MaxWidth, int MaxHeight, int wordSpaceOffsetX, int rowSpaceOffsetY)
         {
-            if (!SymbolsDirectory.Exists)
-            {
-                throw new DirectoryNotFoundException();
-            }
             if (TextFont == null)
             {
                 throw new ArgumentNullException("FontText");

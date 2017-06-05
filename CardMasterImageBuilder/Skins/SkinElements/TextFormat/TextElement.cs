@@ -31,6 +31,7 @@ namespace CardMasterImageBuilder.Elements.TextFormat
             {
                 txt = txt.Substring(2, txt.Length - 4);
                 this.Text = txt;
+
                 searchPattern = txt + ".*";
 
                 FileInfo[] files = SymbolsDirectory.GetFiles(searchPattern, SearchOption.AllDirectories);

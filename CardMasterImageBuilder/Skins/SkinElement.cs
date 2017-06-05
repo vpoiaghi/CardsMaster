@@ -28,8 +28,8 @@ namespace CardMasterImageBuilder.Skins
         protected Skin skin = null;
         private ColorConverter colorConverter = new ColorConverter();
 
-
         protected Graphics graphics = null;
+        public Graphics Graphic { get { return this.graphics; } }
 
         protected abstract List<GraphicElement> GetGraphicElements(Card card);
 
@@ -165,6 +165,49 @@ namespace CardMasterImageBuilder.Skins
             }
 
             return bkg;
+        }
+
+        public DirectoryInfo GetResourcessDirectory()
+        {
+            DirectoryInfo resourcesDirectory = this.skin.ResourcesDirectory;
+
+            if (!((resourcesDirectory != null) && (resourcesDirectory.Exists)))
+            {
+                throw new DirectoryNotFoundException();
+            }
+
+            return resourcesDirectory;
+        }
+
+        public FileInfo GetResourceFile(string fileName)
+        {
+            FileInfo file = null;
+            string searchPattern = fileName + ".*";
+
+            FileInfo[] files = GetResourcessDirectory().GetFiles(searchPattern, SearchOption.AllDirectories);
+
+            if (files.Length > 0)
+            {
+                file = files[0];
+            }
+
+            files = null;
+
+            return file;
+        }
+
+        public Image GetResourceImage(string fileName)
+        {
+            Image img = null;
+
+            FileInfo file = GetResourceFile(fileName);
+
+            if (file != null && file.Exists)
+            {
+                img = Bitmap.FromFile(file.FullName);
+            }
+
+            return img;
         }
 
     }
