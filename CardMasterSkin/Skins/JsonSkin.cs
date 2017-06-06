@@ -9,5 +9,7 @@ namespace CardMasterSkin.Skins
         public int Height { get; set; }
         public int Width { get; set; }
         public List<JsonSkinItem> Items { get; set; }
+        public int? PowerIconWidth;
+        public int? PowerIconHeight;
     }
 }

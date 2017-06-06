@@ -15,7 +15,7 @@ namespace CardMasterImageBuilder.Builders
             _skinsProject = skinsProject;
             _card = card;
         }
-        protected override SkinElement Initialize(Skin skin, JsonSkinItem item)
+        protected override SkinElement Initialize(Skin skin, JsonSkin jsonSkin, JsonSkinItem item)
         {
             SERectangle skinElement = new SERectangle(skin, item.X, item.Y, item.Width, item.Height);
             if(item.Background == "DYNAMIC")

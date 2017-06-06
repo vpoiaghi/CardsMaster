@@ -88,6 +88,8 @@ En particulier la partie exportation, où y aurait désormait un seul item qui o
   * [DONE] Ajouter un viewer pour le dos sous le viewer de face du Manager
 
 * Datagrid
+  * Ajouter la possibilité de masquer/afficher des colonnes
+  * Ajouter la possibilité de figer une ou 2 colonnes (à minima le nom)
   * Rendre triable toutes les colonnes, selon leur valeur visible (je pense en particulier au colonnes liées à des Enum)
   * Est-il intéressant de trier par la colonne pouvoirs ? tri par n'importe quelle colonne*
   * Pouvoir faire des recherches (soit dans une colonne spécifique soit via un champs libre auquel cas c'est une recherche "Full Text" : recherche dans tous les champs -> recherche générique par réflection)

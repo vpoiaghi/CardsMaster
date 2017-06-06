@@ -15,7 +15,7 @@ namespace CardMasterImageBuilder.Builders
             _skinsProject = skinsProject;
             _card = card;
         }
-        protected override SkinElement Initialize(Skin skin, JsonSkinItem item)
+        protected override SkinElement Initialize(Skin skin, JsonSkin jsonSkin, JsonSkinItem item)
         {
             // Zone entête
             SECurvedRectangle skinElement = new SECurvedRectangle(skin, item.X, item.Y, item.Width, item.Height, item.CurveSize.Value);

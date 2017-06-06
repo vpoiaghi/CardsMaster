@@ -310,5 +310,7 @@ namespace CardMasterManager
             FileInfo skinFile = new FileInfo(Path.Combine(this.cardsFile.Directory.FullName, this.cardsFile.Name.Replace(this.cardsFile.Extension, ".skin")));
             return skinFile.Exists ? skinFile : null;
         }
+
+       
     }
 }

@@ -61,19 +61,19 @@ namespace CardMasterImageBuilder
                 switch (item.Type)
                 {
                     case "SERoundedRectangle":
-                        skinElement = new SERoundedRectangleBuilder(skinsProject, card).Build(skin, item);
+                        skinElement = new SERoundedRectangleBuilder(skinsProject, card).Build(skin,jsonSkin, item);
                         break;
                     case "SEImage":
-                        skinElement = new SEImageBuilder(skinsProject, card).Build(skin, item);
+                        skinElement = new SEImageBuilder(skinsProject, card).Build(skin, jsonSkin, item);
                         break;
                     case "SERectangle":
-                        skinElement = new SERectangleBuilder(skinsProject, card).Build(skin, item);
+                        skinElement = new SERectangleBuilder(skinsProject, card).Build(skin, jsonSkin, item);
                         break;
                     case "SECurvedRectangle":
-                        skinElement = new SECurvedRectangleBuilder(skinsProject, card).Build(skin, item);
+                        skinElement = new SECurvedRectangleBuilder(skinsProject, card).Build(skin, jsonSkin, item);
                         break;
                     case "SETextArea":
-                        skinElement = new SETextAreaBuilder(skinsProject, card).Build(skin, item);
+                        skinElement = new SETextAreaBuilder(skinsProject, card).Build(skin, jsonSkin, item);
                         break;
                     default:
                         throw new Exception("Type #" + item.Type + " not found");

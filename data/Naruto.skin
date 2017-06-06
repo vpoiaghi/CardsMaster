@@ -75,6 +75,8 @@
 		"Name":"FrontSkin1",
 		"Height" : 1038,
 		"Width" : 744,
+		"PowerIconWidth" : 30,
+		"PowerIconHeight" : 30,
 		"Items" : [
 			{
 				"Comment": "Bordure",

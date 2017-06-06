@@ -42,12 +42,13 @@ namespace CardMasterImageBuilder.SkinElements
         public Color FontColor { get; set; } = Color.Black;
         public int WordSpaceOffsetX { get; set; } = 0;
         public int RowSpaceOffsetY { get; set; } = 0;
-        public Size LeftIconsSize { get; set; } = new Size(80, 80);
+        public Size LeftIconsSize { get; } = new Size(80, 80);
 
-        public SETextArea2(Skin skin, int x, int y, int width, int height, string text) : base(skin, x, y, width, height)
+        public SETextArea2(Skin skin, int x, int y, int width, int height, string text, int? powerIconHeight,int? powerIconWidth) : base(skin, x, y, width, height)
         {
             this.fullText = text;
             this.elements = new TElements(this);
+            this.LeftIconsSize = (powerIconHeight.HasValue && powerIconWidth.HasValue) ? new Size(powerIconHeight.Value, powerIconWidth.Value) : new Size(80, 80);
 
             SetBackground(Color.Transparent);
         }
