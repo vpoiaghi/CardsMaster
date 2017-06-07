@@ -140,15 +140,15 @@ namespace CardMasterImageBuilder.Elements.TextFormater
                 newY = newY + this.height;
             }
 
-            int tmpY = newY == null ? this.y : newY.Value;
-            int tmpHeight = newHeight == null ? this.height : newHeight.Value;
+            //int tmpY = newY == null ? this.y : newY.Value;
+            //int tmpHeight = newHeight == null ? this.height : newHeight.Value;
 
-            if ((tmpY + tmpHeight) > this.elements.TextArea.Height)
-            {
-                this.elements.TextArea.ReduceFontSize();
-            }
-            else
-            {
+            //if ((tmpY + tmpHeight) > this.elements.TextArea.Height)
+            //{
+            //    this.elements.TextArea.ReduceFontSize();
+            //}
+            //else
+            //{
                 if ((newX != null) && (this.x != newX.Value))
                 {
                     this.x = newX.Value;
@@ -177,7 +177,7 @@ namespace CardMasterImageBuilder.Elements.TextFormater
                 {
                     ApplyBoundsChangeToNextElement(globalFontChanged);
                 }
-            }
+            //}
         }
 
         private void ApplyBoundsChangeToNextElement(bool globalFontChanged)
@@ -202,39 +202,41 @@ namespace CardMasterImageBuilder.Elements.TextFormater
             return g;
         }
 
-        protected int GetMaxHeightOnRow()
+        protected int GetMaxBottomOnRow()
         {
-            int prevMax = GetPrevMaxHeightOnRow();
+            int prevMax = GetPrevMaxBottomOnRow();
             int nextMax = 0;
 
             if (!(this is TElementReturn))
             {
-                nextMax = GetNextMaxHeightOnRow();
+                nextMax = GetNextMaxBottomOnRow();
             }
             
 
             return Math.Max(prevMax, nextMax);
         }
         
-        public int GetPrevMaxHeightOnRow()
+        public int GetPrevMaxBottomOnRow()
         {
-            int max = this.height;
+            int max = this.Bottom;
 
-            if ((this.prevElement != null) && (! (this.prevElement is TElementReturn)) && (this.prevElement.Y == this.Y))
+            //if ((this.prevElement != null) && (! (this.prevElement is TElementReturn)) && (this.prevElement.Y == this.Y))
+            if ((this.prevElement != null) && (!(this.prevElement is TElementReturn)))
             {
-                max = Math.Max(this.prevElement.GetPrevMaxHeightOnRow(), this.height);
+                max = Math.Max(this.prevElement.GetPrevMaxBottomOnRow(), this.height);
             }
 
             return max;
         }
 
-        public int GetNextMaxHeightOnRow()
+        public int GetNextMaxBottomOnRow()
         {
-            int max = this.height;
+            int max = this.Bottom;
 
-            if ((this.nextElement != null) && (!(this.nextElement is TElementReturn)) && (this.nextElement.Y == this.Y))
+            //if ((this.nextElement != null) && (!(this.nextElement is TElementReturn)) && (this.nextElement.Y == this.Y))
+            if ((this.nextElement != null) && (!(this.nextElement is TElementReturn)))
             {
-                max = Math.Max(this.nextElement.GetPrevMaxHeightOnRow(), this.height);
+                max = Math.Max(this.nextElement.GetPrevMaxBottomOnRow(), this.height);
             }
 
             return max;

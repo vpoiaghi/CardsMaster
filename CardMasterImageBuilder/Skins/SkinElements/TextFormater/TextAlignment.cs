@@ -7,15 +7,8 @@ namespace CardMasterImageBuilder.Elements.TextFormater
 {
     abstract class TextAlignment
     {
-        public static void Align(TElements elements, HorizontalAlignment hAlignment, VerticalAlignment vAlignment)
+        public static int GetTextHeight(TElements elements)
         {
-            int areaWidth = elements.TextArea.Width;
-            int areaHeight = elements.TextArea.Height;
-
-            int y = 0;
-            int rowWidth = 0;
-            List<int> rowWidthList = new List<int>();
-            int rowIndex = 0;
             int textHeight = 0;
 
             List<TElement>.Enumerator elementsEnum = elements.GetEnumerator();
@@ -25,41 +18,73 @@ namespace CardMasterImageBuilder.Elements.TextFormater
             {
                 element = elementsEnum.Current;
 
-                if (! (element is TElementReturn))
+                if (!(element is TElementReturn))
                 {
                     if (element.Bottom > textHeight)
                     {
                         textHeight = element.Bottom;
                     }
+                }
+            }
 
+            return textHeight;
+        }
+
+        public static List<int> GetTextLinesWidth(TElements elements)
+        {
+            List<int> lineWidthList = new List<int>();
+
+            int y = 0;
+            int lineWidth = 0;
+
+            List<TElement>.Enumerator elementsEnum = elements.GetEnumerator();
+            TElement element = null;
+
+            while (elementsEnum.MoveNext())
+            {
+                element = elementsEnum.Current;
+
+                if (!(element is TElementReturn))
+                {
                     if (y == element.Y)
                     {
-                        rowWidth += element.Width;
+                        lineWidth += element.Width;
                     }
                     else
                     {
                         y = element.Y;
-                        rowWidthList.Add(rowWidth);
-                        rowWidth = element.Width;
+                        lineWidthList.Add(lineWidth);
+                        lineWidth = element.Width;
                     }
                 }
                 else
                 {
                     y = element.Y;
-                    rowWidthList.Add(rowWidth);
-                    rowWidth = 0;
+                    lineWidthList.Add(lineWidth);
+                    lineWidth = 0;
                 }
             }
-            rowWidthList.Add(rowWidth);
 
-            
+            lineWidthList.Add(lineWidth);
 
-            elementsEnum = elements.GetEnumerator();
-            rowIndex = 0;
-            y = 0;
+            return lineWidthList;
+        }
+
+        public static void Align(TElements elements, HorizontalAlignment hAlignment, VerticalAlignment vAlignment)
+        {
+            int areaWidth = elements.TextArea.Width;
+            int areaHeight = elements.TextArea.Height;
+            int lineIndex = 0;
+            int y = 0;
+
+            int textHeight = GetTextHeight(elements);
+            List<int> lineWidthList = GetTextLinesWidth(elements);
+
+            List<TElement>.Enumerator elementsEnum = elements.GetEnumerator();
+            TElement element = null;
 
             int offsetY = GetVerticalOffset(areaHeight, textHeight, vAlignment);
-            int offsetX = GetHorizontalOffset(areaWidth, rowWidthList[rowIndex++], hAlignment);
+            int offsetX = GetHorizontalOffset(areaWidth, lineWidthList[lineIndex++], hAlignment);
 
             while (elementsEnum.MoveNext())
             {
@@ -68,7 +93,7 @@ namespace CardMasterImageBuilder.Elements.TextFormater
                 if (y != element.Y)
                 {
                     y = element.Y;
-                    offsetX = GetHorizontalOffset(areaWidth, rowWidthList[rowIndex++], hAlignment);
+                    offsetX = GetHorizontalOffset(areaWidth, lineWidthList[lineIndex++], hAlignment);
                 }
 
                 element.Y += offsetY;

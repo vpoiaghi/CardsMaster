@@ -11,7 +11,7 @@ namespace CardMasterImageBuilder.Elements.TextFormater
 
         public override void PrevBoundsChanged(int prevX, int prevY, int prevWidth, int prevHeight, bool globalFontChanged)
         {
-            ChangeBound(0, prevY + GetMaxHeightOnRow(), null, null, globalFontChanged);
+            ChangeBound(0, GetMaxBottomOnRow(), null, null, globalFontChanged);
         }
 
         protected override Size GetSize(Graphics g)

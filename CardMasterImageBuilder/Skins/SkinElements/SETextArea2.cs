@@ -120,16 +120,19 @@ namespace CardMasterImageBuilder.SkinElements
             this.graphics.DrawRectangle(Pens.Black, r);
         }
 
-        public void ReduceFontSize()
+        public bool ReduceFontSize()
         {
+            bool canReduceFont = false;
             float fontSize = TextFont.Size - 0.5f;
 
             if (fontSize > 5)
             {
-                TextFont = new Font(TextFont.FontFamily, fontSize, TextFont.Style);
+                this.TextFont = new Font(TextFont.FontFamily, fontSize, TextFont.Style);
                 this.elements.ChangeGlobalFont();
+                canReduceFont = true;
             }
 
+            return canReduceFont;
         }
     }
 }

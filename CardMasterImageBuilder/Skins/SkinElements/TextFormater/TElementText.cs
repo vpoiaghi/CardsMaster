@@ -58,18 +58,29 @@ namespace CardMasterImageBuilder.Elements.TextFormater
 
         protected override Size GetSize(Graphics g)
         {
+            Size s;
+
             if (g != null)
             {
                 Font textFont = GetFont(g);
                 int maxWidth = this.Elements.TextArea.Width;
                 StringFormat textFormat = this.Elements.TextArea.TextFormat;
 
-                return g.MeasureString(this.Word, textFont, maxWidth, textFormat).ToSize();
+                if (string.IsNullOrEmpty(this.Word))
+                {
+                    s = new Size(0, (int) g.MeasureString("X", textFont, maxWidth, textFormat).Height);
+                }
+                else
+                {
+                    s = g.MeasureString(this.Word, textFont, maxWidth, textFormat).ToSize();
+                }
             }
             else
             {
-                return Size.Empty;
+                s = Size.Empty;
             }
+
+            return s;
         }
 
         public override GraphicElement GetGraphicElement(Graphics g)

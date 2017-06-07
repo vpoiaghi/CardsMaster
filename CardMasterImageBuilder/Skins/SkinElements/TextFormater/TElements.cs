@@ -33,6 +33,31 @@ namespace CardMasterImageBuilder.Elements.TextFormater
 
         public void Add(string word)
         {
+            AddItem(word);
+        }
+
+        public void AddRange(List<string> words)
+        {
+            foreach (string word in words)
+            {
+                AddItem(word);
+            }
+
+            bool canReduceFont = true;
+            while ((TextAlignment.GetTextHeight(this) > this.TextArea.Height) && (canReduceFont))
+            {
+                canReduceFont = this.TextArea.ReduceFontSize();
+            }
+
+        }
+
+        public void ChangeGlobalFont()
+        {
+            this.firstElement.GlobalFont = this.TextArea.TextFont;
+        }
+
+        private void AddItem(string word)
+        {
             if (word.StartsWith("<") && word.EndsWith(">"))
             {
                 AddMarker(word);
@@ -41,19 +66,6 @@ namespace CardMasterImageBuilder.Elements.TextFormater
             {
                 AddWord(word);
             }
-        }
-
-        public void AddRange(List<string> words)
-        {
-            foreach (string word in words)
-            {
-                Add(word);
-            }
-        }
-
-        public void ChangeGlobalFont()
-        {
-            this.firstElement.GlobalFont = this.TextArea.TextFont;
         }
 
         private void AddWord(string word)
