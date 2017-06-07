@@ -1603,7 +1603,7 @@
     "Background" : null
   }, {
     "Powers" : [ {
-      "Description" : "<<Permanent>>  Katana de foudre : gagne +2 Atk contre la Terre."
+      "Description" : "<<Permanent>>  Katana de foudre : Gagne +2 Atk contre la Terre."
     } ],
     "Name" : "Omoï",
     "Attack" : "2",
@@ -1623,7 +1623,7 @@
     "Background" : null
   }, {
     "Powers" : [ {
-      "Description" : "<<Permanent>>  Katana de foudre : gagne +2 Atk contre la Terre."
+      "Description" : "<<Permanent>>  Katana de foudre : Gagne +2 Atk contre la Terre."
     } ],
     "Name" : "Karui",
     "Attack" : "2",
@@ -1643,10 +1643,9 @@
     "Background" : null
   }, {
     "Powers" : [ {
-      "Description" : "<<Permanent>>  Poison "
-    }, {
-      "Description" : "Détruit le ninja blessé par Torune à la fin du tour"
-    } ],
+      "Description" : "<<Permanent>>  Poison : Détruit le ninja blessé par Torune à la fin du tour"
+    }
+	],
     "Name" : "Torune Aburame",
     "Attack" : "2",
     "FrontSkinName" : "FrontSkin1",
@@ -2073,9 +2072,7 @@
     "Background" : null
   }, {
     "Powers" : [ {
-      "Description" : "<<Permanent>>  Armure de foudre : "
-    }, {
-      "Description" : "Insensible aux attaques de foudre"
+      "Description" : "<<Permanent>>  Armure de foudre : Insensible aux attaques de foudre"
     } ],
     "Name" : "Sandaime 3° Raikage",
     "Attack" : "5",

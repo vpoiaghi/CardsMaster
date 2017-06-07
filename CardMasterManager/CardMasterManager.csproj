@@ -93,6 +93,7 @@
     <Compile Include="Converters\DrawingImageToImageSourceConverter.cs" />
     <Compile Include="Binders\EnumBindingSourceExtension.cs" />
     <Compile Include="Converters\EnumConverter.cs" />
+    <Compile Include="Utils\CardMatcher.cs" />
     <Compile Include="Utils\DirectoryUtils.cs" />
     <Page Include="Components\DGridTextColumn.xaml">
       <SubType>Designer</SubType>

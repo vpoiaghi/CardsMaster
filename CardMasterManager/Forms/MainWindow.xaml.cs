@@ -16,6 +16,8 @@ using System.Windows.Controls;
 using System.Windows.Media;
 using CardMasterExport.PrinterExport;
 using CardMasterManager.Utils;
+using System.Windows.Data;
+using System.ComponentModel;
 
 namespace CardMasterManager
 {
@@ -311,6 +313,29 @@ namespace CardMasterManager
             return skinFile.Exists ? skinFile : null;
         }
 
-       
+        private void ClearSearch(object sender, RoutedEventArgs e)
+        {
+            searchText.Text = "";
+        }
+
+        private void filterDataGrid(object sender, TextChangedEventArgs e)
+        {
+                String filterText = ((TextBox)sender).Text;
+            if (filterText.Equals(null) || filterText.Equals(""))
+            {
+                cardGrid.Items.Filter = null;
+            }
+            else
+            {
+                Dispatcher.BeginInvoke(new Action(delegate ()
+                {
+                    cardGrid.Items.Filter = (c) =>
+                    {
+                        return CardMatcher.Matches((Card)c, filterText);
+                    };
+                }));
+            } 
+          
+        }
     }
 }

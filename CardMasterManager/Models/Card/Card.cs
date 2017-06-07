@@ -76,6 +76,7 @@ namespace CardMasterManager
                 toReturn = CardKind.Lieu;
             return toReturn;
         }
+              
 
         public static CardMasterCard.Card.Card ConvertToMasterCard(Card card)
         {
