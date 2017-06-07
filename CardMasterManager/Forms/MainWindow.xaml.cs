@@ -35,6 +35,7 @@ namespace CardMasterManager
 
         private DateTime d1;
         private DateTime d2;
+        private bool isSearching = false;
 
         public DrawingQuality DQuality { get; set; } = new DrawingQuality();
 
@@ -320,21 +321,32 @@ namespace CardMasterManager
 
         private void filterDataGrid(object sender, TextChangedEventArgs e)
         {
+            if (!isSearching)
+            {
                 String filterText = ((TextBox)sender).Text;
-            if (filterText.Equals(null) || filterText.Equals(""))
-            {
-                cardGrid.Items.Filter = null;
-            }
-            else
-            {
-                Dispatcher.BeginInvoke(new Action(delegate ()
+                if (filterText.Equals(null) || filterText.Equals(""))
                 {
-                    cardGrid.Items.Filter = (c) =>
+                    Dispatcher.BeginInvoke(new Action(delegate ()
                     {
-                        return CardMatcher.Matches((Card)c, filterText);
-                    };
-                }));
-            } 
+                        isSearching = true;
+                        cardGrid.Items.Filter = null;
+                        isSearching = false;
+                    }));
+                }
+                else
+                {
+                    Dispatcher.BeginInvoke(new Action(delegate ()
+                    {
+                        isSearching = true;
+                        cardGrid.Items.Filter = (c) =>
+                        {
+                            return CardMatcher.Matches((Card)c, filterText);
+                        };
+                        isSearching = false;
+                    }));
+                    
+                }
+            }
           
         }
     }

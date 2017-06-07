@@ -60,8 +60,8 @@
                         </Button>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
-                        <DataGrid Name="cardGrid" Margin="5" Width="1269" Height="847" SelectionMode="Single" AutoGenerateColumns="False" AlternatingRowBackground="Azure" AlternationCount="2" IsReadOnly="False" ItemsSource="{Binding}"
-                        SelectionChanged="cardGrid_SelectionChanged" FrozenColumnCount ="1">
+                        <DataGrid Name="cardGrid" Margin="5" Width="1269" Height="847" SelectionMode="Single" AutoGenerateColumns="False" AlternatingRowBackground="Azure" AlternationCount="2" IsReadOnly="False" ItemsSource="{Binding a}"
+                        SelectionChanged="cardGrid_SelectionChanged" FrozenColumnCount ="1" EnableColumnVirtualization="True" EnableRowVirtualization="True">
                             <DataGrid.Columns>
 
                                 <!--
@@ -73,7 +73,7 @@
 
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                                            <TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
@@ -82,15 +82,15 @@
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
                                             <ComboBox IsEditable="True" 
-                                            Text="{Binding Kind, Converter={StaticResource EnumConverter}, UpdateSourceTrigger=PropertyChanged}" 
+                                            Text="{Binding Kind, Converter={StaticResource EnumConverter}, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" 
                                             BorderBrush="Transparent"
-                                            ItemsSource="{Binding Source={binders:EnumBindingSource {x:Type local:CardKind}}}"
+                                            ItemsSource="{Binding Source={binders:EnumBindingSource {x:Type local:CardKind}},IsAsync=True}"
                                             GotFocus="ComboBox_GotFocus"
                                             SelectionChanged="DataGrid_ComboCellChanged"
                                             >
                                                 <ComboBox.ItemTemplate>
                                                     <DataTemplate>
-                                                        <TextBlock Text="{Binding Converter={StaticResource EnumConverter}}"/>
+                                                        <TextBlock Text="{Binding Converter={StaticResource EnumConverter},IsAsync=True}"/>
                                                     </DataTemplate>
                                                 </ComboBox.ItemTemplate>
                                             </ComboBox>
@@ -101,7 +101,7 @@
                                 <DataGridTemplateColumn Header="Rareté/Grade" MinWidth="100" CanUserSort="True" SortMemberPath="Rank">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBox Text="{Binding Rank, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                                            <TextBox Text="{Binding Rank, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
@@ -109,7 +109,7 @@
                                 <DataGridTemplateColumn Header="Equipe" MinWidth="80" CanUserSort="True" SortMemberPath="Team">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBox Text="{Binding Team, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                                            <TextBox Text="{Binding Team, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
@@ -118,13 +118,13 @@
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
                                             <ComboBox IsEditable="True"  
-                                            Text="{Binding Nature, Converter={StaticResource EnumConverter}, UpdateSourceTrigger=PropertyChanged}" 
+                                            Text="{Binding Nature, Converter={StaticResource EnumConverter}, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" 
                                             BorderBrush="Transparent"
-                                            ItemsSource="{Binding Source={binders:EnumBindingSource {x:Type local:NatureCard}}}"
+                                            ItemsSource="{Binding Source={binders:EnumBindingSource {x:Type local:NatureCard}},IsAsync=True}"
                                             GotFocus="ComboBox_GotFocus">
                                                 <ComboBox.ItemTemplate>
                                                     <DataTemplate>
-                                                        <TextBlock Text="{Binding Converter={StaticResource EnumConverter}}"/>
+                                                        <TextBlock Text="{Binding Converter={StaticResource EnumConverter},IsAsync=True}"/>
                                                     </DataTemplate>
                                                 </ComboBox.ItemTemplate>
                                             </ComboBox>
@@ -135,7 +135,7 @@
                                 <DataGridTemplateColumn Header="Element" MinWidth="90" CanUserSort="True" SortMemberPath="Element">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBox Text="{Binding Element, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                                            <TextBox Text="{Binding Element, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
@@ -143,7 +143,7 @@
                                 <DataGridTemplateColumn Header="Cout" MinWidth="30" CanUserSort="True" SortMemberPath="Cost">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBox Text="{Binding Cost, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                                            <TextBox Text="{Binding Cost, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
@@ -151,7 +151,7 @@
                                 <DataGridTemplateColumn Header="Atk" MinWidth="30" CanUserSort="True" SortMemberPath="Attack">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBox Text="{Binding Attack, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                                            <TextBox Text="{Binding Attack, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
@@ -159,7 +159,7 @@
                                 <DataGridTemplateColumn Header="Def." MinWidth="30" CanUserSort="True" SortMemberPath="Defense">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBox Text="{Binding Defense, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                                            <TextBox Text="{Binding Defense, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
@@ -167,7 +167,7 @@
                                 <DataGridTemplateColumn Header="Pouvoirs" Width="Auto" MinWidth="200">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBox Text="{Binding Powers, Converter={StaticResource PowerListConverter}, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
+                                            <TextBox Text="{Binding Powers, Converter={StaticResource PowerListConverter}, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
@@ -175,7 +175,7 @@
                                 <DataGridTemplateColumn Header="Citation" MinWidth="150" CanUserSort="True" SortMemberPath="Citation">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBox Text="{Binding Citation, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent"/>
+                                            <TextBox Text="{Binding Citation, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
@@ -183,7 +183,7 @@
                                 <DataGridTemplateColumn Header="Nb" MinWidth="30" CanUserSort="True" SortMemberPath="Nb">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBox Text="{Binding Nb, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                                            <TextBox Text="{Binding Nb, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
@@ -191,7 +191,7 @@
                                 <DataGridTemplateColumn Header="Commentaires" MinWidth="100" CanUserSort="True" SortMemberPath="Comments">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBox Text="{Binding Comments, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                                            <TextBox Text="{Binding Comments, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
@@ -199,77 +199,77 @@
                                 <DataGridTemplateColumn Header="Image Arrière" MinWidth="100" CanUserSort="True" SortMemberPath="BackSide">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBox Text="{Binding BackSide, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                                            <TextBox Text="{Binding BackSide, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
                                 <DataGridTemplateColumn Header="Back Skin Name" MinWidth="100" CanUserSort="True" SortMemberPath="BackSkinName">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBox Text="{Binding BackSkinName, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                                            <TextBox Text="{Binding BackSkinName, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
                                 <DataGridTemplateColumn Header="Front Skin Name" MinWidth="100" CanUserSort="True" SortMemberPath="FrontSkinName">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBox Text="{Binding FrontSkinName, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                                            <TextBox Text="{Binding FrontSkinName, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
                                 <DataGridTemplateColumn Header="String Field 1" MinWidth="100" CanUserSort="True" SortMemberPath="StringField1">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBox Text="{Binding StringField1, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                                            <TextBox Text="{Binding StringField1, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
                                 <DataGridTemplateColumn Header="String Field 2" MinWidth="100" CanUserSort="True" SortMemberPath="StringField2">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBox Text="{Binding StringField2, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                                            <TextBox Text="{Binding StringField2, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
                                 <DataGridTemplateColumn Header="String Field 3" MinWidth="100" CanUserSort="True" SortMemberPath="StringField3">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBox Text="{Binding StringField3, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                                            <TextBox Text="{Binding StringField3, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
                                 <DataGridTemplateColumn Header="String Field 4" MinWidth="100" CanUserSort="True" SortMemberPath="StringField4">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBox Text="{Binding StringField4, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                                            <TextBox Text="{Binding StringField4, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
                                 <DataGridTemplateColumn Header="Int Field 1" MinWidth="100" CanUserSort="True" SortMemberPath="IntField1">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBox Text="{Binding IntField1, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                                            <TextBox Text="{Binding IntField1, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
                                 <DataGridTemplateColumn Header="Int Field 2" MinWidth="100" CanUserSort="True" SortMemberPath="IntField2">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBox Text="{Binding IntField2, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                                            <TextBox Text="{Binding IntField2, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
                                 <DataGridTemplateColumn Header="Int Field 3" MinWidth="100" CanUserSort="True" SortMemberPath="IntField3">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBox Text="{Binding IntField3, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                                            <TextBox Text="{Binding IntField3, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
                                 <DataGridTemplateColumn Header="Int Field 4" MinWidth="100" CanUserSort="True" SortMemberPath="IntField4">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBox Text="{Binding IntField4, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
+                                            <TextBox Text="{Binding IntField4, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
