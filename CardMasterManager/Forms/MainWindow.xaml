@@ -53,7 +53,7 @@
             </DockPanel>
 
             <DataGrid DockPanel.Dock="Right" Name="cardGrid" Margin="5" Width="1269" Height="847" SelectionMode="Single" AutoGenerateColumns="False" AlternatingRowBackground="Azure" AlternationCount="2" IsReadOnly="False" ItemsSource="{Binding}"
-                        SelectionChanged="cardGrid_SelectionChanged" >
+                        SelectionChanged="cardGrid_SelectionChanged" FrozenColumnCount ="1">
                 <DataGrid.Columns>
 
                     <!--

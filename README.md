@@ -13,9 +13,9 @@
 Actuellement il n'y a aucn système de contrat de service entre les projets, chaque projet voit tout ou presque des projets qu'il référencie.
 
 * Organisation
-  * Passer les images de dos dans Textures (voir autre suggestion ci-dessous)
+  * [DONE] Passer les images de dos dans Textures (voir autre suggestion ci-dessous)
 
-  * Autre suggestion : regrouper toutes les images et textures dans un même dossier racine avec une arborescence de dossiers du genre :
+  * [DONE] Autre suggestion : regrouper toutes les images et textures dans un même dossier racine avec une arborescence de dossiers du genre :
     * Textures
 	  * Dos : textures de dos des cartes
       * Elements : les images telles que Atl, défense, manna
@@ -42,17 +42,17 @@ Un seul type d'objet de paramétrage doit être envoyé au projet d'export et c'
 
 * Pouvoir gérer autant de champs custo que l'on veut avec un AnyJsonGetter et une map d'extrafields sur une Card
 
-* Mettre en place le fichier de Skin
+* [DONE] Mettre en place le fichier de Skin
 Skin de face + Skin de dos.
 Voir si plusieurs Skin de face sont nécessaires.
 
-* Association d'une carte avec un skin de face (?)
+* [DONE] Association d'une carte avec un skin de face (?)
 Si un projet peut définir plusieurs Skin (à confirmer), il sera nécessaire d'associer une carte à une des Skin.
 A préciser : je ne vois pas ce qu'est un skin de face
 --> Ben, le skin de la face de la carte... par opposition au skin du dos de la carte. :)
 
 ### Nettoyage
-* [DONE] [A VALIDER] Virer les boutons d’option de qualité de rendu que j’avais ajouté sous le viewer du Manager.
+* [DONE] Virer les boutons d’option de qualité de rendu que j’avais ajouté sous le viewer du Manager.
 
   
 ## Evolutions fonctionnelles
@@ -89,9 +89,9 @@ En particulier la partie exportation, où y aurait désormait un seul item qui o
 
 * Datagrid
   * Ajouter la possibilité de masquer/afficher des colonnes
-  * Ajouter la possibilité de figer une ou 2 colonnes (à minima le nom)
-  * Rendre triable toutes les colonnes, selon leur valeur visible (je pense en particulier au colonnes liées à des Enum)
-  * Est-il intéressant de trier par la colonne pouvoirs ? tri par n'importe quelle colonne*
+  * [DONE] Ajouter la possibilité de figer une ou 2 colonnes (à minima le nom)
+  * [A TESTER] Rendre triable toutes les colonnes, selon leur valeur visible (je pense en particulier au colonnes liées à des Enum)
+  * [A TESTER] Est-il intéressant de trier par la colonne pouvoirs ? tri par n'importe quelle colonne SAUF pouvoir
   * Pouvoir faire des recherches (soit dans une colonne spécifique soit via un champs libre auquel cas c'est une recherche "Full Text" : recherche dans tous les champs -> recherche générique par réflection)
 
 * Impression
