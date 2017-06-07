@@ -17,7 +17,7 @@ namespace CardMasterImageBuilder.Builders
             _card = card;
         }
 
-        protected override SkinElement Initialize(Skin skin, JsonSkin jsonSkin, JsonSkinItem item)
+        protected override SkinElement Initialize(Skin skin, JsonSkinItem item)
         {
             SEImage skinElement;
             if (item.Background == null)

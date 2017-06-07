@@ -75,8 +75,6 @@
 		"Name":"FrontSkin1",
 		"Height" : 1038,
 		"Width" : 744,
-		"PowerIconWidth" : 30,
-		"PowerIconHeight" : 30,
 		"Items" : [
 			{
 				"Comment": "Bordure",
@@ -206,6 +204,8 @@
 				"Y":655,
 				"Width": 604,
 				"Height" : 225,
+				"PowerIconWidth" : 30,
+				"PowerIconHeight" : 30,
 				"FontName" : "Bell MT",
 				"FontSize" : 8,
 				"Style" : "Bold",

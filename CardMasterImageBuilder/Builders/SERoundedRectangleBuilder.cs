@@ -17,7 +17,7 @@ namespace CardMasterImageBuilder.Builders
             _card = card;
         }
 
-        protected override SkinElement Initialize(Skin skin, JsonSkin jsonSkin, JsonSkinItem item)
+        protected override SkinElement Initialize(Skin skin, JsonSkinItem item)
         {
             SERoundedRectangle skinElement = new SERoundedRectangle(skin, item.X, item.Y, item.Width, item.Height, item.Radius.Value);
             skinElement.SetBackground(item.BackgroundColor);

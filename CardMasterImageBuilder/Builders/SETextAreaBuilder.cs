@@ -16,10 +16,10 @@ namespace CardMasterImageBuilder.Builders
             _skinsProject = skinsProject;
             _card = card;
         }
-        protected override SkinElement Initialize(Skin skin, JsonSkin jsonSkin, JsonSkinItem item)
+        protected override SkinElement Initialize(Skin skin, JsonSkinItem item)
         {
             //SETextArea skinElement = new SETextArea(skin, item.X, item.Y, item.Width, item.Height, "<Nom>");
-            SETextArea2 skinElement = new SETextArea2(skin, item.X, item.Y, item.Width, item.Height, "<Nom>", jsonSkin.PowerIconHeight.Value,jsonSkin.PowerIconWidth.Value);
+            SETextArea2 skinElement = new SETextArea2(skin, item.X, item.Y, item.Width, item.Height, "<Nom>", item.PowerIconHeight, item.PowerIconWidth);
             if (item.Style == "Bold")
             {
                 skinElement.TextFont = new Font(item.FontName, item.FontSize.Value, FontStyle.Bold);

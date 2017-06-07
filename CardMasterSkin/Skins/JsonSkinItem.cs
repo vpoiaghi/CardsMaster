@@ -25,5 +25,7 @@ namespace CardMasterSkin.Skins
         public String VisibleConditionAttribute { get; set; }
         public int? shadowSize { get; set; }
         public int? shadowAngle { get; set; }
+        public int? PowerIconWidth;
+        public int? PowerIconHeight;
     }
 }
