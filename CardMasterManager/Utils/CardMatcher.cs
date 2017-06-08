@@ -10,26 +10,38 @@ namespace CardMasterManager.Utils
     {
         public static Boolean Matches(Card card, String filterText)
         {
-            bool found = StringContains(card.Name,filterText) ||
-                    StringContains(card.Citation, filterText) ||
-                    StringContains(card.Comments, filterText) ||
-                    StringContains(card.Attack, filterText) ||
-                    StringContains(card.Cost, filterText) ||
-                    StringContains(card.Defense, filterText) ||
-                    StringContains(card.Element, filterText) ||
-                    StringContains(card.Rank, filterText) ||
-                    StringContains(card.StringField1, filterText) ||
-                    StringContains(card.StringField2, filterText) ||
-                    StringContains(card.StringField3, filterText) ||
-                    StringContains(card.StringField4, filterText) ||
+            bool found = StrContains(card.Name,filterText) ||
+                    StrContains(card.Citation, filterText) ||
+                    StrContains(card.Comments, filterText) ||
+                    StrContains(card.Attack, filterText) ||
+                    StrContains(card.Cost, filterText) ||
+                    StrContains(card.Defense, filterText) ||
+                    StrContains(card.Element, filterText) ||
+                    StrContains(card.Rank, filterText) ||
+                    StrContains(card.StringField1, filterText) ||
+                    StrContains(card.StringField2, filterText) ||
+                    StrContains(card.StringField3, filterText) ||
+                    StrContains(card.StringField4, filterText) ||
                     IntEquals(card.IntField1,filterText) ||
                     IntEquals(card.IntField2, filterText) ||
                     IntEquals(card.IntField3, filterText) ||
                     IntEquals(card.IntField4, filterText) ||
-                    StringContains(card.Team, filterText);
+                    StrContains(card.Team, filterText);
             return found;
         }
         
+        private static bool StrContains(string s, string search)
+        {
+            bool result = false;
+
+            if ((s != null) && (search != null))
+            {
+                result = StringContains(s.ToLower(), search.ToLower());
+            }
+
+            return result;
+        }
+
         private static bool IntEquals(int? i, String search)
         {
             int intSearch;
