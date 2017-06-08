@@ -223,7 +223,7 @@ namespace CardMasterImageBuilder.Elements.TextFormater
             //if ((this.prevElement != null) && (! (this.prevElement is TElementReturn)) && (this.prevElement.Y == this.Y))
             if ((this.prevElement != null) && (!(this.prevElement is TElementReturn)))
             {
-                max = Math.Max(this.prevElement.GetPrevMaxBottomOnRow(), this.height);
+                max = Math.Max(this.prevElement.GetPrevMaxBottomOnRow(), this.Bottom);
             }
 
             return max;
@@ -236,7 +236,7 @@ namespace CardMasterImageBuilder.Elements.TextFormater
             //if ((this.nextElement != null) && (!(this.nextElement is TElementReturn)) && (this.nextElement.Y == this.Y))
             if ((this.nextElement != null) && (!(this.nextElement is TElementReturn)))
             {
-                max = Math.Max(this.nextElement.GetPrevMaxBottomOnRow(), this.height);
+                max = Math.Max(this.nextElement.GetPrevMaxBottomOnRow(), this.Bottom);
             }
 
             return max;

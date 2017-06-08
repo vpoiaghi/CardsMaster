@@ -2998,7 +2998,7 @@
     "Background" : null
   }, {
     "Powers" : [ {
-      "Description" : "<<activate>>  Inflige 3 dégât à distance à 2 ninjas côte à côte"
+      "Description" : "<<activate>>  Inflige 3 dégâts à distance à 2 ninjas côte à côte"
     } ],
     "Name" : "Notes Explosives",
     "Attack" : "3",
