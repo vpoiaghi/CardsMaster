@@ -9,7 +9,7 @@ namespace CardMasterImageBuilder.SkinElements
 {
     public class SERectangle : SkinElement
     {
-        public SERectangle(Skin skin, int x, int y, int width, int height) : base(skin, x, y, width, height)
+        public SERectangle(Skin skin, int x, int y, int width, int height, string comments) : base(skin, x, y, width, height, comments)
         { }
 
         protected override List<GraphicElement> GetGraphicElements(Card card)

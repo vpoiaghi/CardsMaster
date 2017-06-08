@@ -22,11 +22,11 @@ namespace CardMasterImageBuilder.Builders
             SEImage skinElement;
             if (item.Background == null)
             {
-                skinElement = new SEImage(skin, item.X, item.Y, item.Width, item.Height);
+                skinElement = new SEImage(skin, item.X, item.Y, item.Width, item.Height, item.Comment);
                 skinElement.NameAttribute = item.NameAttribute;
             }else
             {
-                skinElement = new SEImage(skin, item.X, item.Y, item.Width, item.Height,item.Background);
+                skinElement = new SEImage(skin, item.X, item.Y, item.Width, item.Height, item.Comment, item.Background);
             }
             if (item.VisibleConditionAttribute!= null && item.VisibleConditionAttribute!="")
             {

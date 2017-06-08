@@ -14,10 +14,10 @@ namespace CardMasterImageBuilder.SkinElements
         public string ImageName { get; set; } = null;
         public string NameAttribute { get; set; } = null;
 
-        public SEImage(Skin skin, int x, int y, int width, int height) : base(skin, x, y, width, height)
+        public SEImage(Skin skin, int x, int y, int width, int height, string comments) : base(skin, x, y, width, height, comments)
         { }
 
-        public SEImage(Skin skin, int x, int y, int width, int height, string imageName) : base(skin, x, y, width, height)
+        public SEImage(Skin skin, int x, int y, int width, int height, string comments, string imageName) : base(skin, x, y, width, height, comments)
         {
             this.ImageName = imageName;
         }

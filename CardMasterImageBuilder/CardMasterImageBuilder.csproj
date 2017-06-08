@@ -76,6 +76,7 @@
     <Compile Include="Skins\SkinElements\TextFormater\TElementReturn.cs" />
     <Compile Include="Skins\SkinElements\TextFormater\TElementText.cs" />
     <Compile Include="Skins\SkinElements\TextFormater\TextAlignment.cs" />
+    <Compile Include="Skins\SkinElements\TextFormater\TextSizeException.cs" />
     <Compile Include="Skins\SkinElements\TextFormater\Words.cs" />
     <Compile Include="Skins\SkinElements\TextFormat\AttributeParser.cs" />
     <Compile Include="Skins\SkinElements\TextFormat\FormattedText.cs" />

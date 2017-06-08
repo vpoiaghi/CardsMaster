@@ -18,6 +18,7 @@ namespace CardMasterImageBuilder.Skins
         public int Y { get; set; } = 0;
         public int Width { get; set; } = 0;
         public int Height { get; set; } = 0;
+        public string Comments { get; set; } = "";
         public SkinElementShadow Shadow { get; set; } = null;
         public SkinElementBorder Border { get; set; } = null;
         public bool Visible { get; set; } = true;
@@ -33,13 +34,16 @@ namespace CardMasterImageBuilder.Skins
 
         protected abstract List<GraphicElement> GetGraphicElements(Card card);
 
-        protected SkinElement(Skin skin, int x, int y, int width, int height)
+        protected SkinElement(Skin skin, int x, int y, int width, int height, string comments)
         {
+            this.skin = skin;
+
             this.X = x;
             this.Y = y;
             this.Width = width;
             this.Height = height;
-            this.skin = skin;
+
+            this.Comments = comments;
 
             SetBackground(Color.Black);
         }

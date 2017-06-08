@@ -1,5 +1,6 @@
 ﻿using CardMasterCard.Card;
 using CardMasterImageBuilder.Builders;
+using CardMasterImageBuilder.Elements.TextFormater;
 using CardMasterImageBuilder.Skins;
 using CardMasterSkin.Skins;
 using System;
@@ -18,7 +19,6 @@ namespace CardMasterImageBuilder
         protected JsonSkinsProject skinsProject = null;
 
         protected DirectoryInfo resourcesDirectory = null;
-        protected Card card = null;
 
         public Skin GetSkin(Card card, FileInfo skinsFile, String skinName, SkinSide side)
         {
@@ -26,13 +26,10 @@ namespace CardMasterImageBuilder
 
             skinsProject = JsonSkinsProject.LoadProject(skinsFile);
 
-            this.card = card;
-
             if (skinsProject != null)
             {
                 this.resourcesDirectory = new DirectoryInfo(Path.Combine( skinsFile.Directory.FullName, RESOURCES_DIRECTORY_NAME));
-
-                skin = GetSkin(side);
+                skin = GetSkin(card, side);
             }
 
             return skin;
@@ -42,7 +39,7 @@ namespace CardMasterImageBuilder
             FRONT,
             BACK
         }
-        protected Skin GetSkin(SkinSide side)
+        protected Skin GetSkin(Card card, SkinSide side)
         {
             JsonSkin jsonSkin;
             if (side.Equals(SkinSide.FRONT))

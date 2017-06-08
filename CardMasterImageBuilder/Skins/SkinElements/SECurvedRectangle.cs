@@ -10,7 +10,7 @@ namespace CardMasterImageBuilder.SkinElements
     {
         private int CurveSize { get; set; } = 0;
 
-        public SECurvedRectangle(Skin skin, int x, int y, int width, int height, int curveSize) : base(skin, x, y, width, height)
+        public SECurvedRectangle(Skin skin, int x, int y, int width, int height, string comments, int curveSize) : base(skin, x, y, width, height, comments)
         {
             this.CurveSize = curveSize;
         }

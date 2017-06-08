@@ -43,10 +43,31 @@ namespace CardMasterImageBuilder.Elements.TextFormater
                 AddItem(word);
             }
 
-            bool canReduceFont = true;
-            while ((TextAlignment.GetTextHeight(this) > this.TextArea.Height) && (canReduceFont))
+
+            int maxHeight = this.owner.Height;
+            int oldAllTextheight = TextAlignment.GetTextHeight(this);
+            int newAllTextheight = 0;
+
+            bool canReduceFont = (oldAllTextheight > maxHeight);
+
+            while (canReduceFont)
             {
+                // return true if min font size is not reached
                 canReduceFont = this.TextArea.ReduceFontSize();
+
+                // get new all text height
+                newAllTextheight = TextAlignment.GetTextHeight(this);
+
+                // test if can reduce one more time
+                canReduceFont = canReduceFont && (newAllTextheight > maxHeight) && (oldAllTextheight > newAllTextheight);
+
+                // save new height
+                oldAllTextheight = newAllTextheight;
+            }
+
+            if (oldAllTextheight > maxHeight)
+            {
+                throw new TextSizeException("La taille du texte est trop grande pour le composant " + owner.Comments);
             }
 
         }

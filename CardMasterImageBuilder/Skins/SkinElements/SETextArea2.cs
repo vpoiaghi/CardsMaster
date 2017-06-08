@@ -42,13 +42,12 @@ namespace CardMasterImageBuilder.SkinElements
         public Color FontColor { get; set; } = Color.Black;
         public int WordSpaceOffsetX { get; set; } = 0;
         public int RowSpaceOffsetY { get; set; } = 0;
-        public Size LeftIconsSize { get; } = new Size(80, 80);
+        public Size LeftIconsSize { get; set; } = new Size(80, 80);
 
-        public SETextArea2(Skin skin, int x, int y, int width, int height, string text, int? powerIconHeight,int? powerIconWidth) : base(skin, x, y, width, height)
+        public SETextArea2(Skin skin, int x, int y, int width, int height, string comments, string text) : base(skin, x, y, width, height, comments)
         {
             this.fullText = text;
             this.elements = new TElements(this);
-            this.LeftIconsSize = (powerIconHeight.HasValue && powerIconWidth.HasValue) ? new Size(powerIconHeight.Value, powerIconWidth.Value) : new Size(80, 80);
 
             SetBackground(Color.Transparent);
         }
@@ -68,12 +67,20 @@ namespace CardMasterImageBuilder.SkinElements
                 // Les "mots" peuvent être des mots, des marqueurs ou des références d'image. Ils sont toujours sous la formes de string et n'ont pas encore été interprétés.
                 List<string> words = Words.Cut(fullText);
 
-                // Convertion des mots string en éléments interprétés
-                this.elements.Clear();
-                this.elements.AddRange(words);
+                try
+                {
+                    // Convertion des mots string en éléments interprétés
+                    this.elements.Clear();
+                    this.elements.AddRange(words);
 
-                // Applique les alignements (vertical et horizontal)
-                TextAlignment.Align(this.elements, TextAlign, TextVerticalAlign);
+                    // Applique les alignements (vertical et horizontal)
+                    TextAlignment.Align(this.elements, TextAlign, TextVerticalAlign);
+
+                }
+                catch (TextSizeException ex)
+                {
+                    throw new TextSizeException("Erreur lors de la fabrication de la carte " + card.Name + ". " + ex.Message, ex);
+                }
 
                 // Construction des éléments graphics
                 graphicElementsList = GetGraphicElementsList();

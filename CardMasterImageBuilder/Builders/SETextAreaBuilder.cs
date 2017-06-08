@@ -18,8 +18,9 @@ namespace CardMasterImageBuilder.Builders
         }
         protected override SkinElement Initialize(Skin skin, JsonSkinItem item)
         {
-            //SETextArea skinElement = new SETextArea(skin, item.X, item.Y, item.Width, item.Height, "<Nom>");
-            SETextArea2 skinElement = new SETextArea2(skin, item.X, item.Y, item.Width, item.Height, "<Nom>", item.PowerIconHeight, item.PowerIconWidth);
+            //SETextArea skinElement = new SETextArea(skin, item.X, item.Y, item.Width, item.Height, item.Comment, "<Nom>");
+            SETextArea2 skinElement = new SETextArea2(skin, item.X, item.Y, item.Width, item.Height, item.Comment, "<Nom>");
+
             if (item.Style == "Bold")
             {
                 skinElement.TextFont = new Font(item.FontName, item.FontSize.Value, FontStyle.Bold);
@@ -43,6 +44,10 @@ namespace CardMasterImageBuilder.Builders
             if (item.VisibleConditionAttribute != null && item.VisibleConditionAttribute != "")
             {
                 skinElement.Visible = IsAttributeNonEmpty(_card, item.VisibleConditionAttribute);
+            }
+            if (item.PowerIconHeight.HasValue && item.PowerIconWidth.HasValue)
+            {
+                skinElement.LeftIconsSize =  new Size(item.PowerIconHeight.Value, item.PowerIconWidth.Value);
             }
 
             return skinElement;
