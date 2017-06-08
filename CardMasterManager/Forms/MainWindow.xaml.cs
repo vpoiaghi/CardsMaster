@@ -18,6 +18,7 @@ using CardMasterExport.PrinterExport;
 using CardMasterManager.Utils;
 using System.Windows.Data;
 using System.ComponentModel;
+using CardMasterImageBuilder.Builders;
 
 namespace CardMasterManager
 {
@@ -51,6 +52,7 @@ namespace CardMasterManager
             this.MenuItemExportAllToPngFile.IsEnabled = false;
             this.MenuItemExportBoardsToPngFile.IsEnabled = false;
             this.MenuItemPrintBoards.IsEnabled = false;
+            //BuilderRegister.getInstance().Register();
         }
 
         private void MenuItemOpen_Click(object sender, RoutedEventArgs e)

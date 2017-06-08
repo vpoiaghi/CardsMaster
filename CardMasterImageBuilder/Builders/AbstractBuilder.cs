@@ -7,10 +7,13 @@ using System.Drawing;
 
 namespace CardMasterImageBuilder.Builders
 {
-    public abstract class AbstractBuilder
+    public abstract class AbstractBuilder 
     {
         protected JsonCard _card;
         protected JsonSkinsProject _skinsProject;
+
+        
+
         protected abstract SkinElement Initialize(Skin skin, JsonSkinItem item);
 
         public SkinElement Build(Skin skin, JsonSkinItem item)

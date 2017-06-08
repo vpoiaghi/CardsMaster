@@ -47,12 +47,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Builders\AbstractBuilder.cs" />
+    <Compile Include="Builders\BuilderRegister.cs" />
+    <Compile Include="Builders\IBuilder.cs" />
     <Compile Include="Converters\CustomColorConverter.cs" />
-    <Compile Include="Builders\SETextAreaBuilder.cs" />
-    <Compile Include="Builders\SECurvedRectangleBuilder.cs" />
-    <Compile Include="Builders\SERectangleBuilder.cs" />
-    <Compile Include="Builders\SEImageBuilder.cs" />
-    <Compile Include="Builders\SERoundedRectangleBuilder.cs" />
+    <Compile Include="Builders\Impl\SETextAreaBuilder.cs" />
+    <Compile Include="Builders\Impl\SECurvedRectangleBuilder.cs" />
+    <Compile Include="Builders\Impl\SERectangleBuilder.cs" />
+    <Compile Include="Builders\Impl\SEImageBuilder.cs" />
+    <Compile Include="Builders\Impl\SERoundedRectangleBuilder.cs" />
     <Compile Include="Converters\PowersListConverter.cs" />
     <Compile Include="Drawer.cs" />
     <Compile Include="DrawingQuality.cs" />

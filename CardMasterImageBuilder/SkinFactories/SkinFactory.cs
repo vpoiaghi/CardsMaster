@@ -1,5 +1,6 @@
 ﻿using CardMasterCard.Card;
 using CardMasterImageBuilder.Builders;
+using CardMasterImageBuilder.Builders.Impl;
 using CardMasterImageBuilder.Elements.TextFormater;
 using CardMasterImageBuilder.Skins;
 using CardMasterSkin.Skins;
