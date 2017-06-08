@@ -12,6 +12,13 @@
 * Utiliser des interfaces.
 Actuellement il n'y a aucn système de contrat de service entre les projets, chaque projet voit tout ou presque des projets qu'il référencie.
 
+* Ajouter un object BuilderParameter qui hérite du JsonSkinItem (attention peut etre certaines info sans dans le JsonSkin, il faudrait vraiment trouver un moyen d'avoir ce lien)
+
+* Utiliser le BuilderParameter dans tt les methodes build et les passer en override sur la meme signature
+
+* Créer un singleter register avec une methode Register qui parcourt tout le package builder et enregistre tous les builders en fonction d'un attribut String TYPE commun à tous
+
+* Appeller le register au lancement de l'application, et utiliser ce register dans la SkinFactory
   
 ### Exportation
 
@@ -61,11 +68,6 @@ En particulier la partie exportation, où y aurait désormait un seul item qui o
   * Ajouter la possibilité de masquer/afficher des colonnes
   * [A TESTER] Rendre triable toutes les colonnes, selon leur valeur visible (je pense en particulier au colonnes liées à des Enum)
       --> KO, le tri sur le GENRE est bon mais pas sur le NATURE CHAKRA. Sans doute l'enum du GENRE est-il bien trié, contriarement à celui du CHAKRA
-  * [A TESTER] Est-il intéressant de trier par la colonne pouvoirs ? tri par n'importe quelle colonne SAUF pouvoir
-      --> KO, non fait. Fonctionnalité abandonnée. Si tu valide Bruno, je te laisse supprimer ces lignes.
-  * Pouvoir faire des recherches 
-    * soit dans une colonne spécifique
-	* [DONE] soit via un champs libre auquel cas c'est une recherche "Full Text" : recherche dans tous les champs -> recherche générique par réflection (recherche par réflexion abandonnée au profit d'une recherche explicite par attributs)
 
 * Impression
 Maintenant que la fonctionnalité est validée, voir comment elle sera intégrée déns l'ihm
