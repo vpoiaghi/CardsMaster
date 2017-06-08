@@ -18,8 +18,8 @@ namespace CardMasterStat
         public int Defense { get; set; }
         public String Citation { get; set; }
         public String Comments { get; set; }
-        public Texture Background { get; set; }
-        public List<Power> Powers { get; set; }
+        public JsonTexture Background { get; set; }
+        public List<JsonPower> Powers { get; set; }
 
         public enum CardKind
         {
@@ -59,7 +59,7 @@ namespace CardMasterStat
             return toReturn;
         }
 
-        public static Card ConvertCard(CardMasterCard.Card.Card sourceCard)
+        public static Card ConvertCard(JsonCard sourceCard)
         {
             Card toReturn = CardBuilder.newCard()
                                 .withName(sourceCard.Name)

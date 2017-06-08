@@ -134,19 +134,19 @@ namespace CardMasterStat
             return this;
         }
 
-        public CardBuilder withBackground(Texture texture)
+        public CardBuilder withBackground(JsonTexture texture)
         {
             this.m_card.Background = texture;
             return this;
         }
 
-        public CardBuilder withPowers(List<Power> power)
+        public CardBuilder withPowers(List<JsonPower> power)
         {
             this.m_card.Powers = power;
             return this;
         }
 
-        public CardBuilder withPower(Power power)
+        public CardBuilder withPowerJson(JsonPower power)
         {
             this.m_card.Powers.Add(power);
             return this;

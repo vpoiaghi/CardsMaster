@@ -15,7 +15,7 @@ namespace CardMasterImageBuilder.SkinElements
             this.CurveSize = curveSize;
         }
 
-        protected override List<GraphicElement> GetGraphicElements(Card card)
+        protected override List<GraphicElement> GetGraphicElements(JsonCard card)
         {
             var graphicElementsList = new List<GraphicElement>();
             var path = new GraphicsPath();

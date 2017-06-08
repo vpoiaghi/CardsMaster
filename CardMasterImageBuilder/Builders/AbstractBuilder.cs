@@ -9,6 +9,7 @@ namespace CardMasterImageBuilder.Builders
 {
     public abstract class AbstractBuilder
     {
+        protected JsonCard _card;
         protected abstract SkinElement Initialize(Skin skin, JsonSkinItem item);
 
         public SkinElement Build(Skin skin, JsonSkinItem item)
@@ -23,23 +24,23 @@ namespace CardMasterImageBuilder.Builders
             return skinElement;
         }
 
-        protected String GetMatchingBackground(JsonSkinsProject skinsProject,Card card)
+        protected String GetMatchingBackground(JsonSkinsProject skinsProject, JsonCard card)
         {
             String attributeName = skinsProject.MapKindField[card.Kind];
             String attributeValue = getAttributeValueAsString(card,attributeName);
             return skinsProject.MapLibelleColor[attributeValue];
         }
 
-        protected Boolean IsAttributeNonEmpty(Card card,String attributeName)
+        protected Boolean IsAttributeNonEmpty(JsonCard card,String attributeName)
         {
             return getAttributeValueAsString(card,attributeName) != "";
         }
-        protected String getAttributeValueAsString(Card card,String attributeName)
+        protected String getAttributeValueAsString(JsonCard card,String attributeName)
         {
             return (String)card.GetType().GetProperty(attributeName).GetValue(card, null);
         }
 
-        protected Color GetMatchingRarityColor(JsonSkinsProject skinsProject, Card card)
+        protected Color GetMatchingRarityColor(JsonSkinsProject skinsProject, JsonCard card)
         {
             return ConvertColorFromString(skinsProject.MapRareteColor[card.Rank]);
         }
@@ -47,7 +48,7 @@ namespace CardMasterImageBuilder.Builders
         {
             return CustomColorConverter.Instance.ConvertFromString(color);
         }
-        protected Color GetMatchingBorderColor(JsonSkinsProject skinsProject, Card card)
+        protected Color GetMatchingBorderColor(JsonSkinsProject skinsProject, JsonCard card)
         {
             String attributeName = skinsProject.MapKindField[card.Kind];
             String attributeValue = getAttributeValueAsString(card,attributeName);

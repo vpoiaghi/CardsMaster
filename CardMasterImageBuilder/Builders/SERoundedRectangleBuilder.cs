@@ -9,9 +9,8 @@ namespace CardMasterImageBuilder.Builders
     public class SERoundedRectangleBuilder : AbstractBuilder
     {
         private JsonSkinsProject _skinsProject;
-        private Card _card;
-
-        public SERoundedRectangleBuilder(JsonSkinsProject skinsProject, Card card)
+      
+        public SERoundedRectangleBuilder(JsonSkinsProject skinsProject, JsonCard card)
         {
             _skinsProject = skinsProject;
             _card = card;

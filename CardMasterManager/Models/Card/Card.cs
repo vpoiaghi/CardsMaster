@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CardMasterCard.Card;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 
@@ -43,8 +44,8 @@ namespace CardMasterManager
         public String Citation { get; set; }
         public String Comments { get; set; }
         public int Nb { get; set; }
-        public CardMasterCard.Card.Texture Background { get; set; }
-        public List<CardMasterCard.Card.Power> Powers { get; set; }
+        public JsonTexture Background { get; set; }
+        public List<JsonPower> Powers { get; set; }
         public String BackSide { get; set; }
         public String BackSkinName { get; set; }
         public String FrontSkinName { get; set; }
@@ -78,9 +79,9 @@ namespace CardMasterManager
         }
               
 
-        public static CardMasterCard.Card.Card ConvertToMasterCard(Card card)
+        public static JsonCard ConvertToMasterCard(Card card)
         {
-            CardMasterCard.Card.Card toReturn = new CardMasterCard.Card.Card();
+            JsonCard toReturn = new JsonCard();
             toReturn.Attack = card.Attack.ToString();
             toReturn.Background = card.Background;
             toReturn.Chakra = card.Nature.ToString();
@@ -92,7 +93,7 @@ namespace CardMasterManager
             toReturn.Kind = card.Kind.ToString();
             toReturn.Name = card.Name;
             toReturn.Nb = card.Nb;
-            toReturn.Powers = new List<CardMasterCard.Card.Power>();
+            toReturn.Powers = new List<JsonPower>();
             toReturn.Powers.AddRange(card.Powers);
 
             toReturn.Rank = card.Rank;
@@ -114,7 +115,7 @@ namespace CardMasterManager
 
         }
 
-        public static Card ConvertCard(CardMasterCard.Card.Card card)
+        public static Card ConvertCard(JsonCard card)
         {
             Card toReturn = new Card();
             toReturn.Attack = card.Attack.ToString();
@@ -128,7 +129,7 @@ namespace CardMasterManager
             toReturn.Kind = parseKind(card.Kind);
             toReturn.Name = card.Name;
             toReturn.Nb = card.Nb;
-            toReturn.Powers = new List<CardMasterCard.Card.Power>();
+            toReturn.Powers = new List<JsonPower>();
             toReturn.Powers.AddRange(card.Powers);
 
             toReturn.Rank = card.Rank;

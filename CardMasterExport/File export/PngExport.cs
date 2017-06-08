@@ -15,10 +15,10 @@ namespace CardMasterExport.FileExport
     {
         private DirectoryInfo targetFolder = null;
 
-        public PngExport(List<Card> cardsList, FileInfo skinsFile) : base(cardsList, skinsFile)
+        public PngExport(List<JsonCard> cardsList, FileInfo skinsFile) : base(cardsList, skinsFile)
         { }
 
-        public PngExport(Window owner, List<Card> cardsList, FileInfo skinsFile) : base(owner, cardsList, skinsFile)
+        public PngExport(Window owner, List<JsonCard> cardsList, FileInfo skinsFile) : base(owner, cardsList, skinsFile)
         { }
 
         public override ExportParameters GetParameters()
@@ -38,7 +38,7 @@ namespace CardMasterExport.FileExport
             return (this.targetFolder != null);
         }
 
-        protected override void MakeCardExport(Card card)
+        protected override void MakeCardExport(JsonCard card)
         {
             Drawer drawer = null;
             Image img = null;

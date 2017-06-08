@@ -8,7 +8,7 @@ namespace CardMasterImageBuilder
 {
     public class Drawer
     {
-        private Card card;
+        private JsonCard card;
         private Skin frontSkin;
         private Skin backSideSkin;
 
@@ -17,7 +17,7 @@ namespace CardMasterImageBuilder
 
         public DrawingQuality Quality { get; set; } = new DrawingQuality();
 
-        public Drawer(Card card, FileInfo skinsFile, String skinName)
+        public Drawer(JsonCard card, FileInfo skinsFile, String skinName)
         {
             this.card = card;
             this.frontSkin = (new SkinFactory()).GetSkin(this.card, skinsFile, skinName,SkinFactory.SkinSide.FRONT);

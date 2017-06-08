@@ -32,7 +32,7 @@ namespace CardMasterImageBuilder.Skins
         protected Graphics graphics = null;
         public Graphics Graphic { get { return this.graphics; } }
 
-        protected abstract List<GraphicElement> GetGraphicElements(Card card);
+        protected abstract List<GraphicElement> GetGraphicElements(JsonCard card);
 
         protected SkinElement(Skin skin, int x, int y, int width, int height, string comments)
         {
@@ -55,7 +55,7 @@ namespace CardMasterImageBuilder.Skins
             this.graphics = null;
         }
 
-        public void Draw(Graphics g, Card card)
+        public void Draw(Graphics g, JsonCard card)
         {
             this.graphics = g;
 

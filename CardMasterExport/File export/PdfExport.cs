@@ -11,10 +11,10 @@ namespace CardMasterExport.FileExport
     {
         private FileInfo targetFile = null;
 
-        public PdfExport(List<Card> cardsList, FileInfo skinsFile) : base(cardsList, skinsFile)
+        public PdfExport(List<JsonCard> cardsList, FileInfo skinsFile) : base(cardsList, skinsFile)
         { }
 
-        public PdfExport(Window owner, List<Card> cardsList, FileInfo skinsFile) : base(owner, cardsList, skinsFile)
+        public PdfExport(Window owner, List<JsonCard> cardsList, FileInfo skinsFile) : base(owner, cardsList, skinsFile)
         { }
 
         public override ExportParameters GetParameters()
@@ -33,7 +33,7 @@ namespace CardMasterExport.FileExport
             throw new NotImplementedException();
         }
 
-        protected override void MakeCardExport(Card card)
+        protected override void MakeCardExport(JsonCard card)
         {
             //PdfDocument myDoc = new pdfDocument("TUTORIAL", "ME");
             //pdfPage myPage = myDoc.addPage();

@@ -30,10 +30,10 @@ namespace CardMasterExport.FileExport
         private int currentBoard = 0;
         private Bitmap boardImage = null;
 
-        public PngBoardExport(List<Card> cardsList, FileInfo skinsFile) : base(cardsList, skinsFile)
+        public PngBoardExport(List<JsonCard> cardsList, FileInfo skinsFile) : base(cardsList, skinsFile)
         { }
 
-        public PngBoardExport(Window owner, List<Card> cardsList, FileInfo skinsFile) : base(owner, cardsList, skinsFile)
+        public PngBoardExport(Window owner, List<JsonCard> cardsList, FileInfo skinsFile) : base(owner, cardsList, skinsFile)
         { }
 
         public override ExportParameters GetParameters()
@@ -88,7 +88,7 @@ namespace CardMasterExport.FileExport
             return message;
         }
 
-        protected override void MakeCardExport(Card card)
+        protected override void MakeCardExport(JsonCard card)
         {
             bool withBack = this.withBackSides;
 
@@ -102,7 +102,7 @@ namespace CardMasterExport.FileExport
             }
         }
 
-        private void MakeCardExportOneCopy(Card card, bool withBack, int countX, int countY, int cardSides)
+        private void MakeCardExportOneCopy(JsonCard card, bool withBack, int countX, int countY, int cardSides)
         {
             if (this.boardImage == null)
             {
@@ -135,7 +135,7 @@ namespace CardMasterExport.FileExport
             }
         }
 
-        private void DrawCard(Card card, bool withBack)
+        private void DrawCard(JsonCard card, bool withBack)
         {
             Drawer drawer = null;
             Image cardFrontImage = null;
@@ -183,7 +183,7 @@ namespace CardMasterExport.FileExport
             this.boardImage.Save(Path.Combine(targetFolder, boardName));
         }
 
-        private Image GetBackImage(Card card, FileInfo skinFile)
+        private Image GetBackImage(JsonCard card, FileInfo skinFile)
         {
             Drawer drawer = new Drawer(card, skinFile, null);
             return drawer.DrawBackSideSkin();

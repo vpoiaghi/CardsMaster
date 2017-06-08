@@ -14,7 +14,7 @@ namespace CardMasterImageBuilder.SkinElements
         {
             this.CornerRadius = cornerRadius;
         }
-        protected override List<GraphicElement> GetGraphicElements(Card card)
+        protected override List<GraphicElement> GetGraphicElements(JsonCard card)
         {
             var graphicElementsList = new List<GraphicElement>();
             var path = new GraphicsPath();

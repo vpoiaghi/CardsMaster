@@ -22,7 +22,7 @@ namespace CardMasterImageBuilder.SkinElements
             this.ImageName = imageName;
         }
 
-        protected override List<GraphicElement> GetGraphicElements(Card card)
+        protected override List<GraphicElement> GetGraphicElements(JsonCard card)
         {
             var graphicElementsList = new List<GraphicElement>();
             string fileFullname = GetFileFullname(card);
@@ -37,7 +37,7 @@ namespace CardMasterImageBuilder.SkinElements
 
         }
 
-        private string GetFileFullname(Card card)
+        private string GetFileFullname(JsonCard card)
         {
             string fileFullname = null;
             DirectoryInfo rootDirectory = this.skin.ResourcesDirectory;

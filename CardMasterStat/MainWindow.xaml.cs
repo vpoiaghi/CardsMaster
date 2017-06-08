@@ -39,9 +39,9 @@ namespace CardMasterStat
             openFileDialog.Filter = "Json files (*.json)|*.json|All files (*.*)|*.*";
             if (openFileDialog.ShowDialog() == true)
             {
-                CardsProject cardProjet = CardsProject.LoadProject(new FileInfo(openFileDialog.FileName));
+                JsonCardsProject cardProjet = JsonCardsProject.LoadProject(new FileInfo(openFileDialog.FileName));
                 List<Card> cards = new List<Card>();
-                foreach (CardMasterCard.Card.Card card in cardProjet.Cards)
+                foreach (JsonCard card in cardProjet.Cards)
                 {
                     Card c = Card.ConvertCard(card);
                     cards.Add(c);

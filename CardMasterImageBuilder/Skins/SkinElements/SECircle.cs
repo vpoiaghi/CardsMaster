@@ -14,7 +14,7 @@ namespace CardMasterImageBuilder.SkinElements
         public SECircle(Skin skin, int x, int y, int width, int height, string comments) : base(skin, x, y, width, height, comments)
         { }
 
-        protected override List<GraphicElement> GetGraphicElements(Card card)
+        protected override List<GraphicElement> GetGraphicElements(JsonCard card)
         {
             var graphicElementsList = new List<GraphicElement>();
             var path = new GraphicsPath();

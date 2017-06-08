@@ -20,7 +20,7 @@ namespace CardMasterImageBuilder
 
         protected DirectoryInfo resourcesDirectory = null;
 
-        public Skin GetSkin(Card card, FileInfo skinsFile, String skinName, SkinSide side)
+        public Skin GetSkin(JsonCard card, FileInfo skinsFile, String skinName, SkinSide side)
         {
             Skin skin = null;
 
@@ -39,7 +39,7 @@ namespace CardMasterImageBuilder
             FRONT,
             BACK
         }
-        protected Skin GetSkin(Card card, SkinSide side)
+        protected Skin GetSkin(JsonCard card, SkinSide side)
         {
             JsonSkin jsonSkin;
             if (side.Equals(SkinSide.FRONT))

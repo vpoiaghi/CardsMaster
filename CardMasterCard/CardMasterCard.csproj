@@ -44,11 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cards\Card.cs" />
-    <Compile Include="Cards\CardsProject.cs" />
-    <Compile Include="Cards\CardsSet.cs" />
-    <Compile Include="Cards\Power.cs" />
-    <Compile Include="Cards\Texture.cs" />
+    <Compile Include="Cards\JsonCard.cs" />
+    <Compile Include="Cards\JsonCardsProject.cs" />
+    <Compile Include="Cards\JsonCardsSet.cs" />
+    <Compile Include="Cards\JsonPower.cs" />
+    <Compile Include="Cards\JsonTexture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

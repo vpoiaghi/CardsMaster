@@ -27,7 +27,7 @@ namespace CardMasterCmdExport
             Console.WriteLine(prms.ToString());
             Console.WriteLine("");
 
-            CardsProject project = CardsProject.LoadProject(prms.JsonProjectFile);
+            JsonCardsProject project = JsonCardsProject.LoadProject(prms.JsonProjectFile);
 
             string skinsFileName = prms.JsonProjectFile.Name.Replace(prms.JsonProjectFile.Extension, ".skin");
             FileInfo skinFile = new FileInfo(Path.Combine(prms.JsonProjectFile.Directory.FullName, skinsFileName));
@@ -46,7 +46,7 @@ namespace CardMasterCmdExport
             //Console.ReadKey(true);
         }
 
-        private static void ExportAll(CardsProject project, FileInfo skinFile, Parameters prms)
+        private static void ExportAll(JsonCardsProject project, FileInfo skinFile, Parameters prms)
         {
             PngExport exporter = new PngExport(project.Cards, skinFile);
             PngExport.Parameters parameters = (PngExport.Parameters)exporter.GetParameters();
@@ -54,7 +54,7 @@ namespace CardMasterCmdExport
             exporter.Export(parameters);
         }
 
-        private static void ExportBoards(CardsProject project, FileInfo skinFile, Parameters prms)
+        private static void ExportBoards(JsonCardsProject project, FileInfo skinFile, Parameters prms)
         {
             PngBoardExport exporter = new PngBoardExport(project.Cards, skinFile);
             PngBoardExport.Parameters parameters = (PngBoardExport.Parameters)exporter.GetParameters();

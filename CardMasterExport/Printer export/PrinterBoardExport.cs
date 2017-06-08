@@ -43,10 +43,10 @@ namespace CardMasterExport.PrinterExport
         PrintDocument pDoc = null;
 
 
-        public PrinterBoardExport(List<Card> cardsList, FileInfo skinsFile) : this(null, cardsList, skinsFile)
+        public PrinterBoardExport(List<JsonCard> cardsList, FileInfo skinsFile) : this(null, cardsList, skinsFile)
         { }
 
-        public PrinterBoardExport(Window owner, List<Card> cardsList, FileInfo skinsFile) : base(owner, cardsList, skinsFile)
+        public PrinterBoardExport(Window owner, List<JsonCard> cardsList, FileInfo skinsFile) : base(owner, cardsList, skinsFile)
         {
             pDoc = new PrintDocument();
             pDoc.PrintPage += new PrintPageEventHandler(pdoc_PrintPage);
@@ -142,7 +142,7 @@ namespace CardMasterExport.PrinterExport
             return message;
         }
 
-        protected override void MakeCardExport(Card card)
+        protected override void MakeCardExport(JsonCard card)
         {
             cardIndex++;
 
@@ -159,7 +159,7 @@ namespace CardMasterExport.PrinterExport
             }
         }
 
-        private void MakeCardExportOneCopy(Card card, bool withBack, int countX, int countY, int cardSides)
+        private void MakeCardExportOneCopy(JsonCard card, bool withBack, int countX, int countY, int cardSides)
         {
             if (this.boardImage == null)
             {
@@ -191,7 +191,7 @@ namespace CardMasterExport.PrinterExport
             }
         }
 
-        private void DrawCard(Card card, bool withBack)
+        private void DrawCard(JsonCard card, bool withBack)
         {
             Drawer drawer = null;
             Image cardFrontImage = null;
@@ -225,7 +225,7 @@ namespace CardMasterExport.PrinterExport
             img = null;
         }
 
-        private Image GetBackImage(Card card, FileInfo skinFile)
+        private Image GetBackImage(JsonCard card, FileInfo skinFile)
         {
             Drawer drawer = new Drawer(card, skinFile, null);
             return drawer.DrawBackSideSkin();

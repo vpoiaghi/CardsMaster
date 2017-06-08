@@ -9,7 +9,7 @@ namespace CardMasterImageBuilder.Elements.TextFormat
     class AttributeParser
     {
         //@Team@ :  @Nature@ (@Element@)”;
-        public static String Parse(CardMasterCard.Card.Card card, String format,String defaultText)
+        public static String Parse(JsonCard card, String format,String defaultText)
         {
             String fullText= "";
             if (!string.IsNullOrEmpty(format))
@@ -30,7 +30,7 @@ namespace CardMasterImageBuilder.Elements.TextFormat
 
         }
 
-        private static string ExtractCompoundedAttribute(Card card, string format)
+        private static string ExtractCompoundedAttribute(JsonCard card, string format)
         {
 
             MatchCollection result = Regex.Matches(format, "(@[^@]+@)");
@@ -68,7 +68,7 @@ namespace CardMasterImageBuilder.Elements.TextFormat
             return haystack.Split(new[] { needle }, StringSplitOptions.None).Length - 1;
         }
 
-        private static string ExtractSingleAttribute(Card card, string format)
+        private static string ExtractSingleAttribute(JsonCard card, string format)
         {
             String fullText = "";
             Type cardType = card.GetType();

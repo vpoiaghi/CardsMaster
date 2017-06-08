@@ -14,7 +14,7 @@ namespace CardMasterExport
         protected static object _lock = new object();
 
         private Window owner = null;
-        protected List<Card> cardsList = null;
+        protected List<JsonCard> cardsList = null;
         protected FileInfo skinsFile = null;
         protected ExportParameters parameters = null;
         
@@ -24,7 +24,7 @@ namespace CardMasterExport
         public event ProgressChanged progressChangedEvent;
 
         protected abstract bool BeforeCardsExport();
-        protected abstract void MakeCardExport(Card card);
+        protected abstract void MakeCardExport(JsonCard card);
         protected abstract void AfterCardsExport();
         protected abstract string GetProgressMessage(ProgressState state, int index, int total);
 
@@ -33,10 +33,10 @@ namespace CardMasterExport
         //public Exporter()
         //{ }
 
-        protected Exporter(List<Card> cardsList, FileInfo skinsFile) : this(null, cardsList, skinsFile)
+        protected Exporter(List<JsonCard> cardsList, FileInfo skinsFile) : this(null, cardsList, skinsFile)
         { }
 
-        protected Exporter(Window owner, List<Card> cardsList, FileInfo skinsFile)
+        protected Exporter(Window owner, List<JsonCard> cardsList, FileInfo skinsFile)
         {
             if (cardsList == null)
             {
@@ -94,7 +94,7 @@ namespace CardMasterExport
 
         private void StartExport()
         {
-            List<Card> cards;
+            List<JsonCard> cards;
             lock (_lock)
             {
                 cards = this.cardsList;
@@ -105,7 +105,7 @@ namespace CardMasterExport
                 int cardIndex = 0;
                 int cardCount = cards.Count;
 
-                foreach (Card card in cards)
+                foreach (JsonCard card in cards)
                 {
                     MakeCardExport(card);
                     cardIndex = cardIndex + 1;

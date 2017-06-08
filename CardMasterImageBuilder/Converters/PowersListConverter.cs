@@ -3,11 +3,11 @@ using CardMasterCommon.Converters;
 
 namespace CardMasterImageBuilder.Converters
 {
-    public class PowersListConverter : ListConverter<Power>
+    public class PowersListConverter : ListConverter<JsonPower>
     {
-        protected override Power GetItem(string value)
+        protected override JsonPower GetItem(string value)
         {
-            var p = new Power();
+            var p = new JsonPower();
             p.Description = value;
             return p;
         }

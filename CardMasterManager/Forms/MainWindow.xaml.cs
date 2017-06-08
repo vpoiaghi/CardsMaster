@@ -29,7 +29,7 @@ namespace CardMasterManager
         private bool onLoading;
         private static object locker = new object();
 
-        private CardsProject cardProjet;
+        private JsonCardsProject cardProjet;
         private FileInfo cardsFile;
         private Card previousCard;
 
@@ -61,10 +61,10 @@ namespace CardMasterManager
             if (openFileDialog.ShowDialog() == true)
             {
                 cardsFile = new FileInfo(openFileDialog.FileName);
-                cardProjet = CardsProject.LoadProject(cardsFile);
+                cardProjet = JsonCardsProject.LoadProject(cardsFile);
                 
                 List<Card> cards = new List<Card>();
-                foreach (CardMasterCard.Card.Card card in cardProjet.Cards)
+                foreach (JsonCard card in cardProjet.Cards)
                 {
                     Card c = Card.ConvertCard(card);
                     cards.Add(c);
@@ -136,7 +136,7 @@ namespace CardMasterManager
         private void DisplayCard(Card c, System.Windows.Controls.Image frontImage, System.Windows.Controls.Image backImage)
         {
             //Select Card from Collection from Name
-            CardMasterCard.Card.Card businessCard = Card.ConvertToMasterCard(c);
+            JsonCard businessCard = Card.ConvertToMasterCard(c);
 
             Drawer drawer = new Drawer(businessCard, GetSkinFile(), null);
             drawer.Quality = this.DQuality;
@@ -159,7 +159,7 @@ namespace CardMasterManager
 
         private void MenuItemExportAllToPngFile_Click(object sender, RoutedEventArgs e)
         {
-            var cardsList = new List<CardMasterCard.Card.Card>();
+            var cardsList = new List<JsonCard>();
 
             foreach (object item in cardGrid.Items)
             {
@@ -178,7 +178,7 @@ namespace CardMasterManager
 
         private void MenuItemExportBoardsToPngFile_Click(object sender, RoutedEventArgs e)
         {
-            var cardsList = new List<CardMasterCard.Card.Card>();
+            var cardsList = new List<JsonCard>();
 
             foreach (object item in cardGrid.Items)
             {
@@ -232,7 +232,7 @@ namespace CardMasterManager
         {
             if ((cardProjet != null) && (cardsFile != null))
             {
-                CardMasterCard.Card.Card c = null;
+                JsonCard c = null;
 
                 List<Card> cards = GetCardsFromGrid();
 
@@ -289,7 +289,7 @@ namespace CardMasterManager
 
         private void MenuItemPrintBoards_Click(object sender, RoutedEventArgs e)
         {
-            var cardsList = new List<CardMasterCard.Card.Card>();
+            var cardsList = new List<JsonCard>();
 
             foreach (object item in cardGrid.Items)
             {

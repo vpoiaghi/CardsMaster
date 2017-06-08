@@ -53,7 +53,7 @@ namespace CardMasterImageBuilder.SkinElements
         }
 
 
-        protected override List<GraphicElement> GetGraphicElements(Card card)
+        protected override List<GraphicElement> GetGraphicElements(JsonCard card)
         {
             List<GraphicElement> graphicElementsList = null;
 
