@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CardMasterCommon.Converters;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,8 @@ namespace CardMasterManager.Utils
 {
     public class CardMatcher
     {
+        private static EnumConverter enumConverter = new EnumConverter();
+
         public static Boolean Matches(Card card, String filterText)
         {
             bool found = StrContains(card.Name,filterText) ||
@@ -22,6 +25,8 @@ namespace CardMasterManager.Utils
                     StrContains(card.StringField2, filterText) ||
                     StrContains(card.StringField3, filterText) ||
                     StrContains(card.StringField4, filterText) ||
+                    EnumContains(card.Kind,filterText) ||
+                    EnumContains(card.Nature, filterText) ||
                     IntEquals(card.IntField1,filterText) ||
                     IntEquals(card.IntField2, filterText) ||
                     IntEquals(card.IntField3, filterText) ||
@@ -29,7 +34,14 @@ namespace CardMasterManager.Utils
                     StrContains(card.Team, filterText);
             return found;
         }
-        
+
+        private static bool EnumContains(Enum enumeration, string filterText)
+        {
+           
+            String result = (String)enumConverter.Convert(enumeration, null, null, null);
+            return StrContains(result, filterText);
+        }
+
         private static bool StrContains(string s, string search)
         {
             bool result = false;
