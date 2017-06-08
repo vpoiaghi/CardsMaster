@@ -7,8 +7,7 @@ using CardMasterSkin.Skins;
 namespace CardMasterImageBuilder.Builders
 {
     public class SECurvedRectangleBuilder : AbstractBuilder
-    {
-        private JsonSkinsProject _skinsProject;
+    { 
         
         public SECurvedRectangleBuilder(JsonSkinsProject skinsProject, JsonCard card)
         {

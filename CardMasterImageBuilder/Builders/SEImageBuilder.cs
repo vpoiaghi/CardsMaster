@@ -8,7 +8,6 @@ namespace CardMasterImageBuilder.Builders
 {
     public class SEImageBuilder : AbstractBuilder
     {
-        private JsonSkinsProject _skinsProject;
 
         public SEImageBuilder(JsonSkinsProject skinsProject, JsonCard card)
         {

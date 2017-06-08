@@ -8,7 +8,6 @@ namespace CardMasterImageBuilder.Builders
 {
     public class SERoundedRectangleBuilder : AbstractBuilder
     {
-        private JsonSkinsProject _skinsProject;
       
         public SERoundedRectangleBuilder(JsonSkinsProject skinsProject, JsonCard card)
         {

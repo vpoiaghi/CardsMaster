@@ -9,7 +9,6 @@ namespace CardMasterImageBuilder.Builders
 {
     public class SETextAreaBuilder : AbstractBuilder
     {
-        private JsonSkinsProject _skinsProject;
 
         public SETextAreaBuilder(JsonSkinsProject skinsProject, JsonCard card)
         {
