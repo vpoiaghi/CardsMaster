@@ -64,6 +64,9 @@ La possibilité de choisir la couleur de bordure pour la face et le dos est prê
 * Revoir le menu du Manager
 En particulier la partie exportation, où y aurait désormait un seul item qui ouvre sur une boîte de dialogue de choix du type d'export et des paramètres d'export.
 
+* Faire un outil de redimensionnement des images avec une mire, et prévisualisation du résultat. Quand on ouvre une image ex "Image1.jpg", une fois le redimensionnement fait,
+cela crée une copie en "Image1-original.jpg" et écrase le fichier "Image1.jpg" avec celle retaillée.
+
 * Datagrid
   * Ajouter la possibilité de masquer/afficher des colonnes
   * [A TESTER] Rendre triable toutes les colonnes, selon leur valeur visible (je pense en particulier au colonnes liées à des Enum)
