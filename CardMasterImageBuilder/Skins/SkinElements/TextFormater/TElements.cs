@@ -79,20 +79,43 @@ namespace CardMasterImageBuilder.Elements.TextFormater
 
         private void AddItem(string word)
         {
+            if (! ((this.lastElement == null) || (this.lastElement is TElementReturn)))
+            {
+                AddSpace();
+            }
+
             if (word.StartsWith("<") && word.EndsWith(">"))
             {
                 AddMarker(word);
             }
             else
             {
+                if ((TextArea.TextAlign == HorizontalAlignment.LeftWithIcon) && ((this.lastElement == null) || (this.lastElement is TElementReturn)))
+                {
+                    AddSpace(this.TextArea.LeftIconsSize.Width);
+                }
+
                 AddWord(word);
             }
         }
 
         private void AddWord(string word)
         {
-            TElementText element = new TElementText(word);
+            AddText(new TElementText(word));
+        }
 
+        private void AddSpace()
+        {
+            AddText(new TElementSpace());
+        }
+
+        private void AddSpace(int width)
+        {
+            AddText(new TElementSpace(width));
+        }
+
+        private void AddText(TElementText element)
+        {
             if (this.markers["b"])
             {
                 ApplyFontStyle(element, FontStyle.Bold);

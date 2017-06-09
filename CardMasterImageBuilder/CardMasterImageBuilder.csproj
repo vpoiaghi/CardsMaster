@@ -73,6 +73,7 @@
     <Compile Include="Skins\SkinElements\SETextArea.cs" />
     <Compile Include="Skins\SkinElements\TextFormater\AttributeParser.cs" />
     <Compile Include="Skins\SkinElements\TextFormater\TElement.cs" />
+    <Compile Include="Skins\SkinElements\TextFormater\TElementSpace.cs" />
     <Compile Include="Skins\SkinElements\TextFormater\TElements.cs" />
     <Compile Include="Skins\SkinElements\TextFormater\TElementImage.cs" />
     <Compile Include="Skins\SkinElements\TextFormater\TElementReturn.cs" />
