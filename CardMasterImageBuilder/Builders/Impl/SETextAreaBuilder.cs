@@ -10,12 +10,11 @@ namespace CardMasterImageBuilder.Builders.Impl
     public class SETextAreaBuilder : AbstractBuilder, IBuilder
     {
         public  string TYPE { get { return "SETextArea"; } }
-        public SETextAreaBuilder(JsonSkinsProject skinsProject, JsonCard card)
+        public SETextAreaBuilder()
         {
-            _skinsProject = skinsProject;
-            _card = card;
+            
         }
-        protected override SkinElement Initialize(Skin skin, JsonSkinItem item)
+        protected override SkinElement Initialize(JsonSkinsProject skinsProject, JsonCard card,Skin skin, JsonSkinItem item)
         {
             //SETextArea skinElement = new SETextArea(skin, item.X, item.Y, item.Width, item.Height, item.Comment, "<Nom>");
             SETextArea2 skinElement = new SETextArea2(skin, item.X, item.Y, item.Width, item.Height, item.Comment, "<Nom>");
@@ -42,7 +41,7 @@ namespace CardMasterImageBuilder.Builders.Impl
             }
             if (item.VisibleConditionAttribute != null && item.VisibleConditionAttribute != "")
             {
-                skinElement.Visible = IsAttributeNonEmpty(_card, item.VisibleConditionAttribute);
+                skinElement.Visible = IsAttributeNonEmpty(card, item.VisibleConditionAttribute);
             }
             if (item.PowerIconHeight.HasValue && item.PowerIconWidth.HasValue)
             {

@@ -33,6 +33,12 @@ namespace CardMasterImageBuilder.Builders
                 IBuilder instance = (IBuilder)Activator.CreateInstance(type);
                 map.Add(instance.TYPE, instance);
             }
+
+        }
+
+        public IBuilder getBuilder(String type)
+        {
+            return map[type];
         }
 
     }

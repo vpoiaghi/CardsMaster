@@ -11,21 +11,20 @@ namespace CardMasterImageBuilder.Builders.Impl
     {
         public string TYPE { get { return "SECurvedRectangle";}}
 
-        public SECurvedRectangleBuilder(JsonSkinsProject skinsProject, JsonCard card)
+        public SECurvedRectangleBuilder()
         {
-            _skinsProject = skinsProject;
-            _card = card;
+          
         }
 
        
 
-        protected override SkinElement Initialize(Skin skin, JsonSkinItem item)
+        protected override SkinElement Initialize(JsonSkinsProject skinsProject, JsonCard card,Skin skin, JsonSkinItem item)
         {
             // Zone entête
             SECurvedRectangle skinElement = new SECurvedRectangle(skin, item.X, item.Y, item.Width, item.Height, item.Comment, item.CurveSize.Value);
             if(item.Background=="DYNAMIC-RARETE")
             {
-                skinElement.SetBackground(GetMatchingRarityColor(_skinsProject,_card));
+                skinElement.SetBackground(GetMatchingRarityColor(skinsProject,card));
             }
             else
             {
@@ -34,11 +33,11 @@ namespace CardMasterImageBuilder.Builders.Impl
            
             if (item.BorderColor == "DYNAMIC")
             {
-                skinElement.Border = new SkinElementBorder(GetMatchingBorderColor(_skinsProject,_card), _skinsProject.BorderWidth.Value);
+                skinElement.Border = new SkinElementBorder(GetMatchingBorderColor(skinsProject,card), skinsProject.BorderWidth.Value);
             }
             else
             {
-                skinElement.Border = new SkinElementBorder(ConvertColorFromString(item.BorderColor), _skinsProject.BorderWidth.Value);
+                skinElement.Border = new SkinElementBorder(ConvertColorFromString(item.BorderColor), skinsProject.BorderWidth.Value);
             }
 
             return skinElement;

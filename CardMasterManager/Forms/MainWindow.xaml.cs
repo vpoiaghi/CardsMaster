@@ -52,7 +52,7 @@ namespace CardMasterManager
             this.MenuItemExportAllToPngFile.IsEnabled = false;
             this.MenuItemExportBoardsToPngFile.IsEnabled = false;
             this.MenuItemPrintBoards.IsEnabled = false;
-            //BuilderRegister.getInstance().Register();
+            BuilderRegister.getInstance().Register();
         }
 
         private void MenuItemOpen_Click(object sender, RoutedEventArgs e)

@@ -9,16 +9,13 @@ namespace CardMasterImageBuilder.Builders
 {
     public abstract class AbstractBuilder 
     {
-        protected JsonCard _card;
-        protected JsonSkinsProject _skinsProject;
-
         
 
-        protected abstract SkinElement Initialize(Skin skin, JsonSkinItem item);
+        protected abstract SkinElement Initialize(JsonSkinsProject skinsProject, JsonCard card,Skin skin, JsonSkinItem item);
 
-        public SkinElement Build(Skin skin, JsonSkinItem item)
+        public SkinElement Build(JsonSkinsProject skinsProject, JsonCard card,Skin skin, JsonSkinItem item)
         {
-            SkinElement skinElement = Initialize(skin, item);
+            SkinElement skinElement = Initialize(skinsProject,card,skin, item);
 
             if ((item.shadowAngle != null) && (item.shadowAngle != 0) && (item.shadowSize != 0))
             {

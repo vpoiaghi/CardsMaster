@@ -9,17 +9,16 @@ namespace CardMasterImageBuilder.Builders.Impl
     public class SERectangleBuilder : AbstractBuilder, IBuilder
     {
         public string TYPE { get { return "SERectangle"; } }
-        public SERectangleBuilder(JsonSkinsProject skinsProject, JsonCard card)
+        public SERectangleBuilder()
         {
-            _skinsProject = skinsProject;
-            _card = card;
+         
         }
-        protected override SkinElement Initialize(Skin skin, JsonSkinItem item)
+        protected override SkinElement Initialize(JsonSkinsProject skinsProject, JsonCard card,Skin skin, JsonSkinItem item)
         {
             SERectangle skinElement = new SERectangle(skin, item.X, item.Y, item.Width, item.Height, item.Comment);
             if(item.Background == "DYNAMIC")
             {
-                skinElement.SetBackground(GetMatchingBackground(_skinsProject,_card));
+                skinElement.SetBackground(GetMatchingBackground(skinsProject,card));
             }
             else
             {
@@ -30,11 +29,11 @@ namespace CardMasterImageBuilder.Builders.Impl
             {
                 if (item.BorderColor == "DYNAMIC")
                 {
-                    skinElement.Border = new SkinElementBorder(GetMatchingBorderColor(_skinsProject, _card), _skinsProject.BorderWidth.Value);
+                    skinElement.Border = new SkinElementBorder(GetMatchingBorderColor(skinsProject, card), skinsProject.BorderWidth.Value);
                 }
                 else
                 {
-                    skinElement.Border = new SkinElementBorder(ConvertColorFromString(item.BorderColor), _skinsProject.BorderWidth.Value);
+                    skinElement.Border = new SkinElementBorder(ConvertColorFromString(item.BorderColor), skinsProject.BorderWidth.Value);
                 }
 
             }
