@@ -6,14 +6,11 @@ using CardMasterSkin.Skins;
 
 namespace CardMasterImageBuilder.Builders.Impl
 {
-    public class SERectangleBuilder : AbstractBuilder, IBuilder
+    public class SERectangleBuilder : AbstractBuilder
     {
-        public string TYPE { get { return "SERectangle"; } }
-        public SERectangleBuilder()
-        {
-         
-        }
-        protected override SkinElement Initialize(JsonSkinsProject skinsProject, JsonCard card,Skin skin, JsonSkinItem item)
+        public override string TYPE { get { return "SERectangle"; } }
+       
+        public override SkinElement Build(JsonSkinsProject skinsProject, JsonCard card,Skin skin, JsonSkinItem item)
         {
             SERectangle skinElement = new SERectangle(skin, item.X, item.Y, item.Width, item.Height, item.Comment);
             if(item.Background == "DYNAMIC")
@@ -37,8 +34,8 @@ namespace CardMasterImageBuilder.Builders.Impl
                 }
 
             }
-
-            return skinElement;
+        
+            return ManageShadow(skinElement, item);
         }
     }
 }

@@ -7,18 +7,12 @@ using CardMasterSkin.Skins;
 
 namespace CardMasterImageBuilder.Builders.Impl
 {
-    public class SECurvedRectangleBuilder : AbstractBuilder,IBuilder
+    public class SECurvedRectangleBuilder : AbstractBuilder
     {
-        public string TYPE { get { return "SECurvedRectangle";}}
-
-        public SECurvedRectangleBuilder()
-        {
-          
-        }
-
        
+        public override string TYPE { get { return "SECurvedRectangle";}}
 
-        protected override SkinElement Initialize(JsonSkinsProject skinsProject, JsonCard card,Skin skin, JsonSkinItem item)
+        public override SkinElement Build(JsonSkinsProject skinsProject, JsonCard card,Skin skin, JsonSkinItem item)
         {
             // Zone entête
             SECurvedRectangle skinElement = new SECurvedRectangle(skin, item.X, item.Y, item.Width, item.Height, item.Comment, item.CurveSize.Value);
@@ -39,8 +33,8 @@ namespace CardMasterImageBuilder.Builders.Impl
             {
                 skinElement.Border = new SkinElementBorder(ConvertColorFromString(item.BorderColor), skinsProject.BorderWidth.Value);
             }
-
-            return skinElement;
+   
+            return ManageShadow(skinElement, item);
         }
     }
 }

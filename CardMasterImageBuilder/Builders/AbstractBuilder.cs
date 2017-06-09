@@ -7,16 +7,13 @@ using System.Drawing;
 
 namespace CardMasterImageBuilder.Builders
 {
-    public abstract class AbstractBuilder 
+    public abstract class AbstractBuilder : IBuilder
     {
-        
+        public abstract string TYPE { get; }
+        public abstract SkinElement Build(JsonSkinsProject skinsProject, JsonCard card, Skin skin, JsonSkinItem item);
 
-        protected abstract SkinElement Initialize(JsonSkinsProject skinsProject, JsonCard card,Skin skin, JsonSkinItem item);
-
-        public SkinElement Build(JsonSkinsProject skinsProject, JsonCard card,Skin skin, JsonSkinItem item)
+        protected SkinElement ManageShadow(SkinElement skinElement, JsonSkinItem item)
         {
-            SkinElement skinElement = Initialize(skinsProject,card,skin, item);
-
             if ((item.shadowAngle != null) && (item.shadowAngle != 0) && (item.shadowSize != 0))
             {
                 skinElement.Shadow = new SkinElementShadow(item.shadowSize.Value, item.shadowAngle.Value);
@@ -56,5 +53,7 @@ namespace CardMasterImageBuilder.Builders
             String rgbCode = skinsProject.MapLibelleBorderColor[attributeValue];
             return ConvertColorFromString(rgbCode);
         }
+
+      
     }
 }

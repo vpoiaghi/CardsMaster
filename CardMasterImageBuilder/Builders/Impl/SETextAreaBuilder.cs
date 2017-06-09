@@ -7,14 +7,11 @@ using System.Drawing;
 
 namespace CardMasterImageBuilder.Builders.Impl
 {
-    public class SETextAreaBuilder : AbstractBuilder, IBuilder
+    public class SETextAreaBuilder : AbstractBuilder
     {
-        public  string TYPE { get { return "SETextArea"; } }
-        public SETextAreaBuilder()
-        {
-            
-        }
-        protected override SkinElement Initialize(JsonSkinsProject skinsProject, JsonCard card,Skin skin, JsonSkinItem item)
+        public override string TYPE { get { return "SETextArea"; } }
+       
+        public override SkinElement Build(JsonSkinsProject skinsProject, JsonCard card,Skin skin, JsonSkinItem item)
         {
             //SETextArea skinElement = new SETextArea(skin, item.X, item.Y, item.Width, item.Height, item.Comment, "<Nom>");
             SETextArea2 skinElement = new SETextArea2(skin, item.X, item.Y, item.Width, item.Height, item.Comment, "<Nom>");
@@ -48,7 +45,7 @@ namespace CardMasterImageBuilder.Builders.Impl
                 skinElement.LeftIconsSize =  new Size(item.PowerIconHeight.Value, item.PowerIconWidth.Value);
             }
 
-            return skinElement;
+            return ManageShadow(skinElement, item);
         }
     }
 }

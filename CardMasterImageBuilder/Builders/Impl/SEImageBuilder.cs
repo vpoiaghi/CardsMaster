@@ -6,14 +6,11 @@ using CardMasterSkin.Skins;
 
 namespace CardMasterImageBuilder.Builders.Impl
 {
-    public class SEImageBuilder : AbstractBuilder, IBuilder
+    public class SEImageBuilder : AbstractBuilder
     {
-        public string TYPE { get { return "SEImage"; } }
-        public SEImageBuilder()
-        {  
-        }
+        public override string TYPE { get { return "SEImage"; } }
 
-        protected override SkinElement Initialize(JsonSkinsProject skinsProject, JsonCard card,Skin skin, JsonSkinItem item)
+        public override SkinElement Build(JsonSkinsProject skinsProject, JsonCard card,Skin skin, JsonSkinItem item)
         {
             SEImage skinElement;
             if (item.Background == null)
@@ -40,7 +37,8 @@ namespace CardMasterImageBuilder.Builders.Impl
                 }
                
             }
-            return skinElement;
+
+            return ManageShadow(skinElement, item);
         }
     }
 }

@@ -41,5 +41,10 @@ namespace CardMasterImageBuilder.Builders
             return map[type];
         }
 
+        public void Unregister()
+        {
+            map.Clear();
+        }
+
     }
 }
