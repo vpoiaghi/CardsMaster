@@ -12,10 +12,13 @@ namespace CardMasterImageBuilder.Builders.Impl
        
         public override string TYPE { get { return "SECurvedRectangle";}}
 
-        public override SkinElement Build(JsonSkinsProject skinsProject, JsonCard card,Skin skin, JsonSkinItem item)
+        public override SkinElement Build(BuilderParameter builderParameter)
         {
+            JsonSkinItem item = builderParameter.JsonSkinItem;
+            JsonSkinsProject skinsProject = builderParameter.JsonSkinsProject;
+            JsonCard card = builderParameter.JsonCard;
             // Zone entête
-            SECurvedRectangle skinElement = new SECurvedRectangle(skin, item.X, item.Y, item.Width, item.Height, item.Comment, item.CurveSize.Value);
+            SECurvedRectangle skinElement = new SECurvedRectangle(builderParameter.ResourcesDirectory, item.X, item.Y, item.Width, item.Height, item.Comment, item.CurveSize.Value);
             if(item.Background=="DYNAMIC-RARETE")
             {
                 skinElement.SetBackground(GetMatchingRarityColor(skinsProject,card));

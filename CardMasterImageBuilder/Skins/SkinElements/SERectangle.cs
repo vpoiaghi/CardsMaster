@@ -4,12 +4,13 @@ using CardMasterImageBuilder.Skins;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
 
 namespace CardMasterImageBuilder.SkinElements
 {
     public class SERectangle : SkinElement
     {
-        public SERectangle(Skin skin, int x, int y, int width, int height, string comments) : base(skin, x, y, width, height, comments)
+        public SERectangle(DirectoryInfo resourcesDirectory, int x, int y, int width, int height, string comments) : base(resourcesDirectory, x, y, width, height, comments)
         { }
 
         protected override List<GraphicElement> GetGraphicElements(JsonCard card)

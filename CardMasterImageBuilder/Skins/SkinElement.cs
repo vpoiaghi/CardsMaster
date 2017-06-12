@@ -26,7 +26,7 @@ namespace CardMasterImageBuilder.Skins
         protected Color color2;
         protected string imageName = null;
         private TextureTypes type;
-        protected Skin skin = null;
+        protected DirectoryInfo resourcesDirectory = null;
         private ColorConverter colorConverter = new ColorConverter();
 
         protected Graphics graphics = null;
@@ -34,9 +34,9 @@ namespace CardMasterImageBuilder.Skins
 
         protected abstract List<GraphicElement> GetGraphicElements(JsonCard card);
 
-        protected SkinElement(Skin skin, int x, int y, int width, int height, string comments)
+        protected SkinElement(DirectoryInfo resourcesDirectory, int x, int y, int width, int height, string comments)
         {
-            this.skin = skin;
+            this.resourcesDirectory = resourcesDirectory;
 
             this.X = x;
             this.Y = y;
@@ -51,7 +51,7 @@ namespace CardMasterImageBuilder.Skins
         ~SkinElement()
         {
             this.Shadow = null;
-            this.skin = null;
+            this.resourcesDirectory = null;
             this.graphics = null;
         }
 
@@ -129,9 +129,9 @@ namespace CardMasterImageBuilder.Skins
                     break;
 
                 case TextureTypes.Image:
-                    if ((this.skin.ResourcesDirectory != null) && (this.skin.ResourcesDirectory.Exists))
+                    if ((resourcesDirectory != null) && (resourcesDirectory.Exists))
                     {
-                        FileInfo[] files = this.skin.ResourcesDirectory.GetFiles(this.imageName + ".*", SearchOption.AllDirectories);
+                        FileInfo[] files = resourcesDirectory.GetFiles(this.imageName + ".*", SearchOption.AllDirectories);
 
                         if (files.Length > 0)
                         {
@@ -173,14 +173,14 @@ namespace CardMasterImageBuilder.Skins
 
         public DirectoryInfo GetResourcessDirectory()
         {
-            DirectoryInfo resourcesDirectory = this.skin.ResourcesDirectory;
+            DirectoryInfo myresourcesDirectory = resourcesDirectory;
 
-            if (!((resourcesDirectory != null) && (resourcesDirectory.Exists)))
+            if (!((myresourcesDirectory != null) && (myresourcesDirectory.Exists)))
             {
                 throw new DirectoryNotFoundException();
             }
 
-            return resourcesDirectory;
+            return myresourcesDirectory;
         }
 
         public FileInfo GetResourceFile(string fileName)

@@ -3,6 +3,7 @@ using CardMasterImageBuilder.GraphicsElements;
 using CardMasterImageBuilder.Skins;
 using System.Collections.Generic;
 using System.Drawing.Drawing2D;
+using System.IO;
 
 namespace CardMasterImageBuilder.SkinElements
 {
@@ -10,7 +11,7 @@ namespace CardMasterImageBuilder.SkinElements
     {
         private int CurveSize { get; set; } = 0;
 
-        public SECurvedRectangle(Skin skin, int x, int y, int width, int height, string comments, int curveSize) : base(skin, x, y, width, height, comments)
+        public SECurvedRectangle(DirectoryInfo resourcesDirectory, int x, int y, int width, int height, string comments, int curveSize) : base(resourcesDirectory, x, y, width, height, comments)
         {
             this.CurveSize = curveSize;
         }

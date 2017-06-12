@@ -3,6 +3,7 @@ using CardMasterImageBuilder.GraphicsElements;
 using CardMasterImageBuilder.Skins;
 using System.Collections.Generic;
 using System.Drawing.Drawing2D;
+using System.IO;
 
 namespace CardMasterImageBuilder.SkinElements
 {
@@ -10,7 +11,7 @@ namespace CardMasterImageBuilder.SkinElements
     {
         public int CornerRadius { get; set; } = 0;
 
-        public SERoundedRectangle(Skin skin, int x, int y, int width, int height, string comments, int cornerRadius) : base(skin, x, y, width, height, comments)
+        public SERoundedRectangle(DirectoryInfo resourcesDirectory, int x, int y, int width, int height, string comments, int cornerRadius) : base(resourcesDirectory, x, y, width, height, comments)
         {
             this.CornerRadius = cornerRadius;
         }

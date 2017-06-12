@@ -27,5 +27,6 @@ namespace CardMasterSkin.Skins
         public int? shadowAngle { get; set; }
         public int? PowerIconWidth;
         public int? PowerIconHeight;
+        
     }
 }

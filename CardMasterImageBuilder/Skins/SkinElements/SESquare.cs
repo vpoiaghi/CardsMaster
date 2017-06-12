@@ -1,10 +1,11 @@
 ﻿using CardMasterImageBuilder.Skins;
+using System.IO;
 
 namespace CardMasterImageBuilder.SkinElements
 {
     public class SESquare : SERectangle
     {
-        public SESquare(Skin skin, int x, int y, int size, string comments) : base(skin, x, y, size, size, comments)
+        public SESquare(DirectoryInfo resourcesDirectory, int x, int y, int size, string comments) : base(resourcesDirectory, x, y, size, size, comments)
         { }
 
     }

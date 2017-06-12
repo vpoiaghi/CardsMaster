@@ -10,16 +10,19 @@ namespace CardMasterImageBuilder.Builders.Impl
     {
         public override string TYPE { get { return "SEImage"; } }
 
-        public override SkinElement Build(JsonSkinsProject skinsProject, JsonCard card,Skin skin, JsonSkinItem item)
+        public override SkinElement Build(BuilderParameter builderParameter)
         {
+            JsonSkinItem item = builderParameter.JsonSkinItem;
+            JsonSkinsProject skinsProject = builderParameter.JsonSkinsProject;
+            JsonCard card = builderParameter.JsonCard;
             SEImage skinElement;
             if (item.Background == null)
             {
-                skinElement = new SEImage(skin, item.X, item.Y, item.Width, item.Height, item.Comment);
+                skinElement = new SEImage(builderParameter.ResourcesDirectory, item.X, item.Y, item.Width, item.Height, item.Comment);
                 skinElement.NameAttribute = item.NameAttribute;
             }else
             {
-                skinElement = new SEImage(skin, item.X, item.Y, item.Width, item.Height, item.Comment, item.Background);
+                skinElement = new SEImage(builderParameter.ResourcesDirectory, item.X, item.Y, item.Width, item.Height, item.Comment, item.Background);
             }
             if (item.VisibleConditionAttribute!= null && item.VisibleConditionAttribute!="")
             {

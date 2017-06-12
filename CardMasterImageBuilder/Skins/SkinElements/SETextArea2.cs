@@ -44,7 +44,7 @@ namespace CardMasterImageBuilder.SkinElements
         public int RowSpaceOffsetY { get; set; } = 0;
         public Size LeftIconsSize { get; set; } = new Size(80, 80);
 
-        public SETextArea2(Skin skin, int x, int y, int width, int height, string comments, string text) : base(skin, x, y, width, height, comments)
+        public SETextArea2(DirectoryInfo resourcesDirectory, int x, int y, int width, int height, string comments, string text) : base(resourcesDirectory, x, y, width, height, comments)
         {
             this.fullText = text;
             this.elements = new TElements(this);

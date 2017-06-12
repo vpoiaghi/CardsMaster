@@ -217,56 +217,56 @@
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
-                                <DataGridTemplateColumn Header="String Field 1" MinWidth="100" CanUserSort="True" SortMemberPath="StringField1">
+                                <DataGridTemplateColumn Header="String Field 1" MinWidth="100" CanUserSort="True" SortMemberPath="StringField1" Visibility="Hidden">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBox Text="{Binding StringField1, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
-                                <DataGridTemplateColumn Header="String Field 2" MinWidth="100" CanUserSort="True" SortMemberPath="StringField2">
+                                <DataGridTemplateColumn Header="String Field 2" MinWidth="100" CanUserSort="True" SortMemberPath="StringField2" Visibility="Hidden">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBox Text="{Binding StringField2, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
-                                <DataGridTemplateColumn Header="String Field 3" MinWidth="100" CanUserSort="True" SortMemberPath="StringField3">
+                                <DataGridTemplateColumn Header="String Field 3" MinWidth="100" CanUserSort="True" SortMemberPath="StringField3" Visibility="Hidden">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBox Text="{Binding StringField3, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
-                                <DataGridTemplateColumn Header="String Field 4" MinWidth="100" CanUserSort="True" SortMemberPath="StringField4">
+                                <DataGridTemplateColumn Header="String Field 4" MinWidth="100" CanUserSort="True" SortMemberPath="StringField4" Visibility="Hidden">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBox Text="{Binding StringField4, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
-                                <DataGridTemplateColumn Header="Int Field 1" MinWidth="100" CanUserSort="True" SortMemberPath="IntField1">
+                                <DataGridTemplateColumn Header="Int Field 1" MinWidth="100" CanUserSort="True" SortMemberPath="IntField1" Visibility="Hidden">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBox Text="{Binding IntField1, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
-                                <DataGridTemplateColumn Header="Int Field 2" MinWidth="100" CanUserSort="True" SortMemberPath="IntField2">
+                                <DataGridTemplateColumn Header="Int Field 2" MinWidth="100" CanUserSort="True" SortMemberPath="IntField2" Visibility="Hidden">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBox Text="{Binding IntField2, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
-                                <DataGridTemplateColumn Header="Int Field 3" MinWidth="100" CanUserSort="True" SortMemberPath="IntField3">
+                                <DataGridTemplateColumn Header="Int Field 3" MinWidth="100" CanUserSort="True" SortMemberPath="IntField3" Visibility="Hidden">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBox Text="{Binding IntField3, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
-                                <DataGridTemplateColumn Header="Int Field 4" MinWidth="100" CanUserSort="True" SortMemberPath="IntField4">
+                                <DataGridTemplateColumn Header="Int Field 4" MinWidth="100" CanUserSort="True" SortMemberPath="IntField4" Visibility="Hidden">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBox Text="{Binding IntField4, UpdateSourceTrigger=PropertyChanged,IsAsync=True}" BorderBrush="Transparent" TextChanged="DataGrid_TextCellChanged"/>

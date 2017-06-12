@@ -42,7 +42,7 @@ namespace CardMasterImageBuilder.SkinElements
         public int WordSpaceOffsetX { get; set; } = 0;
         public int RowSpaceOffsetY { get; set; } = 0;
 
-        public SETextArea(Skin skin, int x, int y, int width, int height, string comments, string text) : base(skin, x, y, width, height, comments)
+        public SETextArea(DirectoryInfo resourcesDirectory, int x, int y, int width, int height, string comments, string text) : base(resourcesDirectory, x, y, width, height, comments)
         {
             this.fullText = text;
             SetBackground(Color.Transparent);

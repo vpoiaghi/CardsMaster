@@ -10,9 +10,12 @@ namespace CardMasterImageBuilder.Builders.Impl
     {
         public override string TYPE { get { return "SERectangle"; } }
        
-        public override SkinElement Build(JsonSkinsProject skinsProject, JsonCard card,Skin skin, JsonSkinItem item)
+        public override SkinElement Build(BuilderParameter builderParameter)
         {
-            SERectangle skinElement = new SERectangle(skin, item.X, item.Y, item.Width, item.Height, item.Comment);
+            JsonSkinItem item = builderParameter.JsonSkinItem;
+            JsonSkinsProject skinsProject = builderParameter.JsonSkinsProject;
+            JsonCard card = builderParameter.JsonCard;
+            SERectangle skinElement = new SERectangle(builderParameter.ResourcesDirectory, item.X, item.Y, item.Width, item.Height, item.Comment);
             if(item.Background == "DYNAMIC")
             {
                 skinElement.SetBackground(GetMatchingBackground(skinsProject,card));

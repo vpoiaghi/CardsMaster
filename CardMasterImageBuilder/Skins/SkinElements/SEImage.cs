@@ -14,10 +14,10 @@ namespace CardMasterImageBuilder.SkinElements
         public string ImageName { get; set; } = null;
         public string NameAttribute { get; set; } = null;
 
-        public SEImage(Skin skin, int x, int y, int width, int height, string comments) : base(skin, x, y, width, height, comments)
+        public SEImage(DirectoryInfo resourcesDirectory, int x, int y, int width, int height, string comments) : base(resourcesDirectory, x, y, width, height, comments)
         { }
 
-        public SEImage(Skin skin, int x, int y, int width, int height, string comments, string imageName) : base(skin, x, y, width, height, comments)
+        public SEImage(DirectoryInfo resourcesDirectory, int x, int y, int width, int height, string comments, string imageName) : base(resourcesDirectory, x, y, width, height, comments)
         {
             this.ImageName = imageName;
         }
@@ -40,7 +40,7 @@ namespace CardMasterImageBuilder.SkinElements
         private string GetFileFullname(JsonCard card)
         {
             string fileFullname = null;
-            DirectoryInfo rootDirectory = this.skin.ResourcesDirectory;
+            DirectoryInfo rootDirectory = resourcesDirectory;
 
             if ((rootDirectory != null) && (rootDirectory.Exists))
             {

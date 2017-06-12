@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Builders\AbstractBuilder.cs" />
+    <Compile Include="Builders\BuilderParameter.cs" />
     <Compile Include="Builders\BuilderRegister.cs" />
     <Compile Include="Builders\IBuilder.cs" />
     <Compile Include="Converters\CustomColorConverter.cs" />

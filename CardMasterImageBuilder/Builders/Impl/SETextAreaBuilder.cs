@@ -11,10 +11,12 @@ namespace CardMasterImageBuilder.Builders.Impl
     {
         public override string TYPE { get { return "SETextArea"; } }
        
-        public override SkinElement Build(JsonSkinsProject skinsProject, JsonCard card,Skin skin, JsonSkinItem item)
+        public override SkinElement Build(BuilderParameter builderParameter)
         {
+            JsonSkinItem item = builderParameter.JsonSkinItem;
+            JsonCard card = builderParameter.JsonCard;
             //SETextArea skinElement = new SETextArea(skin, item.X, item.Y, item.Width, item.Height, item.Comment, "<Nom>");
-            SETextArea2 skinElement = new SETextArea2(skin, item.X, item.Y, item.Width, item.Height, item.Comment, "<Nom>");
+            SETextArea2 skinElement = new SETextArea2(builderParameter.ResourcesDirectory, item.X, item.Y, item.Width, item.Height, item.Comment, "<Nom>");
 
             if (item.Style == "Bold")
             {
