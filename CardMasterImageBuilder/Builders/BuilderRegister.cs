@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CardMasterCommon.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -27,13 +28,22 @@ namespace CardMasterImageBuilder.Builders
 
         public void Register()
         {
-            Type[] toReturn = Assembly.GetExecutingAssembly().GetTypes().Where(t => String.Equals(t.Namespace, "CardMasterImageBuilder.Builders.Impl", StringComparison.Ordinal)).ToArray();
-            foreach (Type type in toReturn)
-            {
-                IBuilder instance = (IBuilder)Activator.CreateInstance(type);
-                map.Add(instance.TYPE, instance);
-            }
+            string namespacePath = "CardMasterImageBuilder.Builders.Impl";
 
+            if (UtilsTypes.IsNamespaceExists(namespacePath))
+            {
+                //Type[] toReturn = Assembly.GetExecutingAssembly().GetTypes().Where(t => String.Equals(t.Namespace, namespacePath, StringComparison.Ordinal) && (t is IBuilder)).ToArray();
+                Type[] toReturn = Assembly.GetExecutingAssembly().GetTypes().Where(t => UtilsTypes.IsInNamespace(t, namespacePath) && UtilsTypes.IsImplementInterface(t, typeof(IBuilder))).ToArray();
+                foreach (Type type in toReturn)
+                {
+                    IBuilder instance = (IBuilder)Activator.CreateInstance(type);
+                    map.Add(instance.TYPE, instance);
+                }
+            }
+            else
+            {
+                throw new Exception("Le namespace " + namespacePath + " n'existe pas ou est inaccessible.");
+            }
         }
 
         public IBuilder getBuilder(String type)

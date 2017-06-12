@@ -51,8 +51,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>
-    </StartupObject>
+    <StartupObject>CardMasterManager.MainClass</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Logo MasterCards.ico</ApplicationIcon>
@@ -93,6 +92,7 @@
     <Compile Include="Converters\DrawingImageToImageSourceConverter.cs" />
     <Compile Include="Binders\EnumBindingSourceExtension.cs" />
     <Compile Include="Converters\EnumConverter.cs" />
+    <Compile Include="MainClass.cs" />
     <Compile Include="Utils\CardMatcher.cs" />
     <Compile Include="Utils\DirectoryUtils.cs" />
     <Page Include="Components\DGridTextColumn.xaml">
