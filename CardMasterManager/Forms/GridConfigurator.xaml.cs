@@ -12,7 +12,7 @@ namespace CardMasterManager.Forms
     /// </summary>
     public partial class GridConfigurator : Window
     {
-        private DataGrid cardGrid;
+
         private  class Configuration
         {
             public IDictionary<String, Visibility> fields { get; set; }
@@ -31,13 +31,13 @@ namespace CardMasterManager.Forms
 
         public GridConfigurator(DataGrid cardGrid)
         {
-            this.cardGrid = cardGrid;
+
             InitializeComponent();
-            Configuration config = BuildConfiguration();
-            DisplayConfiguration(config);
+            Configuration config = BuildConfiguration(cardGrid);
+            DisplayConfiguration(cardGrid,config);
         }
 
-        private Configuration BuildConfiguration()
+        private static Configuration BuildConfiguration(DataGrid cardGrid)
         {
             Configuration configuration = new Configuration();
             foreach (DataGridColumn c in cardGrid.Columns)
@@ -47,7 +47,13 @@ namespace CardMasterManager.Forms
             return configuration;
 
         }
-        private void DisplayConfiguration(Configuration config)
+        public static void BuildAndSaveConfiguration(DataGrid cardGrid)
+        {
+            Configuration config = BuildConfiguration(cardGrid);
+            SaveConfigurationToJson(config);
+        }
+
+        private void DisplayConfiguration(DataGrid cardGrid,Configuration config)
         {
             int index = 0;
             foreach(KeyValuePair<string, Visibility> entry in config.fields)
@@ -116,7 +122,7 @@ namespace CardMasterManager.Forms
             return newConfiguration;
         }
 
-        private void SaveConfigurationToJson(Configuration newConfiguration)
+        private static void SaveConfigurationToJson(Configuration newConfiguration)
         {
             String js = JsonConvert.SerializeObject(newConfiguration, Formatting.Indented);
             String dir = System.AppDomain.CurrentDomain.BaseDirectory;

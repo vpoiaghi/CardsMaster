@@ -363,5 +363,10 @@ namespace CardMasterManager
             form.Left = 300;
             form.ShowDialog();
         }
+
+        private void Window_Closing(object sender, CancelEventArgs e)
+        {
+            GridConfigurator.BuildAndSaveConfiguration(cardGrid);
+        }
     }
 }

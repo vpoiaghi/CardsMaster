@@ -12,7 +12,7 @@
         xmlns:drawing2d="clr-namespace:System.Drawing.Drawing2D;assembly=System.Drawing"
         xmlns:drawingtext="clr-namespace:System.Drawing.Text;assembly=System.Drawing"
         mc:Ignorable="d"
-        Title="Card Manager" Height="960" Width="1700" ResizeMode="NoResize">
+        Title="Card Manager" Height="960" Width="1700" ResizeMode="NoResize" Closing="Window_Closing" >
 
     <Window.Resources>
         <commonconverters:EnumConverter x:Key="EnumConverter"/>
