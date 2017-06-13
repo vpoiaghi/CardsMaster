@@ -13,7 +13,7 @@ namespace CardMasterImageBuilder.Builders
     {
         String TYPE { get; }
 
-        SkinElement Build(BuilderParameter builderParameter);
+        SkinElement Build(JsonSkinItem jsonSkinItem,JsonCard jsonCard);
     }
 
 

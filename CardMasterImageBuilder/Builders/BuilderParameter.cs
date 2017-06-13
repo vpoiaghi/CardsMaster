@@ -13,18 +13,12 @@ namespace CardMasterImageBuilder.Builders
     public class BuilderParameter
     {
         public JsonSkinsProject JsonSkinsProject { get; set; }
-        public JsonSkinItem JsonSkinItem { get; set; }
-        public JsonCard JsonCard { get; set; }
         public DirectoryInfo ResourcesDirectory { get; set; }
 
-       
-
-        public BuilderParameter(Skin skin, JsonSkinsProject jsonSkinsProject, JsonSkinItem jsonSkinItem, JsonCard jsonCard)
+        public BuilderParameter(DirectoryInfo resourcesDirectory, JsonSkinsProject jsonSkinsProject)
         {
             this.JsonSkinsProject = jsonSkinsProject;
-            this.JsonSkinItem = jsonSkinItem;
-            this.JsonCard = jsonCard;
-            this.ResourcesDirectory = skin.ResourcesDirectory;
+            this.ResourcesDirectory = resourcesDirectory;
         }
     }
 }

@@ -9,12 +9,15 @@ namespace CardMasterImageBuilder.Builders.Impl
     public class SERectangleBuilder : AbstractBuilder
     {
         public override string TYPE { get { return "SERectangle"; } }
-       
-        public override SkinElement Build(BuilderParameter builderParameter)
+
+        public SERectangleBuilder(BuilderParameter builderParameter)
         {
-            JsonSkinItem item = builderParameter.JsonSkinItem;
+            this.builderParameter = builderParameter;
+        }
+
+        public override SkinElement Build(JsonSkinItem item, JsonCard card)
+        {
             JsonSkinsProject skinsProject = builderParameter.JsonSkinsProject;
-            JsonCard card = builderParameter.JsonCard;
             SERectangle skinElement = new SERectangle(builderParameter.ResourcesDirectory, item.X, item.Y, item.Width, item.Height, item.Comment);
             if(item.Background == "DYNAMIC")
             {

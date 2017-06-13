@@ -29,10 +29,11 @@ namespace CardMasterImageBuilder
 
             if (jsonSkinsProject != null)
             {
-                this.resourcesDirectory = new DirectoryInfo(Path.Combine( skinsFile.Directory.FullName, RESOURCES_DIRECTORY_NAME));
+                resourcesDirectory = new DirectoryInfo(Path.Combine( skinsFile.Directory.FullName, RESOURCES_DIRECTORY_NAME));
+                BuilderRegister.getInstance().Register(new BuilderParameter(resourcesDirectory, jsonSkinsProject));
                 skin = GetSkin(jsonCard, side);
             }
-
+            
             return skin;
         }
         public enum SkinSide
@@ -55,8 +56,7 @@ namespace CardMasterImageBuilder
 
             foreach (JsonSkinItem jsonSkinItem in jsonSkin.Items)
             {
-                BuilderParameter builderParameter = new BuilderParameter(skin,jsonSkinsProject,jsonSkinItem,jsonCard);
-                skin.Elements.Add(BuilderRegister.getInstance().getBuilder(jsonSkinItem.Type).Build(builderParameter));  
+                skin.Elements.Add(BuilderRegister.getInstance().getBuilder(jsonSkinItem.Type).Build(jsonSkinItem, jsonCard));  
             }
 
             return skin;
