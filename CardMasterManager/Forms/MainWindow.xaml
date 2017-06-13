@@ -58,6 +58,10 @@
                         <Button x:Name="clearSearchButton" Width="19" Click="ClearSearch">
                             <TextBlock>X</TextBlock>
                         </Button>
+                        <Separator Width="910" Background="Transparent"/>
+                        <Button x:Name="displayConfigurator" Width="19" Height="19" Click="DisplayConfigurator" Margin="0">
+                            <TextBlock><Run Text="*"/></TextBlock>
+                        </Button>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
                         <DataGrid Name="cardGrid" Margin="5" Width="1269" Height="847" SelectionMode="Single" AutoGenerateColumns="False" AlternatingRowBackground="Azure" AlternationCount="2" IsReadOnly="False" ItemsSource="{Binding a}"

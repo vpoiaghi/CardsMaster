@@ -12,13 +12,13 @@
 * Utiliser des interfaces.
 Actuellement il n'y a aucn système de contrat de service entre les projets, chaque projet voit tout ou presque des projets qu'il référencie.
 
-* Ajouter un object BuilderParameter qui hérite du JsonSkinItem (attention peut etre certaines info sans dans le JsonSkin, il faudrait vraiment trouver un moyen d'avoir ce lien)
+* [DONE] Ajouter un object BuilderParameter qui hérite du JsonSkinItem (attention peut etre certaines info sans dans le JsonSkin, il faudrait vraiment trouver un moyen d'avoir ce lien)
 
-* Utiliser le BuilderParameter dans tt les methodes build et les passer en override sur la meme signature
+* [DONE] Utiliser le BuilderParameter dans tt les methodes build et les passer en override sur la meme signature
 
-* Créer un singleter register avec une methode Register qui parcourt tout le package builder et enregistre tous les builders en fonction d'un attribut String TYPE commun à tous
+* [DONE] Créer un singleter register avec une methode Register qui parcourt tout le package builder et enregistre tous les builders en fonction d'un attribut String TYPE commun à tous
 
-* Appeller le register au lancement de l'application, et utiliser ce register dans la SkinFactory
+* [DONE] Appeller le register au lancement de l'application, et utiliser ce register dans la SkinFactory
   
 ### Exportation
 
@@ -41,15 +41,7 @@ Un seul type d'objet de paramétrage doit être envoyé au projet d'export et c'
 
 ### Aspect des cartes
 
-* Bordures en dégradé
-
-* Bordure en or ou noir
-Pouvoir choisir pour une carte donnée quelle sera la couleur de la bordure (choix de customisation ou autre)
---> Je ne sais toujours pas si c'est pour la face ou le dos ou les deux... 
-La possibilité de choisir la couleur de bordure pour la face et le dos est prête coté Factory et gestion du dessin des SkinElement, reste :
-  * A ajouter un attribut à Card.
-  * A ajouter cet attribut au DataGrid.
-  * A s'en servir comme valeur dans le Factory.
+* Bordures en dégradé avec un color 1 et color 2 pour les borders (attention probleme de map <String,[String])
 
 ### IHM
 

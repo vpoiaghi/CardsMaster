@@ -61,6 +61,10 @@
     </Win32Resource>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CardMasterCard\ExtLibs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -92,6 +96,9 @@
     <Compile Include="Converters\DrawingImageToImageSourceConverter.cs" />
     <Compile Include="Binders\EnumBindingSourceExtension.cs" />
     <Compile Include="Converters\EnumConverter.cs" />
+    <Compile Include="Forms\GridConfigurator.xaml.cs">
+      <DependentUpon>GridConfigurator.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainClass.cs" />
     <Compile Include="Utils\CardMatcher.cs" />
     <Compile Include="Utils\DirectoryUtils.cs" />
@@ -100,6 +107,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Components\MyButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\GridConfigurator.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
