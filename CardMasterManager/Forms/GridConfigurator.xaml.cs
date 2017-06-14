@@ -1,9 +1,11 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace CardMasterManager.Forms
 {
@@ -53,13 +55,19 @@ namespace CardMasterManager.Forms
             SaveConfigurationToJson(config);
         }
 
+
+
         private void DisplayConfiguration(DataGrid cardGrid,Configuration config)
         {
             int index = 0;
             foreach(KeyValuePair<string, Visibility> entry in config.fields)
             {
                 DockPanel stackLine = new DockPanel();
-               
+
+                Border b = new Border();
+                b.CornerRadius = new CornerRadius(0);
+                b.BorderThickness = new Thickness(1);
+                b.BorderBrush = new SolidColorBrush(Colors.LightGray);
 
                 TextBox textBox = new TextBox();
                 textBox.Name = "Txt" + index ;
@@ -73,7 +81,8 @@ namespace CardMasterManager.Forms
                 cb.HorizontalAlignment = HorizontalAlignment.Right;
 
                 stackLine.Children.Add(cb);
-                mainStack.Children.Add(stackLine);
+                b.Child = stackLine;
+                mainStack.Children.Add(b);
                 index++;
             }
 
