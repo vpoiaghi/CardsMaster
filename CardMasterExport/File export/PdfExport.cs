@@ -1,9 +1,6 @@
 ﻿using CardMasterCard.Card;
-using CardMasterExport.Export;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Windows;
 
 namespace CardMasterExport.FileExport
 {
@@ -11,20 +8,9 @@ namespace CardMasterExport.FileExport
     {
         private FileInfo targetFile = null;
 
-        public PdfExport(List<JsonCard> cardsList, FileInfo skinsFile) : base(cardsList, skinsFile)
-        { }
-
-        public PdfExport(Window owner, List<JsonCard> cardsList, FileInfo skinsFile) : base(owner, cardsList, skinsFile)
-        { }
-
-        public override ExportParameters GetParameters()
-        {
-            return new Parameters();
-        }
-
         protected override bool BeforeCardsExport()
         {
-            this.targetFile = ((Parameters)this.parameters).TargetFile;
+            this.targetFile = this.parameters.TargetFile;
             throw new NotImplementedException();
         }
 
@@ -44,9 +30,5 @@ namespace CardMasterExport.FileExport
         protected override void AfterCardsExport()
         { }
 
-        public class Parameters : ExportParameters
-        {
-            public FileInfo TargetFile { get; set; } = null;
-        }
     }
 }

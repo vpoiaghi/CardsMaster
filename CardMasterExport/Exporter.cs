@@ -1,5 +1,7 @@
 ﻿using CardMasterCard.Card;
 using CardMasterExport.Export;
+using CardMasterExport.FileExport;
+using CardMasterExport.PrinterExport;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -10,47 +12,37 @@ namespace CardMasterExport
 {
     public abstract class Exporter
     {
+        public const string EXPORT_MODE_ALL = "all";
+        public const string EXPORT_MODE_BOARD = "board";
+
+        public const string EXPORT_FORMAT_PNG = "png";
+        public const string EXPORT_FORMAT_PDF = "pdf";
+        public const string EXPORT_FORMAT_PRINTER = "printer";
+
+
         private bool exportRunning = false;
         protected static object _lock = new object();
 
-        private Window owner = null;
+        private IExporterOwner owner = null;
         protected List<JsonCard> cardsList = null;
         protected FileInfo skinsFile = null;
         protected ExportParameters parameters = null;
-        
-        protected delegate void ProgressChangedEvent(ProgressChangedArg arg);
-        public delegate void ProgressChanged(object sender, ProgressChangedArg args);
 
-        public event ProgressChanged progressChangedEvent;
+        //protected delegate void ProgressChangedEvent(ProgressChangedArg arg);
+        //public delegate void ProgressChanged(object sender, ProgressChangedArg args);
+        //public event ProgressChanged progressChangedEvent;
+
+        protected delegate void ProgressChangedEventSender(ProgressChangedArg arg);
+        public delegate void ProgressChangedEventHandler(object sender, ProgressChangedArg args);
+        public event ProgressChangedEventHandler ProgressChanged;
+
 
         protected abstract bool BeforeCardsExport();
         protected abstract void MakeCardExport(JsonCard card);
         protected abstract void AfterCardsExport();
         protected abstract string GetProgressMessage(ProgressState state, int index, int total);
 
-        public abstract ExportParameters GetParameters();
 
-        //public Exporter()
-        //{ }
-
-        protected Exporter(List<JsonCard> cardsList, FileInfo skinsFile) : this(null, cardsList, skinsFile)
-        { }
-
-        protected Exporter(Window owner, List<JsonCard> cardsList, FileInfo skinsFile)
-        {
-            if (cardsList == null)
-            {
-                throw new ArgumentNullException("cardsList");
-            }
-            if (skinsFile == null)
-            {
-                throw new ArgumentNullException("skinsFile");
-            }
-
-            this.owner = owner;
-            this.cardsList = cardsList;
-            this.skinsFile = skinsFile;
-        }
         public void Dispose()
         {
             owner = null;
@@ -58,7 +50,49 @@ namespace CardMasterExport
             skinsFile = null;
         }
 
-        public void Export(ExportParameters parameters)
+        public static void Export(ExportParameters parameters)
+        {
+            Export(parameters);
+        }
+
+        public static void Export(IExporterOwner owner, ExportParameters parameters)
+        {
+            Exporter exporter = null;
+
+            switch (parameters.exportFormat)
+            {
+                case EXPORT_FORMAT_PDF:
+                    exporter = new PdfExport();
+                    break;
+                case EXPORT_FORMAT_PNG:
+                    switch (parameters.exportMode)
+                    {
+                        case EXPORT_MODE_ALL:
+                            exporter = new PngExport();
+                            break;
+                        case EXPORT_MODE_BOARD:
+                            exporter = new PngBoardExport();
+                            break;
+                    }
+                    break;
+                case EXPORT_FORMAT_PRINTER:
+                    exporter = new PrinterBoardExport();
+                    break;
+            }
+
+            if (exporter != null)
+            {
+                exporter.owner = owner;
+                exporter.parameters = parameters;
+                exporter.startExport();
+            }
+            else
+            {
+                throw new Exception("Aucun exporter trouvé pour ces paramètres.");
+            }
+        }
+
+        private void startExport()
         {
             if (parameters == null)
             {
@@ -66,7 +100,8 @@ namespace CardMasterExport
             }
             else
             {
-                this.parameters = parameters;
+                this.cardsList = parameters.cardsList;
+                this.skinsFile = parameters.skinsFile;
             }
 
             if ((cardsList != null) && (skinsFile != null) && (!exportRunning))
@@ -84,10 +119,7 @@ namespace CardMasterExport
                     {
                         t.Join();
                     }
-
                 }
-
-                //exportRunning = false;
             }
 
         }
@@ -153,7 +185,21 @@ namespace CardMasterExport
 
                 try
                 {
-                    owner.Dispatcher.Invoke((ProgressChangedEvent)SendProgressChangedEvent, arg);
+                    if (owner.Dispatcher != null)
+                    {
+                        // Si l'appelant a un dispatcher valide, on l'utilise pour gérer
+                        // le traitement du message de progression dans son propre thread
+                        // de façon asynchrone.
+                        owner.Dispatcher.Invoke((ProgressChangedEventSender)SendProgressChangedEvent, arg);
+                    }
+                    else
+                    {
+                        // Si l'appelant n'a pas dispatcher valide, le traitement du 
+                        // message de progression est géré de façon synchrone.
+                        SendProgressChangedEvent(arg);
+                    }
+
+
                 }
                 catch (Exception ex)
                 {
@@ -163,23 +209,26 @@ namespace CardMasterExport
             }
             else
             {
-                ClearCurrentConsoleLine();
+                throw new Exception("Exportation : aucun appelant n'a été défini (owner=null).");
 
-                if (state == ProgressState.ExportInProgress)
-                {
-                    Console.Write(message);
-                }
-                else
-                {
-                    Console.WriteLine(message);
-                }
+                //ClearCurrentConsoleLine();
+
+                //if (state == ProgressState.ExportInProgress)
+                //{
+                //    Console.Write(message);
+                //}
+                //else
+                //{
+                //    Console.WriteLine(message);
+                //}
             }
 
         }
 
         private void SendProgressChangedEvent(ProgressChangedArg arg)
         {
-            progressChangedEvent(this, arg);
+            //ProgressChanged(this, arg);
+            owner.ExportProgressChanged(this, arg);
         }
 
         private void ClearCurrentConsoleLine()

@@ -1,4 +1,6 @@
 ﻿using CardMasterCard.Card;
+using CardMasterExport;
+using CardMasterExport.Export;
 using CardMasterExport.FileExport;
 using System;
 using System.IO;
@@ -48,20 +50,24 @@ namespace CardMasterCmdExport
 
         private static void ExportAll(JsonCardsProject project, FileInfo skinFile, Parameters prms)
         {
-            PngExport exporter = new PngExport(project.Cards, skinFile);
-            PngExport.Parameters parameters = (PngExport.Parameters)exporter.GetParameters();
+            ExportParameters parameters = new ExportParameters(project.Cards, skinFile);
+            parameters.exportFormat = Exporter.EXPORT_FORMAT_PNG;
+            parameters.exportMode = Exporter.EXPORT_MODE_ALL;
             parameters.TargetFolder = prms.ExportTargetFolder;
-            exporter.Export(parameters);
+
+            Exporter.Export(parameters);
         }
 
         private static void ExportBoards(JsonCardsProject project, FileInfo skinFile, Parameters prms)
         {
-            PngBoardExport exporter = new PngBoardExport(project.Cards, skinFile);
-            PngBoardExport.Parameters parameters = (PngBoardExport.Parameters)exporter.GetParameters();
+            ExportParameters parameters = new ExportParameters(project.Cards, skinFile);
+            parameters.exportFormat = Exporter.EXPORT_FORMAT_PNG;
+            parameters.exportMode = Exporter.EXPORT_MODE_BOARD;
             parameters.TargetFolder = prms.ExportTargetFolder;
             parameters.SpaceBetweenCards = prms.BoardSpace.Value;
             parameters.WithBackSides = prms.WithBackSide.Value;
-            exporter.Export(parameters);
+
+            Exporter.Export(parameters);
         }
 
     }

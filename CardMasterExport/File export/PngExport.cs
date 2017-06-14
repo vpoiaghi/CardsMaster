@@ -1,12 +1,8 @@
 ﻿using CardMasterCard.Card;
-using CardMasterCommon.Dialog;
-using CardMasterExport.Export;
 using CardMasterImageBuilder;
 using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
-using System.Windows;
 
 namespace CardMasterExport.FileExport
 
@@ -15,25 +11,9 @@ namespace CardMasterExport.FileExport
     {
         private DirectoryInfo targetFolder = null;
 
-        public PngExport(List<JsonCard> cardsList, FileInfo skinsFile) : base(cardsList, skinsFile)
-        { }
-
-        public PngExport(Window owner, List<JsonCard> cardsList, FileInfo skinsFile) : base(owner, cardsList, skinsFile)
-        { }
-
-        public override ExportParameters GetParameters()
-        {
-            return new Parameters();
-        }
-
         protected override bool BeforeCardsExport()
         {
-            this.targetFolder = ((Parameters)this.parameters).TargetFolder;
-
-            if (this.targetFolder == null)
-            {
-                this.targetFolder = FolderDialog.SelectFolder();
-            }
+            this.targetFolder = this.parameters.TargetFolder;
 
             return (this.targetFolder != null);
         }
@@ -90,11 +70,5 @@ namespace CardMasterExport.FileExport
             return message;
         }
 
-        public class Parameters : ExportParameters
-        {
-            public DirectoryInfo TargetFolder { get; set; } = null;
-        }
-
     }
-
 }

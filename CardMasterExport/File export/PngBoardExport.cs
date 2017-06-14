@@ -1,13 +1,9 @@
 ﻿using CardMasterCard.Card;
 using CardMasterCommon.Dialog;
-using CardMasterExport.Export;
 using CardMasterImageBuilder;
-using CardMasterSkin.Skins;
 using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
-using System.Windows;
 
 namespace CardMasterExport.FileExport
 {
@@ -30,17 +26,6 @@ namespace CardMasterExport.FileExport
         private int currentBoard = 0;
         private Bitmap boardImage = null;
 
-        public PngBoardExport(List<JsonCard> cardsList, FileInfo skinsFile) : base(cardsList, skinsFile)
-        { }
-
-        public PngBoardExport(Window owner, List<JsonCard> cardsList, FileInfo skinsFile) : base(owner, cardsList, skinsFile)
-        { }
-
-        public override ExportParameters GetParameters()
-        {
-            return new Parameters();
-        }
-
         protected override bool BeforeCardsExport()
         {
             this.currentX = 0;
@@ -48,10 +33,9 @@ namespace CardMasterExport.FileExport
             this.currentBoard = 0;
             this.boardImage = null;
 
-            Parameters prms = ((Parameters)this.parameters);
-            this.targetFolder = prms.TargetFolder;
-            this.spaceBeetweenCards = prms.SpaceBetweenCards;
-            this.withBackSides = prms.WithBackSides;
+            this.targetFolder = this.parameters.TargetFolder;
+            this.spaceBeetweenCards = this.parameters.SpaceBetweenCards;
+            this.withBackSides = this.parameters.WithBackSides;
 
             if (this.targetFolder == null)
             {
@@ -189,12 +173,5 @@ namespace CardMasterExport.FileExport
             return drawer.DrawBackSideSkin();
         }
 
-
-        public class Parameters : ExportParameters
-        {
-            public DirectoryInfo TargetFolder { get; set; } = null;
-            public int SpaceBetweenCards { get; set; } = 0;
-            public bool WithBackSides { get; set; } = false;
-        }
     }
 }

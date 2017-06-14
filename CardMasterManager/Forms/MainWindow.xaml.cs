@@ -1,31 +1,28 @@
 ﻿using CardMasterCard.Card;
+using CardMasterCommon.Dialog;
 using CardMasterExport;
+using CardMasterExport.Export;
 using CardMasterExport.FileExport;
+using CardMasterExport.PrinterExport;
 using CardMasterImageBuilder;
+using CardMasterImageBuilder.Builders;
 using CardMasterManager.Converters;
-using CardMasterCommon.Converters;
+using CardMasterManager.Utils;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
-using System.Drawing.Drawing2D;
-using System.Drawing.Text;
 using System.IO;
 using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using CardMasterExport.PrinterExport;
-using CardMasterManager.Utils;
-using System.Windows.Data;
-using System.ComponentModel;
-using CardMasterImageBuilder.Builders;
 
 namespace CardMasterManager
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window, IExporterOwner
     {
         private bool onLoading;
         private static object locker = new object();
@@ -170,10 +167,19 @@ namespace CardMasterManager
             
             if (cardsList.Count > 0)
             {
-                PngExport exp = new PngExport(this, cardsList, GetSkinFile());
-                PngExport.Parameters parameters = (PngExport.Parameters)exp.GetParameters();
-                exp.progressChangedEvent += new PngExport.ProgressChanged(ExportProgressChanged);
-                exp.Export(parameters);
+                ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile());
+                parameters.exportFormat = Exporter.EXPORT_FORMAT_PNG;
+                parameters.exportMode = Exporter.EXPORT_MODE_ALL;
+                parameters.TargetFolder = FolderDialog.SelectFolder();
+
+                Exporter.Export(this, parameters);
+
+
+
+                //PngExport exp = new PngExport(this, cardsList, GetSkinFile());
+                //PngExport.Parameters parameters = (PngExport.Parameters)exp.GetParameters();
+                //exp.progressChangedEvent += new PngExport.ProgressChanged(ExportProgressChanged);
+                //exp.Export(this, parameters);
             }
 
         }
@@ -189,16 +195,25 @@ namespace CardMasterManager
 
             if (cardsList.Count > 0)
             {
-                PngBoardExport exp = new PngBoardExport(this, cardsList, GetSkinFile());
-                PngBoardExport.Parameters parameters = (PngBoardExport.Parameters)exp.GetParameters();
+                ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile());
                 parameters.SpaceBetweenCards = 0;
-                exp.progressChangedEvent += new PngBoardExport.ProgressChanged(ExportProgressChanged);
-                exp.Export(parameters);
+                parameters.exportFormat = Exporter.EXPORT_FORMAT_PNG;
+                parameters.exportMode = Exporter.EXPORT_MODE_BOARD;
+                parameters.TargetFolder = FolderDialog.SelectFolder();
+
+                Exporter.Export(this, parameters);
+
+
+                //PngBoardExport exp = new PngBoardExport(this, cardsList, GetSkinFile());
+                //PngBoardExport.Parameters parameters = (PngBoardExport.Parameters)exp.GetParameters();
+                //parameters.SpaceBetweenCards = 0;
+                //exp.progressChangedEvent += new PngBoardExport.ProgressChanged(ExportProgressChanged);
+                //exp.Export(parameters);
             }
 
         }
 
-        private void ExportProgressChanged(object sender, ProgressChangedArg args)
+        public void ExportProgressChanged(object sender, ProgressChangedArg args)
         {
             debug.Text = args.Message;
 
@@ -300,12 +315,20 @@ namespace CardMasterManager
 
             if (cardsList.Count > 0)
             {
-                PrinterBoardExport exp = new PrinterBoardExport(this, cardsList, GetSkinFile());
-                PrinterBoardExport.Parameters parameters = (PrinterBoardExport.Parameters)exp.GetParameters();
+                ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile());
                 parameters.SpaceBetweenCards = 0;
                 parameters.WithBackSides = true;
-                exp.progressChangedEvent += new PngBoardExport.ProgressChanged(ExportProgressChanged);
-                exp.Export(parameters);
+                parameters.exportFormat = Exporter.EXPORT_FORMAT_PRINTER;
+                parameters.exportMode = Exporter.EXPORT_MODE_BOARD;
+
+                Exporter.Export(this, parameters);
+
+                //PrinterBoardExport exp = new PrinterBoardExport(this, cardsList, GetSkinFile());
+                //PrinterBoardExport.Parameters parameters = (PrinterBoardExport.Parameters)exp.GetParameters();
+                //parameters.SpaceBetweenCards = 0;
+                //parameters.WithBackSides = true;
+                //exp.progressChangedEvent += new PngBoardExport.ProgressChanged(ExportProgressChanged);
+                //exp.Export(parameters);
             }
 
         }

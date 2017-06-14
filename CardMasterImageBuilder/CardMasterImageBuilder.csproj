@@ -71,7 +71,6 @@
     <Compile Include="Skins\SkinElements\SERoundedRectangle.cs" />
     <Compile Include="Skins\SkinElements\SESquare.cs" />
     <Compile Include="Skins\SkinElements\SETextArea2.cs" />
-    <Compile Include="Skins\SkinElements\SETextArea.cs" />
     <Compile Include="Skins\SkinElements\TextFormater\AttributeParser.cs" />
     <Compile Include="Skins\SkinElements\TextFormater\TElement.cs" />
     <Compile Include="Skins\SkinElements\TextFormater\TElementSpace.cs" />
@@ -82,12 +81,6 @@
     <Compile Include="Skins\SkinElements\TextFormater\TextAlignment.cs" />
     <Compile Include="Skins\SkinElements\TextFormater\TextSizeException.cs" />
     <Compile Include="Skins\SkinElements\TextFormater\Words.cs" />
-    <Compile Include="Skins\SkinElements\TextFormat\AttributeParser.cs" />
-    <Compile Include="Skins\SkinElements\TextFormat\FormattedText.cs" />
-    <Compile Include="Skins\SkinElements\TextFormat\TextElement.cs" />
-    <Compile Include="Skins\SkinElements\TextFormat\TextFormatter.cs" />
-    <Compile Include="Skins\SkinElements\TextFormat\TextRow.cs" />
-    <Compile Include="Skins\SkinElements\TextFormat\TextSection.cs" />
     <Compile Include="Skins\Skin.cs" />
     <Compile Include="Skins\SkinElement.cs" />
     <Compile Include="Skins\SkinElementBorder.cs" />

@@ -9,20 +9,20 @@ using System.IO;
 
 namespace CardMasterImageBuilder.SkinElements
 {
-    //public enum HorizontalAlignment
-    //{
-    //    Left,
-    //    LeftWithIcon,
-    //    Center,
-    //    Right
-    //};
+    public enum HorizontalAlignment
+    {
+        Left,
+        LeftWithIcon,
+        Center,
+        Right
+    };
 
-    //public enum VerticalAlignment
-    //{
-    //    Top,
-    //    Center,
-    //    Bottom
-    //};
+    public enum VerticalAlignment
+    {
+        Top,
+        Center,
+        Bottom
+    };
 
     public class SETextArea2 : SkinElement
     {
@@ -114,7 +114,7 @@ namespace CardMasterImageBuilder.SkinElements
                 }
 
                 // Dessine le contour de la zone "au plus près" du texte --> A utiliser pour les tests de positionnement
-                drawElementRectangleForTests(element);
+                //drawElementRectangleForTests(element);
             }
 
             return graphicElementsList;

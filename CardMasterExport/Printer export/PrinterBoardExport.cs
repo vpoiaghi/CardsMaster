@@ -1,15 +1,11 @@
 ﻿using CardMasterCard.Card;
-using CardMasterCommon.Dialog;
 using CardMasterExport.Export;
 using CardMasterImageBuilder;
-using CardMasterSkin.Skins;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Printing;
 using System.IO;
-using System.Windows;
-//using System.Windows.Controls;
 using System.Windows.Forms;
 
 namespace CardMasterExport.PrinterExport
@@ -43,18 +39,10 @@ namespace CardMasterExport.PrinterExport
         PrintDocument pDoc = null;
 
 
-        public PrinterBoardExport(List<JsonCard> cardsList, FileInfo skinsFile) : this(null, cardsList, skinsFile)
-        { }
-
-        public PrinterBoardExport(Window owner, List<JsonCard> cardsList, FileInfo skinsFile) : base(owner, cardsList, skinsFile)
+        public PrinterBoardExport()
         {
             pDoc = new PrintDocument();
             pDoc.PrintPage += new PrintPageEventHandler(pdoc_PrintPage);
-        }
-
-        public override ExportParameters GetParameters()
-        {
-            return new Parameters();
         }
 
         protected override bool BeforeCardsExport()
@@ -93,9 +81,8 @@ namespace CardMasterExport.PrinterExport
                 this.currentX = 0;
                 this.currentY = 0;
 
-                Parameters prms = ((Parameters)this.parameters);
-                this.spaceBeetweenCards = prms.SpaceBetweenCards;
-                this.withBackSides = prms.WithBackSides;
+                this.spaceBeetweenCards = this.parameters.SpaceBetweenCards;
+                this.withBackSides = this.parameters.WithBackSides;
 
                 result = true;
             }
@@ -231,11 +218,5 @@ namespace CardMasterExport.PrinterExport
             return drawer.DrawBackSideSkin();
         }
 
-        public class Parameters : ExportParameters
-        {
-            public DirectoryInfo TargetFolder { get; set; } = null;
-            public int SpaceBetweenCards { get; set; } = 0;
-            public bool WithBackSides { get; set; } = false;
-        }
     }
 }
