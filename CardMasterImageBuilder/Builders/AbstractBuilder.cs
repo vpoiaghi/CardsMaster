@@ -41,7 +41,8 @@ namespace CardMasterImageBuilder.Builders
 
         protected Color GetMatchingRarityColor(JsonSkinsProject skinsProject, JsonCard card)
         {
-            return ConvertColorFromString(skinsProject.MapRareteColor[card.Rank]);
+            String stringColor = skinsProject.MapRareteColor.ContainsKey(card.Rank) ? skinsProject.MapRareteColor[card.Rank] : skinsProject.MapRareteColor[""];
+            return ConvertColorFromString(stringColor);
         }
         protected Color ConvertColorFromString(String color)
         {

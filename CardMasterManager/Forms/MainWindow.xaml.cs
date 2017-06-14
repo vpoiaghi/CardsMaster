@@ -138,17 +138,20 @@ namespace CardMasterManager
         {
             //Select Card from Collection from Name
             JsonCard businessCard = Card.ConvertToMasterCard(c);
-
-            Drawer drawer = new Drawer(businessCard, GetSkinFile(), null);
-            drawer.Quality = this.DQuality;
-            
-            //Refresh Image Component
-            DrawingImageToImageSourceConverter converter = new DrawingImageToImageSourceConverter();
-            Dispatcher.BeginInvoke(new Action(delegate ()
+            FileInfo skinFile = GetSkinFile();
+            if (skinFile != null)
             {
-               frontImage.Source = (ImageSource)converter.Convert(drawer.DrawCard(), null, null, System.Globalization.CultureInfo.CurrentCulture);
-               backCardImage.Source = (ImageSource)converter.Convert(drawer.DrawBackSideSkin(), null, null, System.Globalization.CultureInfo.CurrentCulture);
-            }));
+                Drawer drawer = new Drawer(businessCard, skinFile, null);
+                drawer.Quality = this.DQuality;
+
+                //Refresh Image Component
+                DrawingImageToImageSourceConverter converter = new DrawingImageToImageSourceConverter();
+                Dispatcher.BeginInvoke(new Action(delegate ()
+                {
+                    frontImage.Source = (ImageSource)converter.Convert(drawer.DrawCard(), null, null, System.Globalization.CultureInfo.CurrentCulture);
+                    backCardImage.Source = (ImageSource)converter.Convert(drawer.DrawBackSideSkin(), null, null, System.Globalization.CultureInfo.CurrentCulture);
+                }));
+            }
         }
 
         private void ComboBox_GotFocus(object sender, RoutedEventArgs e)
@@ -336,7 +339,7 @@ namespace CardMasterManager
         }
 
         private FileInfo GetSkinFile()
-        {
+        {   if (this.cardsFile == null) return null;
             FileInfo skinFile = new FileInfo(Path.Combine(this.cardsFile.Directory.FullName, this.cardsFile.Name.Replace(this.cardsFile.Extension, ".skin")));
             return skinFile.Exists ? skinFile : null;
         }
@@ -394,7 +397,34 @@ namespace CardMasterManager
 
         private void AddRowClick(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Add not implemented");
+
+            Card newCard = new Card();
+            newCard.Nature = NatureCard.Eau;
+            newCard.Kind = CardKind.Ninja;
+            newCard.Name = "Template";
+            newCard.Powers = new List<JsonPower>();
+            newCard.BackSkinName = "BackSkin1";
+            newCard.FrontSkinName = "FrontSkin1";
+            newCard.BackSide = "Back-Draw2";
+            newCard.Rank = "";
+            JsonPower p = new JsonPower(); p.Description = "Power";
+            newCard.Powers.Add(p);
+
+            int indexWhereToInsert = 0;
+            if (cardGrid.Items.Count == 0 )
+            {
+                indexWhereToInsert = 0;
+            }else if( cardGrid.SelectedIndex == -1)
+            {
+                indexWhereToInsert = cardGrid.Items.Count;
+            }
+            else
+            {
+                indexWhereToInsert = cardGrid.SelectedIndex;
+            }
+            cardGrid.Items.Insert(indexWhereToInsert, newCard);
+          
+            
         }
 
         private void MoveUpRowClick(object sender, RoutedEventArgs e)
@@ -404,7 +434,10 @@ namespace CardMasterManager
 
         private void DeleteRowClick(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Delete not implemented");
+            if (cardGrid.SelectedIndex != -1)
+            {
+                cardGrid.Items.RemoveAt(cardGrid.SelectedIndex);
+            }
         }
 
         private void MoveDownRowClick(object sender, RoutedEventArgs e)

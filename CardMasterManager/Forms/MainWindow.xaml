@@ -70,7 +70,7 @@
                                 <Button Name="AddRowButton" Click="AddRowClick">
                                     <StackPanel Orientation="Horizontal">
                                         <Image Source="/Resources/add.png" Width="20"/>
-                                        <TextBlock>Add</TextBlock>
+                                        <TextBlock>Add/Ins</TextBlock>
                                     </StackPanel>
                                 </Button>
                                 <Separator Width="5" Background="Transparent"/>
@@ -100,7 +100,7 @@
                     </DockPanel>
                     <StackPanel Orientation="Horizontal">
                         <DataGrid Name="cardGrid" Margin="5" Width="1269" Height="836" SelectionMode="Single" AutoGenerateColumns="False" AlternatingRowBackground="Azure" AlternationCount="2" IsReadOnly="False" ItemsSource="{Binding a}"
-                        SelectionChanged="cardGrid_SelectionChanged" FrozenColumnCount ="1" EnableColumnVirtualization="True" EnableRowVirtualization="True">
+                        SelectionChanged="cardGrid_SelectionChanged" FrozenColumnCount ="1" EnableColumnVirtualization="True" EnableRowVirtualization="True" CanUserAddRows="True" CanUserDeleteRows="True">
                             <DataGrid.Columns>
 
                                 <!--

@@ -82,13 +82,13 @@ namespace CardMasterManager
         public static JsonCard ConvertToMasterCard(Card card)
         {
             JsonCard toReturn = new JsonCard();
-            toReturn.Attack = card.Attack.ToString();
+            toReturn.Attack = card.Attack;
             toReturn.Background = card.Background;
             toReturn.Chakra = card.Nature.ToString();
             toReturn.Citation = card.Citation;
             toReturn.Comments = card.Comments;
-            toReturn.Cost = card.Cost.ToString();
-            toReturn.Defense = card.Defense.ToString();
+            toReturn.Cost = card.Cost;
+            toReturn.Defense = card.Defense;
             toReturn.Element = card.Element;
             toReturn.Kind = card.Kind.ToString();
             toReturn.Name = card.Name;
