@@ -4,7 +4,7 @@
     {
         public BoolPrmInfos(string attributeName) : base(attributeName)
         {
-            this.kind = ParameterKinds.Optional;
+            this.kind = ParameterKinds.Boolean;
             this.DefaultValue = false;
         }
     }

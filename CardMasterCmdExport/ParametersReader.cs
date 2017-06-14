@@ -150,9 +150,13 @@ namespace CardMasterCmdExport
 
                 if (value == null)
                 {
-                    if ((pInfo.Kind == ParameterKinds.Optional) || (pInfo.Kind == ParameterKinds.Boolean))
+                    if (pInfo.Kind == ParameterKinds.Optional)
                     {
                         setter.Invoke(prms, new object[] { ((OptPrmInfos)pInfo).DefaultValue });
+                    }
+                    else if(pInfo.Kind == ParameterKinds.Boolean)
+                    {
+                        setter.Invoke(prms, new object[] { ((BoolPrmInfos)pInfo).DefaultValue });
                     }
                     else if(pInfo.Kind == ParameterKinds.NotOptional)
                     {

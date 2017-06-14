@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Export.cs" />
     <Compile Include="Parameters.cs" />
     <Compile Include="ParametersReader.cs" />
     <Compile Include="ParametersTypes\BoolPrmInfos.cs" />

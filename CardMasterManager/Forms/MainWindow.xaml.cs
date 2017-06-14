@@ -7,10 +7,12 @@ using CardMasterExport.PrinterExport;
 using CardMasterImageBuilder;
 using CardMasterImageBuilder.Builders;
 using CardMasterManager.Converters;
+using CardMasterManager.Forms;
 using CardMasterManager.Utils;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Threading;
 using System.Windows;
@@ -49,7 +51,7 @@ namespace CardMasterManager
             this.MenuItemExportAllToPngFile.IsEnabled = false;
             this.MenuItemExportBoardsToPngFile.IsEnabled = false;
             this.MenuItemPrintBoards.IsEnabled = false;
-            BuilderRegister.getInstance().Register();
+            GridConfigurator.LoadAndApplyConfiguration(cardGrid);
         }
 
         private void MenuItemOpen_Click(object sender, RoutedEventArgs e)
@@ -373,6 +375,21 @@ namespace CardMasterManager
                 }
             }
           
+        }
+
+        private void DisplayConfigurator(object sender, RoutedEventArgs e)
+        {
+            GridConfigurator form = new GridConfigurator(cardGrid);
+            form.Owner = this;
+            form.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+            form.Top = 300;
+            form.Left = 300;
+            form.ShowDialog();
+        }
+
+        private void Window_Closing(object sender, CancelEventArgs e)
+        {
+            GridConfigurator.BuildAndSaveConfiguration(cardGrid);
         }
     }
 }

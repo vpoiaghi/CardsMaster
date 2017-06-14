@@ -12,14 +12,14 @@ namespace CardMasterManager
             if (System.Diagnostics.Debugger.IsAttached)
             {
                 // On passe ici si l'appli est lancée en mode debug
-                Start();
+                Start(args);
             }
             else
             {
                 // On passe ici si l'appli est lancée en mode release
                 try
                 {
-                    Start();
+                    Start(args);
                 }
                 catch (Exception ex)
                 {
@@ -29,7 +29,7 @@ namespace CardMasterManager
 
         }
 
-        private static void Start()
+        private static void Start(string[] args)
         {
             MainWindow w = new MainWindow();
             w.ShowDialog();

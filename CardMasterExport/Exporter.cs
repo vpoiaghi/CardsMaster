@@ -50,11 +50,6 @@ namespace CardMasterExport
             skinsFile = null;
         }
 
-        public static void Export(ExportParameters parameters)
-        {
-            Export(parameters);
-        }
-
         public static void Export(IExporterOwner owner, ExportParameters parameters)
         {
             Exporter exporter = null;
@@ -185,12 +180,17 @@ namespace CardMasterExport
 
                 try
                 {
-                    if (owner.Dispatcher != null)
+                    if (owner is IThreadedExporterOwner)
                     {
-                        // Si l'appelant a un dispatcher valide, on l'utilise pour gérer
-                        // le traitement du message de progression dans son propre thread
-                        // de façon asynchrone.
-                        owner.Dispatcher.Invoke((ProgressChangedEventSender)SendProgressChangedEvent, arg);
+                        IThreadedExporterOwner o = (IThreadedExporterOwner)owner;
+
+                        if (o.Dispatcher != null)
+                        {
+                            // Si l'appelant a un dispatcher valide, on l'utilise pour gérer
+                            // le traitement du message de progression dans son propre thread
+                            // de façon asynchrone.
+                            o.Dispatcher.Invoke((ProgressChangedEventSender)SendProgressChangedEvent, arg);
+                        }
                     }
                     else
                     {
@@ -209,7 +209,7 @@ namespace CardMasterExport
             }
             else
             {
-                throw new Exception("Exportation : aucun appelant n'a été défini (owner=null).");
+                //throw new Exception("Exportation : aucun appelant n'a été défini (owner=null).");
 
                 //ClearCurrentConsoleLine();
 
@@ -229,14 +229,6 @@ namespace CardMasterExport
         {
             //ProgressChanged(this, arg);
             owner.ExportProgressChanged(this, arg);
-        }
-
-        private void ClearCurrentConsoleLine()
-        {
-            int currentLineCursor = Console.CursorTop;
-            Console.SetCursorPosition(0, Console.CursorTop);
-            Console.Write(new string(' ', Console.WindowWidth));
-            Console.SetCursorPosition(0, currentLineCursor);
         }
 
     }

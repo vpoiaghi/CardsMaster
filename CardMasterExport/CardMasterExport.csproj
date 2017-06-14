@@ -54,6 +54,7 @@
     <Compile Include="File export\PngBoardExport.cs" />
     <Compile Include="File export\PdfExport.cs" />
     <Compile Include="IExporterOwner.cs" />
+    <Compile Include="IThreadedExporterOwner.cs" />
     <Compile Include="Printer export\PrinterBoardExport.cs" />
     <Compile Include="ProgressChangedArg.cs" />
     <Compile Include="Exporter.cs" />

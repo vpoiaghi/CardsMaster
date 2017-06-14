@@ -64,7 +64,7 @@
                         </Button>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
-                        <DataGrid Name="cardGrid" Margin="5" Width="1269" Height="847" SelectionMode="Single" AutoGenerateColumns="False" AlternatingRowBackground="Azure" AlternationCount="2" IsReadOnly="False" ItemsSource="{Binding a}"
+                        <DataGrid Name="cardGrid" Margin="5" Width="1269" Height="836" SelectionMode="Single" AutoGenerateColumns="False" AlternatingRowBackground="Azure" AlternationCount="2" IsReadOnly="False" ItemsSource="{Binding a}"
                         SelectionChanged="cardGrid_SelectionChanged" FrozenColumnCount ="1" EnableColumnVirtualization="True" EnableRowVirtualization="True">
                             <DataGrid.Columns>
 

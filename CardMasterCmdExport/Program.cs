@@ -1,74 +1,36 @@
-﻿using CardMasterCard.Card;
-using CardMasterExport;
-using CardMasterExport.Export;
-using CardMasterExport.FileExport;
-using System;
-using System.IO;
+﻿using System;
 
 namespace CardMasterCmdExport
 {
     class Program
     {
+
         static void Main(string[] args)
         {
-            try
+            if (System.Diagnostics.Debugger.IsAttached)
             {
-                ParametersReader reader = new ParametersReader(); ;
-                Parameters prms = reader.Read(args);
-                Export(prms);
+                // On passe ici si l'appli est lancée en mode debug
+                Start(args);
             }
-            catch (ArgumentException ex)
+            else
             {
-                Usage.ShowErrUsage(ex.Message);
+                // On passe ici si l'appli est lancée en mode release
+                try
+                {
+                    Start(args);
+                }
+                catch (Exception ex)
+                {
+                    Console.Write("Une erreur s'est produite lors de l'exportation.");
+                    Console.Write(ex.Message);
+                }
             }
-
         }
 
-        private static void Export(Parameters prms)
+        private static void Start(string[] args)
         {
-            Console.WriteLine(prms.ToString());
-            Console.WriteLine("");
-
-            JsonCardsProject project = JsonCardsProject.LoadProject(prms.JsonProjectFile);
-
-            string skinsFileName = prms.JsonProjectFile.Name.Replace(prms.JsonProjectFile.Extension, ".skin");
-            FileInfo skinFile = new FileInfo(Path.Combine(prms.JsonProjectFile.Directory.FullName, skinsFileName));
-
-            switch (prms.ExportMode)
-            {
-                case "all":
-                    ExportAll(project, skinFile, prms);
-                    break;
-
-                case "board":
-                    ExportBoards(project, skinFile, prms);
-                    break;
-            }
-
-            //Console.ReadKey(true);
+            Export e = new Export();
+            e.StartExport(args);
         }
-
-        private static void ExportAll(JsonCardsProject project, FileInfo skinFile, Parameters prms)
-        {
-            ExportParameters parameters = new ExportParameters(project.Cards, skinFile);
-            parameters.exportFormat = Exporter.EXPORT_FORMAT_PNG;
-            parameters.exportMode = Exporter.EXPORT_MODE_ALL;
-            parameters.TargetFolder = prms.ExportTargetFolder;
-
-            Exporter.Export(parameters);
-        }
-
-        private static void ExportBoards(JsonCardsProject project, FileInfo skinFile, Parameters prms)
-        {
-            ExportParameters parameters = new ExportParameters(project.Cards, skinFile);
-            parameters.exportFormat = Exporter.EXPORT_FORMAT_PNG;
-            parameters.exportMode = Exporter.EXPORT_MODE_BOARD;
-            parameters.TargetFolder = prms.ExportTargetFolder;
-            parameters.SpaceBetweenCards = prms.BoardSpace.Value;
-            parameters.WithBackSides = prms.WithBackSide.Value;
-
-            Exporter.Export(parameters);
-        }
-
     }
 }
