@@ -425,12 +425,7 @@ namespace CardMasterManager
             cardGrid.Items.Insert(indexWhereToInsert, newCard);
           
             
-        }
-
-        private void MoveUpRowClick(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Move up not implemented");
-        }
+        }  
 
         private void DeleteRowClick(object sender, RoutedEventArgs e)
         {
@@ -442,7 +437,27 @@ namespace CardMasterManager
 
         private void MoveDownRowClick(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Move Down not implemented");
+            if (cardGrid.SelectedIndex != -1 && cardGrid.SelectedIndex<cardGrid.Items.Count-1)
+            {
+                int originalIndex = cardGrid.SelectedIndex;
+                Card c = ((Card)cardGrid.SelectedItem);
+                cardGrid.Items.RemoveAt(originalIndex);
+                cardGrid.Items.Insert(originalIndex+1, c);
+                cardGrid.SelectedIndex = originalIndex + 1;
+            }
         }
+        private void MoveUpRowClick(object sender, RoutedEventArgs e)
+        {
+            if (cardGrid.SelectedIndex >0 )
+            {
+                int originalIndex = cardGrid.SelectedIndex;
+                Card c = ((Card)cardGrid.SelectedItem);
+                cardGrid.Items.RemoveAt(originalIndex);
+                cardGrid.Items.Insert(originalIndex - 1, c);
+                cardGrid.SelectedIndex = originalIndex - 1;
+            }
+        }
+
+        
     }
 }
