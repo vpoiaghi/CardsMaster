@@ -9,10 +9,14 @@ namespace CardMasterImageBuilder.Builders.Impl
     public class SERoundedRectangleBuilder : AbstractBuilder
     {
         public override string TYPE { get { return "SERoundedRectangle"; } }
-       
-        public override SkinElement Build(BuilderParameter builderParameter)
+
+        public SERoundedRectangleBuilder(BuilderParameter builderParameter)
         {
-            JsonSkinItem item = builderParameter.JsonSkinItem;
+            this.builderParameter = builderParameter;
+        }
+
+        public override SkinElement Build(JsonSkinItem item, JsonCard card)
+        {
             SERoundedRectangle skinElement = new SERoundedRectangle(builderParameter.ResourcesDirectory, item.X, item.Y, item.Width, item.Height, item.Comment, item.Radius.Value);
             skinElement.SetBackground(item.BackgroundColor);
             return ManageShadow(skinElement, item);

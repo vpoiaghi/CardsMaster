@@ -10,11 +10,15 @@ namespace CardMasterImageBuilder.Builders.Impl
     public class SETextAreaBuilder : AbstractBuilder
     {
         public override string TYPE { get { return "SETextArea"; } }
-       
-        public override SkinElement Build(BuilderParameter builderParameter)
+
+        public SETextAreaBuilder(BuilderParameter builderParameter)
         {
-            JsonSkinItem item = builderParameter.JsonSkinItem;
-            JsonCard card = builderParameter.JsonCard;
+            this.builderParameter = builderParameter;
+        }
+
+        public override SkinElement Build(JsonSkinItem item, JsonCard card)
+        {
+
             //SETextArea skinElement = new SETextArea(skin, item.X, item.Y, item.Width, item.Height, item.Comment, "<Nom>");
             SETextArea2 skinElement = new SETextArea2(builderParameter.ResourcesDirectory, item.X, item.Y, item.Width, item.Height, item.Comment, "<Nom>");
 

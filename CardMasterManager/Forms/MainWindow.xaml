@@ -12,7 +12,7 @@
         xmlns:drawing2d="clr-namespace:System.Drawing.Drawing2D;assembly=System.Drawing"
         xmlns:drawingtext="clr-namespace:System.Drawing.Text;assembly=System.Drawing"
         mc:Ignorable="d"
-        Title="Card Manager" Height="960" Width="1700" ResizeMode="NoResize">
+        Title="Card Manager" Height="960" Width="1700" ResizeMode="NoResize" Closing="Window_Closing" >
 
     <Window.Resources>
         <commonconverters:EnumConverter x:Key="EnumConverter"/>
@@ -57,6 +57,10 @@
                         <TextBox x:Name="searchText" Text="" Width="319" TextChanged="filterDataGrid"/>
                         <Button x:Name="clearSearchButton" Width="19" Click="ClearSearch">
                             <TextBlock>X</TextBlock>
+                        </Button>
+                        <Separator Width="910" Background="Transparent"/>
+                        <Button x:Name="displayConfigurator" Width="19" Height="19" Click="DisplayConfigurator" Margin="0">
+                            <TextBlock><Run Text="*"/></TextBlock>
                         </Button>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">

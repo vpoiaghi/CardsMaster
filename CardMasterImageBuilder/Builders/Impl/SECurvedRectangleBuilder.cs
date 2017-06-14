@@ -9,14 +9,18 @@ namespace CardMasterImageBuilder.Builders.Impl
 {
     public class SECurvedRectangleBuilder : AbstractBuilder
     {
-       
+        
+        public SECurvedRectangleBuilder(BuilderParameter builderParameter)
+        {
+            this.builderParameter = builderParameter;
+        }
+
         public override string TYPE { get { return "SECurvedRectangle";}}
 
-        public override SkinElement Build(BuilderParameter builderParameter)
+        public override SkinElement Build(JsonSkinItem item, JsonCard card)
         {
-            JsonSkinItem item = builderParameter.JsonSkinItem;
             JsonSkinsProject skinsProject = builderParameter.JsonSkinsProject;
-            JsonCard card = builderParameter.JsonCard;
+
             // Zone entête
             SECurvedRectangle skinElement = new SECurvedRectangle(builderParameter.ResourcesDirectory, item.X, item.Y, item.Width, item.Height, item.Comment, item.CurveSize.Value);
             if(item.Background=="DYNAMIC-RARETE")

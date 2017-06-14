@@ -10,11 +10,14 @@ namespace CardMasterImageBuilder.Builders.Impl
     {
         public override string TYPE { get { return "SEImage"; } }
 
-        public override SkinElement Build(BuilderParameter builderParameter)
+        public SEImageBuilder(BuilderParameter builderParameter)
         {
-            JsonSkinItem item = builderParameter.JsonSkinItem;
+            this.builderParameter = builderParameter;
+        }
+
+        public override SkinElement Build(JsonSkinItem item, JsonCard card)
+        {
             JsonSkinsProject skinsProject = builderParameter.JsonSkinsProject;
-            JsonCard card = builderParameter.JsonCard;
             SEImage skinElement;
             if (item.Background == null)
             {

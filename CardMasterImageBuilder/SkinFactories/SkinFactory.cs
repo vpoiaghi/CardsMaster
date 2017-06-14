@@ -1,7 +1,5 @@
 ﻿using CardMasterCard.Card;
 using CardMasterImageBuilder.Builders;
-using CardMasterImageBuilder.Builders.Impl;
-using CardMasterImageBuilder.Elements.TextFormater;
 using CardMasterImageBuilder.Skins;
 using CardMasterSkin.Skins;
 using System;
@@ -19,8 +17,6 @@ namespace CardMasterImageBuilder
 
         protected JsonSkinsProject jsonSkinsProject = null;
 
-        protected DirectoryInfo resourcesDirectory = null;
-
         public Skin GetSkin(JsonCard jsonCard, FileInfo skinsFile, String skinName, SkinSide side)
         {
             Skin skin = null;
@@ -29,7 +25,8 @@ namespace CardMasterImageBuilder
 
             if (jsonSkinsProject != null)
             {
-                this.resourcesDirectory = new DirectoryInfo(Path.Combine( skinsFile.Directory.FullName, RESOURCES_DIRECTORY_NAME));
+                DirectoryInfo resourcesDirectory = new DirectoryInfo(Path.Combine(skinsFile.Directory.FullName, RESOURCES_DIRECTORY_NAME));
+                BuilderRegister.getInstance().Register(new BuilderParameter(resourcesDirectory, jsonSkinsProject));
                 skin = GetSkin(jsonCard, side);
             }
 
@@ -43,20 +40,16 @@ namespace CardMasterImageBuilder
         protected Skin GetSkin(JsonCard jsonCard, SkinSide side)
         {
             JsonSkin jsonSkin;
-            if (side.Equals(SkinSide.FRONT))
-            {
-                jsonSkin = jsonSkinsProject.Skins.Single(sk => sk.Name == jsonCard.FrontSkinName);
-            }else
-            {
-                jsonSkin = jsonSkinsProject.Skins.Single(sk => sk.Name == jsonCard.BackSkinName);
-            }
-            
-            Skin skin = new Skin(jsonSkin.Width, jsonSkin.Height, this.resourcesDirectory);
+
+            jsonSkin = side.Equals(SkinSide.FRONT) ?
+                        jsonSkinsProject.Skins.Single(sk => sk.Name == jsonCard.FrontSkinName) :
+                        jsonSkin = jsonSkinsProject.Skins.Single(sk => sk.Name == jsonCard.BackSkinName);
+
+            Skin skin = new Skin(jsonSkin.Width, jsonSkin.Height);
 
             foreach (JsonSkinItem jsonSkinItem in jsonSkin.Items)
             {
-                BuilderParameter builderParameter = new BuilderParameter(skin,jsonSkinsProject,jsonSkinItem,jsonCard);
-                skin.Elements.Add(BuilderRegister.getInstance().getBuilder(jsonSkinItem.Type).Build(builderParameter));  
+                skin.Elements.Add(BuilderRegister.getInstance().getBuilder(jsonSkinItem.Type).Build(jsonSkinItem, jsonCard));
             }
 
             return skin;

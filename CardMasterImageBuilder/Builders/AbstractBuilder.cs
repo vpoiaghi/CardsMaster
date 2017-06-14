@@ -9,8 +9,9 @@ namespace CardMasterImageBuilder.Builders
 {
     public abstract class AbstractBuilder : IBuilder
     {
+        protected BuilderParameter builderParameter;
         public abstract string TYPE { get; }
-        public abstract SkinElement Build(BuilderParameter builderParameter);
+        public abstract SkinElement Build(JsonSkinItem jsonSkinItem, JsonCard jsonCard);
 
         protected SkinElement ManageShadow(SkinElement skinElement, JsonSkinItem item)
         {
