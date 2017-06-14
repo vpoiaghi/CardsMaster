@@ -440,10 +440,8 @@ namespace CardMasterManager
             if (cardGrid.SelectedIndex != -1 && cardGrid.SelectedIndex<cardGrid.Items.Count-1)
             {
                 int originalIndex = cardGrid.SelectedIndex;
-                Card c = ((Card)cardGrid.SelectedItem);
-                cardGrid.Items.RemoveAt(originalIndex);
-                cardGrid.Items.Insert(originalIndex+1, c);
-                cardGrid.SelectedIndex = originalIndex + 1;
+                int targetIndex = originalIndex + 1;
+                SwapGridLines(originalIndex, targetIndex);
             }
         }
         private void MoveUpRowClick(object sender, RoutedEventArgs e)
@@ -451,13 +449,17 @@ namespace CardMasterManager
             if (cardGrid.SelectedIndex >0 )
             {
                 int originalIndex = cardGrid.SelectedIndex;
-                Card c = ((Card)cardGrid.SelectedItem);
-                cardGrid.Items.RemoveAt(originalIndex);
-                cardGrid.Items.Insert(originalIndex - 1, c);
-                cardGrid.SelectedIndex = originalIndex - 1;
+                int targetIndex = originalIndex - 1;
+                SwapGridLines(originalIndex, targetIndex);
             }
         }
 
-        
+        private void SwapGridLines(int sourceIndex,int targetIndex)
+        {
+            Card c = ((Card)cardGrid.SelectedItem);
+            cardGrid.Items.RemoveAt(sourceIndex);
+            cardGrid.Items.Insert(targetIndex, c);
+            cardGrid.SelectedIndex = targetIndex;
+        }
     }
 }
