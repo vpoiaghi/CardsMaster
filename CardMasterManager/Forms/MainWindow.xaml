@@ -55,6 +55,7 @@
                 <StackPanel>
                     <StackPanel Orientation="Horizontal" Height="19" Width="1296" Margin="5">
                         <TextBox x:Name="searchText" Text="" Width="319" TextChanged="filterDataGrid"/>
+                        <Separator Width="3" Background="Transparent"/>
                         <Button x:Name="clearSearchButton" Width="19" Click="ClearSearch">
                             <TextBlock>X</TextBlock>
                         </Button>
@@ -63,6 +64,40 @@
                             <TextBlock><Run Text="*"/></TextBlock>
                         </Button>
                     </StackPanel>
+                    <DockPanel >
+                        <ToolBarTray Margin="5">
+                            <ToolBar ToolBarTray.IsLocked="True" >
+                                <Button Name="AddRowButton" Click="AddRowClick">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Resources/add.png" Width="20"/>
+                                        <TextBlock>Add</TextBlock>
+                                    </StackPanel>
+                                </Button>
+                                <Separator Width="5" Background="Transparent"/>
+                                <Button Name="DeleteRowButton" Click="DeleteRowClick">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Resources/delete.png" Width="20"/>
+                                        <TextBlock>Remove</TextBlock>
+                                    </StackPanel>
+                                </Button>
+                                <Separator Width="5" Background="Transparent"/>
+                                <Button Name="MoveUpButton" Click="MoveUpRowClick">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Resources/up.png" Width="20"/>
+                                        <TextBlock>Move up</TextBlock>
+                                    </StackPanel>
+                                </Button>
+                                <Separator Width="5" Background="Transparent"/>
+                                <Button Name="MoveDownButton" Click="MoveDownRowClick" >
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Resources/down.png" Width="20"/>
+                                        <TextBlock>Move down</TextBlock>
+                                    </StackPanel>
+                                </Button>
+
+                            </ToolBar>
+                        </ToolBarTray>
+                    </DockPanel>
                     <StackPanel Orientation="Horizontal">
                         <DataGrid Name="cardGrid" Margin="5" Width="1269" Height="836" SelectionMode="Single" AutoGenerateColumns="False" AlternatingRowBackground="Azure" AlternationCount="2" IsReadOnly="False" ItemsSource="{Binding a}"
                         SelectionChanged="cardGrid_SelectionChanged" FrozenColumnCount ="1" EnableColumnVirtualization="True" EnableRowVirtualization="True">

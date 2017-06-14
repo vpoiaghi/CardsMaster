@@ -391,5 +391,25 @@ namespace CardMasterManager
         {
             GridConfigurator.BuildAndSaveConfiguration(cardGrid);
         }
+
+        private void AddRowClick(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Add not implemented");
+        }
+
+        private void MoveUpRowClick(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Move up not implemented");
+        }
+
+        private void DeleteRowClick(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Delete not implemented");
+        }
+
+        private void MoveDownRowClick(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Move Down not implemented");
+        }
     }
 }

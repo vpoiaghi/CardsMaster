@@ -12,14 +12,6 @@
 * Utiliser des interfaces.
 Actuellement il n'y a aucn système de contrat de service entre les projets, chaque projet voit tout ou presque des projets qu'il référencie.
 
-* [DONE] Ajouter un object BuilderParameter qui hérite du JsonSkinItem (attention peut etre certaines info sans dans le JsonSkin, il faudrait vraiment trouver un moyen d'avoir ce lien)
-
-* [DONE] Utiliser le BuilderParameter dans tt les methodes build et les passer en override sur la meme signature
-
-* [DONE] Créer un singleter register avec une methode Register qui parcourt tout le package builder et enregistre tous les builders en fonction d'un attribut String TYPE commun à tous
-
-* [DONE] Appeller le register au lancement de l'application, et utiliser ce register dans la SkinFactory
-  
 ### Exportation
 
 * Revoir le mode de communication entre les projets appelants et le projet Export
@@ -27,7 +19,7 @@ Chaque mode d'export (carte par carte, planche) dispose de sa classe d'export sp
 Mais j'ai laissé les projets appelant choisir et instancier ces classes plutôt que laisser le projet Export dispatcher entre ces différentes classes.
 Un seul type d'objet de paramétrage doit être envoyé au projet d'export et c'est le Parameters présent dans le projet CmdExport qu'il faudra déplacer dans le projet Export.
 
-* Certains paramètres d'export sont en dur
+* [EN COURS] Certains paramètres d'export sont en dur
   Taille des cartes, etc... les faire passer par l'obet Parameters à mettre en place
 
 ### Cartes
@@ -46,7 +38,7 @@ Un seul type d'objet de paramétrage doit être envoyé au projet d'export et c'
 ### IHM
 
 * Cartes
-  * Gérer les noms longs de cartes (passe sur 2 lignes mais se décalle vers le haut mais se retrouve hors cadre : ex : Vallée des nuages et de la foudre)
+  * [EN COURS] Gérer les noms longs de cartes (passe sur 2 lignes mais se décalle vers le haut mais se retrouve hors cadre : ex : Vallée des nuages et de la foudre)
 
 * Boîte de dialogue de paramétrage des exports
   * Pouvoir paramétrer l'exportation par l'ihm via une boîte de dialogue (mode, format, dossier/fichier de destination, etc...). 
@@ -60,7 +52,7 @@ En particulier la partie exportation, où y aurait désormait un seul item qui o
 cela crée une copie en "Image1-original.jpg" et écrase le fichier "Image1.jpg" avec celle retaillée.
 
 * Datagrid
-  * Ajouter la possibilité de masquer/afficher des colonnes
+  * [EN COURS] Ajouter la possibilité de masquer/afficher des colonnes
   * [A TESTER] Rendre triable toutes les colonnes, selon leur valeur visible (je pense en particulier au colonnes liées à des Enum)
       --> KO, le tri sur le GENRE est bon mais pas sur le NATURE CHAKRA. Sans doute l'enum du GENRE est-il bien trié, contriarement à celui du CHAKRA
 
