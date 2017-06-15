@@ -404,15 +404,22 @@ namespace CardMasterManager
                 indexWhereToInsert = cardGrid.SelectedIndex;
             }
             cardGrid.Items.Insert(indexWhereToInsert, newCard);
-          
-            
+            cardGrid.SelectedItem = cardGrid.Items.GetItemAt(indexWhereToInsert);
+            cardGrid.Focus();
+
         }  
 
         private void DeleteRowClick(object sender, RoutedEventArgs e)
         {
             if (cardGrid.SelectedIndex != -1)
             {
-                cardGrid.Items.RemoveAt(cardGrid.SelectedIndex);
+                int selectedIndex = cardGrid.SelectedIndex;
+                cardGrid.Items.RemoveAt(selectedIndex);
+                if (cardGrid.Items.Count > 0)
+                {
+                    cardGrid.SelectedItem = cardGrid.Items.GetItemAt(selectedIndex == 0 ? 0 : selectedIndex - 1);
+                    cardGrid.Focus();
+                }
             }
         }
 
@@ -441,6 +448,8 @@ namespace CardMasterManager
             cardGrid.Items.RemoveAt(sourceIndex);
             cardGrid.Items.Insert(targetIndex, c);
             cardGrid.SelectedIndex = targetIndex;
+            cardGrid.SelectedItem = cardGrid.Items.GetItemAt(targetIndex);
+            cardGrid.Focus();
         }
     }
 }
