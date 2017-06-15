@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading;
-using System.Windows;
+using System.Windows.Threading;
 
 namespace CardMasterExport
 {
@@ -20,24 +20,17 @@ namespace CardMasterExport
         public const string EXPORT_FORMAT_PRINTER = "printer";
 
 
-        private bool exportRunning = false;
+        private static bool exportRunning = false;
         protected static object _lock = new object();
 
         private IExporterOwner owner = null;
+        private ExportParameters parameters = null;
         protected List<JsonCard> cardsList = null;
         protected FileInfo skinsFile = null;
-        protected ExportParameters parameters = null;
-
-        //protected delegate void ProgressChangedEvent(ProgressChangedArg arg);
-        //public delegate void ProgressChanged(object sender, ProgressChangedArg args);
-        //public event ProgressChanged progressChangedEvent;
 
         protected delegate void ProgressChangedEventSender(ProgressChangedArg arg);
-        public delegate void ProgressChangedEventHandler(object sender, ProgressChangedArg args);
-        public event ProgressChangedEventHandler ProgressChanged;
 
-
-        protected abstract bool BeforeCardsExport();
+        protected abstract bool BeforeCardsExport(ExportParameters parameters);
         protected abstract void MakeCardExport(JsonCard card);
         protected abstract void AfterCardsExport();
         protected abstract string GetProgressMessage(ProgressState state, int index, int total);
@@ -51,6 +44,43 @@ namespace CardMasterExport
         }
 
         public static void Export(IExporterOwner owner, ExportParameters parameters)
+        {
+            if (owner == null)
+            {
+                throw new ArgumentNullException("Owner", "Export");
+            }
+            if (parameters == null)
+            {
+                throw new ArgumentNullException("parameters", "Export");
+            }
+            if (parameters.cardsList == null)
+            {
+                throw new ArgumentNullException("parameters.cardsList", "Export");
+            }
+            if (parameters.skinsFile == null)
+            {
+                throw new ArgumentNullException("parameters.skinsFile", "Export");
+            }
+            if (! parameters.skinsFile.Exists)
+            {
+                throw new FileNotFoundException("Export : le fichier skinFile n'existe pas.");
+            }
+            if (parameters.cardsList.Count == 0)
+            {
+                throw new ArgumentException("Export : Il n'y a aucune carte a exporter.");
+            }
+
+            Exporter exporter = GetExporter(parameters);
+
+            exporter.owner = owner;
+            exporter.parameters = parameters;
+            exporter.cardsList = parameters.cardsList;
+            exporter.skinsFile = parameters.skinsFile;
+
+            Export(exporter);
+        }
+
+        private static Exporter GetExporter(ExportParameters parameters)
         {
             Exporter exporter = null;
 
@@ -75,42 +105,27 @@ namespace CardMasterExport
                     break;
             }
 
-            if (exporter != null)
-            {
-                exporter.owner = owner;
-                exporter.parameters = parameters;
-                exporter.startExport();
-            }
-            else
+            if (exporter == null)
             {
                 throw new Exception("Aucun exporter trouvé pour ces paramètres.");
             }
+
+            return exporter;
         }
 
-        private void startExport()
+        private static void Export(Exporter exporter)
         {
-            if (parameters == null)
+            if (!exportRunning)
             {
-                throw new ArgumentNullException("parameters");
-            }
-            else
-            {
-                this.cardsList = parameters.cardsList;
-                this.skinsFile = parameters.skinsFile;
-            }
-
-            if ((cardsList != null) && (skinsFile != null) && (!exportRunning))
-            {
-                if (BeforeCardsExport())
+                if (exporter.BeforeCardsExport(exporter.parameters))
                 {
-                    var t = new Thread(new ThreadStart(StartExport));
-
                     exportRunning = true;
 
+                    Thread t = new Thread(exporter.StartExport);
                     t.IsBackground = true;
-                    t.Start();
+                    t.Start(exporter.cardsList);
 
-                    if (this.owner == null)
+                    if (! (exporter.owner is IThreadedExporterOwner))
                     {
                         t.Join();
                     }
@@ -119,24 +134,20 @@ namespace CardMasterExport
 
         }
 
-        private void StartExport()
+        public void StartExport(object cardsList)
         {
-            List<JsonCard> cards;
-            lock (_lock)
-            {
-                cards = this.cardsList;
-            }
+            List<JsonCard> cards = (List<JsonCard>) cardsList;
+            int cardsCount = cards.Count;
 
-            if (cards != null && cards.Count > 0)
+            if (cardsCount > 0)
             {
                 int cardIndex = 0;
-                int cardCount = cards.Count;
 
                 foreach (JsonCard card in cards)
                 {
                     MakeCardExport(card);
                     cardIndex = cardIndex + 1;
-                    ShowProgress(cardIndex, cardCount);
+                    ShowProgress(cardIndex, cardsCount);
                 }
 
                 AfterCardsExport();
@@ -144,12 +155,9 @@ namespace CardMasterExport
                 // Export terminé
                 ShowExportEnded();
 
-                if (owner != null)
-                {
-                    // Attend quatre secondes avant d'effacer le dernier message
-                    Thread.Sleep(4000);
-                    ShowTreatmentEnded();
-                }
+                // Attend quatre secondes avant d'effacer le dernier message
+                Thread.Sleep(4000);
+                ShowTreatmentEnded();
             }
 
             exportRunning = false;
@@ -177,20 +185,21 @@ namespace CardMasterExport
             if (owner != null)
             {
                 var arg = new ProgressChangedArg(state, message, index, total);
+                Dispatcher dispatcher = null;
 
                 try
                 {
                     if (owner is IThreadedExporterOwner)
                     {
-                        IThreadedExporterOwner o = (IThreadedExporterOwner)owner;
+                        dispatcher = ((IThreadedExporterOwner)owner).Dispatcher;
+                    }
 
-                        if (o.Dispatcher != null)
-                        {
-                            // Si l'appelant a un dispatcher valide, on l'utilise pour gérer
-                            // le traitement du message de progression dans son propre thread
-                            // de façon asynchrone.
-                            o.Dispatcher.Invoke((ProgressChangedEventSender)SendProgressChangedEvent, arg);
-                        }
+                    if (dispatcher != null)
+                    {
+                        // Si l'appelant a un dispatcher valide, on l'utilise pour gérer
+                        // le traitement du message de progression dans son propre thread
+                        // de façon asynchrone.
+                        dispatcher.Invoke((ProgressChangedEventSender)SendProgressChangedEvent, arg);
                     }
                     else
                     {
@@ -207,27 +216,10 @@ namespace CardMasterExport
                     return;
                 }
             }
-            else
-            {
-                //throw new Exception("Exportation : aucun appelant n'a été défini (owner=null).");
-
-                //ClearCurrentConsoleLine();
-
-                //if (state == ProgressState.ExportInProgress)
-                //{
-                //    Console.Write(message);
-                //}
-                //else
-                //{
-                //    Console.WriteLine(message);
-                //}
-            }
-
         }
 
         private void SendProgressChangedEvent(ProgressChangedArg arg)
         {
-            //ProgressChanged(this, arg);
             owner.ExportProgressChanged(this, arg);
         }
 

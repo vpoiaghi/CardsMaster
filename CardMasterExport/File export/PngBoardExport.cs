@@ -1,5 +1,5 @@
 ﻿using CardMasterCard.Card;
-using CardMasterCommon.Dialog;
+using CardMasterExport.Export;
 using CardMasterImageBuilder;
 using System;
 using System.Drawing;
@@ -26,21 +26,16 @@ namespace CardMasterExport.FileExport
         private int currentBoard = 0;
         private Bitmap boardImage = null;
 
-        protected override bool BeforeCardsExport()
+        protected override bool BeforeCardsExport(ExportParameters parameters)
         {
             this.currentX = 0;
             this.currentY = 0;
             this.currentBoard = 0;
             this.boardImage = null;
 
-            this.targetFolder = this.parameters.TargetFolder;
-            this.spaceBeetweenCards = this.parameters.SpaceBetweenCards;
-            this.withBackSides = this.parameters.WithBackSides;
-
-            if (this.targetFolder == null)
-            {
-                this.targetFolder = FolderDialog.SelectFolder();
-            }
+            this.targetFolder = parameters.TargetFolder;
+            this.spaceBeetweenCards = parameters.SpaceBetweenCards;
+            this.withBackSides = parameters.WithBackSides;
 
             return (this.targetFolder != null);
         }

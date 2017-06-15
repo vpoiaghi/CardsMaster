@@ -1,6 +1,7 @@
 ﻿using CardMasterCard.Card;
 using System;
 using System.Collections.Generic;
+using System.Drawing.Printing;
 using System.IO;
 
 namespace CardMasterExport.Export
@@ -18,6 +19,8 @@ namespace CardMasterExport.Export
 
         public int SpaceBetweenCards { get; set; } = 0;
         public bool WithBackSides { get; set; } = false;
+
+        public PrintDocument printPrameters = null;
 
         public ExportParameters(JsonCard card, FileInfo skinsFile)
         {

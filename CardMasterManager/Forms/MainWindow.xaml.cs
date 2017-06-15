@@ -2,10 +2,7 @@
 using CardMasterCommon.Dialog;
 using CardMasterExport;
 using CardMasterExport.Export;
-using CardMasterExport.FileExport;
-using CardMasterExport.PrinterExport;
 using CardMasterImageBuilder;
-using CardMasterImageBuilder.Builders;
 using CardMasterManager.Converters;
 using CardMasterManager.Forms;
 using CardMasterManager.Utils;
@@ -24,7 +21,7 @@ namespace CardMasterManager
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window, IExporterOwner
+    public partial class MainWindow : Window, IThreadedExporterOwner
     {
         private bool onLoading;
         private static object locker = new object();
@@ -178,13 +175,6 @@ namespace CardMasterManager
                 parameters.TargetFolder = FolderDialog.SelectFolder();
 
                 Exporter.Export(this, parameters);
-
-
-
-                //PngExport exp = new PngExport(this, cardsList, GetSkinFile());
-                //PngExport.Parameters parameters = (PngExport.Parameters)exp.GetParameters();
-                //exp.progressChangedEvent += new PngExport.ProgressChanged(ExportProgressChanged);
-                //exp.Export(this, parameters);
             }
 
         }
@@ -207,13 +197,6 @@ namespace CardMasterManager
                 parameters.TargetFolder = FolderDialog.SelectFolder();
 
                 Exporter.Export(this, parameters);
-
-
-                //PngBoardExport exp = new PngBoardExport(this, cardsList, GetSkinFile());
-                //PngBoardExport.Parameters parameters = (PngBoardExport.Parameters)exp.GetParameters();
-                //parameters.SpaceBetweenCards = 0;
-                //exp.progressChangedEvent += new PngBoardExport.ProgressChanged(ExportProgressChanged);
-                //exp.Export(parameters);
             }
 
         }
@@ -230,8 +213,7 @@ namespace CardMasterManager
             if (args.State == ProgressState.ExportEnded)
             {
                 d2 = DateTime.Now;
-
-                MessageBox.Show((d2.Subtract(d1)).TotalSeconds.ToString());
+                //MessageBox.Show((d2.Subtract(d1)).TotalSeconds.ToString());
             }
 
         }
@@ -321,19 +303,18 @@ namespace CardMasterManager
             if (cardsList.Count > 0)
             {
                 ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile());
-                parameters.SpaceBetweenCards = 0;
-                parameters.WithBackSides = true;
-                parameters.exportFormat = Exporter.EXPORT_FORMAT_PRINTER;
-                parameters.exportMode = Exporter.EXPORT_MODE_BOARD;
 
-                Exporter.Export(this, parameters);
+                parameters.printPrameters = PrinterDialog.SelectPrintParameters(cardsList.Count);
 
-                //PrinterBoardExport exp = new PrinterBoardExport(this, cardsList, GetSkinFile());
-                //PrinterBoardExport.Parameters parameters = (PrinterBoardExport.Parameters)exp.GetParameters();
-                //parameters.SpaceBetweenCards = 0;
-                //parameters.WithBackSides = true;
-                //exp.progressChangedEvent += new PngBoardExport.ProgressChanged(ExportProgressChanged);
-                //exp.Export(parameters);
+                if (parameters.printPrameters != null)
+                {
+                    parameters.SpaceBetweenCards = 0;
+                    parameters.WithBackSides = true;
+                    parameters.exportFormat = Exporter.EXPORT_FORMAT_PRINTER;
+                    parameters.exportMode = Exporter.EXPORT_MODE_BOARD;
+
+                    Exporter.Export(this, parameters);
+                }
             }
 
         }

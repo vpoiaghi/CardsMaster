@@ -1,4 +1,5 @@
 ﻿using CardMasterCard.Card;
+using CardMasterExport.Export;
 using CardMasterImageBuilder;
 using System;
 using System.Drawing;
@@ -11,9 +12,9 @@ namespace CardMasterExport.FileExport
     {
         private DirectoryInfo targetFolder = null;
 
-        protected override bool BeforeCardsExport()
+        protected override bool BeforeCardsExport(ExportParameters parameters)
         {
-            this.targetFolder = this.parameters.TargetFolder;
+            this.targetFolder = parameters.TargetFolder;
 
             return (this.targetFolder != null);
         }

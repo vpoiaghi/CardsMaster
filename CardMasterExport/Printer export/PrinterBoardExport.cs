@@ -6,7 +6,6 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Printing;
 using System.IO;
-using System.Windows.Forms;
 
 namespace CardMasterExport.PrinterExport
 {
@@ -40,57 +39,24 @@ namespace CardMasterExport.PrinterExport
 
 
         public PrinterBoardExport()
+        { }
+
+        protected override bool BeforeCardsExport(ExportParameters parameters)
         {
-            pDoc = new PrintDocument();
-            pDoc.PrintPage += new PrintPageEventHandler(pdoc_PrintPage);
-        }
+            this.boardImages = new List<Bitmap>();
 
-        protected override bool BeforeCardsExport()
-        {
-            bool result = false;
+            this.pDoc = parameters.printPrameters;
+            this.pDoc.PrintPage += new PrintPageEventHandler(pdoc_PrintPage);
+            this.printCardFrom = this.pDoc.DefaultPageSettings.PrinterSettings.FromPage;
+            this.printCardTo = this.pDoc.DefaultPageSettings.PrinterSettings.ToPage;
 
-            this.pDoc.DefaultPageSettings.PrinterResolution.Kind = PrinterResolutionKind.High;
+            this.currentX = 0;
+            this.currentY = 0;
 
-            this.pDoc.DefaultPageSettings.PrinterSettings.FromPage = 1;
-            this.pDoc.DefaultPageSettings.PrinterSettings.ToPage = this.cardsList.Count;
+            this.spaceBeetweenCards = parameters.SpaceBetweenCards;
+            this.withBackSides = parameters.WithBackSides;
 
-            PrintDialog printDlg = new PrintDialog();
-            printDlg.Document = this.pDoc;
-
-            printDlg.AllowSomePages = true;
-
-            if (printDlg.ShowDialog() == DialogResult.OK)
-            {
-                this.pDoc.DefaultPageSettings.PrinterResolution.X = 300;
-                this.pDoc.DefaultPageSettings.PrinterResolution.Y = 300;
-
-                this.boardImages = new List<Bitmap>();
-
-                this.printCardFrom = this.pDoc.DefaultPageSettings.PrinterSettings.FromPage;
-                this.printCardTo = this.pDoc.DefaultPageSettings.PrinterSettings.ToPage;
-
-                this.pDoc.OriginAtMargins = true;
-
-                double cmToUnits = 100 / 2.54;
-                int margin = (int)Math.Ceiling(1 * cmToUnits);
-                this.pDoc.DefaultPageSettings.Margins.Top = margin;
-                this.pDoc.DefaultPageSettings.Margins.Left = margin;
-                this.pDoc.DefaultPageSettings.Margins.Bottom = margin;
-                this.pDoc.DefaultPageSettings.Margins.Right = margin;
-
-                this.currentX = 0;
-                this.currentY = 0;
-
-                this.spaceBeetweenCards = this.parameters.SpaceBetweenCards;
-                this.withBackSides = this.parameters.WithBackSides;
-
-                result = true;
-            }
-
-            printDlg.Dispose();
-            printDlg = null;
-
-            return result;
+            return true;
         }
 
         void pdoc_PrintPage(object sender, PrintPageEventArgs e)

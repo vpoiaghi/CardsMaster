@@ -1,4 +1,5 @@
 ﻿using CardMasterCard.Card;
+using CardMasterExport.Export;
 using System;
 using System.IO;
 
@@ -8,9 +9,9 @@ namespace CardMasterExport.FileExport
     {
         private FileInfo targetFile = null;
 
-        protected override bool BeforeCardsExport()
+        protected override bool BeforeCardsExport(ExportParameters parameters)
         {
-            this.targetFile = this.parameters.TargetFile;
+            this.targetFile = parameters.TargetFile;
             throw new NotImplementedException();
         }
 
