@@ -141,6 +141,11 @@ namespace CardMasterImageBuilder.Skins
 
         public Brush GetBackground()
         {
+            return GetBackground(null);
+        }
+
+        public Brush GetBackground(GraphicsPath path)
+        {
             Brush bkg = null;
 
             switch (this.type)
@@ -152,16 +157,44 @@ namespace CardMasterImageBuilder.Skins
                 case TextureTypes.GradientColor:
                     //TODO 
                     //Tentative de degradé radiant
-                    bkg = new PathGradientBrush(new Point[] {
+                    //bkg = new PathGradientBrush(new Point[] {
+                    //    new Point(1,1),
+                    //    new Point(Width, 1),
+                    //    new Point (Width,Height),
+                    //    new Point(1, Height) },
+                    //    WrapMode.Tile);
+                    //((PathGradientBrush)bkg).CenterPoint = new Point(Width/2,Height/2);
+                    //((PathGradientBrush)bkg).CenterColor = this.color2;
+                    //((PathGradientBrush)bkg).SurroundColors = new Color[] { this.color1 };
+
+                    PathGradientBrush pgb;
+                    if (path == null)
+                    {
+                        pgb = new PathGradientBrush(new Point[] {
                         new Point(1,1),
                         new Point(Width, 1),
                         new Point (Width,Height),
-                        new Point(1, Height) },
-                        WrapMode.Tile);
-                    ((PathGradientBrush)bkg).CenterPoint = new Point(Width/2,Height/2);
-                    ((PathGradientBrush)bkg).CenterColor = this.color2;
-                    ((PathGradientBrush)bkg).SurroundColors = new Color[] { this.color1 };
-                   
+                        new Point(1, Height)},
+                            WrapMode.Tile);
+                    }
+                    else
+                    {
+                        pgb = new PathGradientBrush(path);
+                    }
+
+                    pgb.CenterColor = this.color2;
+                    pgb.SurroundColors = new Color[] { this.color1 };
+
+
+                    int b = 28; // LE PB EST LA !!! IL FAUT TROUVER UN MOYEN DE CONNAITRE ICI LA TAILLE DE LA BORDURE...
+
+
+                    float scaleW = (float)(this.Width - 2 * b) / (float)this.Width;
+                    float scaleH = (float)(this.Height - 2 * b) / (float)this.Height;
+                    pgb.FocusScales = new PointF(scaleW, scaleH);
+
+                    bkg = pgb;
+
                     break;
 
                 case TextureTypes.Image:
