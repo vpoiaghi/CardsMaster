@@ -114,6 +114,31 @@ namespace CardMasterImageBuilder.Skins
             }
         }
 
+        public void SetBackground(String imageName, String imageName2)
+        {
+            if (imageName.StartsWith("#"))
+            {
+                this.color1 = (Color)colorConverter.ConvertFromString(imageName);
+                this.type = TextureTypes.Color;
+                if (imageName2!=null && imageName2 != "")
+                {
+                    this.color2 = (Color)colorConverter.ConvertFromString(imageName2);
+                    this.type = TextureTypes.GradientColor;
+                }       
+                this.imageName = null;
+               
+            }
+            else
+            {
+                this.imageName = imageName;
+                if (imageName2 != null && imageName2 != "")
+                {
+                    this.imageName = imageName2;
+                }
+                this.type = TextureTypes.Image;
+            }
+        }
+
         public Brush GetBackground()
         {
             Brush bkg = null;
@@ -125,7 +150,18 @@ namespace CardMasterImageBuilder.Skins
                     break;
 
                 case TextureTypes.GradientColor:
-                    bkg = new LinearGradientBrush(new Point(X, 1), new Point(Height, 1), this.color1, this.color2);
+                    //TODO 
+                    //Tentative de degradé radiant
+                    bkg = new PathGradientBrush(new Point[] {
+                        new Point(1,1),
+                        new Point(Width, 1),
+                        new Point (Width,Height),
+                        new Point(1, Height) },
+                        WrapMode.Tile);
+                    ((PathGradientBrush)bkg).CenterPoint = new Point(Width/2,Height/2);
+                    ((PathGradientBrush)bkg).CenterColor = this.color2;
+                    ((PathGradientBrush)bkg).SurroundColors = new Color[] { this.color1 };
+                   
                     break;
 
                 case TextureTypes.Image:

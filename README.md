@@ -24,7 +24,8 @@ Un seul type d'objet de paramétrage doit être envoyé au projet d'export et c'
 
 ### Cartes
 
-* Pouvoir ajouter / supprimer des lignes dans la grille pour ne pas avoir nécéssairement de Json en entrée
+* [EN COURS] Pouvoir ajouter / supprimer des lignes dans la grille pour ne pas avoir nécéssairement de Json en entrée.
+Bugs quand création d'un projet from scratch (lien avec un skin devant déja exister), bug de rendu corrigé.
 
 * Pouvoir gérer autant de champs custo que l'on veut avec un AnyJsonGetter et une map d'extrafields sur une Card
 

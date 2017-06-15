@@ -18,7 +18,7 @@ namespace CardMasterImageBuilder.Builders.Impl
         public override SkinElement Build(JsonSkinItem item, JsonCard card)
         {
             SERoundedRectangle skinElement = new SERoundedRectangle(builderParameter.ResourcesDirectory, item.X, item.Y, item.Width, item.Height, item.Comment, item.Radius.Value);
-            skinElement.SetBackground(item.BackgroundColor);
+            skinElement.SetBackground(item.BackgroundColor,item.BackgroundColor2);
             return ManageShadow(skinElement, item);
         }
     }

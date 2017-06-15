@@ -11,6 +11,7 @@ namespace CardMasterSkin.Skins
         public int Width { get; set; }
         public int? Radius { get; set; }
         public String BackgroundColor { get; set; }
+        public String BackgroundColor2 { get; set; }
         public String NameAttribute { get; set; }
         public String Background { get; set; }
         public String Comment { get; set; }

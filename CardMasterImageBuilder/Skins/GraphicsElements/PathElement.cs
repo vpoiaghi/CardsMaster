@@ -4,6 +4,7 @@ using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 
+
 namespace CardMasterImageBuilder.GraphicsElements
 {
     public class PathElement : GraphicElement
