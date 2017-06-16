@@ -23,16 +23,19 @@ namespace CardMasterManager
     /// </summary>
     public partial class MainWindow : Window, IThreadedExporterOwner
     {
-        private bool onLoading;
         private static object locker = new object();
 
         private JsonCardsProject cardProjet;
-        private FileInfo cardsFile;
         private Card previousCard;
+
+        private FileInfo cardsFile = null;
+        private bool filesChanged = false;
 
         private DateTime d1;
         private DateTime d2;
         private bool isSearching = false;
+
+        private bool onLoading = false;
 
         public DrawingQuality DQuality { get; set; } = new DrawingQuality();
 
@@ -40,37 +43,43 @@ namespace CardMasterManager
         {
             InitializeComponent();
 
-            this.onLoading = false;
-
             this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
-            this.MenuItemSave.IsEnabled = false;
-            this.MenuItemSaveAs.IsEnabled = false;
+
+            GridConfigurator.LoadAndApplyConfiguration(cardGrid);
+
             this.MenuItemExportAllToPngFile.IsEnabled = false;
             this.MenuItemExportBoardsToPngFile.IsEnabled = false;
             this.MenuItemPrintBoards.IsEnabled = false;
-            GridConfigurator.LoadAndApplyConfiguration(cardGrid);
+
+            FilesChanged(false);
         }
 
         private void MenuItemOpen_Click(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Json files (*.json)|*.json|All files (*.*)|*.*";
-
-            if (openFileDialog.ShowDialog() == true)
+            if (AskIfSaveBefore())
             {
-                cardsFile = new FileInfo(openFileDialog.FileName);
-                cardProjet = JsonCardsProject.LoadProject(cardsFile);
-                
-                List<Card> cards = new List<Card>();
-                foreach (JsonCard card in cardProjet.Cards)
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                openFileDialog.Filter = "Json files (*.json)|*.json|All files (*.*)|*.*";
+
+                if (openFileDialog.ShowDialog() == true)
                 {
-                    Card c = Card.ConvertCard(card);
-                    cards.Add(c);
+                    this.cardsFile = new FileInfo(openFileDialog.FileName);
+                    this.cardProjet = JsonCardsProject.LoadProject(cardsFile);
+
+                    List<Card> cards = new List<Card>();
+                    foreach (JsonCard card in this.cardProjet.Cards)
+                    {
+                        Card c = Card.ConvertCard(card);
+                        cards.Add(c);
+                    }
+
+                    LoadCards(cards);
+
+                    FilesChanged(false);
+                    this.MenuItemExportAllToPngFile.IsEnabled = true;
+                    this.MenuItemExportBoardsToPngFile.IsEnabled = true;
+                    this.MenuItemPrintBoards.IsEnabled = true;
                 }
-
-                LoadCards(cards);
-
-               
             }
         }
 
@@ -95,9 +104,8 @@ namespace CardMasterManager
             {
                 FileInfo newCardsFile = new FileInfo(saveFileDialog.FileName);
 
-                string skinsFileName = cardsFile.Name.Replace(newCardsFile.Extension, ".skin");
-                FileInfo oldSkinsFile = new FileInfo(Path.Combine(cardsFile.Directory.FullName, skinsFileName));
-                FileInfo newSkinsFile = new FileInfo(Path.Combine(newCardsFile.Directory.FullName, skinsFileName));
+                FileInfo oldSkinsFile = GetSkinFile(cardsFile);
+                FileInfo newSkinsFile = GetSkinFile(newCardsFile);
 
                 SaveProject(newCardsFile);
                 oldSkinsFile.CopyTo(newSkinsFile.FullName);
@@ -105,7 +113,10 @@ namespace CardMasterManager
                 DirectoryInfo oldResourceDir = new DirectoryInfo(Path.Combine(cardsFile.Directory.FullName, "Resources"));
                 DirectoryInfo newResourceDir = new DirectoryInfo(Path.Combine(newCardsFile.Directory.FullName, "Resources"));
 
-                DirectoryUtils.Copy(oldResourceDir, newResourceDir);
+                if (oldResourceDir.FullName != newResourceDir.FullName)
+                {
+                    DirectoryUtils.Copy(oldResourceDir, newResourceDir);
+                }
 
                 this.cardsFile = newCardsFile;
             }
@@ -113,7 +124,10 @@ namespace CardMasterManager
 
         private void MenuItemExit_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+            if (AskIfSaveBefore())
+            {
+                Close();
+            }
         }
  
 
@@ -135,20 +149,18 @@ namespace CardMasterManager
         {
             //Select Card from Collection from Name
             JsonCard businessCard = Card.ConvertToMasterCard(c);
-            FileInfo skinFile = GetSkinFile();
-            if (skinFile != null)
-            {
-                Drawer drawer = new Drawer(businessCard, skinFile, null);
-                drawer.Quality = this.DQuality;
+            FileInfo skinFile = GetSkinFile(cardsFile);
 
-                //Refresh Image Component
-                DrawingImageToImageSourceConverter converter = new DrawingImageToImageSourceConverter();
-                Dispatcher.BeginInvoke(new Action(delegate ()
-                {
-                    frontImage.Source = (ImageSource)converter.Convert(drawer.DrawCard(), null, null, System.Globalization.CultureInfo.CurrentCulture);
-                    backCardImage.Source = (ImageSource)converter.Convert(drawer.DrawBackSideSkin(), null, null, System.Globalization.CultureInfo.CurrentCulture);
-                }));
-            }
+            Drawer drawer = new Drawer(businessCard, skinFile, null);
+            drawer.Quality = this.DQuality;
+
+            //Refresh Image Component
+            DrawingImageToImageSourceConverter converter = new DrawingImageToImageSourceConverter();
+            Dispatcher.BeginInvoke(new Action(delegate ()
+            {
+                frontImage.Source = (ImageSource)converter.Convert(drawer.DrawCard(), null, null, System.Globalization.CultureInfo.CurrentCulture);
+                backCardImage.Source = (ImageSource)converter.Convert(drawer.DrawBackSideSkin(), null, null, System.Globalization.CultureInfo.CurrentCulture);
+            }));
         }
 
         private void ComboBox_GotFocus(object sender, RoutedEventArgs e)
@@ -169,7 +181,7 @@ namespace CardMasterManager
             
             if (cardsList.Count > 0)
             {
-                ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile());
+                ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile(cardsFile));
                 parameters.exportFormat = Exporter.EXPORT_FORMAT_PNG;
                 parameters.exportMode = Exporter.EXPORT_MODE_ALL;
                 parameters.TargetFolder = FolderDialog.SelectFolder();
@@ -190,7 +202,7 @@ namespace CardMasterManager
 
             if (cardsList.Count > 0)
             {
-                ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile());
+                ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile(cardsFile));
                 parameters.SpaceBetweenCards = 0;
                 parameters.exportFormat = Exporter.EXPORT_FORMAT_PNG;
                 parameters.exportMode = Exporter.EXPORT_MODE_BOARD;
@@ -249,9 +261,7 @@ namespace CardMasterManager
                 }
 
                 cardProjet.Save(cardsFile);
-
-                MenuItemSave.IsEnabled = false;
-                MenuItemSave.IsEnabled = false;
+                FilesChanged(false);
             }
         }
 
@@ -281,11 +291,7 @@ namespace CardMasterManager
         {
             if (!this.onLoading)
             {
-                this.MenuItemSave.IsEnabled = true;
-                this.MenuItemSaveAs.IsEnabled = true;
-                this.MenuItemExportAllToPngFile.IsEnabled = true;
-                this.MenuItemExportBoardsToPngFile.IsEnabled = true;
-                this.MenuItemPrintBoards.IsEnabled = true;
+                FilesChanged(true);
             }
         }
 
@@ -302,7 +308,7 @@ namespace CardMasterManager
 
             if (cardsList.Count > 0)
             {
-                ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile());
+                ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile(cardsFile));
 
                 parameters.printPrameters = PrinterDialog.SelectPrintParameters(cardsList.Count);
 
@@ -319,10 +325,21 @@ namespace CardMasterManager
 
         }
 
-        private FileInfo GetSkinFile()
-        {   if (this.cardsFile == null) return null;
-            FileInfo skinFile = new FileInfo(Path.Combine(this.cardsFile.Directory.FullName, this.cardsFile.Name.Replace(this.cardsFile.Extension, ".skin")));
-            return skinFile.Exists ? skinFile : null;
+        private FileInfo GetSkinFile(FileInfo cardsFile)
+        {
+            if (cardsFile == null)
+            {
+                throw new ArgumentNullException("cardsFile", "Restitution du nom du fichier skin impossible sans une référence au fichier .json");
+            }
+
+            FileInfo skinFile = new FileInfo(Path.Combine(cardsFile.Directory.FullName, cardsFile.Name.Replace(cardsFile.Extension, ".skin")));
+
+            if (! skinFile.Exists)
+            {
+                throw new FileNotFoundException("Le fichier '" + skinFile.FullName + "' n'existe pas ou est inaccessible.", skinFile.Name);
+            }
+
+            return  skinFile;
         }
 
         private void ClearSearch(object sender, RoutedEventArgs e)
@@ -373,7 +390,14 @@ namespace CardMasterManager
 
         private void Window_Closing(object sender, CancelEventArgs e)
         {
-            GridConfigurator.BuildAndSaveConfiguration(cardGrid);
+            if (AskIfSaveBefore())
+            {
+                GridConfigurator.BuildAndSaveConfiguration(cardGrid);
+            }
+            else
+            {
+                e.Cancel = true;
+            }
         }
 
         private void AddRowClick(object sender, RoutedEventArgs e)
@@ -407,6 +431,7 @@ namespace CardMasterManager
             cardGrid.SelectedItem = cardGrid.Items.GetItemAt(indexWhereToInsert);
             cardGrid.Focus();
 
+            FilesChanged(true);
         }  
 
         private void DeleteRowClick(object sender, RoutedEventArgs e)
@@ -420,6 +445,7 @@ namespace CardMasterManager
                     cardGrid.SelectedItem = cardGrid.Items.GetItemAt(selectedIndex == 0 ? 0 : selectedIndex - 1);
                     cardGrid.Focus();
                 }
+                FilesChanged(true);
             }
         }
 
@@ -430,6 +456,7 @@ namespace CardMasterManager
                 int originalIndex = cardGrid.SelectedIndex;
                 int targetIndex = originalIndex + 1;
                 SwapGridLines(originalIndex, targetIndex);
+                FilesChanged(true);
             }
         }
         private void MoveUpRowClick(object sender, RoutedEventArgs e)
@@ -439,6 +466,7 @@ namespace CardMasterManager
                 int originalIndex = cardGrid.SelectedIndex;
                 int targetIndex = originalIndex - 1;
                 SwapGridLines(originalIndex, targetIndex);
+                FilesChanged(true);
             }
         }
 
@@ -450,6 +478,44 @@ namespace CardMasterManager
             cardGrid.SelectedIndex = targetIndex;
             cardGrid.SelectedItem = cardGrid.Items.GetItemAt(targetIndex);
             cardGrid.Focus();
+            FilesChanged(true);
         }
+
+        private void FilesChanged(bool changed)
+        {
+            this.MenuItemSave.IsEnabled = changed;
+            this.MenuItemSaveAs.IsEnabled = changed;
+            this.filesChanged = changed;
+        }
+
+        private bool AskIfSaveBefore()
+        {
+            bool result = true;
+
+            // le false est temporaire et désactive la popup de confirmation d'enregistrement tant qu'on a pas de solution
+            // pour savoir quand le chargement de la grille terminé.
+            if (false && this.filesChanged == true)
+            {
+                MessageBoxResult msgResult = MessageBox.Show("Voulez-vous enregistrer les modifications apportées à '" + this.cardsFile.Name + "' ?", 
+                    "Enregistrer...", MessageBoxButton.YesNoCancel, MessageBoxImage.Exclamation);
+
+                switch (msgResult)
+                {
+                    case MessageBoxResult.Yes:
+                        SaveProject(cardsFile);
+                        break;
+                    case MessageBoxResult.No:
+                        // Rien à faire
+                        break;
+                    case MessageBoxResult.Cancel:
+                        result = false;
+                        break;
+                }
+
+            }
+
+            return result;
+        }
+
     }
 }
