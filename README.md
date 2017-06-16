@@ -34,7 +34,7 @@ Bugs quand création d'un projet from scratch (lien avec un skin devant déja ex
 
 ### Aspect des cartes
 
-* Bordures en dégradé avec un color 1 et color 2 pour les borders (attention probleme de map <String,[String])
+* [EN COURS] Bordures en dégradé avec un color 1 et color 2 pour les borders (attention probleme de map <String,[String])
 
 ### IHM
 
@@ -53,7 +53,8 @@ En particulier la partie exportation, où y aurait désormait un seul item qui o
 cela crée une copie en "Image1-original.jpg" et écrase le fichier "Image1.jpg" avec celle retaillée.
 
 * Datagrid
-  * [EN COURS] Ajouter la possibilité de masquer/afficher des colonnes
+  * [DONE] Ajouter la possibilité de masquer/afficher des colonnes
+  * ![Warning](https://cdn1.iconfinder.com/data/icons/hawcons/32/700144-icon-61-warning-128.png)
   * [A TESTER] Rendre triable toutes les colonnes, selon leur valeur visible (je pense en particulier au colonnes liées à des Enum)
       --> KO, le tri sur le GENRE est bon mais pas sur le NATURE CHAKRA. Sans doute l'enum du GENRE est-il bien trié, contriarement à celui du CHAKRA
 
