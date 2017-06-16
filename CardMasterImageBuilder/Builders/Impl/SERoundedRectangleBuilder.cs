@@ -17,8 +17,20 @@ namespace CardMasterImageBuilder.Builders.Impl
 
         public override SkinElement Build(JsonSkinItem item, JsonCard card)
         {
+            JsonSkinsProject skinsProject = builderParameter.JsonSkinsProject;
             SERoundedRectangle skinElement = new SERoundedRectangle(builderParameter.ResourcesDirectory, item.X, item.Y, item.Width, item.Height, item.Comment, item.Radius.Value);
-            skinElement.SetBackground(item.BackgroundColor,item.BackgroundColor2,item.ExternalCardBorderthickness);
+
+            //skinElement.SetBackground(item.BackgroundColor,item.BackgroundColor2,item.ExternalCardBorderthickness);
+
+            if (item.Background == "DYNAMIC")
+            {
+                skinElement.SetBackground(GetMatchingBackground(skinsProject, card));
+            }
+            else
+            {
+                skinElement.SetBackground(item.BackgroundColor, item.BackgroundColor2, item.ExternalCardBorderthickness);
+            }
+
             return ManageShadow(skinElement, item);
         }
     }

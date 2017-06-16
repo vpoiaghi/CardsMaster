@@ -41,7 +41,7 @@ namespace CardMasterImageBuilder.SkinElements
             // Fermeture de la forme
             path.CloseFigure();
 
-            graphicElementsList.Add(new PathElement(path, GetBackground()));
+            graphicElementsList.Add(new PathElement(path, GetBackground(path)));
 
             path = null;
 

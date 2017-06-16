@@ -22,7 +22,7 @@ namespace CardMasterImageBuilder.SkinElements
 
             path.AddEllipse(X, Y, Width, Height);
 
-            graphicElementsList.Add(new PathElement(path, GetBackground()));
+            graphicElementsList.Add(new PathElement(path, GetBackground(path)));
             
             path = null;
 

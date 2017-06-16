@@ -20,7 +20,7 @@ namespace CardMasterImageBuilder.SkinElements
 
             path.AddRectangle(new Rectangle(this.X, this.Y, this.Width, this.Height));
 
-            graphicElementsList.Add(new PathElement(path, GetBackground()));
+            graphicElementsList.Add(new PathElement(path, GetBackground(path)));
 
             path = null;
 

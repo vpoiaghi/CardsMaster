@@ -92,11 +92,12 @@
 			},
 			{
 				"Comment":"Texture de fond",
-				"Type":"SERectangle",
+				"Type":"SERoundedRectangle",
 				"X":28,
 				"Y":28,
 				"Width": 688,
 				"Height" : 982,
+				"Radius" : 28,
 				"Background":"DYNAMIC"
 			},
 			{
