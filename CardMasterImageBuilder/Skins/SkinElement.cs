@@ -118,7 +118,7 @@ namespace CardMasterImageBuilder.Skins
 
         public void SetBackground(String imageName, String imageName2, int? externalBorderThickness)
         {
-            if (imageName.StartsWith("#"))
+            if (imageName!=null && imageName.StartsWith("#"))
             {
                 this.color1 = (Color)colorConverter.ConvertFromString(imageName);
                 this.type = TextureTypes.Color;
@@ -134,7 +134,7 @@ namespace CardMasterImageBuilder.Skins
             else
             {
                 this.imageName = imageName;
-                if (imageName2 != null && imageName2 != "")
+                if (imageName2 !=null && imageName2 != null && imageName2 != "")
                 {
                     this.imageName = imageName2;
                 }
