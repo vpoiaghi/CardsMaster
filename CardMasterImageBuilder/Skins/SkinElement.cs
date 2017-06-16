@@ -24,6 +24,7 @@ namespace CardMasterImageBuilder.Skins
         public bool Visible { get; set; } = true;
         protected Color color1;
         protected Color color2;
+        protected int? externalCardBorderthickness;
         protected string imageName = null;
         private TextureTypes type;
         protected DirectoryInfo resourcesDirectory = null;
@@ -91,12 +92,13 @@ namespace CardMasterImageBuilder.Skins
             this.type = TextureTypes.Color;
         }
 
-        public void SetBackground(Color color1, Color color2)
+        public void SetBackground(Color color1, Color color2, int? externalBorderThickness)
         {
             this.color1 = color1;
             this.color2 = color2;
             this.imageName = null;
             this.type = TextureTypes.GradientColor;
+            this.externalCardBorderthickness = externalBorderThickness;
         }
 
         public void SetBackground(String imageName)
@@ -114,7 +116,7 @@ namespace CardMasterImageBuilder.Skins
             }
         }
 
-        public void SetBackground(String imageName, String imageName2)
+        public void SetBackground(String imageName, String imageName2, int? externalBorderThickness)
         {
             if (imageName.StartsWith("#"))
             {
@@ -123,6 +125,7 @@ namespace CardMasterImageBuilder.Skins
                 if (imageName2!=null && imageName2 != "")
                 {
                     this.color2 = (Color)colorConverter.ConvertFromString(imageName2);
+                    this.externalCardBorderthickness = externalBorderThickness;
                     this.type = TextureTypes.GradientColor;
                 }       
                 this.imageName = null;
@@ -155,18 +158,6 @@ namespace CardMasterImageBuilder.Skins
                     break;
 
                 case TextureTypes.GradientColor:
-                    //TODO 
-                    //Tentative de degradé radiant
-                    //bkg = new PathGradientBrush(new Point[] {
-                    //    new Point(1,1),
-                    //    new Point(Width, 1),
-                    //    new Point (Width,Height),
-                    //    new Point(1, Height) },
-                    //    WrapMode.Tile);
-                    //((PathGradientBrush)bkg).CenterPoint = new Point(Width/2,Height/2);
-                    //((PathGradientBrush)bkg).CenterColor = this.color2;
-                    //((PathGradientBrush)bkg).SurroundColors = new Color[] { this.color1 };
-
                     PathGradientBrush pgb;
                     if (path == null)
                     {
@@ -186,7 +177,7 @@ namespace CardMasterImageBuilder.Skins
                     pgb.SurroundColors = new Color[] { this.color1 };
 
 
-                    int b = 28; // LE PB EST LA !!! IL FAUT TROUVER UN MOYEN DE CONNAITRE ICI LA TAILLE DE LA BORDURE...
+                    int b = externalCardBorderthickness.Value; // LE PB EST LA !!! IL FAUT TROUVER UN MOYEN DE CONNAITRE ICI LA TAILLE DE LA BORDURE...
 
 
                     float scaleW = (float)(this.Width - 2 * b) / (float)this.Width;

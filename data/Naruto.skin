@@ -60,7 +60,8 @@
 				"Height" : 1038,
 				"Radius" : 28,
 				"BackgroundColor" : "#000000",
-				"BackgroundColor2" : "#FF0000"
+				"BackgroundColor2" : "#660000",
+				"ExternalCardBorderthickness" : 28
 			},
 			{
 				"Type":"SEImage",
@@ -86,7 +87,8 @@
 				"Height" : 1038,
 				"Radius" : 28,
 				"BackgroundColor" : "#000000",
-				"BackgroundColor2" : "#FF0000"
+				"BackgroundColor2" : "#660000",
+				"ExternalCardBorderthickness" : 28
 			},
 			{
 				"Comment":"Texture de fond",
