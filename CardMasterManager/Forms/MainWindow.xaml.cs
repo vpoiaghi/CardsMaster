@@ -38,10 +38,6 @@ namespace CardMasterManager
         private DateTime d2;
         private bool isSearching = false;
 
-        private bool onLoading = false;
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
         public DrawingQuality DQuality { get; set; } = new DrawingQuality();
 
         public MainWindow()
@@ -227,8 +223,6 @@ namespace CardMasterManager
 
         private void LoadCards(List<Card> cards)
         {
-            this.onLoading = true;
-
             GridCardsList.Clear();
 
             foreach (Card card in cards)
@@ -237,8 +231,6 @@ namespace CardMasterManager
             }
 
             DataContext = this;
-
-            //this.onLoading = false;
         }
 
         private void SaveProject(FileInfo cardsFile)
