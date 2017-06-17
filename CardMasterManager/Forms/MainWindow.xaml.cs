@@ -40,6 +40,8 @@ namespace CardMasterManager
 
         private bool onLoading = false;
 
+        public event PropertyChangedEventHandler PropertyChanged;
+
         public DrawingQuality DQuality { get; set; } = new DrawingQuality();
 
         public MainWindow()
@@ -236,7 +238,7 @@ namespace CardMasterManager
 
             DataContext = this;
 
-            this.onLoading = false;
+            //this.onLoading = false;
         }
 
         private void SaveProject(FileInfo cardsFile)
@@ -249,26 +251,6 @@ namespace CardMasterManager
                 FilesChanged(false);
             }
         }
-
-        private void DataGrid_TextCellChanged(object sender, TextChangedEventArgs e)
-        {
-            DataGridValuesChanged();
-        }
-
-        private void DataGrid_ComboCellChanged(object sender, SelectionChangedEventArgs e)
-        {
-            DataGridValuesChanged();
-        }
-
-        private void DataGridValuesChanged()
-        {
-            if (!this.onLoading)
-            {
-                FilesChanged(true);
-            }
-        }
-
-       
 
         private void MenuItemPrintBoards_Click(object sender, RoutedEventArgs e)
         {
@@ -454,9 +436,7 @@ namespace CardMasterManager
         {
             bool result = true;
 
-            // le false est temporaire et désactive la popup de confirmation d'enregistrement tant qu'on a pas de solution
-            // pour savoir quand le chargement de la grille terminé.
-            if (false && this.filesChanged == true)
+            if (this.filesChanged == true)
             {
                 MessageBoxResult msgResult = MessageBox.Show("Voulez-vous enregistrer les modifications apportées à '" + this.cardsFile.Name + "' ?", 
                     "Enregistrer...", MessageBoxButton.YesNoCancel, MessageBoxImage.Exclamation);
@@ -489,6 +469,11 @@ namespace CardMasterManager
             }
 
             return jsonCardsList;
+        }
+
+        private void cardGrid_SourceUpdated(object sender, System.Windows.Data.DataTransferEventArgs e)
+        {
+            FilesChanged(true);
         }
 
     }
