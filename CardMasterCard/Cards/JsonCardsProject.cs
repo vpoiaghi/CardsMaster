@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Xml.Serialization;
 
@@ -7,7 +8,7 @@ namespace CardMasterCard.Card
 {
     public class JsonCardsProject
     {
-        public JsonCardsSet Cards { get; set; }
+        public List<JsonCard> Cards { get; set; }
 
         public static JsonCardsProject LoadProject(FileInfo file)
         {

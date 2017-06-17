@@ -46,7 +46,6 @@
   <ItemGroup>
     <Compile Include="Cards\JsonCard.cs" />
     <Compile Include="Cards\JsonCardsProject.cs" />
-    <Compile Include="Cards\JsonCardsSet.cs" />
     <Compile Include="Cards\JsonPower.cs" />
     <Compile Include="Cards\JsonTexture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

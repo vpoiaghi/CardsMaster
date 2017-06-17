@@ -79,8 +79,8 @@ namespace CardMasterManager.Forms
                 cb.Name = "Cb"+index;
                 cb.IsChecked = entry.Value.Equals(Visibility.Visible) ? true : false;
                 cb.HorizontalAlignment = HorizontalAlignment.Right;
-
                 stackLine.Children.Add(cb);
+
                 b.Child = stackLine;
                 mainStack.Children.Add(b);
                 index++;
@@ -120,12 +120,22 @@ namespace CardMasterManager.Forms
 
         private Configuration BuildConfigFromWindows()
         {
+            Border border = null;
+            DockPanel dockPanel;
+
             Configuration newConfiguration = new Configuration();
-            foreach(DockPanel stack in mainStack.Children)
+
+            foreach (UIElement mainStackChild in mainStack.Children)
             {
-                String fieldName = ((TextBox)stack.Children[0]).Text;
-                Visibility visible = ((CheckBox)stack.Children[1]).IsChecked.Value ? Visibility.Visible : Visibility.Hidden;
-                newConfiguration.AddConfiguration(fieldName, visible);
+                if (mainStackChild is Border)
+                {
+                    border = (Border)mainStackChild;
+                    dockPanel = (DockPanel)border.Child;
+
+                    String fieldName = ((TextBox)dockPanel.Children[0]).Text;
+                    Visibility visible = ((CheckBox)dockPanel.Children[1]).IsChecked.Value ? Visibility.Visible : Visibility.Hidden;
+                    newConfiguration.AddConfiguration(fieldName, visible);
+                }
             }
 
             return newConfiguration;

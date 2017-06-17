@@ -9,6 +9,7 @@ using CardMasterManager.Utils;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
 using System.Threading;
@@ -23,6 +24,8 @@ namespace CardMasterManager
     /// </summary>
     public partial class MainWindow : Window, IThreadedExporterOwner
     {
+        public ObservableCollection<Card> GridCardsList { get; set; } = new ObservableCollection<Card>();
+
         private static object locker = new object();
 
         private JsonCardsProject cardProjet;
@@ -172,13 +175,8 @@ namespace CardMasterManager
 
         private void MenuItemExportAllToPngFile_Click(object sender, RoutedEventArgs e)
         {
-            var cardsList = new List<JsonCard>();
+            List<JsonCard> cardsList = GridCardsListToJsonCardsList();
 
-            foreach (object item in cardGrid.Items)
-            {
-                cardsList.Add(Card.ConvertToMasterCard((Card)item));
-            }
-            
             if (cardsList.Count > 0)
             {
                 ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile(cardsFile));
@@ -193,12 +191,7 @@ namespace CardMasterManager
 
         private void MenuItemExportBoardsToPngFile_Click(object sender, RoutedEventArgs e)
         {
-            var cardsList = new List<JsonCard>();
-
-            foreach (object item in cardGrid.Items)
-            {
-                cardsList.Add(Card.ConvertToMasterCard((Card)item));
-            }
+            List<JsonCard> cardsList = GridCardsListToJsonCardsList();
 
             if (cardsList.Count > 0)
             {
@@ -234,12 +227,14 @@ namespace CardMasterManager
         {
             this.onLoading = true;
 
-            cardGrid.Items.Clear();
+            GridCardsList.Clear();
 
             foreach (Card card in cards)
             {
-                cardGrid.Items.Add(card);
+                GridCardsList.Add(card);
             }
+
+            DataContext = this;
 
             this.onLoading = false;
         }
@@ -248,33 +243,11 @@ namespace CardMasterManager
         {
             if ((cardProjet != null) && (cardsFile != null))
             {
-                JsonCard c = null;
-
-                List<Card> cards = GetCardsFromGrid();
-
-                cardProjet.Cards.Clear();
-
-                foreach (Card card in cards)
-                {
-                    c = Card.ConvertToMasterCard(card);
-                    cardProjet.Cards.Add(c);
-                }
-
+                cardProjet.Cards = GridCardsListToJsonCardsList();
                 cardProjet.Save(cardsFile);
+
                 FilesChanged(false);
             }
-        }
-
-        private List<Card> GetCardsFromGrid()
-        {
-            var cards = new List<Card>();
-
-            foreach (Card card in cardGrid.Items)
-            {
-                cards.Add(card);
-            }
-
-            return cards;
         }
 
         private void DataGrid_TextCellChanged(object sender, TextChangedEventArgs e)
@@ -299,12 +272,7 @@ namespace CardMasterManager
 
         private void MenuItemPrintBoards_Click(object sender, RoutedEventArgs e)
         {
-            var cardsList = new List<JsonCard>();
-
-            foreach (object item in cardGrid.Items)
-            {
-                cardsList.Add(Card.ConvertToMasterCard((Card)item));
-            }
+            List<JsonCard> cardsList = GridCardsListToJsonCardsList();
 
             if (cardsList.Count > 0)
             {
@@ -427,8 +395,8 @@ namespace CardMasterManager
             {
                 indexWhereToInsert = cardGrid.SelectedIndex;
             }
-            cardGrid.Items.Insert(indexWhereToInsert, newCard);
-            cardGrid.SelectedItem = cardGrid.Items.GetItemAt(indexWhereToInsert);
+            GridCardsList.Insert(indexWhereToInsert, newCard);
+            cardGrid.SelectedIndex = indexWhereToInsert;
             cardGrid.Focus();
 
             FilesChanged(true);
@@ -439,10 +407,10 @@ namespace CardMasterManager
             if (cardGrid.SelectedIndex != -1)
             {
                 int selectedIndex = cardGrid.SelectedIndex;
-                cardGrid.Items.RemoveAt(selectedIndex);
+                GridCardsList.RemoveAt(selectedIndex);
                 if (cardGrid.Items.Count > 0)
                 {
-                    cardGrid.SelectedItem = cardGrid.Items.GetItemAt(selectedIndex == 0 ? 0 : selectedIndex - 1);
+                    cardGrid.SelectedIndex = selectedIndex == 0 ? 0 : selectedIndex - 1;
                     cardGrid.Focus();
                 }
                 FilesChanged(true);
@@ -456,7 +424,6 @@ namespace CardMasterManager
                 int originalIndex = cardGrid.SelectedIndex;
                 int targetIndex = originalIndex + 1;
                 SwapGridLines(originalIndex, targetIndex);
-                FilesChanged(true);
             }
         }
         private void MoveUpRowClick(object sender, RoutedEventArgs e)
@@ -466,17 +433,12 @@ namespace CardMasterManager
                 int originalIndex = cardGrid.SelectedIndex;
                 int targetIndex = originalIndex - 1;
                 SwapGridLines(originalIndex, targetIndex);
-                FilesChanged(true);
             }
         }
 
         private void SwapGridLines(int sourceIndex,int targetIndex)
         {
-            Card c = ((Card)cardGrid.SelectedItem);
-            cardGrid.Items.RemoveAt(sourceIndex);
-            cardGrid.Items.Insert(targetIndex, c);
-            cardGrid.SelectedIndex = targetIndex;
-            cardGrid.SelectedItem = cardGrid.Items.GetItemAt(targetIndex);
+            GridCardsList.Move(sourceIndex, targetIndex);
             cardGrid.Focus();
             FilesChanged(true);
         }
@@ -515,6 +477,18 @@ namespace CardMasterManager
             }
 
             return result;
+        }
+
+        private List<JsonCard> GridCardsListToJsonCardsList()
+        {
+            List<JsonCard> jsonCardsList = new List<JsonCard>();
+
+            foreach (object item in GridCardsList)
+            {
+                jsonCardsList.Add(Card.ConvertToMasterCard((Card)item));
+            }
+
+            return jsonCardsList;
         }
 
     }
