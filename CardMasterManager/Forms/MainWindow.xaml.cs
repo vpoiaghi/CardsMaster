@@ -44,8 +44,6 @@ namespace CardMasterManager
         {
             InitializeComponent();
 
-            this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
-
             GridConfigurator.LoadAndApplyConfiguration(cardGrid);
 
             this.MenuItemExportAllToPngFile.IsEnabled = false;
