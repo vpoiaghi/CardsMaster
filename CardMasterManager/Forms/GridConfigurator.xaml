@@ -12,8 +12,9 @@
             <Border CornerRadius="0" BorderBrush="LightGray" BorderThickness="1" DockPanel.Dock="Top">
                 <DockPanel Name ="headerStack" HorizontalAlignment="Left" Height="20"  VerticalAlignment="Top" Width="248">
                     <TextBox Name="headerField" Text="Column name" HorizontalAlignment="Left" BorderBrush="Transparent"/>
-                    <TextBox Name="visibilityField" Text="Visible" HorizontalAlignment="Right" BorderBrush="Transparent"/>
                     <DockPanel Height="20" LastChildFill="False" VerticalAlignment="Top" Width="100"/>
+                    <TextBox Name="visibilityField" Text="Visible" HorizontalAlignment="Right" BorderBrush="Transparent"/>
+                    
                 </DockPanel>
             </Border>
            
