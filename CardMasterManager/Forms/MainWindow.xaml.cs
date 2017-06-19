@@ -134,7 +134,7 @@ namespace CardMasterManager
         {
             if (cardGrid.SelectedItem != null)
             {
-                Card c = ((Card)cardGrid.SelectedItem);
+                Card c = GridCardsList[cardGrid.SelectedIndex];
 
                 if (!(c == previousCard))
                 {
@@ -428,7 +428,8 @@ namespace CardMasterManager
 
             if (this.filesChanged == true)
             {
-                MessageBoxResult msgResult = MessageBox.Show("Voulez-vous enregistrer les modifications apportées à '" + this.cardsFile.Name + "' ?", 
+                String source = this.cardsFile == null ? "la grille" : this.cardsFile.Name;
+                MessageBoxResult msgResult = MessageBox.Show("Voulez-vous enregistrer les modifications apportées à '" + source + "' ?", 
                     "Enregistrer...", MessageBoxButton.YesNoCancel, MessageBoxImage.Exclamation);
 
                 switch (msgResult)
