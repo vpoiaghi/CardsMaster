@@ -1,7 +1,7 @@
 {
 	"BorderWidth":3,
 	"MapLibelleColor" : {
-		"Quête": "orange",
+		"Quête": "vert-texture",
 		"Environnement": "Pierre 01",
 		"Equipement": "gris_foncé",
 		"Ninjutsu": "ninjutsu",
@@ -23,7 +23,7 @@
 		"Légendaire": "Purple"
 	},
 	"MapLibelleBorderColor" : {
-		"Quête": "#FF4500",
+		"Quête": "#00AA00",
 		"Environnement": "#FFE4C4",
 		"Equipement": "#A9A9A9",
 		"Ninjutsu": "#4B0082",
@@ -32,7 +32,7 @@
 		"Genjutsu": "#4B0082",
 		"Vent": "#006400",
 		"Terre": "#8B4513",
-		"Feu": "#FF0000",
+		"Feu": "#FEC11D",
 		"Foudre": "#FFD700",
 		"Eau": "#1E90FF",
 		"Physique": "#FFDEAD"
@@ -53,6 +53,7 @@
 		"Width" : 744,
 		"Items" : [
 			{
+				"Comment": "Bordure exterieure",
 				"Type":"SERoundedRectangle",
 				"X":0,
 				"Y":0,
@@ -60,15 +61,17 @@
 				"Height" : 1038,
 				"Radius" : 28,
 				"BackgroundColor" : "#000000",
-				"BackgroundColor2" : "#660000",
+				"BackgroundColor2" : "#696969",
 				"ExternalCardBorderthickness" : 28
 			},
 			{
+				"Comment":"Texture de fond",
 				"Type":"SEImage",
 				"X":28,
 				"Y":28,
 				"Width": 688,
 				"Height" : 982,
+				"Radius" : 18,
 				"NameAttribute" : "BackSide"
 			}
 		]
@@ -79,7 +82,7 @@
 		"Width" : 744,
 		"Items" : [
 			{
-				"Comment": "Bordure",
+				"Comment": "Bordure Exterieure",
 				"Type":"SERoundedRectangle",
 				"X":0,
 				"Y":0,
@@ -87,7 +90,7 @@
 				"Height" : 1038,
 				"Radius" : 28,
 				"BackgroundColor" : "#000000",
-				"BackgroundColor2" : "#660000",
+				"BackgroundColor2" : "#696969",
 				"ExternalCardBorderthickness" : 28
 			},
 			{
@@ -131,7 +134,8 @@
 				"Y":50,
 				"Width": 60,
 				"Height" : 60,
-				"Background" : "mana_circle"
+				"Background" : "mana_circle",
+				"VisibleConditionAttribute" : "Cost"
 			},
 			{
 				"Comment" : "Zone Cout",
@@ -145,7 +149,8 @@
 				"Style" : "Bold",
 				"NameAttribute" : "Cost",
 				"VerticalAlign" : "Center",
-				"HorizontalAlign" : "Center"
+				"HorizontalAlign" : "Center",
+				"VisibleConditionAttribute" : "Cost"
 			},
 			{
 				"Comment" : "Image perso",
