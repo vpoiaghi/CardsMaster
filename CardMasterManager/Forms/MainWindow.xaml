@@ -51,6 +51,7 @@
                     <Image Name="backCardImage"></Image>
                 </Border>
             </DockPanel>
+            
             <DockPanel DockPanel.Dock="Right">
                 <StackPanel>
                     <StackPanel Orientation="Horizontal" Height="19" Width="1296" Margin="5">
@@ -62,7 +63,7 @@
                         
                        
                     </StackPanel>
-                    <DockPanel >
+                    <DockPanel>
                         <ToolBarTray Margin="5">
                             <ToolBar ToolBarTray.IsLocked="True" >
                                 <Button Name="AddRowButton" Click="AddRowClick">

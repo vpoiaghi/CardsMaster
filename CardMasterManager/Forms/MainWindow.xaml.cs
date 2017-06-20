@@ -51,6 +51,8 @@ namespace CardMasterManager
             this.MenuItemPrintBoards.IsEnabled = false;
 
             FilesChanged(false);
+
+            DataContext = this;
         }
 
         private void MenuItemOpen_Click(object sender, RoutedEventArgs e)
@@ -132,14 +134,19 @@ namespace CardMasterManager
 
         private void cardGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (cardGrid.SelectedItem != null)
+            if ((cardsFile != null) && (cardGrid.SelectedItem != null))
             {
-                Card c = GridCardsList[cardGrid.SelectedIndex];
-
-                if (!(c == previousCard))
+                if (!((cardGrid.SelectedIndex == 0) && (GridCardsList.Count == 0)))
                 {
-                    previousCard = c;
-                    new Thread(() => DisplayCard(c, cardImage,backCardImage)).Start();
+                    // Si on est pas dans le cas d'un nouveau fichier
+
+                    Card c = GridCardsList[cardGrid.SelectedIndex];
+
+                    if (!(c == previousCard))
+                    {
+                        previousCard = c;
+                        new Thread(() => DisplayCard(c, cardImage, backCardImage)).Start();
+                    }
                 }
             }
         }
@@ -164,9 +171,12 @@ namespace CardMasterManager
 
         private void ComboBox_GotFocus(object sender, RoutedEventArgs e)
         {
-            ComboBox cb = (ComboBox)sender;
-            Card card = (Card)cb.DataContext;
-            cardGrid.SelectedItem = card;
+            if ((cardGrid.SelectedItem != null) && (cardGrid.SelectedIndex > 0))
+            {
+                Card card = GridCardsList[cardGrid.SelectedIndex];
+                ComboBox cb = (ComboBox)sender;
+                cardGrid.SelectedItem = card;
+            }
         }
 
         private void MenuItemExportAllToPngFile_Click(object sender, RoutedEventArgs e)
@@ -228,7 +238,7 @@ namespace CardMasterManager
                 GridCardsList.Add(card);
             }
 
-            DataContext = this;
+
         }
 
         private void SaveProject(FileInfo cardsFile)
@@ -289,7 +299,7 @@ namespace CardMasterManager
 
         private void filterDataGrid(object sender, TextChangedEventArgs e)
         {
-            if (!isSearching)
+            if ((GridCardsList.Count > 0) && (!isSearching))
             {
                 String filterText = ((TextBox)sender).Text;
                 if (filterText.Equals(null) || filterText.Equals(""))
@@ -356,7 +366,7 @@ namespace CardMasterManager
             newCard.Powers.Add(p);
 
             int indexWhereToInsert = 0;
-            if (cardGrid.Items.Count == 0 )
+            if (GridCardsList.Count == 0 )
             {
                 indexWhereToInsert = 0;
             }else if( cardGrid.SelectedIndex == -1)
