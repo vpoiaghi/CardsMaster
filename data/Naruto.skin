@@ -232,8 +232,23 @@
 				"Height" : 45,
 				"FontName" : "Informal Roman",
 				"FontSize" : 8,
+				"FontColor" : "Gold",
 				"Style" : "Bold,Italic",
 				"NameAttribute" : "Citation",
+				"HorizontalAlign" : "Center",
+				"VerticalAlign" : "Center"
+			},
+			{
+				"Comment" : "Zone Texte StringField 1",
+				"Type" : "SETextArea",
+				"X":28,
+				"Y":950,
+				"Width": 628,
+				"Height" : 45,
+				"FontName" : "Informal Roman",
+				"FontSize" : 9,
+				"Style" : "Bold,Italic",
+				"NameAttribute" : "StringField1",
 				"HorizontalAlign" : "Center",
 				"VerticalAlign" : "Center"
 			},

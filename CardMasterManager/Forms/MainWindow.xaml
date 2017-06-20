@@ -26,6 +26,7 @@
                 <MenuItem Name="MenuItemOpen" Header="_Ouvrir" Click="MenuItemOpen_Click"/>
                 <MenuItem Name="MenuItemSave" Header="_Enregistrer" Click="MenuItemSave_Click"/>
                 <MenuItem Name="MenuItemSaveAs" Header="_Enregistrer Sous..." Click="MenuItemSaveAs_Click"/>
+                <MenuItem Name="MenuItemSaveAsJson" Header="_Enregistrer Json Sous..." Click="MenuItemSaveAsJson_Click"/>
                 <MenuItem Name="MenuItemPrintBoards" Header="Imprimer..." Click="MenuItemPrintBoards_Click"/>
                 <MenuItem Name="MenuItemExit" Header="_Quitter" Click="MenuItemExit_Click"/>
             </MenuItem>
@@ -136,18 +137,18 @@
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
 
-                                <DataGridTemplateColumn Header="Rareté/Grade" MinWidth="100" CanUserSort="True" SortMemberPath="Rank">
-                                    <DataGridTemplateColumn.CellTemplate>
-                                        <DataTemplate>
-                                            <TextBox Text="{Binding Rank, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True}" BorderBrush="Transparent" />
-                                        </DataTemplate>
-                                    </DataGridTemplateColumn.CellTemplate>
-                                </DataGridTemplateColumn>
-
                                 <DataGridTemplateColumn Header="Equipe" MinWidth="80" CanUserSort="True" SortMemberPath="Team">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBox Text="{Binding Team, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True}" BorderBrush="Transparent" />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                                <DataGridTemplateColumn Header="Rareté/Grade" MinWidth="100" CanUserSort="True" SortMemberPath="Rank">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBox Text="{Binding Rank, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True}" BorderBrush="Transparent" />
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>

@@ -49,6 +49,8 @@ namespace CardMasterManager
             this.MenuItemExportAllToPngFile.IsEnabled = false;
             this.MenuItemExportBoardsToPngFile.IsEnabled = false;
             this.MenuItemPrintBoards.IsEnabled = false;
+            this.MenuItemSaveAsJson.IsEnabled = false;
+
 
             FilesChanged(false);
 
@@ -60,7 +62,7 @@ namespace CardMasterManager
             if (AskIfSaveBefore())
             {
                 OpenFileDialog openFileDialog = new OpenFileDialog();
-                openFileDialog.Filter = "Json files (*.json)|*.json|All files (*.*)|*.*";
+                openFileDialog.Filter = "All Supported files|*.json;*.xlsx;*.xml|All files (*.*)|*.*";
 
                 if (openFileDialog.ShowDialog() == true)
                 {
@@ -93,6 +95,19 @@ namespace CardMasterManager
             else
             {
                 SaveProject(cardsFile);
+            }
+        }
+
+        private void MenuItemSaveAsJson_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Json files (*.json)|*.json|All files (*.*)|*.*";
+
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                FileInfo newCardsFile = new FileInfo(saveFileDialog.FileName);
+                SaveProject(newCardsFile);
+                this.cardsFile = newCardsFile;
             }
         }
 
@@ -429,6 +444,7 @@ namespace CardMasterManager
         {
             this.MenuItemSave.IsEnabled = changed;
             this.MenuItemSaveAs.IsEnabled = changed;
+            this.MenuItemSaveAsJson.IsEnabled = true;
             this.filesChanged = changed;
         }
 
@@ -477,5 +493,6 @@ namespace CardMasterManager
             FilesChanged(true);
         }
 
+      
     }
 }

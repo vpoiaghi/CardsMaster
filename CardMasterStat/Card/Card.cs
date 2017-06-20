@@ -12,10 +12,10 @@ namespace CardMasterStat
         public String Team { get; set; }
         public NatureCard Nature { get; set; }
         public String Element { get; set; }
-        public int Cost { get; set; }
-        public int Nb { get; set; }
-        public int Attack { get; set; }
-        public int Defense { get; set; }
+        public int? Cost { get; set; }
+        public int? Nb { get; set; }
+        public int? Attack { get; set; }
+        public int? Defense { get; set; }
         public String Citation { get; set; }
         public String Comments { get; set; }
         public JsonTexture Background { get; set; }

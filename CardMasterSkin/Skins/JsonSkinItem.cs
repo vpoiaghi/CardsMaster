@@ -19,6 +19,7 @@ namespace CardMasterSkin.Skins
         public String BorderColor { get; set; }
         public int? BorderWidth { get; set; }
         public String FontName { get; set; }
+        public String FontColor { get; set; }
         public int? FontSize { get; set; }
         public String Style { get; set; }
         public String VerticalAlign { get; set; }

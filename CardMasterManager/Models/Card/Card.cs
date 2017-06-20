@@ -50,7 +50,7 @@ namespace CardMasterManager
         private String _defense;
         private String _citation;
         private String _comments;
-        private int _nb;
+        private int? _nb;
         private JsonTexture _background;
         private List<JsonPower> _powers;
         private String _backside;
@@ -76,7 +76,7 @@ namespace CardMasterManager
         public String Defense { get { return _defense; } set { _defense = value; RaisePropertyChanged("Defense"); } }
         public String Citation { get { return _citation; } set { _citation = value; RaisePropertyChanged("Citation"); } }
         public String Comments { get { return _comments; } set { _comments = value; RaisePropertyChanged("Comments"); } }
-        public int Nb { get { return _nb; } set { _nb = value; RaisePropertyChanged("Nb"); } }
+        public int? Nb { get { return _nb; } set { _nb = value; RaisePropertyChanged("Nb"); } }
         public JsonTexture Background { get { return _background; } set { _background = value; RaisePropertyChanged("Background"); } }
         public List<JsonPower> Powers { get { return _powers; } set { _powers = value; RaisePropertyChanged("Powers"); } }
         public String BackSide { get { return _backside; } set { _backside = value; RaisePropertyChanged("BackSide"); } }
@@ -99,7 +99,7 @@ namespace CardMasterManager
         {
             NatureCard toReturn;
             NatureCard.TryParse(nature, out toReturn);
-            if (nature.Equals("Lieu légendaire"))
+            if (nature != null && nature.Equals("Lieu légendaire"))
                 toReturn = NatureCard.Zone;
             return toReturn;
         }
@@ -108,7 +108,7 @@ namespace CardMasterManager
         {
             CardKind toReturn;
             CardKind.TryParse(kind, out toReturn);
-            if (kind.Equals("Lieu légendaire"))
+            if (kind !=null && kind.Equals("Lieu légendaire"))
                 toReturn = CardKind.Lieu;
             return toReturn;
         }
@@ -153,13 +153,13 @@ namespace CardMasterManager
         public static Card ConvertCard(JsonCard card)
         {
             Card toReturn = new Card();
-            toReturn.Attack = card.Attack.ToString();
+            toReturn.Attack = card.Attack;
             toReturn.Background = card.Background;
             toReturn.Nature = parseNature(card.Chakra);
             toReturn.Citation = card.Citation;
             toReturn.Comments = card.Comments;
-            toReturn.Cost = card.Cost.ToString();
-            toReturn.Defense = card.Defense.ToString();
+            toReturn.Cost = card.Cost;
+            toReturn.Defense = card.Defense;
             toReturn.Element = card.Element;
             toReturn.Kind = parseKind(card.Kind);
             toReturn.Name = card.Name;

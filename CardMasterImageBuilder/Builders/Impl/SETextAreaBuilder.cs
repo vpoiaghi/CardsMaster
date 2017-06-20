@@ -29,6 +29,11 @@ namespace CardMasterImageBuilder.Builders.Impl
             {
                 skinElement.TextFont = new Font(item.FontName, item.FontSize.Value, FontStyle.Bold | FontStyle.Italic);
             }
+
+            if (item.FontColor!=null)
+            {
+                skinElement.FontColor = ConvertColorFromString(item.FontColor);
+            }
             
             skinElement.TextAttribute = item.NameAttribute;
             if (item.VerticalAlign=="Center")

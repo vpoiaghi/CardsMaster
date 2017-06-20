@@ -16,7 +16,7 @@ namespace CardMasterCard.Card
         public String Defense  { get; set; }
         public String Citation  { get; set; }
         public String Comments  { get; set; }
-        public int Nb { get; set; }
+        public int? Nb { get; set; }
         public String BackSide { get; set; }
         public String BackSkinName { get; set; }
         public String FrontSkinName { get; set; }
