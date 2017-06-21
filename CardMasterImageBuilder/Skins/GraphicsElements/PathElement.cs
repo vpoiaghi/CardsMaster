@@ -27,6 +27,7 @@ namespace CardMasterImageBuilder.GraphicsElements
         public override void Draw(Graphics g)
         {
             g.FillPath(this.background, this.path);
+            g.DrawPath(Pens.Black, this.path);
         }
 
         public override void DrawShadow(Graphics g, SkinElementShadow shadow)

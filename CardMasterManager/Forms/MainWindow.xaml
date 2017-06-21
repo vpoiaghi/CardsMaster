@@ -12,26 +12,38 @@
         xmlns:drawing2d="clr-namespace:System.Drawing.Drawing2D;assembly=System.Drawing"
         xmlns:drawingtext="clr-namespace:System.Drawing.Text;assembly=System.Drawing"
         mc:Ignorable="d"
-        Title="Card Manager" Height="960" Width="1700" ResizeMode="NoResize" Closing="Window_Closing" WindowStartupLocation="CenterScreen" >
+        Title="Card Manager" Height="960" Width="1700" ResizeMode="NoResize" Closing="Window_Closing" WindowStartupLocation="CenterScreen" Background="AliceBlue">
 
     <Window.Resources>
         <commonconverters:EnumConverter x:Key="EnumConverter"/>
         <localconverters:PowersListConverter x:Key="PowerListConverter"/>
     </Window.Resources>
 
-    <StackPanel>
+    <StackPanel Background="AliceBlue">
 
-        <Menu>
-            <MenuItem Header="_Fichier">
+        <Menu Background="AliceBlue">
+            <MenuItem Header="_Fichier" Background="AliceBlue">
+                <MenuItem.Resources>
+                    <Style TargetType="{x:Type MenuItem}">
+                        <Setter Property="Background" Value="AliceBlue" />
+                        <Setter Property="BorderBrush" Value="AliceBlue" />
+                    </Style>
+                </MenuItem.Resources>
                 <MenuItem Name="MenuItemOpen" Header="_Ouvrir" Click="MenuItemOpen_Click"/>
-                <MenuItem Name="MenuItemSave" Header="_Enregistrer" Click="MenuItemSave_Click"/>
-                <MenuItem Name="MenuItemSaveAs" Header="_Enregistrer Sous..." Click="MenuItemSaveAs_Click"/>
-                <MenuItem Name="MenuItemSaveAsJson" Header="_Enregistrer Json Sous..." Click="MenuItemSaveAsJson_Click"/>
-                <MenuItem Name="MenuItemPrintBoards" Header="Imprimer..." Click="MenuItemPrintBoards_Click"/>
-                <MenuItem Name="MenuItemExit" Header="_Quitter" Click="MenuItemExit_Click"/>
+                <MenuItem Name="MenuItemSave" Header="_Enregistrer" Click="MenuItemSave_Click" />
+                <MenuItem Name="MenuItemSaveAs" Header="_Enregistrer Sous..." Click="MenuItemSaveAs_Click" />
+                <MenuItem Name="MenuItemSaveAsJson" Header="_Enregistrer Json Sous..." Click="MenuItemSaveAsJson_Click" />
+                <MenuItem Name="MenuItemPrintBoards" Header="Imprimer..." Click="MenuItemPrintBoards_Click" />
+                <MenuItem Name="MenuItemExit" Header="_Quitter" Click="MenuItemExit_Click" />
             </MenuItem>
-            <MenuItem Header="_Edition">
-                <MenuItem Name="MenuItemExportAllToPngFile" Header="Exporter tout en .png" Click="MenuItemExportAllToPngFile_Click"/>
+            <MenuItem Header="_Edition" Background="AliceBlue">
+                <MenuItem.Resources>
+                    <Style TargetType="{x:Type MenuItem}">
+                        <Setter Property="Background" Value="AliceBlue" />
+                        <Setter Property="BorderBrush" Value="AliceBlue" />
+                    </Style>
+                </MenuItem.Resources>
+                <MenuItem Name="MenuItemExportAllToPngFile" Header="Exporter tout en .png" Click="MenuItemExportAllToPngFile_Click" />
                 <MenuItem Name="MenuItemExportBoardsToPngFile" Header="Exporter les planches .png" Click="MenuItemExportBoardsToPngFile_Click"/>
             </MenuItem>
         </Menu>
@@ -56,9 +68,9 @@
             <DockPanel DockPanel.Dock="Right">
                 <StackPanel>
                     <StackPanel Orientation="Horizontal" Height="19" Width="1296" Margin="5">
-                        <TextBox x:Name="searchText" Text="" Width="300" TextChanged="filterDataGrid"/>
+                        <TextBox x:Name="searchText" Text="" Width="300" TextChanged="filterDataGrid" Background="AliceBlue"/>
                         <Separator Width="3" Background="Transparent"/>
-                        <Button x:Name="clearSearchButton" Width="19" Click="ClearSearch">
+                        <Button x:Name="clearSearchButton" Width="19" Click="ClearSearch" Background="AliceBlue">
                             <TextBlock>X</TextBlock>
                         </Button>
                         
@@ -107,7 +119,17 @@
                     </DockPanel>
                     <StackPanel Orientation="Horizontal">
                         <DataGrid Name="cardGrid" Margin="5" Width="1269" Height="799" SelectionMode="Single" AutoGenerateColumns="False" AlternatingRowBackground="Azure" AlternationCount="2" IsReadOnly="False" ItemsSource="{Binding Path=GridCardsList, NotifyOnSourceUpdated=True, Mode=TwoWay}"
-                        SelectionChanged="cardGrid_SelectionChanged" FrozenColumnCount ="1" EnableColumnVirtualization="True" EnableRowVirtualization="True" CanUserAddRows="False" CanUserDeleteRows="True" SourceUpdated="cardGrid_SourceUpdated">
+                        SelectionChanged="cardGrid_SelectionChanged" FrozenColumnCount ="1" EnableColumnVirtualization="True" EnableRowVirtualization="True" CanUserAddRows="False" CanUserDeleteRows="True" SourceUpdated="cardGrid_SourceUpdated" Background="AliceBlue">
+                            <DataGrid.Resources>
+                                <Style TargetType="{x:Type DataGridColumnHeader}">
+                                    <Setter Property="Background" Value="AliceBlue" />
+                                    <Setter Property="BorderBrush" Value="AliceBlue"/>
+                                </Style>
+                                <Style TargetType="{x:Type DataGridCell}">
+                                    <Setter Property="Background" Value="AliceBlue" />
+                                    <Setter Property="BorderBrush" Value="AliceBlue"/>
+                                </Style>
+                            </DataGrid.Resources>
                             <DataGrid.Columns>
 
                                 <DataGridTemplateColumn Header="Nom" MinWidth="120" CanUserSort="True" SortMemberPath="Name" >

@@ -73,12 +73,14 @@ namespace CardMasterManager.Forms
                 textBox.Name = "Txt" + index ;
                 textBox.Tag = entry.Key;
                 textBox.Text = entry.Key;
+                textBox.Background = System.Windows.Media.Brushes.AliceBlue;
                 stackLine.Children.Add(textBox);
 
                 CheckBox cb = new CheckBox();
                 cb.Name = "Cb"+index;
                 cb.IsChecked = entry.Value.Equals(Visibility.Visible) ? true : false;
                 cb.HorizontalAlignment = HorizontalAlignment.Right;
+                cb.Background = System.Windows.Media.Brushes.AliceBlue;
                 stackLine.Children.Add(cb);
 
                 b.Child = stackLine;

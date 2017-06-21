@@ -6,14 +6,14 @@
         xmlns:local="clr-namespace:CardMasterManager.Forms"
         mc:Ignorable="d"
         Title="Configure View" Height="800" Width="300">
-    <Grid>
+    <Grid Background="AliceBlue">
      
             <StackPanel Margin="15">
             <Border CornerRadius="0" BorderBrush="LightGray" BorderThickness="1" DockPanel.Dock="Top">
                 <DockPanel Name ="headerStack" HorizontalAlignment="Left" Height="20"  VerticalAlignment="Top" Width="248">
-                    <TextBox Name="headerField" Text="Column name" HorizontalAlignment="Left" BorderBrush="Transparent"/>
+                    <TextBox Name="headerField" Text="Column name" HorizontalAlignment="Left" BorderBrush="Transparent" Background="AliceBlue"/>
                     <DockPanel Height="20" LastChildFill="False" VerticalAlignment="Top" Width="100"/>
-                    <TextBox Name="visibilityField" Text="Visible" HorizontalAlignment="Right" BorderBrush="Transparent"/>
+                    <TextBox Name="visibilityField" Text="Visible" HorizontalAlignment="Right" BorderBrush="Transparent" Background="AliceBlue"/>
                     
                 </DockPanel>
             </Border>

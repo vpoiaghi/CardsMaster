@@ -93,8 +93,8 @@ namespace CardMasterImageBuilder.Elements.TextFormater
 
             GraphicsPath textPath = new GraphicsPath();
             textPath.AddString(this.Word, textFont.FontFamily, (int)textFont.Style, textEmFontSize, origin, textFormat);
-
-            return new PathElement(textPath, new SolidBrush(Color.Black));
+            
+            return new PathElement(textPath, new SolidBrush(this.Elements.TextArea.FontColor));
         }
 
         private Font GetFont(Graphics g)
