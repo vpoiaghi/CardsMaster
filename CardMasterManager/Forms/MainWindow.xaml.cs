@@ -140,10 +140,12 @@ namespace CardMasterManager
                 {
                     cardProjet = new JsonCardsProject();
 
-                    if (!newSkinsFile.Exists)
+                    if (newSkinsFile.Exists)
                     {
-                        newSkinsFile.Create();
+                        newSkinsFile.Delete();
                     }
+                    newSkinsFile.Create();
+
                     if (! newResourceDir.Exists)
                     {
                         newResourceDir.Create();

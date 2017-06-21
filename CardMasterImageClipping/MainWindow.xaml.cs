@@ -25,8 +25,8 @@ namespace CardMasterImageClipping
 
         private int _isDragging = 0;
         private System.Windows.Point _anchorPoint = new System.Windows.Point();
-        private int offsetX = 0;
-        private int offsetY = 0;
+        private double offsetX = 0;
+        private double offsetY = 0;
         private double oldX = 0;
         private double oldY = 0;
         private double screenImageWidth = 0;
@@ -81,6 +81,11 @@ namespace CardMasterImageClipping
 
             screenImageWidth = selectedItem.SourceImage.Width * imgSourceImage.ActualHeight / selectedItem.SourceImage.Height;
             screenImageHeight = imgSourceImage.ActualHeight;
+
+            UIElement parent = imgSourceImage.Parent as UIElement;
+            System.Windows.Point location = imgSourceImage.TranslatePoint(new System.Windows.Point(0, 0), parent);
+            this.offsetX = location.X;
+            this.offsetY = location.Y;
 
             MainSelRect.Visibility = Visibility.Collapsed;
             LTCornerSelRect.Visibility = Visibility.Collapsed;
@@ -154,7 +159,6 @@ namespace CardMasterImageClipping
                 }
 
                 System.Drawing.Rectangle r = new System.Drawing.Rectangle((int)leftX, (int)topY, (int)w, (int)h);
-                r.Offset(offsetX, offsetY);
 
                 ImgTarget.Source = GetImagePart(r);
             }
@@ -208,8 +212,8 @@ namespace CardMasterImageClipping
             {
                 System.Drawing.Bitmap srcImage = (Bitmap)selectedItem.SourceImage;
 
-                int x = (int)((r.X - 0) * srcImage.Width / screenImageWidth);
-                int y = (int)((r.Y - ((imgSourceImage.ActualHeight - screenImageHeight) / 2)) * srcImage.Height / screenImageHeight);
+                int x = (int)((r.X - offsetX) * srcImage.Width / screenImageWidth);
+                int y = (int)((r.Y - offsetY) * srcImage.Height / screenImageHeight);
                 int w = (int)(r.Width * srcImage.Width / screenImageWidth);
                 int h = (int)(r.Height * srcImage.Height / screenImageHeight);
 
