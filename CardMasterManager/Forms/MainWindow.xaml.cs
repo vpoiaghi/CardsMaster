@@ -55,6 +55,7 @@ namespace CardMasterManager
             FilesChanged(false);
 
             DataContext = this;
+
         }
 
         private void MenuItemOpen_Click(object sender, RoutedEventArgs e)
@@ -119,22 +120,38 @@ namespace CardMasterManager
             if (saveFileDialog.ShowDialog() == true)
             {
                 FileInfo newCardsFile = new FileInfo(saveFileDialog.FileName);
-
-                FileInfo oldSkinsFile = GetSkinFile(cardsFile);
-                FileInfo newSkinsFile = GetSkinFile(newCardsFile);
-
-                SaveProject(newCardsFile);
-                oldSkinsFile.CopyTo(newSkinsFile.FullName);
-
-                DirectoryInfo oldResourceDir = new DirectoryInfo(Path.Combine(cardsFile.Directory.FullName, "Resources"));
+                FileInfo newSkinsFile = GetSkinFile(newCardsFile, false);
                 DirectoryInfo newResourceDir = new DirectoryInfo(Path.Combine(newCardsFile.Directory.FullName, "Resources"));
 
-                if (oldResourceDir.FullName != newResourceDir.FullName)
+                if (cardsFile != null)
                 {
-                    DirectoryUtils.Copy(oldResourceDir, newResourceDir);
+                    FileInfo oldSkinsFile = GetSkinFile(cardsFile, true);
+                    oldSkinsFile.CopyTo(newSkinsFile.FullName);
+
+                    DirectoryInfo oldResourceDir = new DirectoryInfo(Path.Combine(cardsFile.Directory.FullName, "Resources"));
+
+                    if (oldResourceDir.FullName != newResourceDir.FullName)
+                    {
+                        DirectoryUtils.Copy(oldResourceDir, newResourceDir);
+                    }
+
+                }
+                else
+                {
+                    cardProjet = new JsonCardsProject();
+
+                    if (!newSkinsFile.Exists)
+                    {
+                        newSkinsFile.Create();
+                    }
+                    if (! newResourceDir.Exists)
+                    {
+                        newResourceDir.Create();
+                    }
                 }
 
                 this.cardsFile = newCardsFile;
+                SaveProject(newCardsFile);
             }
         }
 
@@ -151,7 +168,7 @@ namespace CardMasterManager
         {
             if ((cardsFile != null) && (cardGrid.SelectedItem != null))
             {
-                if (!((cardGrid.SelectedIndex == 0) && (GridCardsList.Count == 0)))
+                if (cardGrid.SelectedIndex < GridCardsList.Count)
                 {
                     // Si on est pas dans le cas d'un nouveau fichier
 
@@ -170,7 +187,7 @@ namespace CardMasterManager
         {
             //Select Card from Collection from Name
             JsonCard businessCard = Card.ConvertToMasterCard(c);
-            FileInfo skinFile = GetSkinFile(cardsFile);
+            FileInfo skinFile = GetSkinFile(cardsFile, true);
 
             Drawer drawer = new Drawer(businessCard, skinFile, null);
             drawer.Quality = this.DQuality;
@@ -200,7 +217,7 @@ namespace CardMasterManager
 
             if (cardsList.Count > 0)
             {
-                ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile(cardsFile));
+                ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile(cardsFile, true));
                 parameters.exportFormat = Exporter.EXPORT_FORMAT_PNG;
                 parameters.exportMode = Exporter.EXPORT_MODE_ALL;
                 parameters.TargetFolder = FolderDialog.SelectFolder();
@@ -216,7 +233,7 @@ namespace CardMasterManager
 
             if (cardsList.Count > 0)
             {
-                ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile(cardsFile));
+                ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile(cardsFile, true));
                 parameters.SpaceBetweenCards = 0;
                 parameters.exportFormat = Exporter.EXPORT_FORMAT_PNG;
                 parameters.exportMode = Exporter.EXPORT_MODE_BOARD;
@@ -273,7 +290,7 @@ namespace CardMasterManager
 
             if (cardsList.Count > 0)
             {
-                ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile(cardsFile));
+                ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile(cardsFile, true));
 
                 parameters.printPrameters = PrinterDialog.SelectPrintParameters(cardsList.Count);
 
@@ -290,7 +307,7 @@ namespace CardMasterManager
 
         }
 
-        private FileInfo GetSkinFile(FileInfo cardsFile)
+        private FileInfo GetSkinFile(FileInfo cardsFile, bool mustExists)
         {
             if (cardsFile == null)
             {
@@ -299,7 +316,7 @@ namespace CardMasterManager
 
             FileInfo skinFile = new FileInfo(Path.Combine(cardsFile.Directory.FullName, cardsFile.Name.Replace(cardsFile.Extension, ".skin")));
 
-            if (! skinFile.Exists)
+            if ((mustExists) && (! skinFile.Exists))
             {
                 throw new FileNotFoundException("Le fichier '" + skinFile.FullName + "' n'existe pas ou est inaccessible.", skinFile.Name);
             }
@@ -443,7 +460,7 @@ namespace CardMasterManager
         private void FilesChanged(bool changed)
         {
             this.MenuItemSave.IsEnabled = changed;
-            this.MenuItemSaveAs.IsEnabled = changed;
+            this.MenuItemSaveAs.IsEnabled = true;
             this.MenuItemSaveAsJson.IsEnabled = true;
             this.filesChanged = changed;
         }

@@ -106,8 +106,8 @@
                         </ToolBarTray>
                     </DockPanel>
                     <StackPanel Orientation="Horizontal">
-                        <DataGrid Name="cardGrid" Margin="5" Width="1269" Height="799" SelectionMode="Single" AutoGenerateColumns="False" AlternatingRowBackground="Azure" AlternationCount="2" IsReadOnly="False" ItemsSource="{Binding Path=GridCardsList, NotifyOnSourceUpdated=True}"
-                        SelectionChanged="cardGrid_SelectionChanged" FrozenColumnCount ="1" EnableColumnVirtualization="True" EnableRowVirtualization="True" CanUserAddRows="True" CanUserDeleteRows="True" SourceUpdated="cardGrid_SourceUpdated">
+                        <DataGrid Name="cardGrid" Margin="5" Width="1269" Height="799" SelectionMode="Single" AutoGenerateColumns="False" AlternatingRowBackground="Azure" AlternationCount="2" IsReadOnly="False" ItemsSource="{Binding Path=GridCardsList, NotifyOnSourceUpdated=True, Mode=TwoWay}"
+                        SelectionChanged="cardGrid_SelectionChanged" FrozenColumnCount ="1" EnableColumnVirtualization="True" EnableRowVirtualization="True" CanUserAddRows="False" CanUserDeleteRows="True" SourceUpdated="cardGrid_SourceUpdated">
                             <DataGrid.Columns>
 
                                 <DataGridTemplateColumn Header="Nom" MinWidth="120" CanUserSort="True" SortMemberPath="Name" >
