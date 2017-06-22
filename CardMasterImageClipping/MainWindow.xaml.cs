@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -56,8 +57,7 @@ namespace CardMasterImageClipping
             {
                 d = FolderDialog.SelectFolder();
             }
-
-            LoadImages(d);
+            if (d !=null ) LoadImages(d);
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
