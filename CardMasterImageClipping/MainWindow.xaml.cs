@@ -1,4 +1,5 @@
-﻿using CardMasterManager.Converters;
+﻿using CardMasterCommon.Dialog;
+using CardMasterManager.Converters;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -49,12 +50,14 @@ namespace CardMasterImageClipping
 
         private void MenuItemOpenResourcesFolder_Click(object sender, RoutedEventArgs e)
         {
-            //DirectoryInfo d = FolderDialog.SelectFolder();
+            //
             DirectoryInfo d = new DirectoryInfo("F:/Programmation/VB .Net/Cartes Bruno/CardsMaster/data/Resources/Images");
-            if (d != null)
+            if (d == null || !d.Exists)
             {
-                LoadImages(d);
+                d = FolderDialog.SelectFolder();
             }
+
+            LoadImages(d);
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
