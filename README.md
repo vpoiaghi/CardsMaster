@@ -34,12 +34,12 @@ Bugs quand création d'un projet from scratch (lien avec un skin devant déja ex
 
 ### Aspect des cartes
 
-* [EN COURS] Bordures en dégradé avec un color 1 et color 2 pour les borders (attention probleme de map <String,[String])
+* [DONE] Bordures en dégradé avec un color 1 et color 2 pour les borders (attention probleme de map <String,[String])
 
 ### IHM
 
 * Cartes
-  * [EN COURS] Gérer les noms longs de cartes (passe sur 2 lignes mais se décalle vers le haut mais se retrouve hors cadre : ex : Vallée des nuages et de la foudre)
+  * [DONE] Gérer les noms longs de cartes (passe sur 2 lignes mais se décalle vers le haut mais se retrouve hors cadre : ex : Vallée des nuages et de la foudre)
 
 * Boîte de dialogue de paramétrage des exports
   * Pouvoir paramétrer l'exportation par l'ihm via une boîte de dialogue (mode, format, dossier/fichier de destination, etc...). 
@@ -49,7 +49,7 @@ Bugs quand création d'un projet from scratch (lien avec un skin devant déja ex
 * Revoir le menu du Manager
 En particulier la partie exportation, où y aurait désormait un seul item qui ouvre sur une boîte de dialogue de choix du type d'export et des paramètres d'export.
 
-* Faire un outil de redimensionnement des images avec une mire, et prévisualisation du résultat. Quand on ouvre une image ex "Image1.jpg", une fois le redimensionnement fait,
+* [EN COURS] Faire un outil de redimensionnement des images avec une mire, et prévisualisation du résultat. Quand on ouvre une image ex "Image1.jpg", une fois le redimensionnement fait,
 cela crée une copie en "Image1-original.jpg" et écrase le fichier "Image1.jpg" avec celle retaillée.
 
 * Datagrid
