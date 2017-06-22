@@ -19,13 +19,16 @@ namespace CardMasterImageBuilder.Builders.Impl
         public override SkinElement Build(JsonSkinItem item, JsonCard card)
         {
 
-            //SETextArea skinElement = new SETextArea(skin, item.X, item.Y, item.Width, item.Height, item.Comment, "<Nom>");
             SETextArea2 skinElement = new SETextArea2(builderParameter.ResourcesDirectory, item.X, item.Y, item.Width, item.Height, item.Comment, "<Nom>");
 
             if (item.Style == "Bold")
             {
                 skinElement.TextFont = new Font(item.FontName, item.FontSize.Value, FontStyle.Bold);
-            }else if (item.Style == "Bold,Italic" || item.Style =="Italic,Bold")
+            }else if(item.Style=="Italic")
+            {
+                skinElement.TextFont = new Font(item.FontName, item.FontSize.Value, FontStyle.Italic);
+            }
+            else if (item.Style == "Bold,Italic" || item.Style =="Italic,Bold")
             {
                 skinElement.TextFont = new Font(item.FontName, item.FontSize.Value, FontStyle.Bold | FontStyle.Italic);
             }

@@ -252,6 +252,7 @@
 				"WithFontBorder" : true,
 				"NameAttribute" : "StringField1",
 				"HorizontalAlign" : "Center",
+				"Style" : "Bold",
 				"VerticalAlign" : "Center"
 			},
 			{
@@ -286,7 +287,7 @@
 				"Y":880,
 				"Width": 100,
 				"Height" : 100,
-				"Background":"shield",
+				"Background":"shield2",
 				"VisibleConditionAttribute" : "Defense"
 			},
 			{
