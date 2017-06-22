@@ -40,6 +40,7 @@ namespace CardMasterImageBuilder.SkinElements
         public VerticalAlignment TextVerticalAlign { get; set; } = VerticalAlignment.Top;
         public Font TextFont { get; set; } = new Font(DEFAULT_FONT_FAMILY, DEFAULT_FONT_SIZE, DEFAULT_FONT_STYLE);
         public Color FontColor { get; set; } = Color.Black;
+        public bool WithFontBorder { get; set; }
         public int WordSpaceOffsetX { get; set; } = 0;
         public int RowSpaceOffsetY { get; set; } = 0;
         public Size LeftIconsSize { get; set; } = new Size(80, 80);

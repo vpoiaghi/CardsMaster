@@ -249,6 +249,7 @@
 				"FontSize" : 12,
 				"Style" : "Bold,Italic",
 				"FontColor" : "White",
+				"WithFontBorder" : true,
 				"NameAttribute" : "StringField1",
 				"HorizontalAlign" : "Center",
 				"VerticalAlign" : "Center"

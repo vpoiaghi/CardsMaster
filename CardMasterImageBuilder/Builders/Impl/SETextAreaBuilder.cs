@@ -55,6 +55,13 @@ namespace CardMasterImageBuilder.Builders.Impl
             {
                 skinElement.LeftIconsSize =  new Size(item.PowerIconHeight.Value, item.PowerIconWidth.Value);
             }
+            if (item.WithFontBorder.HasValue && item.WithFontBorder.Value == true)
+            {
+                skinElement.WithFontBorder = true;
+            }else
+            {
+                skinElement.WithFontBorder = false;
+            }
 
             return ManageShadow(skinElement, item);
         }

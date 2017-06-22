@@ -30,6 +30,7 @@ namespace CardMasterSkin.Skins
         public int? PowerIconWidth{ get; set; }
         public int? PowerIconHeight { get; set; }
         public int? ExternalCardBorderthickness { get; set; }
+        public bool? WithFontBorder { get; set; }
 
 
     }

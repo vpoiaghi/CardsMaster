@@ -10,8 +10,7 @@ namespace CardMasterImageBuilder.Elements.TextFormater
         private FontStyle? fontStyle = null;
         private float? fontSize = null;
         private FontFamily fontFamily = null;
-
-
+     
         public TElementText(string word)
         {
             this.Word = word;
@@ -94,7 +93,7 @@ namespace CardMasterImageBuilder.Elements.TextFormater
             GraphicsPath textPath = new GraphicsPath();
             textPath.AddString(this.Word, textFont.FontFamily, (int)textFont.Style, textEmFontSize, origin, textFormat);
             
-            return new PathElement(textPath, new SolidBrush(this.Elements.TextArea.FontColor));
+            return new PathElement(textPath, new SolidBrush(this.Elements.TextArea.FontColor), this.Elements.TextArea.WithFontBorder);
         }
 
         private Font GetFont(Graphics g)

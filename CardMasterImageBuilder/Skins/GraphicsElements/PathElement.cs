@@ -11,11 +11,20 @@ namespace CardMasterImageBuilder.GraphicsElements
     {
         private GraphicsPath path = null;
         private Brush background = null;
+        private bool withFontBorder;
 
         public PathElement(GraphicsPath path, Brush background)
         {
             this.path = path;
             this.background = background;
+            this.withFontBorder = false;
+        }
+
+        public PathElement(GraphicsPath path, Brush background, bool withFontBorder)
+        {
+            this.path = path;
+            this.background = background;
+            this.withFontBorder = withFontBorder;
         }
 
         ~PathElement()
@@ -27,7 +36,10 @@ namespace CardMasterImageBuilder.GraphicsElements
         public override void Draw(Graphics g)
         {
             g.FillPath(this.background, this.path);
-            g.DrawPath(Pens.Black, this.path);
+            if (withFontBorder)
+            {
+                g.DrawPath(Pens.Black, this.path);
+            }
         }
 
         public override void DrawShadow(Graphics g, SkinElementShadow shadow)
