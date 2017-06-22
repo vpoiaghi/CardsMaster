@@ -1,5 +1,4 @@
-﻿using CardMasterCommon.Dialog;
-using CardMasterManager.Converters;
+﻿using CardMasterManager.Converters;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -8,7 +7,6 @@ using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
 namespace CardMasterImageClipping
@@ -18,17 +16,25 @@ namespace CardMasterImageClipping
     /// </summary>
     public partial class MainWindow : Window
     {
+        private enum SelectionState
+        {
+            NoSelection,       // pas de sélection en cours
+            SelectionStart,    // début de la sélection
+            OnSelection,       // sélection en cours
+            OnSelectionOut,    // sélection en cours mais souris hors de la zone image
+            SelectionEnd       // sélection terminée (bouton de souris laché, la sélection est figée)
+        }
+
         private const int TARGET_WIDTH = 628;
         private const int TARGET_HEIGHT = 445;
 
+        private SelectRectangle selRectangle = null;
+
         public ObservableCollection<SmallImage> SourceImagesList { get; set; } = new ObservableCollection<SmallImage>();
 
-        private int _isDragging = 0;
-        private System.Windows.Point _anchorPoint = new System.Windows.Point();
+        private SelectionState selState = SelectionState.NoSelection;
         private double offsetX = 0;
         private double offsetY = 0;
-        private double oldX = 0;
-        private double oldY = 0;
         private double screenImageWidth = 0;
         private double screenImageHeight = 0;
 
@@ -38,13 +44,13 @@ namespace CardMasterImageClipping
         {
             InitializeComponent();
 
-            ImgTarget.Width = ImgTarget.Height * TARGET_WIDTH / TARGET_HEIGHT;
+            //ImgTarget.Width = ImgTarget.Height * TARGET_WIDTH / TARGET_HEIGHT;
         }
 
         private void MenuItemOpenResourcesFolder_Click(object sender, RoutedEventArgs e)
         {
-            DirectoryInfo d = FolderDialog.SelectFolder();
-            //DirectoryInfo d = new DirectoryInfo("F:/Programmation/VB .Net/Cartes Bruno/CardsMaster/data/Resources/Images");
+            //DirectoryInfo d = FolderDialog.SelectFolder();
+            DirectoryInfo d = new DirectoryInfo("F:/Programmation/VB .Net/Cartes Bruno/CardsMaster/data/Resources/Images");
             if (d != null)
             {
                 LoadImages(d);
@@ -59,6 +65,9 @@ namespace CardMasterImageClipping
         private void LoadImages(DirectoryInfo resourcesDirectory)
         {
             SourceImagesList.Clear();
+
+            selState = SelectionState.NoSelection;
+            DrawSelection(-1, -1);
 
             List<FileInfo> files = new List<FileInfo>();
             files.AddRange(resourcesDirectory.GetFiles("*.png"));
@@ -87,121 +96,120 @@ namespace CardMasterImageClipping
             this.offsetX = location.X;
             this.offsetY = location.Y;
 
-            MainSelRect.Visibility = Visibility.Collapsed;
-            LTCornerSelRect.Visibility = Visibility.Collapsed;
-            RBCornerSelRect.Visibility = Visibility.Collapsed;
+            this.selRectangle = new SelectRectangle(imgSourceImage.ActualWidth, imgSourceImage.ActualHeight, TARGET_WIDTH, TARGET_HEIGHT);
+
+            selState = SelectionState.NoSelection;
+            DrawSelection(-1, -1);
         }
 
         private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             if (imgSourceImage.Source != null)
             {
-                _anchorPoint.X = e.GetPosition(BlackPlane).X;
-                _anchorPoint.Y = e.GetPosition(BlackPlane).Y;
-
-                oldX = _anchorPoint.X;
-                oldY = _anchorPoint.Y;
-
-                LTCornerSelRect.SetValue(Canvas.LeftProperty, _anchorPoint.X - 2);
-                LTCornerSelRect.SetValue(Canvas.TopProperty, _anchorPoint.Y - 2);
-
-                _isDragging = 1;
+                selState = SelectionState.SelectionStart;
+                this.selRectangle.StartSelection(e.GetPosition(BlackPlane).X, e.GetPosition(BlackPlane).Y);
+                DrawSelection(e.GetPosition(BlackPlane).X, e.GetPosition(BlackPlane).Y);
+                selState = SelectionState.OnSelection;
             }
         }
 
         private void Border_MouseMove(object sender, MouseEventArgs e)
         {
-            if(_isDragging == 1)
+            if(selState == SelectionState.OnSelection)
             {
-                double x = e.GetPosition(BlackPlane).X;
-                double y = e.GetPosition(BlackPlane).Y;
-
-                double w = Math.Abs(x - _anchorPoint.X);
-                double h = h = w * TARGET_HEIGHT / TARGET_WIDTH;
-
-                y = y < _anchorPoint.Y ? _anchorPoint.Y - h : _anchorPoint.Y + h;
-
-                double leftX = Math.Min(x, _anchorPoint.X);
-                double topY = Math.Min(y, _anchorPoint.Y);
-
-                if (leftX < 0 || topY < 0 || ((leftX + w) > imgSourceImage.ActualWidth) || ((topY + h) > imgSourceImage.ActualHeight))
-                {
-                    x = oldX;
-                    y = oldY;
-
-                    w = Math.Abs(x - _anchorPoint.X);
-                    h = h = w * TARGET_HEIGHT / TARGET_WIDTH;
-
-                    y = y < _anchorPoint.Y ? _anchorPoint.Y - h : _anchorPoint.Y + h;
-
-                    leftX = Math.Min(x, _anchorPoint.X);
-                    topY = Math.Min(y, _anchorPoint.Y);
-                }
-                else
-                {
-                    oldX = e.GetPosition(BlackPlane).X;
-                    oldY = e.GetPosition(BlackPlane).Y;
-                }
-
-                MainSelRect.SetValue(Canvas.LeftProperty, leftX);
-                MainSelRect.SetValue(Canvas.TopProperty, topY);
-                MainSelRect.Width = w;
-                MainSelRect.Height = h;
-
-                RBCornerSelRect.SetValue(Canvas.LeftProperty, x - 2);
-                RBCornerSelRect.SetValue(Canvas.TopProperty, y - 2);
-
-                if (MainSelRect.Visibility != Visibility.Visible)
-                {
-                    MainSelRect.Visibility = Visibility.Visible;
-                    LTCornerSelRect.Visibility = Visibility.Visible;
-                    RBCornerSelRect.Visibility = Visibility.Visible;
-                }
-
-                System.Drawing.Rectangle r = new System.Drawing.Rectangle((int)leftX, (int)topY, (int)w, (int)h);
-
-                ImgTarget.Source = GetImagePart(r);
+                DrawSelection(e.GetPosition(BlackPlane).X, e.GetPosition(BlackPlane).Y);
             }
         }
 
         private void Border_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            _isDragging = 0;
-
-            double x = e.GetPosition(BlackPlane).X;
-            double y = e.GetPosition(BlackPlane).Y;
-
-            if ((_anchorPoint.X == x) && (_anchorPoint.Y == y))
-            {
-                MainSelRect.Visibility = Visibility.Collapsed;
-                LTCornerSelRect.Visibility = Visibility.Collapsed;
-                RBCornerSelRect.Visibility = Visibility.Collapsed;
-            }
+            selState = SelectionState.SelectionEnd;
+            DrawSelection(e.GetPosition(BlackPlane).X, e.GetPosition(BlackPlane).Y);
         }
 
         private void Border_MouseLeave(object sender, MouseEventArgs e)
         {
-            _isDragging = 2;
+            if (selState == SelectionState.OnSelection)
+            {
+                selState = SelectionState.OnSelectionOut;
+            }
         }
 
         private void Border_MouseEnter(object sender, MouseEventArgs e)
         {
-            if (e.LeftButton == MouseButtonState.Pressed)
+            if (selState == SelectionState.OnSelectionOut)
             {
-                if (_isDragging == 2)
+                if (e.LeftButton == MouseButtonState.Pressed)
                 {
-                    _isDragging = 1;
+                    selState = SelectionState.OnSelection;
                 }
-            }
-            else
-            {
-                _isDragging = 0;
+                else
+                {
+                    selState = SelectionState.SelectionEnd;
+                }
+
+                DrawSelection(e.GetPosition(BlackPlane).X, e.GetPosition(BlackPlane).Y);
             }
         }
 
         private void Window_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            _isDragging = 0;
+            selState = SelectionState.SelectionEnd;
+            DrawSelection(e.GetPosition(BlackPlane).X, e.GetPosition(BlackPlane).Y);
+        }
+
+        private void DrawSelection(double mouseX, double mouseY)
+        {
+            bool canDrawSelection = false;
+            bool canCleanSelection = false;
+            Visibility newVisibility = Visibility.Visible;
+            Rectangle selRectangle = Rectangle.Empty;
+
+            if (selState == SelectionState.SelectionStart)
+            {
+                selRectangle = new Rectangle((int)mouseX, (int)mouseY, 0, 0);
+                canDrawSelection = true;
+            }
+            else if ((selState == SelectionState.OnSelection) || (selState == SelectionState.OnSelectionOut))
+            {
+                selRectangle = this.selRectangle.GetSelection(mouseX, mouseY);
+                canDrawSelection = true;
+            }
+            else if (selState == SelectionState.SelectionEnd)
+            {
+                selRectangle = this.selRectangle.GetSelection(mouseX, mouseY);
+                canCleanSelection = ((selRectangle.Width == 0) && (selRectangle.Height == 0));
+            }
+
+            if (canDrawSelection)
+            {
+                MainSelRect.SetValue(Canvas.LeftProperty, (double)selRectangle.X);
+                MainSelRect.SetValue(Canvas.TopProperty, (double)selRectangle.Y);
+                MainSelRect.Width = selRectangle.Width;
+                MainSelRect.Height = selRectangle.Height;
+
+                LTCornerSelRect.SetValue(Canvas.LeftProperty, (double)(selRectangle.X - 2));
+                LTCornerSelRect.SetValue(Canvas.TopProperty, (double)(selRectangle.Y - 2));
+
+                RBCornerSelRect.SetValue(Canvas.LeftProperty, (double)(selRectangle.Right - 2));
+                RBCornerSelRect.SetValue(Canvas.TopProperty, (double)(selRectangle.Bottom - 2));
+
+                newVisibility = Visibility.Visible;
+                ImgTarget.Source = GetImagePart(selRectangle);
+            }
+            else if (canCleanSelection)
+            {
+                newVisibility = Visibility.Collapsed;
+                ImgTarget.Source = null;
+            }
+
+            if (MainSelRect.Visibility != newVisibility)
+            {
+                MainSelRect.Visibility = newVisibility;
+                LTCornerSelRect.Visibility = newVisibility;
+                RBCornerSelRect.Visibility = newVisibility;
+            }
+
         }
 
         private BitmapImage GetImagePart(System.Drawing.Rectangle r)
