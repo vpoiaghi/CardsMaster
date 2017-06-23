@@ -287,7 +287,7 @@
 				"Y":880,
 				"Width": 100,
 				"Height" : 100,
-				"Background":"shield2",
+				"Background":"shield3",
 				"VisibleConditionAttribute" : "Defense"
 			},
 			{
@@ -298,8 +298,9 @@
 				"Width": 60,
 				"Height" : 60,
 				"FontName" : "Bell MT",
-				"FontSize" : 9,
+				"FontSize" : 12,
 				"Style" : "Bold",
+				"FontColor" : "White",
 				"NameAttribute" : "Defense",
 				"VisibleConditionAttribute" : "Defense",
 				"HorizontalAlign" : "Center",
