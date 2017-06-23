@@ -72,7 +72,7 @@
     <Compile Include="Skins\SkinElements\SERectangle.cs" />
     <Compile Include="Skins\SkinElements\SERoundedRectangle.cs" />
     <Compile Include="Skins\SkinElements\SESquare.cs" />
-    <Compile Include="Skins\SkinElements\SETextArea2.cs" />
+    <Compile Include="Skins\SkinElements\SETextArea.cs" />
     <Compile Include="Skins\SkinElements\TextFormater\AttributeParser.cs" />
     <Compile Include="Skins\SkinElements\TextFormater\TElement.cs" />
     <Compile Include="Skins\SkinElements\TextFormater\TElementSpace.cs" />

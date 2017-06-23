@@ -24,7 +24,7 @@ namespace CardMasterImageBuilder.SkinElements
         Bottom
     };
 
-    public class SETextArea2 : SkinElement
+    public class SETextArea : SkinElement
     {
         private const string DEFAULT_FONT_FAMILY = "Bell MT";
         private const float DEFAULT_FONT_SIZE = 14;
@@ -40,12 +40,12 @@ namespace CardMasterImageBuilder.SkinElements
         public VerticalAlignment TextVerticalAlign { get; set; } = VerticalAlignment.Top;
         public Font TextFont { get; set; } = new Font(DEFAULT_FONT_FAMILY, DEFAULT_FONT_SIZE, DEFAULT_FONT_STYLE);
         public Color FontColor { get; set; } = Color.Black;
-        public bool WithFontBorder { get; set; }
+        public bool WithFontBorder { get; set; } = false;
         public int WordSpaceOffsetX { get; set; } = 0;
         public int RowSpaceOffsetY { get; set; } = 0;
         public Size LeftIconsSize { get; set; } = new Size(80, 80);
 
-        public SETextArea2(DirectoryInfo resourcesDirectory, int x, int y, int width, int height, string comments, string text) : base(resourcesDirectory, x, y, width, height, comments)
+        public SETextArea(DirectoryInfo resourcesDirectory, int x, int y, int width, int height, string comments, string text) : base(resourcesDirectory, x, y, width, height, comments)
         {
             this.fullText = text;
             this.elements = new TElements(this);

@@ -14,16 +14,16 @@ namespace CardMasterImageBuilder.Elements.TextFormater
             { "i", false }
         };
 
-        private SETextArea2 owner = null;
+        private SETextArea owner = null;
         private TElement firstElement = null;
         private TElement lastElement = null;
 
-        public TElements(SETextArea2 owner)
+        public TElements(SETextArea owner)
         {
             this.owner = owner;
         }
 
-        public SETextArea2 TextArea { get { return this.owner; } }
+        public SETextArea TextArea { get { return this.owner; } }
 
         public void Clear()
         {
