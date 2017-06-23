@@ -58,7 +58,7 @@
     </ApplicationDefinition>
     <Compile Include="DrawingImageToImageSourceConverter.cs" />
     <Compile Include="SelectRectangle.cs" />
-    <Compile Include="SmallImage.cs" />
+    <Compile Include="CardImage.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

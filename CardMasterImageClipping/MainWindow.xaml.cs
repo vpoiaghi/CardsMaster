@@ -29,10 +29,11 @@ namespace CardMasterImageClipping
 
         private const int TARGET_WIDTH = 628;
         private const int TARGET_HEIGHT = 445;
+        private const int TARGET_ROSULUTION = 300;
 
         private SelectRectangle selRectangle = null;
 
-        public ObservableCollection<SmallImage> SourceImagesList { get; set; } = new ObservableCollection<SmallImage>();
+        public ObservableCollection<CardImage> SourceImagesList { get; set; } = new ObservableCollection<CardImage>();
 
         private SelectionState selState = SelectionState.NoSelection;
         private double offsetX = 0;
@@ -40,24 +41,29 @@ namespace CardMasterImageClipping
         private double screenImageWidth = 0;
         private double screenImageHeight = 0;
 
-        private SmallImage selectedItem = null;
+        private double sourceResolutionX = 0;
+        private double sourceResolutionY = 0;
+
+
+        private CardImage selectedItem = null;
 
         public MainWindow()
         {
             InitializeComponent();
-
-            //ImgTarget.Width = ImgTarget.Height * TARGET_WIDTH / TARGET_HEIGHT;
         }
 
         private void MenuItemOpenResourcesFolder_Click(object sender, RoutedEventArgs e)
         {
-            //
             DirectoryInfo d = new DirectoryInfo("F:/Programmation/VB .Net/Cartes Bruno/CardsMaster/data/Resources/Images");
-            if (d == null || !d.Exists)
+
+            if (!d.Exists)
             {
                 d = FolderDialog.SelectFolder();
             }
-            if (d !=null ) LoadImages(d);
+            if (d != null)
+            {
+                LoadImages(d);
+            }
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -79,7 +85,7 @@ namespace CardMasterImageClipping
 
             foreach (FileInfo file in files)
             {
-                SourceImagesList.Add(new SmallImage(file));
+                SourceImagesList.Add(new CardImage(file));
             }
 
             DataContext = this;
@@ -87,7 +93,7 @@ namespace CardMasterImageClipping
 
         private void LvwSourceImagesList_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
-            selectedItem = ((SmallImage)(e.AddedItems[0]));
+            selectedItem = ((CardImage)(e.AddedItems[0]));
             imgSourceImage.Source = selectedItem.Image;
             imgSourceImage.UpdateLayout();
 
@@ -98,6 +104,9 @@ namespace CardMasterImageClipping
             System.Windows.Point location = imgSourceImage.TranslatePoint(new System.Windows.Point(0, 0), parent);
             this.offsetX = location.X;
             this.offsetY = location.Y;
+
+            this.sourceResolutionX = ((BitmapImage)imgSourceImage.Source).DpiX;
+            this.sourceResolutionY = ((BitmapImage)imgSourceImage.Source).DpiY;
 
             this.selRectangle = new SelectRectangle(imgSourceImage.ActualWidth, imgSourceImage.ActualHeight, TARGET_WIDTH, TARGET_HEIGHT);
 
@@ -157,8 +166,11 @@ namespace CardMasterImageClipping
 
         private void Window_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            selState = SelectionState.SelectionEnd;
-            DrawSelection(e.GetPosition(BlackPlane).X, e.GetPosition(BlackPlane).Y);
+            if (selState == SelectionState.OnSelectionOut)
+            {
+                selState = SelectionState.SelectionEnd;
+                DrawSelection(e.GetPosition(BlackPlane).X, e.GetPosition(BlackPlane).Y);
+            }
         }
 
         private void DrawSelection(double mouseX, double mouseY)
@@ -228,6 +240,9 @@ namespace CardMasterImageClipping
                 int w = (int)(r.Width * srcImage.Width / screenImageWidth);
                 int h = (int)(r.Height * srcImage.Height / screenImageHeight);
 
+                w = (int)(w * TARGET_ROSULUTION / sourceResolutionX);
+                h = (int)(h * TARGET_ROSULUTION / sourceResolutionY);
+                
                 if (w > 0 && h > 0)
                 {
                     System.Drawing.Bitmap targetImage = new Bitmap(w, h);
