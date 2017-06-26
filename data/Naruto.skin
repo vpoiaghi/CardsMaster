@@ -242,7 +242,7 @@
 				"Comment" : "Zone Texte StringField 1",
 				"Type" : "SETextArea",
 				"X":18,
-				"Y":950,
+				"Y":938,
 				"Width": 700,
 				"Height" : 80,
 				"FontName" : "Pristina",
