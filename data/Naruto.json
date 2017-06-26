@@ -5094,7 +5094,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": " "
+          "Description": "<<Activate>>  Jûken : Gagne +1 ATK lorsqu'il attaque"
         }
       ]
     },
@@ -5103,12 +5103,12 @@
       "Name": "Sarada Uchiha",
       "Rank": "",
       "Team": "Equipe Konohamaru",
-      "Chakra": "Physique",
-      "Element": "Physique",
+      "Chakra": "Feu",
+      "Element": "Feu",
       "Cost": "2",
       "Attack": "2",
       "Defense": "2",
-      "Citation": "",
+      "Citation": "Katon : Gôkakyû no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -5125,7 +5125,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": " "
+          "Description": "<<Activate>> Boule de Feu Suprême : Inflige 2 points de dégats à la cible"
         }
       ]
     },
@@ -5134,12 +5134,12 @@
       "Name": "Mitsuki",
       "Rank": "",
       "Team": "Equipe Konohamaru",
-      "Chakra": "Physique",
-      "Element": "Physique",
+      "Chakra": "Vent",
+      "Element": "Vent",
       "Cost": "2",
       "Attack": "2",
       "Defense": "2",
-      "Citation": "",
+      "Citation": "Nan no Kaizô",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -5156,7 +5156,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": " "
+          "Description": "<<Permanent>> Etreinte souple : Chaque tour, cible un ennemi et l'empêche d'attaquer pour un tour"
         }
       ]
     },
@@ -5165,12 +5165,12 @@
       "Name": "Shikadai Nara",
       "Rank": "",
       "Team": "Equipe Moegi",
-      "Chakra": "Physique",
-      "Element": "Physique",
+      "Chakra": "Feu",
+      "Element": "Ombre",
       "Cost": "2",
       "Attack": "2",
       "Defense": "2",
-      "Citation": "",
+      "Citation": "Kagemane no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -5187,7 +5187,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": " "
+          "Description": "<<Activate>>  Manipulation des ombres : cible un ennemi et l'empêche d'attaquer pour 2 tours"
         }
       ]
     },
@@ -5198,10 +5198,10 @@
       "Team": "Equipe Moegi",
       "Chakra": "Physique",
       "Element": "Physique",
-      "Cost": "2",
-      "Attack": "2",
-      "Defense": "2",
-      "Citation": "",
+      "Cost": "1",
+      "Attack": "1",
+      "Defense": "3",
+      "Citation": "Baika no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -5218,7 +5218,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": " "
+          "Description": "<<Permannent>>  Protection"
         }
       ]
     },
@@ -5232,7 +5232,7 @@
       "Cost": "2",
       "Attack": "2",
       "Defense": "2",
-      "Citation": "",
+      "Citation": "Chôjû Giga",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -5249,7 +5249,41 @@
       "Background": null,
       "Powers": [
         {
-          "Description": " "
+          "Description": "<<Activate>>  Toîle aux monstres fantômatiques : Invoque un aigle d'encre"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Aigle d'encre",
+      "Rank": "",
+      "Team": "Invocation",
+      "Chakra": "Physique",
+      "Element": "Physique",
+      "Cost": "0",
+      "Attack": "3",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": null,
+      "BackSide": "",
+      "BackSkinName": "",
+      "FrontSkinName": "",
+      "StringField1": "",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>>  Charge"
+        },
+        {
+          "Description": "<<Permanent>>  Furie des vents : Attaque 2 fois"
         }
       ]
     },
@@ -5260,9 +5294,9 @@
       "Team": "Elèves de l'académie",
       "Chakra": "Physique",
       "Element": "Physique",
-      "Cost": "2",
-      "Attack": "2",
-      "Defense": "2",
+      "Cost": "1",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -5280,7 +5314,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": " "
+          "Description": "<<Permanent>>  Soutien Technologique : Donne +2 de défense à tous les alliés"
         }
       ]
     },
@@ -5289,11 +5323,11 @@
       "Name": "Iwabee Yuino",
       "Rank": "",
       "Team": "Elèves de l'académie",
-      "Chakra": "Physique",
-      "Element": "Physique",
-      "Cost": "2",
-      "Attack": "2",
-      "Defense": "2",
+      "Chakra": "Terre",
+      "Element": "Terre",
+      "Cost": "1",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -5311,7 +5345,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": " "
+          "Description": "<<Activate>> Mur de terre : Absorbe les dégats devant être infligés au ninja ciblé"
         }
       ]
     },
@@ -5322,9 +5356,9 @@
       "Team": "Elèves de l'académie",
       "Chakra": "Physique",
       "Element": "Physique",
-      "Cost": "2",
-      "Attack": "2",
-      "Defense": "2",
+      "Cost": "1",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -5342,7 +5376,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": " "
+          "Description": "<<Permanent>> Stratège : Les ennemis infligent 2 dégats de moins"
         }
       ]
     },
@@ -5373,7 +5407,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": " "
+          "Description": "<<Permanent>> Intimidation : Gagne +3/+3 tant qu'il est le seul ninja en lice"
         }
       ]
     },
@@ -5384,9 +5418,9 @@
       "Team": "Générations Futur",
       "Chakra": "Physique",
       "Element": "Physique",
-      "Cost": "2",
-      "Attack": "2",
-      "Defense": "2",
+      "Cost": "1",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -5404,7 +5438,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": " "
+          "Description": "<<Activate>>  Byakugan : Pioche 2 cartes puis se défausse de 2 cartes"
         }
       ]
     },
@@ -5435,7 +5469,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": " "
+          "Description": "<<Permanent>> Protection"
+        },
+        {
+          "Description": "<<Special>> Garde du corps : Absorbe 3 points de dégats quand elle défend"
         }
       ]
     },
@@ -5446,10 +5483,10 @@
       "Team": "Equipe Shinki",
       "Chakra": "Physique",
       "Element": "Physique",
-      "Cost": "2",
-      "Attack": "2",
-      "Defense": "2",
-      "Citation": "",
+      "Cost": "1",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": "Chakura no Ito",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -5466,7 +5503,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": " "
+          "Description": "<<Activate>>  Fils de chakra : Cible un ennemi et l'empêche d'attaquer pour 2 tours"
         }
       ]
     },
@@ -5475,11 +5512,11 @@
       "Name": "Yodo",
       "Rank": "",
       "Team": "Equipe Shinki",
-      "Chakra": "Physique",
-      "Element": "Physique",
-      "Cost": "2",
-      "Attack": "2",
-      "Defense": "2",
+      "Chakra": "Terre",
+      "Element": "Sable",
+      "Cost": "1",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -5497,7 +5534,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": " "
+          "Description": "<<Permanent>> Nuage de limaille : Tous les alliés gagnent +2 en défense"
         }
       ]
     },
@@ -5506,11 +5543,11 @@
       "Name": "Araya",
       "Rank": "",
       "Team": "Equipe Shinki",
-      "Chakra": "Physique",
-      "Element": "Physique",
-      "Cost": "2",
-      "Attack": "2",
-      "Defense": "2",
+      "Chakra": "Terre",
+      "Element": "Epéiste",
+      "Cost": "1",
+      "Attack": "3",
+      "Defense": "1",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -5528,7 +5565,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": " "
+          "Description": "<<Permanent>> Charge"
         }
       ]
     },
@@ -5537,11 +5574,11 @@
       "Name": "Yurui",
       "Rank": "",
       "Team": "Equipe Yurui",
-      "Chakra": "Physique",
-      "Element": "Physique",
-      "Cost": "2",
-      "Attack": "2",
-      "Defense": "2",
+      "Chakra": "Foudre",
+      "Element": "Foudre",
+      "Cost": "1",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -5559,7 +5596,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": " "
+          "Description": "<<Activate>> Bulle de gomme : Cible un ennemie et l'empêche d'ataquer pour 2 tours"
         }
       ]
     },
@@ -5570,9 +5607,9 @@
       "Team": "Equipe Yurui",
       "Chakra": "Physique",
       "Element": "Physique",
-      "Cost": "2",
-      "Attack": "2",
-      "Defense": "2",
+      "Cost": "1",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -5590,7 +5627,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": " "
+          "Description": "<<Activate>> Ses équipiers gagnent +1 d'ATK"
         }
       ]
     },
@@ -5601,9 +5638,9 @@
       "Team": "Equipe Yurui",
       "Chakra": "Physique",
       "Element": "Physique",
-      "Cost": "2",
-      "Attack": "2",
-      "Defense": "2",
+      "Cost": "1",
+      "Attack": "1",
+      "Defense": "6",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -5621,7 +5658,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": " "
+          "Description": "<<Permanent>> Protection"
         }
       ]
     },
@@ -5630,9 +5667,9 @@
       "Name": "Shin Uchiha Senior",
       "Rank": "",
       "Team": "Neo Akatsuki",
-      "Chakra": "Physique",
-      "Element": "Physique",
-      "Cost": "2",
+      "Chakra": "Special",
+      "Element": "Sharingan",
+      "Cost": "3",
       "Attack": "2",
       "Defense": "2",
       "Citation": "",
@@ -5652,7 +5689,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": " "
+          "Description": "<<Permanent>>  Insensible aux dégâts physiques"
         }
       ]
     },
@@ -5661,11 +5698,11 @@
       "Name": "Shin Uchiha Junior",
       "Rank": "",
       "Team": "Neo Akatsuki",
-      "Chakra": "Physique",
-      "Element": "Physique",
-      "Cost": "2",
-      "Attack": "2",
-      "Defense": "2",
+      "Chakra": "Special",
+      "Element": "Sharingan",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -5683,7 +5720,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": " "
+          "Description": "<<Permanent>>  Insensible aux dégâts physiques"
         }
       ]
     },
@@ -5692,9 +5729,9 @@
       "Name": "Momoshiki Otsutsuki",
       "Rank": "",
       "Team": "Clan Otsutsuki",
-      "Chakra": "Physique",
-      "Element": "Physique",
-      "Cost": "2",
+      "Chakra": "Special",
+      "Element": "Rinnegan",
+      "Cost": "3",
       "Attack": "2",
       "Defense": "2",
       "Citation": "",
@@ -5714,7 +5751,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": " "
+          "Description": "<<Permanent>>  Insensible aux dégâts non physiques"
         }
       ]
     },
@@ -5723,9 +5760,9 @@
       "Name": "Kinshiki Otsutsuki",
       "Rank": "",
       "Team": "Clan Otsutsuki",
-      "Chakra": "Physique",
-      "Element": "Physique",
-      "Cost": "2",
+      "Chakra": "Special",
+      "Element": "Rinnegan",
+      "Cost": "3",
       "Attack": "2",
       "Defense": "2",
       "Citation": "",
@@ -5745,7 +5782,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": " "
+          "Description": "<<Permanent>>  Insensible aux dégâts non physiques"
         }
       ]
     },
@@ -5756,9 +5793,9 @@
       "Team": "New Age",
       "Chakra": "Physique",
       "Element": "Physique",
-      "Cost": "2",
-      "Attack": "2",
-      "Defense": "2",
+      "Cost": "3",
+      "Attack": "3",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -5776,19 +5813,19 @@
       "Background": null,
       "Powers": [
         {
-          "Description": " "
+          "Description": "<<Spécial>> Revient dans main du joueur quand il meure."
         }
       ]
     },
     {
       "Kind": "Ninja",
-      "Name": "Tendou Madoka",
+      "Name": "Tento Madoka",
       "Rank": "",
       "Team": "New Age",
       "Chakra": "Physique",
       "Element": "Physique",
-      "Cost": "2",
-      "Attack": "2",
+      "Cost": "1",
+      "Attack": "1",
       "Defense": "2",
       "Citation": "",
       "Comments": "",
@@ -5807,7 +5844,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": " "
+          "Description": "<<Permanent>> Vous piochez 1 carte à chaque début de tour de chaque joueur"
         }
       ]
     }

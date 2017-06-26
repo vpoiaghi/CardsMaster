@@ -293,18 +293,19 @@
 			{
 				"Comment" : "Zone Texte Defense",
 				"Type" : "SETextArea",
-				"X":632,
-				"Y":900,
+				"X":630,
+				"Y":898,
 				"Width": 60,
 				"Height" : 60,
 				"FontName" : "Bell MT",
-				"FontSize" : 12,
+				"FontSize" : 13,
 				"Style" : "Bold",
 				"FontColor" : "White",
 				"NameAttribute" : "Defense",
 				"VisibleConditionAttribute" : "Defense",
 				"HorizontalAlign" : "Center",
-				"VerticalAlign" : "Center"
+				"VerticalAlign" : "Center",
+				"WithFontBorder" : true
 			}
 
 		]

@@ -35,7 +35,6 @@ namespace CardMasterImageBuilder.Builders
 
                 if (UtilsTypes.IsNamespaceExists(namespacePath))
                 {
-                    //Type[] toReturn = Assembly.GetExecutingAssembly().GetTypes().Where(t => String.Equals(t.Namespace, namespacePath, StringComparison.Ordinal) && (t is IBuilder)).ToArray();
                     Type[] toReturn = Assembly.GetExecutingAssembly().GetTypes().Where(t => UtilsTypes.IsInNamespace(t, namespacePath) && UtilsTypes.IsImplementInterface(t, typeof(IBuilder))).ToArray();
                     foreach (Type type in toReturn)
                     {

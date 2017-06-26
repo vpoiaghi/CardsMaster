@@ -24,7 +24,8 @@ namespace CardMasterImageBuilder.GraphicsElements
 
         public override void Draw(Graphics g)
         {
-            g.DrawImage(this.image, this.rectangle);
+            //Pourquoi une image peut être nulle ?? je sais pas
+            if(this.image!=null) g.DrawImage(this.image, this.rectangle);
         }
 
         public override void DrawShadow(Graphics g, SkinElementShadow shadow)
