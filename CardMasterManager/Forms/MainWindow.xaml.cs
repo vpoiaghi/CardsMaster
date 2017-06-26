@@ -168,13 +168,15 @@ namespace CardMasterManager
 
         private void cardGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if ((cardsFile != null) && (cardGrid.SelectedItem != null))
+            int selectedIndex = cardGrid.SelectedIndex;
+            if ((cardsFile != null) && (cardGrid.SelectedItem != null) && !isSearching)
             {
-                if (cardGrid.SelectedIndex < GridCardsList.Count)
+                if (selectedIndex < GridCardsList.Count)
                 {
                     // Si on est pas dans le cas d'un nouveau fichier
-
-                    Card c = GridCardsList[cardGrid.SelectedIndex];
+                    //L'observable n'est pas syncrhonizé avec la collection filtrée
+                    //Card c = GridCardsList[selectedIndex];
+                    Card c = (Card)cardGrid.SelectedItem;
 
                     if (!(c == previousCard))
                     {
