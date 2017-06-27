@@ -1,11 +1,9 @@
 ﻿using CardMasterCommon.Dialog;
 using CardMasterManager.Converters;
-using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -50,6 +48,7 @@ namespace CardMasterImageClipping
         public MainWindow()
         {
             InitializeComponent();
+            ImgTarget.Width = TARGET_WIDTH * ImgTarget.Height / TARGET_HEIGHT;
         }
 
         private void MenuItemOpenResourcesFolder_Click(object sender, RoutedEventArgs e)
@@ -76,7 +75,7 @@ namespace CardMasterImageClipping
             SourceImagesList.Clear();
 
             selState = SelectionState.NoSelection;
-            DrawSelection(-1, -1);
+            CleanSelection();
 
             List<FileInfo> files = new List<FileInfo>();
             files.AddRange(resourcesDirectory.GetFiles("*.png"));
@@ -111,7 +110,7 @@ namespace CardMasterImageClipping
             this.selRectangle = new SelectRectangle(imgSourceImage.ActualWidth, imgSourceImage.ActualHeight, TARGET_WIDTH, TARGET_HEIGHT);
 
             selState = SelectionState.NoSelection;
-            DrawSelection(-1, -1);
+            CleanSelection();
         }
 
         private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -177,7 +176,6 @@ namespace CardMasterImageClipping
         {
             bool canDrawSelection = false;
             bool canCleanSelection = false;
-            Visibility newVisibility = Visibility.Visible;
             Rectangle selRectangle = Rectangle.Empty;
 
             if (selState == SelectionState.SelectionStart)
@@ -209,24 +207,37 @@ namespace CardMasterImageClipping
                 RBCornerSelRect.SetValue(Canvas.LeftProperty, (double)(selRectangle.Right - 2));
                 RBCornerSelRect.SetValue(Canvas.TopProperty, (double)(selRectangle.Bottom - 2));
 
-                newVisibility = Visibility.Visible;
+                ShowSelection();
                 ImgTarget.Source = GetImagePart(selRectangle);
             }
             else if (canCleanSelection)
             {
-                newVisibility = Visibility.Collapsed;
-                ImgTarget.Source = null;
-            }
-
-            if (MainSelRect.Visibility != newVisibility)
-            {
-                MainSelRect.Visibility = newVisibility;
-                LTCornerSelRect.Visibility = newVisibility;
-                RBCornerSelRect.Visibility = newVisibility;
+                CleanSelection();
             }
 
         }
 
+        private void ShowSelection()
+        {
+            if (MainSelRect.Visibility != Visibility.Visible)
+            {
+                MainSelRect.Visibility = Visibility.Visible;
+                LTCornerSelRect.Visibility = Visibility.Visible;
+                RBCornerSelRect.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void CleanSelection()
+        {
+            if (MainSelRect.Visibility != Visibility.Collapsed)
+            {
+                MainSelRect.Visibility = Visibility.Collapsed;
+                LTCornerSelRect.Visibility = Visibility.Collapsed;
+                RBCornerSelRect.Visibility = Visibility.Collapsed;
+                ImgTarget.Source = null;
+            }
+        }
+        
         private BitmapImage GetImagePart(System.Drawing.Rectangle r)
         {
             BitmapImage result = null;
@@ -245,6 +256,18 @@ namespace CardMasterImageClipping
                 
                 if (w > 0 && h > 0)
                 {
+                    if (x + w > selectedItem.Image.Width)
+                    {
+                        w = (int)selectedItem.Image.Width - x;
+                        h = w * TARGET_HEIGHT / TARGET_WIDTH;
+                    }
+
+                    if (y + h > selectedItem.Image.Height)
+                    {
+                        h = (int)selectedItem.Image.Height - y;
+                        w = h * TARGET_WIDTH / TARGET_HEIGHT;
+                    }
+
                     System.Drawing.Bitmap targetImage = new Bitmap(w, h);
                     targetImage.SetResolution(300, 300);
 
