@@ -24,22 +24,11 @@ Un seul type d'objet de paramétrage doit être envoyé au projet d'export et c'
 
 ### Cartes
 
-* [EN COURS] Pouvoir ajouter / supprimer des lignes dans la grille pour ne pas avoir nécéssairement de Json en entrée.
-Bugs quand création d'un projet from scratch (lien avec un skin devant déja exister), bug de rendu corrigé.
-
 * Pouvoir gérer autant de champs custo que l'on veut avec un AnyJsonGetter et une map d'extrafields sur une Card
-
   
 ## Evolutions fonctionnelles
 
-### Aspect des cartes
-
-* [DONE] Bordures en dégradé avec un color 1 et color 2 pour les borders (attention probleme de map <String,[String])
-
 ### IHM
-
-* Cartes
-  * [DONE] Gérer les noms longs de cartes (passe sur 2 lignes mais se décalle vers le haut mais se retrouve hors cadre : ex : Vallée des nuages et de la foudre)
 
 * Boîte de dialogue de paramétrage des exports
   * Pouvoir paramétrer l'exportation par l'ihm via une boîte de dialogue (mode, format, dossier/fichier de destination, etc...). 
