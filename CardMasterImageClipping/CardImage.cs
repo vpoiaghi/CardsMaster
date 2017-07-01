@@ -24,7 +24,7 @@ namespace CardMasterImageClipping
         private Image GetImage(string fileFullname)
         {
             Bitmap img = new Bitmap(fileFullname);
-            img.SetResolution(300, 300);
+            //img.SetResolution(300, 300);
 
             return img;
         }

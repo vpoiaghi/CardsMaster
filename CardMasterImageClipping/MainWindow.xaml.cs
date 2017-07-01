@@ -1,8 +1,9 @@
 ﻿using CardMasterCommon.Dialog;
-using CardMasterManager.Converters;
+using CardMasterImageClipping.Selection;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
@@ -27,23 +28,15 @@ namespace CardMasterImageClipping
 
         private const int TARGET_WIDTH = 628;
         private const int TARGET_HEIGHT = 445;
-        private const int TARGET_ROSULUTION = 300;
+        private const int TARGET_RESOLUTION = 300;
 
         private SelectRectangle selRectangle = null;
 
         public ObservableCollection<CardImage> SourceImagesList { get; set; } = new ObservableCollection<CardImage>();
 
         private SelectionState selState = SelectionState.NoSelection;
-        private double offsetX = 0;
-        private double offsetY = 0;
-        private double screenImageWidth = 0;
-        private double screenImageHeight = 0;
-
-        private double sourceResolutionX = 0;
-        private double sourceResolutionY = 0;
-
-
         private CardImage selectedItem = null;
+        private ImageSelection imgSelection = null;
 
         public MainWindow()
         {
@@ -96,18 +89,8 @@ namespace CardMasterImageClipping
             imgSourceImage.Source = selectedItem.Image;
             imgSourceImage.UpdateLayout();
 
-            screenImageWidth = selectedItem.SourceImage.Width * imgSourceImage.ActualHeight / selectedItem.SourceImage.Height;
-            screenImageHeight = imgSourceImage.ActualHeight;
-
-            UIElement parent = imgSourceImage.Parent as UIElement;
-            System.Windows.Point location = imgSourceImage.TranslatePoint(new System.Windows.Point(0, 0), parent);
-            this.offsetX = location.X;
-            this.offsetY = location.Y;
-
-            this.sourceResolutionX = ((BitmapImage)imgSourceImage.Source).DpiX;
-            this.sourceResolutionY = ((BitmapImage)imgSourceImage.Source).DpiY;
-
-            this.selRectangle = new SelectRectangle(imgSourceImage.ActualWidth, imgSourceImage.ActualHeight, TARGET_WIDTH, TARGET_HEIGHT);
+            this.selRectangle = new SelectRectangle(imgSourceImage, selectedItem.SourceImage, TARGET_WIDTH, TARGET_HEIGHT, TARGET_RESOLUTION);
+            this.selRectangle.txt = sTxtSelInfos;
 
             selState = SelectionState.NoSelection;
             CleanSelection();
@@ -122,6 +105,8 @@ namespace CardMasterImageClipping
                 DrawSelection(e.GetPosition(BlackPlane).X, e.GetPosition(BlackPlane).Y);
                 selState = SelectionState.OnSelection;
             }
+
+            TxtMouse.Text = "State=" + selState + "; X=" + e.GetPosition(BlackPlane).X + "; Y=" + e.GetPosition(BlackPlane).Y;
         }
 
         private void Border_MouseMove(object sender, MouseEventArgs e)
@@ -130,12 +115,15 @@ namespace CardMasterImageClipping
             {
                 DrawSelection(e.GetPosition(BlackPlane).X, e.GetPosition(BlackPlane).Y);
             }
+            TxtMouse.Text = "State=" + selState + "; X=" + e.GetPosition(BlackPlane).X + "; Y=" + e.GetPosition(BlackPlane).Y;
         }
 
         private void Border_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             selState = SelectionState.SelectionEnd;
             DrawSelection(e.GetPosition(BlackPlane).X, e.GetPosition(BlackPlane).Y);
+
+            TxtMouse.Text = "State=" + selState + "; X=" + e.GetPosition(BlackPlane).X + "; Y=" + e.GetPosition(BlackPlane).Y;
         }
 
         private void Border_MouseLeave(object sender, MouseEventArgs e)
@@ -144,6 +132,7 @@ namespace CardMasterImageClipping
             {
                 selState = SelectionState.OnSelectionOut;
             }
+            TxtMouse.Text = "State=" + selState + "; X=" + e.GetPosition(BlackPlane).X + "; Y=" + e.GetPosition(BlackPlane).Y;
         }
 
         private void Border_MouseEnter(object sender, MouseEventArgs e)
@@ -161,6 +150,8 @@ namespace CardMasterImageClipping
 
                 DrawSelection(e.GetPosition(BlackPlane).X, e.GetPosition(BlackPlane).Y);
             }
+
+            TxtMouse.Text = "State=" + selState + "; X=" + e.GetPosition(BlackPlane).X + "; Y=" + e.GetPosition(BlackPlane).Y;
         }
 
         private void Window_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
@@ -170,45 +161,59 @@ namespace CardMasterImageClipping
                 selState = SelectionState.SelectionEnd;
                 DrawSelection(e.GetPosition(BlackPlane).X, e.GetPosition(BlackPlane).Y);
             }
+
+            TxtMouse.Text = "State=" + selState + "; X=" + e.GetPosition(BlackPlane).X + "; Y=" + e.GetPosition(BlackPlane).Y;
         }
+
+        private void Window_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (selState == SelectionState.OnSelectionOut)
+            {
+                DrawSelection(e.GetPosition(BlackPlane).X, e.GetPosition(BlackPlane).Y);
+            }
+
+            TxtMouse.Text = "State=" + selState + "; X=" + e.GetPosition(BlackPlane).X + "; Y=" + e.GetPosition(BlackPlane).Y;
+        }
+
 
         private void DrawSelection(double mouseX, double mouseY)
         {
             bool canDrawSelection = false;
             bool canCleanSelection = false;
-            Rectangle selRectangle = Rectangle.Empty;
+
+            imgSelection = null;
 
             if (selState == SelectionState.SelectionStart)
             {
-                selRectangle = new Rectangle((int)mouseX, (int)mouseY, 0, 0);
+                imgSelection = this.selRectangle.StartSelection(mouseX, mouseY);
                 canDrawSelection = true;
             }
             else if ((selState == SelectionState.OnSelection) || (selState == SelectionState.OnSelectionOut))
             {
-                selRectangle = this.selRectangle.GetSelection(mouseX, mouseY);
+                imgSelection = this.selRectangle.GetSelection(mouseX, mouseY);
                 canDrawSelection = true;
             }
             else if (selState == SelectionState.SelectionEnd)
             {
-                selRectangle = this.selRectangle.GetSelection(mouseX, mouseY);
-                canCleanSelection = ((selRectangle.Width == 0) && (selRectangle.Height == 0));
+                imgSelection = this.selRectangle.GetSelection(mouseX, mouseY);
+                canCleanSelection = ((imgSelection.SelRectangle.Width == 0) && (imgSelection.SelRectangle.Height == 0));
             }
 
             if (canDrawSelection)
             {
-                MainSelRect.SetValue(Canvas.LeftProperty, (double)selRectangle.X);
-                MainSelRect.SetValue(Canvas.TopProperty, (double)selRectangle.Y);
-                MainSelRect.Width = selRectangle.Width;
-                MainSelRect.Height = selRectangle.Height;
+                MainSelRect.SetValue(Canvas.LeftProperty, (double)imgSelection.SelRectangle.X);
+                MainSelRect.SetValue(Canvas.TopProperty, (double)imgSelection.SelRectangle.Y);
+                MainSelRect.Width = imgSelection.SelRectangle.Width;
+                MainSelRect.Height = imgSelection.SelRectangle.Height;
 
-                LTCornerSelRect.SetValue(Canvas.LeftProperty, (double)(selRectangle.X - 2));
-                LTCornerSelRect.SetValue(Canvas.TopProperty, (double)(selRectangle.Y - 2));
+                LTCornerSelRect.SetValue(Canvas.LeftProperty, (double)(imgSelection.SelRectangle.X - 2));
+                LTCornerSelRect.SetValue(Canvas.TopProperty, (double)(imgSelection.SelRectangle.Y - 2));
 
-                RBCornerSelRect.SetValue(Canvas.LeftProperty, (double)(selRectangle.Right - 2));
-                RBCornerSelRect.SetValue(Canvas.TopProperty, (double)(selRectangle.Bottom - 2));
+                RBCornerSelRect.SetValue(Canvas.LeftProperty, (double)(imgSelection.SelRectangle.Right - 2));
+                RBCornerSelRect.SetValue(Canvas.TopProperty, (double)(imgSelection.SelRectangle.Bottom - 2));
 
                 ShowSelection();
-                ImgTarget.Source = GetImagePart(selRectangle);
+                ImgTarget.Source = imgSelection.SelBitmapImage;
             }
             else if (canCleanSelection)
             {
@@ -237,55 +242,38 @@ namespace CardMasterImageClipping
                 ImgTarget.Source = null;
             }
         }
-        
-        private BitmapImage GetImagePart(System.Drawing.Rectangle r)
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            BitmapImage result = null;
-
-            if (r.Width > 0 && r.Height > 0)
+            if ((selectedItem != null) && (imgSelection != null) && (imgSelection.SelImage != null))
             {
-                System.Drawing.Bitmap srcImage = (Bitmap)selectedItem.SourceImage;
+                string filename = selectedItem.File.Name;
+                string fileextension = selectedItem.File.Extension;
+                string originalFilename = filename.Substring(0, filename.Length - fileextension.Length) + "-original" + fileextension;
 
-                int x = (int)((r.X - offsetX) * srcImage.Width / screenImageWidth);
-                int y = (int)((r.Y - offsetY) * srcImage.Height / screenImageHeight);
-                int w = (int)(r.Width * srcImage.Width / screenImageWidth);
-                int h = (int)(r.Height * srcImage.Height / screenImageHeight);
+                ImageFormat f = null;
 
-                w = (int)(w * TARGET_ROSULUTION / sourceResolutionX);
-                h = (int)(h * TARGET_ROSULUTION / sourceResolutionY);
-                
-                if (w > 0 && h > 0)
+                switch (fileextension.ToLower())
                 {
-                    if (x + w > selectedItem.Image.Width)
-                    {
-                        w = (int)selectedItem.Image.Width - x;
-                        h = w * TARGET_HEIGHT / TARGET_WIDTH;
-                    }
+                    case ".bmp":  f = ImageFormat.Bmp;  break;
+                    case ".emf":  f = ImageFormat.Emf;  break;
+                    case ".gif":  f = ImageFormat.Gif;  break;
+                    case ".icn":  f = ImageFormat.Icon; break;
+                    case ".jpg":  f = ImageFormat.Jpeg; break;
+                    case ".jepg": f = ImageFormat.Jpeg; break;
+                    case ".png":  f = ImageFormat.Png;  break;
+                    case ".tiff": f = ImageFormat.Tiff; break;
+                    case ".wmf":  f = ImageFormat.Wmf;  break;
+                }
 
-                    if (y + h > selectedItem.Image.Height)
-                    {
-                        h = (int)selectedItem.Image.Height - y;
-                        w = h * TARGET_WIDTH / TARGET_HEIGHT;
-                    }
-
-                    System.Drawing.Bitmap targetImage = new Bitmap(w, h);
-                    targetImage.SetResolution(300, 300);
-
-                    Graphics g = Graphics.FromImage(targetImage);
-                    g.Clear(System.Drawing.Color.Black);
-
-                    g.DrawImage(srcImage.Clone(new System.Drawing.Rectangle(x, y, w, h), srcImage.PixelFormat), 0, 0, TARGET_WIDTH, TARGET_HEIGHT);
-
-                    g.Dispose();
-                    g = null;
-
-                    DrawingImageToImageSourceConverter conv = new DrawingImageToImageSourceConverter();
-
-                    result = (BitmapImage)conv.Convert(targetImage, null, null, null);
+                if (f != null)
+                {
+                    selectedItem.File.CopyTo(Path.Combine(selectedItem.File.Directory.FullName, originalFilename), true);
+                    this.imgSelection.SelImage.Save(selectedItem.File.FullName, f);
                 }
             }
 
-            return result;
+            
         }
     }
 }
