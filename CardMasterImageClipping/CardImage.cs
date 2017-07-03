@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CardMasterCommon.Utils;
+using CardMasterManager.Converters;
+using System;
 using System.Drawing;
 using System.IO;
 using System.Windows.Media.Imaging;
@@ -17,16 +19,14 @@ namespace CardMasterImageClipping
             this.Text = imageFile.Name;
             this.File = imageFile;
 
-            this.Image = new BitmapImage(new Uri(imageFile.FullName));
-            this.SourceImage = GetImage(imageFile.FullName);
+            this.SourceImage = UtilsImageFile.LoadImage(imageFile.FullName);
+            this.Image = ImageToBitmapImage(this.SourceImage);
         }
 
-        private Image GetImage(string fileFullname)
+        private BitmapImage ImageToBitmapImage(Image img)
         {
-            Bitmap img = new Bitmap(fileFullname);
-            //img.SetResolution(300, 300);
-
-            return img;
+            DrawingImageToImageSourceConverter conv = new DrawingImageToImageSourceConverter();
+            return (BitmapImage)conv.Convert(img, null, null, null);
         }
     }
 }

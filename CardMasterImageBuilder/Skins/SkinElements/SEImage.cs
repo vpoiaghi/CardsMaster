@@ -1,4 +1,5 @@
 ﻿using CardMasterCard.Card;
+using CardMasterCommon.Utils;
 using CardMasterImageBuilder.GraphicsElements;
 using CardMasterImageBuilder.Skins;
 using System;
@@ -29,7 +30,7 @@ namespace CardMasterImageBuilder.SkinElements
 
             if (fileFullname != null)
             {
-                Image img = Bitmap.FromFile(fileFullname, true);
+                Image img = UtilsImageFile.LoadImage(fileFullname);
                 graphicElementsList.Add(new ImageElement(img, new Rectangle(this.X, this.Y, this.Width, this.Height)));
             }
 

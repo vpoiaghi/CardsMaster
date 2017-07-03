@@ -93,9 +93,7 @@
     <Compile Include="Components\MyButton.xaml.cs">
       <DependentUpon>MyButton.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Converters\DrawingImageToImageSourceConverter.cs" />
     <Compile Include="Binders\EnumBindingSourceExtension.cs" />
-    <Compile Include="Converters\EnumConverter.cs" />
     <Compile Include="Forms\GridConfigurator.xaml.cs">
       <DependentUpon>GridConfigurator.xaml</DependentUpon>
     </Compile>

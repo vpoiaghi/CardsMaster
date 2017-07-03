@@ -1,4 +1,5 @@
 ﻿using CardMasterCard.Card;
+using CardMasterCommon.Utils;
 using CardMasterImageBuilder.GraphicsElements;
 using System;
 using System.Collections.Generic;
@@ -208,7 +209,7 @@ namespace CardMasterImageBuilder.Skins
 
                             if (bkg == null)
                             {
-                                Image img = new Bitmap(fileName);
+                                Image img = UtilsImageFile.LoadImage(fileName);
                                 bkg = new TextureBrush(img, WrapMode.TileFlipXY);
                                 img.Dispose();
                                 img = null;
@@ -268,7 +269,7 @@ namespace CardMasterImageBuilder.Skins
 
             if (file != null && file.Exists)
             {
-                img = Bitmap.FromFile(file.FullName);
+                img = UtilsImageFile.LoadImage(file.FullName);
             }
 
             return img;
