@@ -5356,9 +5356,9 @@
       "Team": "Elèves de l'académie",
       "Chakra": "Feu",
       "Element": "Feu",
-      "Cost": "1",
-      "Attack": "1",
-      "Defense": "1",
+      "Cost": "4",
+      "Attack": "3",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -5377,6 +5377,37 @@
       "Powers": [
         {
           "Description": "<<Permanent>> Stratège : Les ennemis infligent 2 dégats de moins"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Nué",
+      "Rank": "",
+      "Team": "Invocation",
+      "Chakra": "Feu",
+      "Element": "Feu",
+      "Cost": "0",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Select3",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>>  Explosion : Disparait en infligeant 3 dégats à tout le monde"
         }
       ]
     },
