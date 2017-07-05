@@ -5,9 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:DV="clr-namespace:System.Windows.Controls.DataVisualization;assembly=System.Windows.Controls.DataVisualization.Toolkit"
         xmlns:DVC="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"
-        xmlns:local="clr-namespace:CardMasterStat"
+        xmlns:Card="clr-namespace:CardMasterStat"
         mc:Ignorable="d"
         Title="MainWindow" Height="782" Width="1227">
+    <Window.Resources>
+        <Card:ConvertToBrush x:Key="converter"/>
+    </Window.Resources>
     <Grid>
         <Menu>
             <MenuItem Header="_File">
@@ -19,28 +22,54 @@
             <TabItem Header="Répartition par coùt">
                 <Grid Background="#FFE5E5E5" Margin="0,-1,0,1">
                     <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="chartCost" Background="LightSteelBlue" Margin="10,10,0,0">
-                        <DVC:ColumnSeries DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" Margin="0,0,-130,-24" />
+                        <DVC:ColumnSeries DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" Margin="0,0,-130,-24" >
+                            <DVC:ColumnSeries.DataPointStyle>
+                                <Style TargetType="DVC:ColumnDataPoint">
+                                    <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Self}, Converter={StaticResource converter}}"/>
+                                </Style>
+                            </DVC:ColumnSeries.DataPointStyle>
+                        </DVC:ColumnSeries> 
+
                     </DVC:Chart>
                 </Grid>
             </TabItem>
             <TabItem Header="Répartition par Attaque">
                 <Grid Background="#FFE5E5E5">
                     <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="chartAtk" Background="LightSteelBlue" Margin="10">
-                        <DVC:ColumnSeries DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" />
+                        <DVC:ColumnSeries DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" >
+                            <DVC:ColumnSeries.DataPointStyle>
+                                <Style TargetType="DVC:ColumnDataPoint">
+                                    <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Self}, Converter={StaticResource converter}}"/>
+                                </Style>
+                            </DVC:ColumnSeries.DataPointStyle>
+                        </DVC:ColumnSeries>
+
                     </DVC:Chart>
                 </Grid>
             </TabItem>
             <TabItem Header="Répartition par Défense">
                 <Grid Background="#FFE5E5E5">
                     <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="chartDef" Background="LightSteelBlue" Margin="10">
-                        <DVC:ColumnSeries DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" />
+                        <DVC:ColumnSeries DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" >
+                            <DVC:ColumnSeries.DataPointStyle>
+                                <Style TargetType="DVC:ColumnDataPoint">
+                                    <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Self}, Converter={StaticResource converter}}"/>
+                                </Style>
+                            </DVC:ColumnSeries.DataPointStyle>
+                        </DVC:ColumnSeries>
                     </DVC:Chart>
                 </Grid>
             </TabItem>
             <TabItem Header="Répartition par Nature">
                 <Grid Background="#FFE5E5E5">
                     <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="chartNature" Background="LightSteelBlue" Margin="10">
-                        <DVC:ColumnSeries DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" />
+                        <DVC:ColumnSeries DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" >
+                            <DVC:ColumnSeries.DataPointStyle>
+                                <Style TargetType="DVC:ColumnDataPoint">
+                                    <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Self}, Converter={StaticResource converter}}"/>
+                                </Style>
+                            </DVC:ColumnSeries.DataPointStyle>
+                        </DVC:ColumnSeries>
                     </DVC:Chart>
                 </Grid>
             </TabItem>

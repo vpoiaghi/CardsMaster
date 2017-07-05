@@ -390,8 +390,8 @@ namespace CardMasterManager
         {
 
             Card newCard = new Card();
-            newCard.Nature = NatureCard.Eau;
-            newCard.Kind = CardKind.Ninja;
+            newCard.Nature = "Eau";
+            newCard.Kind = "Ninja";
             newCard.Name = "Template";
             newCard.Powers = new List<JsonPower>();
             newCard.BackSkinName = "BackSkin1";

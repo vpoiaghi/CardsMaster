@@ -5,31 +5,7 @@ using System.ComponentModel;
 
 namespace CardMasterManager
 {
-    public enum CardKind
-    {
-        Environnement,
-        Equipement,
-        Lieu,
-        Ninja,
-        Ninjutsu,
-        Quête
-    }
-
-    public enum NatureCard
-    {
-        Feu,
-        Eau,
-        Vent,
-        Foudre,
-        Terre,
-        Special,
-        Physique,
-        Equipement,
-        Ninjutsu,
-        Environnement,
-        [Description("Lieu légendaire")] Zone
-    }
-
+    
     public class Card : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
@@ -39,11 +15,11 @@ namespace CardMasterManager
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        private CardKind _kind;
+        private String _kind;
         private String _name;
         private String _rank;
         private String _team;
-        private NatureCard _nature;
+        private String _nature;
         private String _element;
         private String _cost;
         private String _attack;
@@ -65,11 +41,11 @@ namespace CardMasterManager
         private int? _intfield3;
         private int? _intfield4;
 
-        public CardKind Kind { get { return _kind; } set { _kind = value; RaisePropertyChanged("Kind"); } }
+        public String Kind { get { return _kind; } set { _kind = value; RaisePropertyChanged("Kind"); } }
         public String Name { get { return _name; } set { _name = value; RaisePropertyChanged("Name"); } }
         public String Rank { get { return _rank; } set { _rank = value; RaisePropertyChanged("Rank"); } }
         public String Team { get { return _team; } set { _team = value; RaisePropertyChanged("Team"); } }
-        public NatureCard Nature { get { return _nature; } set { _nature = value; RaisePropertyChanged("Nature"); } }
+        public String Nature { get { return _nature; } set { _nature = value; RaisePropertyChanged("Nature"); } }
         public String Element { get { return _element; } set { _element = value; RaisePropertyChanged("Element"); } }
         public String Cost { get { return _cost; } set { _cost = value; RaisePropertyChanged("Cost"); } }
         public String Attack { get { return _attack; } set { _attack = value; RaisePropertyChanged("Attack"); } }
@@ -92,27 +68,7 @@ namespace CardMasterManager
         public int? IntField1 { get { return _intfield1; } set { _intfield1 = value; RaisePropertyChanged("IntField1"); } }
         public int? IntField2 { get { return _intfield2; } set { _intfield2 = value; RaisePropertyChanged("IntField2"); } }
         public int? IntField3 { get { return _intfield3; } set { _intfield3 = value; RaisePropertyChanged("IntField3"); } }
-        public int? IntField4 { get { return _intfield4; } set { _intfield4 = value; RaisePropertyChanged("IntField4"); } }
-        
-
-        public static NatureCard parseNature(String nature)
-        {
-            NatureCard toReturn;
-            NatureCard.TryParse(nature, out toReturn);
-            if (nature != null && nature.Equals("Lieu légendaire"))
-                toReturn = NatureCard.Zone;
-            return toReturn;
-        }
-
-        public static CardKind parseKind(String kind)
-        {
-            CardKind toReturn;
-            CardKind.TryParse(kind, out toReturn);
-            if (kind !=null && kind.Equals("Lieu légendaire"))
-                toReturn = CardKind.Lieu;
-            return toReturn;
-        }
-              
+        public int? IntField4 { get { return _intfield4; } set { _intfield4 = value; RaisePropertyChanged("IntField4"); } }             
 
         public static JsonCard ConvertToMasterCard(Card card)
         {
@@ -155,13 +111,13 @@ namespace CardMasterManager
             Card toReturn = new Card();
             toReturn.Attack = card.Attack;
             toReturn.Background = card.Background;
-            toReturn.Nature = parseNature(card.Chakra);
+            toReturn.Nature = card.Chakra;
             toReturn.Citation = card.Citation;
             toReturn.Comments = card.Comments;
             toReturn.Cost = card.Cost;
             toReturn.Defense = card.Defense;
             toReturn.Element = card.Element;
-            toReturn.Kind = parseKind(card.Kind);
+            toReturn.Kind = card.Kind;
             toReturn.Name = card.Name;
             toReturn.Nb = card.Nb;
             toReturn.Powers = new List<JsonPower>();

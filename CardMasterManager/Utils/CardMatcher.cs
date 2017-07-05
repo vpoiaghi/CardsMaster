@@ -25,8 +25,8 @@ namespace CardMasterManager.Utils
                     StrContains(card.StringField2, filterText) ||
                     StrContains(card.StringField3, filterText) ||
                     StrContains(card.StringField4, filterText) ||
-                    EnumContains(card.Kind,filterText) ||
-                    EnumContains(card.Nature, filterText) ||
+                    StrContains(card.Kind,filterText) ||
+                    StrContains(card.Nature, filterText) ||
                     IntEquals(card.IntField1,filterText) ||
                     IntEquals(card.IntField2, filterText) ||
                     IntEquals(card.IntField3, filterText) ||
