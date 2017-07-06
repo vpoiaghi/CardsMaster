@@ -241,6 +241,7 @@ namespace CardMasterManager
                 parameters.SpaceBetweenCards = 0;
                 parameters.exportFormat = Exporter.EXPORT_FORMAT_PNG;
                 parameters.exportMode = Exporter.EXPORT_MODE_BOARD;
+                parameters.WithBackSides = true;
                 parameters.TargetFolder = FolderDialog.SelectFolder();
 
                 Exporter.Export(this, parameters);

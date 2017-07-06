@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CardMasterInstaller", "CardMasterInstaller\CardMasterInstaller.vdproj", "{C6B495F7-EA2B-4EC7-9865-DB042F434B38}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6B495F7-EA2B-4EC7-9865-DB042F434B38}.Debug|Default.ActiveCfg = Debug
+		{C6B495F7-EA2B-4EC7-9865-DB042F434B38}.Debug|Default.Build.0 = Debug
+		{C6B495F7-EA2B-4EC7-9865-DB042F434B38}.Release|Default.ActiveCfg = Release
+		{C6B495F7-EA2B-4EC7-9865-DB042F434B38}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
