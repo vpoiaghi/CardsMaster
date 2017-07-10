@@ -49,7 +49,7 @@ Maintenant que la fonctionnalité est validée, voir comment elle sera intégré
   
 ### Application  
 
-* *Alerte*:: SkinEditor
+*Alerte*:: SkinEditor
 A conceptualiser.
 
 
