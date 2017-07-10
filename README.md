@@ -41,11 +41,6 @@ En particulier la partie exportation, où y aurait désormait un seul item qui o
 * [EN COURS] Faire un outil de redimensionnement des images avec une mire, et prévisualisation du résultat. Quand on ouvre une image ex "Image1.jpg", une fois le redimensionnement fait,
 cela crée une copie en "Image1-original.jpg" et écrase le fichier "Image1.jpg" avec celle retaillée.
 
-* Datagrid
-  * ![Warning](https://cdn1.iconfinder.com/data/icons/hawcons/32/700144-icon-61-warning-128.png)
-  * [A TESTER] Rendre triable toutes les colonnes, selon leur valeur visible (je pense en particulier au colonnes liées à des Enum)
-      --> KO, le tri sur le GENRE est bon mais pas sur le NATURE CHAKRA. Sans doute l'enum du GENRE est-il bien trié, contriarement à celui du CHAKRA
-
 * Impression
 Maintenant que la fonctionnalité est validée, voir comment elle sera intégrée déns l'ihm
   * Boîte de dialogue personnalisée ?
@@ -54,7 +49,7 @@ Maintenant que la fonctionnalité est validée, voir comment elle sera intégré
   
 ### Application  
 
-* SkinEditor
+* *Alerte*:: SkinEditor
 A conceptualiser.
 
 
