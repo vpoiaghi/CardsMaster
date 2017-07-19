@@ -45,6 +45,7 @@
                 </MenuItem.Resources>
                 <MenuItem Name="MenuItemExportAllToPngFile" Header="Exporter tout en .png" Click="MenuItemExportAllToPngFile_Click" />
                 <MenuItem Name="MenuItemExportBoardsToPngFile" Header="Exporter les planches .png" Click="MenuItemExportBoardsToPngFile_Click"/>
+                <MenuItem Name="MenuItemExportBoardsToPdfFile" Header="Exporter les planches .pdf" Click="MenuItemExportBoardsToPdfFile_Click"/>
             </MenuItem>
         </Menu>
 

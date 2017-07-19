@@ -515,6 +515,32 @@ namespace CardMasterManager
             FilesChanged(true);
         }
 
-      
+        private void MenuItemExportBoardsToPdfFile_Click(object sender, RoutedEventArgs e)
+        {
+            List<JsonCard> cardsList = GridCardsListToJsonCardsList();
+
+            if (cardsList.Count > 0)
+            {
+
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Filter = "Pdf files (*.pdf)|*.pdf";
+
+                if (saveFileDialog.ShowDialog() == true)
+                {
+                    FileInfo pdfFile = new FileInfo(saveFileDialog.FileName);
+
+
+                    ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile(this.cardsFile, true));
+                    parameters.SpaceBetweenCards = 0;
+                    parameters.exportFormat = Exporter.EXPORT_FORMAT_PDF;
+                    parameters.exportMode = Exporter.EXPORT_MODE_BOARD;
+                    parameters.WithBackSides = true;
+                    parameters.TargetFile = pdfFile;
+
+                    Exporter.Export(this, parameters);
+                }
+            }
+        }
+
     }
 }

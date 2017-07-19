@@ -14,13 +14,15 @@ Actuellement il n'y a aucn système de contrat de service entre les projets, cha
 
 ### Exportation
 
-* Revoir le mode de communication entre les projets appelants et le projet Export
+* [TERMINÉ] Revoir le mode de communication entre les projets appelants et le projet Export
 Chaque mode d'export (carte par carte, planche) dispose de sa classe d'export spécifique pour traiter l'exportation.
 Mais j'ai laissé les projets appelant choisir et instancier ces classes plutôt que laisser le projet Export dispatcher entre ces différentes classes.
 Un seul type d'objet de paramétrage doit être envoyé au projet d'export et c'est le Parameters présent dans le projet CmdExport qu'il faudra déplacer dans le projet Export.
 
 * [EN COURS] Certains paramètres d'export sont en dur
   Taille des cartes, etc... les faire passer par l'obet Parameters à mettre en place
+
+* [EN COURS] Exportation des planches en pdf.
 
 ### Cartes
 
