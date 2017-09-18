@@ -19,9 +19,15 @@ namespace CardMasterImageBuilder
 
         public Drawer(JsonCard card, FileInfo skinsFile, String skinName)
         {
-            this.card = card;
-            this.frontSkin = (new SkinFactory()).GetSkin(this.card, skinsFile, skinName,SkinFactory.SkinSide.FRONT);
-            this.backSideSkin = (new SkinFactory()).GetSkin(this.card, skinsFile, skinName, SkinFactory.SkinSide.BACK);
+            try
+            {
+                this.card = card;
+                this.frontSkin = (new SkinFactory()).GetSkin(this.card, skinsFile, skinName, SkinFactory.SkinSide.FRONT);
+                this.backSideSkin = (new SkinFactory()).GetSkin(this.card, skinsFile, skinName, SkinFactory.SkinSide.BACK);
+            }catch(SkinNotFoundException e)
+            {
+
+            }
         }
 
         ~Drawer()

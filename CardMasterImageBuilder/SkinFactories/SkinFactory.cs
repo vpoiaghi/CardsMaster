@@ -6,6 +6,7 @@ using System;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Runtime.Serialization;
 
 namespace CardMasterImageBuilder
 {
@@ -27,7 +28,13 @@ namespace CardMasterImageBuilder
             {
                 DirectoryInfo resourcesDirectory = new DirectoryInfo(Path.Combine(skinsFile.Directory.FullName, RESOURCES_DIRECTORY_NAME));
                 BuilderRegister.getInstance().Register(new BuilderParameter(resourcesDirectory, jsonSkinsProject));
-                skin = GetSkin(jsonCard, side);
+                try
+                {
+                    skin = GetSkin(jsonCard, side);
+                }catch(SkinNotFoundException e)
+                {
+                    throw e;
+                }
             }
 
             return skin;
@@ -42,8 +49,12 @@ namespace CardMasterImageBuilder
             JsonSkin jsonSkin;
 
             jsonSkin = side.Equals(SkinSide.FRONT) ?
-                        jsonSkinsProject.Skins.Single(sk => sk.Name == jsonCard.FrontSkinName) :
-                        jsonSkin = jsonSkinsProject.Skins.Single(sk => sk.Name == jsonCard.BackSkinName);
+                        jsonSkinsProject.Skins.SingleOrDefault(sk => sk.Name == jsonCard.FrontSkinName) :
+                        jsonSkin = jsonSkinsProject.Skins.SingleOrDefault(sk => sk.Name == jsonCard.BackSkinName);
+            if(jsonSkin == null)
+            {
+                throw new SkinNotFoundException();
+            }
 
             Skin skin = new Skin(jsonSkin.Width, jsonSkin.Height);
 
@@ -55,5 +66,25 @@ namespace CardMasterImageBuilder
             return skin;
         }
 
+    }
+
+    [Serializable]
+    internal class SkinNotFoundException : Exception
+    {
+        public SkinNotFoundException()
+        {
+        }
+
+        public SkinNotFoundException(string message) : base(message)
+        {
+        }
+
+        public SkinNotFoundException(string message, Exception innerException) : base(message, innerException)
+        {
+        }
+
+        protected SkinNotFoundException(SerializationInfo info, StreamingContext context) : base(info, context)
+        {
+        }
     }
 }

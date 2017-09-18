@@ -224,6 +224,7 @@ namespace CardMasterManager
                 ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile(cardsFile, true));
                 parameters.exportFormat = Exporter.EXPORT_FORMAT_PNG;
                 parameters.exportMode = Exporter.EXPORT_MODE_ALL;
+                parameters.WithBackSides = true;
                 parameters.TargetFolder = FolderDialog.SelectFolder();
 
                 Exporter.Export(this, parameters);
