@@ -6039,6 +6039,37 @@
     },
     {
       "Kind": "Ninja",
+      "Name": "Kagura Karatachi",
+      "Rank": "",
+      "Team": "Village de Kiri",
+      "Chakra": "Eau",
+      "Element": "Physique",
+      "Cost": "3",
+      "Attack": "3",
+      "Defense": "3",
+      "Citation": null,
+      "Comments": null,
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": null,
+      "StringField3": null,
+      "StringField4": null,
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Furie des vents : Peut attaquer 2 fois par tour"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
       "Name": "Fû Yamanaka",
       "Rank": "",
       "Team": "La Racine",
