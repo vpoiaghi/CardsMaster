@@ -26,7 +26,7 @@ namespace CardMasterImageBuilder
                 this.backSideSkin = (new SkinFactory()).GetSkin(this.card, skinsFile, skinName, SkinFactory.SkinSide.BACK);
             }catch(SkinNotFoundException e)
             {
-
+               //DO NOTHING
             }
         }
 

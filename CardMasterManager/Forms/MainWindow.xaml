@@ -58,11 +58,11 @@
             </StatusBar>
 
             <DockPanel DockPanel.Dock="Left">
-                <Border Width="375" Height="523" Margin="15,6,15,0" DockPanel.Dock="Top" BorderThickness="1" BorderBrush="#FF000000">
+                <Border Width="412.5" Height="562.5" Margin="15,6,15,0" DockPanel.Dock="Top" BorderThickness="1" BorderBrush="#FF000000">
                     <Image Name="cardImage"></Image>
                 </Border>
-                <Border Width="225" Height="312" Margin="15,6,15,0" DockPanel.Dock="Top" BorderThickness="1" BorderBrush="#FF000000">
-                    <Image Name="backCardImage"></Image>
+                <Border Width="206.2" Height="281.2" Margin="15,6,15,0" DockPanel.Dock="Top" BorderThickness="1" BorderBrush="#FF000000">
+                    <Image Name="backCardImage"/>
                 </Border>
             </DockPanel>
             

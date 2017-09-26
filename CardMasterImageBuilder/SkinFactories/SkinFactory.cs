@@ -68,23 +68,5 @@ namespace CardMasterImageBuilder
 
     }
 
-    [Serializable]
-    internal class SkinNotFoundException : Exception
-    {
-        public SkinNotFoundException()
-        {
-        }
-
-        public SkinNotFoundException(string message) : base(message)
-        {
-        }
-
-        public SkinNotFoundException(string message, Exception innerException) : base(message, innerException)
-        {
-        }
-
-        protected SkinNotFoundException(SerializationInfo info, StreamingContext context) : base(info, context)
-        {
-        }
-    }
+   
 }
