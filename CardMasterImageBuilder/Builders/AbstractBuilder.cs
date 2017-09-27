@@ -44,6 +44,19 @@ namespace CardMasterImageBuilder.Builders
             String stringColor = skinsProject.MapRareteColor.ContainsKey(card.Rank) ? skinsProject.MapRareteColor[card.Rank] : skinsProject.MapRareteColor[""];
             return ConvertColorFromString(stringColor);
         }
+
+        protected SkinElementBorder GetBorderColor(JsonSkinsProject skinsProject, JsonCard card, JsonSkinItem item)
+        {
+            if (item.BorderColor == "DYNAMIC")
+            {
+                return  new SkinElementBorder(GetMatchingBorderColor(skinsProject, card), skinsProject.BorderWidth.Value);
+            }
+            else
+            {
+                return new SkinElementBorder(ConvertColorFromString(item.BorderColor), skinsProject.BorderWidth.Value);
+            }
+        }
+
         protected Color ConvertColorFromString(String color)
         {
             return CustomColorConverter.Instance.ConvertFromString(color);

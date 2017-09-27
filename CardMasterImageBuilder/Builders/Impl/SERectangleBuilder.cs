@@ -30,15 +30,7 @@ namespace CardMasterImageBuilder.Builders.Impl
 
             if (item.BorderColor != null)
             {
-                if (item.BorderColor == "DYNAMIC")
-                {
-                    skinElement.Border = new SkinElementBorder(GetMatchingBorderColor(skinsProject, card), skinsProject.BorderWidth.Value);
-                }
-                else
-                {
-                    skinElement.Border = new SkinElementBorder(ConvertColorFromString(item.BorderColor), skinsProject.BorderWidth.Value);
-                }
-
+                skinElement.Border = GetBorderColor(skinsProject, card, item); 
             }
         
             return ManageShadow(skinElement, item);
