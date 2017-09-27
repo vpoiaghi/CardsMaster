@@ -83,6 +83,7 @@ namespace CardMasterManager
                     this.MenuItemExportAllToPngFile.IsEnabled = true;
                     this.MenuItemExportBoardsToPngFile.IsEnabled = true;
                     this.MenuItemPrintBoards.IsEnabled = true;
+                    debug.Text = cards.Count + " cards loaded";
                 }
             }
         }
