@@ -1,6 +1,7 @@
 ﻿using CardMasterCard.Card;
 using CardMasterExport.Export;
 using CardMasterImageBuilder;
+using CardMasterSkin.Skins;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -11,8 +12,6 @@ namespace CardMasterExport.PrinterExport
 {
     public class PrinterBoardExport : Exporter, IDisposable
     {
-        private const int CARD_WIDTH = 744;
-        private const int CARD_HEIGHT = 1038;
         private const int CARD_COUNT_X = 3;
         private const int CARD_COUNT_X_WITH_BACK = 1;
         private const int CARD_COUNT_Y = 3;
@@ -95,7 +94,7 @@ namespace CardMasterExport.PrinterExport
             return message;
         }
 
-        protected override void MakeCardExport(JsonCard card)
+        protected override void MakeCardExport(JsonCard card,JsonSkin skin)
         {
             cardIndex++;
 
@@ -107,20 +106,20 @@ namespace CardMasterExport.PrinterExport
 
                 for (int i = 0; i < card.Nb; i++)
                 {
-                    MakeCardExportOneCopy(card, this.withBackSides, countX, countY, cardSides);
+                    MakeCardExportOneCopy(card, this.withBackSides, countX, countY, cardSides,skin);
                 }
             }
         }
 
-        private void MakeCardExportOneCopy(JsonCard card, bool withBack, int countX, int countY, int cardSides)
+        private void MakeCardExportOneCopy(JsonCard card, bool withBack, int countX, int countY, int cardSides, JsonSkin skin)
         {
             if (this.boardImage == null)
             {
                 this.currentX = 0;
                 this.currentY = 0;
 
-                int w = CARD_WIDTH * countX * cardSides + spaceBeetweenCards * ((countX * cardSides) - 1);
-                int h = CARD_HEIGHT * countY + spaceBeetweenCards * (countY - 1);
+                int w = skin.Width * countX * cardSides + spaceBeetweenCards * ((countX * cardSides) - 1);
+                int h = skin.Height * countY + spaceBeetweenCards * (countY - 1);
 
                 boardImage = new Bitmap(w, h);
                 boardImage.SetResolution(300, 300);
@@ -128,7 +127,7 @@ namespace CardMasterExport.PrinterExport
                 this.boardImages.Add(this.boardImage);
             }
 
-            DrawCard(card, withBack);
+            DrawCard(card, withBack,skin);
 
             this.currentX++;
 
@@ -144,7 +143,7 @@ namespace CardMasterExport.PrinterExport
             }
         }
 
-        private void DrawCard(JsonCard card, bool withBack)
+        private void DrawCard(JsonCard card, bool withBack, JsonSkin skin)
         {
             Drawer drawer = null;
             Image cardFrontImage = null;
@@ -163,12 +162,12 @@ namespace CardMasterExport.PrinterExport
             cardFrontImage = drawer.DrawCard();
 
             Graphics g = Graphics.FromImage(this.boardImage);
-            g.DrawImage(cardFrontImage, new PointF((CARD_WIDTH + spaceX) * currentX, (CARD_HEIGHT + spaceY) * currentY));
+            g.DrawImage(cardFrontImage, new PointF((skin.Width + spaceX) * currentX, (skin.Height + spaceY) * currentY));
 
             if (withBack)
             {
                 cardBackImage = GetBackImage(card, skinsFile);
-                g.DrawImage(cardBackImage, new PointF((CARD_WIDTH + spaceX) * (currentX + 1), (CARD_HEIGHT + spaceY) * currentY));
+                g.DrawImage(cardBackImage, new PointF((skin.Width + spaceX) * (currentX + 1), (skin.Height + spaceY) * currentY));
             }
 
             g.Dispose();

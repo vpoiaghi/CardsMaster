@@ -1,6 +1,7 @@
 ﻿using CardMasterCard.Card;
 using CardMasterExport.Export;
 using CardMasterImageBuilder;
+using CardMasterSkin.Skins;
 using System;
 using System.Drawing;
 using System.IO;
@@ -19,7 +20,7 @@ namespace CardMasterExport.FileExport
             return (this.targetFolder != null);
         }
 
-        protected override void MakeCardExport(JsonCard card)
+        protected override void MakeCardExport(JsonCard card, JsonSkin skin)
         {
             Drawer drawer = null;
             Image img = null;

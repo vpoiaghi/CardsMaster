@@ -2,9 +2,11 @@
 using CardMasterExport.Export;
 using CardMasterExport.FileExport;
 using CardMasterExport.PrinterExport;
+using CardMasterSkin.Skins;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Threading;
 using System.Windows.Threading;
 
@@ -27,11 +29,12 @@ namespace CardMasterExport
         private ExportParameters parameters = null;
         protected List<JsonCard> cardsList = null;
         protected FileInfo skinsFile = null;
+        
 
         protected delegate void ProgressChangedEventSender(ProgressChangedArg arg);
 
         protected abstract bool BeforeCardsExport(ExportParameters parameters);
-        protected abstract void MakeCardExport(JsonCard card);
+        protected abstract void MakeCardExport(JsonCard card, JsonSkin skin);
         protected abstract void AfterCardsExport();
         protected abstract string GetProgressMessage(ProgressState state, int index, int total);
 
@@ -145,7 +148,9 @@ namespace CardMasterExport
 
                 foreach (JsonCard card in cards)
                 {
-                    MakeCardExport(card);
+                    List<JsonSkin> skins = JsonSkinsProject.LoadProject(skinsFile).Skins;
+                    JsonSkin skin = skins.Where(s => s.Name == card.FrontSkinName).Single();
+                    MakeCardExport(card,skin);
                     cardIndex = cardIndex + 1;
                     ShowProgress(cardIndex, cardsCount);
                 }

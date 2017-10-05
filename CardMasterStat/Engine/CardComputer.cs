@@ -53,7 +53,10 @@ namespace CardMasterStat
                 if (kind.Equals(Card.CardKind.Ninja))
                 {
                     foreach (Card.NatureCard nature in Enum.GetValues(typeof(Card.NatureCard)))
-                        toReturn.Add(kind.ToString()+" "+nature.ToString(), this.m_listCards.Where(c => c.Kind == kind && c.Nature==nature).Count());
+                    {
+                        toReturn.Add(kind.ToString() + " " + nature.ToString(), this.m_listCards.Where(c => c.Kind == kind && c.Nature == nature).Count());
+                    }
+                        
                 }
                 else
                 {

@@ -39,7 +39,7 @@ namespace CardMasterStat
             Vent,
             Foudre,
             Terre,
-            Special,
+            Spécial,
             Physique
         }
 
