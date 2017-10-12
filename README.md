@@ -14,19 +14,8 @@ Actuellement il n'y a aucn système de contrat de service entre les projets, cha
 
 ### Exportation
 
-* [TERMINÉ] Revoir le mode de communication entre les projets appelants et le projet Export
-Chaque mode d'export (carte par carte, planche) dispose de sa classe d'export spécifique pour traiter l'exportation.
-Mais j'ai laissé les projets appelant choisir et instancier ces classes plutôt que laisser le projet Export dispatcher entre ces différentes classes.
-Un seul type d'objet de paramétrage doit être envoyé au projet d'export et c'est le Parameters présent dans le projet CmdExport qu'il faudra déplacer dans le projet Export.
-
 * [EN COURS] Certains paramètres d'export sont en dur
   Taille des cartes, etc... les faire passer par l'obet Parameters à mettre en place
-
-* [EN COURS] Exportation des planches en pdf.
-
-### Cartes
-
-* Pouvoir gérer autant de champs custo que l'on veut avec un AnyJsonGetter et une map d'extrafields sur une Card
   
 ## Evolutions fonctionnelles
 
@@ -40,9 +29,6 @@ Un seul type d'objet de paramétrage doit être envoyé au projet d'export et c'
 * Revoir le menu du Manager
 En particulier la partie exportation, où y aurait désormait un seul item qui ouvre sur une boîte de dialogue de choix du type d'export et des paramètres d'export.
 
-* [EN COURS] Faire un outil de redimensionnement des images avec une mire, et prévisualisation du résultat. Quand on ouvre une image ex "Image1.jpg", une fois le redimensionnement fait,
-cela crée une copie en "Image1-original.jpg" et écrase le fichier "Image1.jpg" avec celle retaillée.
-
 * Impression
 Maintenant que la fonctionnalité est validée, voir comment elle sera intégrée déns l'ihm
   * Boîte de dialogue personnalisée ?
@@ -51,9 +37,9 @@ Maintenant que la fonctionnalité est validée, voir comment elle sera intégré
   
 ### Application  
 
-WARNING: SkinEditor
-A conceptualiser.
-
+<aside class="warning">
+     SkinEditor A conceptualiser.
+</aside>
 
 ## Bugs
 
