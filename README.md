@@ -36,10 +36,9 @@ Maintenant que la fonctionnalité est validée, voir comment elle sera intégré
   * Quel projet portera l'IHM de paramétrage (actuellement c'est le projet Export) ?
   
 ### Application  
-
-
+'''
  :warning: SkinEditor A conceptualiser.
-
+'''
 
 ## Bugs
 
