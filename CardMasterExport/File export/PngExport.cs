@@ -27,7 +27,8 @@ namespace CardMasterExport.FileExport
 
             string targetFolder = null;
 
-            lock (_lock){
+            lock (_lock)
+            {
                 targetFolder = this.targetFolder.FullName;
             }
 

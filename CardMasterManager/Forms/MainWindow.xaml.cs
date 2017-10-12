@@ -50,6 +50,7 @@ namespace CardMasterManager
             this.MenuItemExportBoardsToPngFile.IsEnabled = false;
             this.MenuItemPrintBoards.IsEnabled = false;
             this.MenuItemSaveAsJson.IsEnabled = false;
+            this.MenuItemExportGameCrafterToPngFile.IsEnabled = false;
 
 
             FilesChanged(false);
@@ -83,6 +84,7 @@ namespace CardMasterManager
                     this.MenuItemExportAllToPngFile.IsEnabled = true;
                     this.MenuItemExportBoardsToPngFile.IsEnabled = true;
                     this.MenuItemPrintBoards.IsEnabled = true;
+                    this.MenuItemExportGameCrafterToPngFile.IsEnabled = true;
                     debug.Text = cards.Count + " cards loaded";
                 }
             }
@@ -202,7 +204,7 @@ namespace CardMasterManager
             Dispatcher.BeginInvoke(new Action(delegate ()
             {
                 frontImage.Source = (ImageSource)converter.Convert(drawer.DrawCard(), null, null, System.Globalization.CultureInfo.CurrentCulture);
-                backCardImage.Source = (ImageSource)converter.Convert(drawer.DrawBackSideSkin(), null, null, System.Globalization.CultureInfo.CurrentCulture);
+                backCardImage.Source = (ImageSource)converter.Convert(drawer.DrawBackCard(), null, null, System.Globalization.CultureInfo.CurrentCulture);
             }));
         }
 
@@ -544,5 +546,20 @@ namespace CardMasterManager
             }
         }
 
+        private void MenuItemExportAllToGameCrafter_Click(object sender, RoutedEventArgs e)
+        {
+            List<JsonCard> cardsList = GridCardsListToJsonCardsList();
+
+            if (cardsList.Count > 0)
+            {
+                ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile(cardsFile, true));
+                parameters.exportFormat = Exporter.EXPORT_FORMAT_PNG;
+                parameters.exportMode = Exporter.EXPORT_GAME_CRAFTER;
+                parameters.WithBackSides = true;
+                parameters.TargetFolder = FolderDialog.SelectFolder();
+
+                Exporter.Export(this, parameters);
+            }
+        }
     }
 }

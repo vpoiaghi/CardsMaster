@@ -43,7 +43,8 @@
                         <Setter Property="BorderBrush" Value="AliceBlue" />
                     </Style>
                 </MenuItem.Resources>
-                <MenuItem Name="MenuItemExportAllToPngFile" Header="Exporter tout en .png" Click="MenuItemExportAllToPngFile_Click" />
+                <MenuItem Name="MenuItemExportAllToPngFile" Header="Exporter toutes les faces en .png" Click="MenuItemExportAllToPngFile_Click" />
+                <MenuItem Name="MenuItemExportGameCrafterToPngFile" Header="Exporter pour GameCrafter en .png" Click="MenuItemExportAllToGameCrafter_Click" />
                 <MenuItem Name="MenuItemExportBoardsToPngFile" Header="Exporter les planches .png" Click="MenuItemExportBoardsToPngFile_Click"/>
                 <MenuItem Name="MenuItemExportBoardsToPdfFile" Header="Exporter les planches .pdf" Click="MenuItemExportBoardsToPdfFile_Click"/>
             </MenuItem>

@@ -16,6 +16,7 @@ namespace CardMasterExport
     {
         public const string EXPORT_MODE_ALL = "all";
         public const string EXPORT_MODE_BOARD = "board";
+        public const string EXPORT_GAME_CRAFTER = "game_crafter";
 
         public const string EXPORT_FORMAT_PNG = "png";
         public const string EXPORT_FORMAT_PDF = "pdf";
@@ -100,6 +101,9 @@ namespace CardMasterExport
                             break;
                         case EXPORT_MODE_BOARD:
                             exporter = new PngBoardExport();
+                            break;
+                        case EXPORT_GAME_CRAFTER:
+                            exporter = new PngGameCrafterExport();
                             break;
                     }
                     break;

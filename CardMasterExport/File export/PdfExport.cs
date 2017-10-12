@@ -165,7 +165,7 @@ namespace CardMasterExport.FileExport
         private System.Drawing.Image GetBackImage(JsonCard card, FileInfo skinFile)
         {
             Drawer drawer = new Drawer(card, skinFile, null);
-            return drawer.DrawBackSideSkin();
+            return drawer.DrawBackCard();
         }
 
         private void SaveImage()

@@ -22,8 +22,8 @@ namespace CardMasterImageBuilder
             try
             {
                 this.card = card;
-                this.frontSkin = (new SkinFactory()).GetSkin(this.card, skinsFile, skinName, SkinFactory.SkinSide.FRONT);
-                this.backSideSkin = (new SkinFactory()).GetSkin(this.card, skinsFile, skinName, SkinFactory.SkinSide.BACK);
+                this.frontSkin = new SkinFactory().GetSkin(this.card, skinsFile, skinName, SkinFactory.SkinSide.FRONT);
+                this.backSideSkin = new SkinFactory().GetSkin(this.card, skinsFile, skinName, SkinFactory.SkinSide.BACK);
             }catch(SkinNotFoundException e)
             {
                //DO NOTHING
@@ -42,12 +42,12 @@ namespace CardMasterImageBuilder
             return DrawSkin(this.frontSkin);
         }
 
-        public Image DrawBackSideSkin()
+        public Image DrawBackCard()
         {
             return DrawSkin(this.backSideSkin);
         }
 
-        public Image DrawSkin(Skin skin)
+        private Image DrawSkin(Skin skin)
         {
             this.img = null;
 
