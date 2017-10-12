@@ -37,9 +37,9 @@ Maintenant que la fonctionnalité est validée, voir comment elle sera intégré
   
 ### Application  
 
-<aside class="warning">
-     SkinEditor A conceptualiser.
-</aside>
+
+ :warning: SkinEditor A conceptualiser.
+
 
 ## Bugs
 
