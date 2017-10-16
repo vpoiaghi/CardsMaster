@@ -85,7 +85,7 @@ namespace CardMasterManager
                     this.MenuItemExportBoardsToPngFile.IsEnabled = true;
                     this.MenuItemPrintBoards.IsEnabled = true;
                     this.MenuItemExportGameCrafterToPngFile.IsEnabled = true;
-                    debug.Text = cards.Count + " cards loaded";
+                    
                 }
             }
         }
@@ -231,6 +231,7 @@ namespace CardMasterManager
                 parameters.TargetFolder = FolderDialog.SelectFolder();
 
                 Exporter.Export(this, parameters);
+                NotifyExportDone();
             }
 
         }
@@ -249,6 +250,7 @@ namespace CardMasterManager
                 parameters.TargetFolder = FolderDialog.SelectFolder();
 
                 Exporter.Export(this, parameters);
+                NotifyExportDone();
             }
 
         }
@@ -278,6 +280,7 @@ namespace CardMasterManager
             {
                 GridCardsList.Add(card);
             }
+            debug.Text = GridCardsList.Count + " cards loaded";
 
 
         }
@@ -311,6 +314,7 @@ namespace CardMasterManager
                     parameters.exportMode = Exporter.EXPORT_MODE_BOARD;
 
                     Exporter.Export(this, parameters);
+                    NotifyExportDone();
                 }
             }
 
@@ -472,6 +476,7 @@ namespace CardMasterManager
             this.MenuItemSaveAs.IsEnabled = true;
             this.MenuItemSaveAsJson.IsEnabled = true;
             this.filesChanged = changed;
+            debug.Text = GridCardsList.Count + " cards loaded";
         }
 
         private bool AskIfSaveBefore()
@@ -542,6 +547,7 @@ namespace CardMasterManager
                     parameters.TargetFile = pdfFile;
 
                     Exporter.Export(this, parameters);
+                    NotifyExportDone();
                 }
             }
         }
@@ -559,7 +565,15 @@ namespace CardMasterManager
                 parameters.TargetFolder = FolderDialog.SelectFolder();
 
                 Exporter.Export(this, parameters);
+                NotifyExportDone();
             }
+
+          
+        }
+
+        private void NotifyExportDone()
+        {
+            debug.Text = "Collection Exported";
         }
     }
 }

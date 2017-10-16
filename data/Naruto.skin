@@ -13,7 +13,7 @@
 		"Feu": "feu",
 		"Foudre": "foudre",
 		"Eau": "eau",
-		"Physique": "blanc_cassé"
+		"Physique": "Parchemin"
 	},
 	"MapRareteColor" : {
 		"": "Black",
@@ -92,7 +92,7 @@
 				"Comment" : "Zone NOM",
 				"Type" : "SETextArea",
 				"X":89,
-				"Y":72,
+				"Y":74,
 				"Width": 680,
 				"Height" : 80,
 				"FontName" : "Bell MT",
@@ -200,7 +200,7 @@
 			{
 				"Comment" : "Zone Texte Citation",
 				"Type" : "SETextArea",
-				"X":82,
+				"X":105,
 				"Y":930,
 				"Width": 628,
 				"Height" : 45,
@@ -213,9 +213,9 @@
 				"VerticalAlign" : "Center"
 			},
 			{
-				"Comment" : "Zone Texte StringField 1",
+				"Comment" : "Zone Texte StringField 1 Collection",
 				"Type" : "SETextArea",
-				"X":40,
+				"X":65,
 				"Y":982,
 				"Width": 700,
 				"Height" : 85,
