@@ -96,7 +96,7 @@
 				"Width": 680,
 				"Height" : 80,
 				"FontName" : "Bell MT",
-				"FontSize" : 10,
+				"FontSize" : 9,
 				"Style" : "Bold",
 				"NameAttribute" : "Name",
 				"VerticalAlign" : "Center"
@@ -141,7 +141,7 @@
 				"Type":"SECurvedRectangle",
 				"X":78,
 				"Y":607,
-				"Width": 678,
+				"Width": 670,
 				"Height" : 80,
 				"CurveSize":25,
 				"Background":"Pierre 01",

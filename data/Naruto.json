@@ -6098,6 +6098,37 @@
           "Description": "<<Instantané>> Vous piochez 3 cartes"
         }
       ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Shizuma Hoshigaki",
+      "Rank": "",
+      "Team": "7 épéistes de l'eau",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "6",
+      "Attack": "3",
+      "Defense": "3",
+      "Citation": null,
+      "Comments": null,
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": null,
+      "StringField3": null,
+      "StringField4": null,
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Sphère d'eau : Empêche un cible d'attaquer pendant 1 tour"
+        }
+      ]
     }
   ]
 }
