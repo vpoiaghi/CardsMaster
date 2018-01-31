@@ -1173,7 +1173,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>   Détruit l'adversaire d'une puissance frappe"
+          "Description": "<<Instantané>>   Détruit l'adversaire d'une puissante frappe"
         },
         {
           "Description": "<<activate>>  Invoque katsuyu"
@@ -5319,7 +5319,7 @@
       "Kind": "Ninja",
       "Name": "Shikadai Nara",
       "Rank": "",
-      "Team": "Equipe Moegi",
+      "Team": "Equipe 10",
       "Chakra": "Spécial",
       "Element": "Ombre",
       "Cost": "2",
@@ -5350,7 +5350,7 @@
       "Kind": "Ninja",
       "Name": "Chocho Akimichi",
       "Rank": "",
-      "Team": "Equipe Moegi",
+      "Team": "Equipe 10",
       "Chakra": "Physique",
       "Element": "Physique",
       "Cost": "1",
@@ -5373,7 +5373,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permannent>>  Protection"
+          "Description": "<<Permanent>>  Protection"
         }
       ]
     },
@@ -5381,7 +5381,7 @@
       "Kind": "Ninja",
       "Name": "Inojin Yamanaka",
       "Rank": "",
-      "Team": "Equipe Moegi",
+      "Team": "Equipe 10",
       "Chakra": "Physique",
       "Element": "Physique",
       "Cost": "2",
@@ -5446,7 +5446,7 @@
       "Kind": "Ninja",
       "Name": "Denki Kaminarimon",
       "Rank": "",
-      "Team": "Elèves de l'académie",
+      "Team": "Equipe 5",
       "Chakra": "Physique",
       "Element": "Physique",
       "Cost": "1",
@@ -5477,7 +5477,7 @@
       "Kind": "Ninja",
       "Name": "Iwabee Yuino",
       "Rank": "",
-      "Team": "Elèves de l'académie",
+      "Team": "Equipe 5",
       "Chakra": "Terre",
       "Element": "Terre",
       "Cost": "1",
@@ -5508,7 +5508,7 @@
       "Kind": "Ninja",
       "Name": "Sumire Kakei",
       "Rank": "",
-      "Team": "Elèves de l'académie",
+      "Team": "Equipe 15",
       "Chakra": "Feu",
       "Element": "Feu",
       "Cost": "4",
@@ -5532,6 +5532,68 @@
       "Powers": [
         {
           "Description": "<<Permanent>> Stratège : Les ennemis infligent 2 dégats de moins"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Wasabi Izuno",
+      "Rank": "",
+      "Team": "Equipe 15",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "3",
+      "Citation": null,
+      "Comments": null,
+      "Nb": null,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": null,
+      "StringField3": null,
+      "StringField4": null,
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Couverture du chat : Attaque 2 fois par tour"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Namida Suzumeno",
+      "Rank": "",
+      "Team": "Equipe 15",
+      "Chakra": "Spécial",
+      "Element": "Son",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
+      "Citation": null,
+      "Comments": null,
+      "Nb": null,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": null,
+      "StringField3": null,
+      "StringField4": null,
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>> Onde sonore : les ninjas ennemis ne peuvent pas attaquer au prochain tour"
         }
       ]
     },
@@ -5568,9 +5630,195 @@
     },
     {
       "Kind": "Ninja",
+      "Name": "Hoki Taketori",
+      "Rank": "",
+      "Team": "Equipe 25",
+      "Chakra": "Physique",
+      "Element": "Physique",
+      "Cost": "2",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": null,
+      "Comments": null,
+      "Nb": null,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": null,
+      "StringField3": null,
+      "StringField4": null,
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>>Charge"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Renga Kokubo",
+      "Rank": "",
+      "Team": "Equipe 25",
+      "Chakra": "Physique",
+      "Element": "Physique",
+      "Cost": "2",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": null,
+      "Comments": null,
+      "Nb": null,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": null,
+      "StringField3": null,
+      "StringField4": null,
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>>Charge"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Hako Kuroi",
+      "Rank": "",
+      "Team": "Equipe 25",
+      "Chakra": "Physique",
+      "Element": "Physique",
+      "Cost": "2",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": null,
+      "Comments": null,
+      "Nb": null,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": null,
+      "StringField3": null,
+      "StringField4": null,
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>> Projete son lapin sur l'ennemi et inflige 1D4 de dégats"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Enko Onikuma",
+      "Rank": "",
+      "Team": "Equipe 40",
+      "Chakra": "Physique",
+      "Element": "Physique",
+      "Cost": "2",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": null,
+      "Comments": null,
+      "Nb": null,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": null,
+      "StringField3": null,
+      "StringField4": null,
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Charge"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Doshu Goetsu",
+      "Rank": "",
+      "Team": "Equipe 40",
+      "Chakra": "Physique",
+      "Element": "Physique",
+      "Cost": "2",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": null,
+      "Comments": null,
+      "Nb": null,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": null,
+      "StringField3": null,
+      "StringField4": null,
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Charge"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Tsuru Itoi",
+      "Rank": "",
+      "Team": "Equipe 40",
+      "Chakra": "Physique",
+      "Element": "Physique",
+      "Cost": "2",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": null,
+      "Comments": null,
+      "Nb": null,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": null,
+      "StringField3": null,
+      "StringField4": null,
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Charge"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
       "Name": "Metal Lee",
       "Rank": "",
-      "Team": "Elèves de l'académie",
+      "Team": "Equipe 5",
       "Chakra": "Physique",
       "Element": "Physique",
       "Cost": "2",
