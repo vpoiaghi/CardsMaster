@@ -15,6 +15,7 @@ using System.IO;
 using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Media;
 
 namespace CardMasterManager
@@ -36,7 +37,6 @@ namespace CardMasterManager
 
         private DateTime d1;
         private DateTime d2;
-        private bool isSearching = false;
 
         public DrawingQuality DQuality { get; set; } = new DrawingQuality();
 
@@ -172,7 +172,7 @@ namespace CardMasterManager
         private void cardGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             int selectedIndex = cardGrid.SelectedIndex;
-            if ((cardsFile != null) && (cardGrid.SelectedItem != null) && !isSearching)
+            if ((cardsFile != null) && (cardGrid.SelectedItem != null))
             {
                 if (selectedIndex < GridCardsList.Count)
                 {
@@ -342,37 +342,7 @@ namespace CardMasterManager
             searchText.Text = "";
         }
 
-        private void filterDataGrid(object sender, TextChangedEventArgs e)
-        {
-            if ((GridCardsList.Count > 0) && (!isSearching))
-            {
-                String filterText = ((TextBox)sender).Text;
-                if (filterText.Equals(null) || filterText.Equals(""))
-                {
-                    Dispatcher.BeginInvoke(new Action(delegate ()
-                    {
-                        isSearching = true;
-                        cardGrid.Items.Filter = null;
-                        isSearching = false;
-                    }));
-                }
-                else
-                {
-                    Dispatcher.BeginInvoke(new Action(delegate ()
-                    {
-                        isSearching = true;
-                        cardGrid.Items.Filter = (c) =>
-                        {
-                            return CardMatcher.Matches((Card)c, filterText);
-                        };
-                        isSearching = false;
-                    }));
-                    
-                }
-            }
-          
-        }
-
+       
         private void DisplayConfigurator(object sender, RoutedEventArgs e)
         {
             GridConfigurator form = new GridConfigurator(cardGrid);
@@ -574,6 +544,32 @@ namespace CardMasterManager
         private void NotifyExportDone()
         {
             debug.Text = "Collection Exported";
+        }
+
+        private void searchDataGrid(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            if ((GridCardsList.Count > 0) && (e.Key==Key.Enter))
+            {
+                String filterText = ((TextBox)sender).Text;
+                if (filterText.Equals(null) || filterText.Equals(""))
+                {
+                    Dispatcher.BeginInvoke(new Action(delegate ()
+                    {
+                        cardGrid.Items.Filter = null;
+                    }));
+                }
+                else
+                {
+                    Dispatcher.BeginInvoke(new Action(delegate ()
+                    {
+                        cardGrid.Items.Filter = (c) =>
+                        {
+                            return CardMatcher.Matches((Card)c, filterText);
+                        };
+                    }));
+
+                }
+            }
         }
     }
 }

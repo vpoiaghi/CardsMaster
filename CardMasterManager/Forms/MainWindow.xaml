@@ -70,7 +70,7 @@
             <DockPanel DockPanel.Dock="Right">
                 <StackPanel>
                     <StackPanel Orientation="Horizontal" Height="19" Width="1296" Margin="5">
-                        <TextBox x:Name="searchText" Text="" Width="300" TextChanged="filterDataGrid" Background="AliceBlue"/>
+                        <TextBox x:Name="searchText" Text="" Width="300" KeyDown="searchDataGrid" Background="AliceBlue"/>
                         <Separator Width="3" Background="Transparent"/>
                         <Button x:Name="clearSearchButton" Width="19" Click="ClearSearch" Background="AliceBlue">
                             <TextBlock>X</TextBlock>

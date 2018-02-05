@@ -6377,6 +6377,68 @@
           "Description": "<<Permanent>> Sphère d'eau : Empêche un cible d'attaquer pendant 1 tour"
         }
       ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "XXX2",
+      "Rank": "",
+      "Team": "Le Ruban Blanc",
+      "Chakra": "Eau",
+      "Element": "Glace",
+      "Cost": "4",
+      "Attack": "3",
+      "Defense": "2",
+      "Citation": "Hyoton",
+      "Comments": null,
+      "Nb": null,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": null,
+      "StringField3": null,
+      "StringField4": null,
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>> Entraves de glace. Tant qu'il est vivant, le ninja ennemi ciblé ne peut attaquer"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "XXX1",
+      "Rank": "",
+      "Team": "Le Ruban Blanc",
+      "Chakra": "Eau",
+      "Element": "Glace",
+      "Cost": "4",
+      "Attack": "3",
+      "Defense": "2",
+      "Citation": null,
+      "Comments": null,
+      "Nb": null,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": null,
+      "StringField3": null,
+      "StringField4": null,
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power"
+        }
+      ]
     }
   ]
 }
