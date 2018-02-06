@@ -3326,7 +3326,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Ressuscite 2 allié du cimetière et les remets en jeu"
+          "Description": "<<activate>>  Ressuscite 2 allié du cimetière et les remets dans la main du joueur"
         }
       ]
     },
@@ -5249,7 +5249,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>>  Jûken : Gagne +1 ATK lorsqu'il attaque"
+          "Description": "<<Permanent>>  Jûken : Gagne +1 ATK lorsqu'il attaque"
         }
       ]
     },
@@ -6380,7 +6380,7 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "XXX2",
+      "Name": "Ruban-2",
       "Rank": "",
       "Team": "Le Ruban Blanc",
       "Chakra": "Eau",
@@ -6411,7 +6411,7 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "XXX1",
+      "Name": "Ruban-1",
       "Rank": "",
       "Team": "Le Ruban Blanc",
       "Chakra": "Eau",
@@ -6436,7 +6436,69 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power"
+          "Description": "<<Permanent>> gagne +2 PV quand il défend"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Policier de Konoha",
+      "Rank": "",
+      "Team": "Police",
+      "Chakra": "Feu",
+      "Element": null,
+      "Cost": "0",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": null,
+      "Comments": null,
+      "Nb": 2,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": null,
+      "StringField3": null,
+      "StringField4": null,
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Protection"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Kotaro Fuma",
+      "Rank": "",
+      "Team": "Police",
+      "Chakra": "Physique",
+      "Element": null,
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "1",
+      "Citation": null,
+      "Comments": null,
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": null,
+      "StringField3": null,
+      "StringField4": null,
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>> Invoque 2 policiers de Konoha"
         }
       ]
     }

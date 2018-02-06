@@ -340,6 +340,10 @@ namespace CardMasterManager
         private void ClearSearch(object sender, RoutedEventArgs e)
         {
             searchText.Text = "";
+            Dispatcher.BeginInvoke(new Action(delegate ()
+            {
+                cardGrid.Items.Filter = null;
+            }));
         }
 
        
