@@ -1,5 +1,6 @@
 ﻿using CardMasterCard.Card;
 using CardMasterImageBuilder.Skins;
+using CardMasterSkin.Skins;
 using System;
 using System.Drawing;
 using System.IO;
@@ -27,6 +28,20 @@ namespace CardMasterImageBuilder
             }catch(SkinNotFoundException e)
             {
                //DO NOTHING
+            }
+        }
+
+        public Drawer(JsonCard card, JsonSkinsProject jsonSkinsProject, String skinsFilePath, String skinName)
+        {
+            try
+            {
+                this.card = card;
+                this.frontSkin = new SkinFactory().GetSkin(this.card, jsonSkinsProject,skinsFilePath, skinName, SkinFactory.SkinSide.FRONT);
+                this.backSideSkin = new SkinFactory().GetSkin(this.card, jsonSkinsProject, skinsFilePath, skinName, SkinFactory.SkinSide.BACK);
+            }
+            catch (SkinNotFoundException e)
+            {
+                //DO NOTHING
             }
         }
 

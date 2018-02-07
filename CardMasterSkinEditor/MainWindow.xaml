@@ -5,8 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CardMasterSkinEditor"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow"  Height="960" Width="1747">
+
+    <StackPanel Background="AliceBlue">
+
+        <Menu Background="AliceBlue">
+            <MenuItem Header="_Fichier" Background="AliceBlue">
+                <MenuItem.Resources>
+                    <Style TargetType="{x:Type MenuItem}">
+                        <Setter Property="Background" Value="AliceBlue" />
+                        <Setter Property="BorderBrush" Value="AliceBlue" />
+                    </Style>
+                </MenuItem.Resources>
+                <MenuItem Name="MenuItemOpen" Header="_Ouvrir" Click="MenuItemOpen_Click"/>
+                <MenuItem Name="MenuItemSave" Header="_Enregistrer" Click="MenuItemSave_Click" />
+                <MenuItem Name="MenuItemExit" Header="_Quitter" Click="MenuItemExit_Click" />
+            </MenuItem>
+        </Menu>
+
+        <DockPanel LastChildFill="True">
+
+            <DockPanel DockPanel.Dock="Left">
+                <Border Width="412.5" Height="562.5" Margin="15,6,15,0" DockPanel.Dock="Top" BorderThickness="1" BorderBrush="#FF000000">
+                    <Image Name="cardImage"></Image>
+                </Border>
+
+                <Border Width="206.2" Height="281.2" Margin="15,6,15,0" DockPanel.Dock="Bottom" BorderThickness="1" BorderBrush="#FF000000">
+                    <Image Name="backCardImage"/>
+                </Border>
+
+            </DockPanel>
+            <StackPanel DockPanel.Dock="Right">
+                <Button x:Name="refreshCard" Width="40" Height="20" Click="refresh" Background="AliceBlue" HorizontalAlignment="Left">
+                    <TextBlock>Refresh</TextBlock>
+                </Button>
+            </StackPanel>
+        </DockPanel>
+    </StackPanel>
 </Window>

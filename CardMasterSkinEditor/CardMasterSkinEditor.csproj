@@ -41,6 +41,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -101,6 +102,24 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Logo SkinEditor.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CardMasterCard\CardMasterCard.csproj">
+      <Project>{1BA2630B-04AB-4910-8792-04E48F2319DB}</Project>
+      <Name>CardMasterCard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CardMasterCommon\CardMasterCommon.csproj">
+      <Project>{38CDB275-FF7F-48A8-8CAB-6C582E2540AA}</Project>
+      <Name>CardMasterCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CardMasterImageBuilder\CardMasterImageBuilder.csproj">
+      <Project>{65056A8A-D3DE-467D-AC89-31B3A051099F}</Project>
+      <Name>CardMasterImageBuilder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CardMasterSkin\CardMasterSkin.csproj">
+      <Project>{8E132EEF-1E9C-4B96-8BF7-A513AD1E4EC7}</Project>
+      <Name>CardMasterSkin</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

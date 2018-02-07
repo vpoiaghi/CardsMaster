@@ -39,6 +39,31 @@ namespace CardMasterImageBuilder
 
             return skin;
         }
+
+        public Skin GetSkin(JsonCard jsonCard, JsonSkinsProject mySkinsProject, String currentSkinFilePath, String skinName, SkinSide side)
+        {
+            Skin skin = null;
+
+            jsonSkinsProject = mySkinsProject;
+
+            if (jsonSkinsProject != null)
+            {
+                DirectoryInfo resourcesDirectory = new DirectoryInfo(Path.Combine(currentSkinFilePath, RESOURCES_DIRECTORY_NAME));
+                BuilderRegister.getInstance().Register(new BuilderParameter(resourcesDirectory, jsonSkinsProject));
+                try
+                {
+                    skin = GetSkin(jsonCard, side);
+                }
+                catch (SkinNotFoundException e)
+                {
+                    throw e;
+                }
+            }
+
+            return skin;
+        }
+
+
         public enum SkinSide
         {
             FRONT,
