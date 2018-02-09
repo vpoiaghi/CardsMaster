@@ -91,7 +91,7 @@ namespace CardMasterSkinEditor
 
         private void MenuItemSave_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("Non implémenté");
         }
 
         private void MenuItemExit_Click(object sender, RoutedEventArgs e)
