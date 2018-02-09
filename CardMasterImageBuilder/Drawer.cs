@@ -68,7 +68,7 @@ namespace CardMasterImageBuilder
 
             if (skin != null)
             {
-                InitBasicImage();
+                InitBasicImage(skin);
 
                 foreach (SkinElement e in skin.Elements)
                 {
@@ -82,9 +82,9 @@ namespace CardMasterImageBuilder
             return this.img;
         }
 
-        private void InitBasicImage()
+        private void InitBasicImage(Skin skin)
         {
-            this.img = new Bitmap(this.frontSkin.Width, this.frontSkin.Height);
+            this.img = new Bitmap(skin.Width, skin.Height);
             this.img.SetResolution(300, 300);
 
             this.g = Graphics.FromImage(img);
