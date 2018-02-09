@@ -19,7 +19,11 @@
                 </MenuItem.Resources>
                 <MenuItem Name="MenuItemOpen" Header="_Ouvrir" Click="MenuItemOpen_Click"/>
                 <MenuItem Name="MenuItemSave" Header="_Enregistrer" Click="MenuItemSave_Click" />
+                 <MenuItem Name="MenuItemReload" Header="_Reload File" Click="reload"/>
                 <MenuItem Name="MenuItemExit" Header="_Quitter" Click="MenuItemExit_Click" />
+            </MenuItem>
+            <MenuItem Header="_Refresh" Background="AliceBlue" Click="refresh">
+                
             </MenuItem>
         </Menu>
 
@@ -36,9 +40,30 @@
 
             </DockPanel>
             <StackPanel DockPanel.Dock="Right">
-                <Button x:Name="refreshCard" Width="40" Height="20" Click="refresh" Background="AliceBlue" HorizontalAlignment="Left">
-                    <TextBlock>Refresh</TextBlock>
-                </Button>
+                <Label>Epaisseur des bordures internes (en px)</Label>
+                <TextBox Name="borderWidthTextBox" Width="45" HorizontalAlignment="Left"></TextBox>
+                <Separator></Separator>
+                <TabControl Name="tabControl">
+                    <TabItem Header="Onglet 1">
+                        <StackPanel>
+                            <Separator Width="186" HorizontalAlignment="Left"></Separator>
+                            <Label>Hauteur des cartes (en px)</Label>
+                            <TextBox x:Name="skinHeightTextBox0" Width="45" HorizontalAlignment="Left"/>
+                            <Label>Largeur des cartes (en px)</Label>
+                            <TextBox Name="skinWidthTextBox0" Width="45" HorizontalAlignment="Left"></TextBox>
+                        </StackPanel>
+                    </TabItem>
+                    <TabItem Header="Onglet2">
+                        <StackPanel>
+                            <Separator Width="186" HorizontalAlignment="Left"></Separator>
+                            <Label>Hauteur des cartes (en px)</Label>
+                            <TextBox x:Name="skinHeightTextBox1" Width="45" HorizontalAlignment="Left"/>
+                            <Label>Largeur des cartes (en px)</Label>
+                            <TextBox Name="skinWidthTextBox1" Width="45" HorizontalAlignment="Left"></TextBox>
+                        </StackPanel>
+                    </TabItem>
+                </TabControl>
+               
             </StackPanel>
         </DockPanel>
     </StackPanel>

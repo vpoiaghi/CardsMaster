@@ -49,36 +49,45 @@ namespace CardMasterSkinEditor
                 skinFile = new FileInfo(currentSkinFilePath);
                 currentSkinDirectoryFullName=skinFile.Directory.FullName;
                 jsonSkinsProject = JsonSkinsProject.LoadProject(skinFile);
-                BuildTemplate();
+                cardTemplate = CardBuilder.BuildTemplate();
                 RefreshImages();
-               
+                LoadUI();
             }
         }
 
-        private void BuildTemplate()
+        private void LoadUI()
         {
-            cardTemplate = new JsonCard();
-            cardTemplate.Attack = "4";
-            cardTemplate.Cost = "6";
-            cardTemplate.Defense = "3";
-            cardTemplate.Citation = "texte citation";
-            cardTemplate.Chakra = "Spécial";
-            cardTemplate.Background = null;
-            cardTemplate.Rank = "Rank";
-            cardTemplate.Element = "Eau";
-            cardTemplate.Kind = "Ninja";
-            cardTemplate.Name = "Card Name";
-            cardTemplate.Powers = new List<JsonPower>();
-            cardTemplate.BackSkinName = "BackSkin1";
-            cardTemplate.FrontSkinName = "FrontSkin1";
-            cardTemplate.BackSide = "Back-Draw";
-            cardTemplate.Team = "Equipe";
-            cardTemplate.StringField1 = "<<Konoha>>Naruto Shippuden";
-            JsonPower p1 = new JsonPower(); p1.Description = "<<Permanent>>  Ligne courte pouvoir 1";
-            JsonPower p2 = new JsonPower(); p2.Description = "<<activate>>  Ceci est une ligne de pouvoir avec un texte assez long pour occuper plusieurs lignes";
-            cardTemplate.Powers.Add(p1);
-            cardTemplate.Powers.Add(p2);
+            borderWidthTextBox.Text = jsonSkinsProject.BorderWidth.Value.ToString();
+            for (int i = 0; i < jsonSkinsProject.Skins.Count; i++)
+            {
+               
+                JsonSkin currenSkin = jsonSkinsProject.Skins[i];
+                ((TabItem)tabControl.Items.GetItemAt(i)).Header=currenSkin.Name;
+                
+                JsonSkin currentSkin = jsonSkinsProject.Skins.Where(s => s.Name.Equals(currenSkin.Name)).Single();
+                ((TextBox)FindName("skinHeightTextBox" +i)).Text = currentSkin.Height.ToString();
+                ((TextBox)FindName("skinWidthTextBox" + i)).Text = currentSkin.Width.ToString();
+            }
+
+          
         }
+
+
+        private void UpdateJsonSkinProject()
+        {
+            jsonSkinsProject.BorderWidth = Int16.Parse(borderWidthTextBox.Text);
+            for(int i =0; i < tabControl.Items.Count; i++)
+            {
+                TabItem currentItem = ((TabItem)tabControl.Items.GetItemAt(i));
+                JsonSkin currentSkin = jsonSkinsProject.Skins.Where(s => s.Name.Equals(currentItem.Header)).Single();
+                currentSkin.Height = Int16.Parse(((TextBox)FindName("skinHeightTextBox" + i)).Text);
+                currentSkin.Width = Int16.Parse(((TextBox)FindName("skinWidthTextBox" + i)).Text);
+            }
+
+        }
+
+
+
 
         private void MenuItemSave_Click(object sender, RoutedEventArgs e)
         {
@@ -91,8 +100,9 @@ namespace CardMasterSkinEditor
         }
         private void RefreshImages()
         {
+
             Drawer drawer = new Drawer(cardTemplate, jsonSkinsProject, currentSkinDirectoryFullName, null);
-            drawer.Quality = this.DQuality;
+            drawer.Quality = DQuality;
 
             //Refresh Image Component
             DrawingImageToImageSourceConverter converter = new DrawingImageToImageSourceConverter();
@@ -105,8 +115,16 @@ namespace CardMasterSkinEditor
 
         private void refresh(object sender, RoutedEventArgs e)
         {
+            UpdateJsonSkinProject();
+            RefreshImages();
+        }
+
+        private void reload(object sender, RoutedEventArgs e)
+        {
             skinFile = new FileInfo(currentSkinFilePath);
             RefreshImages();
         }
+
+       
     }
 }

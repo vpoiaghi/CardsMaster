@@ -600,7 +600,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Ses attaques ne subissent pas de contre attaque"
+          "Description": "<<Permanent>>  Ses attaques ne subissent pas de contre-attaque"
         }
       ]
     },
@@ -1994,7 +1994,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>>  Ressuscite 3 allié du cimetière lorsqu'il meure"
+          "Description": "<<Spécial>>  Ressuscite 3 ninjas de n'importe quel cimetière lorsqu'il meure et les mets en jeu"
         }
       ]
     },
@@ -2614,7 +2614,7 @@
       "Element": "Foudre",
       "Cost": "5",
       "Attack": "0",
-      "Defense": "5",
+      "Defense": "3",
       "Citation": "Shimagame",
       "Comments": "",
       "Nb": 2,
@@ -2648,7 +2648,7 @@
       "Element": "Foudre",
       "Cost": "5",
       "Attack": "0",
-      "Defense": "5",
+      "Defense": "3",
       "Citation": "Unraikyô",
       "Comments": "",
       "Nb": 2,
@@ -2679,7 +2679,7 @@
       "Element": "Genjutsu",
       "Cost": "5",
       "Attack": "0",
-      "Defense": "5",
+      "Defense": "3",
       "Citation": "Kamui",
       "Comments": "",
       "Nb": 2,
@@ -2712,7 +2712,7 @@
       "Chakra": "Terre",
       "Element": "Sable",
       "Cost": "5",
-      "Attack": "2",
+      "Attack": "1",
       "Defense": "3",
       "Citation": "Shukaku No Tate",
       "Comments": "",
@@ -2731,10 +2731,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Défense ultime : Réduit les dégâts reçus de 4"
+          "Description": "<<Permanent>>  Défense ultime : Réduit chaque dégât reçu de 3 (s'applique avant le décompte de PV)"
         },
         {
-          "Description": "<<Spécial>>  Le tombeau du désert : Si Gaara élimine un Ninja, il peut détruire n'importe quel autre Ninja"
+          "Description": "<<Spécial>>  Le tombeau du désert : Si Gaara élimine un Ninja et qu'il survit au combat, peut détruire n'importe quel autre Ninja"
         }
       ]
     },
@@ -2813,7 +2813,7 @@
       "Citation": "Kurohigi Kiki Ippatsu",
       "Comments": "Carte à part",
       "Nb": 1,
-      "BackSide": "Back-Draw",
+      "BackSide": "Back-Select3",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
       "StringField1": "<<Konoha>>Naruto",
@@ -2982,7 +2982,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Suiton, Le grand typhon : engloutie 2 ennemis sous les flots."
+          "Description": "<<Activate>> Suiton, Le grand typhon : englouti 1 ennemis sous les flots."
         }
       ]
     },
@@ -4150,7 +4150,7 @@
       "Element": "Eau",
       "Cost": "5",
       "Attack": "0",
-      "Defense": "5",
+      "Defense": "3",
       "Citation": "Naruto Rameeeeeen",
       "Comments": "2 exemplaires",
       "Nb": 2,
@@ -4202,7 +4202,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas en affinité avec l'eau gagnent +3/+3"
+          "Description": "<<Permanent>>  Les ninjas en affinité avec l'eau gagnent +1/+1"
         }
       ]
     },
@@ -4233,7 +4233,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas physiques gagnent +3/+3"
+          "Description": "<<Permanent>>  Les ninjas physiques gagnent +1/+1"
         }
       ]
     },
@@ -4264,7 +4264,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas en affinité avec le vent gagnent +3/+3"
+          "Description": "<<Permanent>>  Les ninjas en affinité avec le vent gagnent +1/+1"
         }
       ]
     },
@@ -4295,7 +4295,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas en affinité avec la foudre gagnent +3/+3"
+          "Description": "<<Permanent>>  Les ninjas en affinité avec la foudre gagnent +1/+1"
         }
       ]
     },
@@ -4326,7 +4326,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas en affinité avec la terre gagnent +3/+3"
+          "Description": "<<Permanent>>  Les ninjas en affinité avec la terre gagnent +1/+1"
         }
       ]
     },
@@ -4357,7 +4357,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas en affinité spéciale gagnent +3/+3"
+          "Description": "<<Permanent>>  Les ninjas en affinité spéciale gagnent +1/+1"
         }
       ]
     },
@@ -4388,7 +4388,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas en affinité avec le feu gagnent +3/+3"
+          "Description": "<<Permanent>>  Les ninjas en affinité avec le feu gagnent +1/+1"
         }
       ]
     },
@@ -4667,7 +4667,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Inflige 2 dégâts àu corps à corps au ninja ciblé et reçoit normalement les dégats (Utilisable 1 fois par tour)"
+          "Description": "<<activate>>  Inflige 2 dégâts au corps à corps au ninja ciblé et reçoit normalement les dégats (Utilisable 1 fois par tour)"
         }
       ]
     },
@@ -4729,7 +4729,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Attaque normale au corps à corps"
+          "Description": "<<Permanent>>  Attaque normale au corps à corps (1 fois par tour)"
         }
       ]
     },
@@ -4791,7 +4791,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Inflige 2 dégât à distance au ninja ciblé (utilisable 1 fois par tour)"
+          "Description": "<<activate>>  Inflige 2 dégâts au corps à corps au ninja ciblé (utilisable 1 fois par tour)"
         }
       ]
     },
@@ -4986,7 +4986,7 @@
           "Description": "<<activate>>  Scelle un ninja définitivement"
         },
         {
-          "Description": "<<Spécial>>  Consomme 6 chakras ou inflige 6 dommages au Héro. (Utilisable 1 fois par tour)"
+          "Description": "<<Spécial>>  A chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au Héro."
         }
       ]
     },
@@ -5531,7 +5531,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Stratège : Les ennemis infligent 2 dégats de moins"
+          "Description": "<<Permanent>> Stratège : Les ennemis infligent 1 dégats de moins"
+        },
+        {
+          "Description": "<<Activate>> Stratège : Invoque Nué"
         }
       ]
     },
@@ -5547,7 +5550,7 @@
       "Defense": "3",
       "Citation": null,
       "Comments": null,
-      "Nb": null,
+      "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
@@ -5578,7 +5581,7 @@
       "Defense": "3",
       "Citation": null,
       "Comments": null,
-      "Nb": null,
+      "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
@@ -5640,7 +5643,7 @@
       "Defense": "2",
       "Citation": null,
       "Comments": null,
-      "Nb": null,
+      "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
@@ -5671,7 +5674,7 @@
       "Defense": "2",
       "Citation": null,
       "Comments": null,
-      "Nb": null,
+      "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
@@ -5702,7 +5705,7 @@
       "Defense": "2",
       "Citation": null,
       "Comments": null,
-      "Nb": null,
+      "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
@@ -5733,7 +5736,7 @@
       "Defense": "2",
       "Citation": null,
       "Comments": null,
-      "Nb": null,
+      "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
@@ -5764,7 +5767,7 @@
       "Defense": "2",
       "Citation": null,
       "Comments": null,
-      "Nb": null,
+      "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
@@ -5795,7 +5798,7 @@
       "Defense": "2",
       "Citation": null,
       "Comments": null,
-      "Nb": null,
+      "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
@@ -6064,7 +6067,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Ses équipiers gagnent +1 d'ATK"
+          "Description": "<<Permanent>> Ses équipiers gagnent +1 d'ATK tant qu'il est en vie"
         }
       ]
     },
@@ -6076,8 +6079,8 @@
       "Chakra": "Physique",
       "Element": "Physique",
       "Cost": "1",
-      "Attack": "1",
-      "Defense": "6",
+      "Attack": "0",
+      "Defense": "4",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -6390,7 +6393,7 @@
       "Defense": "2",
       "Citation": "Hyoton",
       "Comments": null,
-      "Nb": null,
+      "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
@@ -6421,7 +6424,7 @@
       "Defense": "2",
       "Citation": null,
       "Comments": null,
-      "Nb": null,
+      "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
@@ -6444,7 +6447,7 @@
       "Kind": "Ninja",
       "Name": "Policier de Konoha",
       "Rank": "",
-      "Team": "Police",
+      "Team": "Invocation",
       "Chakra": "Feu",
       "Element": null,
       "Cost": "0",
@@ -6453,7 +6456,7 @@
       "Citation": null,
       "Comments": null,
       "Nb": 2,
-      "BackSide": "Back-Draw",
+      "BackSide": "Back-Select3",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
       "StringField1": "<<Konoha>>Boruto",
