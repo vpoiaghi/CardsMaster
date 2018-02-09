@@ -33,6 +33,7 @@ namespace CardMasterSkinEditor
         String currentSkinFilePath;
         String currentSkinDirectoryFullName;
         public DrawingQuality DQuality { get; set; } = new DrawingQuality();
+        DrawingImageToImageSourceConverter converter = new DrawingImageToImageSourceConverter();
         public MainWindow()
         {
             InitializeComponent();
@@ -65,8 +66,8 @@ namespace CardMasterSkinEditor
                 ((TabItem)tabControl.Items.GetItemAt(i)).Header=currenSkin.Name;
                 
                 JsonSkin currentSkin = jsonSkinsProject.Skins.Where(s => s.Name.Equals(currenSkin.Name)).Single();
-                ((TextBox)FindName("skinHeightTextBox" +i)).Text = currentSkin.Height.ToString();
-                ((TextBox)FindName("skinWidthTextBox" + i)).Text = currentSkin.Width.ToString();
+                FindTextBoxByName("skinHeightTextBox" +i).Text = currentSkin.Height.ToString();
+                FindTextBoxByName("skinWidthTextBox" + i).Text = currentSkin.Width.ToString();
             }
 
           
@@ -80,13 +81,21 @@ namespace CardMasterSkinEditor
             {
                 TabItem currentItem = ((TabItem)tabControl.Items.GetItemAt(i));
                 JsonSkin currentSkin = jsonSkinsProject.Skins.Where(s => s.Name.Equals(currentItem.Header)).Single();
-                currentSkin.Height = Int16.Parse(((TextBox)FindName("skinHeightTextBox" + i)).Text);
-                currentSkin.Width = Int16.Parse(((TextBox)FindName("skinWidthTextBox" + i)).Text);
+                currentSkin.Height = GetTextBoxValueAsInt("skinHeightTextBox" + i);
+                currentSkin.Width = GetTextBoxValueAsInt("skinWidthTextBox" + i);
             }
 
         }
 
+        private int GetTextBoxValueAsInt(String textboxName)
+        {
+            return Int16.Parse(((TextBox)FindName(textboxName)).Text);
+        }
 
+        private TextBox FindTextBoxByName(string textboxName)
+        {
+            return ((TextBox)FindName(textboxName));
+        }
 
 
         private void MenuItemSave_Click(object sender, RoutedEventArgs e)
@@ -104,8 +113,7 @@ namespace CardMasterSkinEditor
             Drawer drawer = new Drawer(cardTemplate, jsonSkinsProject, currentSkinDirectoryFullName, null);
             drawer.Quality = DQuality;
 
-            //Refresh Image Component
-            DrawingImageToImageSourceConverter converter = new DrawingImageToImageSourceConverter();
+            //Refresh Image Component  
             Dispatcher.BeginInvoke(new Action(delegate ()
             {
                 cardImage.Source = (ImageSource)converter.Convert(drawer.DrawCard(), null, null, System.Globalization.CultureInfo.CurrentCulture);

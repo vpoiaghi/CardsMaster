@@ -4636,7 +4636,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Inflige 1 dégât à distance au ninja ciblé (utilisable 1 fois par tour)"
+          "Description": "<<activate>>  Inflige 1 dégât au corps à corps au ninja ciblé et reçoit normalement les dégats (Utilisable 1 fois par tour, en attaque ou en défense)"
         }
       ]
     },
@@ -4667,7 +4667,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Inflige 2 dégâts au corps à corps au ninja ciblé et reçoit normalement les dégats (Utilisable 1 fois par tour)"
+          "Description": "<<activate>>  Inflige 2 dégâts au corps à corps au ninja ciblé et reçoit normalement les dégats (Utilisable 1 fois par tour, en attaque ou en défense)"
         }
       ]
     },
@@ -4729,7 +4729,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Attaque normale au corps à corps (1 fois par tour)"
+          "Description": "<<activate>>  Inflige 1 dégât au corps à corps au ninja ciblé et reçoit normalement les dégats (Utilisable 1 fois par tour, en attaque ou en défense)"
         }
       ]
     },
@@ -4791,7 +4791,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Inflige 2 dégâts au corps à corps au ninja ciblé (utilisable 1 fois par tour)"
+          "Description": "<<activate>>  Inflige 2 dégâts au corps à corps au ninja ciblé et reçoit normalement les dégats (Utilisable 1 fois par tour, en attaque ou en défense)"
         }
       ]
     },
@@ -4822,7 +4822,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Inflige 3 dégât à distance à 2 ninjas côte à côte"
+          "Description": "<<activate>>  Inflige 3 dégât à distance à 2 ninjas côte à côte. Est détruit après utilisation."
         }
       ]
     },
@@ -4884,7 +4884,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Empêche un ninja ciblé d'attaquer pendant 2 tours"
+          "Description": "<<activate>>  Empêche un ninja ciblé d'attaquer pendant 2 tours. Est détruit après utilisation."
         }
       ]
     },
@@ -4915,10 +4915,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Prends le contrôle du ninja ciblé"
+          "Description": "<<activate>>  Prends le contrôle du ninja ciblé.  (Utilisable 1 fois par tour en attaque)"
         },
         {
-          "Description": "<<Spécial>>  Consomme 6 chakras ou inflige 6 dommages au Héro. (Utilisable 1 fois par tour)"
+          "Description": "<<Spécial>>   A chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au Héro."
         }
       ]
     },
@@ -4949,10 +4949,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Découpe et maudit l'âme : Inflige 3 dommages, et s'il reste 1 point de vie, détruit l'adversaire"
+          "Description": "<<activate>>  Découpe et maudit l'âme : Inflige 3 dommages, et si cela tue l'ennemi , en inflige 1 aux alliés adjacents. (Utilisable 1 fois par tour)"
         },
         {
-          "Description": "<<Spécial>>  Consomme 6 chakras ou inflige 6 dommages au Héro. (Utilisable 1 fois par tour)"
+          "Description": "<<Spécial>>   A chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au Héro."
         }
       ]
     },
@@ -4983,7 +4983,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Scelle un ninja définitivement"
+          "Description": "<<activate>>  Scelle un ninja définitivement. (Utilisable 1 fois par tour en attaque)"
         },
         {
           "Description": "<<Spécial>>  A chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au Héro."
@@ -5017,10 +5017,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Inflige 4 dégâts à distance de n'importe quelle nature au ninja ciblé"
+          "Description": "<<activate>>  Inflige 3 dégâts à distance de n'importe quelle nature  au ninja ciblé. (Utilisable 1 fois par tour en attaque)"
         },
         {
-          "Description": "<<Spécial>>  Consomme 6 chakras ou inflige 6 dommages au Héro. (Utilisable 1 fois par tour)"
+          "Description": "<<Spécial>>   A chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au Héro."
         }
       ]
     },
@@ -5051,10 +5051,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Scelle un ninja définitivement"
+          "Description": "<<activate>>  Scelle un ninja définitivement. (Utilisable 1 fois par tour en attaque)"
         },
         {
-          "Description": "<<Spécial>>  Consomme 6 chakras ou inflige 6 dommages au Héro. (Utilisable 1 fois par tour)"
+          "Description": "<<Spécial>>   A chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au Héro."
         }
       ]
     },
