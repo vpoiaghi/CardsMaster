@@ -47,5 +47,5 @@ Maintenant que la fonctionnalité est validée, voir comment elle sera intégré
 
 UPD cartes :
 -Ajouter les 2 membres des nuits blanches
--Ajouter Odon (adulte ?)  / moegi (adulte)  ?
--Mettre a jour le #2 ruban blanc : Ryôgi
+-Ajouter les versions adultes Boruto de certains personnages
+-Créer une extension avec des ninjutsu (donner protection, donner charge etc ..)

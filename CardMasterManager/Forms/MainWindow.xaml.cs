@@ -180,11 +180,16 @@ namespace CardMasterManager
                     //L'observable n'est pas syncrhonizé avec la collection filtrée
                     //Card c = GridCardsList[selectedIndex];
                     Card c = (Card)cardGrid.SelectedItem;
-
-                    if (!(c == previousCard))
+                    //If not preview
+                    if (!(c == previousCard) && previewCheckBox.IsChecked == true)
                     {
                         previousCard = c;
                         new Thread(() => DisplayCard(c, cardImage, backCardImage)).Start();
+                    }else
+                    {
+                        //Display empty image
+                        cardImage.Source = null;
+                        backCardImage.Source = null;
                     }
                 }
             }
@@ -192,20 +197,23 @@ namespace CardMasterManager
 
         private void DisplayCard(Card c, System.Windows.Controls.Image frontImage, System.Windows.Controls.Image backImage)
         {
-            //Select Card from Collection from Name
-            JsonCard businessCard = Card.ConvertToMasterCard(c);
-            FileInfo skinFile = GetSkinFile(cardsFile, true);
-
-            Drawer drawer = new Drawer(businessCard, skinFile, null);
-            drawer.Quality = this.DQuality;
-
-            //Refresh Image Component
-            DrawingImageToImageSourceConverter converter = new DrawingImageToImageSourceConverter();
-            Dispatcher.BeginInvoke(new Action(delegate ()
+          
             {
-                frontImage.Source = (ImageSource)converter.Convert(drawer.DrawCard(), null, null, System.Globalization.CultureInfo.CurrentCulture);
-                backCardImage.Source = (ImageSource)converter.Convert(drawer.DrawBackCard(), null, null, System.Globalization.CultureInfo.CurrentCulture);
-            }));
+                //Select Card from Collection from Name
+                JsonCard businessCard = Card.ConvertToMasterCard(c);
+                FileInfo skinFile = GetSkinFile(cardsFile, true);
+
+                Drawer drawer = new Drawer(businessCard, skinFile, null);
+                drawer.Quality = this.DQuality;
+
+                //Refresh Image Component
+                DrawingImageToImageSourceConverter converter = new DrawingImageToImageSourceConverter();
+                Dispatcher.BeginInvoke(new Action(delegate ()
+                {
+                    frontImage.Source = (ImageSource)converter.Convert(drawer.DrawCard(), null, null, System.Globalization.CultureInfo.CurrentCulture);
+                    backCardImage.Source = (ImageSource)converter.Convert(drawer.DrawBackCard(), null, null, System.Globalization.CultureInfo.CurrentCulture);
+                }));
+            }
         }
 
         private void ComboBox_GotFocus(object sender, RoutedEventArgs e)

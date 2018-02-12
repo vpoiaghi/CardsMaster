@@ -978,7 +978,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Annule le pouvoir d'un adversaire"
+          "Description": "<<activate>>  Annule définitivement le pouvoir d'un adversaire"
         }
       ]
     },
@@ -1435,7 +1435,7 @@
       "Kind": "Ninja",
       "Name": "Gyûki (Hachibi)",
       "Rank": "Jinchūriki",
-      "Team": "Bijù",
+      "Team": "Invocation",
       "Chakra": "Feu",
       "Element": "Orbe Biju",
       "Cost": "8",
@@ -1466,7 +1466,7 @@
       "Kind": "Ninja",
       "Name": "Kurama (Kyûbi)",
       "Rank": "Jinchūriki",
-      "Team": "Bijù",
+      "Team": "Invocation",
       "Chakra": "Feu",
       "Element": "Orbe Biju",
       "Cost": "8",
@@ -2090,7 +2090,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Soigne X PV à un allié (Utilisable 1 fois par tour)"
+          "Description": "<<activate>>  Soigne 1D3 PV à un allié (Utilisable 1 fois par tour)"
         },
         {
           "Description": "<<Spécial>>  Détruit 1 bijù adverse lorsqu'elle meurt"
@@ -3137,7 +3137,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>   Rempart de terre : les alliés gagnent +2 def"
+          "Description": "<<Instantané>>   Rempart de terre : les alliés gagnent +2 PV tant qu'il est en vie"
         }
       ]
     },
@@ -3230,7 +3230,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Flûte démoniaque: L'ennemi ciblé ne peut plus rien faire tant que Tauya est sur le terrain."
+          "Description": "<<Permanent>>  Flûte démoniaque: L'ennemi ciblé ne peut plus attaquer, ne peut plus lancer de sort et annule ses pouvoires  tant que Tauya est en vie."
         }
       ]
     },
@@ -4838,7 +4838,7 @@
       "Defense": "",
       "Citation": "Kemuri",
       "Comments": "3 exemplaires",
-      "Nb": 3,
+      "Nb": 6,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
@@ -4853,7 +4853,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Confère camouflage à l'allié ciblé (Utilisable 1 fois par tour)"
+          "Description": "<<activate>>  Confère camouflage à l'allié ciblé. Est détruit après utilisation."
         }
       ]
     },
@@ -4863,7 +4863,7 @@
       "Rank": "",
       "Team": "Arme",
       "Chakra": "Equipement",
-      "Element": "2 mains",
+      "Element": "1 main",
       "Cost": "2",
       "Attack": "1",
       "Defense": "",
@@ -5085,7 +5085,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>   Annule les pouvoirs d'un ninja ciblé. (Utilisable à n'importe quel moment)"
+          "Description": "<<Instantané>>   Annule définitivement les pouvoirs d'un ninja ciblé. (Utilisable à n'importe quel moment)"
         }
       ]
     },
@@ -5311,7 +5311,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Etreinte souple : Chaque tour, cible un ennemi et l'empêche d'attaquer pour un tour"
+          "Description": "<<Permanent>> Etreinte souple : Cible un ennemi et l'empêche d'attaquer tant qu'il est en vie"
         }
       ]
     },
@@ -5469,7 +5469,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Soutien Technologique : Donne +2 de défense à tous les alliés"
+          "Description": "<<Permanent>>  Soutien Technologique : Donne +2 PV à tous les alliés tant qu'il est en vie."
         }
       ]
     },
@@ -5639,7 +5639,7 @@
       "Chakra": "Physique",
       "Element": "Physique",
       "Cost": "2",
-      "Attack": "2",
+      "Attack": "1",
       "Defense": "2",
       "Citation": null,
       "Comments": null,
@@ -5670,7 +5670,7 @@
       "Chakra": "Physique",
       "Element": "Physique",
       "Cost": "2",
-      "Attack": "2",
+      "Attack": "1",
       "Defense": "2",
       "Citation": null,
       "Comments": null,
@@ -5732,7 +5732,7 @@
       "Chakra": "Physique",
       "Element": "Physique",
       "Cost": "2",
-      "Attack": "2",
+      "Attack": "1",
       "Defense": "2",
       "Citation": null,
       "Comments": null,
@@ -5763,7 +5763,7 @@
       "Chakra": "Physique",
       "Element": "Physique",
       "Cost": "2",
-      "Attack": "2",
+      "Attack": "1",
       "Defense": "2",
       "Citation": null,
       "Comments": null,
@@ -5794,7 +5794,7 @@
       "Chakra": "Physique",
       "Element": "Physique",
       "Cost": "2",
-      "Attack": "2",
+      "Attack": "1",
       "Defense": "2",
       "Citation": null,
       "Comments": null,
@@ -5844,7 +5844,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Intimidation : Gagne +3/+3 tant qu'il est le seul ninja en lice"
+          "Description": "<<Permanent>> Intimidation : Gagne +2/+1 tant qu'il est le seul ninja en lice"
         }
       ]
     },
@@ -5974,7 +5974,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Nuage de limaille : Tous les alliés gagnent +2 en défense"
+          "Description": "<<Permanent>> Nuage de limaille : Tous les alliés gagnent +2 PV tant qu'elle est en vie"
         }
       ]
     },
@@ -6067,7 +6067,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Ses équipiers gagnent +1 d'ATK tant qu'il est en vie"
+          "Description": "<<Permanent>> Ses équipiers gagnent +1 ATK tant qu'il est en vie"
         }
       ]
     },
@@ -6377,13 +6377,13 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Sphère d'eau : Empêche un cible d'attaquer pendant 1 tour"
+          "Description": "<<Permanent>> Sphère d'eau : peut soit attaquer soit empêcher l'ennemi d'attaquer. Les pouvoirs de l'adversaire restent actifs"
         }
       ]
     },
     {
       "Kind": "Ninja",
-      "Name": "Ruban-2",
+      "Name": "Ryôgi",
       "Rank": "",
       "Team": "Le Ruban Blanc",
       "Chakra": "Eau",
@@ -6439,7 +6439,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> gagne +2 PV quand il défend"
+          "Description": "<<Permanent>> Gagne +2 PV quand il défend"
         }
       ]
     },

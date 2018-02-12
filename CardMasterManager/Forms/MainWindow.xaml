@@ -62,6 +62,7 @@
                 <Border Width="412.5" Height="562.5" Margin="15,6,15,0" DockPanel.Dock="Top" BorderThickness="1" BorderBrush="#FF000000">
                     <Image Name="cardImage"></Image>
                 </Border>
+                <CheckBox Name="previewCheckBox" IsChecked="False" DockPanel.Dock="Right" Height="30" IsThreeState="False">Preview</CheckBox>
                 <Border Width="206.2" Height="281.2" Margin="15,6,15,0" DockPanel.Dock="Top" BorderThickness="1" BorderBrush="#FF000000">
                     <Image Name="backCardImage"/>
                 </Border>
