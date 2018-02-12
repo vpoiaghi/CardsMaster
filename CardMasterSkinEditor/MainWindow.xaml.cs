@@ -38,6 +38,20 @@ namespace CardMasterSkinEditor
         public MainWindow()
         {
             InitializeComponent();
+
+            //Load Type combo
+            for (int j = 0; j < tabControl.Items.Count; j++)
+            {
+                FindComboBoxByName("typeComboBox" + j).Items.Add("SERoundedRectangle");
+                FindComboBoxByName("typeComboBox" + j).Items.Add("SEImage");
+                FindComboBoxByName("typeComboBox" + j).Items.Add("SETextArea");
+                FindComboBoxByName("typeComboBox" + j).Items.Add("SECurvedRectangle");
+                FindComboBoxByName("typeComboBox" + j).Items.Add("SERectangle");
+                FindComboBoxByName("typeComboBox" + j).SelectedIndex = 0;
+            }
+
+
+
         }
 
         private void MenuItemOpen_Click(object sender, RoutedEventArgs e)
@@ -59,7 +73,7 @@ namespace CardMasterSkinEditor
 
         private void LoadUI()
         {
-            borderWidthTextBox.Text = jsonSkinsProject.BorderWidth.Value.ToString();
+            borderWidthTextBox.TextBox = jsonSkinsProject.BorderWidth.Value.ToString();
             for (int i = 0; i < jsonSkinsProject.Skins.Count; i++)
             {
                
@@ -67,8 +81,8 @@ namespace CardMasterSkinEditor
                 ((TabItem)tabControl.Items.GetItemAt(i)).Header=currenSkin.Name;
                 
                 JsonSkin currentSkin = jsonSkinsProject.Skins.Where(s => s.Name.Equals(currenSkin.Name)).Single();
-                FindTextBoxByName("skinHeightTextBox" +i).Text = currentSkin.Height.ToString();
-                FindTextBoxByName("skinWidthTextBox" + i).Text = currentSkin.Width.ToString();
+                FindCustomTextBoxByName("skinHeightTextBox" +i).TextBox = currentSkin.Height.ToString();
+                FindCustomTextBoxByName("skinWidthTextBox" + i).TextBox = currentSkin.Width.ToString();
 
                 //Load ListView of skin items
                 for (int j = 0; j < currentSkin.Items.Count; j++)
@@ -83,32 +97,32 @@ namespace CardMasterSkinEditor
 
         private void UpdateJsonSkinProject()
         {
-            jsonSkinsProject.BorderWidth = Int16.Parse(borderWidthTextBox.Text);
+            jsonSkinsProject.BorderWidth = Int16.Parse(borderWidthTextBox.TextBox);
             for(int i =0; i < tabControl.Items.Count; i++)
             {
                 TabItem currentItem = ((TabItem)tabControl.Items.GetItemAt(i));
                 JsonSkin currentSkin = jsonSkinsProject.Skins.Where(s => s.Name.Equals(currentItem.Header)).Single();
-                currentSkin.Height = GetTextBoxValueAsInt("skinHeightTextBox" + i);
-                currentSkin.Width = GetTextBoxValueAsInt("skinWidthTextBox" + i);
+                currentSkin.Height = GetCustomTextBoxValueAsInt("skinHeightTextBox" + i);
+                currentSkin.Width = GetCustomTextBoxValueAsInt("skinWidthTextBox" + i);
 
              
             }
 
         }
 
-        private int GetTextBoxValueAsInt(String textboxName)
+        private int GetCustomTextBoxValueAsInt(String textboxName)
         {
-            return Int16.Parse(((TextBox)FindName(textboxName)).Text);
-        }
-
-        private TextBox FindTextBoxByName(string textboxName)
-        {
-            return ((TextBox)FindName(textboxName));
+            return Int16.Parse(FindCustomTextBoxByName(textboxName).TextBox);
         }
 
         private ListView FindListViewByName(String name)
         {
             return ((ListView)FindName(name));
+        }
+
+        private ComboBox FindComboBoxByName(String name)
+        {
+            return ((ComboBox)FindName(name));
         }
 
         private CustomTextBox FindCustomTextBoxByName(String name)
@@ -164,8 +178,18 @@ namespace CardMasterSkinEditor
 
             JsonSkinItem currentSkinItem = jsonSkinsProject.Skins.Where(n => n.Name.Equals(currentSkinName)).Single().Items.Where(c=>c.Comment.Equals(currentComment)).Single();
 
+            FindComboBoxByName("typeComboBox" + tabIndex).SelectedValue = currentSkinItem.Type;
             FindCustomTextBoxByName("customPositionX"+ tabIndex).TextBox = currentSkinItem.X.ToString();
             FindCustomTextBoxByName("customPositionY"+tabIndex).TextBox = currentSkinItem.Y.ToString();
+            FindCustomTextBoxByName("customWidth" + tabIndex).TextBox = currentSkinItem.Width.ToString();
+            FindCustomTextBoxByName("customHeight" + tabIndex).TextBox = currentSkinItem.Height.ToString();
+            FindCustomTextBoxByName("customRadius" + tabIndex).TextBox = currentSkinItem.Radius.HasValue ? currentSkinItem.Radius.Value.ToString() : null ;
+            FindCustomTextBoxByName("customFirstBackgrounColor"+ tabIndex).TextBox = currentSkinItem.BackgroundColor;
+            FindCustomTextBoxByName("customSecondBackgrounColor" + tabIndex).TextBox = currentSkinItem.BackgroundColor2;
+            FindCustomTextBoxByName("customExternalBorderWidth" + tabIndex).TextBox = currentSkinItem.ExternalCardBorderthickness.HasValue ? currentSkinItem.ExternalCardBorderthickness.Value.ToString():null;
+
+            
+
         }
     }
 }
