@@ -1,5 +1,6 @@
 ﻿
 using CardMasterCard.Card;
+using CardMasterCommon;
 using CardMasterImageBuilder;
 using CardMasterManager.Converters;
 using CardMasterSkin.Skins;
@@ -68,6 +69,12 @@ namespace CardMasterSkinEditor
                 JsonSkin currentSkin = jsonSkinsProject.Skins.Where(s => s.Name.Equals(currenSkin.Name)).Single();
                 FindTextBoxByName("skinHeightTextBox" +i).Text = currentSkin.Height.ToString();
                 FindTextBoxByName("skinWidthTextBox" + i).Text = currentSkin.Width.ToString();
+
+                //Load ListView of skin items
+                for (int j = 0; j < currentSkin.Items.Count; j++)
+                {
+                    FindListViewByName("skinItemListView" + i).Items.Add(currentSkin.Items[j].Comment);
+                }
             }
 
           
@@ -83,6 +90,8 @@ namespace CardMasterSkinEditor
                 JsonSkin currentSkin = jsonSkinsProject.Skins.Where(s => s.Name.Equals(currentItem.Header)).Single();
                 currentSkin.Height = GetTextBoxValueAsInt("skinHeightTextBox" + i);
                 currentSkin.Width = GetTextBoxValueAsInt("skinWidthTextBox" + i);
+
+             
             }
 
         }
@@ -97,6 +106,16 @@ namespace CardMasterSkinEditor
             return ((TextBox)FindName(textboxName));
         }
 
+        private ListView FindListViewByName(String name)
+        {
+            return ((ListView)FindName(name));
+        }
+
+        private CustomTextBox FindCustomTextBoxByName(String name)
+        {
+            return ((CustomTextBox)FindName(name));
+        }
+
 
         private void MenuItemSave_Click(object sender, RoutedEventArgs e)
         {
@@ -109,16 +128,18 @@ namespace CardMasterSkinEditor
         }
         private void RefreshImages()
         {
-
-            Drawer drawer = new Drawer(cardTemplate, jsonSkinsProject, currentSkinDirectoryFullName, null);
-            drawer.Quality = DQuality;
-
-            //Refresh Image Component  
-            Dispatcher.BeginInvoke(new Action(delegate ()
+            if (previewCheckBox.IsChecked.Value == true)
             {
-                cardImage.Source = (ImageSource)converter.Convert(drawer.DrawCard(), null, null, System.Globalization.CultureInfo.CurrentCulture);
-                backCardImage.Source = (ImageSource)converter.Convert(drawer.DrawBackCard(), null, null, System.Globalization.CultureInfo.CurrentCulture);
-            }));
+                Drawer drawer = new Drawer(cardTemplate, jsonSkinsProject, currentSkinDirectoryFullName, null);
+                drawer.Quality = DQuality;
+
+                //Refresh Image Component  
+                Dispatcher.BeginInvoke(new Action(delegate ()
+                {
+                    cardImage.Source = (ImageSource)converter.Convert(drawer.DrawCard(), null, null, System.Globalization.CultureInfo.CurrentCulture);
+                    backCardImage.Source = (ImageSource)converter.Convert(drawer.DrawBackCard(), null, null, System.Globalization.CultureInfo.CurrentCulture);
+                }));
+            }
         }
 
         private void refresh(object sender, RoutedEventArgs e)
@@ -133,6 +154,18 @@ namespace CardMasterSkinEditor
             RefreshImages();
         }
 
-       
+        private void saveSkinItemAndDisplay(object sender, SelectionChangedEventArgs e)
+        {
+            ListView currentListView = ((ListView)sender);
+            int currentIndex = currentListView.SelectedIndex;
+            String currentComment = (String)currentListView.Items.GetItemAt(currentIndex);
+            int tabIndex = tabControl.SelectedIndex;
+            String currentSkinName = ((TabItem)tabControl.SelectedItem).Header.ToString();
+
+            JsonSkinItem currentSkinItem = jsonSkinsProject.Skins.Where(n => n.Name.Equals(currentSkinName)).Single().Items.Where(c=>c.Comment.Equals(currentComment)).Single();
+
+            FindCustomTextBoxByName("customPositionX"+ tabIndex).TextBox = currentSkinItem.X.ToString();
+            FindCustomTextBoxByName("customPositionY"+tabIndex).TextBox = currentSkinItem.Y.ToString();
+        }
     }
 }

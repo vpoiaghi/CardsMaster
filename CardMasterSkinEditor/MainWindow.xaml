@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CardMasterSkinEditor"
+        xmlns:common="clr-namespace:CardMasterCommon;assembly=CardMasterCommon"
         mc:Ignorable="d"
         Title="MainWindow"  Height="960" Width="1747">
 
@@ -32,34 +33,51 @@
             <DockPanel DockPanel.Dock="Left">
                 <Border Width="412.5" Height="562.5" Margin="15,6,15,0" DockPanel.Dock="Top" BorderThickness="1" BorderBrush="#FF000000">
                     <Image Name="cardImage"></Image>
+                
                 </Border>
-
+                <CheckBox Name="previewCheckBox" IsChecked="false" IsThreeState="False" DockPanel.Dock="Right" Height="30" HorizontalAlignment="Right">Preview</CheckBox>
+                
                 <Border Width="206.2" Height="281.2" Margin="15,6,15,0" DockPanel.Dock="Bottom" BorderThickness="1" BorderBrush="#FF000000">
                     <Image Name="backCardImage"/>
                 </Border>
+               
+              
 
             </DockPanel>
             <StackPanel DockPanel.Dock="Right">
                 <Label>Epaisseur des bordures internes (en px)</Label>
                 <TextBox Name="borderWidthTextBox" Width="45" HorizontalAlignment="Left"></TextBox>
-                <Separator></Separator>
-                <TabControl Name="tabControl">
+              
+                <TabControl Name="tabControl" Height="805">
                     <TabItem Header="Onglet 1">
                         <StackPanel>
-                            <Separator Width="186" HorizontalAlignment="Left"></Separator>
                             <Label>Hauteur des cartes (en px)</Label>
-                            <TextBox x:Name="skinHeightTextBox0" Width="45" HorizontalAlignment="Left"/>
+                            <TextBox x:Name="skinHeightTextBox0" Width="45" HorizontalAlignment="Left"> </TextBox>
                             <Label>Largeur des cartes (en px)</Label>
-                            <TextBox Name="skinWidthTextBox0" Width="45" HorizontalAlignment="Left"></TextBox>
+                            <TextBox Name="skinWidthTextBox0" Width="45" HorizontalAlignment="Left" />
+                            <DockPanel>
+                                <ListView Name="skinItemListView0" SelectionMode="Single" Width="300" Height="675" DockPanel.Dock="Left" SelectionChanged="saveSkinItemAndDisplay"/>
+                                <StackPanel  DockPanel.Dock="Right" >
+                                    <common:CustomTextBox Name="customPositionX0" Label="Position en X:"/>
+                                    <common:CustomTextBox Name="customPositionY0" Label="Position en Y:"/>
+                                </StackPanel>
+                            </DockPanel>
+                          
                         </StackPanel>
                     </TabItem>
                     <TabItem Header="Onglet2">
                         <StackPanel>
-                            <Separator Width="186" HorizontalAlignment="Left"></Separator>
                             <Label>Hauteur des cartes (en px)</Label>
                             <TextBox x:Name="skinHeightTextBox1" Width="45" HorizontalAlignment="Left"/>
                             <Label>Largeur des cartes (en px)</Label>
                             <TextBox Name="skinWidthTextBox1" Width="45" HorizontalAlignment="Left"></TextBox>
+                            <DockPanel>
+                                <ListView Name="skinItemListView1" SelectionMode="Single" Width="300" Height="675" DockPanel.Dock="Left" SelectionChanged="saveSkinItemAndDisplay"/>
+                                <StackPanel  DockPanel.Dock="Right" >
+                                    <common:CustomTextBox Name="customPositionX1" Label="Position en X:"/>
+                                    <common:CustomTextBox Name="customPositionY1" Label="Position en Y:"/>
+                                </StackPanel>
+                            </DockPanel>
                         </StackPanel>
                     </TabItem>
                 </TabControl>
