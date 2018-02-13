@@ -1210,7 +1210,7 @@
           "Description": "<<Permanent>>  Insensible aux attaques physiques, de Terre et d'eau"
         },
         {
-          "Description": "<<Spécial>>  Manipulation du Shôton : Gagne +5 de défense lorsqu'elle est attaquée"
+          "Description": "<<Spécial>>  Manipulation du Shôton : Gagne +5 PV tant qu'elle n'a pas encore attaqué"
         }
       ]
     },
@@ -1836,7 +1836,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Donne +3 Def aux Uchiwa alliés"
+          "Description": "<<Permanent>>  Donne +3 PV aux Uchiwa alliés"
         }
       ]
     },
@@ -1929,10 +1929,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>>   Mur de parchemin explosifs :"
-        },
-        {
-          "Description": "Quand elle meure, Konan inflige 3 dégâts à tous les ninjas du champs de bataille"
+          "Description": "<<Spécial>> Mur de parchemin explosifs : Quand elle meure, Konan inflige 3 dégâts à tous les ninjas du champs de bataille"
         }
       ]
     },
@@ -1963,7 +1960,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>   Répulsion céleste : renvoie tous ninja dans la main de son propriétaire"
+          "Description": "<<Instantané>> Répulsion céleste : renvoie tous ninja dans la main de son propriétaire"
         }
       ]
     },
@@ -2189,7 +2186,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Volcan : Tous les ninjas de feu gagnent +2 Atk"
+          "Description": "<<activate>>  Volcan : Tous les ninjas de feu gagnent +2 ATK"
         }
       ]
     },
@@ -2508,7 +2505,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Katana de foudre : Gagne +2 Atk contre la Terre."
+          "Description": "<<Permanent>>  Katana de foudre : Gagne +2 ATK contre la Terre."
         }
       ]
     },
@@ -2539,7 +2536,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Katana de foudre : Gagne +2 Atk contre la Terre."
+          "Description": "<<Permanent>>  Katana de foudre : Gagne +2 ATK contre la Terre."
         }
       ]
     },
@@ -2920,7 +2917,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  les Ninja de terre gagnent +3 défense"
+          "Description": "<<Permanent>>  les Ninja de terre gagnent +3 PV"
         }
       ]
     },
@@ -3862,7 +3859,7 @@
           "Description": "<<Instantané>>   Détruit tous les Bijù adverses"
         },
         {
-          "Description": "<<Spécial>>  Donne +4 de défense aux Bijù alliés"
+          "Description": "<<Spécial>>  Donne +4 PV aux Bijù alliés"
         }
       ]
     },
@@ -5858,7 +5855,7 @@
       "Cost": "1",
       "Attack": "1",
       "Defense": "1",
-      "Citation": "\nByakugan",
+      "Citation": "Byakugan",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -5882,7 +5879,7 @@
     {
       "Kind": "Ninja",
       "Name": "Mirai Sarutobi",
-      "Rank": "",
+      "Rank": "Rare",
       "Team": "Générations Futur",
       "Chakra": "Feu",
       "Element": "Feu",
