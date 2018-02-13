@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:CardMasterSkinEditor"
         xmlns:common="clr-namespace:CardMasterCommon;assembly=CardMasterCommon"
         mc:Ignorable="d"
-        Title="MainWindow"  Height="960" Width="1747">
+        Title="MainWindow"  Height="960" Width="1747" KeyDown="ManageKeyDown">
+        
 
     <StackPanel Background="AliceBlue">
 
@@ -20,11 +21,8 @@
                 </MenuItem.Resources>
                 <MenuItem Name="MenuItemOpen" Header="_Ouvrir" Click="MenuItemOpen_Click"/>
                 <MenuItem Name="MenuItemSave" Header="_Enregistrer" Click="MenuItemSave_Click" />
-                <MenuItem Name="MenuItemReload" Header="_Reload File" Click="reload"/>
+                <MenuItem Name="MenuItemReload" Header="_Reload File" Click="reload" />
                 <MenuItem Name="MenuItemExit" Header="_Quitter" Click="MenuItemExit_Click" />
-            </MenuItem>
-            <MenuItem Header="_Refresh" Background="AliceBlue" Click="refresh">
-                
             </MenuItem>
         </Menu>
 
@@ -53,112 +51,170 @@
                                     <DockPanel>
                                         <StackPanel DockPanel.Dock="Left">
                                             <StackPanel Orientation="Horizontal">
-                                            <Label Height="30" MinWidth="30">Type de composant :</Label>
-                                            <ComboBox Name="typeComboBox0" Height="23" MinWidth="220" Margin="0,-5,0,0"/>
-                                        </StackPanel>
+                                                <Label Height="30" MinWidth="30">Type de composant :</Label>
+                                                <ComboBox Name="typeComboBox0" Height="23" MinWidth="220" Margin="0,-5,0,0"/>
+                                            </StackPanel>
                                             <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
-                                                <StackPanel>
+                                                <StackPanel Margin="3">
+                                                    <Label  Height="25" Content="# Position" Background="LightSkyBlue" />
                                                     <common:CustomTextBox Name="customPositionX0" Label="Position en X (en px):"/>
                                                     <common:CustomTextBox Name="customPositionY0" Label="Position en Y (en px):"/>
-                                                 </StackPanel>
-                                            </Border>
-                                            <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
-                                                <StackPanel>
-                                                    <common:CustomTextBox Name="customWidth0" Label="Item width (en px):"/>
-                                                    <common:CustomTextBox Name="customHeight0" Label="Item height (en px):"/>   
                                                 </StackPanel>
                                             </Border>
-                                        <common:CustomTextBox Name="customRadius0" Label="Item radius (en °):"/>
                                             <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
-                                                <StackPanel>
+                                                <StackPanel Margin="3">
+                                                    <Label  Height="25" Content="# Dimensions" Background="LightSkyBlue" />
+                                                    <common:CustomTextBox Name="customWidth0" Label="Item width (en px):"/>
+                                                    <common:CustomTextBox Name="customHeight0" Label="Item height (en px):"/>
+                                                    <common:CustomTextBox Name="customRadius0" Label="Item radius (en °):"/>
+                                                </StackPanel>
+                                            </Border>
+                                            
+                                            <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
+                                                <StackPanel Margin="3">
+                                                    <Label  Height="25" Content="# Couleur de fond" Background="LightSkyBlue" />
                                                     <common:CustomTextBox Name="customFirstBackgrounColor0" Label="Item 1st background color (#xxyyzz) :"/>
                                                     <common:CustomTextBox Name="customSecondBackgrounColor0" Label="Item 2nd background color (#xxyyzz) :"/>
                                                 </StackPanel>
                                             </Border>
-                                            <common:CustomTextBox Name="customExternalBorderWidth0" Label="Item external border width : (en px) :"/>
-                                        <common:CustomTextBox Name="customNameAttribute0" Label="Item name attribute (for image link) :"/>
-                                        <common:CustomTextBox Name="customBackground0" Label="Item background type :"/>
-                                        <common:CustomTextBox Name="customCurveSize0" Label="Item curved size :"/>
-                                        <common:CustomTextBox Name="customBorderColor0" Label="Item border color :"/>
-                                        <common:CustomTextBox Name="customBorderWidth0" Label="Item border width :"/>
-                                       
+                                            <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
+                                                <StackPanel Margin="3">
+                                                    <Label  Height="25" Content="# Bordure" Background="LightSkyBlue" />
+                                                    <common:CustomTextBox Name="customExternalBorderWidth0" Label="Item external border width : (en px) :"/>
+                                                    <common:CustomTextBox Name="customCurveSize0" Label="Item curved size :"/>
+                                                    <common:CustomTextBox Name="customBorderColor0" Label="Item border color :"/>
+                                                    <common:CustomTextBox Name="customBorderWidth0" Label="Item border width :"/>
+                                                </StackPanel>
+                                            </Border>
                                         </StackPanel>
                                         <StackPanel DockPanel.Dock="Right">
                                             <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
-                                                <StackPanel>
+                                                <StackPanel Margin="3">
+                                                    <Label  Height="25" Content="# Font" Background="LightSkyBlue" />
                                                     <common:CustomTextBox Name="customFontName0" Label="Item font name :"/>
                                                     <common:CustomTextBox Name="customFontColor0" Label="Item font color :"/>
+                                                    <common:CustomTextBox Name="customFontSize0" Label="Item font name :"/>
                                                     <common:CustomTextBox Name="customStyle0" Label="Item text style :" ToolTip="Bold or Bold,Italic"/>
                                                     <common:CustomTextBox Name="customWithFontBorder0" Label="Bordure sur le texte ?  :"/>
                                                 </StackPanel>
                                             </Border>
-                                            <common:CustomTextBox Name="customVerticaAlign0" Label="Item Vertical alignment :"/>
-                                            <common:CustomTextBox Name="customHorizontalAlign0" Label="Item horizontal alignment :"/>
-                                            <common:CustomTextBox Name="customVisibleConditionAttribute0" Label="Champs de la carte conditionnant l'affichage :"/>
-                                            <common:CustomTextBox Name="customShadowSize0" Label="taille de l'ombre :"/>
-                                            <common:CustomTextBox Name="customShadowAngle0" Label="Angle de l'ombre :"/>
                                             <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
-                                                <StackPanel>
+                                                <StackPanel Margin="3">
+                                                    <Label  Height="25" Content="# Alignement du texte" Background="LightSkyBlue" />
+                                                    <common:CustomTextBox Name="customVerticaAlign0" Label="Item Vertical alignment :"/>
+                                                    <common:CustomTextBox Name="customHorizontalAlign0" Label="Item horizontal alignment :"/>
+                                                </StackPanel>
+                                            </Border>
+                                         
+                                            <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
+                                                <StackPanel Margin="3">
+                                                    <Label  Height="25" Content="# Ombrage" Background="LightSkyBlue" />
+                                                    <common:CustomTextBox Name="customShadowSize0" Label="taille de l'ombre :"/>
+                                                    <common:CustomTextBox Name="customShadowAngle0" Label="Angle de l'ombre :"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
+                                                <StackPanel Margin="3">
+                                                    <Label  Height="25" Content="# Taille icône de pouvoir" Background="LightSkyBlue" />
                                                     <common:CustomTextBox Name="customPowerIconWidth0" Label="Largeur de l'icone de pouvoir :"/>
                                                     <common:CustomTextBox Name="customPowerIconHeight0" Label="Hauteur de l'icone de pouvoir :"/>
                                                 </StackPanel>
                                             </Border>
-
+                                            <common:CustomTextBox Name="customVisibleConditionAttribute0" TextBoxWidth="150" Label="Champs de la carte conditionnant l'affichage :"/>
+                                            <common:CustomTextBox Name="customNameAttribute0" TextBoxWidth="260" Label="Item name attribute (for image link) :"/>
+                                            <common:CustomTextBox Name="customBackground0" Label="Item background type :"/>
                                         </StackPanel>
                                     </DockPanel>
                                 </StackPanel>
                             </DockPanel>
-                          
+
                         </StackPanel>
                     </TabItem>
-                    <TabItem Header="Onglet2">
+                    <TabItem Header="Onglet 2">
                         <StackPanel>
                             <common:CustomTextBox Name="skinHeightTextBox1" Label="Hauteur des cartes (en px):"/>
                             <common:CustomTextBox Name="skinWidthTextBox1" Label="Largeur des cartes (en px):"/>
                             <DockPanel>
-                                <ListView Name="skinItemListView1" SelectionMode="Single" Width="300" Height="675" DockPanel.Dock="Left" SelectionChanged="saveSkinItemAndDisplay"/>
+                                <ListView Name="skinItemListView1" SelectionMode="Single" Width="300" Height="746" DockPanel.Dock="Left" SelectionChanged="saveSkinItemAndDisplay"/>
                                 <StackPanel  DockPanel.Dock="Right" >
                                     <DockPanel>
                                         <StackPanel DockPanel.Dock="Left">
-                                        <StackPanel Orientation="Horizontal">
-                                            <Label Height="30" MinWidth="30">Type de composant :</Label>
-                                            <ComboBox Name="typeComboBox1" Height="23" MinWidth="220" Margin="0,-5,0,0"/>
-                                        </StackPanel>
-                                        <common:CustomTextBox Name="customPositionX1" Label="Position en X (en px):"/>
-                                        <common:CustomTextBox Name="customPositionY1" Label="Position en Y (en px):"/>
-                                        <common:CustomTextBox Name="customWidth1" Label="Item width (en px):"/>
-                                        <common:CustomTextBox Name="customHeight1" Label="Item height (en px):"/>
-                                        <common:CustomTextBox Name="customRadius1" Label="Item radius (en °):"/>
-                                        <common:CustomTextBox Name="customFirstBackgrounColor1" Label="Item 1st background color (#xxyyzz) :"/>
-                                        <common:CustomTextBox Name="customSecondBackgrounColor1" Label="Item 2nd background color (#xxyyzz) :"/>
-                                        <common:CustomTextBox Name="customExternalBorderWidth1" Label="Item external border width : (en px) :"/>
-                                        <common:CustomTextBox Name="customNameAttribute1" Label="Item name attribute (for image link) :"/>
-                                        <common:CustomTextBox Name="customBackground1" Label="Item background type :"/>
-                                        <common:CustomTextBox Name="customCurveSize1" Label="Item curved size :"/>
-                                        <common:CustomTextBox Name="customBorderColor1" Label="Item border color :"/>
-                                        <common:CustomTextBox Name="customBorderWidth1" Label="Item border width :"/>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Height="30" MinWidth="30">Type de composant :</Label>
+                                                <ComboBox Name="typeComboBox1" Height="23" MinWidth="220" Margin="0,-5,0,0"/>
+                                            </StackPanel>
+                                            <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
+                                                <StackPanel>
+                                                    <common:CustomTextBox Name="customPositionX1" Label="Position en X (en px):"/>
+                                                    <common:CustomTextBox Name="customPositionY1" Label="Position en Y (en px):"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
+                                                <StackPanel>
+                                                    <common:CustomTextBox Name="customWidth1" Label="Item width (en px):"/>
+                                                    <common:CustomTextBox Name="customHeight1" Label="Item height (en px):"/>
+                                                    <common:CustomTextBox Name="customRadius1" Label="Item radius (en °):"/>
+                                                </StackPanel>
+                                            </Border>
 
-                                    </StackPanel>
+                                            <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
+                                                <StackPanel>
+                                                    <common:CustomTextBox Name="customFirstBackgrounColor1" Label="Item 1st background color (#xxyyzz) :"/>
+                                                    <common:CustomTextBox Name="customSecondBackgrounColor1" Label="Item 2nd background color (#xxyyzz) :"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
+                                                <StackPanel>
+                                                    <common:CustomTextBox Name="customExternalBorderWidth1" Label="Item external border width : (en px) :"/>
+                                                    <common:CustomTextBox Name="customCurveSize1" Label="Item curved size :"/>
+                                                    <common:CustomTextBox Name="customBorderColor1" Label="Item border color :"/>
+                                                    <common:CustomTextBox Name="customBorderWidth1" Label="Item border width :"/>
+                                                </StackPanel>
+                                            </Border>
+                                           
+
+                                        </StackPanel>
                                         <StackPanel DockPanel.Dock="Right">
-                                        <common:CustomTextBox Name="customFontName1" Label="Item font name :"/>
-                                        <common:CustomTextBox Name="customFontColor1" Label="Item font color :"/>
-                                        <common:CustomTextBox Name="customStyle1" Label="Item text style :" ToolTip="Bold or Bold,Italic"/>
-                                        <common:CustomTextBox Name="customVerticaAlign1" Label="Item Vertical alignment :"/>
-                                        <common:CustomTextBox Name="customHorizontalAlign1" Label="Item horizontal alignment :"/>
-                                        <common:CustomTextBox Name="customVisibleConditionAttribute1" Label="Champs de la carte conditionnant l'affichage :"/>
-                                        <common:CustomTextBox Name="customShadowSize1" Label="taille de l'ombre :"/>
-                                        <common:CustomTextBox Name="customShadowAngle1" Label="Angle de l'ombre :"/>
-                                        <common:CustomTextBox Name="customPowerIconWidth1" Label="Largeur de l'icone de pouvoir :"/>
-                                        <common:CustomTextBox Name="customPowerIconHeight1" Label="Hauteur de l'icone de pouvoir :"/>
-                                        <common:CustomTextBox Name="customWithFontBorder1" Label="Bordure sur le texte ?  :"/>
-                                    </StackPanel>
+                                            <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
+                                                <StackPanel>
+                                                    <common:CustomTextBox Name="customFontName1" Label="Item font name :"/>
+                                                    <common:CustomTextBox Name="customFontSize1" Label="Item font name :"/>
+                                                    <common:CustomTextBox Name="customFontColor1" Label="Item font color :"/>
+                                                    <common:CustomTextBox Name="customStyle1" Label="Item text style :" ToolTip="Bold or Bold,Italic"/>
+                                                    <common:CustomTextBox Name="customWithFontBorder1" Label="Bordure sur le texte ?  :"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
+                                                <StackPanel>
+                                                    <common:CustomTextBox Name="customVerticaAlign1" Label="Item Vertical alignment :"/>
+                                                    <common:CustomTextBox Name="customHorizontalAlign1" Label="Item horizontal alignment :"/>
+                                                </StackPanel>
+                                            </Border>
+                                           
+                                            <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
+                                                <StackPanel>
+                                                    <common:CustomTextBox Name="customShadowSize1" Label="taille de l'ombre :"/>
+                                                    <common:CustomTextBox Name="customShadowAngle1" Label="Angle de l'ombre :"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
+                                                <StackPanel>
+                                                    <common:CustomTextBox Name="customPowerIconWidth1" Label="Largeur de l'icone de pouvoir :"/>
+                                                    <common:CustomTextBox Name="customPowerIconHeight1" Label="Hauteur de l'icone de pouvoir :"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <common:CustomTextBox Name="customVisibleConditionAttribute1" TextBoxWidth="150" Label="Champs de la carte conditionnant l'affichage :"/>
+                                            <common:CustomTextBox Name="customNameAttribute1" TextBoxWidth="260" Label="Item name attribute (for image link) :"/>
+                                            <common:CustomTextBox Name="customBackground1" Label="Item background type :"/>
+                                        </StackPanel>
                                     </DockPanel>
                                 </StackPanel>
                             </DockPanel>
+
                         </StackPanel>
                     </TabItem>
                 </TabControl>
-               
+
             </StackPanel>
         </DockPanel>
     </StackPanel>
