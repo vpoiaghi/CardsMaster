@@ -38,6 +38,16 @@ namespace CardMasterCommon
             }
         }
 
+        public double TextBoxWidth
+        {
+            get { return BaseTextBox.Width; }
+            set
+            {
+                BaseTextBox.Width = value;
+
+            }
+        }
+
         public string TextBox
         {
             get { return LocalTextBox; }
