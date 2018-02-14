@@ -31,7 +31,7 @@ namespace CardMasterImageBuilder.Builders.Impl
             {
                 skinElement.SetBackground(item.Background);
             }
-            if (item.BorderColor != null)
+            if (!String.IsNullOrEmpty(item.BorderColor))
             {
                 skinElement.Border = GetBorderColor(skinsProject, card, item);
             }

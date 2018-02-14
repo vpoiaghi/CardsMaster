@@ -35,7 +35,6 @@ namespace CardMasterSkinEditor
         String currentSkinDirectoryFullName;
         public DrawingQuality DQuality { get; set; } = new DrawingQuality();
         DrawingImageToImageSourceConverter converter = new DrawingImageToImageSourceConverter();
-        int previousSkinItemIndex = -1;
         int currentSkinItemIndex = -1;
         public MainWindow()
         {
@@ -154,13 +153,15 @@ namespace CardMasterSkinEditor
         private void reload(object sender, RoutedEventArgs e)
         {
             skinFile = new FileInfo(currentSkinFilePath);
+            jsonSkinsProject = JsonSkinsProject.LoadProject(skinFile);
             RefreshImages();
         }
 
-        private void saveSkinItemAndDisplay(object sender, SelectionChangedEventArgs e)
+       
+
+        private void loadViewFromSkinItem(ListView currentListView)
         {
-            ListView currentListView = ((ListView)sender);
-            previousSkinItemIndex = currentSkinItemIndex;
+
             currentSkinItemIndex = currentListView.SelectedIndex;
 
             String currentComment = (String)currentListView.Items.GetItemAt(currentSkinItemIndex);
@@ -185,7 +186,7 @@ namespace CardMasterSkinEditor
             FindCustomTextBoxByName("customCurveSize" + tabIndex).TextBox = currentSkinItem.CurveSize.HasValue ? currentSkinItem.CurveSize.Value.ToString() : null;
 
             FindCustomTextBoxByName("customBorderColor" + tabIndex).TextBox = currentSkinItem.BorderColor;
-            FindCustomTextBoxByName("customBorderWidth" + tabIndex).TextBox = currentSkinItem.BorderWidth.HasValue ? currentSkinItem.BorderWidth.Value.ToString() : null; 
+            FindCustomTextBoxByName("customBorderWidth" + tabIndex).TextBox = currentSkinItem.BorderWidth.HasValue ? currentSkinItem.BorderWidth.Value.ToString() : null;
 
             FindCustomTextBoxByName("customFontName" + tabIndex).TextBox = currentSkinItem.FontName;
             FindCustomTextBoxByName("customFontColor" + tabIndex).TextBox = currentSkinItem.FontColor;
@@ -208,7 +209,7 @@ namespace CardMasterSkinEditor
 
         private void updateSkinItem(ListView currentListView)
         {
-            String currentComment = (String)currentListView.Items.GetItemAt(previousSkinItemIndex);
+            String currentComment = (String)currentListView.Items.GetItemAt(currentSkinItemIndex);
             int tabIndex = tabControl.SelectedIndex;
             String currentSkinName = ((TabItem)tabControl.SelectedItem).Header.ToString();
             JsonSkinItem currentSkinItem = jsonSkinsProject.Skins.Where(n => n.Name.Equals(currentSkinName)).Single().Items.Where(c => c.Comment.Equals(currentComment)).Single();
@@ -275,6 +276,29 @@ namespace CardMasterSkinEditor
             {
                 RefreshImages();
             }
+        }
+
+        private void SaveItem0(object sender, RoutedEventArgs e)
+        {
+            updateSkinItem(skinItemListView0);
+            RefreshImages();
+        }
+
+        private void SaveItem1(object sender, RoutedEventArgs e)
+        {
+            updateSkinItem(skinItemListView1);
+            RefreshImages();
+        }
+
+
+        private void loadSkinItemAndDisplay1(object sender, SelectionChangedEventArgs e)
+        {
+            loadViewFromSkinItem(skinItemListView1);
+        }
+
+        private void loadSkinItemAndDisplay0(object sender, SelectionChangedEventArgs e)
+        {
+            loadViewFromSkinItem(skinItemListView0);
         }
     }
 }

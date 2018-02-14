@@ -3,6 +3,7 @@ using CardMasterImageBuilder.Builders;
 using CardMasterImageBuilder.SkinElements;
 using CardMasterImageBuilder.Skins;
 using CardMasterSkin.Skins;
+using System;
 
 namespace CardMasterImageBuilder.Builders.Impl
 {
@@ -28,7 +29,7 @@ namespace CardMasterImageBuilder.Builders.Impl
                 skinElement.SetBackground(item.Background);
             }
 
-            if (item.BorderColor != null)
+            if (!String.IsNullOrEmpty(item.BorderColor))
             {
                 skinElement.Border = GetBorderColor(skinsProject, card, item); 
             }

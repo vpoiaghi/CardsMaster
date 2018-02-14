@@ -3,6 +3,7 @@ using CardMasterImageBuilder.Builders;
 using CardMasterImageBuilder.SkinElements;
 using CardMasterImageBuilder.Skins;
 using CardMasterSkin.Skins;
+using System;
 
 namespace CardMasterImageBuilder.Builders.Impl
 {
@@ -19,7 +20,7 @@ namespace CardMasterImageBuilder.Builders.Impl
         {
             JsonSkinsProject skinsProject = builderParameter.JsonSkinsProject;
             SEImage skinElement;
-            if (item.Background == null)
+            if (String.IsNullOrEmpty(item.Background))
             {
                 skinElement = new SEImage(builderParameter.ResourcesDirectory, item.X, item.Y, item.Width, item.Height, item.Comment);
                 skinElement.NameAttribute = item.NameAttribute;
@@ -27,11 +28,11 @@ namespace CardMasterImageBuilder.Builders.Impl
             {
                 skinElement = new SEImage(builderParameter.ResourcesDirectory, item.X, item.Y, item.Width, item.Height, item.Comment, item.Background);
             }
-            if (item.VisibleConditionAttribute!= null && item.VisibleConditionAttribute!="")
+            if (!String.IsNullOrEmpty(item.VisibleConditionAttribute))
             {
                 skinElement.Visible = IsAttributeNonEmpty(card, item.VisibleConditionAttribute);
             }
-            if (item.BorderColor!=null)
+            if (!String.IsNullOrEmpty(item.BorderColor))
             {
                 if(item.BorderColor=="DYNAMIC")
                 {

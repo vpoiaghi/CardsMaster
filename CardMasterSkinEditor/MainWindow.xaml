@@ -32,7 +32,7 @@
                 <Border Width="412.5" Height="562.5" Margin="15,6,15,0" DockPanel.Dock="Top" BorderThickness="1" BorderBrush="#FF000000">
                     <Image Name="cardImage"></Image>
                 </Border>
-                <CheckBox Name="previewCheckBox" IsChecked="false" IsThreeState="False" DockPanel.Dock="Right" Height="30" HorizontalAlignment="Right">Preview</CheckBox>
+                <CheckBox Name="previewCheckBox" IsChecked="True" IsThreeState="False" DockPanel.Dock="Right" Height="30" HorizontalAlignment="Right">Preview</CheckBox>
                 <Border Width="206.2" Height="281.2" Margin="15,6,15,0" DockPanel.Dock="Bottom" BorderThickness="1" BorderBrush="#FF000000">
                     <Image Name="backCardImage"/>
                 </Border>
@@ -46,7 +46,7 @@
                             <common:CustomTextBox Name="skinHeightTextBox0" Label="Hauteur des cartes (en px):"/>
                             <common:CustomTextBox Name="skinWidthTextBox0" Label="Largeur des cartes (en px):"/>
                             <DockPanel>
-                                <ListView Name="skinItemListView0" SelectionMode="Single" Width="300" Height="746" DockPanel.Dock="Left" SelectionChanged="saveSkinItemAndDisplay"/>
+                                <ListView Name="skinItemListView0" SelectionMode="Single" Width="300" Height="746" DockPanel.Dock="Left" SelectionChanged="loadSkinItemAndDisplay0"/>
                                 <StackPanel  DockPanel.Dock="Right" >
                                     <DockPanel>
                                         <StackPanel DockPanel.Dock="Left">
@@ -124,7 +124,9 @@
                                             <common:CustomTextBox Name="customNameAttribute0" TextBoxWidth="260" Label="Item name attribute (for image link) :"/>
                                             <common:CustomTextBox Name="customBackground0" Label="Item background type :"/>
                                         </StackPanel>
+                                       
                                     </DockPanel>
+                                    <Button Width="100" Click="SaveItem0" Background="AliceBlue">Save and Refresh</Button>
                                 </StackPanel>
                             </DockPanel>
 
@@ -135,7 +137,7 @@
                             <common:CustomTextBox Name="skinHeightTextBox1" Label="Hauteur des cartes (en px):"/>
                             <common:CustomTextBox Name="skinWidthTextBox1" Label="Largeur des cartes (en px):"/>
                             <DockPanel>
-                                <ListView Name="skinItemListView1" SelectionMode="Single" Width="300" Height="746" DockPanel.Dock="Left" SelectionChanged="saveSkinItemAndDisplay"/>
+                                <ListView Name="skinItemListView1" SelectionMode="Single" Width="300" Height="746" DockPanel.Dock="Left" SelectionChanged="loadSkinItemAndDisplay1"/>
                                 <StackPanel  DockPanel.Dock="Right" >
                                     <DockPanel>
                                         <StackPanel DockPanel.Dock="Left">
@@ -144,13 +146,15 @@
                                                 <ComboBox Name="typeComboBox1" Height="23" MinWidth="220" Margin="0,-5,0,0"/>
                                             </StackPanel>
                                             <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
-                                                <StackPanel>
+                                                <StackPanel Margin="3">
+                                                    <Label  Height="25" Content="# Position" Background="LightSkyBlue" />
                                                     <common:CustomTextBox Name="customPositionX1" Label="Position en X (en px):"/>
                                                     <common:CustomTextBox Name="customPositionY1" Label="Position en Y (en px):"/>
                                                 </StackPanel>
                                             </Border>
                                             <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
-                                                <StackPanel>
+                                                <StackPanel Margin="3">
+                                                    <Label  Height="25" Content="# Dimensions" Background="LightSkyBlue" />
                                                     <common:CustomTextBox Name="customWidth1" Label="Item width (en px):"/>
                                                     <common:CustomTextBox Name="customHeight1" Label="Item height (en px):"/>
                                                     <common:CustomTextBox Name="customRadius1" Label="Item radius (en °):"/>
@@ -158,47 +162,51 @@
                                             </Border>
 
                                             <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
-                                                <StackPanel>
+                                                <StackPanel Margin="3">
+                                                    <Label  Height="25" Content="# Couleur de fond" Background="LightSkyBlue" />
                                                     <common:CustomTextBox Name="customFirstBackgrounColor1" Label="Item 1st background color (#xxyyzz) :"/>
                                                     <common:CustomTextBox Name="customSecondBackgrounColor1" Label="Item 2nd background color (#xxyyzz) :"/>
                                                 </StackPanel>
                                             </Border>
                                             <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
-                                                <StackPanel>
+                                                <StackPanel Margin="3">
+                                                    <Label  Height="25" Content="# Bordure" Background="LightSkyBlue" />
                                                     <common:CustomTextBox Name="customExternalBorderWidth1" Label="Item external border width : (en px) :"/>
                                                     <common:CustomTextBox Name="customCurveSize1" Label="Item curved size :"/>
                                                     <common:CustomTextBox Name="customBorderColor1" Label="Item border color :"/>
                                                     <common:CustomTextBox Name="customBorderWidth1" Label="Item border width :"/>
                                                 </StackPanel>
                                             </Border>
-                                           
-
                                         </StackPanel>
                                         <StackPanel DockPanel.Dock="Right">
                                             <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
-                                                <StackPanel>
+                                                <StackPanel Margin="3">
+                                                    <Label  Height="25" Content="# Font" Background="LightSkyBlue" />
                                                     <common:CustomTextBox Name="customFontName1" Label="Item font name :"/>
-                                                    <common:CustomTextBox Name="customFontSize1" Label="Item font name :"/>
                                                     <common:CustomTextBox Name="customFontColor1" Label="Item font color :"/>
+                                                    <common:CustomTextBox Name="customFontSize1" Label="Item font name :"/>
                                                     <common:CustomTextBox Name="customStyle1" Label="Item text style :" ToolTip="Bold or Bold,Italic"/>
                                                     <common:CustomTextBox Name="customWithFontBorder1" Label="Bordure sur le texte ?  :"/>
                                                 </StackPanel>
                                             </Border>
                                             <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
-                                                <StackPanel>
+                                                <StackPanel Margin="3">
+                                                    <Label  Height="25" Content="# Alignement du texte" Background="LightSkyBlue" />
                                                     <common:CustomTextBox Name="customVerticaAlign1" Label="Item Vertical alignment :"/>
                                                     <common:CustomTextBox Name="customHorizontalAlign1" Label="Item horizontal alignment :"/>
                                                 </StackPanel>
                                             </Border>
-                                           
+
                                             <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
-                                                <StackPanel>
+                                                <StackPanel Margin="3">
+                                                    <Label  Height="25" Content="# Ombrage" Background="LightSkyBlue" />
                                                     <common:CustomTextBox Name="customShadowSize1" Label="taille de l'ombre :"/>
                                                     <common:CustomTextBox Name="customShadowAngle1" Label="Angle de l'ombre :"/>
                                                 </StackPanel>
                                             </Border>
                                             <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
-                                                <StackPanel>
+                                                <StackPanel Margin="3">
+                                                    <Label  Height="25" Content="# Taille icône de pouvoir" Background="LightSkyBlue" />
                                                     <common:CustomTextBox Name="customPowerIconWidth1" Label="Largeur de l'icone de pouvoir :"/>
                                                     <common:CustomTextBox Name="customPowerIconHeight1" Label="Hauteur de l'icone de pouvoir :"/>
                                                 </StackPanel>
@@ -208,10 +216,12 @@
                                             <common:CustomTextBox Name="customBackground1" Label="Item background type :"/>
                                         </StackPanel>
                                     </DockPanel>
+                                    <Button Width="100" Click="SaveItem1" Background="AliceBlue">Save and Refresh</Button>
                                 </StackPanel>
                             </DockPanel>
 
                         </StackPanel>
+
                     </TabItem>
                 </TabControl>
 

@@ -47,54 +47,6 @@ namespace CardMasterImageBuilder.Builders.Impl
 
             return ManageShadow(skinElement, item);
 
-
-            //if (item.Style == "Bold")
-            //{
-            //    skinElement.TextFont = new Font(item.FontName, item.FontSize.Value, FontStyle.Bold);
-            //}else if(item.Style=="Italic")
-            //{
-            //    skinElement.TextFont = new Font(item.FontName, item.FontSize.Value, FontStyle.Italic);
-            //}
-            //else if (item.Style == "Bold,Italic" || item.Style =="Italic,Bold")
-            //{
-            //    skinElement.TextFont = new Font(item.FontName, item.FontSize.Value, FontStyle.Bold | FontStyle.Italic);
-            //}
-
-            //if (item.FontColor!=null)
-            //{
-            //    skinElement.FontColor = ConvertColorFromString(item.FontColor);
-            //}
-
-            //skinElement.TextAttribute = item.NameAttribute;
-
-            //if (item.VerticalAlign=="Center")
-            //{
-            //    skinElement.TextVerticalAlign = VerticalAlignment.Center;
-            //}
-            //if (item.HorizontalAlign == "Center")
-            //{
-            //    skinElement.TextAlign = HorizontalAlignment.Center;
-            //}else if (item.HorizontalAlign=="Left-WithIcon")
-            //{
-            //    skinElement.TextAlign = HorizontalAlignment.LeftWithIcon;
-            //}
-            //if (item.VisibleConditionAttribute != null && item.VisibleConditionAttribute != "")
-            //{
-            //    skinElement.Visible = IsAttributeNonEmpty(card, item.VisibleConditionAttribute);
-            //}
-            //if (item.PowerIconHeight.HasValue && item.PowerIconWidth.HasValue)
-            //{
-            //    skinElement.LeftIconsSize =  new Size(item.PowerIconHeight.Value, item.PowerIconWidth.Value);
-            //}
-            //if (item.WithFontBorder.HasValue && item.WithFontBorder.Value == true)
-            //{
-            //    skinElement.WithFontBorder = true;
-            //}else
-            //{
-            //    skinElement.WithFontBorder = false;
-            //}
-
-            //return ManageShadow(skinElement, item);
         }
 
         private FontStyle GetStyle(string itemFontStyle)

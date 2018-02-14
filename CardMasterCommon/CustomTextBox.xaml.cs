@@ -25,8 +25,8 @@ namespace CardMasterCommon
             InitializeComponent();
         }
 
-        string LocalLabel = "";
-        string LocalTextBox = "";
+        string LocalLabel = null;
+        string LocalTextBox = null;
 
         public string Label
         {
@@ -50,7 +50,7 @@ namespace CardMasterCommon
 
         public string TextBox
         {
-            get { return LocalTextBox; }
+            get { return BaseTextBox.Text; }
             set
             {
                 LocalTextBox = value;
