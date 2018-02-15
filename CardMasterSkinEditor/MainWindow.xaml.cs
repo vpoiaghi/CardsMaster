@@ -90,6 +90,7 @@ namespace CardMasterSkinEditor
                 {
                     FindListViewByName("skinItemListView" + i).Items.Add(currentSkin.Items[j].Comment);
                 }
+                skinItemListView0.SelectedIndex = 0;
             }
 
 
@@ -132,7 +133,7 @@ namespace CardMasterSkinEditor
         }
         private void RefreshImages()
         {
-            if (previewCheckBox.IsChecked.Value == true)
+            if (previewCheckBox.IsChecked.Value == true && jsonSkinsProject!=null)
             {
                 Drawer drawer = new Drawer(cardTemplate, jsonSkinsProject, currentSkinDirectoryFullName, null);
                 drawer.Quality = DQuality;
@@ -155,6 +156,7 @@ namespace CardMasterSkinEditor
             skinFile = new FileInfo(currentSkinFilePath);
             jsonSkinsProject = JsonSkinsProject.LoadProject(skinFile);
             RefreshImages();
+            LoadUI();
         }
 
        
@@ -209,63 +211,66 @@ namespace CardMasterSkinEditor
 
         private void updateSkinItem(ListView currentListView)
         {
-            String currentComment = (String)currentListView.Items.GetItemAt(currentSkinItemIndex);
-            int tabIndex = tabControl.SelectedIndex;
-            String currentSkinName = ((TabItem)tabControl.SelectedItem).Header.ToString();
-            JsonSkinItem currentSkinItem = jsonSkinsProject.Skins.Where(n => n.Name.Equals(currentSkinName)).Single().Items.Where(c => c.Comment.Equals(currentComment)).Single();
-
-            jsonSkinsProject.BorderWidth = Int16.Parse(borderWidthTextBox.TextBox);
-
-            currentSkinItem.X = GetCustomTextBoxValueAsInt("customPositionX" + tabIndex).Value;
-            currentSkinItem.Y = GetCustomTextBoxValueAsInt("customPositionY" + tabIndex).Value;
-            currentSkinItem.Width = GetCustomTextBoxValueAsInt("customWidth" + tabIndex).Value;
-            currentSkinItem.Height = GetCustomTextBoxValueAsInt("customHeight" + tabIndex).Value;
-
-            switch (currentSkinItem.Type)
+            if (currentSkinItemIndex != -1)
             {
-                case "SERoundedRectangle":
-                    currentSkinItem.Radius= GetCustomTextBoxValueAsInt("customRadius" + tabIndex);
-                    currentSkinItem.BackgroundColor = FindCustomTextBoxByName("customFirstBackgrounColor" + tabIndex).TextBox;
-                    currentSkinItem.BackgroundColor2 = FindCustomTextBoxByName("customSecondBackgrounColor" + tabIndex).TextBox;
-                    currentSkinItem.ExternalCardBorderthickness = GetCustomTextBoxValueAsInt("customExternalBorderWidth" + tabIndex);
-                    currentSkinItem.Background = FindCustomTextBoxByName("customBackground" + tabIndex).TextBox;
-                    break;
-                case "SEImage":
-                    currentSkinItem.Radius = GetCustomTextBoxValueAsInt("customRadius" + tabIndex);
-                    currentSkinItem.NameAttribute = FindCustomTextBoxByName("customNameAttribute" + tabIndex).TextBox;
-                    currentSkinItem.Background = FindCustomTextBoxByName("customBackground" + tabIndex).TextBox;
-                    currentSkinItem.VisibleConditionAttribute = FindCustomTextBoxByName("customVisibleConditionAttribute" + tabIndex).TextBox;
-                    currentSkinItem.BorderColor = FindCustomTextBoxByName("customBorderColor" + tabIndex).TextBox;
-                    break;
-                case "SECurvedRectangle":
-                    currentSkinItem.CurveSize = GetCustomTextBoxValueAsInt("customCurveSize" + tabIndex);
-                    currentSkinItem.Background = FindCustomTextBoxByName("customBackground" + tabIndex).TextBox;
-                    currentSkinItem.BorderColor = FindCustomTextBoxByName("customBorderColor" + tabIndex).TextBox;
-                    break;
-                case "SERectangle":
-                    currentSkinItem.Background = FindCustomTextBoxByName("customBackground" + tabIndex).TextBox;
-                    currentSkinItem.BorderColor = FindCustomTextBoxByName("customBorderColor" + tabIndex).TextBox;
-                    break;
-                case "SETextArea":
-                    currentSkinItem.FontName = FindCustomTextBoxByName("customFontName" + tabIndex).TextBox;
-                    currentSkinItem.FontSize = GetCustomTextBoxValueAsInt("customFontSize" + tabIndex);
-                    currentSkinItem.FontColor = FindCustomTextBoxByName("customFontColor" + tabIndex).TextBox;
-                    currentSkinItem.Style = FindCustomTextBoxByName("customStyle" + tabIndex).TextBox;
-                    currentSkinItem.WithFontBorder = bool.Parse(FindCustomTextBoxByName("customWithFontBorder" + tabIndex).TextBox);
+                String currentComment = (String)currentListView.Items.GetItemAt(currentSkinItemIndex);
+                int tabIndex = tabControl.SelectedIndex;
+                String currentSkinName = ((TabItem)tabControl.SelectedItem).Header.ToString();
+                JsonSkinItem currentSkinItem = jsonSkinsProject.Skins.Where(n => n.Name.Equals(currentSkinName)).Single().Items.Where(c => c.Comment.Equals(currentComment)).Single();
 
-                    currentSkinItem.NameAttribute = FindCustomTextBoxByName("customNameAttribute" + tabIndex).TextBox;
+                jsonSkinsProject.BorderWidth = Int16.Parse(borderWidthTextBox.TextBox);
 
-                    currentSkinItem.VerticalAlign = FindCustomTextBoxByName("customVerticaAlign" + tabIndex).TextBox;          
-                    currentSkinItem.HorizontalAlign = FindCustomTextBoxByName("customHorizontalAlign" + tabIndex).TextBox;
+                currentSkinItem.X = GetCustomTextBoxValueAsInt("customPositionX" + tabIndex).Value;
+                currentSkinItem.Y = GetCustomTextBoxValueAsInt("customPositionY" + tabIndex).Value;
+                currentSkinItem.Width = GetCustomTextBoxValueAsInt("customWidth" + tabIndex).Value;
+                currentSkinItem.Height = GetCustomTextBoxValueAsInt("customHeight" + tabIndex).Value;
 
-                    currentSkinItem.VisibleConditionAttribute = FindCustomTextBoxByName("customVisibleConditionAttribute" + tabIndex).TextBox;
+                switch (currentSkinItem.Type)
+                {
+                    case "SERoundedRectangle":
+                        currentSkinItem.Radius = GetCustomTextBoxValueAsInt("customRadius" + tabIndex);
+                        currentSkinItem.BackgroundColor = FindCustomTextBoxByName("customFirstBackgrounColor" + tabIndex).TextBox;
+                        currentSkinItem.BackgroundColor2 = FindCustomTextBoxByName("customSecondBackgrounColor" + tabIndex).TextBox;
+                        currentSkinItem.ExternalCardBorderthickness = GetCustomTextBoxValueAsInt("customExternalBorderWidth" + tabIndex);
+                        currentSkinItem.Background = FindCustomTextBoxByName("customBackground" + tabIndex).TextBox;
+                        break;
+                    case "SEImage":
+                        currentSkinItem.Radius = GetCustomTextBoxValueAsInt("customRadius" + tabIndex);
+                        currentSkinItem.NameAttribute = FindCustomTextBoxByName("customNameAttribute" + tabIndex).TextBox;
+                        currentSkinItem.Background = FindCustomTextBoxByName("customBackground" + tabIndex).TextBox;
+                        currentSkinItem.VisibleConditionAttribute = FindCustomTextBoxByName("customVisibleConditionAttribute" + tabIndex).TextBox;
+                        currentSkinItem.BorderColor = FindCustomTextBoxByName("customBorderColor" + tabIndex).TextBox;
+                        break;
+                    case "SECurvedRectangle":
+                        currentSkinItem.CurveSize = GetCustomTextBoxValueAsInt("customCurveSize" + tabIndex);
+                        currentSkinItem.Background = FindCustomTextBoxByName("customBackground" + tabIndex).TextBox;
+                        currentSkinItem.BorderColor = FindCustomTextBoxByName("customBorderColor" + tabIndex).TextBox;
+                        break;
+                    case "SERectangle":
+                        currentSkinItem.Background = FindCustomTextBoxByName("customBackground" + tabIndex).TextBox;
+                        currentSkinItem.BorderColor = FindCustomTextBoxByName("customBorderColor" + tabIndex).TextBox;
+                        break;
+                    case "SETextArea":
+                        currentSkinItem.FontName = FindCustomTextBoxByName("customFontName" + tabIndex).TextBox;
+                        currentSkinItem.FontSize = GetCustomTextBoxValueAsInt("customFontSize" + tabIndex);
+                        currentSkinItem.FontColor = FindCustomTextBoxByName("customFontColor" + tabIndex).TextBox;
+                        currentSkinItem.Style = FindCustomTextBoxByName("customStyle" + tabIndex).TextBox;
+                        currentSkinItem.WithFontBorder = bool.Parse(FindCustomTextBoxByName("customWithFontBorder" + tabIndex).TextBox);
 
-                    currentSkinItem.PowerIconHeight = GetCustomTextBoxValueAsInt("customPowerIconHeight" + tabIndex);
-                    currentSkinItem.PowerIconWidth = GetCustomTextBoxValueAsInt("customPowerIconWidth" + tabIndex);
+                        currentSkinItem.NameAttribute = FindCustomTextBoxByName("customNameAttribute" + tabIndex).TextBox;
 
-                    break;
-                default:
-                    break;
+                        currentSkinItem.VerticalAlign = FindCustomTextBoxByName("customVerticaAlign" + tabIndex).TextBox;
+                        currentSkinItem.HorizontalAlign = FindCustomTextBoxByName("customHorizontalAlign" + tabIndex).TextBox;
+
+                        currentSkinItem.VisibleConditionAttribute = FindCustomTextBoxByName("customVisibleConditionAttribute" + tabIndex).TextBox;
+
+                        currentSkinItem.PowerIconHeight = GetCustomTextBoxValueAsInt("customPowerIconHeight" + tabIndex);
+                        currentSkinItem.PowerIconWidth = GetCustomTextBoxValueAsInt("customPowerIconWidth" + tabIndex);
+
+                        break;
+                    default:
+                        break;
+                }
             }
 
         }
@@ -299,6 +304,12 @@ namespace CardMasterSkinEditor
         private void loadSkinItemAndDisplay0(object sender, SelectionChangedEventArgs e)
         {
             loadViewFromSkinItem(skinItemListView0);
+        }
+
+        private void OnLostFocusTextBox0(object sender, RoutedEventArgs e)
+        {
+            updateSkinItem(skinItemListView0);
+            RefreshImages();
         }
     }
 }

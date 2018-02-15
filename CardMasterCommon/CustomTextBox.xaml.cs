@@ -27,6 +27,16 @@ namespace CardMasterCommon
 
         string LocalLabel = null;
         string LocalTextBox = null;
+        // events exposed to container
+        public static readonly RoutedEvent OnLostFocusTextBoxEvent =
+            EventManager.RegisterRoutedEvent("OnLostFocusTextBox", RoutingStrategy.Direct, typeof(RoutedEventHandler), typeof(CustomTextBox));
+
+        // expose and raise 'OnLostFocus' event
+        public event RoutedEventHandler OnLostFocusTextBox
+        {
+            add { AddHandler(OnLostFocusTextBoxEvent, value); }
+            remove { RemoveHandler(OnLostFocusTextBoxEvent, value); }
+        }
 
         public string Label
         {
@@ -56,6 +66,17 @@ namespace CardMasterCommon
                 LocalTextBox = value;
                 BaseTextBox.Text = value;
             }
+        }
+
+        private void BaseTextBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            RaiseEvent(new RoutedEventArgs(OnLostFocusTextBoxEvent));
+        }
+
+        private void BaseTextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox t = (TextBox)sender;
+            t.SelectAll();
         }
     }
 }
