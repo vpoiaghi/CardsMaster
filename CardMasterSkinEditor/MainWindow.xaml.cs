@@ -35,7 +35,11 @@ namespace CardMasterSkinEditor
         String currentSkinDirectoryFullName;
         public DrawingQuality DQuality { get; set; } = new DrawingQuality();
         DrawingImageToImageSourceConverter converter = new DrawingImageToImageSourceConverter();
-        int currentSkinItemIndex = -1;
+        int currentSkinItemIndex0 = -1;
+        int currentSkinItemIndex1 = -1;
+        Dictionary<String, int> mapCurrentIndexes = new Dictionary<string, int>();
+        
+
         public MainWindow()
         {
             InitializeComponent();
@@ -49,7 +53,8 @@ namespace CardMasterSkinEditor
                 FindComboBoxByName("typeComboBox" + j).Items.Add("SERectangle");
             }
 
-
+            mapCurrentIndexes.Add("0", -1);
+            mapCurrentIndexes.Add("1", -1);
 
         }
 
@@ -161,59 +166,61 @@ namespace CardMasterSkinEditor
 
        
 
-        private void loadViewFromSkinItem(ListView currentListView)
+        private void loadViewFromSkinItem(ListView currentListView,String indexKey)
         {
+            if (currentListView.SelectedIndex != -1)
+            {
+                mapCurrentIndexes[indexKey] = currentListView.SelectedIndex;
+               
 
-            currentSkinItemIndex = currentListView.SelectedIndex;
+                String currentComment = (String)currentListView.Items.GetItemAt(mapCurrentIndexes[indexKey]);
+                int tabIndex = tabControl.SelectedIndex;
+                String currentSkinName = ((TabItem)tabControl.SelectedItem).Header.ToString();
+                JsonSkinItem currentSkinItem = jsonSkinsProject.Skins.Where(n => n.Name.Equals(currentSkinName)).Single().Items.Where(c => c.Comment.Equals(currentComment)).Single();
 
-            String currentComment = (String)currentListView.Items.GetItemAt(currentSkinItemIndex);
-            int tabIndex = tabControl.SelectedIndex;
-            String currentSkinName = ((TabItem)tabControl.SelectedItem).Header.ToString();
-            JsonSkinItem currentSkinItem = jsonSkinsProject.Skins.Where(n => n.Name.Equals(currentSkinName)).Single().Items.Where(c => c.Comment.Equals(currentComment)).Single();
+                FindComboBoxByName("typeComboBox" + tabIndex).SelectedValue = currentSkinItem.Type;
+                FindCustomTextBoxByName("customPositionX" + tabIndex).TextBox = currentSkinItem.X.ToString();
+                FindCustomTextBoxByName("customPositionY" + tabIndex).TextBox = currentSkinItem.Y.ToString();
 
-            FindComboBoxByName("typeComboBox" + tabIndex).SelectedValue = currentSkinItem.Type;
-            FindCustomTextBoxByName("customPositionX" + tabIndex).TextBox = currentSkinItem.X.ToString();
-            FindCustomTextBoxByName("customPositionY" + tabIndex).TextBox = currentSkinItem.Y.ToString();
+                FindCustomTextBoxByName("customWidth" + tabIndex).TextBox = currentSkinItem.Width.ToString();
+                FindCustomTextBoxByName("customHeight" + tabIndex).TextBox = currentSkinItem.Height.ToString();
+                FindCustomTextBoxByName("customRadius" + tabIndex).TextBox = currentSkinItem.Radius.HasValue ? currentSkinItem.Radius.Value.ToString() : null;
 
-            FindCustomTextBoxByName("customWidth" + tabIndex).TextBox = currentSkinItem.Width.ToString();
-            FindCustomTextBoxByName("customHeight" + tabIndex).TextBox = currentSkinItem.Height.ToString();
-            FindCustomTextBoxByName("customRadius" + tabIndex).TextBox = currentSkinItem.Radius.HasValue ? currentSkinItem.Radius.Value.ToString() : null;
+                FindCustomTextBoxByName("customFirstBackgrounColor" + tabIndex).TextBox = currentSkinItem.BackgroundColor;
+                FindCustomTextBoxByName("customSecondBackgrounColor" + tabIndex).TextBox = currentSkinItem.BackgroundColor2;
 
-            FindCustomTextBoxByName("customFirstBackgrounColor" + tabIndex).TextBox = currentSkinItem.BackgroundColor;
-            FindCustomTextBoxByName("customSecondBackgrounColor" + tabIndex).TextBox = currentSkinItem.BackgroundColor2;
+                FindCustomTextBoxByName("customExternalBorderWidth" + tabIndex).TextBox = currentSkinItem.ExternalCardBorderthickness.HasValue ? currentSkinItem.ExternalCardBorderthickness.Value.ToString() : null;
+                FindCustomTextBoxByName("customNameAttribute" + tabIndex).TextBox = currentSkinItem.NameAttribute;
+                FindCustomTextBoxByName("customBackground" + tabIndex).TextBox = currentSkinItem.Background;
+                FindCustomTextBoxByName("customCurveSize" + tabIndex).TextBox = currentSkinItem.CurveSize.HasValue ? currentSkinItem.CurveSize.Value.ToString() : null;
 
-            FindCustomTextBoxByName("customExternalBorderWidth" + tabIndex).TextBox = currentSkinItem.ExternalCardBorderthickness.HasValue ? currentSkinItem.ExternalCardBorderthickness.Value.ToString() : null;
-            FindCustomTextBoxByName("customNameAttribute" + tabIndex).TextBox = currentSkinItem.NameAttribute;
-            FindCustomTextBoxByName("customBackground" + tabIndex).TextBox = currentSkinItem.Background;
-            FindCustomTextBoxByName("customCurveSize" + tabIndex).TextBox = currentSkinItem.CurveSize.HasValue ? currentSkinItem.CurveSize.Value.ToString() : null;
+                FindCustomTextBoxByName("customBorderColor" + tabIndex).TextBox = currentSkinItem.BorderColor;
+                FindCustomTextBoxByName("customBorderWidth" + tabIndex).TextBox = currentSkinItem.BorderWidth.HasValue ? currentSkinItem.BorderWidth.Value.ToString() : null;
 
-            FindCustomTextBoxByName("customBorderColor" + tabIndex).TextBox = currentSkinItem.BorderColor;
-            FindCustomTextBoxByName("customBorderWidth" + tabIndex).TextBox = currentSkinItem.BorderWidth.HasValue ? currentSkinItem.BorderWidth.Value.ToString() : null;
+                FindCustomTextBoxByName("customFontName" + tabIndex).TextBox = currentSkinItem.FontName;
+                FindCustomTextBoxByName("customFontColor" + tabIndex).TextBox = currentSkinItem.FontColor;
+                FindCustomTextBoxByName("customStyle" + tabIndex).TextBox = currentSkinItem.Style;
+                FindCustomTextBoxByName("customFontSize" + tabIndex).TextBox = currentSkinItem.FontSize.HasValue ? currentSkinItem.FontSize.Value.ToString() : null;
+                FindCustomTextBoxByName("customWithFontBorder" + tabIndex).TextBox = currentSkinItem.WithFontBorder.HasValue ? currentSkinItem.WithFontBorder.Value.ToString() : null; ;
 
-            FindCustomTextBoxByName("customFontName" + tabIndex).TextBox = currentSkinItem.FontName;
-            FindCustomTextBoxByName("customFontColor" + tabIndex).TextBox = currentSkinItem.FontColor;
-            FindCustomTextBoxByName("customStyle" + tabIndex).TextBox = currentSkinItem.Style;
-            FindCustomTextBoxByName("customFontSize" + tabIndex).TextBox = currentSkinItem.FontSize.HasValue ? currentSkinItem.FontSize.Value.ToString() : null;
-            FindCustomTextBoxByName("customWithFontBorder" + tabIndex).TextBox = currentSkinItem.WithFontBorder.HasValue ? currentSkinItem.WithFontBorder.Value.ToString() : null; ;
+                FindCustomTextBoxByName("customVerticaAlign" + tabIndex).TextBox = currentSkinItem.VerticalAlign;
+                FindCustomTextBoxByName("customHorizontalAlign" + tabIndex).TextBox = currentSkinItem.HorizontalAlign;
 
-            FindCustomTextBoxByName("customVerticaAlign" + tabIndex).TextBox = currentSkinItem.VerticalAlign;
-            FindCustomTextBoxByName("customHorizontalAlign" + tabIndex).TextBox = currentSkinItem.HorizontalAlign;
+                FindCustomTextBoxByName("customVisibleConditionAttribute" + tabIndex).TextBox = currentSkinItem.VisibleConditionAttribute;
 
-            FindCustomTextBoxByName("customVisibleConditionAttribute" + tabIndex).TextBox = currentSkinItem.VisibleConditionAttribute;
+                FindCustomTextBoxByName("customShadowSize" + tabIndex).TextBox = currentSkinItem.shadowSize.HasValue ? currentSkinItem.shadowSize.Value.ToString() : null; ;
+                FindCustomTextBoxByName("customShadowAngle" + tabIndex).TextBox = currentSkinItem.shadowAngle.HasValue ? currentSkinItem.shadowAngle.Value.ToString() : null; ;
 
-            FindCustomTextBoxByName("customShadowSize" + tabIndex).TextBox = currentSkinItem.shadowSize.HasValue ? currentSkinItem.shadowSize.Value.ToString() : null; ;
-            FindCustomTextBoxByName("customShadowAngle" + tabIndex).TextBox = currentSkinItem.shadowAngle.HasValue ? currentSkinItem.shadowAngle.Value.ToString() : null; ;
-
-            FindCustomTextBoxByName("customPowerIconWidth" + tabIndex).TextBox = currentSkinItem.PowerIconWidth.HasValue ? currentSkinItem.PowerIconWidth.Value.ToString() : null; ;
-            FindCustomTextBoxByName("customPowerIconHeight" + tabIndex).TextBox = currentSkinItem.PowerIconHeight.HasValue ? currentSkinItem.PowerIconHeight.Value.ToString() : null; ;
-
+                FindCustomTextBoxByName("customPowerIconWidth" + tabIndex).TextBox = currentSkinItem.PowerIconWidth.HasValue ? currentSkinItem.PowerIconWidth.Value.ToString() : null; ;
+                FindCustomTextBoxByName("customPowerIconHeight" + tabIndex).TextBox = currentSkinItem.PowerIconHeight.HasValue ? currentSkinItem.PowerIconHeight.Value.ToString() : null; ;
+            }
         }
 
-        private void updateSkinItem(ListView currentListView)
+        private void updateSkinItem(ListView currentListView,string indexKey)
         {
-            if (currentSkinItemIndex != -1)
+            if (mapCurrentIndexes[indexKey] != -1)
             {
-                String currentComment = (String)currentListView.Items.GetItemAt(currentSkinItemIndex);
+                String currentComment = (String)currentListView.Items.GetItemAt(mapCurrentIndexes[indexKey]);
                 int tabIndex = tabControl.SelectedIndex;
                 String currentSkinName = ((TabItem)tabControl.SelectedItem).Header.ToString();
                 JsonSkinItem currentSkinItem = jsonSkinsProject.Skins.Where(n => n.Name.Equals(currentSkinName)).Single().Items.Where(c => c.Comment.Equals(currentComment)).Single();
@@ -282,33 +289,45 @@ namespace CardMasterSkinEditor
                 RefreshImages();
             }
         }
-
-        private void SaveItem0(object sender, RoutedEventArgs e)
-        {
-            updateSkinItem(skinItemListView0);
-            RefreshImages();
-        }
-
-        private void SaveItem1(object sender, RoutedEventArgs e)
-        {
-            updateSkinItem(skinItemListView1);
-            RefreshImages();
-        }
-
-
-        private void loadSkinItemAndDisplay1(object sender, SelectionChangedEventArgs e)
-        {
-            loadViewFromSkinItem(skinItemListView1);
-        }
-
-        private void loadSkinItemAndDisplay0(object sender, SelectionChangedEventArgs e)
-        {
-            loadViewFromSkinItem(skinItemListView0);
-        }
-
+     
         private void OnLostFocusTextBox0(object sender, RoutedEventArgs e)
         {
-            updateSkinItem(skinItemListView0);
+            updateSkinItem(skinItemListView0,"0");
+            RefreshImages();
+        }
+
+        private void OnLostFocusTextBox1(object sender, RoutedEventArgs e)
+        {
+            updateSkinItem(skinItemListView1, "1");
+            RefreshImages();
+        }
+
+        private void OnChangeTab(object sender, RoutedEventArgs e)
+        {
+            FindListViewByName("skinItemListView" + tabControl.SelectedIndex).SelectedIndex = -1;
+            loadViewFromSkinItem(skinItemListView0, tabControl.SelectedIndex.ToString());
+        }
+
+        private void OnListViewItemClick0(object sender, SelectionChangedEventArgs e)
+        {
+            loadViewFromSkinItem(skinItemListView0, "0");
+        }
+
+        private void OnListViewItemClick1(object sender, SelectionChangedEventArgs e)
+        {
+            loadViewFromSkinItem(skinItemListView1, "1");
+        }
+
+        private void OnButtonSaveClick0(object sender, RoutedEventArgs e)
+        {
+            updateSkinItem(skinItemListView0,"0");
+            RefreshImages();
+        }
+
+
+        private void OnButtonSaveClick1(object sender, RoutedEventArgs e)
+        {
+            updateSkinItem(skinItemListView1,"1");
             RefreshImages();
         }
     }

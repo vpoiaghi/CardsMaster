@@ -40,13 +40,13 @@
             <StackPanel DockPanel.Dock="Right">
                 <common:CustomTextBox Name="borderWidthTextBox" Label="Epaisseur des bordures internes (en px):" OnLostFocusTextBox="OnLostFocusTextBox0"/>
 
-                <TabControl Name="tabControl" Height="805">
+                <TabControl Name="tabControl" Height="805" SelectionChanged="OnChangeTab">
                     <TabItem Header="Onglet 1">
                         <StackPanel>
                             <common:CustomTextBox Name="skinHeightTextBox0" Label="Hauteur des cartes (en px):" OnLostFocusTextBox="OnLostFocusTextBox0"/>
                             <common:CustomTextBox Name="skinWidthTextBox0" Label="Largeur des cartes (en px):" OnLostFocusTextBox="OnLostFocusTextBox0"/>
                             <DockPanel>
-                                <ListView Name="skinItemListView0" SelectionMode="Single" Width="300" Height="746" DockPanel.Dock="Left" SelectionChanged="loadSkinItemAndDisplay0"/>
+                                <ListView Name="skinItemListView0" SelectionMode="Single" Width="300" Height="746" DockPanel.Dock="Left" SelectionChanged="OnListViewItemClick0"/>
                                 <StackPanel  DockPanel.Dock="Right" >
                                     <DockPanel>
                                         <StackPanel DockPanel.Dock="Left">
@@ -126,7 +126,7 @@
                                         </StackPanel>
                                        
                                     </DockPanel>
-                                    <Button Width="100" Click="SaveItem0" Background="AliceBlue">Save and Refresh</Button>
+                                    <Button Width="100" Click="OnButtonSaveClick0" Background="AliceBlue">Save and Refresh</Button>
                                 </StackPanel>
                             </DockPanel>
 
@@ -134,47 +134,47 @@
                     </TabItem>
                     <TabItem Header="Onglet 2">
                         <StackPanel>
-                            <common:CustomTextBox Name="skinHeightTextBox1" Label="Hauteur des cartes (en px):"/>
-                            <common:CustomTextBox Name="skinWidthTextBox1" Label="Largeur des cartes (en px):"/>
+                            <common:CustomTextBox Name="skinHeightTextBox1" Label="Hauteur des cartes (en px):" OnLostFocusTextBox="OnLostFocusTextBox1"/>
+                            <common:CustomTextBox Name="skinWidthTextBox1" Label="Largeur des cartes (en px):" OnLostFocusTextBox="OnLostFocusTextBox1"/>
                             <DockPanel>
-                                <ListView Name="skinItemListView1" SelectionMode="Single" Width="300" Height="746" DockPanel.Dock="Left" SelectionChanged="loadSkinItemAndDisplay1"/>
+                                <ListView Name="skinItemListView1" SelectionMode="Single" Width="300" Height="746" DockPanel.Dock="Left" SelectionChanged="OnListViewItemClick1"/>
                                 <StackPanel  DockPanel.Dock="Right" >
                                     <DockPanel>
                                         <StackPanel DockPanel.Dock="Left">
                                             <StackPanel Orientation="Horizontal">
                                                 <Label Height="30" MinWidth="30">Type de composant :</Label>
-                                                <ComboBox Name="typeComboBox1" Height="23" MinWidth="220" Margin="0,-5,0,0"/>
+                                                <ComboBox Name="typeComboBox1" Height="23" MinWidth="220" Margin="0,-5,0,0" />
                                             </StackPanel>
                                             <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
                                                 <StackPanel Margin="3">
                                                     <Label  Height="25" Content="# Position" Background="LightSkyBlue" />
-                                                    <common:CustomTextBox Name="customPositionX1" Label="Position en X (en px):"/>
-                                                    <common:CustomTextBox Name="customPositionY1" Label="Position en Y (en px):"/>
+                                                    <common:CustomTextBox Name="customPositionX1" Label="Position en X (en px):" OnLostFocusTextBox="OnLostFocusTextBox1"/>
+                                                    <common:CustomTextBox Name="customPositionY1" Label="Position en Y (en px):" OnLostFocusTextBox="OnLostFocusTextBox1"/>
                                                 </StackPanel>
                                             </Border>
                                             <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
                                                 <StackPanel Margin="3">
                                                     <Label  Height="25" Content="# Dimensions" Background="LightSkyBlue" />
-                                                    <common:CustomTextBox Name="customWidth1" Label="Item width (en px):"/>
-                                                    <common:CustomTextBox Name="customHeight1" Label="Item height (en px):"/>
-                                                    <common:CustomTextBox Name="customRadius1" Label="Item radius (en °):"/>
+                                                    <common:CustomTextBox Name="customWidth1" Label="Item width (en px):" OnLostFocusTextBox="OnLostFocusTextBox1" />
+                                                    <common:CustomTextBox Name="customHeight1" Label="Item height (en px):" OnLostFocusTextBox="OnLostFocusTextBox1"/>
+                                                    <common:CustomTextBox Name="customRadius1" Label="Item radius (en °):" OnLostFocusTextBox="OnLostFocusTextBox1"/>
                                                 </StackPanel>
                                             </Border>
 
                                             <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
                                                 <StackPanel Margin="3">
                                                     <Label  Height="25" Content="# Couleur de fond" Background="LightSkyBlue" />
-                                                    <common:CustomTextBox Name="customFirstBackgrounColor1" Label="Item 1st background color (#xxyyzz) :"/>
-                                                    <common:CustomTextBox Name="customSecondBackgrounColor1" Label="Item 2nd background color (#xxyyzz) :"/>
+                                                    <common:CustomTextBox Name="customFirstBackgrounColor1" Label="Item 1st background color (#xxyyzz) :" OnLostFocusTextBox="OnLostFocusTextBox1"/>
+                                                    <common:CustomTextBox Name="customSecondBackgrounColor1" Label="Item 2nd background color (#xxyyzz) :" OnLostFocusTextBox="OnLostFocusTextBox1"/>
                                                 </StackPanel>
                                             </Border>
                                             <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
                                                 <StackPanel Margin="3">
                                                     <Label  Height="25" Content="# Bordure" Background="LightSkyBlue" />
-                                                    <common:CustomTextBox Name="customExternalBorderWidth1" Label="Item external border width : (en px) :"/>
-                                                    <common:CustomTextBox Name="customCurveSize1" Label="Item curved size :"/>
-                                                    <common:CustomTextBox Name="customBorderColor1" Label="Item border color :"/>
-                                                    <common:CustomTextBox Name="customBorderWidth1" Label="Item border width :"/>
+                                                    <common:CustomTextBox Name="customExternalBorderWidth1" Label="Item external border width : (en px) :" OnLostFocusTextBox="OnLostFocusTextBox1"/>
+                                                    <common:CustomTextBox Name="customCurveSize1" Label="Item curved size :" OnLostFocusTextBox="OnLostFocusTextBox1"/>
+                                                    <common:CustomTextBox Name="customBorderColor1" Label="Item border color :" OnLostFocusTextBox="OnLostFocusTextBox1"/>
+                                                    <common:CustomTextBox Name="customBorderWidth1" Label="Item border width :" OnLostFocusTextBox="OnLostFocusTextBox1"/>
                                                 </StackPanel>
                                             </Border>
                                         </StackPanel>
@@ -182,41 +182,41 @@
                                             <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
                                                 <StackPanel Margin="3">
                                                     <Label  Height="25" Content="# Font" Background="LightSkyBlue" />
-                                                    <common:CustomTextBox Name="customFontName1" Label="Item font name :"/>
-                                                    <common:CustomTextBox Name="customFontColor1" Label="Item font color :"/>
-                                                    <common:CustomTextBox Name="customFontSize1" Label="Item font name :"/>
-                                                    <common:CustomTextBox Name="customStyle1" Label="Item text style :" ToolTip="Bold or Bold,Italic"/>
-                                                    <common:CustomTextBox Name="customWithFontBorder1" Label="Bordure sur le texte ?  :"/>
+                                                    <common:CustomTextBox Name="customFontName1" Label="Item font name :" OnLostFocusTextBox="OnLostFocusTextBox1"/>
+                                                    <common:CustomTextBox Name="customFontColor1" Label="Item font color :" OnLostFocusTextBox="OnLostFocusTextBox1"/>
+                                                    <common:CustomTextBox Name="customFontSize1" Label="Item font name :" OnLostFocusTextBox="OnLostFocusTextBox1"/>
+                                                    <common:CustomTextBox Name="customStyle1" Label="Item text style :" ToolTip="Bold or Bold,Italic" OnLostFocusTextBox="OnLostFocusTextBox1"/>
+                                                    <common:CustomTextBox Name="customWithFontBorder1" Label="Bordure sur le texte ?  :" OnLostFocusTextBox="OnLostFocusTextBox1"/>
                                                 </StackPanel>
                                             </Border>
                                             <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
                                                 <StackPanel Margin="3">
                                                     <Label  Height="25" Content="# Alignement du texte" Background="LightSkyBlue" />
-                                                    <common:CustomTextBox Name="customVerticaAlign1" Label="Item Vertical alignment :"/>
-                                                    <common:CustomTextBox Name="customHorizontalAlign1" Label="Item horizontal alignment :"/>
+                                                    <common:CustomTextBox Name="customVerticaAlign1" Label="Item Vertical alignment :" OnLostFocusTextBox="OnLostFocusTextBox1"/>
+                                                    <common:CustomTextBox Name="customHorizontalAlign1" Label="Item horizontal alignment :" OnLostFocusTextBox="OnLostFocusTextBox1"/>
                                                 </StackPanel>
                                             </Border>
 
                                             <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
                                                 <StackPanel Margin="3">
                                                     <Label  Height="25" Content="# Ombrage" Background="LightSkyBlue" />
-                                                    <common:CustomTextBox Name="customShadowSize1" Label="taille de l'ombre :"/>
-                                                    <common:CustomTextBox Name="customShadowAngle1" Label="Angle de l'ombre :"/>
+                                                    <common:CustomTextBox Name="customShadowSize1" Label="taille de l'ombre :" OnLostFocusTextBox="OnLostFocusTextBox1"/>
+                                                    <common:CustomTextBox Name="customShadowAngle1" Label="Angle de l'ombre :" OnLostFocusTextBox="OnLostFocusTextBox1"/>
                                                 </StackPanel>
                                             </Border>
                                             <Border Margin="1" Background="AliceBlue" BorderBrush="SteelBlue" BorderThickness="1,1,1,1" CornerRadius="3" VerticalAlignment="Top">
                                                 <StackPanel Margin="3">
                                                     <Label  Height="25" Content="# Taille icône de pouvoir" Background="LightSkyBlue" />
-                                                    <common:CustomTextBox Name="customPowerIconWidth1" Label="Largeur de l'icone de pouvoir :"/>
-                                                    <common:CustomTextBox Name="customPowerIconHeight1" Label="Hauteur de l'icone de pouvoir :"/>
+                                                    <common:CustomTextBox Name="customPowerIconWidth1" Label="Largeur de l'icone de pouvoir :" OnLostFocusTextBox="OnLostFocusTextBox1"/>
+                                                    <common:CustomTextBox Name="customPowerIconHeight1" Label="Hauteur de l'icone de pouvoir :" OnLostFocusTextBox="OnLostFocusTextBox1"/>
                                                 </StackPanel>
                                             </Border>
-                                            <common:CustomTextBox Name="customVisibleConditionAttribute1" TextBoxWidth="150" Label="Champs de la carte conditionnant l'affichage :"/>
-                                            <common:CustomTextBox Name="customNameAttribute1" TextBoxWidth="260" Label="Item name attribute (for image link) :"/>
-                                            <common:CustomTextBox Name="customBackground1" Label="Item background type :"/>
+                                            <common:CustomTextBox Name="customVisibleConditionAttribute1" TextBoxWidth="150" Label="Champs de la carte conditionnant l'affichage :" OnLostFocusTextBox="OnLostFocusTextBox1"/>
+                                            <common:CustomTextBox Name="customNameAttribute1" TextBoxWidth="260" Label="Item name attribute (for image link) :" OnLostFocusTextBox="OnLostFocusTextBox1"/>
+                                            <common:CustomTextBox Name="customBackground1" Label="Item background type :" OnLostFocusTextBox="OnLostFocusTextBox1"/>
                                         </StackPanel>
                                     </DockPanel>
-                                    <Button Width="100" Click="SaveItem1" Background="AliceBlue">Save and Refresh</Button>
+                                    <Button Width="100" Click="OnButtonSaveClick1" Background="AliceBlue">Save and Refresh</Button>
                                 </StackPanel>
                             </DockPanel>
 
