@@ -1551,7 +1551,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Clone aqueu : Invoque un clone aqueu"
+          "Description": "<<activate>>  Clone aqueux : Invoque un clone aqueu"
         }
       ]
     },
@@ -1691,7 +1691,7 @@
       "Element": "Terre",
       "Cost": "0",
       "Attack": "2",
-      "Defense": "2",
+      "Defense": "1",
       "Citation": "Rhaaaaaaaaaaaaaaa",
       "Comments": "Creer 16 cartes de clones Zetsu",
       "Nb": 16,
@@ -4571,7 +4571,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Inflige 1 dégât au ninja ciblé (Utilisable 1 fois par tour)"
+          "Description": "<<activate>>  Inflige 1 dégât à distance sans contre-attaque possible au ninja ciblé (Utilisable 1 fois par tour)"
         }
       ]
     },
@@ -4633,7 +4633,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Inflige 1 dégât au corps à corps au ninja ciblé et reçoit normalement les dégats (Utilisable 1 fois par tour, en attaque ou en défense)"
+          "Description": "<<activate>>  Inflige 1 dégât à distance sans contre-attaque possible au ninja ciblé et reçoit normalement les dégats (Utilisable 1 fois par tour, en attaque ou en défense)"
         }
       ]
     },
@@ -4695,7 +4695,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Inflige 1 dégât à distance à 2 ninjas ciblés (Utilisable 1 fois par tour)"
+          "Description": "<<activate>>  Inflige 1 dégât à distance sans contre-attaque possible à 2 ninjas ciblés (Utilisable 1 fois par tour)"
         }
       ]
     },
@@ -4757,7 +4757,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Inflige 1 dégât à distance au ninja ciblé (utilisable 1 fois par tour)"
+          "Description": "<<activate>>  Inflige 1 dégât à distance sans contre-attaque possible  au ninja ciblé (utilisable 1 fois par tour)"
         }
       ]
     },
@@ -4819,7 +4819,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Inflige 3 dégât à distance à 2 ninjas côte à côte. Est détruit après utilisation."
+          "Description": "<<activate>>  Inflige 3 dégât à distance sans contre-attaque possible à 2 ninjas côte à côte. Est détruit après utilisation."
         }
       ]
     },
@@ -5124,7 +5124,7 @@
       "Team": "Quête",
       "Chakra": "Quête",
       "Element": "",
-      "Cost": "3",
+      "Cost": "",
       "Attack": "",
       "Defense": "",
       "Citation": "",
@@ -5144,7 +5144,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Conditions>>  2 Bijùs sont envoyés au cimetière (peu importe le camp) "
+          "Description": "<<Conditions>>  1 Bijù est envoyé au cimetière ce tour-ci (peu importe le camp) "
         },
         {
           "Description": "<<Récompense>>  Ressuscite un bijù du cimetière directement en jeu"
@@ -5158,7 +5158,7 @@
       "Team": "Quête",
       "Chakra": "Quête",
       "Element": "",
-      "Cost": "3",
+      "Cost": "",
       "Attack": "",
       "Defense": "",
       "Citation": "",
@@ -5192,7 +5192,7 @@
       "Team": "Quête",
       "Chakra": "Quête",
       "Element": "",
-      "Cost": "3",
+      "Cost": "",
       "Attack": "",
       "Defense": "",
       "Citation": "",
