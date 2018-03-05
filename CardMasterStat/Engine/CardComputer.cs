@@ -1,4 +1,5 @@
 ﻿
+using CardMasterStat.Engine;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,6 +41,20 @@ namespace CardMasterStat
             for (int i = 0; i < 10; i++)
             {
                 toReturn.Add(i, this.m_listCards.Where(c => c.Defense == i).Count());
+            }
+            return toReturn;
+        }
+        public List<CustomDot> GetRepartitionByRatio()
+        {
+           List<CustomDot> toReturn = new List<CustomDot>();
+            foreach (Card c in m_listCards)
+            {
+                if (c.Cost.HasValue)
+                {
+                    CustomDot k = new CustomDot(c.Name,c.Cost.Value, c.Ratio);
+                    toReturn.Add(k);
+                }
+                
             }
             return toReturn;
         }

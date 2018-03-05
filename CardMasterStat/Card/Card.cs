@@ -21,6 +21,22 @@ namespace CardMasterStat
         public JsonTexture Background { get; set; }
         public List<JsonPower> Powers { get; set; }
 
+        public int Ratio
+        {
+            get{
+                return ComputeRatio();
+            }
+        }
+
+        private int ComputeRatio()
+        {
+            int ratio = 0;
+            ratio += Attack.Value;
+            ratio += Defense.Value;
+            ratio = ratio * Powers.Count;
+            return ratio;
+        }
+
         public enum CardKind
         {
             Environnement,

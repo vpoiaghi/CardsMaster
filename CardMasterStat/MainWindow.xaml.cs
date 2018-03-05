@@ -1,6 +1,8 @@
 ﻿using CardMasterCard.Card;
+using CardMasterStat.Engine;
 using Microsoft.Win32;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls.DataVisualization.Charting;
@@ -25,6 +27,12 @@ namespace CardMasterStat
             ((ColumnSeries)chartAtk.Series[0]).ItemsSource = computer.GetRepartitionByAttack();
             ((ColumnSeries)chartDef.Series[0]).ItemsSource = computer.GetRepartitionByDefense();
             ((ColumnSeries)chartNature.Series[0]).ItemsSource = computer.GetRepartitionByNature();
+
+        
+
+            ((ScatterSeries)chartRatio.Series[0]).ItemsSource = computer.GetRepartitionByRatio();
+           
+           
         }
   
 

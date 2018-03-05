@@ -10,7 +10,9 @@
         Title="MainWindow" Height="782" Width="1227">
     <Window.Resources>
         <Card:ConvertToBrush x:Key="converter"/>
+        
     </Window.Resources>
+    
     <Grid>
         <Menu>
             <MenuItem Header="_File">
@@ -70,6 +72,39 @@
                                 </Style>
                             </DVC:ColumnSeries.DataPointStyle>
                         </DVC:ColumnSeries>
+                    </DVC:Chart>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Répartition par Ratio de puissance / cost">
+                <Grid Background="#FFE5E5E5">
+                    
+                    <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="chartRatio" Background="LightSteelBlue" Margin="10">
+                        
+                        <DVC:ScatterSeries DependentValuePath="Value" IndependentValuePath="Cost" ItemsSource="{Binding}" >
+                           
+                            <DVC:ScatterSeries.DataPointStyle>
+                                <Style TargetType="DVC:ScatterDataPoint">
+                                    
+                                    <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Self}, Converter={StaticResource converter}}" />
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="DVC:ScatterDataPoint">
+                                                <Grid x:Name="Root" Opacity="1">
+                                                    
+                                                    <ToolTipService.ToolTip>
+                                                        <StackPanel Margin="10,2,10,2">
+                                                            <ContentControl Content="{Binding Label}" />
+                                                        </StackPanel>
+                                                    </ToolTipService.ToolTip>
+                                                    <Ellipse StrokeThickness="{TemplateBinding BorderThickness}" Stroke="{TemplateBinding BorderBrush}" Fill="{TemplateBinding Background}"/>
+                                                </Grid>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+
+                                </Style>
+                            </DVC:ScatterSeries.DataPointStyle>
+                        </DVC:ScatterSeries>
                     </DVC:Chart>
                 </Grid>
             </TabItem>
