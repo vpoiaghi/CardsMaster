@@ -31,8 +31,8 @@ namespace CardMasterStat
         private int ComputeRatio()
         {
             int ratio = 0;
-            ratio += Attack.Value;
-            ratio += Defense.Value;
+            ratio += (Attack.Value);
+            ratio += (Defense.Value);
             ratio = ratio * Powers.Count;
             return ratio;
         }
