@@ -3,6 +3,7 @@ using CardMasterStat.Engine;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Collections;
 
 namespace CardMasterStat
 {
@@ -15,7 +16,7 @@ namespace CardMasterStat
             this.m_listCards = list;
         }
 
-        public SortedDictionary<int, int> GetRepartitionByCost()
+        public IEnumerable GetRepartitionByCost()
         {
             SortedDictionary<int, int> toReturn = new SortedDictionary<int, int>();
             for (int i = 0; i < 10; i++)
@@ -25,7 +26,7 @@ namespace CardMasterStat
             return toReturn;
         }
 
-        public SortedDictionary<int, int> GetRepartitionByAttack()
+        public IEnumerable GetRepartitionByAttack()
         {
             SortedDictionary<int, int> toReturn = new SortedDictionary<int, int>();
             for (int i = 0; i < 10; i++)
@@ -35,7 +36,7 @@ namespace CardMasterStat
             return toReturn;
         }
 
-        public SortedDictionary<int, int> GetRepartitionByDefense()
+        public IEnumerable GetRepartitionByDefense()
         {
             SortedDictionary<int, int> toReturn = new SortedDictionary<int, int>();
             for (int i = 0; i < 10; i++)
@@ -44,6 +45,24 @@ namespace CardMasterStat
             }
             return toReturn;
         }
+
+        internal IEnumerable GetLowerLineRatio()
+        {
+            SortedDictionary<int, int> toReturn = new SortedDictionary<int, int>();
+            toReturn.Add(1,0);
+            toReturn.Add(9, 10);
+            return toReturn;
+
+        }
+
+        internal IEnumerable GetHigherLineRatio()
+        {
+            SortedDictionary<int, int> toReturn = new SortedDictionary<int, int>();
+            toReturn.Add(0, 5);
+            toReturn.Add(9, 24);
+            return toReturn;
+        }
+
         public List<CustomDot> GetRepartitionByRatio()
         {
            List<CustomDot> toReturn = new List<CustomDot>();
@@ -60,7 +79,7 @@ namespace CardMasterStat
         }
 
 
-        public SortedDictionary<String, int> GetRepartitionByNature()
+        public IEnumerable GetRepartitionByNature()
         {
             SortedDictionary<String, int> toReturn = new SortedDictionary<String, int>();
             foreach (Card.CardKind kind in Enum.GetValues(typeof(Card.CardKind)))

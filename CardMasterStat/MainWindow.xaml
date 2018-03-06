@@ -105,6 +105,10 @@
                                 </Style>
                             </DVC:ScatterSeries.DataPointStyle>
                         </DVC:ScatterSeries>
+                        <DVC:LineSeries DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" >
+                        </DVC:LineSeries>
+                        <DVC:LineSeries DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" >
+                        </DVC:LineSeries>
                     </DVC:Chart>
                 </Grid>
             </TabItem>
