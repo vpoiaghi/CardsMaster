@@ -1,5 +1,4 @@
 ﻿using CardMasterCard.Card;
-using CardMasterStat.Engine;
 using Microsoft.Win32;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;

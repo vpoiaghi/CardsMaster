@@ -75,7 +75,6 @@
     <Compile Include="Card\CardBuilder.cs" />
     <Compile Include="ConvertToBrush.cs" />
     <Compile Include="Engine\CardComputer.cs" />
-    <Compile Include="Engine\CustomDot.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

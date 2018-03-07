@@ -1,9 +1,8 @@
-﻿
-using CardMasterStat.Engine;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Collections;
+using System.Windows;
 
 namespace CardMasterStat
 {
@@ -18,64 +17,55 @@ namespace CardMasterStat
 
         public IEnumerable GetRepartitionByCost()
         {
-            SortedDictionary<int, int> toReturn = new SortedDictionary<int, int>();
+            List<Point> toReturn = new List<Point>();
             for (int i = 0; i < 10; i++)
             {
-                toReturn.Add(i, this.m_listCards.Where(c => c.Cost == i).Count());
+                toReturn.Add(new Point(i, this.m_listCards.Where(c => c.Cost == i).Count()));
             }
             return toReturn;
         }
 
         public IEnumerable GetRepartitionByAttack()
         {
-            SortedDictionary<int, int> toReturn = new SortedDictionary<int, int>();
+            List<Point> toReturn = new List<Point>();
             for (int i = 0; i < 10; i++)
             {
-                toReturn.Add(i, this.m_listCards.Where(c => c.Attack == i).Count());
+                toReturn.Add(new Point(i, this.m_listCards.Where(c => c.Attack == i).Count()));
             }
             return toReturn;
         }
 
         public IEnumerable GetRepartitionByDefense()
         {
-            SortedDictionary<int, int> toReturn = new SortedDictionary<int, int>();
+            List<Point> toReturn = new List<Point>();
             for (int i = 0; i < 10; i++)
             {
-                toReturn.Add(i, this.m_listCards.Where(c => c.Defense == i).Count());
+                toReturn.Add(new Point(i, this.m_listCards.Where(c => c.Defense == i).Count()));
             }
             return toReturn;
+            
         }
 
         internal IEnumerable GetLowerLineRatio()
         {
-            SortedDictionary<int, int> toReturn = new SortedDictionary<int, int>();
-            toReturn.Add(1,0);
-            toReturn.Add(9, 10);
+            List<Point> toReturn = new List<Point>();
+            toReturn.Add(new Point(1,0));
+            toReturn.Add(new Point(9, 10));
             return toReturn;
 
         }
 
         internal IEnumerable GetHigherLineRatio()
         {
-            SortedDictionary<int, int> toReturn = new SortedDictionary<int, int>();
-            toReturn.Add(0, 5);
-            toReturn.Add(9, 24);
+            List<Point> toReturn = new List<Point>();
+            toReturn.Add(new Point(0, 5));
+            toReturn.Add(new Point(9, 25));
             return toReturn;
         }
 
-        public List<CustomDot> GetRepartitionByRatio()
+        public IEnumerable GetRepartitionByRatio()
         {
-           List<CustomDot> toReturn = new List<CustomDot>();
-            foreach (Card c in m_listCards)
-            {
-                if (c.Cost.HasValue)
-                {
-                    CustomDot k = new CustomDot(c.Name,c.Cost.Value, c.Ratio);
-                    toReturn.Add(k);
-                }
-                
-            }
-            return toReturn;
+            return m_listCards;
         }
 
 
