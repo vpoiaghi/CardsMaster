@@ -5,6 +5,7 @@ using System.Collections.ObjectModel;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls.DataVisualization.Charting;
+using System;
 
 namespace CardMasterStat
 {
@@ -13,6 +14,8 @@ namespace CardMasterStat
     /// </summary>
     public partial class MainWindow : Window
     {
+        string filePath;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -47,15 +50,26 @@ namespace CardMasterStat
             openFileDialog.Filter = "Json files (*.json)|*.json|All files (*.*)|*.*";
             if (openFileDialog.ShowDialog() == true)
             {
-                JsonCardsProject cardProjet = JsonCardsProject.LoadProject(new FileInfo(openFileDialog.FileName));
-                List<Card> cards = new List<Card>();
-                foreach (JsonCard card in cardProjet.Cards)
-                {
-                    Card c = Card.ConvertCard(card);
-                    cards.Add(c);
-                }
-                LoadCards(cards);
+                filePath = openFileDialog.FileName;
+                LoadCardFile(filePath);
             }
+        }
+
+        private void LoadCardFile(string filePath)
+        {
+            JsonCardsProject cardProjet = JsonCardsProject.LoadProject(new FileInfo(filePath));
+            List<Card> cards = new List<Card>();
+            foreach (JsonCard card in cardProjet.Cards)
+            {
+                Card c = Card.ConvertCard(card);
+                cards.Add(c);
+            }
+            LoadCards(cards);
+        }
+
+        private void Refresh(object sender, RoutedEventArgs e)
+        {
+            LoadCardFile(filePath);
         }
     }
 }

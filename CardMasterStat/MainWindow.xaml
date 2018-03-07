@@ -19,6 +19,9 @@
                 <MenuItem Header="_Open Json Project File" Click="MenuItemJson_Click"/>
                 <MenuItem Header="_Close" Click="MenuItemClose_Click"/>
             </MenuItem>
+            <MenuItem Header="_Refresh" Click="Refresh"/>
+
+
         </Menu>
         <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="728" Margin="0,23,0,0" VerticalAlignment="Top" Width="1219">
             <TabItem Header="Répartition par coùt">
