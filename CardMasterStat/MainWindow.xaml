@@ -7,12 +7,12 @@
         xmlns:DVC="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"
         xmlns:Card="clr-namespace:CardMasterStat"
         mc:Ignorable="d"
-        Title="MainWindow" Height="782" Width="1227">
+        Title="Outil de statistiques" Height="782" Width="1227">
     <Window.Resources>
         <Card:ConvertToBrush x:Key="converter"/>
-        
+
     </Window.Resources>
-    
+
     <Grid>
         <Menu>
             <MenuItem Header="_File">
@@ -23,101 +23,113 @@
 
 
         </Menu>
-        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="728" Margin="0,23,0,0" VerticalAlignment="Top" Width="1219">
-            <TabItem Header="Répartition par coùt">
-                <Grid Background="#FFE5E5E5">
-                    <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="chartCost" Background="LightSteelBlue" Margin="10">
-                        <DVC:ColumnSeries DependentValuePath="Y" IndependentValuePath="X" ItemsSource="{Binding}" >
-                            <DVC:ColumnSeries.DataPointStyle>
-                                <Style TargetType="DVC:ColumnDataPoint">
-                                    <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Self}, Converter={StaticResource converter}}"/>
-                                </Style>
-                            </DVC:ColumnSeries.DataPointStyle>
-                        </DVC:ColumnSeries> 
+        <StackPanel>
+            <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="700" Margin="0,23,0,0" VerticalAlignment="Top" Width="1219">
+                <TabItem Header="Répartition par coùt">
+                    <Grid Background="#FFE5E5E5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60*"/>
+                            <ColumnDefinition Width="1153*"/>
+                        </Grid.ColumnDefinitions>
+                        <DVC:Chart Name="chartCost" Background="LightSteelBlue" Margin="10" Grid.ColumnSpan="2">
+                            <DVC:ColumnSeries DependentValuePath="Y" IndependentValuePath="X" ItemsSource="{Binding}" Height="608" VerticalAlignment="Top" >
+                                <DVC:ColumnSeries.DataPointStyle>
+                                    <Style TargetType="DVC:ColumnDataPoint">
+                                        <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Self}, Converter={StaticResource converter}}"/>
+                                    </Style>
+                                </DVC:ColumnSeries.DataPointStyle>
+                            </DVC:ColumnSeries>
 
-                    </DVC:Chart>
-                </Grid>
-            </TabItem>
-            <TabItem Header="Répartition par Attaque">
-                <Grid Background="#FFE5E5E5">
-                    <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="chartAtk" Background="LightSteelBlue" Margin="10">
-                        <DVC:ColumnSeries DependentValuePath="Y" IndependentValuePath="X" ItemsSource="{Binding}" >
-                            <DVC:ColumnSeries.DataPointStyle>
-                                <Style TargetType="DVC:ColumnDataPoint">
-                                    <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Self}, Converter={StaticResource converter}}"/>
-                                </Style>
-                            </DVC:ColumnSeries.DataPointStyle>
-                        </DVC:ColumnSeries>
+                        </DVC:Chart>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Répartition par Attaque">
+                    <Grid Background="#FFE5E5E5">
+                        <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="chartAtk" Background="LightSteelBlue" Margin="10">
+                            <DVC:ColumnSeries DependentValuePath="Y" IndependentValuePath="X" ItemsSource="{Binding}" >
+                                <DVC:ColumnSeries.DataPointStyle>
+                                    <Style TargetType="DVC:ColumnDataPoint">
+                                        <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Self}, Converter={StaticResource converter}}"/>
+                                    </Style>
+                                </DVC:ColumnSeries.DataPointStyle>
+                            </DVC:ColumnSeries>
 
-                    </DVC:Chart>
-                </Grid>
-            </TabItem>
-            <TabItem Header="Répartition par Défense">
-                <Grid Background="#FFE5E5E5">
-                    <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="chartDef" Background="LightSteelBlue" Margin="10">
-                        <DVC:ColumnSeries DependentValuePath="Y" IndependentValuePath="X" ItemsSource="{Binding}" >
-                            <DVC:ColumnSeries.DataPointStyle>
-                                <Style TargetType="DVC:ColumnDataPoint">
-                                    <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Self}, Converter={StaticResource converter}}"/>
-                                </Style>
-                            </DVC:ColumnSeries.DataPointStyle>
-                        </DVC:ColumnSeries>
-                    </DVC:Chart>
-                </Grid>
-            </TabItem>
-            <TabItem Header="Répartition par Nature">
-                <Grid Background="#FFE5E5E5">
-                    <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="chartNature" Background="LightSteelBlue" Margin="10">
-                        <DVC:ColumnSeries DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" >
-                            <DVC:ColumnSeries.DataPointStyle>
-                                <Style TargetType="DVC:ColumnDataPoint">
-                                    <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Self}, Converter={StaticResource converter}}"/>
-                                </Style>
-                            </DVC:ColumnSeries.DataPointStyle>
-                        </DVC:ColumnSeries>
-                    </DVC:Chart>
-                </Grid>
-            </TabItem>
-            <TabItem Header="Répartition par Ratio de puissance / cost">
-                <Grid Background="#FFE5E5E5">
-                    
-                    <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="chartRatio" Background="LightSteelBlue" Margin="10">
+                        </DVC:Chart>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Répartition par Défense">
+                    <Grid Background="#FFE5E5E5">
+                        <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="chartDef" Background="LightSteelBlue" Margin="10">
+                            <DVC:ColumnSeries DependentValuePath="Y" IndependentValuePath="X" ItemsSource="{Binding}" >
+                                <DVC:ColumnSeries.DataPointStyle>
+                                    <Style TargetType="DVC:ColumnDataPoint">
+                                        <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Self}, Converter={StaticResource converter}}"/>
+                                    </Style>
+                                </DVC:ColumnSeries.DataPointStyle>
+                            </DVC:ColumnSeries>
+                        </DVC:Chart>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Répartition par Nature">
+                    <Grid Background="#FFE5E5E5">
+                        <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="chartNature" Background="LightSteelBlue" Margin="10">
+                            <DVC:ColumnSeries DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" >
+                                <DVC:ColumnSeries.DataPointStyle>
+                                    <Style TargetType="DVC:ColumnDataPoint">
+                                        <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Self}, Converter={StaticResource converter}}"/>
+                                    </Style>
+                                </DVC:ColumnSeries.DataPointStyle>
+                            </DVC:ColumnSeries>
+                        </DVC:Chart>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Répartition par Ratio de puissance / cost">
+                    <Grid Background="#FFE5E5E5">
 
-                        <DVC:ScatterSeries DependentValuePath="Ratio" IndependentValuePath="Cost" ItemsSource="{Binding}" >
-                           
-                            <DVC:ScatterSeries.DataPointStyle>
-                                <Style TargetType="DVC:ScatterDataPoint">
-                                    
-                                    <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Self}, Converter={StaticResource converter}}" />
-                                    <Setter Property="Template">
-                                        <Setter.Value>
-                                            <ControlTemplate TargetType="DVC:ScatterDataPoint">
-                                                <Grid x:Name="Root" Opacity="1">
-                                                    
-                                                    <ToolTipService.ToolTip>
-                                                        <StackPanel Margin="10,2,10,2">
-                                                            <ContentControl Content="{Binding Name}" />
-                                                            <ContentControl Content="{Binding Attack}" ContentStringFormat="ATK : {0}"></ContentControl>
-                                                            <ContentControl Content="{Binding Defense}" ContentStringFormat="DEF : {0}"></ContentControl>
-                                                        </StackPanel>
-                                                    </ToolTipService.ToolTip>
-                                                    <Ellipse StrokeThickness="{TemplateBinding BorderThickness}" Stroke="{TemplateBinding BorderBrush}" Fill="{TemplateBinding Background}"/>
-                                                </Grid>
-                                            </ControlTemplate>
-                                        </Setter.Value>
-                                    </Setter>
+                        <DVC:Chart Canvas.Top="80" Canvas.Left="10" Name="chartRatio" Background="LightSteelBlue" Margin="10">
 
-                                </Style>
-                            </DVC:ScatterSeries.DataPointStyle>
-                        </DVC:ScatterSeries>
-                        <DVC:LineSeries DependentValuePath="Y" IndependentValuePath="X" ItemsSource="{Binding}" >
-                        </DVC:LineSeries>
-                        <DVC:LineSeries DependentValuePath="Y" IndependentValuePath="X" ItemsSource="{Binding}" >
-                        </DVC:LineSeries>
-                    </DVC:Chart>
-                </Grid>
-            </TabItem>
-        </TabControl>
+                            <DVC:ScatterSeries DependentValuePath="Ratio" IndependentValuePath="Cost" ItemsSource="{Binding}" >
 
+                                <DVC:ScatterSeries.DataPointStyle>
+                                    <Style TargetType="DVC:ScatterDataPoint">
+
+                                        <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Self}, Converter={StaticResource converter}}" />
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="DVC:ScatterDataPoint">
+                                                    <Grid x:Name="Root" Opacity="1">
+
+                                                        <ToolTipService.ToolTip>
+                                                            <StackPanel Margin="10,2,10,2">
+                                                                <ContentControl Content="{Binding Name}" />
+                                                                <ContentControl Content="{Binding Attack}" ContentStringFormat="ATK : {0}"></ContentControl>
+                                                                <ContentControl Content="{Binding Defense}" ContentStringFormat="DEF : {0}"></ContentControl>
+                                                            </StackPanel>
+                                                        </ToolTipService.ToolTip>
+                                                        <Ellipse StrokeThickness="{TemplateBinding BorderThickness}" Stroke="{TemplateBinding BorderBrush}" Fill="{TemplateBinding Background}"/>
+                                                    </Grid>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+
+                                    </Style>
+                                </DVC:ScatterSeries.DataPointStyle>
+                            </DVC:ScatterSeries>
+                            <DVC:LineSeries DependentValuePath="Y" IndependentValuePath="X" ItemsSource="{Binding}" >
+                            </DVC:LineSeries>
+                            <DVC:LineSeries DependentValuePath="Y" IndependentValuePath="X" ItemsSource="{Binding}" >
+                            </DVC:LineSeries>
+                        </DVC:Chart>
+                    </Grid>
+                </TabItem>
+            </TabControl>
+            <StatusBar>
+                <StatusBarItem>
+                    <TextBlock Name="statusLabel" DockPanel.Dock="Right">
+                        Status :
+                    </TextBlock>
+                </StatusBarItem>
+            </StatusBar>
+        </StackPanel>
     </Grid>
 </Window>

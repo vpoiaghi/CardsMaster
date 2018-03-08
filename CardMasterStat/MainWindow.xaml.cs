@@ -33,9 +33,11 @@ namespace CardMasterStat
         
 
             ((ScatterSeries)chartRatio.Series[0]).ItemsSource = computer.GetRepartitionByRatio();
+           
             ((LineSeries)chartRatio.Series[1]).ItemsSource = computer.GetLowerLineRatio();
+     
             ((LineSeries)chartRatio.Series[2]).ItemsSource = computer.GetHigherLineRatio();
-
+       
         }
   
 
@@ -65,11 +67,14 @@ namespace CardMasterStat
                 cards.Add(c);
             }
             LoadCards(cards);
+            statusLabel.Text = "Status : Cards Loaded";
         }
 
         private void Refresh(object sender, RoutedEventArgs e)
         {
             LoadCardFile(filePath);
         }
+
+       
     }
 }
