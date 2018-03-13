@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
+using System.Linq;
 using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
@@ -26,6 +27,14 @@ namespace CardMasterManager
     public partial class MainWindow : Window, IThreadedExporterOwner
     {
         public ObservableCollection<Card> GridCardsList { get; set; } = new ObservableCollection<Card>();
+        private int _gridCount;
+        public int GridCount {
+            get { return _gridCount; }
+            set { _gridCount = value;
+                nbCards.Text = value + " cards";
+            } }
+       
+
 
         private static object locker = new object();
 
@@ -37,7 +46,7 @@ namespace CardMasterManager
 
         private DateTime d1;
         private DateTime d2;
-
+        
         public DrawingQuality DQuality { get; set; } = new DrawingQuality();
 
         public MainWindow()
@@ -51,12 +60,12 @@ namespace CardMasterManager
             this.MenuItemPrintBoards.IsEnabled = false;
             this.MenuItemSaveAsJson.IsEnabled = false;
             this.MenuItemExportGameCrafterToPngFile.IsEnabled = false;
-
+          
 
             FilesChanged(false);
-
+            
             DataContext = this;
-
+            GridCount = 0;
         }
 
         private void MenuItemOpen_Click(object sender, RoutedEventArgs e)
@@ -289,6 +298,7 @@ namespace CardMasterManager
                 GridCardsList.Add(card);
             }
             debug.Text = GridCardsList.Count + " cards loaded";
+            GridCount = cardGrid.Items.Count;
 
 
         }
@@ -351,6 +361,7 @@ namespace CardMasterManager
             Dispatcher.BeginInvoke(new Action(delegate ()
             {
                 cardGrid.Items.Filter = null;
+                GridCount = cardGrid.Items.Count;
             }));
         }
 
@@ -409,6 +420,7 @@ namespace CardMasterManager
             cardGrid.Focus();
 
             FilesChanged(true);
+            GridCount = cardGrid.Items.Count;
         }  
 
         private void DeleteRowClick(object sender, RoutedEventArgs e)
@@ -423,6 +435,7 @@ namespace CardMasterManager
                     cardGrid.Focus();
                 }
                 FilesChanged(true);
+                GridCount = cardGrid.Items.Count;
             }
         }
 
@@ -568,18 +581,21 @@ namespace CardMasterManager
                     Dispatcher.BeginInvoke(new Action(delegate ()
                     {
                         cardGrid.Items.Filter = null;
+                        GridCount = cardGrid.Items.Count;
                     }));
                 }
                 else
                 {
                     Dispatcher.BeginInvoke(new Action(delegate ()
                     {
+                  
                         cardGrid.Items.Filter = (c) =>
                         {
                             return CardMatcher.Matches((Card)c, filterText);
                         };
+                        GridCount = cardGrid.Items.Count;
                     }));
-
+                   
                 }
             }
         }
