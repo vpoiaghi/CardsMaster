@@ -30,7 +30,12 @@ namespace CardMasterManager
 
         public int GridCount {
             set {
-                nbCards.Text = value + " cards";
+                int x = 0;
+                foreach( Card c in GridCardsList)
+                {
+                    x += c.Nb.Value;
+                }
+                nbCards.Text = value + " cards / " + x + " total cards";
             }
         }
        

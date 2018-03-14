@@ -767,8 +767,8 @@
       "Name": "Shino Aburame",
       "Rank": "",
       "Team": "Equipe 8",
-      "Chakra": "Physique",
-      "Element": "Physique",
+      "Chakra": "Vent",
+      "Element": "Insectes",
       "Cost": "4",
       "Attack": "3",
       "Defense": "3",
@@ -1018,7 +1018,7 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Moegi",
+      "Name": "Moegi Kazamatsuri",
       "Rank": "",
       "Team": "Équipe Ebisu",
       "Chakra": "Spécial",
@@ -1049,7 +1049,7 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Udon",
+      "Name": "Udon Ise",
       "Rank": "",
       "Team": "Équipe Ebisu",
       "Chakra": "Spécial",
@@ -5220,7 +5220,7 @@
       "Kind": "Ninja",
       "Name": "Boruto Uzumaki",
       "Rank": "",
-      "Team": "Equipe Konohamaru",
+      "Team": "Equipe 7",
       "Chakra": "Physique",
       "Element": "Physique",
       "Cost": "2",
@@ -5251,7 +5251,7 @@
       "Kind": "Ninja",
       "Name": "Sarada Uchiha",
       "Rank": "",
-      "Team": "Equipe Konohamaru",
+      "Team": "Equipe 7",
       "Chakra": "Feu",
       "Element": "Feu",
       "Cost": "2",
@@ -5282,7 +5282,7 @@
       "Kind": "Ninja",
       "Name": "Mitsuki",
       "Rank": "",
-      "Team": "Equipe Konohamaru",
+      "Team": "Equipe7",
       "Chakra": "Vent",
       "Element": "Vent",
       "Cost": "2",
@@ -6496,6 +6496,223 @@
       "Powers": [
         {
           "Description": "<<Activate>> Invoque 2 policiers de Konoha"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Naruto Uzumaki (Adulte)",
+      "Rank": "",
+      "Team": "Nanadaime 7° Hokage",
+      "Chakra": "Vent",
+      "Element": "Vent",
+      "Cost": null,
+      "Attack": null,
+      "Defense": null,
+      "Citation": null,
+      "Comments": null,
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": null,
+      "StringField3": null,
+      "StringField4": null,
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Sasuke Uchiwa (Adulte)",
+      "Rank": "",
+      "Team": "Espion",
+      "Chakra": "Feu",
+      "Element": "Feu",
+      "Cost": null,
+      "Attack": null,
+      "Defense": null,
+      "Citation": null,
+      "Comments": null,
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": null,
+      "StringField3": null,
+      "StringField4": null,
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Moegi Kazamatsuri (Adulte)",
+      "Rank": "",
+      "Team": "Adulte",
+      "Chakra": "Terre",
+      "Element": "Bois",
+      "Cost": null,
+      "Attack": null,
+      "Defense": null,
+      "Citation": null,
+      "Comments": null,
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": null,
+      "StringField3": null,
+      "StringField4": null,
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Konohamaru Sarutobi (Adulte)",
+      "Rank": "",
+      "Team": "Adulte",
+      "Chakra": "Vent",
+      "Element": "Vent",
+      "Cost": null,
+      "Attack": null,
+      "Defense": null,
+      "Citation": null,
+      "Comments": null,
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": null,
+      "StringField3": null,
+      "StringField4": null,
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Anko Mitarashi (Adulte)",
+      "Rank": "",
+      "Team": "Adulte",
+      "Chakra": "Vent",
+      "Element": "Poison",
+      "Cost": null,
+      "Attack": null,
+      "Defense": null,
+      "Citation": null,
+      "Comments": null,
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": null,
+      "StringField3": null,
+      "StringField4": null,
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Shino Aburame (Adulte)",
+      "Rank": "",
+      "Team": "Adulte",
+      "Chakra": "Vent",
+      "Element": "Insectes",
+      "Cost": null,
+      "Attack": null,
+      "Defense": null,
+      "Citation": null,
+      "Comments": null,
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": null,
+      "StringField3": null,
+      "StringField4": null,
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Udon Ise (Adulte)",
+      "Rank": "",
+      "Team": "Adulte",
+      "Chakra": "Eau",
+      "Element": "Morve",
+      "Cost": null,
+      "Attack": null,
+      "Defense": null,
+      "Citation": null,
+      "Comments": null,
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": null,
+      "StringField3": null,
+      "StringField4": null,
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power"
         }
       ]
     }
