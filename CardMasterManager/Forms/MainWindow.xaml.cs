@@ -27,12 +27,12 @@ namespace CardMasterManager
     public partial class MainWindow : Window, IThreadedExporterOwner
     {
         public ObservableCollection<Card> GridCardsList { get; set; } = new ObservableCollection<Card>();
-        private int _gridCount;
+
         public int GridCount {
-            get { return _gridCount; }
-            set { _gridCount = value;
+            set {
                 nbCards.Text = value + " cards";
-            } }
+            }
+        }
        
 
 
@@ -390,19 +390,8 @@ namespace CardMasterManager
 
         private void AddRowClick(object sender, RoutedEventArgs e)
         {
-
-            Card newCard = new Card();
-            newCard.Nature = "Eau";
-            newCard.Kind = "Ninja";
-            newCard.Name = "Template";
-            newCard.Powers = new List<JsonPower>();
-            newCard.BackSkinName = "BackSkin1";
-            newCard.FrontSkinName = "FrontSkin1";
-            newCard.BackSide = "Back-Draw2";
-            newCard.Rank = "";
-            JsonPower p = new JsonPower(); p.Description = "Power";
-            newCard.Powers.Add(p);
-
+            Card newCard = Card.BuildSample();
+           
             int indexWhereToInsert = 0;
             if (GridCardsList.Count == 0 )
             {

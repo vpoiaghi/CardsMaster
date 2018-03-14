@@ -141,11 +141,23 @@ namespace CardMasterManager
             return toReturn;
         }
 
-       
+        internal static Card BuildSample()
+        {
+            Card newCard = new Card();
 
+            newCard.Nature = "Eau";
+            newCard.Kind = "Ninja";
+            newCard.Name = "Template";
+            newCard.Powers = new List<JsonPower>();
+            newCard.BackSkinName = "BackSkin1";
+            newCard.FrontSkinName = "FrontSkin1";
+            newCard.BackSide = "Back-Draw2";
+            newCard.Rank = "";
+            JsonPower p = new JsonPower(); p.Description = "Power";
+            newCard.Powers.Add(p);
 
-        
-
+            return newCard;
+        }
     }
 
 
