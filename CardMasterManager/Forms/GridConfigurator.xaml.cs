@@ -19,15 +19,12 @@ namespace CardMasterManager.Forms
         private  class Configuration
         {
             public IDictionary<String, Visibility> fields { get; set; }
-            public JsonCard template { get; set; }
+          
 
-            public Configuration(Configuration oldConfiguration)
+            public Configuration()
             {
                 fields = new Dictionary<String, Visibility>();
-                if (oldConfiguration!=null)
-                {
-                    template = oldConfiguration.template;
-                }
+              
                 
             }
             public void AddConfiguration(String fieldName, Visibility visible)
@@ -37,10 +34,6 @@ namespace CardMasterManager.Forms
 
         }
 
-        public static Card BuildTemplateCard()
-        {
-            return Card.ConvertCard(configuration.template);
-        }
 
         public GridConfigurator(DataGrid cardGrid)
         {
@@ -52,7 +45,7 @@ namespace CardMasterManager.Forms
 
         private static Configuration BuildConfiguration(DataGrid cardGrid)
         {
-            configuration = new Configuration(configuration);
+            configuration = new Configuration();
             foreach (DataGridColumn c in cardGrid.Columns)
             {
                 configuration.AddConfiguration(c.Header.ToString(), c.Visibility);
@@ -136,7 +129,7 @@ namespace CardMasterManager.Forms
             Border border = null;
             DockPanel dockPanel;
 
-            configuration = new Configuration(configuration);
+            configuration = new Configuration();
 
             foreach (UIElement mainStackChild in mainStack.Children)
             {

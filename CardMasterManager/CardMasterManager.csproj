@@ -98,6 +98,7 @@
       <DependentUpon>GridConfigurator.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainClass.cs" />
+    <Compile Include="Models\Card\CardTemplate.cs" />
     <Compile Include="Utils\CardMatcher.cs" />
     <Compile Include="Utils\DirectoryUtils.cs" />
     <Page Include="Components\DGridTextColumn.xaml">
@@ -145,6 +146,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="template.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="configuration.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

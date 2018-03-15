@@ -5,6 +5,7 @@ using CardMasterExport.Export;
 using CardMasterImageBuilder;
 using CardMasterManager.Converters;
 using CardMasterManager.Forms;
+using CardMasterManager.Models.Card;
 using CardMasterManager.Utils;
 using Microsoft.Win32;
 using System;
@@ -395,7 +396,7 @@ namespace CardMasterManager
 
         private void AddRowClick(object sender, RoutedEventArgs e)
         {
-            Card newCard = GridConfigurator.BuildTemplateCard();
+            Card newCard = CardTemplate.BuildTemplateCard();
            
             int indexWhereToInsert = 0;
             if (GridCardsList.Count == 0 )
