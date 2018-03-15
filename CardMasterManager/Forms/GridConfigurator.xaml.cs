@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using CardMasterCard.Card;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -14,13 +15,20 @@ namespace CardMasterManager.Forms
     /// </summary>
     public partial class GridConfigurator : Window
     {
-
+        static Configuration configuration;
         private  class Configuration
         {
             public IDictionary<String, Visibility> fields { get; set; }
-            public Configuration()
+            public JsonCard template { get; set; }
+
+            public Configuration(Configuration oldConfiguration)
             {
                 fields = new Dictionary<String, Visibility>();
+                if (oldConfiguration!=null)
+                {
+                    template = oldConfiguration.template;
+                }
+                
             }
             public void AddConfiguration(String fieldName, Visibility visible)
             {
@@ -29,19 +37,22 @@ namespace CardMasterManager.Forms
 
         }
 
-      
+        public static Card BuildTemplateCard()
+        {
+            return Card.ConvertCard(configuration.template);
+        }
 
         public GridConfigurator(DataGrid cardGrid)
         {
 
             InitializeComponent();
-            Configuration config = BuildConfiguration(cardGrid);
-            DisplayConfiguration(cardGrid,config);
+            configuration = BuildConfiguration(cardGrid);
+            DisplayConfiguration(cardGrid, configuration);
         }
 
         private static Configuration BuildConfiguration(DataGrid cardGrid)
         {
-            Configuration configuration = new Configuration();
+            configuration = new Configuration(configuration);
             foreach (DataGridColumn c in cardGrid.Columns)
             {
                 configuration.AddConfiguration(c.Header.ToString(), c.Visibility);
@@ -51,8 +62,8 @@ namespace CardMasterManager.Forms
         }
         public static void BuildAndSaveConfiguration(DataGrid cardGrid)
         {
-            Configuration config = BuildConfiguration(cardGrid);
-            SaveConfigurationToJson(config);
+             configuration = BuildConfiguration(cardGrid);
+            SaveConfigurationToJson(configuration);
         }
 
 
@@ -101,9 +112,9 @@ namespace CardMasterManager.Forms
             okButton.HorizontalAlignment = HorizontalAlignment.Right;
             okButton.Width = 40;
             okButton.Click += (s, e) => {
-                Configuration newConfig = BuildConfigFromWindows();
-                ApplyConfiguration(cardGrid,newConfig);
-                SaveConfigurationToJson(newConfig);
+                configuration = BuildConfigFromWindows();
+                ApplyConfiguration(cardGrid, configuration);
+                SaveConfigurationToJson(configuration);
                 this.Close();
             };
             buttonStack.Children.Add(okButton);
@@ -125,7 +136,7 @@ namespace CardMasterManager.Forms
             Border border = null;
             DockPanel dockPanel;
 
-            Configuration newConfiguration = new Configuration();
+            configuration = new Configuration(configuration);
 
             foreach (UIElement mainStackChild in mainStack.Children)
             {
@@ -136,11 +147,11 @@ namespace CardMasterManager.Forms
 
                     String fieldName = ((TextBox)dockPanel.Children[0]).Text;
                     Visibility visible = ((CheckBox)dockPanel.Children[1]).IsChecked.Value ? Visibility.Visible : Visibility.Hidden;
-                    newConfiguration.AddConfiguration(fieldName, visible);
+                    configuration.AddConfiguration(fieldName, visible);
                 }
             }
 
-            return newConfiguration;
+            return configuration;
         }
 
         private static void SaveConfigurationToJson(Configuration newConfiguration)
@@ -164,7 +175,7 @@ namespace CardMasterManager.Forms
                 StreamReader sr = new StreamReader(dir + "/configuration.json");
                 String js = sr.ReadToEnd();
 
-                Configuration configuration = (Configuration)JsonConvert.DeserializeObject<Configuration>(js);
+                configuration = (Configuration)JsonConvert.DeserializeObject<Configuration>(js);
 
                 sr.Close();
                 sr.Dispose();

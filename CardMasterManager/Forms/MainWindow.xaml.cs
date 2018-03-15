@@ -395,7 +395,7 @@ namespace CardMasterManager
 
         private void AddRowClick(object sender, RoutedEventArgs e)
         {
-            Card newCard = Card.BuildSample();
+            Card newCard = GridConfigurator.BuildTemplateCard();
            
             int indexWhereToInsert = 0;
             if (GridCardsList.Count == 0 )
