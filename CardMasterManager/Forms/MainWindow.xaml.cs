@@ -19,6 +19,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
+using WpfCharts;
 
 namespace CardMasterManager
 {
@@ -28,6 +29,8 @@ namespace CardMasterManager
     public partial class MainWindow : Window, IThreadedExporterOwner
     {
         public ObservableCollection<Card> GridCardsList { get; set; } = new ObservableCollection<Card>();
+        public string[] Axes { get; set; }
+       public ObservableCollection<ChartLine> Stats { get; set; }
 
         public int GridCount {
             set {
@@ -67,19 +70,45 @@ namespace CardMasterManager
             this.MenuItemSaveAsJson.IsEnabled = false;
             this.MenuItemExportGameCrafterToPngFile.IsEnabled = false;
           
+          
 
             FilesChanged(false);
             
             DataContext = this;
             GridCount = 0;
+            Axes = new[] { "Coût", "ATK", "DEF", "Pouvoirs" };
+            Stats = new ObservableCollection<ChartLine>();
+        }
+
+        private void UpdateStats(Card c)
+        {
+            Stats.Clear();
+            Stats.Add(new ChartLine
+                {
+                    LineColor = Colors.Red,
+                    FillColor = Color.FromArgb(128, 255, 0, 0),
+                    LineThickness = 2,
+                    PointDataSource = new List<double>() { GetInt(c.Cost), GetInt(c.Attack), GetInt(c.Defense), c.Powers.Count },
+                    Name = ""
+                });
+         
+                
+        }
+
+        private double GetInt(string cost)
+        {
+            Double.TryParse(cost, out double mvalue);
+            return mvalue;
         }
 
         private void MenuItemOpen_Click(object sender, RoutedEventArgs e)
         {
             if (AskIfSaveBefore())
             {
-                OpenFileDialog openFileDialog = new OpenFileDialog();
-                openFileDialog.Filter = "All Supported files|*.json;*.xlsx;*.xml|All files (*.*)|*.*";
+                OpenFileDialog openFileDialog = new OpenFileDialog
+                {
+                    Filter = "All Supported files|*.json;*.xlsx;*.xml|All files (*.*)|*.*"
+                };
 
                 if (openFileDialog.ShowDialog() == true)
                 {
@@ -119,8 +148,10 @@ namespace CardMasterManager
 
         private void MenuItemSaveAsJson_Click(object sender, RoutedEventArgs e)
         {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "Json files (*.json)|*.json|All files (*.*)|*.*";
+            SaveFileDialog saveFileDialog = new SaveFileDialog
+            {
+                Filter = "Json files (*.json)|*.json|All files (*.*)|*.*"
+            };
 
             if (saveFileDialog.ShowDialog() == true)
             {
@@ -132,8 +163,10 @@ namespace CardMasterManager
 
         private void MenuItemSaveAs_Click(object sender, RoutedEventArgs e)
         {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "Json files (*.json)|*.json|All files (*.*)|*.*";
+            SaveFileDialog saveFileDialog = new SaveFileDialog
+            {
+                Filter = "Json files (*.json)|*.json|All files (*.*)|*.*"
+            };
 
             if (saveFileDialog.ShowDialog() == true)
             {
@@ -184,7 +217,7 @@ namespace CardMasterManager
         }
  
 
-        private void cardGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void CardGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             int selectedIndex = cardGrid.SelectedIndex;
             if ((cardsFile != null) && (cardGrid.SelectedItem != null))
@@ -195,9 +228,11 @@ namespace CardMasterManager
                     //L'observable n'est pas syncrhonizé avec la collection filtrée
                     //Card c = GridCardsList[selectedIndex];
                     Card c = (Card)cardGrid.SelectedItem;
+                    UpdateStats(c);
                     //If not preview
                     if (!(c == previousCard) && previewCheckBox.IsChecked == true)
                     {
+                        
                         previousCard = c;
                         new Thread(() => DisplayCard(c, cardImage, backCardImage)).Start();
                     }else
@@ -218,8 +253,10 @@ namespace CardMasterManager
                 JsonCard businessCard = Card.ConvertToMasterCard(c);
                 FileInfo skinFile = GetSkinFile(cardsFile, true);
 
-                Drawer drawer = new Drawer(businessCard, skinFile, null);
-                drawer.Quality = this.DQuality;
+                Drawer drawer = new Drawer(businessCard, skinFile, null)
+                {
+                    Quality = this.DQuality
+                };
 
                 //Refresh Image Component
                 DrawingImageToImageSourceConverter converter = new DrawingImageToImageSourceConverter();
@@ -247,11 +284,13 @@ namespace CardMasterManager
 
             if (cardsList.Count > 0)
             {
-                ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile(cardsFile, true));
-                parameters.exportFormat = Exporter.EXPORT_FORMAT_PNG;
-                parameters.exportMode = Exporter.EXPORT_MODE_ALL;
-                parameters.WithBackSides = true;
-                parameters.TargetFolder = FolderDialog.SelectFolder();
+                ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile(cardsFile, true))
+                {
+                    exportFormat = Exporter.EXPORT_FORMAT_PNG,
+                    exportMode = Exporter.EXPORT_MODE_ALL,
+                    WithBackSides = true,
+                    TargetFolder = FolderDialog.SelectFolder()
+                };
 
                 Exporter.Export(this, parameters);
                 NotifyExportDone();
@@ -265,12 +304,14 @@ namespace CardMasterManager
 
             if (cardsList.Count > 0)
             {
-                ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile(cardsFile, true));
-                parameters.SpaceBetweenCards = 0;
-                parameters.exportFormat = Exporter.EXPORT_FORMAT_PNG;
-                parameters.exportMode = Exporter.EXPORT_MODE_BOARD;
-                parameters.WithBackSides = true;
-                parameters.TargetFolder = FolderDialog.SelectFolder();
+                ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile(cardsFile, true))
+                {
+                    SpaceBetweenCards = 0,
+                    exportFormat = Exporter.EXPORT_FORMAT_PNG,
+                    exportMode = Exporter.EXPORT_MODE_BOARD,
+                    WithBackSides = true,
+                    TargetFolder = FolderDialog.SelectFolder()
+                };
 
                 Exporter.Export(this, parameters);
                 NotifyExportDone();
@@ -326,9 +367,10 @@ namespace CardMasterManager
 
             if (cardsList.Count > 0)
             {
-                ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile(cardsFile, true));
-
-                parameters.printPrameters = PrinterDialog.SelectPrintParameters(cardsList.Count);
+                ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile(cardsFile, true))
+                {
+                    printPrameters = PrinterDialog.SelectPrintParameters(cardsList.Count)
+                };
 
                 if (parameters.printPrameters != null)
                 {
@@ -374,11 +416,13 @@ namespace CardMasterManager
        
         private void DisplayConfigurator(object sender, RoutedEventArgs e)
         {
-            GridConfigurator form = new GridConfigurator(cardGrid);
-            form.Owner = this;
-            form.WindowStartupLocation = WindowStartupLocation.CenterOwner;
-            form.Top = 300;
-            form.Left = 300;
+            GridConfigurator form = new GridConfigurator(cardGrid)
+            {
+                Owner = this,
+                WindowStartupLocation = WindowStartupLocation.CenterOwner,
+                Top = 300,
+                Left = 300
+            };
             form.ShowDialog();
         }
 
@@ -509,7 +553,7 @@ namespace CardMasterManager
             return jsonCardsList;
         }
 
-        private void cardGrid_SourceUpdated(object sender, System.Windows.Data.DataTransferEventArgs e)
+        private void CardGrid_SourceUpdated(object sender, System.Windows.Data.DataTransferEventArgs e)
         {
             FilesChanged(true);
         }
@@ -521,20 +565,24 @@ namespace CardMasterManager
             if (cardsList.Count > 0)
             {
 
-                SaveFileDialog saveFileDialog = new SaveFileDialog();
-                saveFileDialog.Filter = "Pdf files (*.pdf)|*.pdf";
+                SaveFileDialog saveFileDialog = new SaveFileDialog
+                {
+                    Filter = "Pdf files (*.pdf)|*.pdf"
+                };
 
                 if (saveFileDialog.ShowDialog() == true)
                 {
                     FileInfo pdfFile = new FileInfo(saveFileDialog.FileName);
 
 
-                    ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile(this.cardsFile, true));
-                    parameters.SpaceBetweenCards = 0;
-                    parameters.exportFormat = Exporter.EXPORT_FORMAT_PDF;
-                    parameters.exportMode = Exporter.EXPORT_MODE_BOARD;
-                    parameters.WithBackSides = true;
-                    parameters.TargetFile = pdfFile;
+                    ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile(this.cardsFile, true))
+                    {
+                        SpaceBetweenCards = 0,
+                        exportFormat = Exporter.EXPORT_FORMAT_PDF,
+                        exportMode = Exporter.EXPORT_MODE_BOARD,
+                        WithBackSides = true,
+                        TargetFile = pdfFile
+                    };
 
                     Exporter.Export(this, parameters);
                     NotifyExportDone();
@@ -548,11 +596,13 @@ namespace CardMasterManager
 
             if (cardsList.Count > 0)
             {
-                ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile(cardsFile, true));
-                parameters.exportFormat = Exporter.EXPORT_FORMAT_PNG;
-                parameters.exportMode = Exporter.EXPORT_GAME_CRAFTER;
-                parameters.WithBackSides = true;
-                parameters.TargetFolder = FolderDialog.SelectFolder();
+                ExportParameters parameters = new ExportParameters(cardsList, GetSkinFile(cardsFile, true))
+                {
+                    exportFormat = Exporter.EXPORT_FORMAT_PNG,
+                    exportMode = Exporter.EXPORT_GAME_CRAFTER,
+                    WithBackSides = true,
+                    TargetFolder = FolderDialog.SelectFolder()
+                };
 
                 Exporter.Export(this, parameters);
                 NotifyExportDone();
@@ -566,7 +616,7 @@ namespace CardMasterManager
             debug.Text = "Collection Exported";
         }
 
-        private void searchDataGrid(object sender, System.Windows.Input.KeyEventArgs e)
+        private void SearchDataGrid(object sender, System.Windows.Input.KeyEventArgs e)
         {
             if ((GridCardsList.Count > 0) && (e.Key==Key.Enter))
             {

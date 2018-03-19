@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Collections;
 using System.Windows;
+using System.Collections.ObjectModel;
+
+using System.Windows.Media;
 
 namespace CardMasterStat
 {
@@ -48,18 +51,22 @@ namespace CardMasterStat
 
         internal IEnumerable GetLowerLineRatio()
         {
-            List<Point> toReturn = new List<Point>();
-            toReturn.Add(new Point(1,0));
-            toReturn.Add(new Point(9, 10));
+            List<Point> toReturn = new List<Point>
+            {
+                new Point(1, 0),
+                new Point(9, 10)
+            };
             return toReturn;
 
         }
 
         internal IEnumerable GetHigherLineRatio()
         {
-            List<Point> toReturn = new List<Point>();
-            toReturn.Add(new Point(0, 5));
-            toReturn.Add(new Point(9, 25));
+            List<Point> toReturn = new List<Point>
+            {
+                new Point(0, 5),
+                new Point(9, 25)
+            };
             return toReturn;
         }
 

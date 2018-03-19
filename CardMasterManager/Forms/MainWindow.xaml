@@ -11,8 +11,9 @@
         xmlns:controls="clr-namespace:CardMasterManager.Components"
         xmlns:drawing2d="clr-namespace:System.Drawing.Drawing2D;assembly=System.Drawing"
         xmlns:drawingtext="clr-namespace:System.Drawing.Text;assembly=System.Drawing"
+        xmlns:Spider="clr-namespace:WpfCharts;assembly=WpfCharts"
         mc:Ignorable="d"
-        Title="Card Manager" Height="970" Width="1747" ResizeMode="NoResize" Closing="Window_Closing" WindowStartupLocation="CenterScreen" Background="AliceBlue">
+        Title="Card Manager" Height="970" Width="1915" ResizeMode="NoResize" Closing="Window_Closing" WindowStartupLocation="CenterScreen" Background="AliceBlue">
 
     <Window.Resources>
         <commonconverters:EnumConverter x:Key="EnumConverter"/>
@@ -49,13 +50,13 @@
                 <MenuItem Name="MenuItemExportBoardsToPdfFile" Header="Exporter les planches .pdf" Click="MenuItemExportBoardsToPdfFile_Click"/>
             </MenuItem>
         </Menu>
-
+      
         <DockPanel LastChildFill="True">
 
             <StatusBar DockPanel.Dock="Bottom" Height="50">
                 <StatusBarItem>
                     <TextBlock x:Name="debug" Width="1466"/>
-                   
+
                 </StatusBarItem>
                 <StatusBarItem>
                     <TextBlock x:Name="nbCards"></TextBlock>
@@ -66,22 +67,35 @@
                 <Border Width="412.5" Height="562.5" Margin="15,6,15,0" DockPanel.Dock="Top" BorderThickness="1" BorderBrush="#FF000000">
                     <Image Name="cardImage"></Image>
                 </Border>
-                <CheckBox Name="previewCheckBox" IsChecked="False" DockPanel.Dock="Right" Height="30" IsThreeState="False">Preview</CheckBox>
-                <Border Width="206.2" Height="281.2" Margin="15,6,15,0" DockPanel.Dock="Top" BorderThickness="1" BorderBrush="#FF000000">
-                    <Image Name="backCardImage"/>
+                 <CheckBox Name="previewCheckBox" IsChecked="False" DockPanel.Dock="Right" Height="30" IsThreeState="False">Preview</CheckBox>
+                <StackPanel Orientation="Horizontal">
+              
+                <Border Width="207" Height="281" Margin="0,0,0,0" DockPanel.Dock="Bottom" BorderThickness="1" BorderBrush="#FF000000">
+                    <Image Name="backCardImage" Margin="1,1,-1,-1"/>
                 </Border>
+                    <Border Width="301" BorderThickness="1" BorderBrush="#FF000000">
+                        <Spider:SpiderChart Title="Statistics"  Width="300"
+                               Lines="{Binding Stats}" 
+                               Axis="{Binding Axes}" 
+                               LegendBackgroundColor="AliceBlue" 
+                               Minimum="0" 
+                               Maximum="9" 
+                               Ticks="9" 
+                               />
+                    </Border>
+                </StackPanel>
             </DockPanel>
-            
+
             <DockPanel DockPanel.Dock="Right">
                 <StackPanel>
                     <StackPanel Orientation="Horizontal" Height="19" Width="1296" Margin="5">
-                        <TextBox x:Name="searchText" Text="" Width="300" KeyDown="searchDataGrid" Background="AliceBlue"/>
+                        <TextBox x:Name="searchText" Text="" Width="300" KeyDown="SearchDataGrid" Background="AliceBlue"/>
                         <Separator Width="3" Background="Transparent"/>
                         <Button x:Name="clearSearchButton" Width="19" Click="ClearSearch" Background="AliceBlue">
                             <TextBlock>X</TextBlock>
                         </Button>
-                        
-                       
+
+
                     </StackPanel>
                     <DockPanel>
                         <ToolBarTray Margin="5">
@@ -125,8 +139,8 @@
                         </ToolBarTray>
                     </DockPanel>
                     <StackPanel Orientation="Horizontal">
-                        <DataGrid Name="cardGrid" Margin="5" Width="1269" Height="799" SelectionMode="Single" AutoGenerateColumns="False" AlternatingRowBackground="Azure" AlternationCount="2" IsReadOnly="False" ItemsSource="{Binding Path=GridCardsList, NotifyOnSourceUpdated=True, Mode=TwoWay}"
-                        SelectionChanged="cardGrid_SelectionChanged" FrozenColumnCount ="1" EnableColumnVirtualization="True" EnableRowVirtualization="True" CanUserAddRows="False" CanUserDeleteRows="True" SourceUpdated="cardGrid_SourceUpdated" Background="AliceBlue">
+                        <DataGrid Name="cardGrid" Margin="5" Width="1319" Height="799" SelectionMode="Single" AutoGenerateColumns="False" AlternatingRowBackground="Azure" AlternationCount="2" IsReadOnly="False" ItemsSource="{Binding Path=GridCardsList, NotifyOnSourceUpdated=True, Mode=TwoWay}"
+                        SelectionChanged="CardGrid_SelectionChanged" FrozenColumnCount ="1" EnableColumnVirtualization="True" EnableRowVirtualization="True" CanUserAddRows="False" CanUserDeleteRows="True" SourceUpdated="CardGrid_SourceUpdated" Background="AliceBlue">
                             <DataGrid.Resources>
                                 <Style TargetType="{x:Type DataGridColumnHeader}">
                                     <Setter Property="Background" Value="AliceBlue" />

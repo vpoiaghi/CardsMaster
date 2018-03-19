@@ -13,65 +13,65 @@ namespace CardMasterStat
             m_card = new Card();
         }
 
-        public static CardBuilder newCard()
+        public static CardBuilder NewCard()
         {
             return new CardBuilder();
         }
 
-        public Card build()
+        public Card Build()
         {
             return this.m_card;
         }
 
-        public CardBuilder withName(String name)
+        public CardBuilder WithName(String name)
         {
             this.m_card.Name = name;
             return this;
         }
 
-        public CardBuilder withKind(String kind)
+        public CardBuilder WithKind(String kind)
         {
-            this.m_card.Kind = Card.parseKind(kind);
+            this.m_card.Kind = Card.ParseKind(kind);
             return this;
         }
 
-        public CardBuilder withRank(String rank)
+        public CardBuilder WithRank(String rank)
         {
             this.m_card.Rank = rank;
             return this;
         }
 
-        public CardBuilder withTeam(String team)
+        public CardBuilder WithTeam(String team)
         {
             this.m_card.Team = team;
             return this;
         }
 
-        public CardBuilder withNature(Card.NatureCard nature)
+        public CardBuilder WithNature(Card.NatureCard nature)
         {
             this.m_card.Nature = nature;
             return this;
         }
 
-        public CardBuilder withNature(String nature)
+        public CardBuilder WithNature(String nature)
         {
-            this.m_card.Nature = Card.parseNature(nature);
+            this.m_card.Nature = Card.ParseNature(nature);
             return this;
         }
 
-        public CardBuilder withElement(String element)
+        public CardBuilder WithElement(String element)
         {
             this.m_card.Element = element;
             return this;
         }
 
-        public CardBuilder withCost(int cost)
+        public CardBuilder WithCost(int cost)
         {
             this.m_card.Cost = cost;
             return this;
         }
 
-        public CardBuilder withCost(String cost)
+        public CardBuilder WithCost(String cost)
         {
           
             this.m_card.Cost = GetIntValue(cost);
@@ -85,68 +85,68 @@ namespace CardMasterStat
             {
                 intCost = int.Parse(value);
             }
-            catch (FormatException e)
+            catch (Exception e)
             {
                 Console.Write(e.Message);
                
             }
             return intCost;
         }
-        public CardBuilder withAttack(int attack)
+        public CardBuilder WithAttack(int attack)
         {
             this.m_card.Attack = attack;
             return this;
         }
 
-        public CardBuilder withAttack(String attack)
+        public CardBuilder WithAttack(String attack)
         {
             this.m_card.Attack = GetIntValue(attack);
             return this;
         }
 
-        public CardBuilder withDefense(int defense)
+        public CardBuilder WithDefense(int defense)
         {
             this.m_card.Defense = defense;
             return this;
         }
 
-        public CardBuilder withDefense(String defense)
+        public CardBuilder WithDefense(String defense)
         {
             this.m_card.Defense = GetIntValue(defense);
             return this;
         }
 
 
-        public CardBuilder withCitation(String citation)
+        public CardBuilder WithCitation(String citation)
         {
             this.m_card.Citation = citation;
             return this;
         }
-        public CardBuilder withNb(int? nb)
+        public CardBuilder WithNb(int? nb)
         {
             this.m_card.Nb = nb;
             return this;
         }
 
-        public CardBuilder withComment(String comments)
+        public CardBuilder WithComment(String comments)
         {
             this.m_card.Comments = comments;
             return this;
         }
 
-        public CardBuilder withBackground(JsonTexture texture)
+        public CardBuilder WithBackground(JsonTexture texture)
         {
             this.m_card.Background = texture;
             return this;
         }
 
-        public CardBuilder withPowers(List<JsonPower> power)
+        public CardBuilder WithPowers(List<JsonPower> power)
         {
             this.m_card.Powers = power;
             return this;
         }
 
-        public CardBuilder withPowerJson(JsonPower power)
+        public CardBuilder WithPowerJson(JsonPower power)
         {
             this.m_card.Powers.Add(power);
             return this;

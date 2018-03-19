@@ -21,7 +21,7 @@
                 </MenuItem.Resources>
                 <MenuItem Name="MenuItemOpen" Header="_Ouvrir" Click="MenuItemOpen_Click"/>
                 <MenuItem Name="MenuItemSave" Header="_Enregistrer" Click="MenuItemSave_Click" />
-                <MenuItem Name="MenuItemReload" Header="_Reload File" Click="reload" />
+                <MenuItem Name="MenuItemReload" Header="_Reload File" Click="Reload" />
                 <MenuItem Name="MenuItemExit" Header="_Quitter" Click="MenuItemExit_Click" />
             </MenuItem>
         </Menu>

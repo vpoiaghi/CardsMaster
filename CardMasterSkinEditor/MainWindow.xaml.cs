@@ -62,8 +62,10 @@ namespace CardMasterSkinEditor
 
         private void MenuItemOpen_Click(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "All Supported files|*.skin;|All files (*.*)|*.*";
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Filter = "All Supported files|*.skin;|All files (*.*)|*.*"
+            };
 
             if (openFileDialog.ShowDialog() == true)
             {
@@ -140,8 +142,10 @@ namespace CardMasterSkinEditor
         {
             if (previewCheckBox.IsChecked.Value == true && jsonSkinsProject!=null)
             {
-                Drawer drawer = new Drawer(cardTemplate, jsonSkinsProject, currentSkinDirectoryFullName, null);
-                drawer.Quality = DQuality;
+                Drawer drawer = new Drawer(cardTemplate, jsonSkinsProject, currentSkinDirectoryFullName, null)
+                {
+                    Quality = DQuality
+                };
 
                 //Refresh Image Component  
                 Dispatcher.BeginInvoke(new Action(delegate ()
@@ -156,7 +160,7 @@ namespace CardMasterSkinEditor
             }
         }
 
-        private void reload(object sender, RoutedEventArgs e)
+        private void Reload(object sender, RoutedEventArgs e)
         {
             skinFile = new FileInfo(currentSkinFilePath);
             jsonSkinsProject = JsonSkinsProject.LoadProject(skinFile);
@@ -166,7 +170,7 @@ namespace CardMasterSkinEditor
 
        
 
-        private void loadViewFromSkinItem(ListView currentListView,String indexKey)
+        private void LoadViewFromSkinItem(ListView currentListView,String indexKey)
         {
             if (currentListView.SelectedIndex != -1)
             {
@@ -216,7 +220,7 @@ namespace CardMasterSkinEditor
             }
         }
 
-        private void updateSkinItem(ListView currentListView,string indexKey)
+        private void UpdateSkinItem(ListView currentListView,string indexKey)
         {
             if (mapCurrentIndexes[indexKey] != -1)
             {
@@ -292,42 +296,42 @@ namespace CardMasterSkinEditor
      
         private void OnLostFocusTextBox0(object sender, RoutedEventArgs e)
         {
-            updateSkinItem(skinItemListView0,"0");
+            UpdateSkinItem(skinItemListView0,"0");
             RefreshImages();
         }
 
         private void OnLostFocusTextBox1(object sender, RoutedEventArgs e)
         {
-            updateSkinItem(skinItemListView1, "1");
+            UpdateSkinItem(skinItemListView1, "1");
             RefreshImages();
         }
 
         private void OnChangeTab(object sender, RoutedEventArgs e)
         {
             FindListViewByName("skinItemListView" + tabControl.SelectedIndex).SelectedIndex = -1;
-            loadViewFromSkinItem(skinItemListView0, tabControl.SelectedIndex.ToString());
+            LoadViewFromSkinItem(skinItemListView0, tabControl.SelectedIndex.ToString());
         }
 
         private void OnListViewItemClick0(object sender, SelectionChangedEventArgs e)
         {
-            loadViewFromSkinItem(skinItemListView0, "0");
+            LoadViewFromSkinItem(skinItemListView0, "0");
         }
 
         private void OnListViewItemClick1(object sender, SelectionChangedEventArgs e)
         {
-            loadViewFromSkinItem(skinItemListView1, "1");
+            LoadViewFromSkinItem(skinItemListView1, "1");
         }
 
         private void OnButtonSaveClick0(object sender, RoutedEventArgs e)
         {
-            updateSkinItem(skinItemListView0,"0");
+            UpdateSkinItem(skinItemListView0,"0");
             RefreshImages();
         }
 
 
         private void OnButtonSaveClick1(object sender, RoutedEventArgs e)
         {
-            updateSkinItem(skinItemListView1,"1");
+            UpdateSkinItem(skinItemListView1,"1");
             RefreshImages();
         }
     }

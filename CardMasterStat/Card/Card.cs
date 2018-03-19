@@ -59,17 +59,15 @@ namespace CardMasterStat
             Physique
         }
 
-        public static NatureCard parseNature(String nature)
+        public static NatureCard ParseNature(String nature)
         {
-            NatureCard toReturn;
-            NatureCard.TryParse(nature,out toReturn);
+            NatureCard.TryParse(nature, out NatureCard toReturn);
             return toReturn;
         }
 
-        public static CardKind parseKind(String kind)
+        public static CardKind ParseKind(String kind)
         {
-            CardKind toReturn;
-            CardKind.TryParse(kind, out toReturn);
+            CardKind.TryParse(kind, out CardKind toReturn);
             if (kind.Equals("Lieu légendaire"))
                 toReturn = CardKind.Lieu;
             return toReturn;
@@ -77,22 +75,22 @@ namespace CardMasterStat
 
         public static Card ConvertCard(JsonCard sourceCard)
         {
-            Card toReturn = CardBuilder.newCard()
-                                .withName(sourceCard.Name)
-                                .withCost(sourceCard.Cost)
-                                .withAttack(sourceCard.Attack)
-                                .withBackground(sourceCard.Background)
-                                .withNature(sourceCard.Chakra)
-                                .withCitation(sourceCard.Citation)
-                                .withComment(sourceCard.Comments)
-                                .withDefense(sourceCard.Defense)
-                                .withElement(sourceCard.Element)
-                                .withNb(sourceCard.Nb)
-                                .withKind(sourceCard.Kind)
-                                .withPowers(sourceCard.Powers)
-                                .withRank(sourceCard.Rank)
-                                .withTeam(sourceCard.Team)
-                                .build();
+            Card toReturn = CardBuilder.NewCard()
+                                .WithName(sourceCard.Name)
+                                .WithCost(sourceCard.Cost)
+                                .WithAttack(sourceCard.Attack)
+                                .WithBackground(sourceCard.Background)
+                                .WithNature(sourceCard.Chakra)
+                                .WithCitation(sourceCard.Citation)
+                                .WithComment(sourceCard.Comments)
+                                .WithDefense(sourceCard.Defense)
+                                .WithElement(sourceCard.Element)
+                                .WithNb(sourceCard.Nb)
+                                .WithKind(sourceCard.Kind)
+                                .WithPowers(sourceCard.Powers)
+                                .WithRank(sourceCard.Rank)
+                                .WithTeam(sourceCard.Team)
+                                .Build();
             return toReturn;
         }
 
