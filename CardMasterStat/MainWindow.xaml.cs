@@ -112,5 +112,9 @@ namespace CardMasterStat
             LoadCardFile(filePath);
         }
 
+        private void MouseDoubleClock(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            
+        }
     }
 }

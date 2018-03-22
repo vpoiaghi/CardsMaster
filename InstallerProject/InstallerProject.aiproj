@@ -1,0 +1,87 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">All</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>9e233dcb-06b0-414f-b449-86c67df48f3e</ProjectGuid>
+    <OutputType>msi</OutputType>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>InstallerProject.aip</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <IsWindowsApplication>True</IsWindowsApplication>
+    <AssemblyName>InstallerProject</AssemblyName>
+    <Name>InstallerProject</Name>
+    <RootNamespace>InstallerProject</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'DefaultBuild' " />
+  <ItemGroup>
+    <Compile Include="InstallerProject.aip">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CardMasterCard\CardMasterCard.csproj">
+      <Name>CardMasterCard</Name>
+      <Project>{1ba2630b-04ab-4910-8792-04e48f2319db}</Project>
+      <Private>True</Private>
+      <OutputsToImport>PrimaryOutput;References;SymbolsOutput</OutputsToImport>
+    </ProjectReference>
+    <ProjectReference Include="..\CardMasterCmdExport\CardMasterCmdExport.csproj">
+      <Name>CardMasterCmdExport</Name>
+      <Project>{e2a4c710-6782-45e4-b9e3-59b00cb3edb8}</Project>
+      <Private>True</Private>
+      <OutputsToImport>PrimaryOutput;References;SymbolsOutput</OutputsToImport>
+    </ProjectReference>
+    <ProjectReference Include="..\CardMasterCommon\CardMasterCommon.csproj">
+      <Name>CardMasterCommon</Name>
+      <Project>{38cdb275-ff7f-48a8-8cab-6c582e2540aa}</Project>
+      <Private>True</Private>
+      <OutputsToImport>PrimaryOutput;SymbolsOutput</OutputsToImport>
+    </ProjectReference>
+    <ProjectReference Include="..\CardMasterExport\CardMasterExport.csproj">
+      <Name>CardMasterExport</Name>
+      <Project>{4d96048a-0232-4743-97af-5e52c5087a29}</Project>
+      <Private>True</Private>
+      <OutputsToImport>PrimaryOutput;References;SymbolsOutput</OutputsToImport>
+    </ProjectReference>
+    <ProjectReference Include="..\CardMasterImageBuilder\CardMasterImageBuilder.csproj">
+      <Name>CardMasterImageBuilder</Name>
+      <Project>{65056a8a-d3de-467d-ac89-31b3a051099f}</Project>
+      <Private>True</Private>
+      <OutputsToImport>PrimaryOutput;References;SymbolsOutput</OutputsToImport>
+    </ProjectReference>
+    <ProjectReference Include="..\CardMasterImageClipping\CardMasterImageClipping.csproj">
+      <Name>CardMasterImageClipping</Name>
+      <Project>{021044f5-8864-488f-88a7-570c1ee61998}</Project>
+      <Private>True</Private>
+      <OutputsToImport>PrimaryOutput;SymbolsOutput</OutputsToImport>
+    </ProjectReference>
+    <ProjectReference Include="..\CardMasterManager\CardMasterManager.csproj">
+      <Name>CardMasterManager</Name>
+      <Project>{5802607e-400f-44dc-8a11-796e991eb995}</Project>
+      <Private>True</Private>
+      <OutputsToImport>PrimaryOutput;References;ContentOutput;SymbolsOutput</OutputsToImport>
+    </ProjectReference>
+    <ProjectReference Include="..\CardMasterSkinEditor\CardMasterSkinEditor.csproj">
+      <Name>CardMasterSkinEditor</Name>
+      <Project>{aa25c818-16b7-44d2-945c-af4e545dbe82}</Project>
+      <Private>True</Private>
+      <OutputsToImport>PrimaryOutput;SymbolsOutput</OutputsToImport>
+    </ProjectReference>
+    <ProjectReference Include="..\CardMasterSkin\CardMasterSkin.csproj">
+      <Name>CardMasterSkin</Name>
+      <Project>{8e132eef-1e9c-4b96-8bf7-a513ad1e4ec7}</Project>
+      <Private>True</Private>
+      <OutputsToImport>PrimaryOutput;References;SymbolsOutput</OutputsToImport>
+    </ProjectReference>
+    <ProjectReference Include="..\CardMasterStat\CardMasterStat.csproj">
+      <Name>CardMasterStat</Name>
+      <Project>{bd1c43a2-f01a-4d73-b605-03524fece3c9}</Project>
+      <Private>True</Private>
+      <OutputsToImport>PrimaryOutput;References;SymbolsOutput</OutputsToImport>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Condition="'$(AdvancedInstallerMSBuildTargets)' != ''" Project="$(AdvancedInstallerMSBuildTargets)\AdvInstExtTasks.Targets" />
+  <Import Condition="'$(AdvancedInstallerMSBuildTargets)' == ''" Project="$(MSBuildExtensionsPath32)\Caphyon\Advanced Installer\AdvInstExtTasks.Targets" />
+</Project>

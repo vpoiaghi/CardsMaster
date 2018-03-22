@@ -125,19 +125,19 @@
                         </Grid>
                     </TabItem>
                     <TabItem Header="test Radar">
-
-                        <Spider:SpiderChart Title="Spider chart"  
+                        
+                            <Spider:SpiderChart Title="Spider chart"  
                                Lines="{Binding Lines}" 
                                Axis="{Binding Axes}" 
                                Minimum="0" 
                                Maximum="1" 
                                Ticks="5" 
                                ShowLegend="True" 
+                               Name="spiderChart"
                                LegendLocation="BottomRight"
-                            
+                                MouseDoubleClick="MouseDoubleClock"
                                LegendBackgroundColor="Aquamarine" />
-
-
+                       
 
                     </TabItem>
                 </TabControl>
@@ -149,18 +149,6 @@
                     </StatusBarItem>
                 </StatusBar>
             </StackPanel>
-            <Grid>
-            <Spider:SpiderChart Title="Spider chart"  
-                               Lines="{Binding Lines}" 
-                               Axis="{Binding Axes}" 
-                               Minimum="0" 
-                               Maximum="1" 
-                               Ticks="5" 
-                               ShowLegend="True" 
-                               LegendLocation="BottomRight"
-                            
-                               LegendBackgroundColor="Aquamarine" Margin="0,0,-699,0"/>
-            </Grid>
         </StackPanel>
     </Grid>
 </Window>

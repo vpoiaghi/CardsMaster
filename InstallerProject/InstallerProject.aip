@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="14.7" version="14.7" Modules="simple" RootPath="." Language="en" Id="{AB2D60F3-F181-4FB8-99D0-9900B8C5714B}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterCard.dll" Value="..\CardMasterCard\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterCard.dll_1" Value="..\CardMasterCard\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterCard.pdb" Value="..\CardMasterCard\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterCmdExport.exe" Value="..\CardMasterCmdExport\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterCmdExport.exe.config" Value="..\CardMasterCmdExport\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterCmdExport.pdb" Value="..\CardMasterCmdExport\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterCommon.dll" Value="..\CardMasterCommon\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterCommon.dll_1" Value="..\CardMasterCommon\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterCommon.pdb" Value="..\CardMasterCommon\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterExport.dll" Value="..\CardMasterExport\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterExport.dll_1" Value="..\CardMasterExport\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterExport.pdb" Value="..\CardMasterExport\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterImageBuilder.dll" Value="..\CardMasterImageBuilder\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterImageBuilder.dll_1" Value="..\CardMasterImageBuilder\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterImageBuilder.pdb" Value="..\CardMasterImageBuilder\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterImageClipping.exe" Value="..\CardMasterImageClipping\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterImageClipping.exe.config" Value="..\CardMasterImageClipping\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterImageClipping.pdb" Value="..\CardMasterImageClipping\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterManager.exe" Value="..\CardMasterManager\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterManager.exe.config" Value="..\CardMasterManager\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterManager.pdb" Value="..\CardMasterManager\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterSkin.dll" Value="..\CardMasterSkin\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterSkin.dll_1" Value="..\CardMasterSkin\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterSkin.pdb" Value="..\CardMasterSkin\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterSkinEditor.exe" Value="..\CardMasterSkinEditor\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterSkinEditor.exe.config" Value="..\CardMasterSkinEditor\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterSkinEditor.pdb" Value="..\CardMasterSkinEditor\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterStat.exe" Value="..\CardMasterStat\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterStat.exe.config" Value="..\CardMasterStat\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CardMasterStat.pdb" Value="..\CardMasterStat\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Newtonsoft.Json.dll" Value="..\CardMasterCard\ExtLibs"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Newtonsoft.Json.dll_1" Value="..\CardMasterCard\ExtLibs"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Newtonsoft.Json.dll_2" Value="..\CardMasterSkin\ExtLibs"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Newtonsoft.Json.dll_3" Value="..\CardMasterCard\ExtLibs"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Newtonsoft.Json.dll_4" Value="..\CardMasterCard\ExtLibs"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Newtonsoft.Json.dll_5" Value="..\CardMasterSkin\ExtLibs"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_System.Windows.Controls.DataVisualization.Toolkit.dll" Value="..\CardMasterStat\ExtLibs"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_WpfCharts.dll" Value="..\CardMasterStat\ExtLibs"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_WpfCharts.dll_1" Value="..\CardMasterStat\ExtLibs"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_configuration.json" Value="..\CardMasterManager\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_itextsharp.dll" Value="..\packages\iTextSharp.5.5.11\lib"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_itextsharp.dll_1" Value="..\packages\iTextSharp.5.5.11\lib"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_template.json" Value="..\CardMasterManager\bin\Release"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterCard.dll" Value="CardMasterCard.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterCard.dll_1" Value="CardMasterCard.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterCard.pdb" Value="CardMasterCard.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterCmdExport.exe" Value="CardMasterCmdExport.exe"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterCmdExport.exe.config" Value="CardMasterCmdExport.exe.config"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterCmdExport.pdb" Value="CardMasterCmdExport.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterCommon.dll" Value="CardMasterCommon.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterCommon.dll_1" Value="CardMasterCommon.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterCommon.pdb" Value="CardMasterCommon.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterExport.dll" Value="CardMasterExport.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterExport.dll_1" Value="CardMasterExport.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterExport.pdb" Value="CardMasterExport.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterImageBuilder.dll" Value="CardMasterImageBuilder.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterImageBuilder.dll_1" Value="CardMasterImageBuilder.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterImageBuilder.pdb" Value="CardMasterImageBuilder.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterImageClipping.exe" Value="CardMasterImageClipping.exe"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterImageClipping.exe.config" Value="CardMasterImageClipping.exe.config"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterImageClipping.pdb" Value="CardMasterImageClipping.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterManager.exe" Value="CardMasterManager.exe"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterManager.exe.config" Value="CardMasterManager.exe.config"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterManager.pdb" Value="CardMasterManager.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterSkin.dll" Value="CardMasterSkin.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterSkin.dll_1" Value="CardMasterSkin.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterSkin.pdb" Value="CardMasterSkin.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterSkinEditor.exe" Value="CardMasterSkinEditor.exe"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterSkinEditor.exe.config" Value="CardMasterSkinEditor.exe.config"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterSkinEditor.pdb" Value="CardMasterSkinEditor.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterStat.exe" Value="CardMasterStat.exe"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterStat.exe.config" Value="CardMasterStat.exe.config"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CardMasterStat.pdb" Value="CardMasterStat.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll" Value="Newtonsoft.Json.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll_1" Value="Newtonsoft.Json.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll_2" Value="Newtonsoft.Json.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll_3" Value="Newtonsoft.Json.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll_4" Value="Newtonsoft.Json.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll_5" Value="Newtonsoft.Json.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_System.Windows.Controls.DataVisualization.Toolkit.dll" Value="System.Windows.Controls.DataVisualization.Toolkit.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_WpfCharts.dll" Value="WpfCharts.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_WpfCharts.dll_1" Value="WpfCharts.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_configuration.json" Value="configuration.json"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_itextsharp.dll" Value="itextsharp.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_itextsharp.dll_1" Value="itextsharp.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_template.json" Value="template.json"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="Manufacturer" Value="Lioncorps"/>
+    <ROW Property="ProductCode" Value="1033:{EEDE16BE-249F-44E9-BE22-25B249AD9686} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Card Manager"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{EBDFD212-5C5C-4919-9120-661C970607DA}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="CardMasterCard_Dir" Directory_Parent="APPDIR" DefaultDir="CARDMA~1|CardMasterCard"/>
+    <ROW Directory="CardMasterCmdExport_Dir" Directory_Parent="APPDIR" DefaultDir="CARDMA~2|CardMasterCmdExport"/>
+    <ROW Directory="CardMasterCommon_Dir" Directory_Parent="APPDIR" DefaultDir="CARDMA~3|CardMasterCommon"/>
+    <ROW Directory="CardMasterExport_Dir" Directory_Parent="APPDIR" DefaultDir="CARDMA~4|CardMasterExport"/>
+    <ROW Directory="CardMasterImageBuilder_Dir" Directory_Parent="APPDIR" DefaultDir="CARDMA~5|CardMasterImageBuilder"/>
+    <ROW Directory="CardMasterImageClipping_Dir" Directory_Parent="APPDIR" DefaultDir="CARDMA~6|CardMasterImageClipping"/>
+    <ROW Directory="CardMasterManager_Dir" Directory_Parent="APPDIR" DefaultDir="CARDMA~7|CardMasterManager"/>
+    <ROW Directory="CardMasterSkinEditor_Dir" Directory_Parent="APPDIR" DefaultDir="CARDMA~8|CardMasterSkinEditor"/>
+    <ROW Directory="CardMasterSkin_Dir" Directory_Parent="APPDIR" DefaultDir="CARDMA~9|CardMasterSkin"/>
+    <ROW Directory="CardMasterStat_Dir" Directory_Parent="APPDIR" DefaultDir="CARDM~10|CardMasterStat"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="CardMasterCard_PrimaryOutput" ComponentId="{ED09E1B5-BBD8-4FDE-854D-FF60F4AB6C75}" Directory_="CardMasterCard_Dir" Attributes="0" KeyPath="CardMasterCard.dll"/>
+    <ROW Component="CardMasterCard_References" ComponentId="{D4BCBB6C-2A7B-4A8D-B695-AB6548CFA4EA}" Directory_="CardMasterCard_Dir" Attributes="0" KeyPath="Newtonsoft.Json.dll"/>
+    <ROW Component="CardMasterCard_SymbolsOutput" ComponentId="{7BF5903C-B807-4309-BDFC-D52BCAB64DE5}" Directory_="CardMasterCard_Dir" Attributes="0" KeyPath="CardMasterCard.pdb"/>
+    <ROW Component="CardMasterCmdExport_PrimaryOutput" ComponentId="{10E4458C-1E54-480F-BBA2-0DB2BD1DF3E5}" Directory_="CardMasterCmdExport_Dir" Attributes="0" KeyPath="CardMasterCmdExport.exe"/>
+    <ROW Component="CardMasterCmdExport_References" ComponentId="{098577B9-57C7-4FC7-9ECB-F2561F5AC2DD}" Directory_="CardMasterCmdExport_Dir" Attributes="0" KeyPath="Newtonsoft.Json.dll_2"/>
+    <ROW Component="CardMasterCmdExport_SymbolsOutput" ComponentId="{F501D105-C675-4199-9B85-EDB53E0C9D4A}" Directory_="CardMasterCmdExport_Dir" Attributes="0" KeyPath="CardMasterCmdExport.pdb"/>
+    <ROW Component="CardMasterCommon_PrimaryOutput" ComponentId="{6A657DE0-2204-474D-99BC-E8E090B46F63}" Directory_="CardMasterCommon_Dir" Attributes="0" KeyPath="CardMasterCommon.dll_1"/>
+    <ROW Component="CardMasterCommon_SymbolsOutput" ComponentId="{C7A6215D-F7DD-44D5-9382-9B44D8EE1C7A}" Directory_="CardMasterCommon_Dir" Attributes="0" KeyPath="CardMasterCommon.pdb"/>
+    <ROW Component="CardMasterExport_PrimaryOutput" ComponentId="{49E553A7-04D2-402B-B29B-2B7CB567ACC7}" Directory_="CardMasterExport_Dir" Attributes="0" KeyPath="CardMasterExport.dll_1"/>
+    <ROW Component="CardMasterExport_References" ComponentId="{73E1DFF9-84E4-4B81-A632-6795E8E3422F}" Directory_="CardMasterExport_Dir" Attributes="0" KeyPath="itextsharp.dll_1"/>
+    <ROW Component="CardMasterExport_SymbolsOutput" ComponentId="{297118E8-28D8-4232-B594-F532713EF481}" Directory_="CardMasterExport_Dir" Attributes="0" KeyPath="CardMasterExport.pdb"/>
+    <ROW Component="CardMasterImageBuilder_PrimaryOutput" ComponentId="{A8AF560A-DAB4-4FFA-B735-A0CF58DEF306}" Directory_="CardMasterImageBuilder_Dir" Attributes="0" KeyPath="CardMasterImageBuilder.dll_1"/>
+    <ROW Component="CardMasterImageBuilder_References" ComponentId="{686B4677-AD9A-481D-8EDB-9E7D9FE6E460}" Directory_="CardMasterImageBuilder_Dir" Attributes="0" KeyPath="Newtonsoft.Json.dll_3"/>
+    <ROW Component="CardMasterImageBuilder_SymbolsOutput" ComponentId="{DEAB9ACF-37E8-4F35-A305-8CA960DC766B}" Directory_="CardMasterImageBuilder_Dir" Attributes="0" KeyPath="CardMasterImageBuilder.pdb"/>
+    <ROW Component="CardMasterImageClipping_PrimaryOutput" ComponentId="{36E5E6AB-65F9-4668-A5D1-0443B1866800}" Directory_="CardMasterImageClipping_Dir" Attributes="0" KeyPath="CardMasterImageClipping.exe"/>
+    <ROW Component="CardMasterImageClipping_SymbolsOutput" ComponentId="{5C114B6C-F44E-493B-A056-49F333E1F7B2}" Directory_="CardMasterImageClipping_Dir" Attributes="0" KeyPath="CardMasterImageClipping.pdb"/>
+    <ROW Component="CardMasterManager_ContentOutput" ComponentId="{F9AE9B71-D137-4FFE-A796-FCC0556AA510}" Directory_="CardMasterManager_Dir" Attributes="0" KeyPath="template.json" Type="0"/>
+    <ROW Component="CardMasterManager_PrimaryOutput" ComponentId="{1F1394D8-B28C-41A5-A63A-A0FF270AAA50}" Directory_="CardMasterManager_Dir" Attributes="0" KeyPath="CardMasterManager.exe"/>
+    <ROW Component="CardMasterManager_References" ComponentId="{12379686-95B5-43C5-BD36-B559C1F8DCDA}" Directory_="CardMasterManager_Dir" Attributes="0" KeyPath="WpfCharts.dll"/>
+    <ROW Component="CardMasterManager_SymbolsOutput" ComponentId="{476353F1-56A8-49D0-94F6-1F13FF2CCE8C}" Directory_="CardMasterManager_Dir" Attributes="0" KeyPath="CardMasterManager.pdb"/>
+    <ROW Component="CardMasterSkinEditor_PrimaryOutput" ComponentId="{83CADF45-49D9-485C-934C-1F2E343215B7}" Directory_="CardMasterSkinEditor_Dir" Attributes="0" KeyPath="CardMasterSkinEditor.exe"/>
+    <ROW Component="CardMasterSkinEditor_SymbolsOutput" ComponentId="{5C73F5EA-65D7-46AD-A9F2-62E82EF7E444}" Directory_="CardMasterSkinEditor_Dir" Attributes="0" KeyPath="CardMasterSkinEditor.pdb"/>
+    <ROW Component="CardMasterSkin_PrimaryOutput" ComponentId="{552DEE1C-E6B7-4220-86B1-A921C7BE9EE6}" Directory_="CardMasterSkin_Dir" Attributes="0" KeyPath="CardMasterSkin.dll_1"/>
+    <ROW Component="CardMasterSkin_References" ComponentId="{69BBDEA1-DF22-47D5-9955-639E2FA12BAD}" Directory_="CardMasterSkin_Dir" Attributes="0" KeyPath="Newtonsoft.Json.dll_5"/>
+    <ROW Component="CardMasterSkin_SymbolsOutput" ComponentId="{7671D9E1-DB4E-41B1-953D-4FD86668C4C8}" Directory_="CardMasterSkin_Dir" Attributes="0" KeyPath="CardMasterSkin.pdb"/>
+    <ROW Component="CardMasterStat_PrimaryOutput" ComponentId="{1D83C356-8009-468D-9FD6-0BA2B87570C8}" Directory_="CardMasterStat_Dir" Attributes="0" KeyPath="CardMasterStat.exe"/>
+    <ROW Component="CardMasterStat_References" ComponentId="{2DF24424-4E28-4529-8F29-382A94011CAD}" Directory_="CardMasterStat_Dir" Attributes="0" KeyPath="WpfCharts.dll_1"/>
+    <ROW Component="CardMasterStat_SymbolsOutput" ComponentId="{2AA51139-1B51-4BB4-82EC-78407DB449A8}" Directory_="CardMasterStat_Dir" Attributes="0" KeyPath="CardMasterStat.pdb"/>
+    <ROW Component="ProductInformation" ComponentId="{66083AD3-B6E0-498E-BCA0-643D8951258B}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{29077843-028C-49DF-BE7D-D1772FB63AA9}" Directory_="SHORTCUTDIR" Attributes="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="CardMasterCard_PrimaryOutput CardMasterCard_References CardMasterCard_SymbolsOutput CardMasterCmdExport_PrimaryOutput CardMasterCmdExport_References CardMasterCmdExport_SymbolsOutput CardMasterCommon_PrimaryOutput CardMasterCommon_SymbolsOutput CardMasterExport_PrimaryOutput CardMasterExport_References CardMasterExport_SymbolsOutput CardMasterImageBuilder_PrimaryOutput CardMasterImageBuilder_References CardMasterImageBuilder_SymbolsOutput CardMasterImageClipping_PrimaryOutput CardMasterImageClipping_SymbolsOutput CardMasterManager_ContentOutput CardMasterManager_PrimaryOutput CardMasterManager_References CardMasterManager_SymbolsOutput CardMasterSkinEditor_PrimaryOutput CardMasterSkinEditor_SymbolsOutput CardMasterSkin_PrimaryOutput CardMasterSkin_References CardMasterSkin_SymbolsOutput CardMasterStat_PrimaryOutput CardMasterStat_References CardMasterStat_SymbolsOutput ProductInformation SHORTCUTDIR"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="CardMasterCard.dll" Component_="CardMasterCard_PrimaryOutput" FileName="CARDMA~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterCard.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterCard.dll&gt;" SelfReg="false" NextFile="Newtonsoft.Json.dll"/>
+    <ROW File="CardMasterCard.dll_1" Component_="CardMasterCmdExport_References" FileName="CARDMA~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterCard.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterCard.dll_1&gt;" SelfReg="false" NextFile="CardMasterCommon.dll"/>
+    <ROW File="CardMasterCard.pdb" Component_="CardMasterCard_SymbolsOutput" FileName="CARDMA~2.PDB|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterCard.pdb]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterCard.pdb&gt;" SelfReg="false" NextFile="CardMasterCmdExport.exe"/>
+    <ROW File="CardMasterCmdExport.exe" Component_="CardMasterCmdExport_PrimaryOutput" FileName="CARDMA~2.EXE|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterCmdExport.exe]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterCmdExport.exe&gt;" SelfReg="false" NextFile="CardMasterCmdExport.exe.config" DigSign="true"/>
+    <ROW File="CardMasterCmdExport.exe.config" Component_="CardMasterCmdExport_PrimaryOutput" FileName="CARDMA~2.CON|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterCmdExport.exe.config]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterCmdExport.exe.config&gt;" SelfReg="false" NextFile="CardMasterCard.dll_1"/>
+    <ROW File="CardMasterCmdExport.pdb" Component_="CardMasterCmdExport_SymbolsOutput" FileName="CARDMA~2.PDB|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterCmdExport.pdb]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterCmdExport.pdb&gt;" SelfReg="false" NextFile="CardMasterCommon.dll_1"/>
+    <ROW File="CardMasterCommon.dll" Component_="CardMasterCmdExport_References" FileName="CARDMA~3.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterCommon.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterCommon.dll&gt;" SelfReg="false" NextFile="CardMasterExport.dll"/>
+    <ROW File="CardMasterCommon.dll_1" Component_="CardMasterCommon_PrimaryOutput" FileName="CARDMA~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterCommon.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterCommon.dll_1&gt;" SelfReg="false" NextFile="CardMasterCommon.pdb"/>
+    <ROW File="CardMasterCommon.pdb" Component_="CardMasterCommon_SymbolsOutput" FileName="CARDMA~2.PDB|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterCommon.pdb]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterCommon.pdb&gt;" SelfReg="false" NextFile="CardMasterExport.dll_1"/>
+    <ROW File="CardMasterExport.dll" Component_="CardMasterCmdExport_References" FileName="CARDMA~4.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterExport.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterExport.dll&gt;" SelfReg="false" NextFile="CardMasterImageBuilder.dll"/>
+    <ROW File="CardMasterExport.dll_1" Component_="CardMasterExport_PrimaryOutput" FileName="CARDMA~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterExport.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterExport.dll_1&gt;" SelfReg="false" NextFile="itextsharp.dll_1"/>
+    <ROW File="CardMasterExport.pdb" Component_="CardMasterExport_SymbolsOutput" FileName="CARDMA~2.PDB|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterExport.pdb]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterExport.pdb&gt;" SelfReg="false" NextFile="CardMasterImageBuilder.dll_1"/>
+    <ROW File="CardMasterImageBuilder.dll" Component_="CardMasterCmdExport_References" FileName="CARDMA~5.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterImageBuilder.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterImageBuilder.dll&gt;" SelfReg="false" NextFile="CardMasterSkin.dll"/>
+    <ROW File="CardMasterImageBuilder.dll_1" Component_="CardMasterImageBuilder_PrimaryOutput" FileName="CARDMA~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterImageBuilder.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterImageBuilder.dll_1&gt;" SelfReg="false" NextFile="Newtonsoft.Json.dll_3"/>
+    <ROW File="CardMasterImageBuilder.pdb" Component_="CardMasterImageBuilder_SymbolsOutput" FileName="CARDMA~2.PDB|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterImageBuilder.pdb]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterImageBuilder.pdb&gt;" SelfReg="false" NextFile="CardMasterImageClipping.exe"/>
+    <ROW File="CardMasterImageClipping.exe" Component_="CardMasterImageClipping_PrimaryOutput" FileName="CARDMA~2.EXE|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterImageClipping.exe]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterImageClipping.exe&gt;" SelfReg="false" NextFile="CardMasterImageClipping.exe.config" DigSign="true"/>
+    <ROW File="CardMasterImageClipping.exe.config" Component_="CardMasterImageClipping_PrimaryOutput" FileName="CARDMA~2.CON|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterImageClipping.exe.config]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterImageClipping.exe.config&gt;" SelfReg="false" NextFile="CardMasterImageClipping.pdb"/>
+    <ROW File="CardMasterImageClipping.pdb" Component_="CardMasterImageClipping_SymbolsOutput" FileName="CARDMA~2.PDB|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterImageClipping.pdb]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterImageClipping.pdb&gt;" SelfReg="false" NextFile="CardMasterManager.exe"/>
+    <ROW File="CardMasterManager.exe" Component_="CardMasterManager_PrimaryOutput" FileName="CARDMA~2.EXE|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterManager.exe]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterManager.exe&gt;" SelfReg="false" NextFile="CardMasterManager.exe.config" DigSign="true"/>
+    <ROW File="CardMasterManager.exe.config" Component_="CardMasterManager_PrimaryOutput" FileName="CARDMA~2.CON|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterManager.exe.config]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterManager.exe.config&gt;" SelfReg="false" NextFile="Newtonsoft.Json.dll_4"/>
+    <ROW File="CardMasterManager.pdb" Component_="CardMasterManager_SymbolsOutput" FileName="CARDMA~2.PDB|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterManager.pdb]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterManager.pdb&gt;" SelfReg="false" NextFile="CardMasterSkinEditor.exe"/>
+    <ROW File="CardMasterSkin.dll" Component_="CardMasterCmdExport_References" FileName="CARDMA~6.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterSkin.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterSkin.dll&gt;" SelfReg="false" NextFile="Newtonsoft.Json.dll_1"/>
+    <ROW File="CardMasterSkin.dll_1" Component_="CardMasterSkin_PrimaryOutput" FileName="CARDMA~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterSkin.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterSkin.dll_1&gt;" SelfReg="false" NextFile="Newtonsoft.Json.dll_5"/>
+    <ROW File="CardMasterSkin.pdb" Component_="CardMasterSkin_SymbolsOutput" FileName="CARDMA~2.PDB|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterSkin.pdb]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterSkin.pdb&gt;" SelfReg="false" NextFile="CardMasterStat.exe"/>
+    <ROW File="CardMasterSkinEditor.exe" Component_="CardMasterSkinEditor_PrimaryOutput" FileName="CARDMA~2.EXE|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterSkinEditor.exe]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterSkinEditor.exe&gt;" SelfReg="false" NextFile="CardMasterSkinEditor.exe.config" DigSign="true"/>
+    <ROW File="CardMasterSkinEditor.exe.config" Component_="CardMasterSkinEditor_PrimaryOutput" FileName="CARDMA~2.CON|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterSkinEditor.exe.config]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterSkinEditor.exe.config&gt;" SelfReg="false" NextFile="CardMasterSkinEditor.pdb"/>
+    <ROW File="CardMasterSkinEditor.pdb" Component_="CardMasterSkinEditor_SymbolsOutput" FileName="CARDMA~2.PDB|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterSkinEditor.pdb]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterSkinEditor.pdb&gt;" SelfReg="false" NextFile="CardMasterSkin.dll_1"/>
+    <ROW File="CardMasterStat.exe" Component_="CardMasterStat_PrimaryOutput" FileName="CARDMA~2.EXE|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterStat.exe]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterStat.exe&gt;" SelfReg="false" NextFile="CardMasterStat.exe.config" DigSign="true"/>
+    <ROW File="CardMasterStat.exe.config" Component_="CardMasterStat_PrimaryOutput" FileName="CARDMA~2.CON|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterStat.exe.config]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterStat.exe.config&gt;" SelfReg="false" NextFile="System.Windows.Controls.DataVisualization.Toolkit.dll"/>
+    <ROW File="CardMasterStat.pdb" Component_="CardMasterStat_SymbolsOutput" FileName="CARDMA~2.PDB|[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterStat.pdb]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CardMasterStat.pdb&gt;" SelfReg="false"/>
+    <ROW File="Newtonsoft.Json.dll" Component_="CardMasterCard_References" FileName="NEWTON~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Newtonsoft.Json.dll&gt;" SelfReg="false" NextFile="CardMasterCard.pdb"/>
+    <ROW File="Newtonsoft.Json.dll_1" Component_="CardMasterCmdExport_References" FileName="NEWTON~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Newtonsoft.Json.dll_1&gt;" SelfReg="false" NextFile="itextsharp.dll"/>
+    <ROW File="Newtonsoft.Json.dll_2" Component_="CardMasterCmdExport_References" FileName="NEWTON~1.DLL|Newtonsoft.Json.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Newtonsoft.Json.dll_2&gt;" SelfReg="false" NextFile="CardMasterCmdExport.pdb"/>
+    <ROW File="Newtonsoft.Json.dll_3" Component_="CardMasterImageBuilder_References" FileName="NEWTON~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll_3]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Newtonsoft.Json.dll_3&gt;" SelfReg="false" NextFile="CardMasterImageBuilder.pdb"/>
+    <ROW File="Newtonsoft.Json.dll_4" Component_="CardMasterManager_References" FileName="NEWTON~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll_4]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Newtonsoft.Json.dll_4&gt;" SelfReg="false" NextFile="WpfCharts.dll"/>
+    <ROW File="Newtonsoft.Json.dll_5" Component_="CardMasterSkin_References" FileName="NEWTON~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll_5]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Newtonsoft.Json.dll_5&gt;" SelfReg="false" NextFile="CardMasterSkin.pdb"/>
+    <ROW File="System.Windows.Controls.DataVisualization.Toolkit.dll" Component_="CardMasterStat_References" FileName="SYSTEM~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_System.Windows.Controls.DataVisualization.Toolkit.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_System.Windows.Controls.DataVisualization.Toolkit.dll&gt;" SelfReg="false" NextFile="WpfCharts.dll_1"/>
+    <ROW File="WpfCharts.dll" Component_="CardMasterManager_References" FileName="WPFCHA~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_WpfCharts.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_WpfCharts.dll&gt;" SelfReg="false" NextFile="template.json"/>
+    <ROW File="WpfCharts.dll_1" Component_="CardMasterStat_References" FileName="WPFCHA~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_WpfCharts.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_WpfCharts.dll_1&gt;" SelfReg="false" NextFile="CardMasterStat.pdb"/>
+    <ROW File="configuration.json" Component_="CardMasterManager_ContentOutput" FileName="CONFIG~2.JSO|[|AI_PROPPATH_FILENAME_PERBUILD_configuration.json]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_configuration.json&gt;" SelfReg="false" NextFile="CardMasterManager.pdb"/>
+    <ROW File="itextsharp.dll" Component_="CardMasterCmdExport_References" FileName="ITEXTS~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_itextsharp.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_itextsharp.dll&gt;" SelfReg="false" NextFile="Newtonsoft.Json.dll_2"/>
+    <ROW File="itextsharp.dll_1" Component_="CardMasterExport_References" FileName="ITEXTS~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_itextsharp.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_itextsharp.dll_1&gt;" SelfReg="false" NextFile="CardMasterExport.pdb"/>
+    <ROW File="template.json" Component_="CardMasterManager_ContentOutput" FileName="TEMPLA~2.JSO|[|AI_PROPPATH_FILENAME_PERBUILD_template.json]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_template.json&gt;" SelfReg="false" NextFile="configuration.json"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.AppPathsComponent">
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterCard.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterCard.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterCard.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterCard.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterCard.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterCard.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterCard.pdb" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterCard.pdb]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterCard.pdb]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterCmdExport.exe" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterCmdExport.exe]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterCmdExport.exe]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterCmdExport.exe.config" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterCmdExport.exe.config]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterCmdExport.exe.config]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterCmdExport.pdb" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterCmdExport.pdb]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterCmdExport.pdb]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterCommon.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterCommon.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterCommon.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterCommon.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterCommon.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterCommon.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterCommon.pdb" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterCommon.pdb]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterCommon.pdb]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterExport.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterExport.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterExport.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterExport.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterExport.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterExport.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterExport.pdb" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterExport.pdb]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterExport.pdb]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterImageBuilder.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterImageBuilder.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterImageBuilder.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterImageBuilder.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterImageBuilder.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterImageBuilder.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterImageBuilder.pdb" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterImageBuilder.pdb]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterImageBuilder.pdb]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterImageClipping.exe" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterImageClipping.exe]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterImageClipping.exe]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterImageClipping.exe.config" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterImageClipping.exe.config]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterImageClipping.exe.config]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterImageClipping.pdb" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterImageClipping.pdb]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterImageClipping.pdb]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterManager.exe" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterManager.exe]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterManager.exe]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterManager.exe.config" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterManager.exe.config]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterManager.exe.config]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterManager.pdb" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterManager.pdb]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterManager.pdb]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterSkin.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterSkin.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterSkin.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterSkin.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterSkin.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterSkin.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterSkin.pdb" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterSkin.pdb]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterSkin.pdb]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterSkinEditor.exe" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterSkinEditor.exe]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterSkinEditor.exe]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterSkinEditor.exe.config" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterSkinEditor.exe.config]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterSkinEditor.exe.config]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterSkinEditor.pdb" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterSkinEditor.pdb]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterSkinEditor.pdb]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterStat.exe" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterStat.exe]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterStat.exe]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterStat.exe.config" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterStat.exe.config]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterStat.exe.config]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CardMasterStat.pdb" Path="[|AI_PROPPATH_DIR_PERBUILD_CardMasterStat.pdb]\[|AI_PROPPATH_FILENAME_PERBUILD_CardMasterStat.pdb]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Newtonsoft.Json.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Newtonsoft.Json.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Newtonsoft.Json.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_Newtonsoft.Json.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Newtonsoft.Json.dll_2" Path="[|AI_PROPPATH_DIR_PERBUILD_Newtonsoft.Json.dll_2]\[|AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll_2]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Newtonsoft.Json.dll_3" Path="[|AI_PROPPATH_DIR_PERBUILD_Newtonsoft.Json.dll_3]\[|AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll_3]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Newtonsoft.Json.dll_4" Path="[|AI_PROPPATH_DIR_PERBUILD_Newtonsoft.Json.dll_4]\[|AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll_4]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Newtonsoft.Json.dll_5" Path="[|AI_PROPPATH_DIR_PERBUILD_Newtonsoft.Json.dll_5]\[|AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll_5]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_System.Windows.Controls.DataVisualization.Toolkit.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_System.Windows.Controls.DataVisualization.Toolkit.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_System.Windows.Controls.DataVisualization.Toolkit.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_WpfCharts.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_WpfCharts.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_WpfCharts.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_WpfCharts.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_WpfCharts.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_WpfCharts.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_configuration.json" Path="[|AI_PROPPATH_DIR_PERBUILD_configuration.json]\[|AI_PROPPATH_FILENAME_PERBUILD_configuration.json]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_itextsharp.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_itextsharp.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_itextsharp.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_itextsharp.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_itextsharp.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_itextsharp.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_template.json" Path="[|AI_PROPPATH_DIR_PERBUILD_template.json]\[|AI_PROPPATH_FILENAME_PERBUILD_template.json]" Type="2" Content="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="FatalError" Control_="Finish" Event="DoAction" Argument="AI_SHOW_LOG" Condition="(MsiLogFileLocation AND AI_LOG_CHECKBOX)" Ordering="101" MsiKey="FatalError#Finish#DoAction#AI_SHOW_LOG#(MsiLogFileLocation AND AI_LOG_CHECKBOX)"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="DoAction" Argument="AI_InstallModeCheck" Condition="AI_MAINT" Ordering="100" MsiKey="CustomizeDlg#Next#DoAction#AI_InstallModeCheck#AI_MAINT"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT64 OR ((VersionNT &lt;&gt; 501) OR (ServicePackLevel = 3))) AND ((VersionNT &lt;&gt; 502) OR (ServicePackLevel = 2))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="CardMasterCmdExport" Directory_="SHORTCUTDIR" Name="CARDMA~1|CardMasterCmdExport" Component_="CardMasterCmdExport_PrimaryOutput" Target="[#CardMasterCmdExport.exe]" Hotkey="0" IconIndex="0" ShowCmd="1"/>
+    <ROW Shortcut="CardMasterImageClipping" Directory_="SHORTCUTDIR" Name="CARDMA~2|CardMasterImageClipping" Component_="CardMasterImageClipping_PrimaryOutput" Target="[#CardMasterImageClipping.exe]" Hotkey="0" IconIndex="0" ShowCmd="1"/>
+    <ROW Shortcut="CardMasterManager" Directory_="SHORTCUTDIR" Name="CARDMA~3|CardMasterManager" Component_="CardMasterManager_PrimaryOutput" Target="[#CardMasterManager.exe]" Hotkey="0" IconIndex="0" ShowCmd="1"/>
+    <ROW Shortcut="CardMasterSkinEditor" Directory_="SHORTCUTDIR" Name="CARDMA~4|CardMasterSkinEditor" Component_="CardMasterSkinEditor_PrimaryOutput" Target="[#CardMasterSkinEditor.exe]" Hotkey="0" IconIndex="0" ShowCmd="1"/>
+    <ROW Shortcut="CardMasterStat" Directory_="SHORTCUTDIR" Name="CARDMA~5|CardMasterStat" Component_="CardMasterStat_PrimaryOutput" Target="[#CardMasterStat.exe]" Hotkey="0" IconIndex="0" ShowCmd="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.VsProjectComponent">
+    <ROW ProjectId="{1ba2630b-04ab-4910-8792-04e48f2319db}" ProjectName="CardMasterCard" OutputGroup="PrimaryOutput" OutputFile="CardMasterCard.dll"/>
+    <ROW ProjectId="{1ba2630b-04ab-4910-8792-04e48f2319db}" ProjectName="CardMasterCard" OutputGroup="References" OutputFile="Newtonsoft.Json.dll"/>
+    <ROW ProjectId="{1ba2630b-04ab-4910-8792-04e48f2319db}" ProjectName="CardMasterCard" OutputGroup="SymbolsOutput" OutputFile="CardMasterCard.pdb"/>
+    <ROW ProjectId="{e2a4c710-6782-45e4-b9e3-59b00cb3edb8}" ProjectName="CardMasterCmdExport" OutputGroup="PrimaryOutput" OutputFile="CardMasterCmdExport.exe" OutputFileShortcut="CardMasterCmdExport"/>
+    <ROW ProjectId="{e2a4c710-6782-45e4-b9e3-59b00cb3edb8}" ProjectName="CardMasterCmdExport" OutputGroup="PrimaryOutput" OutputFile="CardMasterCmdExport.exe.config"/>
+    <ROW ProjectId="{e2a4c710-6782-45e4-b9e3-59b00cb3edb8}" ProjectName="CardMasterCmdExport" OutputGroup="References" OutputFile="CardMasterCard.dll_1"/>
+    <ROW ProjectId="{e2a4c710-6782-45e4-b9e3-59b00cb3edb8}" ProjectName="CardMasterCmdExport" OutputGroup="References" OutputFile="CardMasterCommon.dll"/>
+    <ROW ProjectId="{e2a4c710-6782-45e4-b9e3-59b00cb3edb8}" ProjectName="CardMasterCmdExport" OutputGroup="References" OutputFile="CardMasterExport.dll"/>
+    <ROW ProjectId="{e2a4c710-6782-45e4-b9e3-59b00cb3edb8}" ProjectName="CardMasterCmdExport" OutputGroup="References" OutputFile="CardMasterImageBuilder.dll"/>
+    <ROW ProjectId="{e2a4c710-6782-45e4-b9e3-59b00cb3edb8}" ProjectName="CardMasterCmdExport" OutputGroup="References" OutputFile="CardMasterSkin.dll"/>
+    <ROW ProjectId="{e2a4c710-6782-45e4-b9e3-59b00cb3edb8}" ProjectName="CardMasterCmdExport" OutputGroup="References" OutputFile="Newtonsoft.Json.dll_1"/>
+    <ROW ProjectId="{e2a4c710-6782-45e4-b9e3-59b00cb3edb8}" ProjectName="CardMasterCmdExport" OutputGroup="References" OutputFile="itextsharp.dll"/>
+    <ROW ProjectId="{e2a4c710-6782-45e4-b9e3-59b00cb3edb8}" ProjectName="CardMasterCmdExport" OutputGroup="References" OutputFile="Newtonsoft.Json.dll_2"/>
+    <ROW ProjectId="{e2a4c710-6782-45e4-b9e3-59b00cb3edb8}" ProjectName="CardMasterCmdExport" OutputGroup="SymbolsOutput" OutputFile="CardMasterCmdExport.pdb"/>
+    <ROW ProjectId="{38cdb275-ff7f-48a8-8cab-6c582e2540aa}" ProjectName="CardMasterCommon" OutputGroup="PrimaryOutput" OutputFile="CardMasterCommon.dll_1"/>
+    <ROW ProjectId="{38cdb275-ff7f-48a8-8cab-6c582e2540aa}" ProjectName="CardMasterCommon" OutputGroup="SymbolsOutput" OutputFile="CardMasterCommon.pdb"/>
+    <ROW ProjectId="{4d96048a-0232-4743-97af-5e52c5087a29}" ProjectName="CardMasterExport" OutputGroup="PrimaryOutput" OutputFile="CardMasterExport.dll_1"/>
+    <ROW ProjectId="{4d96048a-0232-4743-97af-5e52c5087a29}" ProjectName="CardMasterExport" OutputGroup="References" OutputFile="itextsharp.dll_1"/>
+    <ROW ProjectId="{4d96048a-0232-4743-97af-5e52c5087a29}" ProjectName="CardMasterExport" OutputGroup="SymbolsOutput" OutputFile="CardMasterExport.pdb"/>
+    <ROW ProjectId="{65056a8a-d3de-467d-ac89-31b3a051099f}" ProjectName="CardMasterImageBuilder" OutputGroup="PrimaryOutput" OutputFile="CardMasterImageBuilder.dll_1"/>
+    <ROW ProjectId="{65056a8a-d3de-467d-ac89-31b3a051099f}" ProjectName="CardMasterImageBuilder" OutputGroup="References" OutputFile="Newtonsoft.Json.dll_3"/>
+    <ROW ProjectId="{65056a8a-d3de-467d-ac89-31b3a051099f}" ProjectName="CardMasterImageBuilder" OutputGroup="SymbolsOutput" OutputFile="CardMasterImageBuilder.pdb"/>
+    <ROW ProjectId="{021044f5-8864-488f-88a7-570c1ee61998}" ProjectName="CardMasterImageClipping" OutputGroup="PrimaryOutput" OutputFile="CardMasterImageClipping.exe" OutputFileShortcut="CardMasterImageClipping"/>
+    <ROW ProjectId="{021044f5-8864-488f-88a7-570c1ee61998}" ProjectName="CardMasterImageClipping" OutputGroup="PrimaryOutput" OutputFile="CardMasterImageClipping.exe.config"/>
+    <ROW ProjectId="{021044f5-8864-488f-88a7-570c1ee61998}" ProjectName="CardMasterImageClipping" OutputGroup="SymbolsOutput" OutputFile="CardMasterImageClipping.pdb"/>
+    <ROW ProjectId="{5802607e-400f-44dc-8a11-796e991eb995}" ProjectName="CardMasterManager" OutputGroup="PrimaryOutput" OutputFile="CardMasterManager.exe" OutputFileShortcut="CardMasterManager"/>
+    <ROW ProjectId="{5802607e-400f-44dc-8a11-796e991eb995}" ProjectName="CardMasterManager" OutputGroup="PrimaryOutput" OutputFile="CardMasterManager.exe.config"/>
+    <ROW ProjectId="{5802607e-400f-44dc-8a11-796e991eb995}" ProjectName="CardMasterManager" OutputGroup="References" OutputFile="Newtonsoft.Json.dll_4"/>
+    <ROW ProjectId="{5802607e-400f-44dc-8a11-796e991eb995}" ProjectName="CardMasterManager" OutputGroup="References" OutputFile="WpfCharts.dll"/>
+    <ROW ProjectId="{5802607e-400f-44dc-8a11-796e991eb995}" ProjectName="CardMasterManager" OutputGroup="ContentOutput" OutputFile="template.json"/>
+    <ROW ProjectId="{5802607e-400f-44dc-8a11-796e991eb995}" ProjectName="CardMasterManager" OutputGroup="ContentOutput" OutputFile="configuration.json"/>
+    <ROW ProjectId="{5802607e-400f-44dc-8a11-796e991eb995}" ProjectName="CardMasterManager" OutputGroup="SymbolsOutput" OutputFile="CardMasterManager.pdb"/>
+    <ROW ProjectId="{aa25c818-16b7-44d2-945c-af4e545dbe82}" ProjectName="CardMasterSkinEditor" OutputGroup="PrimaryOutput" OutputFile="CardMasterSkinEditor.exe" OutputFileShortcut="CardMasterSkinEditor"/>
+    <ROW ProjectId="{aa25c818-16b7-44d2-945c-af4e545dbe82}" ProjectName="CardMasterSkinEditor" OutputGroup="PrimaryOutput" OutputFile="CardMasterSkinEditor.exe.config"/>
+    <ROW ProjectId="{aa25c818-16b7-44d2-945c-af4e545dbe82}" ProjectName="CardMasterSkinEditor" OutputGroup="SymbolsOutput" OutputFile="CardMasterSkinEditor.pdb"/>
+    <ROW ProjectId="{8e132eef-1e9c-4b96-8bf7-a513ad1e4ec7}" ProjectName="CardMasterSkin" OutputGroup="PrimaryOutput" OutputFile="CardMasterSkin.dll_1"/>
+    <ROW ProjectId="{8e132eef-1e9c-4b96-8bf7-a513ad1e4ec7}" ProjectName="CardMasterSkin" OutputGroup="References" OutputFile="Newtonsoft.Json.dll_5"/>
+    <ROW ProjectId="{8e132eef-1e9c-4b96-8bf7-a513ad1e4ec7}" ProjectName="CardMasterSkin" OutputGroup="SymbolsOutput" OutputFile="CardMasterSkin.pdb"/>
+    <ROW ProjectId="{bd1c43a2-f01a-4d73-b605-03524fece3c9}" ProjectName="CardMasterStat" OutputGroup="PrimaryOutput" OutputFile="CardMasterStat.exe" OutputFileShortcut="CardMasterStat"/>
+    <ROW ProjectId="{bd1c43a2-f01a-4d73-b605-03524fece3c9}" ProjectName="CardMasterStat" OutputGroup="PrimaryOutput" OutputFile="CardMasterStat.exe.config"/>
+    <ROW ProjectId="{bd1c43a2-f01a-4d73-b605-03524fece3c9}" ProjectName="CardMasterStat" OutputGroup="References" OutputFile="System.Windows.Controls.DataVisualization.Toolkit.dll"/>
+    <ROW ProjectId="{bd1c43a2-f01a-4d73-b605-03524fece3c9}" ProjectName="CardMasterStat" OutputGroup="References" OutputFile="WpfCharts.dll_1"/>
+    <ROW ProjectId="{bd1c43a2-f01a-4d73-b605-03524fece3c9}" ProjectName="CardMasterStat" OutputGroup="SymbolsOutput" OutputFile="CardMasterStat.pdb"/>
+  </COMPONENT>
+</DOCUMENT>
