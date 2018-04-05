@@ -8,14 +8,18 @@
         xmlns:Card="clr-namespace:CardMasterStat"
         xmlns:Spider="clr-namespace:WpfCharts;assembly=WpfCharts"
         mc:Ignorable="d"
-        Title="Outil de statistiques" Height="782" Width="2000">
+        Title="Outil de statistiques" Height="782" Width="1280">
     <Window.Resources>
         <Card:ConvertToBrush x:Key="converter"/>
 
     </Window.Resources>
 
     <Grid>
-        <Menu>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="889*"/>
+            <ColumnDefinition Width="107*"/>
+        </Grid.ColumnDefinitions>
+        <Menu Grid.ColumnSpan="2">
             <MenuItem Header="_File">
                 <MenuItem Header="_Open Json Project File" Click="MenuItemJson_Click"/>
                 <MenuItem Header="_Close" Click="MenuItemClose_Click"/>
@@ -24,7 +28,7 @@
 
 
         </Menu>
-        <StackPanel Orientation="Horizontal">
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
             <StackPanel>
                 <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="700" Margin="0,23,0,0" VerticalAlignment="Top" Width="1219">
                     <TabItem Header="Répartition par coùt">
@@ -125,8 +129,8 @@
                         </Grid>
                     </TabItem>
                     <TabItem Header="test Radar">
-                        
-                            <Spider:SpiderChart Title="Spider chart"  
+
+                        <Spider:SpiderChart Title="Spider chart"  
                                Lines="{Binding Lines}" 
                                Axis="{Binding Axes}" 
                                Minimum="0" 
@@ -137,7 +141,7 @@
                                LegendLocation="BottomRight"
                                 MouseDoubleClick="MouseDoubleClock"
                                LegendBackgroundColor="Aquamarine" />
-                       
+
 
                     </TabItem>
                 </TabControl>

@@ -25,7 +25,7 @@ namespace CardMasterImageBuilder
                 this.card = card;
                 this.frontSkin = new SkinFactory().GetSkin(this.card, skinsFile, skinName, SkinFactory.SkinSide.FRONT);
                 this.backSideSkin = new SkinFactory().GetSkin(this.card, skinsFile, skinName, SkinFactory.SkinSide.BACK);
-            }catch(SkinNotFoundException e)
+            }catch(SkinNotFoundException)
             {
                //DO NOTHING
             }
@@ -39,7 +39,7 @@ namespace CardMasterImageBuilder
                 this.frontSkin = new SkinFactory().GetSkin(this.card, jsonSkinsProject,skinsFilePath, skinName, SkinFactory.SkinSide.FRONT);
                 this.backSideSkin = new SkinFactory().GetSkin(this.card, jsonSkinsProject, skinsFilePath, skinName, SkinFactory.SkinSide.BACK);
             }
-            catch (SkinNotFoundException e)
+            catch (SkinNotFoundException)
             {
                 //DO NOTHING
             }

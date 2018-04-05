@@ -35,7 +35,9 @@ namespace CardMasterCard.Card
 
         private static JsonCardsProject LoadXlsxProject(FileInfo file)
         {
+#pragma warning disable IDE0017 // Simplifier l'initialisation des objets
             JsonCardsProject cardsProject = new JsonCardsProject();
+#pragma warning restore IDE0017 // Simplifier l'initialisation des objets
             cardsProject.Cards = new List<JsonCard>();
             Excel.Application xlApp = new Excel.Application();
 
@@ -56,45 +58,49 @@ namespace CardMasterCard.Card
                 {
                     break;
                 }
-                JsonCard card = new JsonCard();
-                card.Name = getStrValue(valueArray[row, 1]);
-                card.Kind=  getStrValue(valueArray[row, 2]);
-                card.Team = getStrValue(valueArray[row, 3]);
-                card.Rank = getStrValue(valueArray[row, 4]);
-                card.Chakra = getStrValue(valueArray[row, 5]);
-                card.Element = getStrValue(valueArray[row, 6]);
-                card.Cost = getStrValue(valueArray[row, 7]);
-                card.Attack = getStrValue(valueArray[row, 8]);
-                card.Defense = getStrValue(valueArray[row, 9]);
+                JsonCard card = new JsonCard
+                {
+                    Name = GetStrValue(valueArray[row, 1]),
+                    Kind = GetStrValue(valueArray[row, 2]),
+                    Team = GetStrValue(valueArray[row, 3]),
+                    Rank = GetStrValue(valueArray[row, 4]),
+                    Chakra = GetStrValue(valueArray[row, 5]),
+                    Element = GetStrValue(valueArray[row, 6]),
+                    Cost = GetStrValue(valueArray[row, 7]),
+                    Attack = GetStrValue(valueArray[row, 8]),
+                    Defense = GetStrValue(valueArray[row, 9])
+                };
                 //Power
-                String brutPowers = getStrValue(valueArray[row, 10]);
+                String brutPowers = GetStrValue(valueArray[row, 10]);
                 if(brutPowers!=null)
                 {
                     card.Powers = new List<JsonPower>();
                     String[] lines = brutPowers.Split('\n');
                     foreach (String line in lines)
                     {
+#pragma warning disable IDE0017 // Simplifier l'initialisation des objets
                         JsonPower power = new JsonPower();
+#pragma warning restore IDE0017 // Simplifier l'initialisation des objets
                         power.Description = line;
                         card.Powers.Add(power);
                     }
                 }
                 
-                card.Citation = getStrValue(valueArray[row, 11]);
-                card.Comments = getStrValue(valueArray[row, 12]);
-                card.Nb = getIntValue(valueArray[row, 13]);
-                card.BackSide = getStrValue(valueArray[row, 14]);
-                card.BackSkinName = getStrValue(valueArray[row, 15]);
-                card.FrontSkinName = getStrValue(valueArray[row, 16]);
+                card.Citation = GetStrValue(valueArray[row, 11]);
+                card.Comments = GetStrValue(valueArray[row, 12]);
+                card.Nb = GetIntValue(valueArray[row, 13]);
+                card.BackSide = GetStrValue(valueArray[row, 14]);
+                card.BackSkinName = GetStrValue(valueArray[row, 15]);
+                card.FrontSkinName = GetStrValue(valueArray[row, 16]);
                 //Custom
-                card.StringField1 = getStrValue(valueArray[row, 17]);
-                card.StringField2 = getStrValue(valueArray[row, 18]);
-                card.StringField3 = getStrValue(valueArray[row, 19]);
-                card.StringField4 = getStrValue(valueArray[row, 20]);
-                card.IntField1 = getIntValue(valueArray[row, 21]);
-                card.IntField2 = getIntValue(valueArray[row, 22]);
-                card.IntField3 = getIntValue(valueArray[row, 23]);
-                card.IntField4 = getIntValue(valueArray[row, 24]);
+                card.StringField1 = GetStrValue(valueArray[row, 17]);
+                card.StringField2 = GetStrValue(valueArray[row, 18]);
+                card.StringField3 = GetStrValue(valueArray[row, 19]);
+                card.StringField4 = GetStrValue(valueArray[row, 20]);
+                card.IntField1 = GetIntValue(valueArray[row, 21]);
+                card.IntField2 = GetIntValue(valueArray[row, 22]);
+                card.IntField3 = GetIntValue(valueArray[row, 23]);
+                card.IntField4 = GetIntValue(valueArray[row, 24]);
 
                 cardsProject.Cards.Add(card);
             }
@@ -114,7 +120,7 @@ namespace CardMasterCard.Card
             return cardsProject;
         }
 
-        private static int? getIntValue(object v)
+        private static int? GetIntValue(object v)
         {
            if (v == null)
             {
@@ -125,7 +131,7 @@ namespace CardMasterCard.Card
             }
         }
 
-        private static string getStrValue(object v)
+        private static string GetStrValue(object v)
         {
             return v==null ? "" : v.ToString();
         }

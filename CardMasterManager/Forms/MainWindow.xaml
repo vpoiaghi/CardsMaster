@@ -13,7 +13,7 @@
         xmlns:drawingtext="clr-namespace:System.Drawing.Text;assembly=System.Drawing"
         xmlns:Spider="clr-namespace:WpfCharts;assembly=WpfCharts"
         mc:Ignorable="d"
-        Title="Card Manager" Height="970" Width="1915" ResizeMode="NoResize" Closing="Window_Closing" WindowStartupLocation="CenterScreen" Background="AliceBlue">
+        Title="Card Manager" Height="970" Width="1915" ResizeMode="CanMinimize" Closing="Window_Closing" WindowStartupLocation="CenterOwner" Background="AliceBlue">
 
     <Window.Resources>
         <commonconverters:EnumConverter x:Key="EnumConverter"/>
@@ -53,14 +53,15 @@
       
         <DockPanel LastChildFill="True">
 
-            <StatusBar DockPanel.Dock="Bottom" Height="50">
+            <StatusBar DockPanel.Dock="Bottom" Height="30">
+                <StackPanel Orientation="Horizontal">
                 <StatusBarItem>
-                    <TextBlock x:Name="debug" Width="1466"/>
-
+                    <TextBlock x:Name="debug" Width="625"/>
                 </StatusBarItem>
                 <StatusBarItem>
-                    <TextBlock x:Name="nbCards"></TextBlock>
+                    <TextBlock x:Name="nbCards" Height="27" Width="592"></TextBlock>
                 </StatusBarItem>
+                </StackPanel>
             </StatusBar>
 
             <DockPanel DockPanel.Dock="Left">
@@ -70,19 +71,22 @@
                  <CheckBox Name="previewCheckBox" IsChecked="False" DockPanel.Dock="Right" Height="30" IsThreeState="False">Preview</CheckBox>
                 <StackPanel Orientation="Horizontal">
               
-                <Border Width="207" Height="281" Margin="0,0,0,0" DockPanel.Dock="Bottom" BorderThickness="1" BorderBrush="#FF000000">
-                    <Image Name="backCardImage" Margin="1,1,-1,-1"/>
+                <Border Width="207" Height="281" Margin="20,0,0,0" DockPanel.Dock="Bottom" BorderThickness="1" BorderBrush="#FF000000">
+                    <Image Name="backCardImage" Margin="21,1,-1,-1"/>
                 </Border>
-                    <Border Width="301" BorderThickness="1" BorderBrush="#FF000000">
-                        <Spider:SpiderChart Title="Statistics"  Width="300"
+
+                    <Spider:SpiderChart Title=""  Width="300" Height="281" Margin="20"
                                Lines="{Binding Stats}" 
                                Axis="{Binding Axes}" 
                                LegendBackgroundColor="AliceBlue" 
                                Minimum="0" 
                                Maximum="9" 
-                               Ticks="9" 
+                               Ticks="9"
+                               BorderThickness="0"     
+                               
+                               Background="AliceBlue"
                                />
-                    </Border>
+                   
                 </StackPanel>
             </DockPanel>
 
@@ -139,8 +143,8 @@
                         </ToolBarTray>
                     </DockPanel>
                     <StackPanel Orientation="Horizontal">
-                        <DataGrid Name="cardGrid" Margin="5" Width="1319" Height="799" SelectionMode="Single" AutoGenerateColumns="False" AlternatingRowBackground="Azure" AlternationCount="2" IsReadOnly="False" ItemsSource="{Binding Path=GridCardsList, NotifyOnSourceUpdated=True, Mode=TwoWay}"
-                        SelectionChanged="CardGrid_SelectionChanged" FrozenColumnCount ="1" EnableColumnVirtualization="True" EnableRowVirtualization="True" CanUserAddRows="False" CanUserDeleteRows="True" SourceUpdated="CardGrid_SourceUpdated" Background="AliceBlue">
+                        <DataGrid Name="cardGrid" Margin="5" Width="1271" Height="813" SelectionMode="Single" AutoGenerateColumns="False" AlternatingRowBackground="Azure" AlternationCount="2" IsReadOnly="False" ItemsSource="{Binding Path=GridCardsList, NotifyOnSourceUpdated=True, Mode=TwoWay}"
+                        SelectionChanged="CardGrid_SelectionChanged" FrozenColumnCount ="1" EnableColumnVirtualization="True" EnableRowVirtualization="True" CanUserAddRows="False" CanUserDeleteRows="True" SourceUpdated="CardGrid_SourceUpdated" Background="AliceBlue" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Visible">
                             <DataGrid.Resources>
                                 <Style TargetType="{x:Type DataGridColumnHeader}">
                                     <Setter Property="Background" Value="AliceBlue" />

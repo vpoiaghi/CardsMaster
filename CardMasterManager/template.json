@@ -24,10 +24,16 @@
       "IntField3": null,
       "IntField4": null,
       "Background": null,
-      "Powers": [
-        {
-          "Description": "Power"
-        }
-      ]
+    "Powers": [
+      {
+        "Description": "Power 1"
+      },
+      {
+        "Description": "Power 2"
+      },
+      {
+        "Description": "Power 3"
+      }
+    ]
     }
 }

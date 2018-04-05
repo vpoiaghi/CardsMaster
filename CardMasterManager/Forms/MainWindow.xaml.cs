@@ -87,7 +87,7 @@ namespace CardMasterManager
                 {
                     LineColor = Colors.Red,
                     FillColor = Color.FromArgb(128, 255, 0, 0),
-                    LineThickness = 2,
+                    LineThickness = 1,
                     PointDataSource = new List<double>() { GetInt(c.Cost), GetInt(c.Attack), GetInt(c.Defense), c.Powers.Count },
                     Name = ""
                 });

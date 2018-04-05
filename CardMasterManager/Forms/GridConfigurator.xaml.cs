@@ -18,8 +18,10 @@ namespace CardMasterManager.Forms
         static Configuration configuration;
         private  class Configuration
         {
+#pragma warning disable IDE1006 // Styles d'affectation de noms : impacte le save / load de la config
             public IDictionary<String, Visibility> fields { get; set; }
-          
+#pragma warning restore IDE1006 // Styles d'affectation de noms
+
 
             public Configuration()
             {
@@ -68,23 +70,29 @@ namespace CardMasterManager.Forms
             {
                 DockPanel stackLine = new DockPanel();
 
-                Border b = new Border();
-                b.CornerRadius = new CornerRadius(0);
-                b.BorderThickness = new Thickness(1);
-                b.BorderBrush = new SolidColorBrush(Colors.LightGray);
+                Border b = new Border
+                {
+                    CornerRadius = new CornerRadius(0),
+                    BorderThickness = new Thickness(1),
+                    BorderBrush = new SolidColorBrush(Colors.LightGray)
+                };
 
-                TextBox textBox = new TextBox();
-                textBox.Name = "Txt" + index ;
-                textBox.Tag = entry.Key;
-                textBox.Text = entry.Key;
-                textBox.Background = System.Windows.Media.Brushes.AliceBlue;
+                TextBox textBox = new TextBox
+                {
+                    Name = "Txt" + index,
+                    Tag = entry.Key,
+                    Text = entry.Key,
+                    Background = System.Windows.Media.Brushes.AliceBlue
+                };
                 stackLine.Children.Add(textBox);
 
-                CheckBox cb = new CheckBox();
-                cb.Name = "Cb"+index;
-                cb.IsChecked = entry.Value.Equals(Visibility.Visible) ? true : false;
-                cb.HorizontalAlignment = HorizontalAlignment.Right;
-                cb.Background = System.Windows.Media.Brushes.AliceBlue;
+                CheckBox cb = new CheckBox
+                {
+                    Name = "Cb" + index,
+                    IsChecked = entry.Value.Equals(Visibility.Visible) ? true : false,
+                    HorizontalAlignment = HorizontalAlignment.Right,
+                    Background = System.Windows.Media.Brushes.AliceBlue
+                };
                 stackLine.Children.Add(cb);
 
                 b.Child = stackLine;
@@ -92,18 +100,22 @@ namespace CardMasterManager.Forms
                 index++;
             }
 
-            Button cancelButton = new Button();
-            cancelButton.Name = "CancelButton";
-            cancelButton.Content = "Cancel";
-            cancelButton.Width = 40;
+            Button cancelButton = new Button
+            {
+                Name = "CancelButton",
+                Content = "Cancel",
+                Width = 40
+            };
             cancelButton.Click += (s, e) => { this.Close(); };
             buttonStack.Children.Add(cancelButton);
 
-            Button okButton = new Button();
-            okButton.Name = "OkButton";
-            okButton.Content = "Save";
-            okButton.HorizontalAlignment = HorizontalAlignment.Right;
-            okButton.Width = 40;
+            Button okButton = new Button
+            {
+                Name = "OkButton",
+                Content = "Save",
+                HorizontalAlignment = HorizontalAlignment.Right,
+                Width = 40
+            };
             okButton.Click += (s, e) => {
                 configuration = BuildConfigFromWindows();
                 ApplyConfiguration(cardGrid, configuration);

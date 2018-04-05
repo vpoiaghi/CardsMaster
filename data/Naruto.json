@@ -4,7 +4,7 @@
       "Kind": "Ninja",
       "Name": "Hagoromo Ôtsutsuki",
       "Rank": "Légendaire",
-      "Team": "Ancêtres",
+      "Team": "Clan Otsutsuki",
       "Chakra": "Spécial",
       "Element": "Rinnegan",
       "Cost": "9",
@@ -38,7 +38,7 @@
       "Kind": "Ninja",
       "Name": "Kaguya Ôtsutsuki",
       "Rank": "Légendaire",
-      "Team": "Ancêtres",
+      "Team": "Clan Otsutsuki",
       "Chakra": "Spécial",
       "Element": "Genjutsu",
       "Cost": "9",
@@ -72,7 +72,7 @@
       "Kind": "Ninja",
       "Name": "Ashura Ôtsutsuki",
       "Rank": "Légendaire",
-      "Team": "Ancêtres",
+      "Team": "Clan Otsutsuki",
       "Chakra": "Vent",
       "Element": "Vent",
       "Cost": "7",
@@ -103,7 +103,7 @@
       "Kind": "Ninja",
       "Name": "Indra Ôtsutsuki",
       "Rank": "Légendaire",
-      "Team": "Ancêtres",
+      "Team": "Clan Otsutsuki",
       "Chakra": "Feu",
       "Element": "Feu",
       "Cost": "7",
@@ -978,7 +978,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Annule définitivement le pouvoir d'un adversaire"
+          "Description": "<<Activate>>  Annule définitivement le pouvoir d'un adversaire"
         }
       ]
     },
@@ -1999,7 +1999,7 @@
       "Kind": "Ninja",
       "Name": "Sasuke Uchiwa",
       "Rank": "Légendaire",
-      "Team": "Equipe Sasuke",
+      "Team": "Equipe Taka",
       "Chakra": "Foudre",
       "Element": "Foudre",
       "Cost": "9",
@@ -2064,7 +2064,7 @@
       "Kind": "Ninja",
       "Name": "Karin",
       "Rank": "",
-      "Team": "Equipe Sasuke",
+      "Team": "Equipe Taka",
       "Chakra": "Eau",
       "Element": "Soin",
       "Cost": "3",
@@ -2098,7 +2098,7 @@
       "Kind": "Ninja",
       "Name": "Suigetsu Hôzuki",
       "Rank": "",
-      "Team": "Equipe Sasuke",
+      "Team": "Equipe Taka",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "3",
@@ -2129,7 +2129,7 @@
       "Kind": "Ninja",
       "Name": "Jûgo",
       "Rank": "",
-      "Team": "Equipe Sasuke",
+      "Team": "Equipe Taka",
       "Chakra": "Physique",
       "Element": "Physique",
       "Cost": "4",
@@ -5500,6 +5500,37 @@
     },
     {
       "Kind": "Ninja",
+      "Name": "Metal Lee",
+      "Rank": "",
+      "Team": "Equipe 5",
+      "Chakra": "Physique",
+      "Element": "Physique",
+      "Cost": "2",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Konoha Senpû",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Intimidation : Gagne +2/+1 tant qu'il est le seul ninja en lice"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
       "Name": "Sumire Kakei",
       "Rank": "",
       "Team": "Equipe 15",
@@ -5808,37 +5839,6 @@
       "Powers": [
         {
           "Description": "<<Permanent>> Charge"
-        }
-      ]
-    },
-    {
-      "Kind": "Ninja",
-      "Name": "Metal Lee",
-      "Rank": "",
-      "Team": "Equipe 5",
-      "Chakra": "Physique",
-      "Element": "Physique",
-      "Cost": "2",
-      "Attack": "2",
-      "Defense": "2",
-      "Citation": "Konoha Senpû",
-      "Comments": "",
-      "Nb": 1,
-      "BackSide": "Back-Draw",
-      "BackSkinName": "BackSkin1",
-      "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Boruto",
-      "StringField2": "",
-      "StringField3": "",
-      "StringField4": "",
-      "IntField1": null,
-      "IntField2": null,
-      "IntField3": null,
-      "IntField4": null,
-      "Background": null,
-      "Powers": [
-        {
-          "Description": "<<Permanent>> Intimidation : Gagne +2/+1 tant qu'il est le seul ninja en lice"
         }
       ]
     },
@@ -6160,8 +6160,8 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Momoshiki Otsutsuki",
-      "Rank": "",
+      "Name": "Momoshiki Ôtsutsuki",
+      "Rank": "Légendaire",
       "Team": "Clan Otsutsuki",
       "Chakra": "Spécial",
       "Element": "Rinnegan",
@@ -6191,8 +6191,8 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Kinshiki Otsutsuki",
-      "Rank": "",
+      "Name": "Kinshiki Ôtsutsuki",
+      "Rank": "Légendaire",
       "Team": "Clan Otsutsuki",
       "Chakra": "Spécial",
       "Element": "Rinnegan",
@@ -6506,9 +6506,9 @@
       "Team": "Nanadaime 7° Hokage",
       "Chakra": "Vent",
       "Element": "Vent",
-      "Cost": null,
-      "Attack": null,
-      "Defense": null,
+      "Cost": "9",
+      "Attack": "6",
+      "Defense": "4",
       "Citation": null,
       "Comments": null,
       "Nb": 1,
@@ -6526,7 +6526,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power"
+          "Description": "<<Permanent>> Charge"
+        },
+        {
+          "Description": "<<Instantané>> Manteau de Kyubi: le ninja ciblé ne peut être la cible d'attaques ou de Ninjutsu"
         }
       ]
     },
@@ -6535,11 +6538,11 @@
       "Name": "Sasuke Uchiwa (Adulte)",
       "Rank": "",
       "Team": "Espion",
-      "Chakra": "Feu",
-      "Element": "Feu",
-      "Cost": null,
-      "Attack": null,
-      "Defense": null,
+      "Chakra": "Foudre",
+      "Element": "Foudre",
+      "Cost": "9",
+      "Attack": "6",
+      "Defense": "4",
       "Citation": null,
       "Comments": null,
       "Nb": 1,
@@ -6557,18 +6560,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power"
+          "Description": "<<Instantané>> Elimination éclair : Elimine le ninja indemne ciblé"
+        },
+        {
+          "Description": "<<Activate>> Mille oiseaux : inflige 1D6 dégats à la cible"
         }
       ]
     },
     {
       "Kind": "Ninja",
       "Name": "Moegi Kazamatsuri (Adulte)",
-      "Rank": "",
-      "Team": "Adulte",
+      "Rank": "Capitaine",
+      "Team": "Equipe 10",
       "Chakra": "Terre",
       "Element": "Bois",
-      "Cost": null,
+      "Cost": "6",
       "Attack": null,
       "Defense": null,
       "Citation": null,
@@ -6588,7 +6594,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power"
+          "Description": "<<Instantané>> Volonté d'Ashirama : Tant que Moegi est présente, le ninja ciblé de peut ni attaquer, ni lancer de sort "
+        },
+        {
+          "Description": "<<Permanent>> Se soigne de 1 PV par tour"
         }
       ]
     },
@@ -6599,10 +6608,10 @@
       "Team": "Adulte",
       "Chakra": "Physique",
       "Element": "Physique",
-      "Cost": null,
-      "Attack": null,
-      "Defense": null,
-      "Citation": null,
+      "Cost": "6",
+      "Attack": "4",
+      "Defense": "5",
+      "Citation": "Hachimon",
       "Comments": null,
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -6619,20 +6628,23 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power"
+          "Description": "<<Activate>> Ouverture de la 7° porte : Permet d'attaquer 2 fois pendant un tour"
+        },
+        {
+          "Description": "<<Permanent>>  Protection"
         }
       ]
     },
     {
       "Kind": "Ninja",
       "Name": "Konohamaru Sarutobi (Adulte)",
-      "Rank": "",
-      "Team": "Adulte",
+      "Rank": "Capitaine",
+      "Team": "Equipe 7",
       "Chakra": "Vent",
       "Element": "Vent",
-      "Cost": null,
-      "Attack": null,
-      "Defense": null,
+      "Cost": "7",
+      "Attack": "4",
+      "Defense": "6",
       "Citation": null,
       "Comments": null,
       "Nb": 1,
@@ -6650,7 +6662,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power"
+          "Description": "<<Activate>> Rasengan : Inflige 1D6 de dégat sans subir de dégats en retour"
         }
       ]
     },
@@ -6658,10 +6670,10 @@
       "Kind": "Ninja",
       "Name": "Anko Mitarashi (Adulte)",
       "Rank": "",
-      "Team": "Adulte",
+      "Team": "Enseignant",
       "Chakra": "Vent",
       "Element": "Poison",
-      "Cost": null,
+      "Cost": "6",
       "Attack": null,
       "Defense": null,
       "Citation": null,
@@ -6681,7 +6693,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power"
+          "Description": "<<Instantané>> Volonté d'Oroshimaru : Etrangle l'ennemi ciblé, annulant tout sort lancé par et sur lui, et l'empêchant d'en lancer d'autre."
+        },
+        {
+          "Description": "<<Activate>> Poison pourpre : inflige 1D2 de dégat au ninja ciblé"
         }
       ]
     },
@@ -6689,10 +6704,10 @@
       "Kind": "Ninja",
       "Name": "Shino Aburame (Adulte)",
       "Rank": "",
-      "Team": "Adulte",
+      "Team": "Enseignant",
       "Chakra": "Vent",
       "Element": "Insectes",
-      "Cost": null,
+      "Cost": "6",
       "Attack": null,
       "Defense": null,
       "Citation": null,
@@ -6712,20 +6727,23 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power"
+          "Description": "Power 1 enpoisonnement par les insectes"
+        },
+        {
+          "Description": "Power 2 Barriere d'insectes"
         }
       ]
     },
     {
       "Kind": "Ninja",
       "Name": "Udon Ise (Adulte)",
-      "Rank": "",
-      "Team": "Adulte",
+      "Rank": "Capitaine",
+      "Team": "Equipe 5",
       "Chakra": "Eau",
       "Element": "Morve",
-      "Cost": null,
-      "Attack": null,
-      "Defense": null,
+      "Cost": "7",
+      "Attack": "2",
+      "Defense": "6",
       "Citation": null,
       "Comments": null,
       "Nb": 1,
@@ -6743,7 +6761,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power"
+          "Description": "<<Permanent>> Protection : Barrière de morve "
         }
       ]
     },
@@ -6754,7 +6772,7 @@
       "Team": "Adulte",
       "Chakra": "Physique",
       "Element": "Physique",
-      "Cost": null,
+      "Cost": "7",
       "Attack": null,
       "Defense": null,
       "Citation": null,
@@ -6774,7 +6792,13 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power"
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
         }
       ]
     },
@@ -6785,7 +6809,7 @@
       "Team": "Adulte",
       "Chakra": "Physique",
       "Element": "Physique",
-      "Cost": null,
+      "Cost": "7",
       "Attack": null,
       "Defense": null,
       "Citation": null,
@@ -6805,7 +6829,13 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power"
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
         }
       ]
     },
@@ -6816,7 +6846,7 @@
       "Team": "Adulte",
       "Chakra": "Eau",
       "Element": "Encre",
-      "Cost": null,
+      "Cost": "7",
       "Attack": null,
       "Defense": null,
       "Citation": null,
@@ -6836,7 +6866,13 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power"
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
         }
       ]
     },
@@ -6847,9 +6883,9 @@
       "Team": "Adulte",
       "Chakra": "Physique",
       "Element": "Physique",
-      "Cost": null,
-      "Attack": null,
-      "Defense": null,
+      "Cost": "8",
+      "Attack": "3",
+      "Defense": "5",
       "Citation": null,
       "Comments": null,
       "Nb": 1,
@@ -6867,7 +6903,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power"
+          "Description": "<<Instantané>> Shanaro : Elimine un ninja ciblé"
+        },
+        {
+          "Description": "<<Spécial>> Soigne 1D3 PV au ninja ciblé, utilisable une fois par tour"
         }
       ]
     },
@@ -6875,10 +6914,10 @@
       "Kind": "Ninja",
       "Name": "Shikamaru Nara (Adulte)",
       "Rank": "",
-      "Team": "Adulte",
+      "Team": "Ino-Shika-Chô",
       "Chakra": "Spécial",
       "Element": "Ombre",
-      "Cost": "",
+      "Cost": "8",
       "Attack": "",
       "Defense": "",
       "Citation": "",
@@ -6898,7 +6937,13 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power"
+          "Description": "Power 1 "
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
         }
       ]
     },
@@ -6906,13 +6951,13 @@
       "Kind": "Ninja",
       "Name": "Chôji Akimichi (Adulte)",
       "Rank": "",
-      "Team": "Adulte",
+      "Team": "Ino-Shika-Chô",
       "Chakra": "Physique",
       "Element": "Physique",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "8",
+      "Attack": "3",
+      "Defense": "7",
+      "Citation": "Sanshoku no Gan'yaku",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -6929,38 +6974,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power"
-        }
-      ]
-    },
-    {
-      "Kind": "Ninja",
-      "Name": "Hanabi Hyûga (Adulte)",
-      "Rank": "",
-      "Team": "Adulte",
-      "Chakra": "Physique",
-      "Element": "Physique",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
-      "Comments": "",
-      "Nb": 1,
-      "BackSide": "Back-Draw",
-      "BackSkinName": "BackSkin1",
-      "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Boruto",
-      "StringField2": "",
-      "StringField3": "",
-      "StringField4": "",
-      "IntField1": null,
-      "IntField2": null,
-      "IntField3": null,
-      "IntField4": null,
-      "Background": null,
-      "Powers": [
+          "Description": "<<Permanent>> Protection"
+        },
         {
-          "Description": "Power"
+          "Description": "<<Activate>> Pilules des 3 couleurs  :  Soigne entierement Chôji mais passe son attaque à 0"
         }
       ]
     },
@@ -6968,10 +6985,10 @@
       "Kind": "Ninja",
       "Name": "Ino Yamanaka (Adulte)",
       "Rank": "",
-      "Team": "Adulte",
+      "Team": "Ino-Shika-Chô",
       "Chakra": "Spécial",
       "Element": "Genjutsu",
-      "Cost": null,
+      "Cost": "8",
       "Attack": null,
       "Defense": null,
       "Citation": null,
@@ -6991,7 +7008,109 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power"
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Hanabi Hyûga (Adulte)",
+      "Rank": "Capitaine",
+      "Team": "Equipe 15",
+      "Chakra": "Physique",
+      "Element": "Physique",
+      "Cost": "6",
+      "Attack": "2",
+      "Defense": "5",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Les poings souples : Tout ninja touché par cette attaque ne peut plus lancer de ninjutsu."
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Super Zetsu Blanc",
+      "Rank": "",
+      "Team": "Rescapé",
+      "Chakra": "Spécial",
+      "Element": "Inconnu",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "6",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>> Projette au choix une décharge à distance de feu, de vent ou de foudre qui inflige 1D6 de dégats"
+        },
+        {
+          "Description": "<<Permanent>> Se soigne de 1 PV par tour"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Toneri Ôtsutsuki",
+      "Rank": "Légendaire",
+      "Team": "Clan Otsutsuki",
+      "Chakra": "Spécial",
+      "Element": "Rinnegan",
+      "Cost": "4",
+      "Attack": "4",
+      "Defense": "3",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Spécial>> Ajoute 1 point à la réserve de chakra"
         }
       ]
     }
