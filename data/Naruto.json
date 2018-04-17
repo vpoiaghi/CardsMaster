@@ -6727,10 +6727,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 enpoisonnement par les insectes"
+          "Description": "<<Spécial>> Empoisonnement par les insectes : Un ninja ciblé subit 1 point de dégat par tour."
         },
         {
-          "Description": "Power 2 Barriere d'insectes"
+          "Description": "<<Activate>> Barriere d'insectes : Ajoute 2 PV à Shino Aburame"
         }
       ]
     },
