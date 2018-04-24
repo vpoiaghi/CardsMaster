@@ -13,7 +13,7 @@
         xmlns:drawingtext="clr-namespace:System.Drawing.Text;assembly=System.Drawing"
         xmlns:Spider="clr-namespace:WpfCharts;assembly=WpfCharts"
         mc:Ignorable="d"
-        Title="Card Manager" Height="970" Width="1915" ResizeMode="CanMinimize" Closing="Window_Closing" WindowStartupLocation="CenterOwner" Background="AliceBlue">
+        Title="Card Manager" Height="980" Width="1915" ResizeMode="CanMinimize" Closing="Window_Closing" WindowStartupLocation="CenterOwner" Background="AliceBlue">
 
     <Window.Resources>
         <commonconverters:EnumConverter x:Key="EnumConverter"/>

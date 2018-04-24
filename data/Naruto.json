@@ -354,7 +354,7 @@
       "Kind": "Ninja",
       "Name": "Chôji Akimichi",
       "Rank": "",
-      "Team": "Equipe 10",
+      "Team": "Ino-Shika-Chô",
       "Chakra": "Physique",
       "Element": "Physique",
       "Cost": "4",
@@ -388,7 +388,7 @@
       "Kind": "Ninja",
       "Name": "Ino Yamanaka",
       "Rank": "",
-      "Team": "Equipe 10",
+      "Team": "Ino-Shika-Chô",
       "Chakra": "Spécial",
       "Element": "Genjutsu",
       "Cost": "3",
@@ -419,7 +419,7 @@
       "Kind": "Ninja",
       "Name": "Shikamaru Nara",
       "Rank": "",
-      "Team": "Equipe 10",
+      "Team": "Ino-Shika-Chô",
       "Chakra": "Spécial",
       "Element": "Ombre",
       "Cost": "3",
@@ -450,7 +450,7 @@
       "Kind": "Ninja",
       "Name": "Shikaku Nara",
       "Rank": "",
-      "Team": "Ino-Shika-Cho",
+      "Team": "Ino-Shika-Chô",
       "Chakra": "Spécial",
       "Element": "Ombre",
       "Cost": "5",
@@ -480,8 +480,8 @@
     {
       "Kind": "Ninja",
       "Name": "Inoichi Yamanaka",
-      "Rank": "Capitaine",
-      "Team": "Ino-Shika-Cho",
+      "Rank": "",
+      "Team": "Ino-Shika-Chô",
       "Chakra": "Spécial",
       "Element": "Genjutsu",
       "Cost": "5",
@@ -511,8 +511,8 @@
     {
       "Kind": "Ninja",
       "Name": "Chôza Akimichi",
-      "Rank": "Capitaine",
-      "Team": "Ino-Shika-Cho",
+      "Rank": "",
+      "Team": "Ino-Shika-Chô",
       "Chakra": "Physique",
       "Element": "Physique",
       "Cost": "8",
@@ -5313,7 +5313,7 @@
       "Kind": "Ninja",
       "Name": "Shikadai Nara",
       "Rank": "",
-      "Team": "Equipe 10",
+      "Team": "Ino-Shika-Chô",
       "Chakra": "Spécial",
       "Element": "Ombre",
       "Cost": "2",
@@ -5344,7 +5344,7 @@
       "Kind": "Ninja",
       "Name": "Chocho Akimichi",
       "Rank": "",
-      "Team": "Equipe 10",
+      "Team": "Ino-Shika-Chô",
       "Chakra": "Physique",
       "Element": "Physique",
       "Cost": "1",
@@ -5375,7 +5375,7 @@
       "Kind": "Ninja",
       "Name": "Inojin Yamanaka",
       "Rank": "",
-      "Team": "Equipe 10",
+      "Team": "Ino-Shika-Chô",
       "Chakra": "Physique",
       "Element": "Physique",
       "Cost": "2",
@@ -6575,8 +6575,8 @@
       "Chakra": "Terre",
       "Element": "Bois",
       "Cost": "6",
-      "Attack": null,
-      "Defense": null,
+      "Attack": "3",
+      "Defense": "5",
       "Citation": null,
       "Comments": null,
       "Nb": 1,
@@ -6674,8 +6674,8 @@
       "Chakra": "Vent",
       "Element": "Poison",
       "Cost": "6",
-      "Attack": null,
-      "Defense": null,
+      "Attack": "5",
+      "Defense": "3",
       "Citation": null,
       "Comments": null,
       "Nb": 1,
@@ -6708,8 +6708,8 @@
       "Chakra": "Vent",
       "Element": "Insectes",
       "Cost": "6",
-      "Attack": null,
-      "Defense": null,
+      "Attack": "4",
+      "Defense": "4",
       "Citation": null,
       "Comments": null,
       "Nb": 1,
@@ -6773,8 +6773,8 @@
       "Chakra": "Physique",
       "Element": "Physique",
       "Cost": "7",
-      "Attack": null,
-      "Defense": null,
+      "Attack": "4",
+      "Defense": "6",
       "Citation": null,
       "Comments": null,
       "Nb": 1,
@@ -6792,13 +6792,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Attaque 2 cibles adjacentes "
         }
       ]
     },
@@ -6810,9 +6804,9 @@
       "Chakra": "Physique",
       "Element": "Physique",
       "Cost": "7",
-      "Attack": null,
-      "Defense": null,
-      "Citation": null,
+      "Attack": "3",
+      "Defense": "5",
+      "Citation": "Jûho Sôshiken",
       "Comments": null,
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -6829,13 +6823,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "<<Activate>> Paumes jumelles des lions agiles : Annule tous les pouvoirs du ninja cible"
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Byakugan : Pioche 2 cartes"
         }
       ]
     },
@@ -6847,8 +6838,8 @@
       "Chakra": "Eau",
       "Element": "Encre",
       "Cost": "7",
-      "Attack": null,
-      "Defense": null,
+      "Attack": "5",
+      "Defense": "4",
       "Citation": null,
       "Comments": null,
       "Nb": 1,
@@ -6866,13 +6857,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Fûinjutsu : Scellement. Le ninja ciblé est directement envoyé au cimetière."
         }
       ]
     },
@@ -6918,8 +6903,8 @@
       "Chakra": "Spécial",
       "Element": "Ombre",
       "Cost": "8",
-      "Attack": "",
-      "Defense": "",
+      "Attack": "5",
+      "Defense": "5",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -6937,13 +6922,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 "
+          "Description": "<<Activate>> Désigne un ninja et l'immobilise, l'empêchant d'attaquer et de lancer des sorts. Le ninja est libéré à la mort de Shikamaru"
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Spécial>> Si 3 membres du trio Ino-Shika-Cho sont présents, ceux-ci gagnent +3 ATK et +3 PV"
         }
       ]
     },
@@ -6978,6 +6960,9 @@
         },
         {
           "Description": "<<Activate>> Pilules des 3 couleurs  :  Soigne entierement Chôji mais passe son attaque à 0"
+        },
+        {
+          "Description": "<<Spécial>> Si 3 membres du trio Ino-Shika-Cho sont présents, ceux-ci gagnent +3 ATK et +3 PV"
         }
       ]
     },
@@ -6989,9 +6974,9 @@
       "Chakra": "Spécial",
       "Element": "Genjutsu",
       "Cost": "8",
-      "Attack": null,
-      "Defense": null,
-      "Citation": null,
+      "Attack": "5",
+      "Defense": "5",
+      "Citation": "Shôsen Jutsu",
       "Comments": null,
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -7008,13 +6993,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "<<Activate>> Technique de la Paume Mystique : peut soigner 2 PV à un ninja. Utilisable 1 fois par tour."
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Spécial>> Si 3 membres du trio Ino-Shika-Cho sont présents, ceux-ci gagnent +3 ATK et +3 PV"
         }
       ]
     },
@@ -7053,7 +7035,7 @@
       "Kind": "Ninja",
       "Name": "Super Zetsu Blanc",
       "Rank": "",
-      "Team": "Rescapé",
+      "Team": "Clan Ôtsutsuki",
       "Chakra": "Spécial",
       "Element": "Inconnu",
       "Cost": "5",
@@ -7121,9 +7103,9 @@
       "Team": "Clan Ôtsutsuki",
       "Chakra": "Spécial",
       "Element": "Rinnegan",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "8",
+      "Attack": "6",
+      "Defense": "6",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
