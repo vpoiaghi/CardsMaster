@@ -75,7 +75,7 @@
                     <Image Name="backCardImage" Margin="21,1,-1,-1"/>
                 </Border>
 
-                    <Spider:SpiderChart Title=""  Width="300" Height="281" Margin="20"
+                <Spider:SpiderChart Title=""  Width="300" Height="281" Margin="20"
                                Lines="{Binding Stats}" 
                                Axis="{Binding Axes}" 
                                LegendBackgroundColor="AliceBlue" 
@@ -83,9 +83,8 @@
                                Maximum="9" 
                                Ticks="9"
                                BorderThickness="0"     
-                               
                                Background="AliceBlue"
-                               />
+                 />
                    
                 </StackPanel>
             </DockPanel>

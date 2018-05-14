@@ -6502,7 +6502,7 @@
     {
       "Kind": "Ninja",
       "Name": "Naruto Uzumaki (Adulte)",
-      "Rank": "",
+      "Rank": "Jinchūriki",
       "Team": "Nanadaime 7° Hokage",
       "Chakra": "Vent",
       "Element": "Vent",
@@ -6993,7 +6993,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Technique de la Paume Mystique : peut soigner 2 PV à un ninja. Utilisable 1 fois par tour."
+          "Description": "<<Activate>> Technique de la Paume Mystique : Soigne 2 PV à un ninja. Utilisable 1 fois par tour."
         },
         {
           "Description": "<<Spécial>> Si 3 membres du trio Ino-Shika-Cho sont présents, ceux-ci gagnent +3 ATK et +3 PV"
@@ -7098,14 +7098,14 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Urashiki Ôtsutsuki",
-      "Rank": "Légendaire",
-      "Team": "Clan Ôtsutsuki",
-      "Chakra": "Spécial",
-      "Element": "Rinnegan",
-      "Cost": "8",
-      "Attack": "6",
-      "Defense": "6",
+      "Name": "Les Triplés de Kiri",
+      "Rank": "",
+      "Team": "Equipe Kiri",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "3",
+      "Attack": "3",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -7123,13 +7123,47 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "Power 1 : Multi clonage"
         },
         {
-          "Description": "Power 2"
+          "Description": "Power 2 : Attaque d'eau"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Urashiki Ôtsutsuki",
+      "Rank": "Légendaire",
+      "Team": "Clan Ôtsutsuki",
+      "Chakra": "Spécial",
+      "Element": "Rinnegan",
+      "Cost": "8",
+      "Attack": "6",
+      "Defense": "8",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Protection"
         },
         {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Insensible aux dégats physiques"
+        },
+        {
+          "Description": "<<Spécial>> Tous les membres alliés du clan Ôtsutsuki gagnent +2 ATK/+2 PV"
         }
       ]
     }
