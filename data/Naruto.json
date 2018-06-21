@@ -5937,7 +5937,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>>  Fils de chakra : Cible un ennemi et l'empêche d'attaquer pour 2 tours"
+          "Description": "<<Activate>>  Nuage de limaille : Tous les alliés gagnent +2 PV tant qu'il est en vie"
         }
       ]
     },
@@ -5968,7 +5968,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Nuage de limaille : Tous les alliés gagnent +2 PV tant qu'elle est en vie"
+          "Description": "<<Permanent>> Ouïe fine : Esquive la première attaque de chaque tour"
         }
       ]
     },
@@ -5999,7 +5999,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Charge"
+          "Description": "<<Activate>> Fils de chakra : Invoque une marionette qui encaisse les dégats à sa place"
         }
       ]
     },
@@ -6073,8 +6073,8 @@
       "Chakra": "Physique",
       "Element": "Physique",
       "Cost": "1",
-      "Attack": "0",
-      "Defense": "4",
+      "Attack": "2",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -6092,7 +6092,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Protection"
+          "Description": "<<Permanent>> Attaque éclair : Attaque 2 fois par tour"
         }
       ]
     },
@@ -7104,7 +7104,7 @@
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "3",
-      "Attack": "3",
+      "Attack": "1",
       "Defense": "3",
       "Citation": "",
       "Comments": "",
@@ -7123,10 +7123,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 : Multi clonage"
-        },
-        {
-          "Description": "Power 2 : Attaque d'eau"
+          "Description": "<<Permanent>> : Multi clonage : Peut attaque jusqu'à 3 fois par tour"
         }
       ]
     },
