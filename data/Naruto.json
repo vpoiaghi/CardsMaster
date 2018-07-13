@@ -7129,6 +7129,71 @@
     },
     {
       "Kind": "Ninja",
+      "Name": "Chiyo",
+      "Rank": "",
+      "Team": "Ancienne de Suna",
+      "Chakra": "Spécial",
+      "Element": "marionnettiste",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "3",
+      "Citation": "Jikki Chikamatsu",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>> Arcanes Blancs :  Les  dix pantins de Chikamatsu "
+        },
+        {
+          "Description": "<<Spécial>> Quand Chiyo meure, elle ramène à la vie le ninja du cimetière allié ciblé"
+        }
+      ]
+    },
+    {
+      "Kind": "Equipement",
+      "Name": "Épée de Kusanagi",
+      "Rank": "",
+      "Team": "Arme",
+      "Chakra": "Equipement",
+      "Element": "1 main",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "",
+      "Citation": "Kusanagi no Tsurugi",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Ninja Armory",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>> Kusanagi no Tsurugi : Fait parcourir les Pille Oiseaux au travers de son katana pour infliger 2 dégats à chaque ennemi."
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
       "Name": "Urashiki Ôtsutsuki",
       "Rank": "Légendaire",
       "Team": "Clan Ôtsutsuki",
