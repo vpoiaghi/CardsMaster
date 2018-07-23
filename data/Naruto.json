@@ -5221,8 +5221,8 @@
       "Name": "Boruto Uzumaki",
       "Rank": "",
       "Team": "Equipe 7",
-      "Chakra": "Physique",
-      "Element": "Physique",
+      "Chakra": "Foudre",
+      "Element": "Foudre",
       "Cost": "2",
       "Attack": "2",
       "Defense": "2",
@@ -7123,7 +7123,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> : Multi clonage : Peut attaque jusqu'à 3 fois par tour"
+          "Description": "<<Permanent>> Multi clonage : Peut attaque jusqu'à 3 fois par tour"
         }
       ]
     },
@@ -7133,7 +7133,7 @@
       "Rank": "",
       "Team": "Ancienne de Suna",
       "Chakra": "Spécial",
-      "Element": "marionnettiste",
+      "Element": "Marionnettiste",
       "Cost": "5",
       "Attack": "2",
       "Defense": "3",
@@ -7251,6 +7251,179 @@
       "Powers": [
         {
           "Description": "<<Spécial>> Limelight : A chaque tour ajouter un jeton, et au bout de 4 tours inflige 15 points de dégats à tous les personnages adverses"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Chiriku",
+      "Rank": "",
+      "Team": "Ninjas guardiens",
+      "Chakra": "Feu",
+      "Element": "Feu",
+      "Cost": "5",
+      "Attack": "3",
+      "Defense": "8",
+      "Citation": "Raigô - Senjusatsu",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>>Raigô : Assassinat aux Mille Bras : Inflige autant de dégats que de PV restants"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Kazuma",
+      "Rank": "",
+      "Team": "Ninjas guardiens",
+      "Chakra": "Vent",
+      "Element": "Vent",
+      "Cost": "4",
+      "Attack": "3",
+      "Defense": "3",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>>Fûton : Tornade de Shakujô : Renvoie le ninja ciblé dans la main de son propriétaire"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Fuen",
+      "Rank": "",
+      "Team": "Équipe Furido",
+      "Chakra": "Terre",
+      "Element": "Terre",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1 Stratège modélisation terrain"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Fûka",
+      "Rank": "",
+      "Team": "Équipe Furido",
+      "Chakra": "Spécial",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1 Multi Jutsu tous les éléments"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Fudô",
+      "Rank": "",
+      "Team": "Équipe Furido",
+      "Chakra": "Terre",
+      "Element": "Terre",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1 Armure de pierre"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
         }
       ]
     },
