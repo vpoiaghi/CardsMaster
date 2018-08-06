@@ -321,6 +321,37 @@
     },
     {
       "Kind": "Ninja",
+      "Name": "Tobi",
+      "Rank": "",
+      "Team": "Akatsuki",
+      "Chakra": "Feu",
+      "Element": "Feu",
+      "Cost": "5",
+      "Attack": "3",
+      "Defense": "3",
+      "Citation": "Jikûkan Ninjutsu",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>> Faille dimensionnelle : Envoie au cimetière le ninja ciblé"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
       "Name": "Asuma Sarutobi",
       "Rank": "Capitaine",
       "Team": "Equipe 10",
