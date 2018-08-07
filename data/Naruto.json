@@ -2666,6 +2666,37 @@
     },
     {
       "Kind": "Ninja",
+      "Name": "Dodaï",
+      "Rank": "",
+      "Team": "Equipe 4° Raikage",
+      "Chakra": "Feu",
+      "Element": "Lave",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "2",
+      "Citation": "Yôton : Gomuheki",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>> Mur de Caoutchouc : Donne +1 HP aux membres de l'équipe"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
       "Name": "Samui",
       "Rank": "",
       "Team": "Equipe 4° Raikage",
@@ -3047,7 +3078,7 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Oonoki",
+      "Name": "Onoki",
       "Rank": "Légendaire",
       "Team": "Equipe 3° Tsuchikage ",
       "Chakra": "Terre",
@@ -3081,8 +3112,8 @@
       "Name": "Kurotsuchi",
       "Rank": "",
       "Team": "Equipe 3° Tsuchikage ",
-      "Chakra": "Feu",
-      "Element": "Lave",
+      "Chakra": "Terre",
+      "Element": "Terre",
       "Cost": "4",
       "Attack": "3",
       "Defense": "3",
@@ -3103,7 +3134,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Le ninja ciblé ne peut plus attaquer"
+          "Description": "<<activate>> Prison de pierre : Le ninja ciblé ne peut plus attaquer"
         }
       ]
     },
@@ -3135,6 +3166,43 @@
       "Powers": [
         {
           "Description": "<<Permanent>>  les Ninja de terre gagnent +3 PV"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Kitsuchi",
+      "Rank": "",
+      "Team": "Equipe 3° Tsuchikage",
+      "Chakra": "Terre",
+      "Element": "Terre",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
         }
       ]
     },
