@@ -4642,6 +4642,68 @@
     },
     {
       "Kind": "Environnement",
+      "Name": "Village de Suna",
+      "Rank": "",
+      "Team": "Environnement",
+      "Chakra": "Terre",
+      "Element": "Sable",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "Suna No Sato",
+      "Comments": "Carte à part",
+      "Nb": 1,
+      "BackSide": "Back-Select",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Les Ninjas de Suna gagnent +2 PV"
+        }
+      ]
+    },
+    {
+      "Kind": "Environnement",
+      "Name": "Village de Kiri",
+      "Rank": "",
+      "Team": "Environnement",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "Kiri No Sato",
+      "Comments": "Carte à part",
+      "Nb": 1,
+      "BackSide": "Back-Select",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Les ninjas en affinité avec l'eau gagnent +1/+1"
+        }
+      ]
+    },
+    {
+      "Kind": "Environnement",
       "Name": "Temple du feu",
       "Rank": "",
       "Team": "Environnement",
