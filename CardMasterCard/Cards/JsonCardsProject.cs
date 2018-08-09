@@ -11,6 +11,7 @@ namespace CardMasterCard.Card
     public class JsonCardsProject
     {
         public List<JsonCard> Cards { get; set; }
+        public String SkinFile { get; set; }
 
         public static JsonCardsProject LoadProject(FileInfo file)
         {

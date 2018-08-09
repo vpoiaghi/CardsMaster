@@ -388,12 +388,13 @@ namespace CardMasterManager
 
         private FileInfo GetSkinFile(FileInfo cardsFile, bool mustExists)
         {
+
             if (cardsFile == null)
             {
                 throw new ArgumentNullException("cardsFile", "Restitution du nom du fichier skin impossible sans une référence au fichier .json");
             }
 
-            FileInfo skinFile = new FileInfo(Path.Combine(cardsFile.Directory.FullName, cardsFile.Name.Replace(cardsFile.Extension, ".skin")));
+            FileInfo skinFile = new FileInfo(Path.Combine(cardsFile.Directory.FullName, cardsFile.Name.Replace(cardsFile.Name, this.cardProjet.SkinFile)));
 
             if ((mustExists) && (! skinFile.Exists))
             {
