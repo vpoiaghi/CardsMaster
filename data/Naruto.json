@@ -1,5 +1,4 @@
 {
-  "SkinFile":"Naruto.original.skin",
   "Cards": [
     {
       "Kind": "Ninja",
@@ -5427,7 +5426,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>   Annule définitivement les pouvoirs d'un ninja ciblé. (Utilisable à n'importe quel moment)"
+          "Description": "<<Instantané>>   Annule définitivement les pouvoirs d'un ninja ciblé."
+        },
+        {
+          "Description": "<<Spécial>> Utilisable à n'importe quel tour, y compris de l'adversaire"
         }
       ]
     },
@@ -5443,7 +5445,7 @@
       "Defense": "",
       "Citation": "Katon : Gôkakyû No Jutsu",
       "Comments": "5 exemplaires",
-      "Nb": 5,
+      "Nb": 10,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
@@ -7906,6 +7908,40 @@
       ]
     },
     {
+      "Kind": "Ninjutsu",
+      "Name": "Technique de Permutation",
+      "Rank": "",
+      "Team": "Ninjutsu",
+      "Chakra": "Physique",
+      "Element": "Physique",
+      "Cost": "4",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "Kawarimi no Jutsu",
+      "Comments": "",
+      "Nb": 10,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Effectue une permutation pour annuler les dégats devant être infligés au héros"
+        },
+        {
+          "Description": "<<Spécial>> Utilisable à n'importe quel tour, y compris de l'adversaire"
+        }
+      ]
+    },
+    {
       "Kind": "Ninja",
       "Name": "Baki",
       "Rank": "",
@@ -7936,5 +7972,6 @@
         }
       ]
     }
-  ]
+  ],
+  "SkinFile": "Naruto.original.skin"
 }
