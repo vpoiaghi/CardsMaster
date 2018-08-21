@@ -7943,6 +7943,99 @@
     },
     {
       "Kind": "Ninja",
+      "Name": "Kakashi Hatake (Jeune)",
+      "Rank": "",
+      "Team": "Equipe Minato",
+      "Chakra": "Foudre",
+      "Element": "Foudre",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Raikiri",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>> Eclair pourfendeur : inflige 2 dégats à chaque adversaire"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Obito Uchiwa (Jeune)",
+      "Rank": "",
+      "Team": "Equipe Minato",
+      "Chakra": "Spécial",
+      "Element": "Sharingan",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Sharingan",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Spécial>> Sharingan : Esquive la première attaque de chaque tour"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Rin Nohara",
+      "Rank": "",
+      "Team": "Equipe Minato",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Shôsen Jutsu",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Spécial>> Technique de la Paume Mystique : Soigne 2 PV a un ninja ciblé à chaque début de tour du joueur"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
       "Name": "Baki",
       "Rank": "",
       "Team": "Garde du corps",
