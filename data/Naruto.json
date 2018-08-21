@@ -2152,7 +2152,7 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Pain",
+      "Name": "Pain (Tendô)",
       "Rank": "",
       "Team": "Akatsuki",
       "Chakra": "Spécial",
@@ -2178,6 +2178,167 @@
       "Powers": [
         {
           "Description": "<<Instantané>> Répulsion céleste : renvoie tous ninja dans la main de son propriétaire"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Shuradô",
+      "Rank": "",
+      "Team": "Akatsuki",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1 Le poignet de Shuradô se détache comme un missile explosif sur la cible."
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Jigokudô",
+      "Rank": "",
+      "Team": "Akatsuki",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1 Utilisé pour le « Jugement de Dieu », et pour ressusciter les corp"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Gakidô",
+      "Rank": "",
+      "Team": "Akatsuki",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "peut absorber n'importe quel ninjutsu "
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Chikushodô",
+      "Rank": "",
+      "Team": "Akatsuki",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "invoque un Cerbère se divisant en plusieurs chiens au fur et à mesure des coups qu'il prend."
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Ningendô",
+      "Rank": "",
+      "Team": "Akatsuki",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "maîtrisr les techniques relatives à l'âme et l'esprit"
+        },
+        {
+          "Description": "peut lire dans les penséesd'un ninja"
+        },
+        {
+          "Description": "arracher l'âme en tirant simplement dessus."
         }
       ]
     },
