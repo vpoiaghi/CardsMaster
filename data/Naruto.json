@@ -486,7 +486,7 @@
       "Element": "Ombre",
       "Cost": "5",
       "Attack": "2",
-      "Defense": "2",
+      "Defense": "3",
       "Citation": "Kage Kubishibari No jutsu",
       "Comments": "",
       "Nb": 1,
@@ -517,7 +517,7 @@
       "Element": "Genjutsu",
       "Cost": "5",
       "Attack": "2",
-      "Defense": "2",
+      "Defense": "3",
       "Citation": "Shinranshin No Jutsu",
       "Comments": "",
       "Nb": 1,
@@ -546,9 +546,9 @@
       "Team": "Ino-Shika-Chô",
       "Chakra": "Physique",
       "Element": "Physique",
-      "Cost": "8",
-      "Attack": "5",
-      "Defense": "6",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "5",
       "Citation": "Chôharite",
       "Comments": "",
       "Nb": 1,
@@ -1252,9 +1252,9 @@
       "Team": "Equipe Guren",
       "Chakra": "Vent",
       "Element": "Vent",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "2",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -1283,9 +1283,9 @@
       "Team": "Equipe Guren",
       "Chakra": "Terre",
       "Element": "Terre",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "2",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -1314,9 +1314,9 @@
       "Team": "Equipe Guren",
       "Chakra": "Vent",
       "Element": "Fumée",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "2",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -1345,9 +1345,9 @@
       "Team": "Equipe Guren",
       "Chakra": "Vent",
       "Element": "Fumigènes",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "2",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -1376,9 +1376,9 @@
       "Team": "Equipe Guren",
       "Chakra": "Eau",
       "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "2",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -2158,8 +2158,8 @@
       "Chakra": "Spécial",
       "Element": "Rinnegan",
       "Cost": "6",
-      "Attack": "3",
-      "Defense": "3",
+      "Attack": "4",
+      "Defense": "4",
       "Citation": "Shinra Tensei",
       "Comments": "",
       "Nb": 1,
@@ -2188,9 +2188,9 @@
       "Team": "Akatsuki",
       "Chakra": "Spécial",
       "Element": "Rinnegan",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "5",
+      "Attack": "3",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -2219,9 +2219,9 @@
       "Team": "Akatsuki",
       "Chakra": "Spécial",
       "Element": "Rinnegan",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "5",
+      "Attack": "1",
+      "Defense": "4",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -2250,9 +2250,9 @@
       "Team": "Akatsuki",
       "Chakra": "Spécial",
       "Element": "Rinnegan",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -2281,9 +2281,9 @@
       "Team": "Akatsuki",
       "Chakra": "Spécial",
       "Element": "Rinnegan",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "5",
+      "Attack": "1",
+      "Defense": "4",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -2312,9 +2312,9 @@
       "Team": "Akatsuki",
       "Chakra": "Spécial",
       "Element": "Rinnegan",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "5",
+      "Attack": "3",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -2332,13 +2332,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "maîtrisr les techniques relatives à l'âme et l'esprit"
-        },
-        {
-          "Description": "peut lire dans les penséesd'un ninja"
-        },
-        {
-          "Description": "arracher l'âme en tirant simplement dessus."
+          "Description": "<<Permanent>> Lecture de l'esprit : Esquive les premiers degats devant lui être infligés à chaque tour"
         }
       ]
     },
@@ -3337,9 +3331,9 @@
       "Team": "Equipe 3° Tsuchikage",
       "Chakra": "Terre",
       "Element": "Terre",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "5",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -3357,13 +3351,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Protection"
         }
       ]
     },
@@ -6391,9 +6379,9 @@
       "Team": "Générations Futur",
       "Chakra": "Feu",
       "Element": "Feu",
-      "Cost": "8",
-      "Attack": "4",
-      "Defense": "3",
+      "Cost": "7",
+      "Attack": "3",
+      "Defense": "5",
       "Citation": "Katon: Hiuchi Yagura",
       "Comments": "",
       "Nb": 1,
@@ -6415,9 +6403,6 @@
         },
         {
           "Description": "<<Activate>> Pilier de feu : Inflige 3 dégats de feu à 2 ennemis côte à cote"
-        },
-        {
-          "Description": "<<Spécial>> Garde du corps : Absorbe 3 points de dégats quand elle défend"
         }
       ]
     },
@@ -6862,7 +6847,7 @@
       "Team": "7 épéistes de l'eau",
       "Chakra": "Eau",
       "Element": "Eau",
-      "Cost": "7",
+      "Cost": "6",
       "Attack": "3",
       "Defense": "4",
       "Citation": null,
@@ -7448,8 +7433,8 @@
       "Chakra": "Physique",
       "Element": "Physique",
       "Cost": "8",
-      "Attack": "3",
-      "Defense": "7",
+      "Attack": "2",
+      "Defense": "6",
       "Citation": "Sanshoku no Gan'yaku",
       "Comments": "",
       "Nb": 1,
@@ -7507,7 +7492,7 @@
           "Description": "<<Activate>> Technique de la Paume Mystique : Soigne 2 PV à un ninja. Utilisable 1 fois par tour."
         },
         {
-          "Description": "<<Spécial>> Si 3 membres du trio Ino-Shika-Cho sont présents, ceux-ci gagnent +3 ATK et +3 PV"
+          "Description": "<<Spécial>> Si 3 membres d'une configuration Ino-Shika-Cho sont présents, ceux-ci gagnent +3 ATK et +3 PV"
         }
       ]
     },
@@ -7741,9 +7726,9 @@
       "Team": "Ninjas guardiens",
       "Chakra": "Foudre",
       "Element": "Foudre",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "6",
+      "Attack": "0",
+      "Defense": "8",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -7761,7 +7746,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>> Limelight : A chaque tour ajouter un jeton, et au bout de 4 tours inflige 15 points de dégats à tous les personnages adverses"
+          "Description": "<<Spécial>> Limelight : A chaque tour ajouter un jeton, et au bout de 2 tours inflige 8 points de dégats à tous les personnages adverses"
         }
       ]
     },
@@ -7834,9 +7819,9 @@
       "Team": "Équipe Furido",
       "Chakra": "Terre",
       "Element": "Terre",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -7854,13 +7839,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Stratège modélisation terrain"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Stratège : Tous les ninjas de la terre gagnent +1/+1"
         }
       ]
     },
@@ -7871,9 +7850,9 @@
       "Team": "Équipe Furido",
       "Chakra": "Spécial",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -7891,13 +7870,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Multi Jutsu tous les éléments"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> A chaque début de tour, peut choisir une nouvelle affinité pour 1 tour"
         }
       ]
     },
@@ -7908,9 +7881,9 @@
       "Team": "Équipe Furido",
       "Chakra": "Terre",
       "Element": "Terre",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "5",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -7928,13 +7901,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Armure de pierre"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Armure de diamant: Protection"
         }
       ]
     },
@@ -7945,9 +7912,9 @@
       "Team": "Jônin de Konoha",
       "Chakra": "Physique",
       "Element": "Physique",
-      "Cost": "6",
+      "Cost": "5",
       "Attack": "3",
-      "Defense": "2",
+      "Defense": "3",
       "Citation": "Kokutô ",
       "Comments": "",
       "Nb": 1,
@@ -8039,8 +8006,8 @@
       "Chakra": "Spécial",
       "Element": "Rinnegan",
       "Cost": "8",
-      "Attack": "6",
-      "Defense": "8",
+      "Attack": "3",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -8057,9 +8024,6 @@
       "IntField4": null,
       "Background": null,
       "Powers": [
-        {
-          "Description": "<<Permanent>> Protection"
-        },
         {
           "Description": "<<Permanent>> Insensible aux dégats physiques"
         },
