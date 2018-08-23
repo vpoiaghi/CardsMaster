@@ -32,8 +32,8 @@ namespace CardMasterCmdExport
 
             JsonCardsProject project = JsonCardsProject.LoadProject(prms.JsonProjectFile);
 
-            string skinsFileName = prms.JsonProjectFile.Name.Replace(prms.JsonProjectFile.Extension, ".skin");
-            FileInfo skinFile = new FileInfo(Path.Combine(prms.JsonProjectFile.Directory.FullName, skinsFileName));
+            //string skinsFileName = prms.JsonProjectFile.Name.Replace(prms.JsonProjectFile.Extension, ".skin");
+            FileInfo skinFile = new FileInfo(Path.Combine(prms.JsonProjectFile.Directory.FullName, project.SkinFile));
 
             ExportParameters parameters = new ExportParameters(project.Cards, skinFile);
             parameters.exportFormat = prms.ExportFormat;
