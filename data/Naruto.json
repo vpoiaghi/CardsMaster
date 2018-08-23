@@ -1145,14 +1145,14 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Jiraya",
-      "Rank": "Légendaire",
-      "Team": "Sanin",
+      "Name": "Jiraya (Jeune)",
+      "Rank": "",
+      "Team": "Ninja",
       "Chakra": "Vent",
       "Element": "Vent",
-      "Cost": "9",
-      "Attack": "5",
-      "Defense": "7",
+      "Cost": "4",
+      "Attack": "1",
+      "Defense": "5",
       "Citation": "Doton : Yomi Numa",
       "Comments": "",
       "Nb": 1,
@@ -1169,9 +1169,6 @@
       "IntField4": null,
       "Background": null,
       "Powers": [
-        {
-          "Description": "<<Instantané>>   Détruit l'adversaire d'une puissance frappe"
-        },
         {
           "Description": "<<activate>>  Invocation au choix de Gamabunta, Gamaken ou Gamahiro"
         }
@@ -1267,6 +1264,102 @@
       "Powers": [
         {
           "Description": "<<Instantané>>  Destruction des échoppes : Inflige 2 points de dégats à tous les ninja ennemis"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Jiraya (Mode hermite)",
+      "Rank": "Légendaire",
+      "Team": "Sanin",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "8",
+      "Attack": "4",
+      "Defense": "7",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>>   Détruit l'adversaire d'une puissance frappe"
+        },
+        {
+          "Description": "<<Spécial>> Tant que Shima et Fukasaku sont en vie, l'adversaire ne peux pas invoquer d'allié"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Shima",
+      "Rank": "",
+      "Team": "Invocation",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
+      "Cost": "",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Spécial>> Insensible aux dégats tant que Jiraya possède tous ses points de vie"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Fukasaku",
+      "Rank": "",
+      "Team": "Invocation",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
+      "Cost": "",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Spécial>> Insensible aux dégats tant que Jiraya possède tous ses points de vie"
         }
       ]
     },
@@ -2276,6 +2369,37 @@
     },
     {
       "Kind": "Ninja",
+      "Name": "Ningendô",
+      "Rank": "",
+      "Team": "Akatsuki",
+      "Chakra": "Spécial",
+      "Element": "Rinnegan",
+      "Cost": "5",
+      "Attack": "3",
+      "Defense": "3",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Lecture de l'esprit : Esquive les premiers degats devant lui être infligés à chaque tour"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
       "Name": "Shuradô",
       "Rank": "",
       "Team": "Akatsuki",
@@ -2394,19 +2518,50 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>> Peut à chaque début de tour du joueur invoquer au choix :  un Cerbère, un caméléon, un oiseau géant, un rhinocéros"
+          "Description": "<<Spécial>> Peut à chaque début de tour du joueur invoquer au choix :  un chien multicéphale , un caméléon, un crabe, un oiseau , un panda ou un rhinocéros"
         }
       ]
     },
     {
       "Kind": "Ninja",
-      "Name": "Ningendô",
+      "Name": "Chien multicéphale géant",
       "Rank": "",
-      "Team": "Akatsuki",
-      "Chakra": "Spécial",
-      "Element": "Rinnegan",
-      "Cost": "5",
-      "Attack": "3",
+      "Team": "Invocation",
+      "Chakra": "Physique",
+      "Element": "Physique",
+      "Cost": "",
+      "Attack": "1",
+      "Defense": "10",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Gagne 1 point d'attaque pour chaque dégat sur lui"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Caméléon géant",
+      "Rank": "",
+      "Team": "Invocation",
+      "Chakra": "Physique",
+      "Element": "Physique",
+      "Cost": "",
+      "Attack": "2",
       "Defense": "3",
       "Citation": "",
       "Comments": "",
@@ -2425,7 +2580,131 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Lecture de l'esprit : Esquive les premiers degats devant lui être infligés à chaque tour"
+          "Description": "<<Permanent>> A chaque peut au choix attaquer ou se camoufler et devient ainsi inciblable"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Crabe géant",
+      "Rank": "",
+      "Team": "Invocation",
+      "Chakra": "Physique",
+      "Element": "Physique",
+      "Cost": "",
+      "Attack": "2",
+      "Defense": "3",
+      "Citation": "Hômatsu Rappa",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Vague de bulle chaotique : renvoie le ninja ciblé dans la main de son propriétaire"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Oiseau géant",
+      "Rank": "",
+      "Team": "Invocation",
+      "Chakra": "Physique",
+      "Element": "Physique",
+      "Cost": "",
+      "Attack": "3",
+      "Defense": "1",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Charge>>"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Panda géant",
+      "Rank": "",
+      "Team": "Invocation",
+      "Chakra": "Physique",
+      "Element": "Physique",
+      "Cost": "",
+      "Attack": "0",
+      "Defense": "5",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Protection"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Rhinocéros géant",
+      "Rank": "",
+      "Team": "Invocation",
+      "Chakra": "Physique",
+      "Element": "Physique",
+      "Cost": "",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Charge"
         }
       ]
     },
@@ -3630,7 +3909,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Sécrétion de la toile  Le ninja ciblé de peut plus attaquer tant que Kidômaru est en jeu"
+          "Description": "<<Permanent>>  Sécrétion de la toile : Le ninja ciblé ne peut plus attaquer tant que Kidômaru est en jeu"
         }
       ]
     },
@@ -8218,6 +8497,71 @@
       "Powers": [
         {
           "Description": "<<Spécial>> Technique de la Paume Mystique : Soigne 2 PV a un ninja ciblé à chaque début de tour du joueur"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Tsume Inuzuka",
+      "Rank": "",
+      "Team": "Adulte",
+      "Chakra": "Physique",
+      "Element": "Physique",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Invoque Kuromaru"
+        },
+        {
+          "Description": "<<Spécial>> Attaque 2 fois par tour si Kuromaru est en vie"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Kuromaru",
+      "Rank": "",
+      "Team": "Invocation",
+      "Chakra": "Physique",
+      "Element": "Physique",
+      "Cost": "",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Spécial>> Attaque 2 fois par tour si Tsume Inuzuka est en vie."
         }
       ]
     },

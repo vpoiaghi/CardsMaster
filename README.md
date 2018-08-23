@@ -47,4 +47,4 @@ Maintenant que la fonctionnalité est validée, voir comment elle sera intégré
 
 UPD cartes :
 
--Créer une extension avec des ninjutsu (donner protection, donner charge etc ..)
+
