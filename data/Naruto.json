@@ -8595,6 +8595,772 @@
           "Description": "<<Activate>> Lame de vent : Inflige 2 points de dégâts au ninja ciblé"
         }
       ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Utakata",
+      "Rank": "Jinchūriki",
+      "Team": "Renégat",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "Suiton - Homatsu",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1 Bulles prison"
+        },
+        {
+          "Description": "Power 2 Bulles Explosives"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Hotaru Katsaguri",
+      "Rank": "",
+      "Team": "Clan Tsuchigumo",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Chûshin",
+      "Rank": "",
+      "Team": "Équipe Magaki",
+      "Chakra": "Physique",
+      "Element": "Physique",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1 lancé de shuriken géant"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Benten",
+      "Rank": "",
+      "Team": "Équipe Magaki",
+      "Chakra": "Physique",
+      "Element": "Physique",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1 Lancé de kunaï"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Akaboshi",
+      "Rank": "",
+      "Team": "Équipe Magaki",
+      "Chakra": "Foudre",
+      "Element": "Foudre",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1 Montée de Foudre : inflige 1 dégats suppémentaires aux ninjas adjacents à la cible"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Nangô",
+      "Rank": "",
+      "Team": "Équipe Magaki",
+      "Chakra": "Physique",
+      "Element": "Physique",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Shiranami",
+      "Rank": "",
+      "Team": "Équipe Magaki",
+      "Chakra": "Physique",
+      "Element": "Physique",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>>Transfert de Chakra : Donne +1 ATK/+1 PV aux alliés adjacents"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninjutsu",
+      "Name": "Étreinte de l'Infini",
+      "Rank": "",
+      "Team": "Ninjutsu",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 2,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Scrolls>>Ninja Scrolls",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Le ninja ciblé ne peut ni attaquer, ni lancer de jutsu tant qu'il y a 4 ninjas dans le camp du lanceur"
+        },
+        {
+          "Description": "<<Spécial>> Nécéssite au moins 4 ninjas dans le camp"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninjutsu",
+      "Name": "Fureur Divine",
+      "Rank": "",
+      "Team": "Ninjutsu",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "9",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 2,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Scrolls>>Ninja Scrolls",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Élimine tous les ninjas des 2 camps"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninjutsu",
+      "Name": "Formation de Barrière Destructive",
+      "Rank": "",
+      "Team": "Ninjutsu",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "5",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 2,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Scrolls>>Ninja Scrolls",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Elimine le ninja ciblé et l'envoie dans son cimetière"
+        },
+        {
+          "Description": "<<Spécial>> Nécéssite au moins 4 ninjas dans le camp"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninjutsu",
+      "Name": "Création et Renouveau",
+      "Rank": "",
+      "Team": "Kinjutsu",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 2,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Scrolls>>Ninja Scrolls",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>>Soigne tous les alliés dans le camp du héros"
+        },
+        {
+          "Description": "<<Spécial>> Inflige 5 dégats au héro"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninjutsu",
+      "Name": "Emprisonnement des Morts",
+      "Rank": "",
+      "Team": "Kinjutsu",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "10",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 2,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Scrolls>>Ninja Scrolls",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Les 2 héros sont tous les 2 éliminés (match nul)"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninjutsu",
+      "Name": "Fûton - Orbe Shuriken",
+      "Rank": "",
+      "Team": "Kinjutsu",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 2,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Scrolls>>Ninja Scrolls",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Inflige 5 points de dégats à 2 ninjas adjacents"
+        },
+        {
+          "Description": "<<Spécial>> Inflige 2 points de dégats au lanceur"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninjutsu",
+      "Name": "Réincarnation des Âmes",
+      "Rank": "",
+      "Team": "Kinjutsu",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 2,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Scrolls>>Ninja Scrolls",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Sacrifie un allié avec tout sa vie pour en faire revenir un autre de n'importe quel cimetière"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninjutsu",
+      "Name": "Izanagi",
+      "Rank": "",
+      "Team": "Kinjutsu",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 2,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Scrolls>>Ninja Scrolls",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Lancé sur un allié, permet de le remettre directement en jeu lors de sa mort"
+        },
+        {
+          "Description": "<<Spécial>> Inflige 2 dégats au héro"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninjutsu",
+      "Name": "Mangekyô Sharingan",
+      "Rank": "",
+      "Team": "Kinjutsu",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 2,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Scrolls>>Ninja Scrolls",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1 Amaterasu"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninjutsu",
+      "Name": "Marque Maudite",
+      "Rank": "",
+      "Team": "Kinjutsu",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 2,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Scrolls>>Ninja Scrolls",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninjutsu",
+      "Name": "Ouverture des Huit Portes Célestes",
+      "Rank": "",
+      "Team": "Kinjutsu",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 2,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Scrolls>>Ninja Scrolls",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1 Yagaï "
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninjutsu",
+      "Name": "Technique de diffusion du chakra",
+      "Rank": "",
+      "Team": "Kinjutsu",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "6",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 2,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Scrolls>>Ninja Scrolls",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Réduit les coûts de 3 pendant ce tour uniquement"
+        },
+        {
+          "Description": "<<Spécial>> Inflige 2 dégats au héros"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninjutsu",
+      "Name": "Multi-Clonage",
+      "Rank": "",
+      "Team": "Kinjutsu",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "X",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 2,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Scrolls>>Ninja Scrolls",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Le héros attaque X fois avec l'arme équipée"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninjutsu",
+      "Name": "Technique du Harem",
+      "Rank": "",
+      "Team": "Kinjutsu",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 2,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Scrolls>>Ninja Scrolls",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninjutsu",
+      "Name": "Prédation de Chakra",
+      "Rank": "",
+      "Team": "Kinjutsu",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 2,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Scrolls>>Ninja Scrolls",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ]
     }
   ],
   "SkinFile": "Naruto.original.skin"
