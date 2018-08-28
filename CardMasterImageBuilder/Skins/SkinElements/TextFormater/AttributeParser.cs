@@ -60,6 +60,23 @@ namespace CardMasterImageBuilder.Elements.TextFormater
                 }
                 format = format.Replace("%", "");
             }
+            format = ManageDynamicSeparator(format);
+            return format;
+        }
+
+        private static string ManageDynamicSeparator(string format)
+        {
+            int i = format.IndexOf("$");
+            int j = format.LastIndexOf("$");
+            String token = format.Substring(i, j - i + 1);
+
+            Console.WriteLine(token);
+            var split = format.Split(new String[] { token }, StringSplitOptions.None);
+            if (split[1].Trim().Equals(""))
+            {
+                format = format.Replace(token, "");
+            }
+            format = format.Replace("$", "");
             return format;
         }
 

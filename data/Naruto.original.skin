@@ -40,7 +40,7 @@
     "MapKindField": {
 		"Ninja": "Chakra",
 		"Lieu": "Element",
-		"Lieu légendaire": "Element",
+		"Lieu légendaire": "Chakra",
 		"Quête": "Kind",
 		"Environnement": "Kind",
 		"Equipement": "Kind",
@@ -183,7 +183,7 @@
 				"FontName" : "Bell MT",
 				"FontSize" : 8,
 				"Style" : "Bold",
-				"NameAttribute" : "@Team@ :  @Chakra@ %(@Element@)%",
+				"NameAttribute" : "@Team@ $:$  @Chakra@ %(@Element@)%",
 				"VerticalAlign" : "Center"
 			},
 			{

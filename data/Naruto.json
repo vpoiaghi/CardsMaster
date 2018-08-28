@@ -74,7 +74,7 @@
       "Rank": "Légendaire",
       "Team": "Clan Ôtsutsuki",
       "Chakra": "Vent",
-      "Element": "Vent",
+      "Element": "",
       "Cost": "7",
       "Attack": "4",
       "Defense": "4",
@@ -105,7 +105,7 @@
       "Rank": "Légendaire",
       "Team": "Clan Ôtsutsuki",
       "Chakra": "Feu",
-      "Element": "Feu",
+      "Element": "",
       "Cost": "7",
       "Attack": "4",
       "Defense": "4",
@@ -136,7 +136,7 @@
       "Rank": "Capitaine",
       "Team": "La Racine",
       "Chakra": "Terre",
-      "Element": "Terre",
+      "Element": "",
       "Cost": "3",
       "Attack": "2",
       "Defense": "3",
@@ -167,7 +167,7 @@
       "Rank": "Capitaine",
       "Team": "Équipe 7",
       "Chakra": "Foudre",
-      "Element": "Foudre",
+      "Element": "",
       "Cost": "3",
       "Attack": "3",
       "Defense": "2",
@@ -198,7 +198,7 @@
       "Rank": "Jinchūriki",
       "Team": "Équipe 7",
       "Chakra": "Vent",
-      "Element": "Vent",
+      "Element": "",
       "Cost": "9",
       "Attack": "5",
       "Defense": "6",
@@ -294,7 +294,7 @@
       "Rank": "",
       "Team": "Invocation",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "0",
       "Attack": "3",
       "Defense": "1",
@@ -325,7 +325,7 @@
       "Rank": "",
       "Team": "Akatsuki",
       "Chakra": "Feu",
-      "Element": "Feu",
+      "Element": "",
       "Cost": "5",
       "Attack": "3",
       "Defense": "3",
@@ -356,7 +356,7 @@
       "Rank": "Capitaine",
       "Team": "Équipe 10",
       "Chakra": "Vent",
-      "Element": "Vent",
+      "Element": "",
       "Cost": "5",
       "Attack": "6",
       "Defense": "5",
@@ -387,7 +387,7 @@
       "Rank": "",
       "Team": "Ino-Shika-Chô",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "4",
       "Attack": "2",
       "Defense": "5",
@@ -545,7 +545,7 @@
       "Rank": "",
       "Team": "Ino-Shika-Chô",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "5",
       "Attack": "2",
       "Defense": "5",
@@ -610,7 +610,7 @@
       "Rank": "",
       "Team": "Jônin de Konoha",
       "Chakra": "Foudre",
-      "Element": "Foudre",
+      "Element": "",
       "Cost": "3",
       "Attack": "2",
       "Defense": "3",
@@ -672,7 +672,7 @@
       "Rank": "",
       "Team": "Jônin de Konoha",
       "Chakra": "Eau",
-      "Element": "Eau",
+      "Element": "",
       "Cost": "2",
       "Attack": "2",
       "Defense": "2",
@@ -734,7 +734,7 @@
       "Rank": "",
       "Team": "Équipe 8",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "6",
       "Attack": "2",
       "Defense": "6",
@@ -768,7 +768,7 @@
       "Rank": "",
       "Team": "Équipe 8",
       "Chakra": "Vent",
-      "Element": "Vent",
+      "Element": "",
       "Cost": "4",
       "Attack": "3",
       "Defense": "2",
@@ -830,7 +830,7 @@
       "Rank": "Capitaine",
       "Team": "Équipe 9",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "5",
       "Attack": "2",
       "Defense": "5",
@@ -861,7 +861,7 @@
       "Rank": "",
       "Team": "Équipe 9",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "1",
       "Attack": "0",
       "Defense": "3",
@@ -895,7 +895,7 @@
       "Rank": "",
       "Team": "Équipe 9",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "2",
       "Attack": "2",
       "Defense": "4",
@@ -926,7 +926,7 @@
       "Rank": "",
       "Team": "Équipe 9",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "2",
       "Attack": "2",
       "Defense": "2",
@@ -947,7 +947,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Ses attaques ne subissent pas de contre attaque"
+          "Description": "<<Permanent>> Invocation d'armes : Ses attaques ne subissent pas de contre-attaque"
         }
       ]
     },
@@ -957,7 +957,7 @@
       "Rank": "Capitaine",
       "Team": "Équipe Ebisu",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "3",
       "Attack": "2",
       "Defense": "2",
@@ -1019,7 +1019,7 @@
       "Rank": "",
       "Team": "Examinateur",
       "Chakra": "Feu",
-      "Element": "Feu",
+      "Element": "",
       "Cost": "3",
       "Attack": "3",
       "Defense": "3",
@@ -1115,7 +1115,7 @@
       "Rank": "Capitaine",
       "Team": "Ancien de Konoha",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "3",
       "Attack": "2",
       "Defense": "2",
@@ -1149,7 +1149,7 @@
       "Rank": "",
       "Team": "Ninja",
       "Chakra": "Vent",
-      "Element": "Vent",
+      "Element": "",
       "Cost": "4",
       "Attack": "1",
       "Defense": "5",
@@ -1180,7 +1180,7 @@
       "Rank": "Rare",
       "Team": "Invocation",
       "Chakra": "Eau",
-      "Element": "Eau",
+      "Element": "",
       "Cost": "",
       "Attack": "2",
       "Defense": "3",
@@ -1211,7 +1211,7 @@
       "Rank": "Rare",
       "Team": "Invocation",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "",
       "Attack": "1",
       "Defense": "5",
@@ -1242,7 +1242,7 @@
       "Rank": "Rare",
       "Team": "Invocation",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "",
       "Attack": "3",
       "Defense": "3",
@@ -1273,7 +1273,7 @@
       "Rank": "Légendaire",
       "Team": "Sanin",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "8",
       "Attack": "4",
       "Defense": "7",
@@ -1369,7 +1369,7 @@
       "Rank": "Légendaire",
       "Team": "Sanin",
       "Chakra": "Eau",
-      "Element": "Eau",
+      "Element": "",
       "Cost": "9",
       "Attack": "5",
       "Defense": "7",
@@ -1437,7 +1437,7 @@
       "Rank": "",
       "Team": "Équipe Guren",
       "Chakra": "Vent",
-      "Element": "Vent",
+      "Element": "",
       "Cost": "2",
       "Attack": "2",
       "Defense": "2",
@@ -1458,7 +1458,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>Ultrason : un flôt de chauve-souris  empêche les 2 camps de lancer des ninjutsu tant qu'il est en vie"
+          "Description": "<<Permanent>>Ultrason : un flot de chauve-souris empêche les 2 camps de lancer des ninjutsu tant qu'il est en vie"
         }
       ]
     },
@@ -1468,7 +1468,7 @@
       "Rank": "",
       "Team": "Équipe Guren",
       "Chakra": "Terre",
-      "Element": "Terre",
+      "Element": "",
       "Cost": "2",
       "Attack": "2",
       "Defense": "2",
@@ -1561,7 +1561,7 @@
       "Rank": "",
       "Team": "Équipe Guren",
       "Chakra": "Eau",
-      "Element": "Eau",
+      "Element": "",
       "Cost": "2",
       "Attack": "2",
       "Defense": "2",
@@ -1592,7 +1592,7 @@
       "Rank": "",
       "Team": "Équipe Guren",
       "Chakra": "Eau",
-      "Element": "Eau",
+      "Element": "",
       "Cost": "5",
       "Attack": "1",
       "Defense": "5",
@@ -1933,7 +1933,7 @@
       "Rank": "",
       "Team": "Akatsuki",
       "Chakra": "Eau",
-      "Element": "Eau",
+      "Element": "",
       "Cost": "4",
       "Attack": "5",
       "Defense": "5",
@@ -1964,7 +1964,7 @@
       "Rank": "",
       "Team": "Invocation",
       "Chakra": "Eau",
-      "Element": "Eau",
+      "Element": "",
       "Cost": "",
       "Attack": "1",
       "Defense": "1",
@@ -1998,7 +1998,7 @@
       "Rank": "Légendaire",
       "Team": "Akatsuki",
       "Chakra": "Feu",
-      "Element": "Feu",
+      "Element": "",
       "Cost": "9",
       "Attack": "5",
       "Defense": "5",
@@ -2029,7 +2029,7 @@
       "Rank": "",
       "Team": "Akatsuki",
       "Chakra": "Terre",
-      "Element": "Terre",
+      "Element": "",
       "Cost": "7",
       "Attack": "3",
       "Defense": "5",
@@ -2060,7 +2060,7 @@
       "Rank": "",
       "Team": "Akatsuki",
       "Chakra": "Terre",
-      "Element": "Terre",
+      "Element": "",
       "Cost": "7",
       "Attack": "3",
       "Defense": "5",
@@ -2091,7 +2091,7 @@
       "Rank": "",
       "Team": "Invocation",
       "Chakra": "Terre",
-      "Element": "Terre",
+      "Element": "",
       "Cost": "",
       "Attack": "2",
       "Defense": "1",
@@ -2122,7 +2122,7 @@
       "Rank": "",
       "Team": "Akatsuki",
       "Chakra": "Terre",
-      "Element": "Terre",
+      "Element": "",
       "Cost": "3",
       "Attack": "2",
       "Defense": "3",
@@ -2174,7 +2174,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Invoque le Théâtre des 100 marionettes"
+          "Description": "<<activate>>  Invoque le Théâtre des 100 marionnettes"
         },
         {
           "Description": "<<Permanent>>  Poison : Détruit le ninja blessé par Sasori à la fin du tour"
@@ -2183,7 +2183,7 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Théâtre des 100 marionettes",
+      "Name": "Théâtre des 100 marionnettes",
       "Rank": "",
       "Team": "Invocation",
       "Chakra": "Vent",
@@ -2249,7 +2249,7 @@
       "Rank": "",
       "Team": "Akatsuki",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "4",
       "Attack": "2",
       "Defense": "2",
@@ -2311,7 +2311,7 @@
       "Rank": "",
       "Team": "Akatsuki",
       "Chakra": "Vent",
-      "Element": "Vent",
+      "Element": "",
       "Cost": "4",
       "Attack": "3",
       "Defense": "2",
@@ -2528,7 +2528,7 @@
       "Rank": "",
       "Team": "Invocation",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "",
       "Attack": "1",
       "Defense": "10",
@@ -2559,7 +2559,7 @@
       "Rank": "",
       "Team": "Invocation",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "",
       "Attack": "2",
       "Defense": "3",
@@ -2590,7 +2590,7 @@
       "Rank": "",
       "Team": "Invocation",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "",
       "Attack": "2",
       "Defense": "3",
@@ -2621,7 +2621,7 @@
       "Rank": "",
       "Team": "Invocation",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "",
       "Attack": "3",
       "Defense": "1",
@@ -2652,7 +2652,7 @@
       "Rank": "",
       "Team": "Invocation",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "",
       "Attack": "0",
       "Defense": "5",
@@ -2683,7 +2683,7 @@
       "Rank": "",
       "Team": "Invocation",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "",
       "Attack": "2",
       "Defense": "2",
@@ -2745,7 +2745,7 @@
       "Rank": "Légendaire",
       "Team": "Équipe Taka",
       "Chakra": "Foudre",
-      "Element": "Foudre",
+      "Element": "",
       "Cost": "9",
       "Attack": "6",
       "Defense": "5",
@@ -2779,7 +2779,7 @@
       "Rank": "",
       "Team": "Invocation",
       "Chakra": "Feu",
-      "Element": "Feu",
+      "Element": "",
       "Cost": "",
       "Attack": "3",
       "Defense": "7",
@@ -2810,7 +2810,7 @@
       "Rank": "",
       "Team": "Équipe Taka",
       "Chakra": "Eau",
-      "Element": "Soin",
+      "Element": "",
       "Cost": "3",
       "Attack": "3",
       "Defense": "3",
@@ -2844,7 +2844,7 @@
       "Rank": "",
       "Team": "Équipe Taka",
       "Chakra": "Eau",
-      "Element": "Eau",
+      "Element": "",
       "Cost": "3",
       "Attack": "3",
       "Defense": "2",
@@ -2875,7 +2875,7 @@
       "Rank": "",
       "Team": "Équipe Taka",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "4",
       "Attack": "2",
       "Defense": "5",
@@ -2940,7 +2940,7 @@
       "Rank": "",
       "Team": "Équipe 5° Misukage",
       "Chakra": "Eau",
-      "Element": "Eau",
+      "Element": "",
       "Cost": "4",
       "Attack": "4",
       "Defense": "3",
@@ -2971,7 +2971,7 @@
       "Rank": "",
       "Team": "Équipe 5° Misukage",
       "Chakra": "Eau",
-      "Element": "Eau",
+      "Element": "",
       "Cost": "1",
       "Attack": "0",
       "Defense": "3",
@@ -3036,7 +3036,7 @@
       "Rank": "Jinchūriki",
       "Team": "Ancien de Kumo",
       "Chakra": "Foudre",
-      "Element": "Foudre",
+      "Element": "",
       "Cost": "4",
       "Attack": "2",
       "Defense": "3",
@@ -3067,7 +3067,7 @@
       "Rank": "Légendaire",
       "Team": "Équipe 4° Raikage",
       "Chakra": "Foudre",
-      "Element": "Foudre",
+      "Element": "",
       "Cost": "7",
       "Attack": "4",
       "Defense": "4",
@@ -3101,7 +3101,7 @@
       "Rank": "Jinchūriki",
       "Team": "Équipe 4° Raikage",
       "Chakra": "Foudre",
-      "Element": "Foudre",
+      "Element": "",
       "Cost": "6",
       "Attack": "4",
       "Defense": "4",
@@ -3135,7 +3135,7 @@
       "Rank": "",
       "Team": "Équipe 4° Raikage",
       "Chakra": "Foudre",
-      "Element": "Foudre",
+      "Element": "",
       "Cost": "4",
       "Attack": "3",
       "Defense": "2",
@@ -3166,7 +3166,7 @@
       "Rank": "Capitaine",
       "Team": "Équipe 4° Raikage",
       "Chakra": "Foudre",
-      "Element": "Foudre",
+      "Element": "",
       "Cost": "4",
       "Attack": "4",
       "Defense": "4",
@@ -3228,7 +3228,7 @@
       "Rank": "",
       "Team": "Équipe 4° Raikage",
       "Chakra": "Foudre",
-      "Element": "Foudre",
+      "Element": "",
       "Cost": "2",
       "Attack": "1",
       "Defense": "4",
@@ -3259,7 +3259,7 @@
       "Rank": "",
       "Team": "Équipe 4° Raikage",
       "Chakra": "Foudre",
-      "Element": "Foudre",
+      "Element": "",
       "Cost": "4",
       "Attack": "2",
       "Defense": "2",
@@ -3290,7 +3290,7 @@
       "Rank": "",
       "Team": "Équipe 4° Raikage",
       "Chakra": "Foudre",
-      "Element": "Foudre",
+      "Element": "",
       "Cost": "4",
       "Attack": "2",
       "Defense": "2",
@@ -3352,7 +3352,7 @@
       "Rank": "Capitaine",
       "Team": "La Racine",
       "Chakra": "Feu",
-      "Element": "Feu",
+      "Element": "",
       "Cost": "4",
       "Attack": "4",
       "Defense": "4",
@@ -3383,7 +3383,7 @@
       "Rank": "",
       "Team": "Lieu légendaire",
       "Chakra": "Foudre",
-      "Element": "Foudre",
+      "Element": "",
       "Cost": "5",
       "Attack": "0",
       "Defense": "3",
@@ -3417,7 +3417,7 @@
       "Rank": "",
       "Team": "Lieu légendaire",
       "Chakra": "Foudre",
-      "Element": "Foudre",
+      "Element": "",
       "Cost": "5",
       "Attack": "0",
       "Defense": "3",
@@ -3438,7 +3438,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  les ninja alliés gagnent +2 ATK"
+          "Description": "<<Permanent>> Les ninjas alliés gagnent +2 ATK"
         }
       ]
     },
@@ -3516,7 +3516,7 @@
       "Rank": "",
       "Team": "Équipe Sable",
       "Chakra": "Vent",
-      "Element": "Vent",
+      "Element": "",
       "Cost": "3",
       "Attack": "3",
       "Defense": "2",
@@ -3640,7 +3640,7 @@
       "Rank": "",
       "Team": "Équipe 3° Tsuchikage ",
       "Chakra": "Terre",
-      "Element": "Terre",
+      "Element": "",
       "Cost": "4",
       "Attack": "3",
       "Defense": "3",
@@ -3671,7 +3671,7 @@
       "Rank": "",
       "Team": "Équipe 3° Tsuchikage ",
       "Chakra": "Terre",
-      "Element": "Terre",
+      "Element": "",
       "Cost": "3",
       "Attack": "3",
       "Defense": "3",
@@ -3702,7 +3702,7 @@
       "Rank": "",
       "Team": "Équipe 3° Tsuchikage",
       "Chakra": "Terre",
-      "Element": "Terre",
+      "Element": "",
       "Cost": "3",
       "Attack": "1",
       "Defense": "5",
@@ -3733,7 +3733,7 @@
       "Rank": "",
       "Team": "Équipe Kabuto",
       "Chakra": "Eau",
-      "Element": "Eau",
+      "Element": "",
       "Cost": "3",
       "Attack": "2",
       "Defense": "2",
@@ -3785,7 +3785,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Suiton, Le grand typhon : englouti 1 ennemis sous les flots"
+          "Description": "<<Activate>> Suiton, Le grand typhon : englouti 1 ennemi sous les flots"
         }
       ]
     },
@@ -3878,7 +3878,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Ondes cinglantes : Ignore la la protection des adversaires"
+          "Description": "<<Permanent>> Ondes cinglantes : Ignore la protection des adversaires"
         }
       ]
     },
@@ -3919,7 +3919,7 @@
       "Rank": "",
       "Team": "Quartet d'Oto",
       "Chakra": "Terre",
-      "Element": "Terre",
+      "Element": "",
       "Cost": "3",
       "Attack": "1",
       "Defense": "2",
@@ -3950,7 +3950,7 @@
       "Rank": "",
       "Team": "Quartet d'Oto",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "3",
       "Attack": "2",
       "Defense": "2",
@@ -3981,7 +3981,7 @@
       "Rank": "",
       "Team": "Invocation",
       "Chakra": "Terre",
-      "Element": "Terre",
+      "Element": "",
       "Cost": "",
       "Attack": "0",
       "Defense": "5",
@@ -4033,7 +4033,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Flûte démoniaque: L'ennemi ciblé ne peut plus attaquer, ne peut plus lancer de sort et annule ses pouvoires  tant que Tauya est en vie"
+          "Description": "<<Permanent>>  Flûte démoniaque: L'ennemi ciblé ne peut plus attaquer, ne peut plus lancer de sort et annule ses pouvoirs tant que Tauya est en vie"
         }
       ]
     },
@@ -4139,7 +4139,7 @@
       "Rank": "Rare",
       "Team": "Edo Tenseï",
       "Chakra": "Eau",
-      "Element": "Eau",
+      "Element": "",
       "Cost": "5",
       "Attack": "5",
       "Defense": "5",
@@ -4170,7 +4170,7 @@
       "Rank": "Rare",
       "Team": "Edo Tenseï",
       "Chakra": "Foudre",
-      "Element": "Foudre",
+      "Element": "",
       "Cost": "5",
       "Attack": "5",
       "Defense": "5",
@@ -4297,7 +4297,7 @@
       "Rank": "Légendaire",
       "Team": "Edo Tenseï",
       "Chakra": "Feu",
-      "Element": "Feu",
+      "Element": "",
       "Cost": "5",
       "Attack": "3",
       "Defense": "2",
@@ -4328,7 +4328,7 @@
       "Rank": "Légendaire",
       "Team": "Edo Tenseï",
       "Chakra": "Feu",
-      "Element": "Feu",
+      "Element": "",
       "Cost": "5",
       "Attack": "3",
       "Defense": "2",
@@ -4390,7 +4390,7 @@
       "Rank": "Légendaire",
       "Team": "Edo Tenseï",
       "Chakra": "Vent",
-      "Element": "Vent",
+      "Element": "",
       "Cost": "8",
       "Attack": "4",
       "Defense": "6",
@@ -4455,7 +4455,7 @@
       "Rank": "Légendaire",
       "Team": "Edo Tenseï",
       "Chakra": "Eau",
-      "Element": "Eau",
+      "Element": "",
       "Cost": "5",
       "Attack": "6",
       "Defense": "3",
@@ -4486,7 +4486,7 @@
       "Rank": "Légendaire",
       "Team": "Edo Tenseï",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "4",
       "Attack": "4",
       "Defense": "4",
@@ -4579,7 +4579,7 @@
       "Rank": "",
       "Team": "Examinateur",
       "Chakra": "Feu",
-      "Element": "Feu",
+      "Element": "",
       "Cost": "2",
       "Attack": "2",
       "Defense": "2",
@@ -4668,7 +4668,7 @@
           "Description": "<<Instantané>>   Camouflage"
         },
         {
-          "Description": "<<Permanent>>  Ignore la Protection et l'armure d'un ennemi"
+          "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
         }
       ]
     },
@@ -4678,7 +4678,7 @@
       "Rank": "",
       "Team": "Assassin",
       "Chakra": "Eau",
-      "Element": "Eau",
+      "Element": "",
       "Cost": "3",
       "Attack": "3",
       "Defense": "3",
@@ -4736,7 +4736,7 @@
           "Description": "<<Permanent>>  Un ninja touché par une attaque ne peut plus attaquer tant que Kushimaru est vivant"
         },
         {
-          "Description": "<<Permanent>>  Ignore la Protection et l'armure d'un ennemi"
+          "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
         }
       ]
     },
@@ -4770,7 +4770,7 @@
           "Description": "<<Instantané>>   Mort silencieuse : Élimine un ninja sans prendre de dégâts si l'environnement ou un lieu légendaire est de type eau"
         },
         {
-          "Description": "<<Permanent>>  Ignore la Protection et l'armure d'un ennemi"
+          "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
         }
       ]
     },
@@ -4804,7 +4804,7 @@
           "Description": "<<Permanent>>  Forme aqueuse : Insensible aux attaques physiques"
         },
         {
-          "Description": "<<Permanent>>  Ignore la Protection et l'armure d'un ennemi"
+          "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
         }
       ]
     },
@@ -4838,7 +4838,7 @@
           "Description": "<<Instantané>> Porte du tonnerre : inflige 1 dégât de foudre à tous les ennemis"
         },
         {
-          "Description": "<<Permanent>>  Ignore la Protection et l'armure d'un ennemi"
+          "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
         }
       ]
     },
@@ -4872,7 +4872,7 @@
           "Description": "<<Instantané>>   Mille aiguilles : Inflige 1 dégât de terre à tous les ennemis"
         },
         {
-          "Description": "<<Permanent>>  Ignore la Protection et l'armure d'un ennemi"
+          "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
         }
       ]
     },
@@ -4906,7 +4906,7 @@
           "Description": "<<Permanent>>  Explosions : inflige 1 dégât aux alliés à côté de la cible"
         },
         {
-          "Description": "<<Permanent>>  Ignore la Protection et l'armure d'un ennemi"
+          "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
         }
       ]
     },
@@ -4916,7 +4916,7 @@
       "Rank": "",
       "Team": "Lieu légendaire",
       "Chakra": "Eau",
-      "Element": "Eau",
+      "Element": "",
       "Cost": "5",
       "Attack": "0",
       "Defense": "3",
@@ -4950,7 +4950,7 @@
       "Rank": "",
       "Team": "Environnement",
       "Chakra": "Eau",
-      "Element": "Eau",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -4981,7 +4981,7 @@
       "Rank": "",
       "Team": "Environnement",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -5012,7 +5012,7 @@
       "Rank": "",
       "Team": "Environnement",
       "Chakra": "Vent",
-      "Element": "Vent",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -5043,7 +5043,7 @@
       "Rank": "",
       "Team": "Environnement",
       "Chakra": "Foudre",
-      "Element": "Foudre",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -5074,7 +5074,7 @@
       "Rank": "",
       "Team": "Environnement",
       "Chakra": "Terre",
-      "Element": "Terre",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -5105,7 +5105,7 @@
       "Rank": "",
       "Team": "Environnement",
       "Chakra": "Spécial",
-      "Element": "Spécial",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -5157,7 +5157,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Les Ninjas de Suna gagnent +2 PV"
+          "Description": "<<Permanent>> Les ninjas de Suna gagnent +2 PV"
         }
       ]
     },
@@ -5167,7 +5167,7 @@
       "Rank": "",
       "Team": "Environnement",
       "Chakra": "Eau",
-      "Element": "Eau",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -5198,7 +5198,7 @@
       "Rank": "",
       "Team": "Environnement",
       "Chakra": "Feu",
-      "Element": "Feu",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -5749,7 +5749,7 @@
           "Description": "<<activate>>  Prends le contrôle du ninja ciblé.  (Utilisable 1 fois par tour en attaque)"
         },
         {
-          "Description": "<<Spécial>>   À chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au Héros"
+          "Description": "<<Spécial>>   À chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au héros"
         }
       ]
     },
@@ -5783,7 +5783,7 @@
           "Description": "<<activate>>  Découpe et maudit l'âme : Inflige 3 dommages, et si cela tue l'ennemi , en inflige 1 aux alliés adjacents. (Utilisable 1 fois par tour)"
         },
         {
-          "Description": "<<Spécial>>  À chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au Héros"
+          "Description": "<<Spécial>>  À chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au héros"
         }
       ]
     },
@@ -5817,7 +5817,7 @@
           "Description": "<<activate>>  Scelle un ninja définitivement. (Utilisable 1 fois par tour en attaque)"
         },
         {
-          "Description": "<<Spécial>>  À chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au Héros"
+          "Description": "<<Spécial>>  À chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au héros"
         }
       ]
     },
@@ -5851,13 +5851,13 @@
           "Description": "<<activate>>  Inflige 3 dégâts à distance de n'importe quelle nature  au ninja ciblé. (Utilisable 1 fois par tour en attaque)"
         },
         {
-          "Description": "<<Spécial>>  À chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au Héros"
+          "Description": "<<Spécial>>  À chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au héros"
         }
       ]
     },
     {
       "Kind": "Equipement",
-      "Name": "Pôt de purification ambré",
+      "Name": "Pot de purification ambré",
       "Rank": "Légendaire",
       "Team": "Arme",
       "Chakra": "Equipement",
@@ -5885,7 +5885,7 @@
           "Description": "<<activate>>  Scelle un ninja définitivement. (Utilisable 1 fois par tour en attaque)"
         },
         {
-          "Description": "<<Spécial>>  À chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au Héros"
+          "Description": "<<Spécial>>  À chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au héros"
         }
       ]
     },
@@ -5929,7 +5929,7 @@
       "Rank": "",
       "Team": "Ninjutsu",
       "Chakra": "Feu",
-      "Element": "Feu",
+      "Element": "",
       "Cost": "4",
       "Attack": "",
       "Defense": "",
@@ -6062,7 +6062,7 @@
       "Rank": "",
       "Team": "Équipe 7",
       "Chakra": "Foudre",
-      "Element": "Foudre",
+      "Element": "",
       "Cost": "2",
       "Attack": "2",
       "Defense": "2",
@@ -6093,7 +6093,7 @@
       "Rank": "",
       "Team": "Équipe 7",
       "Chakra": "Feu",
-      "Element": "Feu",
+      "Element": "",
       "Cost": "2",
       "Attack": "2",
       "Defense": "2",
@@ -6124,7 +6124,7 @@
       "Rank": "",
       "Team": "Equipe 7",
       "Chakra": "Vent",
-      "Element": "Vent",
+      "Element": "",
       "Cost": "2",
       "Attack": "2",
       "Defense": "2",
@@ -6186,7 +6186,7 @@
       "Rank": "",
       "Team": "Ino-Shika-Chô",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "1",
       "Attack": "1",
       "Defense": "3",
@@ -6217,7 +6217,7 @@
       "Rank": "",
       "Team": "Ino-Shika-Chô",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "2",
       "Attack": "2",
       "Defense": "2",
@@ -6248,7 +6248,7 @@
       "Rank": "",
       "Team": "Invocation",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "",
       "Attack": "3",
       "Defense": "2",
@@ -6282,7 +6282,7 @@
       "Rank": "",
       "Team": "Équipe 5",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "1",
       "Attack": "1",
       "Defense": "1",
@@ -6313,7 +6313,7 @@
       "Rank": "",
       "Team": "Équipe 5",
       "Chakra": "Terre",
-      "Element": "Terre",
+      "Element": "",
       "Cost": "1",
       "Attack": "1",
       "Defense": "1",
@@ -6344,7 +6344,7 @@
       "Rank": "",
       "Team": "Équipe 5",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "2",
       "Attack": "2",
       "Defense": "2",
@@ -6409,7 +6409,7 @@
       "Rank": "",
       "Team": "Équipe 15",
       "Chakra": "Vent",
-      "Element": "Vent",
+      "Element": "",
       "Cost": "2",
       "Attack": "1",
       "Defense": "3",
@@ -6471,7 +6471,7 @@
       "Rank": "",
       "Team": "Invocation",
       "Chakra": "Feu",
-      "Element": "Feu",
+      "Element": "",
       "Cost": "",
       "Attack": "2",
       "Defense": "2",
@@ -6502,7 +6502,7 @@
       "Rank": "",
       "Team": "Équipe 25",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "2",
       "Attack": "1",
       "Defense": "2",
@@ -6533,7 +6533,7 @@
       "Rank": "",
       "Team": "Équipe 25",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "2",
       "Attack": "1",
       "Defense": "2",
@@ -6564,7 +6564,7 @@
       "Rank": "",
       "Team": "Équipe 25",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "2",
       "Attack": "2",
       "Defense": "2",
@@ -6595,7 +6595,7 @@
       "Rank": "",
       "Team": "Équipe 40",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "2",
       "Attack": "1",
       "Defense": "2",
@@ -6626,7 +6626,7 @@
       "Rank": "",
       "Team": "Équipe 40",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "2",
       "Attack": "1",
       "Defense": "2",
@@ -6657,7 +6657,7 @@
       "Rank": "",
       "Team": "Équipe 40",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "2",
       "Attack": "1",
       "Defense": "2",
@@ -6688,7 +6688,7 @@
       "Rank": "",
       "Team": "Générations Futur",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "1",
       "Attack": "1",
       "Defense": "1",
@@ -6719,7 +6719,7 @@
       "Rank": "Rare",
       "Team": "Garde du corps",
       "Chakra": "Feu",
-      "Element": "Feu",
+      "Element": "",
       "Cost": "7",
       "Attack": "3",
       "Defense": "5",
@@ -6836,7 +6836,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Fils de chakra : Invoque une marionette qui encaisse les dégàts à sa place"
+          "Description": "<<Activate>> Fils de chakra : Invoque une marionnette qui encaisse les dégàts à sa place"
         }
       ]
     },
@@ -6846,7 +6846,7 @@
       "Rank": "",
       "Team": "Équipe Yurui",
       "Chakra": "Foudre",
-      "Element": "Foudre",
+      "Element": "",
       "Cost": "1",
       "Attack": "1",
       "Defense": "1",
@@ -6867,7 +6867,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Bulle de gomme : Cible un ennemie et l'empêche d'ataquer pour 2 tours"
+          "Description": "<<Activate>> Bulle de gomme : Cible un ennemi et l'empêche d'attaquer pour 2 tours"
         }
       ]
     },
@@ -6877,7 +6877,7 @@
       "Rank": "",
       "Team": "Équipe Yurui",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "1",
       "Attack": "1",
       "Defense": "1",
@@ -6908,7 +6908,7 @@
       "Rank": "",
       "Team": "Équipe Yurui",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "1",
       "Attack": "2",
       "Defense": "3",
@@ -7063,7 +7063,7 @@
       "Rank": "",
       "Team": "New Age",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "2",
       "Attack": "1",
       "Defense": "3",
@@ -7094,7 +7094,7 @@
       "Rank": "",
       "Team": "New Age",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "1",
       "Attack": "1",
       "Defense": "2",
@@ -7125,7 +7125,7 @@
       "Rank": "",
       "Team": "Village de Kiri",
       "Chakra": "Eau",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "2",
       "Attack": "1",
       "Defense": "2",
@@ -7187,7 +7187,7 @@
       "Rank": "",
       "Team": "7 épéistes de l'eau",
       "Chakra": "Eau",
-      "Element": "Eau",
+      "Element": "",
       "Cost": "6",
       "Attack": "3",
       "Defense": "4",
@@ -7280,7 +7280,7 @@
       "Rank": "",
       "Team": "Invocation",
       "Chakra": "Feu",
-      "Element": "Feu",
+      "Element": "",
       "Cost": "",
       "Attack": "1",
       "Defense": "1",
@@ -7311,7 +7311,7 @@
       "Rank": "",
       "Team": "Police",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "3",
       "Attack": "2",
       "Defense": "1",
@@ -7342,7 +7342,7 @@
       "Rank": "Jinchūriki",
       "Team": "Nanadaime 7° Hokage",
       "Chakra": "Vent",
-      "Element": "Vent",
+      "Element": "",
       "Cost": "9",
       "Attack": "6",
       "Defense": "4",
@@ -7376,7 +7376,7 @@
       "Rank": "",
       "Team": "Espion",
       "Chakra": "Foudre",
-      "Element": "Foudre",
+      "Element": "",
       "Cost": "9",
       "Attack": "6",
       "Defense": "4",
@@ -7444,7 +7444,7 @@
       "Rank": "",
       "Team": "Adulte",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "6",
       "Attack": "4",
       "Defense": "5",
@@ -7478,7 +7478,7 @@
       "Rank": "Capitaine",
       "Team": "Équipe 7",
       "Chakra": "Vent",
-      "Element": "Vent",
+      "Element": "",
       "Cost": "7",
       "Attack": "4",
       "Defense": "6",
@@ -7608,7 +7608,7 @@
       "Rank": "",
       "Team": "Adulte",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "7",
       "Attack": "4",
       "Defense": "6",
@@ -7639,7 +7639,7 @@
       "Rank": "",
       "Team": "Adulte",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "7",
       "Attack": "3",
       "Defense": "5",
@@ -7704,7 +7704,7 @@
       "Rank": "",
       "Team": "Adulte",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "8",
       "Attack": "3",
       "Defense": "5",
@@ -7772,7 +7772,7 @@
       "Rank": "",
       "Team": "Ino-Shika-Chô",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "8",
       "Attack": "2",
       "Defense": "6",
@@ -7843,7 +7843,7 @@
       "Rank": "Capitaine",
       "Team": "Équipe 15",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "6",
       "Attack": "2",
       "Defense": "5",
@@ -7939,7 +7939,7 @@
       "Rank": "",
       "Team": "Équipe Kiri",
       "Chakra": "Eau",
-      "Element": "Eau",
+      "Element": "",
       "Cost": "3",
       "Attack": "1",
       "Defense": "3",
@@ -8066,7 +8066,7 @@
       "Rank": "Légendaire",
       "Team": "Ninjas guardiens",
       "Chakra": "Foudre",
-      "Element": "Foudre",
+      "Element": "",
       "Cost": "6",
       "Attack": "0",
       "Defense": "8",
@@ -8097,7 +8097,7 @@
       "Rank": "",
       "Team": "Ninjas guardiens",
       "Chakra": "Feu",
-      "Element": "Feu",
+      "Element": "",
       "Cost": "5",
       "Attack": "3",
       "Defense": "8",
@@ -8128,7 +8128,7 @@
       "Rank": "",
       "Team": "Ninjas gardiens",
       "Chakra": "Vent",
-      "Element": "Vent",
+      "Element": "",
       "Cost": "4",
       "Attack": "3",
       "Defense": "3",
@@ -8159,7 +8159,7 @@
       "Rank": "",
       "Team": "Équipe Furido",
       "Chakra": "Terre",
-      "Element": "Terre",
+      "Element": "",
       "Cost": "3",
       "Attack": "2",
       "Defense": "2",
@@ -8221,7 +8221,7 @@
       "Rank": "",
       "Team": "Équipe Furido",
       "Chakra": "Terre",
-      "Element": "Terre",
+      "Element": "",
       "Cost": "3",
       "Attack": "1",
       "Defense": "5",
@@ -8252,7 +8252,7 @@
       "Rank": "",
       "Team": "Jônin de Konoha",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "5",
       "Attack": "3",
       "Defense": "3",
@@ -8283,7 +8283,7 @@
       "Rank": "",
       "Team": "Jônin de Konoha",
       "Chakra": "Feu",
-      "Element": "Feu",
+      "Element": "",
       "Cost": "2",
       "Attack": "2",
       "Defense": "2",
@@ -8314,7 +8314,7 @@
       "Rank": "",
       "Team": "Jônin de Konoha",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "2",
       "Attack": "2",
       "Defense": "2",
@@ -8379,7 +8379,7 @@
       "Rank": "",
       "Team": "Ninjutsu",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "4",
       "Attack": "",
       "Defense": "",
@@ -8413,7 +8413,7 @@
       "Rank": "",
       "Team": "Équipe Minato",
       "Chakra": "Foudre",
-      "Element": "Foudre",
+      "Element": "",
       "Cost": "3",
       "Attack": "2",
       "Defense": "2",
@@ -8444,7 +8444,7 @@
       "Rank": "",
       "Team": "Équipe Minato",
       "Chakra": "Spécial",
-      "Element": "Sharingan",
+      "Element": "",
       "Cost": "3",
       "Attack": "2",
       "Defense": "2",
@@ -8475,7 +8475,7 @@
       "Rank": "",
       "Team": "Équipe Minato",
       "Chakra": "Eau",
-      "Element": "Eau",
+      "Element": "",
       "Cost": "3",
       "Attack": "2",
       "Defense": "2",
@@ -8496,7 +8496,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>> Technique de la Paume Mystique : Soigne 2 PV a un ninja ciblé à chaque début de tour du joueur"
+          "Description": "<<Spécial>> Technique de la Paume Mystique : Soigne 2 PV à un ninja ciblé à chaque début de tour du joueur"
         }
       ]
     },
@@ -8506,7 +8506,7 @@
       "Rank": "",
       "Team": "Adulte",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "3",
       "Attack": "1",
       "Defense": "3",
@@ -8540,7 +8540,7 @@
       "Rank": "",
       "Team": "Invocation",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "",
       "Attack": "2",
       "Defense": "2",
@@ -8571,7 +8571,7 @@
       "Rank": "",
       "Team": "Garde du corps",
       "Chakra": "Vent",
-      "Element": "Vent",
+      "Element": "",
       "Cost": "3",
       "Attack": "2",
       "Defense": "2",
@@ -8602,11 +8602,11 @@
       "Rank": "Jinchūriki",
       "Team": "Renégat",
       "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "Suiton - Homatsu",
+      "Element": "Bulles",
+      "Cost": "7",
+      "Attack": "1",
+      "Defense": "5",
+      "Citation": "Hômatsu No Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -8623,13 +8623,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Bulles prison"
+          "Description": "<<Activate>> Bulle prison : Renvoi dans la main de son propriétaire le ninja ciblé"
         },
         {
-          "Description": "Power 2 Bulles Explosives"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Dôme de Glace : protège de tout dégât l'allié ciblé tant qu'il est en vie"
         }
       ]
     },
@@ -8639,10 +8636,10 @@
       "Rank": "",
       "Team": "Clan Tsuchigumo",
       "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -8660,13 +8657,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Vague du Chaos : Renvoi dans la main de son propriétaire le ninja ciblé"
         }
       ]
     },
@@ -8676,10 +8667,10 @@
       "Rank": "",
       "Team": "Équipe Magaki",
       "Chakra": "Physique",
-      "Element": "Physique",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -8697,13 +8688,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 lancé de shuriken géant"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>Shuriken géant : Inflige 2 points de dégâts au ninja ciblé"
         }
       ]
     },
@@ -8713,10 +8698,10 @@
       "Rank": "",
       "Team": "Équipe Magaki",
       "Chakra": "Physique",
-      "Element": "Physique",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -8734,13 +8719,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Lancé de kunaï"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>Lancé de kunaïs : Inflige 1 points de dégâts à 2 ninjas"
         }
       ]
     },
@@ -8750,10 +8729,10 @@
       "Rank": "",
       "Team": "Équipe Magaki",
       "Chakra": "Foudre",
-      "Element": "Foudre",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Element": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -8771,13 +8750,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Montée de Foudre : inflige 1 dégats suppémentaires aux ninjas adjacents à la cible"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Montée de Foudre : inflige 1 dégâts suppémentaires aux ninjas adjacents à la cible"
         }
       ]
     },
@@ -8787,10 +8760,10 @@
       "Rank": "",
       "Team": "Équipe Magaki",
       "Chakra": "Physique",
-      "Element": "Physique",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "4",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -8808,13 +8781,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Protection"
         }
       ]
     },
@@ -8824,10 +8791,10 @@
       "Rank": "",
       "Team": "Équipe Magaki",
       "Chakra": "Physique",
-      "Element": "Physique",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Element": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -8951,11 +8918,11 @@
     {
       "Kind": "Ninjutsu",
       "Name": "Création et Renouveau",
-      "Rank": "",
+      "Rank": "Légendaire",
       "Team": "Kinjutsu",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
+      "Chakra": "",
+      "Element": "",
+      "Cost": "6",
       "Attack": "",
       "Defense": "",
       "Citation": "",
@@ -8978,16 +8945,16 @@
           "Description": "<<Instantané>>Soigne tous les alliés dans le camp du héros"
         },
         {
-          "Description": "<<Spécial>> Inflige 5 dégats au héro"
+          "Description": "<<Spécial>> Inflige 5 dégâts au héros"
         }
       ]
     },
     {
       "Kind": "Ninjutsu",
       "Name": "Emprisonnement des Morts",
-      "Rank": "",
+      "Rank": "Légendaire",
       "Team": "Kinjutsu",
-      "Chakra": "Eau",
+      "Chakra": "",
       "Element": "",
       "Cost": "10",
       "Attack": "",
@@ -9016,11 +8983,11 @@
     {
       "Kind": "Ninjutsu",
       "Name": "Fûton - Orbe Shuriken",
-      "Rank": "",
+      "Rank": "Légendaire",
       "Team": "Kinjutsu",
-      "Chakra": "Eau",
+      "Chakra": "",
       "Element": "",
-      "Cost": "",
+      "Cost": "4",
       "Attack": "",
       "Defense": "",
       "Citation": "",
@@ -9040,21 +9007,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Inflige 5 points de dégats à 2 ninjas adjacents"
+          "Description": "<<Instantané>> Inflige 5 points de dégâts à 2 ninjas adjacents"
         },
         {
-          "Description": "<<Spécial>> Inflige 2 points de dégats au lanceur"
+          "Description": "<<Spécial>> Inflige 2 points de dégâts au lanceur"
         }
       ]
     },
     {
       "Kind": "Ninjutsu",
       "Name": "Réincarnation des Âmes",
-      "Rank": "",
+      "Rank": "Légendaire",
       "Team": "Kinjutsu",
-      "Chakra": "Eau",
+      "Chakra": "",
       "Element": "",
-      "Cost": "",
+      "Cost": "4",
       "Attack": "",
       "Defense": "",
       "Citation": "",
@@ -9081,11 +9048,11 @@
     {
       "Kind": "Ninjutsu",
       "Name": "Izanagi",
-      "Rank": "",
+      "Rank": "Légendaire",
       "Team": "Kinjutsu",
-      "Chakra": "Eau",
+      "Chakra": "",
       "Element": "",
-      "Cost": "",
+      "Cost": "4",
       "Attack": "",
       "Defense": "",
       "Citation": "",
@@ -9108,18 +9075,18 @@
           "Description": "<<Instantané>> Lancé sur un allié, permet de le remettre directement en jeu lors de sa mort"
         },
         {
-          "Description": "<<Spécial>> Inflige 2 dégats au héro"
+          "Description": "<<Spécial>> Inflige 2 dégâts au héros"
         }
       ]
     },
     {
       "Kind": "Ninjutsu",
       "Name": "Mangekyô Sharingan",
-      "Rank": "",
+      "Rank": "Légendaire",
       "Team": "Kinjutsu",
-      "Chakra": "Eau",
+      "Chakra": "",
       "Element": "",
-      "Cost": "",
+      "Cost": "5",
       "Attack": "",
       "Defense": "",
       "Citation": "",
@@ -9139,24 +9106,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Amaterasu"
+          "Description": "<<Instantané>> Amaterasu : Retire 1 pv à chaque ninjas en jeu ennemi,  à chaque tour"
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Spécial>> Au choix,  Inflige 2 dégâts au héros ou  détruit le kinjutsu"
         }
       ]
     },
     {
       "Kind": "Ninjutsu",
       "Name": "Marque Maudite",
-      "Rank": "",
+      "Rank": "Légendaire",
       "Team": "Kinjutsu",
-      "Chakra": "Eau",
+      "Chakra": "",
       "Element": "",
-      "Cost": "",
+      "Cost": "3",
       "Attack": "",
       "Defense": "",
       "Citation": "",
@@ -9176,24 +9140,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "<<Instantané>> Donne +2 ATK/ +2 PV au ninja ciblé"
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Spécial>> Quand l'allié attaque, 1 point de dégât est transféré au héros ou détruit le kinjutsu"
         }
       ]
     },
     {
       "Kind": "Ninjutsu",
       "Name": "Ouverture des Huit Portes Célestes",
-      "Rank": "",
+      "Rank": "Légendaire",
       "Team": "Kinjutsu",
-      "Chakra": "Eau",
+      "Chakra": "",
       "Element": "",
-      "Cost": "",
+      "Cost": "X",
       "Attack": "",
       "Defense": "",
       "Citation": "",
@@ -9213,22 +9174,19 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Yagaï "
+          "Description": "<<Instantané>> Inflige X points de dégâts à la cible"
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<Spécial>> Inflige X points de dégats au héros"
         }
       ]
     },
     {
       "Kind": "Ninjutsu",
       "Name": "Technique de diffusion du chakra",
-      "Rank": "",
+      "Rank": "Légendaire",
       "Team": "Kinjutsu",
-      "Chakra": "Eau",
+      "Chakra": "",
       "Element": "",
       "Cost": "6",
       "Attack": "",
@@ -9253,16 +9211,16 @@
           "Description": "<<Instantané>> Réduit les coûts de 3 pendant ce tour uniquement"
         },
         {
-          "Description": "<<Spécial>> Inflige 2 dégats au héros"
+          "Description": "<<Spécial>> Inflige 2 dégâts au héros"
         }
       ]
     },
     {
       "Kind": "Ninjutsu",
       "Name": "Multi-Clonage",
-      "Rank": "",
+      "Rank": "Légendaire",
       "Team": "Kinjutsu",
-      "Chakra": "Physique",
+      "Chakra": "",
       "Element": "",
       "Cost": "X",
       "Attack": "",
@@ -9291,11 +9249,11 @@
     {
       "Kind": "Ninjutsu",
       "Name": "Technique du Harem",
-      "Rank": "",
+      "Rank": "Légendaire",
       "Team": "Kinjutsu",
-      "Chakra": "Eau",
+      "Chakra": "",
       "Element": "",
-      "Cost": "",
+      "Cost": "4",
       "Attack": "",
       "Defense": "",
       "Citation": "",
@@ -9315,24 +9273,18 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Au prochain tour, le héros adverse ne peut que faire attaque ses alliés (rien qui ne consomme de chakra)"
         }
       ]
     },
     {
       "Kind": "Ninjutsu",
       "Name": "Prédation de Chakra",
-      "Rank": "",
+      "Rank": "Légendaire",
       "Team": "Kinjutsu",
-      "Chakra": "Eau",
+      "Chakra": "",
       "Element": "",
-      "Cost": "",
+      "Cost": "5",
       "Attack": "",
       "Defense": "",
       "Citation": "",
@@ -9352,13 +9304,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "<<Instantané>> Le tour prochain, le héros adverse ne peut utiliser son chakra "
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Spécial>> Inflige 2 dégâts au héros"
         }
       ]
     }
