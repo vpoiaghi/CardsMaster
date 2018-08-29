@@ -295,7 +295,7 @@
       "Team": "Invocation",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "0",
+      "Cost": "",
       "Attack": "3",
       "Defense": "1",
       "Citation": "Roaaaaaar",
@@ -1622,7 +1622,7 @@
       "Name": "Shukaku (Ichibi)",
       "Rank": "Jinchūriki",
       "Team": "Bijù",
-      "Chakra": "Feu",
+      "Chakra": "Spécial",
       "Element": "Orbe Bijù",
       "Cost": "8",
       "Attack": "5",
@@ -1653,7 +1653,7 @@
       "Name": "Matatabi (Nibi)",
       "Rank": "Jinchūriki",
       "Team": "Bijù",
-      "Chakra": "Feu",
+      "Chakra": "Spécial",
       "Element": "Orbe Bijù",
       "Cost": "8",
       "Attack": "5",
@@ -1684,7 +1684,7 @@
       "Name": "Son Gokû (Yonbi)",
       "Rank": "Jinchūriki",
       "Team": "Bijù",
-      "Chakra": "Feu",
+      "Chakra": "Spécial",
       "Element": "Orbe Bijù",
       "Cost": "8",
       "Attack": "5",
@@ -1715,7 +1715,7 @@
       "Name": "Kokuô (Gobi)",
       "Rank": "Jinchūriki",
       "Team": "Bijù",
-      "Chakra": "Feu",
+      "Chakra": "Spécial",
       "Element": "Orbe Bijù",
       "Cost": "8",
       "Attack": "5",
@@ -1746,7 +1746,7 @@
       "Name": "Saiken (Rokubi)",
       "Rank": "Jinchūriki",
       "Team": "Bijù",
-      "Chakra": "Feu",
+      "Chakra": "Spécial",
       "Element": "Orbe Bijù",
       "Cost": "8",
       "Attack": "5",
@@ -1777,7 +1777,7 @@
       "Name": "Chômei (Nanabi)",
       "Rank": "Jinchūriki",
       "Team": "Bijù",
-      "Chakra": "Feu",
+      "Chakra": "Spécial",
       "Element": "Orbe Bijù",
       "Cost": "8",
       "Attack": "5",
@@ -1808,7 +1808,7 @@
       "Name": "Isobu (Sanbi)",
       "Rank": "Jinchūriki",
       "Team": "Invocation",
-      "Chakra": "Feu",
+      "Chakra": "Spécial",
       "Element": "Orbe Bijù",
       "Cost": "",
       "Attack": "5",
@@ -1839,7 +1839,7 @@
       "Name": "Gyûki (Hachibi)",
       "Rank": "Jinchūriki",
       "Team": "Invocation",
-      "Chakra": "Feu",
+      "Chakra": "Spécial",
       "Element": "Orbe Bijù",
       "Cost": "",
       "Attack": "5",
@@ -1870,7 +1870,7 @@
       "Name": "Kurama (Kyûbi)",
       "Rank": "Jinchūriki",
       "Team": "Invocation",
-      "Chakra": "Feu",
+      "Chakra": "Spécial",
       "Element": "Orbe Bijù",
       "Cost": "",
       "Attack": "5",
@@ -2995,7 +2995,7 @@
           "Description": "<<Permanent>>  Protection"
         },
         {
-          "Description": "<<activate>>  Byakugan : Révèle 3 cartes de pioche, en garde une , défausse les autres"
+          "Description": "<<activate>>  Byakugan : Révèle 3 cartes de pioche, en garde une, défausse les autres"
         }
       ]
     },
@@ -3091,7 +3091,7 @@
           "Description": "<<Instantané>>   Charge"
         },
         {
-          "Description": "<<Permanent>>  Furie des vents : Déplacement instantané. Peut attaquer 2 fois par tour."
+          "Description": "<<Permanent>>  Furie des vents : Déplacement instantané. Peut attaquer 2 fois par tour"
         }
       ]
     },
@@ -3692,7 +3692,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninja de terre gagnent +3 PV"
+          "Description": "<<Permanent>>  Les ninjas de terre gagnent +3 PV"
         }
       ]
     },
@@ -4262,7 +4262,7 @@
       "Name": "Shinju",
       "Rank": "Rare",
       "Team": "Bijù",
-      "Chakra": "Feu",
+      "Chakra": "Spécial",
       "Element": "Orbe Bijù",
       "Cost": "9",
       "Attack": "4",
@@ -4551,7 +4551,7 @@
       "Element": "Soin",
       "Cost": "",
       "Attack": "0",
-      "Defense": "10",
+      "Defense": "6",
       "Citation": "Shôsen Jutsu",
       "Comments": "Carte à part",
       "Nb": 1,
@@ -4644,7 +4644,7 @@
       "Rank": "Rare",
       "Team": "7 Épéistes",
       "Chakra": "Eau",
-      "Element": "Epéiste",
+      "Element": "Épéiste",
       "Cost": "8",
       "Attack": "5",
       "Defense": "4",
@@ -4712,7 +4712,7 @@
       "Rank": "Rare",
       "Team": "7 Épéistes",
       "Chakra": "Vent",
-      "Element": "Epéiste",
+      "Element": "Épéiste",
       "Cost": "6",
       "Attack": "2",
       "Defense": "6",
@@ -4746,7 +4746,7 @@
       "Rank": "Rare",
       "Team": "7 Épéistes",
       "Chakra": "Terre",
-      "Element": "Epéiste",
+      "Element": "Épéiste",
       "Cost": "2",
       "Attack": "1",
       "Defense": "2",
@@ -4780,7 +4780,7 @@
       "Rank": "Rare",
       "Team": "7 Épéistes",
       "Chakra": "Eau",
-      "Element": "Epéiste",
+      "Element": "Épéiste",
       "Cost": "2",
       "Attack": "2",
       "Defense": "2",
@@ -4814,7 +4814,7 @@
       "Rank": "Rare",
       "Team": "7 Épéistes",
       "Chakra": "Foudre",
-      "Element": "Epéiste",
+      "Element": "Épéiste",
       "Cost": "4",
       "Attack": "2",
       "Defense": "3",
@@ -4835,7 +4835,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Porte du tonnerre : inflige 1 dégât de foudre à tous les ennemis"
+          "Description": "<<Instantané>> Porte du tonnerre : Inflige 1 dégât de foudre à tous les ennemis"
         },
         {
           "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
@@ -4848,7 +4848,7 @@
       "Rank": "Rare",
       "Team": "7 Épéistes",
       "Chakra": "Terre",
-      "Element": "Epéiste",
+      "Element": "Épéiste",
       "Cost": "7",
       "Attack": "3",
       "Defense": "5",
@@ -4882,7 +4882,7 @@
       "Rank": "Rare",
       "Team": "7 Épéistes",
       "Chakra": "Feu",
-      "Element": "Epéiste",
+      "Element": "Épéiste",
       "Cost": "7",
       "Attack": "4",
       "Defense": "5",
@@ -4903,7 +4903,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Explosions : inflige 1 dégât aux alliés à côté de la cible"
+          "Description": "<<Permanent>>  Explosions : Inflige 1 dégât aux alliés à côté de la cible"
         },
         {
           "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
@@ -6815,7 +6815,7 @@
       "Rank": "",
       "Team": "Équipe Shinki",
       "Chakra": "Terre",
-      "Element": "Epéiste",
+      "Element": "Épéiste",
       "Cost": "1",
       "Attack": "3",
       "Defense": "1",
@@ -6836,7 +6836,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Fils de chakra : Invoque une marionnette qui encaisse les dégàts à sa place"
+          "Description": "<<Activate>> Fils de chakra : Invoque une marionnette qui encaisse les dégâts à sa place"
         }
       ]
     },
@@ -7208,7 +7208,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Sphère d'eau : peut soit attaquer soit empêcher l'ennemi d'attaquer. Les pouvoirs de l'adversaire restent actifs"
+          "Description": "<<Permanent>> Sphère d'eau : Peut soit attaquer soit empêcher l'ennemi d'attaquer. Les pouvoirs de l'adversaire restent actifs"
         }
       ]
     },
@@ -7533,7 +7533,7 @@
           "Description": "<<Instantané>> Volonté d'Oroshimaru : Étrangle l'ennemi ciblé, annulant tout sort lancé par et sur lui, et l'empêchant d'en lancer d'autres"
         },
         {
-          "Description": "<<Activate>> Poison pourpre : inflige 1D2 de dégât au ninja ciblé"
+          "Description": "<<Activate>> Poison pourpre : Inflige 1D2 de dégât au ninja ciblé"
         }
       ]
     },
@@ -8064,7 +8064,7 @@
       "Kind": "Ninja",
       "Name": "Les 4 Ninjas Gardiens de la Foudre",
       "Rank": "Légendaire",
-      "Team": "Ninjas guardiens",
+      "Team": "Ninjas gardiens",
       "Chakra": "Foudre",
       "Element": "",
       "Cost": "6",
@@ -8095,7 +8095,7 @@
       "Kind": "Ninja",
       "Name": "Chiriku",
       "Rank": "",
-      "Team": "Ninjas guardiens",
+      "Team": "Ninjas gardiens",
       "Chakra": "Feu",
       "Element": "",
       "Cost": "5",
@@ -8304,7 +8304,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>Lecture de l'Esprit : Ne reçoit aucun dégâts la première fois qu'il attaque, valable à chaque début de tour"
+          "Description": "<<Permanent>>Lecture de l'Esprit : Ne reçoit aucun dégât la première fois qu'il attaque, valable à chaque début de tour"
         }
       ]
     },
@@ -8719,7 +8719,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>Lancé de kunaïs : Inflige 1 points de dégâts à 2 ninjas"
+          "Description": "<<Instantané>>Lancé de kunaïs : Inflige 1 point de dégât à 2 ninjas"
         }
       ]
     },
@@ -8750,7 +8750,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>Montée de Foudre : inflige 1 dégâts suppémentaires aux ninjas adjacents à la cible"
+          "Description": "<<Permanent>>Montée de Foudre : Inflige 1 dégât supplémentaire aux ninjas adjacents à la cible"
         }
       ]
     },

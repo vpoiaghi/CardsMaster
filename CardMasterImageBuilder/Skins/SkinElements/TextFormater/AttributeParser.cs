@@ -8,7 +8,7 @@ namespace CardMasterImageBuilder.Elements.TextFormater
 {
     class AttributeParser
     {
-        //@Team@ :  @Nature@ (@Element@)”;
+        //@Team@ $:$  @Nature@ (@Element@)”;
         public static String Parse(JsonCard card, String format,String defaultText)
         {
             String fullText= "";
