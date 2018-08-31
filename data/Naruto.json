@@ -1294,7 +1294,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>   Détruit l'adversaire d'une puissance frappe"
+          "Description": "<<Instantané>>   Détruit l'adversaire d'une puissante frappe"
         },
         {
           "Description": "<<Spécial>> Tant que Shima et Fukasaku sont en vie, l'adversaire ne peut pas invoquer d'allié"
@@ -2143,7 +2143,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Bombe d'argile explosive : inflige 2 dégâts à tous les ennemis. (Utilisable 1 fois par tour)"
+          "Description": "<<activate>>  Bombe d'argile explosive : Inflige 2 dégâts à tous les ennemis (Utilisable 1 fois par tour)"
         }
       ]
     },
@@ -7084,7 +7084,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>> Revient dans main du joueur quand il meure"
+          "Description": "<<Spécial>> Revient dans la main du joueur quand il meurt"
         }
       ]
     },
@@ -7397,7 +7397,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Elimination éclair : Elimine le ninja indemne ciblé"
+          "Description": "<<Instantané>> Elimination éclair : Élimine le ninja indemne ciblé"
         },
         {
           "Description": "<<Activate>> Mille oiseaux : inflige 1D6 dégâts à la cible"
@@ -7725,7 +7725,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Shanaro : Elimine un ninja ciblé"
+          "Description": "<<Instantané>> Shanaro : Élimine un ninja ciblé"
         },
         {
           "Description": "<<Spécial>> Soigne 1D3 PV au ninja ciblé, utilisable une fois par tour"
@@ -8434,7 +8434,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Éclair pourfendeur : inflige 2 dégâts à chaque adversaire"
+          "Description": "<<Activate>> Éclair pourfendeur : Inflige 2 dégâts à chaque adversaire"
         }
       ]
     },
@@ -8623,7 +8623,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Bulle prison : Renvoi dans la main de son propriétaire le ninja ciblé"
+          "Description": "<<Activate>> Bulle prison : Renvoie dans la main de son propriétaire le ninja ciblé"
         },
         {
           "Description": "<<Instantané>> Dôme de Glace : protège de tout dégât l'allié ciblé tant qu'il est en vie"
@@ -8657,7 +8657,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Vague du Chaos : Renvoi dans la main de son propriétaire le ninja ciblé"
+          "Description": "<<Instantané>> Vague du Chaos : Renvoie dans la main de son propriétaire le ninja ciblé"
         }
       ]
     },
@@ -8846,7 +8846,7 @@
           "Description": "<<Instantané>> Le ninja ciblé ne peut ni attaquer, ni lancer de jutsu tant qu'il y a 4 ninjas dans le camp du lanceur"
         },
         {
-          "Description": "<<Spécial>> Nécéssite au moins 4 ninjas dans le camp"
+          "Description": "<<Spécial>> Nécessite au moins 4 ninjas dans le camp"
         }
       ]
     },
@@ -8908,10 +8908,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Elimine le ninja ciblé et l'envoie dans son cimetière"
+          "Description": "<<Instantané>> Élimine le ninja ciblé et l'envoie dans son cimetière"
         },
         {
-          "Description": "<<Spécial>> Nécéssite au moins 4 ninjas dans le camp"
+          "Description": "<<Spécial>> Nécessite au moins 4 ninjas dans le camp"
         }
       ]
     },
