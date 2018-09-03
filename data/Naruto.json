@@ -253,7 +253,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Soigne 1D6+2 PV à un allié. (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Soigne 1D6+2 PV à un allié (Utilisable 1 fois par tour)"
         }
       ]
     },
@@ -1458,7 +1458,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>Ultrason : un flot de chauve-souris empêche les 2 camps de lancer des ninjutsu tant qu'il est en vie"
+          "Description": "<<Permanent>>Ultrason : Un flot de chauve-souris empêche les 2 camps de lancer des ninjutsu tant qu'il est en vie"
         }
       ]
     },
@@ -2363,7 +2363,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Répulsion céleste : renvoie tous les ninjas adverses dans la main de leur propriétaire"
+          "Description": "<<Instantané>> Répulsion céleste : Renvoie tous les ninjas adverses dans la main de leur propriétaire"
         }
       ]
     },
@@ -2394,7 +2394,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Lecture de l'esprit : Esquive les premiers degats devant lui être infligés à chaque tour"
+          "Description": "<<Permanent>> Lecture de l'esprit : Esquive les premiers dégâts devant lui être infligés à chaque tour"
         }
       ]
     },
@@ -2611,7 +2611,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Vague de bulle chaotique : renvoie le ninja ciblé dans la main de son propriétaire"
+          "Description": "<<Instantané>> Vague de bulle chaotique : Renvoie le ninja ciblé dans la main de son propriétaire"
         }
       ]
     },
@@ -3092,6 +3092,37 @@
         },
         {
           "Description": "<<Permanent>>  Furie des vents : Déplacement instantané. Peut attaquer 2 fois par tour"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Mabui",
+      "Rank": "",
+      "Team": "Conseillère du 4° Raikage",
+      "Chakra": "Foudre",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "3",
+      "Citation": "Tensô no Jutsu",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Transfert instantanné : Vous pouvez dérober jusqu'à 2 pièces d'équipement à l'adversaire "
         }
       ]
     },
@@ -3599,7 +3630,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>   un ninja au choix est invulnérable tant que les marionnettes sont en vie"
+          "Description": "<<Instantané>> Un ninja au choix est invulnérable tant que les marionnettes sont en vie"
         }
       ]
     },
@@ -4033,7 +4064,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Flûte démoniaque: L'ennemi ciblé ne peut plus attaquer, ne peut plus lancer de sort et annule ses pouvoirs tant que Tauya est en vie"
+          "Description": "<<Permanent>>  Flûte démoniaque: L'ennemi ciblé ne peut plus attaquer, ne peut plus lancer de sort et annule ses pouvoirs tant que Tayuya est en vie"
         }
       ]
     },
@@ -5746,7 +5777,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Prends le contrôle du ninja ciblé.  (Utilisable 1 fois par tour en attaque)"
+          "Description": "<<activate>>  Prends le contrôle du ninja ciblé (Utilisable 1 fois par tour en attaque)"
         },
         {
           "Description": "<<Spécial>>   À chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au héros"
@@ -5780,7 +5811,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Découpe et maudit l'âme : Inflige 3 dommages, et si cela tue l'ennemi , en inflige 1 aux alliés adjacents. (Utilisable 1 fois par tour)"
+          "Description": "<<activate>>  Découpe et maudit l'âme : Inflige 3 dommages, et si cela tue l'ennemi, en inflige 1 aux alliés adjacents (Utilisable 1 fois par tour)"
         },
         {
           "Description": "<<Spécial>>  À chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au héros"
@@ -5814,7 +5845,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Scelle un ninja définitivement. (Utilisable 1 fois par tour en attaque)"
+          "Description": "<<activate>>  Scelle un ninja définitivement (Utilisable 1 fois par tour en attaque)"
         },
         {
           "Description": "<<Spécial>>  À chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au héros"
@@ -5848,7 +5879,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Inflige 3 dégâts à distance de n'importe quelle nature  au ninja ciblé. (Utilisable 1 fois par tour en attaque)"
+          "Description": "<<activate>>  Inflige 3 dégâts à distance de n'importe quelle nature  au ninja ciblé (Utilisable 1 fois par tour en attaque)"
         },
         {
           "Description": "<<Spécial>>  À chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au héros"
@@ -5882,7 +5913,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Scelle un ninja définitivement. (Utilisable 1 fois par tour en attaque)"
+          "Description": "<<activate>>  Scelle un ninja définitivement (Utilisable 1 fois par tour en attaque)"
         },
         {
           "Description": "<<Spécial>>  À chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au héros"
@@ -6122,7 +6153,7 @@
       "Kind": "Ninja",
       "Name": "Mitsuki",
       "Rank": "",
-      "Team": "Equipe 7",
+      "Team": "Équipe 7",
       "Chakra": "Vent",
       "Element": "",
       "Cost": "2",
@@ -6176,7 +6207,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>>  Manipulation des ombres : cible un ennemi et l'empêche d'attaquer pour 2 tours"
+          "Description": "<<Activate>>  Manipulation des ombres : Cible un ennemi et l'empêche d'attaquer pour 2 tours"
         }
       ]
     },
@@ -6461,7 +6492,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Onde sonore : les ninjas ennemis ne peuvent pas attaquer au prochain tour"
+          "Description": "<<Activate>> Onde sonore : Les ninjas ennemis ne peuvent pas attaquer au prochain tour"
         }
       ]
     },
@@ -6743,7 +6774,7 @@
           "Description": "<<Permanent>> Protection"
         },
         {
-          "Description": "<<Activate>> Pilier de feu : Inflige 3 dégâts de feu à 2 ennemis côte à cote"
+          "Description": "<<Activate>> Pilier de feu : Inflige 3 dégâts de feu à 2 ennemis côte à côte"
         }
       ]
     },
@@ -7185,9 +7216,9 @@
       "Kind": "Ninja",
       "Name": "Shizuma Hoshigaki",
       "Rank": "",
-      "Team": "7 épéistes de l'eau",
+      "Team": "7 Épéistes",
       "Chakra": "Eau",
-      "Element": "",
+      "Element": "Épéiste",
       "Cost": "6",
       "Attack": "3",
       "Defense": "4",
@@ -7239,7 +7270,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Entraves de glace. Tant qu'il est vivant, le ninja ennemi ciblé ne peut attaquer"
+          "Description": "<<Activate>> Entraves de glace : Tant qu'il est vivant, le ninja ennemi ciblé ne peut attaquer"
         }
       ]
     },
@@ -7366,7 +7397,7 @@
           "Description": "<<Permanent>> Charge"
         },
         {
-          "Description": "<<Instantané>> Manteau de Kyûbi: le ninja ciblé ne peut être la cible d'attaques ou de Ninjutsu"
+          "Description": "<<Instantané>> Manteau de Kyûbi: Le ninja ciblé ne peut être la cible d'attaques ou de Ninjutsu"
         }
       ]
     },
@@ -7397,7 +7428,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Elimination éclair : Élimine le ninja indemne ciblé"
+          "Description": "<<Instantané>> Élimination éclair : Élimine le ninja indemne ciblé"
         },
         {
           "Description": "<<Activate>> Mille oiseaux : inflige 1D6 dégâts à la cible"
@@ -7567,7 +7598,7 @@
           "Description": "<<Spécial>> Empoisonnement par les insectes : Un ninja ciblé subit 1 point de dégât par tour"
         },
         {
-          "Description": "<<Activate>> Barriere d'insectes : Ajoute 2 PV à Shino Aburame"
+          "Description": "<<Activate>> Barrière d'insectes : Ajoute 2 PV à Shino Aburame"
         }
       ]
     },
@@ -7677,7 +7708,7 @@
       "Cost": "7",
       "Attack": "5",
       "Defense": "4",
-      "Citation": null,
+      "Citation": "Chôjû Giga",
       "Comments": null,
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -7694,7 +7725,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Fûinjutsu : Scellement Le ninja ciblé est directement envoyé au cimetière"
+          "Description": "<<Activate>> Fûinjutsu : Le ninja ciblé est directement envoyé au cimetière"
         }
       ]
     },
@@ -8087,7 +8118,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>> Limelight : À chacun des tours du joueur, ajouter un jeton, et au bout de 3 jetons , 8 points de dégâts sont infligés à tous les personnages adverses"
+          "Description": "<<Spécial>> Limelight : À chacun des tours du joueur, ajouter un jeton, et au bout de 3 jetons, 8 points de dégâts sont infligés à tous les personnages adverses"
         }
       ]
     },
@@ -8623,10 +8654,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Bulle prison : Renvoie dans la main de son propriétaire le ninja ciblé"
+          "Description": "<<Activate>> Bulle prison : Renvoi dans la main de son propriétaire le ninja ciblé"
         },
         {
-          "Description": "<<Instantané>> Dôme de Glace : protège de tout dégât l'allié ciblé tant qu'il est en vie"
+          "Description": "<<Instantané>> Dôme de Glace : Protège de tout dégât l'allié ciblé tant qu'il est en vie"
         }
       ]
     },
@@ -9041,7 +9072,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Sacrifie un allié avec tout sa vie pour en faire revenir un autre de n'importe quel cimetière"
+          "Description": "<<Instantané>> Sacrifie un allié avec toute sa vie pour en faire revenir un autre en jeu de n'importe quel cimetière"
         }
       ]
     },
@@ -9106,10 +9137,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Amaterasu : Retire 1 pv à chaque ninjas en jeu ennemi,  à chaque tour"
+          "Description": "<<Instantané>> Amaterasu : Retire 1 pv à chaque ninja en jeu ennemi, à chaque tour"
         },
         {
-          "Description": "<<Spécial>> Au choix,  Inflige 2 dégâts au héros ou  détruit le kinjutsu"
+          "Description": "<<Spécial>> Au choix : Inflige 2 dégâts au héros ou  détruit le kinjutsu"
         }
       ]
     },
@@ -9177,7 +9208,7 @@
           "Description": "<<Instantané>> Inflige X points de dégâts à la cible"
         },
         {
-          "Description": "<Spécial>> Inflige X points de dégats au héros"
+          "Description": "<Spécial>> Inflige X points de dégâts au héros"
         }
       ]
     },
@@ -9273,7 +9304,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Au prochain tour, le héros adverse ne peut que faire attaque ses alliés (rien qui ne consomme de chakra)"
+          "Description": "<<Instantané>> Au prochain tour, le héros adverse ne peut que faire attaquer ses alliés (rien qui ne consomme de chakra)"
         }
       ]
     },
