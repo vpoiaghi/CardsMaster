@@ -47,23 +47,16 @@ Maintenant que la fonctionnalité est validée, voir comment elle sera intégré
 
 UPD cartes :
 
-Rempacer cote a cote par adjacent
-Ashuria -> ajouter allié
+
+
 Texte pochette rouleau ? Armure ? ?
-Sakura 1D4
-Shiriku : 2/6
-tobi sort instantanné +1 pv
-Kai genjutsu
-Chusin : attaque a distance
-Genma PV-1
-Emprisonnement des morts 10->9
 Village de suna -> Préciser sur les cartes
-Tsunade ajouter allié
 Revoir inochika cho
-Technique de substitution : n'importe quel perso
+
+
 Pot de purification ambrée : plus image : ajouter qu'on peut le détruire
 Vallée de la foudre : pas d'atk / les autres
 
-Naruto invocation kurama
 
-ouverture des 8 portes ... pas clair
+
+

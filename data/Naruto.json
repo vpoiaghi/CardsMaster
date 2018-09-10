@@ -95,7 +95,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas de vent gagnent +3/+3"
+          "Description": "<<Permanent>>  Les ninjas de vent alliés gagnent +3/+3"
         }
       ]
     },
@@ -222,7 +222,7 @@
           "Description": "<<activate>>  Rasengan : Inflige 1D6 dégâts à un ninja ennemi"
         },
         {
-          "Description": "<<activate>>  Se transforme en  Kyûbi"
+          "Description": "<<activate>>  Se transforme en  Kurama (Celui-ci remplace Naruto qui est envoyé au cimetière)"
         }
       ]
     },
@@ -253,7 +253,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Soigne 1D6+2 PV à un allié (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Soigne 1D4 PV à un allié (Utilisable 1 fois par tour)"
         }
       ]
     },
@@ -328,7 +328,7 @@
       "Element": "",
       "Cost": "5",
       "Attack": "3",
-      "Defense": "3",
+      "Defense": "4",
       "Citation": "Jikûkan Ninjutsu",
       "Comments": "",
       "Nb": 1,
@@ -346,7 +346,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Faille dimensionnelle : Envoie au cimetière le ninja ciblé"
+          "Description": "<<Instantané>> Faille dimensionnelle : Envoie au cimetière le ninja ciblé"
         }
       ]
     },
@@ -613,7 +613,7 @@
       "Element": "",
       "Cost": "3",
       "Attack": "2",
-      "Defense": "3",
+      "Defense": "2",
       "Citation": "Senbon",
       "Comments": "",
       "Nb": 1,
@@ -1424,7 +1424,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>   Détruit l'adversaire d'une puissante frappe"
+          "Description": "<<Instantané>>   Détruit le ninja ciblé d'une puissante frappe"
         },
         {
           "Description": "<<activate>>  Invoque Katsuyu"
@@ -1678,7 +1678,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires côte à côte et inflige 3 dégâts à chacun puis disparait"
+          "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires adjacents et inflige 3 dégâts à chacun puis disparait"
         }
       ]
     },
@@ -1709,7 +1709,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires côte à côte et inflige 3 dégâts à chacun puis disparait"
+          "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires adjacents et inflige 3 dégâts à chacun puis disparait"
         }
       ]
     },
@@ -1740,7 +1740,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires côte à côte et inflige 3 dégâts à chacun puis disparait"
+          "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires adjacents et inflige 3 dégâts à chacun puis disparait"
         }
       ]
     },
@@ -1771,7 +1771,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires côte à côte et inflige 3 dégâts à chacun puis disparait"
+          "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires adjacents et inflige 3 dégâts à chacun puis disparait"
         }
       ]
     },
@@ -1802,7 +1802,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires côte à côte et inflige 3 dégâts à chacun puis disparait"
+          "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires adjacents et inflige 3 dégâts à chacun puis disparait"
         }
       ]
     },
@@ -1833,7 +1833,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires côte à côte et inflige 3 dégâts à chacun puis disparait"
+          "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires adjacents et inflige 3 dégâts à chacun puis disparait"
         }
       ]
     },
@@ -1864,7 +1864,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires côte à côte et inflige 3 dégâts à chacun puis disparait"
+          "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires adjacents et inflige 3 dégâts à chacun puis disparait"
         }
       ]
     },
@@ -1895,7 +1895,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires côte à côte et inflige 3 dégâts à chacun et redevient son Hôte"
+          "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires adjacents et inflige 3 dégâts à chacun et redevient son Hôte"
         }
       ]
     },
@@ -1926,7 +1926,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires côte à côte et inflige 3 dégâts à chacun et redevient son Hôte"
+          "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires adjacents et inflige 3 dégâts à chacun et redevient son Hôte"
         }
       ]
     },
@@ -2800,7 +2800,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Mille oiseaux : Inflige 1D4 dégâts à 2 ninjas côte à côte"
+          "Description": "<<activate>>  Mille oiseaux : Inflige 1D4 dégâts à 2 ninjas adjacents"
         },
         {
           "Description": "<<Instantané>>   Invocation de Susanô"
@@ -3122,7 +3122,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>   Charge"
+          "Description": "<<Instantané>> Charge"
         },
         {
           "Description": "<<Permanent>>  Furie des vents : Déplacement instantané. Peut attaquer 2 fois par tour"
@@ -3187,7 +3187,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Attaque 2 ninjas côte à côte"
+          "Description": "<<Permanent>>  Attaque 2 ninjas adjacents"
         },
         {
           "Description": "<<activate>>  Se transforme en Hachibi"
@@ -3450,7 +3450,7 @@
       "Chakra": "Foudre",
       "Element": "",
       "Cost": "5",
-      "Attack": "0",
+      "Attack": "",
       "Defense": "3",
       "Citation": "Shimagame",
       "Comments": "",
@@ -3484,7 +3484,7 @@
       "Chakra": "Foudre",
       "Element": "",
       "Cost": "5",
-      "Attack": "0",
+      "Attack": "",
       "Defense": "3",
       "Citation": "Unraikyô",
       "Comments": "",
@@ -3503,7 +3503,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Les ninjas alliés gagnent +2 ATK"
+          "Description": "<<Permanent>> Les autres ninjas alliés gagnent +2 ATK"
         }
       ]
     },
@@ -3515,7 +3515,7 @@
       "Chakra": "Spécial",
       "Element": "Genjutsu",
       "Cost": "5",
-      "Attack": "0",
+      "Attack": "",
       "Defense": "3",
       "Citation": "Kamui",
       "Comments": "",
@@ -4352,7 +4352,7 @@
           "Description": "<<Permanent>>  Insensible aux attaques Bijù"
         },
         {
-          "Description": "<<Permanent>>  Frappe 2 adversaires côte à côte"
+          "Description": "<<Permanent>>  Frappe 2 adversaires adjacents"
         }
       ]
     },
@@ -4983,7 +4983,7 @@
       "Chakra": "Eau",
       "Element": "",
       "Cost": "5",
-      "Attack": "0",
+      "Attack": "",
       "Defense": "3",
       "Citation": "Naruto Rameeeeeen",
       "Comments": "2 exemplaires",
@@ -5222,7 +5222,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Les ninjas de Suna gagnent +2 PV"
+          "Description": "<<Permanent>> Les ninjas  en affinité avec la terre gagnent +2 PV"
         }
       ]
     },
@@ -5323,9 +5323,9 @@
       "Kind": "Equipement",
       "Name": "Pochettes à rouleau",
       "Rank": "",
-      "Team": "Armure",
+      "Team": "Accessoire",
       "Chakra": "Equipement",
-      "Element": "Torse",
+      "Element": "Cuisse",
       "Cost": "3",
       "Attack": "",
       "Defense": "",
@@ -5416,7 +5416,7 @@
       "Kind": "Equipement",
       "Name": "Pochette à pilules",
       "Rank": "",
-      "Team": "Armure",
+      "Team": "Accessoire",
       "Chakra": "Equipement",
       "Element": "Ceinture",
       "Cost": "3",
@@ -5447,7 +5447,7 @@
       "Kind": "Equipement",
       "Name": "Etuis à shurikens",
       "Rank": "",
-      "Team": "Armure",
+      "Team": "Accessoire",
       "Chakra": "Equipement",
       "Element": "Cuisse",
       "Cost": "3",
@@ -5718,7 +5718,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Inflige 3 dégât à distance sans contre-attaque possible à 2 ninjas côte à côte. Est détruit après utilisation"
+          "Description": "<<activate>>  Inflige 3 dégât à distance sans contre-attaque possible à 2 ninjas adjacents. Est détruit après utilisation"
         }
       ]
     },
@@ -5922,7 +5922,7 @@
     },
     {
       "Kind": "Equipement",
-      "Name": "Pot de purification ambré",
+      "Name": "Pôt de purification ambré",
       "Rank": "Légendaire",
       "Team": "Arme",
       "Chakra": "Equipement",
@@ -5950,7 +5950,7 @@
           "Description": "<<activate>>  Scelle un ninja définitivement (Utilisable 1 fois par tour en attaque)"
         },
         {
-          "Description": "<<Spécial>>  À chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au héros"
+          "Description": "<<Spécial>>  S'il ne reste pas 6 points de chakra au joueur à la fin de son tour, inflige 6 dommages au héros. Une fois le tribu payé, peut être détruit"
         }
       ]
     },
@@ -5959,7 +5959,7 @@
       "Name": "Kaï",
       "Rank": "",
       "Team": "Ninjutsu",
-      "Chakra": "Genjustsu",
+      "Chakra": "Genjutsu",
       "Element": "Genjutsu",
       "Cost": "3",
       "Attack": "",
@@ -6842,7 +6842,7 @@
           "Description": "<<Permanent>> Protection"
         },
         {
-          "Description": "<<Activate>> Pilier de feu : Inflige 3 dégâts de feu à 2 ennemis côte à côte"
+          "Description": "<<Activate>> Pilier de feu : Inflige 3 dégâts de feu à 2 ennemis adjacents"
         }
       ]
     },
@@ -7827,7 +7827,7 @@
           "Description": "<<Instantané>> Shanaro : Élimine un ninja ciblé"
         },
         {
-          "Description": "<<Spécial>> Soigne 1D3 PV au ninja ciblé, utilisable une fois par tour"
+          "Description": "<<Spécial>> Soigne 1D4 PV au ninja ciblé, utilisable une fois par tour"
         }
       ]
     },
@@ -8124,7 +8124,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Kusanagi no Tsurugi : Fait parcourir les Mille Oiseaux au travers de son katana pour infliger 2 dégâts à 2 ennemis côte à côte"
+          "Description": "<<Activate>> Kusanagi no Tsurugi : Fait parcourir les Mille Oiseaux au travers de son katana pour infliger 2 dégâts à 2 ennemis adjacents"
         }
       ]
     },
@@ -8198,8 +8198,8 @@
       "Chakra": "Feu",
       "Element": "",
       "Cost": "5",
-      "Attack": "3",
-      "Defense": "8",
+      "Attack": "2",
+      "Defense": "6",
       "Citation": "Raigô - Senjusatsu",
       "Comments": "",
       "Nb": 1,
@@ -8499,7 +8499,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Effectue une permutation pour annuler les dégâts devant être infligés au héros"
+          "Description": "<<Instantané>> Effectue une permutation pour annuler les dégâts devant être infligés à n'importe quel personnage"
         },
         {
           "Description": "<<Spécial>> Utilisable à n'importe quel tour, y compris de l'adversaire"
@@ -8787,7 +8787,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>Shuriken géant : Inflige 2 points de dégâts au ninja ciblé"
+          "Description": "<<Instantané>>Shuriken géant : Inflige 2 points de dégâts à distance au ninja ciblé"
         }
       ]
     },
@@ -9276,7 +9276,7 @@
           "Description": "<<Instantané>> Inflige X points de dégâts à la cible"
         },
         {
-          "Description": "<Spécial>> Inflige X points de dégâts au héros"
+          "Description": "<<Spécial>> Inflige X points de dégâts au héros lançant le sort"
         }
       ]
     },
