@@ -9409,6 +9409,192 @@
           "Description": "<<Spécial>> Inflige 2 dégâts au héros"
         }
       ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Condor",
+      "Rank": "",
+      "Team": "Autruche Ninja",
+      "Chakra": "Physique",
+      "Element": "Physique",
+      "Cost": "1",
+      "Attack": "1",
+      "Defense": "2",
+      "Citation": "Dacho Senpûgeki",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Ouragan Autruche : Charge"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Korobi",
+      "Rank": "",
+      "Team": "Equipe Gaara",
+      "Chakra": "Terre",
+      "Element": "Marionnettiste",
+      "Cost": "1",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Charge"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Yaoki",
+      "Rank": "",
+      "Team": "Equipe Gaara",
+      "Chakra": "Terre",
+      "Element": "Marionnettiste",
+      "Cost": "1",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Charge"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Kandachi",
+      "Rank": "",
+      "Team": "Second d'Hanzo",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>> Invocation Roi Conch"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Roi Conch",
+      "Rank": "",
+      "Team": "Invocation",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "1",
+      "Defense": "3",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Select3",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Prends le contrôle du ninja ciblé tant qu'il est en vie"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Tsukado",
+      "Rank": "",
+      "Team": "Épéiste",
+      "Chakra": "Physique",
+      "Element": "Physique",
+      "Cost": "1",
+      "Attack": "1",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Charge"
+        }
+      ]
     }
   ],
   "SkinFile": "Naruto.original.skin"
