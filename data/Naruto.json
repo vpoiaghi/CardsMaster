@@ -1204,7 +1204,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Invocation au choix de Gamabunta, Gamaken ou Gamahiro"
+          "Description": "<<activate>>  Invocation au choix de Gamabunta, Gamaken, Gamahiro ou Gamariki"
         }
       ]
     },
@@ -5760,12 +5760,12 @@
       "Team": "Arme",
       "Chakra": "Equipement",
       "Element": "1 main",
-      "Cost": "2",
+      "Cost": "1",
       "Attack": "1",
       "Defense": "",
       "Citation": "Makibishis",
       "Comments": "",
-      "Nb": 1,
+      "Nb": 6,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
@@ -9416,7 +9416,7 @@
       "Rank": "",
       "Team": "Autruche Ninja",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "1",
       "Attack": "1",
       "Defense": "2",
@@ -9445,7 +9445,7 @@
       "Kind": "Ninja",
       "Name": "Korobi",
       "Rank": "",
-      "Team": "Equipe Gaara",
+      "Team": "Équipe Gaara",
       "Chakra": "Terre",
       "Element": "Marionnettiste",
       "Cost": "1",
@@ -9476,7 +9476,7 @@
       "Kind": "Ninja",
       "Name": "Yaoki",
       "Rank": "",
-      "Team": "Equipe Gaara",
+      "Team": "Équipe Gaara",
       "Chakra": "Terre",
       "Element": "Marionnettiste",
       "Cost": "1",
@@ -9509,7 +9509,7 @@
       "Rank": "",
       "Team": "Second d'Hanzo",
       "Chakra": "Eau",
-      "Element": "Eau",
+      "Element": "",
       "Cost": "3",
       "Attack": "1",
       "Defense": "3",
@@ -9540,7 +9540,7 @@
       "Rank": "",
       "Team": "Invocation",
       "Chakra": "Eau",
-      "Element": "Eau",
+      "Element": "",
       "Cost": "",
       "Attack": "1",
       "Defense": "3",
@@ -9571,7 +9571,7 @@
       "Rank": "",
       "Team": "Épéiste",
       "Chakra": "Physique",
-      "Element": "Physique",
+      "Element": "",
       "Cost": "1",
       "Attack": "1",
       "Defense": "2",
@@ -9593,6 +9593,316 @@
       "Powers": [
         {
           "Description": "<<Instantané>> Charge"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Iô",
+      "Rank": "",
+      "Team": "Ingénieur",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Toutes les armes du héros gagnent +2 ATK"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Shôseki",
+      "Rank": "",
+      "Team": "Ingénieur",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Toutes les armures du héros gagnent +2 DEF"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Tsurukame",
+      "Rank": "",
+      "Team": "Arme",
+      "Chakra": "Equipement",
+      "Element": "2 mains",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Weapon>>Ninja Armory",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Au choix : Absorbe 2 dégâts d'une seule attaque ou inflige 1 dégât à distance à 2 alliés"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Dakô",
+      "Rank": "",
+      "Team": "Arme",
+      "Chakra": "Equipement",
+      "Element": "2 mains",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Weapon>>Ninja Armory",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Inflige 1 point de dégât à distance à 2 alliés adjacents"
+        }
+      ]
+    },
+    {
+      "Kind": "Equipement",
+      "Name": "Jidanda",
+      "Rank": "",
+      "Team": "Arme",
+      "Chakra": "Equipement",
+      "Element": "2 mains",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Weapon>>Ninja Armory",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Inflige 2 points de dégâts distants à 2 alliées adjacents"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Gamariki",
+      "Rank": "",
+      "Team": "Invocation",
+      "Chakra": "Genjutsu",
+      "Element": "",
+      "Cost": "",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Select3",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Empêche l'allié ciblé de toute action tant qu'il est en vie"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Tekuno Kanden",
+      "Rank": "",
+      "Team": "Patrouilleur",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>> Mitrailleuse à parchemins explosifs : Inflige 2 points de dégât à tous les alliés adverses"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Hayama Shirakumo",
+      "Rank": "",
+      "Team": "Épéiste",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "2",
+      "Defense": "3",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> S'il achève un ennemi, peut attaquer une deuxieme fois"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Kosuke Maruboshi",
+      "Rank": "",
+      "Team": "Éternel Genin",
+      "Chakra": "Terre",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "3",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Fin cuisinier : Au début de son tour, soigne 1 PV à tous les alliés"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Nekomata",
+      "Rank": "",
+      "Team": "Chat Ninja",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>>Genjutsu du chat : Prends le contrôle du ninja ciblé tant qu'il est en vie"
         }
       ]
     }
