@@ -9468,7 +9468,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Charge"
+          "Description": "<<Instantané>> Pioche une carte"
         }
       ]
     },
@@ -9499,7 +9499,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Charge"
+          "Description": "<<Instantané>> Pioche une carte"
         }
       ]
     },
@@ -9572,7 +9572,7 @@
       "Team": "Épéiste",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "1",
+      "Cost": "2",
       "Attack": "1",
       "Defense": "2",
       "Citation": "",
@@ -9592,7 +9592,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Charge"
+          "Description": "<<Instantané>> Pioche une carte"
         }
       ]
     },
@@ -9872,6 +9872,37 @@
       "Powers": [
         {
           "Description": "<<Permanent>> Fin cuisinier : Au début de son tour, soigne 1 PV à tous les alliés"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Hanare",
+      "Rank": "",
+      "Team": "Espionne",
+      "Chakra": "Genjutsu",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Pioche une carte"
         }
       ]
     },
