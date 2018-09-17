@@ -10190,12 +10190,12 @@
       "Name": "Urushi",
       "Rank": "",
       "Team": "Crocs traqueurs",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": "Kuchiyose Doton Tsuiga no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -10212,13 +10212,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>Pistage : Pioche une carte"
         }
       ]
     },
@@ -10227,12 +10221,12 @@
       "Name": "Shiba",
       "Rank": "",
       "Team": "Crocs traqueurs",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": "Kuchiyose Doton Tsuiga no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -10249,13 +10243,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>Pistage : Pioche une carte"
         }
       ]
     },
@@ -10264,12 +10252,12 @@
       "Name": "Bisuke",
       "Rank": "",
       "Team": "Crocs traqueurs",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": "Kuchiyose Doton Tsuiga no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -10286,13 +10274,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>Pistage : Pioche une carte"
         }
       ]
     },
@@ -10301,12 +10283,12 @@
       "Name": "Akino",
       "Rank": "",
       "Team": "Crocs traqueurs",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": "Kuchiyose Doton Tsuiga no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -10323,13 +10305,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>Pistage : Pioche une carte"
         }
       ]
     },
@@ -10338,12 +10314,12 @@
       "Name": "Ûhei",
       "Rank": "",
       "Team": "Crocs traqueurs",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": "Kuchiyose Doton Tsuiga no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -10360,13 +10336,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>Pistage : Pioche une carte"
         }
       ]
     },
@@ -10375,12 +10345,12 @@
       "Name": "Guruko",
       "Rank": "",
       "Team": "Crocs traqueurs",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": "Kuchiyose Doton Tsuiga no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -10397,13 +10367,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>Pistage : Pioche une carte"
         }
       ]
     },
@@ -10412,12 +10376,12 @@
       "Name": "Bull",
       "Rank": "",
       "Team": "Crocs traqueurs",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": "Kuchiyose Doton Tsuiga no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -10434,13 +10398,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>Pistage : Pioche une carte"
         }
       ]
     },
@@ -10449,12 +10407,12 @@
       "Name": "Pakkun",
       "Rank": "",
       "Team": "Crocs traqueurs",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": "Kuchiyose Doton Tsuiga no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -10471,13 +10429,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>Pistage : Pioche une carte"
         }
       ]
     },
