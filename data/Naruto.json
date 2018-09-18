@@ -134,7 +134,7 @@
       "Kind": "Ninja",
       "Name": "Yamato",
       "Rank": "Capitaine",
-      "Team": "La Racine",
+      "Team": "Anbu",
       "Chakra": "Terre",
       "Element": "",
       "Cost": "3",
@@ -261,7 +261,7 @@
       "Kind": "Ninja",
       "Name": "Saï",
       "Rank": "",
-      "Team": "Équipe 7",
+      "Team": "La Racine",
       "Chakra": "Eau",
       "Element": "Encre",
       "Cost": "3",
@@ -3438,7 +3438,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Utilise le sceau des 4 anti-éléments et inflige 3 points de dégâts à tous les adversaires en se donnant la mort"
+          "Description": "<<activate>>  Invoque Baku puis utilise le sceau des 4 anti-éléments et inflige 3 points de dégâts à tous les adversaires en se donnant la mort"
         }
       ]
     },
@@ -9571,7 +9571,7 @@
       "Rank": "",
       "Team": "Épéiste",
       "Chakra": "Physique",
-      "Element": "",
+      "Element": "Épéiste",
       "Cost": "2",
       "Attack": "1",
       "Defense": "2",
@@ -9819,7 +9819,7 @@
       "Rank": "",
       "Team": "Épéiste",
       "Chakra": "Physique",
-      "Element": "",
+      "Element": "Épéiste",
       "Cost": "2",
       "Attack": "2",
       "Defense": "3",
@@ -10161,9 +10161,9 @@
       "Team": "Espion",
       "Chakra": "Genjutsu",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -10181,7 +10181,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Séparation de l'âme : "
+          "Description": "<<Activate>> Séparation de l'âme : L'attaque de l'allié ciblé passe à 0"
         }
       ]
     },
@@ -10437,13 +10437,13 @@
       "Kind": "Ninja",
       "Name": "Hiruko",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Team": "Nukenin",
+      "Chakra": "Genjutsu",
+      "Element": "Chimère",
+      "Cost": "5",
+      "Attack": "3",
+      "Defense": "5",
+      "Citation": "Kimera no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -10460,13 +10460,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Tout dégat non physique le touchant et renvoyé à son lanceur"
         }
       ]
     },
@@ -10474,12 +10468,12 @@
       "Kind": "Ninja",
       "Name": "Ichi",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Team": "Nukenin",
+      "Chakra": "Genjutsu",
+      "Element": "Chimère",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -10497,13 +10491,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Tout dégat non physique le touchant et renvoyé à son lanceur"
         }
       ]
     },
@@ -10511,12 +10499,12 @@
       "Kind": "Ninja",
       "Name": "San",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Team": "Nukenin",
+      "Chakra": "Genjutsu",
+      "Element": "Chimère",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -10534,13 +10522,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Tout dégat non physique le touchant et renvoyé à son lanceur"
         }
       ]
     },
@@ -10548,12 +10530,12 @@
       "Kind": "Ninja",
       "Name": "Ni",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Team": "Nukenin",
+      "Chakra": "Genjutsu",
+      "Element": "Chimère",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -10571,13 +10553,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Invoque le Ninken de Ni"
         }
       ]
     },
@@ -10586,11 +10562,11 @@
       "Name": "Ninken de Ni",
       "Rank": "",
       "Team": "Invocation",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Chakra": "Genjutsu",
+      "Element": "Chimère",
       "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Attack": "1",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -10608,13 +10584,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Lance d'os : Inflige 2 dégats à distance à l'allié ciblé"
         }
       ]
     },
@@ -10625,9 +10595,9 @@
       "Team": "Assassin",
       "Chakra": "Terre",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -10645,13 +10615,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Armure de pierre"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Armure de pierre : réduit tous les dégêts subits de 1"
         }
       ]
     },
@@ -10660,11 +10624,11 @@
       "Name": "Terai",
       "Rank": "",
       "Team": "Anbu",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Feu",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -10682,13 +10646,348 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
+          "Description": "<<Instantané>> Assassine le ninja de feu ciblé"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Hyô",
+      "Rank": "",
+      "Team": "La Racine",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
         {
-          "Description": "Power 2"
-        },
+          "Description": "<<Instantané>> Assassine le ninja d'eau ciblé"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Raïga Kurosuki",
+      "Rank": "",
+      "Team": "Anbu",
+      "Chakra": "Foudre",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
         {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Assassine le ninja de foudre ciblé"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Shin",
+      "Rank": "",
+      "Team": "La Racine",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Assassine le ninja blessé ciblé"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Komachi",
+      "Rank": "",
+      "Team": "Anbu",
+      "Chakra": "Vent",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Assassine le ninja de vent ciblé"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Towa",
+      "Rank": "",
+      "Team": "Anbu",
+      "Chakra": "Vent",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Assassine le ninja de vent ciblé"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Tora",
+      "Rank": "",
+      "Team": "Anbu",
+      "Chakra": "Terre",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Assassine le ninja de terre ciblé"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Ushi",
+      "Rank": "",
+      "Team": "Anbu",
+      "Chakra": "Terre",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Assassine le ninja de terre ciblé"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Shisui Uchiha",
+      "Rank": "",
+      "Team": "Anbu",
+      "Chakra": "Genjutsu",
+      "Element": "Sharingan",
+      "Cost": "5",
+      "Attack": "3",
+      "Defense": "3",
+      "Citation": "Kotoamatsukami",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Prends définitivement le contrôle du ninja ciblé"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Zô",
+      "Rank": "",
+      "Team": "Anbu",
+      "Chakra": "Foudre",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Assassine le ninja de foudre ciblé"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Yûgao Uzuki",
+      "Rank": "",
+      "Team": "Anbu",
+      "Chakra": "Physique",
+      "Element": "Épéiste",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "4",
+      "Citation": "Mikazuki no Mai",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>>Danse sous la Nouvelle Lune : Inflige 2 points dégâts à 2 ninjas adjacents sans contre-attaque possible"
+        }
+      ]
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Baku",
+      "Rank": "",
+      "Team": "Invocation",
+      "Chakra": "Vent",
+      "Element": "",
+      "Cost": "",
+      "Attack": "1",
+      "Defense": "4",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Select3",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Amplifie les attaques des ninjas de vent de 1"
         }
       ]
     },
@@ -10697,11 +10996,11 @@
       "Name": "Naho",
       "Rank": "",
       "Team": "Princesse",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "4",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -10719,13 +11018,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Le tour de son entrée en jeu, emêche l'adversaire de gagner 1 point de chakra"
         }
       ]
     },
@@ -10734,11 +11027,11 @@
       "Name": "Urakaku",
       "Rank": "",
       "Team": "Samouraï",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "5",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -10756,13 +11049,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Protection"
         }
       ]
     },
@@ -10771,11 +11058,11 @@
       "Name": "Okisuke",
       "Rank": "",
       "Team": "Samouraï",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "5",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -10793,13 +11080,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Protection"
         }
       ]
     },
@@ -10807,12 +11088,12 @@
       "Kind": "Ninja",
       "Name": "Mifune",
       "Rank": "",
-      "Team": "Samouraï",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Team": "Épéiste",
+      "Chakra": "Physique",
+      "Element": "Épéiste",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "4",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -10830,13 +11111,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "<<Permanent>> Attaque simultanément 2 ninjas adjacents"
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Spécial>> La voie du samouraï : Tous les dégats qui lui sont infligés sont réduits de 1"
         }
       ]
     },
@@ -10845,11 +11123,11 @@
       "Name": "Tôfu",
       "Rank": "",
       "Team": "Espion",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -10867,13 +11145,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Pioche une carte"
         }
       ]
     }
