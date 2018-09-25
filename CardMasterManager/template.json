@@ -24,6 +24,7 @@
       "IntField3": null,
       "IntField4": null,
       "Background": null,
+      "Warning" : "True",
     "Powers": [
       {
         "Description": "Power 1"

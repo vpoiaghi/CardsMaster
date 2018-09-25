@@ -32,7 +32,8 @@
         {
           "Description": "<<activate>>  Astre Divin : Détruit un ninja ennemi"
         }
-      ]
+      ],
+      "Warning": true
     },
     {
       "Kind": "Ninja",
@@ -66,7 +67,8 @@
         {
           "Description": "<<activate>>  Inflige 2 dégâts à tous les ennemis"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -97,7 +99,8 @@
         {
           "Description": "<<Permanent>>  Les ninjas de vent alliés gagnent +3/+3"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -128,7 +131,8 @@
         {
           "Description": "<<Permanent>>  Les ninjas de feu gagnent +3/+3"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -159,7 +163,8 @@
         {
           "Description": "<<Instantané>>   Détruit un bijù ennemi au choix"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -190,7 +195,8 @@
         {
           "Description": "<<Instantané>>   Copie et lance le jutsu d'un ninja présent sur le champs de bataille"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -224,7 +230,8 @@
         {
           "Description": "<<activate>>  Se transforme en  Kurama (Celui-ci remplace Naruto qui est envoyé au cimetière)"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -255,7 +262,8 @@
         {
           "Description": "<<Permanent>>  Soigne 1D4 PV à un allié (Utilisable 1 fois par tour)"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -286,7 +294,8 @@
         {
           "Description": "<<activate>>  Invoque le Tigre d'encre"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -317,7 +326,8 @@
         {
           "Description": "<<Instantané>>   Charge"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -348,7 +358,8 @@
         {
           "Description": "<<Instantané>> Faille dimensionnelle : Envoie au cimetière le ninja ciblé"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -379,7 +390,8 @@
         {
           "Description": "<<activate>>  Étourdi un ninja pour 2 tours"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -413,7 +425,8 @@
         {
           "Description": "<<Instantané>>   Charge"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -444,7 +457,8 @@
         {
           "Description": "<<activate>>  Prends le contrôle d'un adversaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -475,7 +489,8 @@
         {
           "Description": "<<activate>>  Prends le contrôle d'un adversaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -506,7 +521,8 @@
         {
           "Description": "<<activate>>  Prends le contrôle de 2 adversaires"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -537,7 +553,8 @@
         {
           "Description": "<<Instantané>>   Grande confusion : Choisissez 2 ennemis qui doivent s'affronter"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -571,7 +588,8 @@
         {
           "Description": "<<Instantané>>   Charge"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -602,7 +620,8 @@
         {
           "Description": "<<Permanent>>  Ses attaques ignorent l'armure de l'adversaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -633,7 +652,8 @@
         {
           "Description": "<<Permanent>>  Ses attaques ne subissent pas de contre-attaque"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -664,7 +684,8 @@
         {
           "Description": "<<Permanent>>  Insensible au Genjutsu"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -695,7 +716,8 @@
         {
           "Description": "<<activate>>  Marée de mucus : Immobilise 1 ninja pendant 1 tour"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -726,7 +748,8 @@
         {
           "Description": "<<Instantané>>   Prends le contrôle d'un adversaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -760,7 +783,8 @@
         {
           "Description": "<<Instantané>>  Byakugan : Révèle 3 cartes de pioche, en garde une , défausse les autres"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -794,7 +818,8 @@
         {
           "Description": "<<Instantané>>  Byakugan : Révèle 3 cartes de pioche, en garde une, défausse les autres"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -825,7 +850,8 @@
         {
           "Description": "<<Permanent>>  Furie des vents : Attaquent 2 fois par tour"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -856,7 +882,8 @@
         {
           "Description": "<<Instantané>>   Détruit 2 points de chakra de l'adversaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -887,7 +914,8 @@
         {
           "Description": "<<Permanent>>  Protection"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -921,7 +949,8 @@
         {
           "Description": "<<Instantané>>  Byakugan : Révèle 3 cartes de pioche, en garde une, défausse les autres"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -952,7 +981,8 @@
         {
           "Description": "<<Permanent>>  Protection"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -983,7 +1013,8 @@
         {
           "Description": "<<Permanent>> Invocation d'armes : Ses attaques ne subissent pas de contre-attaque"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1014,7 +1045,8 @@
         {
           "Description": "<<activate>>  Invoque un clone d'ombre qui encaisse les dégâts devant tuer Ebisu"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1045,7 +1077,8 @@
         {
           "Description": "<<Activate>>  Annule définitivement le pouvoir d'un adversaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1079,7 +1112,8 @@
         {
           "Description": "<<Permanent>>  Insensible aux dégâts de poison"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1110,7 +1144,8 @@
         {
           "Description": "<<activate>>  Annule le pouvoir d'un adversaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1141,7 +1176,8 @@
         {
           "Description": "<<activate>>  Annule le pouvoir d'un adversaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1175,7 +1211,8 @@
         {
           "Description": "<<Spécial>>  Attaque 2 fois par tour"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1206,7 +1243,8 @@
         {
           "Description": "<<activate>>  Invocation au choix de Gamabunta, Gamaken, Gamahiro ou Gamariki"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1237,7 +1275,8 @@
         {
           "Description": "<<Permanent>>  Régénère 2 PV à la fin de chaque tour"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1268,7 +1307,8 @@
         {
           "Description": "<<Permanent>>  Protection"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1299,7 +1339,8 @@
         {
           "Description": "<<Instantané>>  Destruction des échoppes : Inflige 2 points de dégâts à tous les ninjas ennemis"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1336,7 +1377,8 @@
         {
           "Description": "<<Spécial>> Tant que Shima et Fukasaku sont en vie, l'adversaire ne peut pas invoquer d'allié"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1367,7 +1409,8 @@
         {
           "Description": "<<Spécial>> Insensible aux dégâts tant que Jiraya possède tous ses points de vie"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1398,7 +1441,8 @@
         {
           "Description": "<<Spécial>> Insensible aux dégâts tant que Jiraya possède tous ses points de vie"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1432,7 +1476,8 @@
         {
           "Description": "<<activate>>  Invoque Katsuyu"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1466,7 +1511,8 @@
         {
           "Description": "<<Spécial>>  Manipulation du Shôton : Gagne +5 PV tant qu'elle n'a pas encore attaqué"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1497,7 +1543,8 @@
         {
           "Description": "<<Permanent>>Ultrason : Un flot de chauve-souris empêche les 2 camps de lancer des ninjutsu tant qu'il est en vie"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1528,7 +1575,8 @@
         {
           "Description": "<<Permanent>> Insensible aux attaques physiques"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1559,7 +1607,8 @@
         {
           "Description": "<<Permanent>>Nuage de fumée : Empêche les 2 camps de lancer des ninjutsu tant qu'il est en vie"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1590,7 +1639,8 @@
         {
           "Description": "<<Permanent>>Nuage de fumée : Empêche les 2 camps de lancer des ninjutsu tant qu'il est en vie"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1621,7 +1671,8 @@
         {
           "Description": "<<Permanent>> Insensible aux attaques physiques"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1652,7 +1703,8 @@
         {
           "Description": "<<Spécial>>Quand il meure, invoque Isobu (Sanbi)"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1683,7 +1735,8 @@
         {
           "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires adjacents et inflige 3 dégâts à chacun puis disparait"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1714,7 +1767,8 @@
         {
           "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires adjacents et inflige 3 dégâts à chacun puis disparait"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1745,7 +1799,8 @@
         {
           "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires adjacents et inflige 3 dégâts à chacun puis disparait"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1776,7 +1831,8 @@
         {
           "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires adjacents et inflige 3 dégâts à chacun puis disparait"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1807,7 +1863,8 @@
         {
           "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires adjacents et inflige 3 dégâts à chacun puis disparait"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1838,7 +1895,8 @@
         {
           "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires adjacents et inflige 3 dégâts à chacun puis disparait"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1869,7 +1927,8 @@
         {
           "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires adjacents et inflige 3 dégâts à chacun puis disparait"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1900,7 +1959,8 @@
         {
           "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires adjacents et inflige 3 dégâts à chacun et redevient son Hôte"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1931,7 +1991,8 @@
         {
           "Description": "<<activate>>  Orbe Bijù : Frappe 2 adversaires adjacents et inflige 3 dégâts à chacun et redevient son Hôte"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1962,7 +2023,8 @@
         {
           "Description": "<<Instantané>>   Prends le contrôle d'un adversaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -1993,7 +2055,8 @@
         {
           "Description": "<<activate>>  Clone aqueux : Invoque un clone aqueux"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2027,7 +2090,8 @@
         {
           "Description": "<<Instantané>>   Charge"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2058,7 +2122,8 @@
         {
           "Description": "<<Instantané>>   Renvoie tous les autres ninjas adverses dans la main de leur propriétaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2089,7 +2154,8 @@
         {
           "Description": "<<Instantané>>   Invoque autant de clones Zetsu que d'adversaires"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2120,7 +2186,8 @@
         {
           "Description": "<<Instantané>>   Invoque autant de clones Zetsu que d'adversaires"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2151,7 +2218,8 @@
         {
           "Description": "<<Instantané>>   Charge"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2182,7 +2250,8 @@
         {
           "Description": "<<activate>>  Bombe d'argile explosive : Inflige 2 dégâts à tous les ennemis (Utilisable 1 fois par tour)"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2216,7 +2285,8 @@
         {
           "Description": "<<Permanent>>  Poison : Détruit le ninja blessé par Sasori à la fin du tour"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2247,7 +2317,8 @@
         {
           "Description": "<<Instantané>>   Charge"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2278,7 +2349,8 @@
         {
           "Description": "<<Permanent>>  Donne +3 PV aux Uchiwa alliés"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2309,7 +2381,8 @@
         {
           "Description": "<<Instantané>> Ressuscite 2 alliés du cimetière et les remet en jeu"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2340,7 +2413,8 @@
         {
           "Description": "<<Permanent>>  Insensible aux attaques non physiques"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2371,7 +2445,8 @@
         {
           "Description": "<<Spécial>> Mur de parchemins explosifs : Quand elle meure, inflige 3 dégâts à tous les ninjas du champs de bataille"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2402,7 +2477,8 @@
         {
           "Description": "<<Instantané>> Répulsion céleste : Renvoie tous les ninjas adverses dans la main de leur propriétaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2433,7 +2509,8 @@
         {
           "Description": "<<Permanent>> Lecture de l'esprit : Esquive les premiers dégâts devant lui être infligés à chaque tour"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2464,7 +2541,8 @@
         {
           "Description": "<<Instantané>> Le poignet de Shuradô se détache comme un missile explosif sur la cible et inflige 2 dégâts à distance"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2495,7 +2573,8 @@
         {
           "Description": "<<Activate>> Ressuscite un allié du cimetière au début de chaque tour du joueur"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2526,7 +2605,8 @@
         {
           "Description": "<<Permanent>>Absorbe tous les ninjutsu et y est insensible"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2557,7 +2637,8 @@
         {
           "Description": "<<Spécial>> Peut à chaque début de tour du joueur invoquer au choix :  un chien multicéphale , un caméléon, un crabe, un oiseau , un panda ou un rhinocéros"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2588,7 +2669,8 @@
         {
           "Description": "<<Permanent>> Gagne 1 point d'attaque pour chaque dégât sur lui"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2619,7 +2701,8 @@
         {
           "Description": "<<Permanent>> À chacun de ses tours,  peut au choix attaquer ou se camoufler et devient ainsi inciblable"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2650,7 +2733,8 @@
         {
           "Description": "<<Instantané>> Vague de bulle chaotique : Renvoie le ninja ciblé dans la main de son propriétaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2681,7 +2765,8 @@
         {
           "Description": "<<Charge>>"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2712,7 +2797,8 @@
         {
           "Description": "<<Permanent>> Protection"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2743,7 +2829,8 @@
         {
           "Description": "<<Permanent>> Charge"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2774,7 +2861,8 @@
         {
           "Description": "<<Spécial>>  Ressuscite 3 ninjas de n'importe quel cimetière lorsqu'il meure et les met en jeu"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2808,7 +2896,8 @@
         {
           "Description": "<<Instantané>>   Invocation de Susanô"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2839,7 +2928,8 @@
         {
           "Description": "<<Permanent>>  Protection pour Sasuke uniquement"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2873,7 +2963,8 @@
         {
           "Description": "<<Spécial>>  Détruit 1 bijù adverse lorsqu'elle meurt"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2904,7 +2995,8 @@
         {
           "Description": "<<Permanent>>  Insensible aux attaques physiques"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2938,7 +3030,8 @@
         {
           "Description": "<<Spécial>>  Berserker : Gagne +4/-2 lorsqu'il attaque"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -2969,7 +3062,8 @@
         {
           "Description": "<<activate>>  Volcan : Tous les ninjas de feu gagnent +2 ATK"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3000,7 +3094,8 @@
         {
           "Description": "<<Permanent>>  Insensible aux attaques physiques et spéciales"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3034,7 +3129,8 @@
         {
           "Description": "<<activate>>  Byakugan : Révèle 3 cartes de pioche, en garde une, défausse les autres"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3065,7 +3161,8 @@
         {
           "Description": "<<activate>>  Soin : Pile soigne 1, Face soigne 2 (Utilisable 1 fois par tour)"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3096,7 +3193,8 @@
         {
           "Description": "<<activate>>  Se transforme en Hachibi"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3130,7 +3228,8 @@
         {
           "Description": "<<Permanent>>  Furie des vents : Déplacement instantané. Peut attaquer 2 fois par tour"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3161,7 +3260,8 @@
         {
           "Description": "<<Instantané>> Transfert instantanné : Vous pouvez dérober jusqu'à 2 pièces d'équipement à l'adversaire "
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3195,7 +3295,8 @@
         {
           "Description": "<<activate>>  Se transforme en Hachibi"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3226,7 +3327,8 @@
         {
           "Description": "<<Instantané>>   Retire le pouvoir d'un ninja ennemi"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3257,7 +3359,8 @@
         {
           "Description": "<<activate>>  Envoie une panthère de foudre noire sur l'ennemi et inflige 1D6 dégâts"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3288,7 +3391,8 @@
         {
           "Description": "<<Activate>> Mur de Caoutchouc : Donne +1 HP aux membres de l'équipe"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3319,7 +3423,8 @@
         {
           "Description": "<<Permanent>>  Protection"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3350,7 +3455,8 @@
         {
           "Description": "<<Permanent>>  Katana de foudre : Gagne +2 ATK contre la Terre"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3381,7 +3487,8 @@
         {
           "Description": "<<Permanent>>  Katana de foudre : Gagne +2 ATK contre la Terre"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3412,7 +3519,8 @@
         {
           "Description": "<<Permanent>>  Poison : Détruit le ninja blessé par Torune à la fin du tour"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3446,7 +3554,8 @@
         {
           "Description": "<<Special>> Quand il meure, met en jeu une version Izanagi de lui-même"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3480,7 +3589,8 @@
         {
           "Description": "<<Special>> Quand il meure, met en jeu une version Izanagi de lui-même s'il en reste"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Lieu légendaire",
@@ -3514,7 +3624,8 @@
         {
           "Description": "<<Permanent>>  Soigne entièrement un ninja au choix (Utilisable 1 fois par tour)"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Lieu légendaire",
@@ -3545,7 +3656,8 @@
         {
           "Description": "<<Permanent>> Les autres ninjas alliés gagnent +2 ATK"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Lieu légendaire",
@@ -3579,7 +3691,8 @@
         {
           "Description": "<<activate>>  Soigne entièrement un ninja au choix (Utilisable 1 fois par tour)"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3613,7 +3726,8 @@
         {
           "Description": "<<Spécial>>  Le tombeau du désert : Si Gaara élimine un Ninja et qu'il survit au combat, peut détruire n'importe quel autre Ninja"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3644,7 +3758,8 @@
         {
           "Description": "<<Instantané>>   Lame du vent : Renvoie le ninja ciblé dans la main de son propriétaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3675,7 +3790,8 @@
         {
           "Description": "<<Instantané>>   Invoque ses 2 marionnettes Karasu et Kuroari"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3706,7 +3822,8 @@
         {
           "Description": "<<Instantané>> Un ninja au choix est invulnérable tant que les marionnettes sont en vie"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3737,7 +3854,8 @@
         {
           "Description": "<<activate>>  Jinton, Détachement du monde primitif : Détruit le ninja ciblé"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3768,7 +3886,8 @@
         {
           "Description": "<<activate>> Prison de pierre : Le ninja ciblé ne peut plus attaquer"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3799,7 +3918,8 @@
         {
           "Description": "<<Permanent>>  Les ninjas de terre gagnent +3 PV"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3830,7 +3950,8 @@
         {
           "Description": "<<Permanent>> Protection"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3861,7 +3982,8 @@
         {
           "Description": "<<Activate>> Clone aqueux : permet d'annuler les dégâts reçus"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3892,7 +4014,8 @@
         {
           "Description": "<<Activate>> Suiton, Le grand typhon : englouti 1 ennemi sous les flots"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3923,7 +4046,8 @@
         {
           "Description": "<<Permanent>> Affection par les sons perçants : Ignore la protection des adversaires"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3954,7 +4078,8 @@
         {
           "Description": "<<activate>> Lance 1 senbon sur chaque adversaire leur infligeant 1 point de dégât chacun"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -3985,7 +4110,8 @@
         {
           "Description": "<<Permanent>> Ondes cinglantes : Ignore la protection des adversaires"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4016,7 +4142,8 @@
         {
           "Description": "<<Permanent>>  Sécrétion de la toile : Le ninja ciblé ne peut plus attaquer tant que Kidômaru est en jeu"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4047,7 +4174,8 @@
         {
           "Description": "<<Instantané>>   Rempart de terre : les alliés gagnent +2 PV tant qu'il est en vie"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4078,7 +4206,8 @@
         {
           "Description": "<<activate>>   Invoque Triple Rempart"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4109,7 +4238,8 @@
         {
           "Description": "<<Permanent>>  Protection"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4140,7 +4270,8 @@
         {
           "Description": "<<Permanent>>  Flûte démoniaque: L'ennemi ciblé ne peut plus attaquer, ne peut plus lancer de sort et annule ses pouvoirs tant que Tayuya est en vie"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4171,7 +4302,8 @@
         {
           "Description": "<<Permanent>>  Danse du camélia : Gagne +2 d'ATK contre les ninjas physiques"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4205,7 +4337,8 @@
         {
           "Description": "<<activate>>  Invoque Manda"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4236,7 +4369,8 @@
         {
           "Description": "<<activate>>  Ressuscite 2 alliés du cimetière et les remet dans la main du joueur"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4267,7 +4401,8 @@
         {
           "Description": "<<Instantané>>   Élimine le ninja ciblé"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4298,7 +4433,8 @@
         {
           "Description": "<<Permanent>>  Armure de foudre : Insensible aux attaques de foudre"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4329,7 +4465,8 @@
         {
           "Description": "<<Permanent>>  Protection : Mur de poussière d'or"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4360,7 +4497,8 @@
         {
           "Description": "<<Permanent>>  Dissimulation du chakra : Intouchable tant qu'il n'a pas attaqué 1 fois"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4394,7 +4532,8 @@
         {
           "Description": "<<Permanent>>  Frappe 2 adversaires adjacents"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4425,7 +4564,8 @@
         {
           "Description": "<<Spécial>>  Chakra de Kyûbi : Gagne +3/+3 si présence de Kinkaku à ses côtés"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4456,7 +4596,8 @@
         {
           "Description": "<<Spécial>>  Chakra de Kyûbi : Gagne +3/+3 si présence de Ginkaku à ses côtés"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4487,7 +4628,8 @@
         {
           "Description": "<<Permanent>>  Poison : Détruit le ninja blessé par Hanzô à la fin du tour"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4521,7 +4663,8 @@
         {
           "Description": "<<Permanent>>  Déplacement <<Instantané>> Attaque 2 fois par tour"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4552,7 +4695,8 @@
         {
           "Description": "<<activate>>  Soigne X PV à un allié (Utilisable 1 fois par tour)"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4583,7 +4727,8 @@
         {
           "Description": "<<activate>>  Suiton - Dragon Aqueux : Inflige (Random D4) dommage à un adversaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4614,7 +4759,8 @@
         {
           "Description": "<<activate>>   Emprisonnement des Morts : Pile ou face : Pile détruit l'ennemi avec Hiruzen, Face seul Hiruzen meure"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4645,7 +4791,8 @@
         {
           "Description": "<<Permanent>>  Poison : Détruit le ninja blessé par Manda à la fin du tour"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4676,7 +4823,8 @@
         {
           "Description": "<<activate>>  Soigne 1D4 PV à tous les alliés (Utilisable 1 fois par tour)"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4707,7 +4855,8 @@
         {
           "Description": "<<Instantané>>   Camouflage : Bombe de fumée"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4741,7 +4890,8 @@
         {
           "Description": "<<Spécial>>  Donne +4 PV aux Bijù alliés"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4775,7 +4925,8 @@
         {
           "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4809,7 +4960,8 @@
         {
           "Description": "<<Spécial>>  Gagne +1/+1 pour chaque ninja de type Eau dans son camp"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4843,7 +4995,8 @@
         {
           "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4877,7 +5030,8 @@
         {
           "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4911,7 +5065,8 @@
         {
           "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4945,7 +5100,8 @@
         {
           "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4979,7 +5135,8 @@
         {
           "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -5013,7 +5170,8 @@
         {
           "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Lieu légendaire",
@@ -5047,7 +5205,8 @@
         {
           "Description": "<<Permanent>>  Soigne entièrement un ninja au choix (Utilisable 1 fois par tour)"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Environnement",
@@ -5078,7 +5237,8 @@
         {
           "Description": "<<Permanent>>  Les ninjas en affinité avec l'eau gagnent +1/+1"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Environnement",
@@ -5109,7 +5269,8 @@
         {
           "Description": "<<Permanent>>  Les ninjas physiques gagnent +1/+1"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Environnement",
@@ -5140,7 +5301,8 @@
         {
           "Description": "<<Permanent>>  Les ninjas en affinité avec le vent gagnent +1/+1"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Environnement",
@@ -5171,7 +5333,8 @@
         {
           "Description": "<<Permanent>>  Les ninjas en affinité avec la foudre gagnent +1/+1"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Environnement",
@@ -5202,7 +5365,8 @@
         {
           "Description": "<<Permanent>>  Les ninjas en affinité avec la terre gagnent +1/+1"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Environnement",
@@ -5233,7 +5397,8 @@
         {
           "Description": "<<Permanent>>  Les ninjas en affinité spéciale gagnent +1/+1"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Environnement",
@@ -5264,7 +5429,8 @@
         {
           "Description": "<<Permanent>> Les ninjas  en affinité avec la terre gagnent +2 PV"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Environnement",
@@ -5295,7 +5461,8 @@
         {
           "Description": "<<Permanent>> Les ninjas en affinité avec l'eau gagnent +1/+1"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Environnement",
@@ -5326,7 +5493,8 @@
         {
           "Description": "<<Permanent>>  Les ninjas en affinité avec le feu gagnent +1/+1"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -5357,7 +5525,8 @@
         {
           "Description": "<<Permanent>>  Réduit de 1 dégât tous les dégâts reçus par le héros pour chaque adversaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -5388,7 +5557,8 @@
         {
           "Description": "<<Permanent>>  Les ninjas coûtent 1 chakra de moins à invoquer"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -5419,7 +5589,8 @@
         {
           "Description": "<<Permanent>>  Réduit de 3 dégâts tous les dégâts reçus par le héros pour chaque adversaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -5450,7 +5621,8 @@
         {
           "Description": "<<Permanent>>  Réduit de 1 dégât tous les dégâts reçus par le héros pour chaque adversaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -5481,7 +5653,8 @@
         {
           "Description": "<<activate>>  Soigne 2 PV au ninja ciblé (Utilisable 1 fois par tour)"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -5512,7 +5685,8 @@
         {
           "Description": "<<activate>>  Inflige 1 dégât à distance sans contre-attaque possible au ninja ciblé (Utilisable 1 fois par tour)"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -5543,7 +5717,8 @@
         {
           "Description": "<<Permanent>>  Réduit de 1 dégât tous les dégâts reçus par le héros pour chaque adversaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -5574,7 +5749,8 @@
         {
           "Description": "<<activate>>  Inflige 1 dégât à distance sans contre-attaque possible au ninja ciblé et reçoit normalement les dégâts (Utilisable 1 fois par tour, en attaque ou en défense)"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -5605,7 +5781,8 @@
         {
           "Description": "<<activate>>  Inflige 2 dégâts au corps à corps au ninja ciblé et reçoit normalement les dégâts (Utilisable 1 fois par tour, en attaque ou en défense)"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -5636,7 +5813,8 @@
         {
           "Description": "<<activate>>  Inflige 1 dégât à distance sans contre-attaque possible à 2 ninjas ciblés (Utilisable 1 fois par tour)"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -5667,7 +5845,8 @@
         {
           "Description": "<<activate>>  Inflige 1 dégât au corps à corps au ninja ciblé et reçoit normalement les dégâts (Utilisable 1 fois par tour, en attaque ou en défense)"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -5698,7 +5877,8 @@
         {
           "Description": "<<activate>>  Inflige 1 dégât à distance sans contre-attaque possible  au ninja ciblé (utilisable 1 fois par tour)"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -5729,7 +5909,8 @@
         {
           "Description": "<<activate>>  Inflige 2 dégâts au corps à corps au ninja ciblé et reçoit normalement les dégâts (Utilisable 1 fois par tour, en attaque ou en défense)"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -5760,7 +5941,8 @@
         {
           "Description": "<<activate>>  Inflige 3 dégât à distance sans contre-attaque possible à 2 ninjas adjacents. Est détruit après utilisation"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -5791,7 +5973,8 @@
         {
           "Description": "<<activate>>  Confère camouflage à l'allié ciblé. Est détruit après utilisation"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -5822,7 +6005,8 @@
         {
           "Description": "<<activate>>  Empêche un ninja ciblé d'attaquer pendant 2 tours. Est détruit après utilisation"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -5856,7 +6040,8 @@
         {
           "Description": "<<Spécial>>   À chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au héros"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -5890,7 +6075,8 @@
         {
           "Description": "<<Spécial>>  À chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au héros"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -5924,7 +6110,8 @@
         {
           "Description": "<<Spécial>>  À chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au héros"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -5958,7 +6145,8 @@
         {
           "Description": "<<Spécial>>  À chaque début de tour du joueur, consomme 6 points chakras ou inflige 6 dommages au héros"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -5992,7 +6180,8 @@
         {
           "Description": "<<Spécial>>  S'il ne reste pas 6 points de chakra au joueur à la fin de son tour, inflige 6 dommages au héros. Une fois le tribu payé, peut être détruit"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninjutsu",
@@ -6026,7 +6215,8 @@
         {
           "Description": "<<Spécial>> Utilisable à n'importe quel tour, y compris de l'adversaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninjutsu",
@@ -6057,7 +6247,8 @@
         {
           "Description": "<<Instantané>>   Détruit la pièce d'équipement ciblée "
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Quête",
@@ -6091,7 +6282,8 @@
         {
           "Description": "<<Récompense>>  Ressuscite un bijù du cimetière directement en jeu"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Quête",
@@ -6125,7 +6317,8 @@
         {
           "Description": "<<Récompense>>  Piochez 2 cartes"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Quête",
@@ -6159,7 +6352,8 @@
         {
           "Description": "<<Récompense>>  Vous gagnez un tour supplémentaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Quête",
@@ -6193,7 +6387,8 @@
         {
           "Description": "<<Récompense>>Vous piochez 1 carte"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6224,7 +6419,8 @@
         {
           "Description": "<<Permanent>>  Jûken : Gagne +1 ATK lorsqu'il attaque"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6255,7 +6451,8 @@
         {
           "Description": "<<Activate>> Boule de Feu Suprême : Inflige 2 points de dégâts à la cible"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6286,7 +6483,8 @@
         {
           "Description": "<<Permanent>> Étreinte souple : Cible un ennemi et l'empêche d'attaquer tant qu'il est en vie"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6317,7 +6515,8 @@
         {
           "Description": "<<Activate>>  Manipulation des ombres : Cible un ennemi et l'empêche d'attaquer pour 2 tours"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6348,7 +6547,8 @@
         {
           "Description": "<<Permanent>>  Protection"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6379,7 +6579,8 @@
         {
           "Description": "<<Activate>>  Toile aux monstres fantômatiques : Invoque un aigle d'encre"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6413,7 +6614,8 @@
         {
           "Description": "<<Permanent>>  Furie des vents : Attaque 2 fois"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6444,7 +6646,8 @@
         {
           "Description": "<<Permanent>>  Soutien Technologique : Donne +2 PV à tous les alliés tant qu'il est en vie"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6475,7 +6678,8 @@
         {
           "Description": "<<Activate>> Mur de terre : Absorbe les dégâts devant être infligés au ninja ciblé"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6506,7 +6710,8 @@
         {
           "Description": "<<Permanent>> Intimidation : Gagne +2/+1 tant qu'il est le seul ninja en lice"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6540,7 +6745,8 @@
         {
           "Description": "<<Activate>> Stratège : Invoque Nué"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6571,7 +6777,8 @@
         {
           "Description": "<<Permanent>> Couverture du chat : Attaque 2 fois par tour"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6602,7 +6809,8 @@
         {
           "Description": "<<Activate>> Onde sonore : Les ninjas ennemis ne peuvent pas attaquer au prochain tour"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6633,7 +6841,8 @@
         {
           "Description": "<<Activate>>  Explosion : Disparait en infligeant 3 dégâts à tout le monde"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6664,7 +6873,8 @@
         {
           "Description": "<<Permanent>>Charge"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6695,7 +6905,8 @@
         {
           "Description": "<<Permanent>>Charge"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6726,7 +6937,8 @@
         {
           "Description": "<<Activate>> Projette son lapin sur l'ennemi et inflige 1D4 de dégâts"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6757,7 +6969,8 @@
         {
           "Description": "<<Permanent>> Charge"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6788,7 +7001,8 @@
         {
           "Description": "<<Permanent>> Charge"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6819,7 +7033,8 @@
         {
           "Description": "<<Permanent>> Charge"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6850,7 +7065,8 @@
         {
           "Description": "<<Activate>>  Byakugan : Pioche 2 cartes puis se défausse de 2 cartes"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6884,7 +7100,8 @@
         {
           "Description": "<<Activate>> Pilier de feu : Inflige 3 dégâts de feu à 2 ennemis adjacents"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6915,7 +7132,8 @@
         {
           "Description": "<<Activate>>  Nuage de limaille : Tous les alliés gagnent +2 PV tant qu'il est en vie"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6946,7 +7164,8 @@
         {
           "Description": "<<Permanent>> Ouïe fine : Esquive la première attaque de chaque tour"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -6977,7 +7196,8 @@
         {
           "Description": "<<Activate>> Fils de chakra : Invoque une marionnette qui encaisse les dégâts à sa place"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7008,7 +7228,8 @@
         {
           "Description": "<<Activate>> Bulle de gomme : Cible un ennemi et l'empêche d'attaquer pour 2 tours"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7039,7 +7260,8 @@
         {
           "Description": "<<Permanent>> Ses équipiers gagnent +1 ATK tant qu'il est en vie"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7070,7 +7292,8 @@
         {
           "Description": "<<Permanent>> Attaque éclair : Attaque 2 fois par tour"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7101,7 +7324,8 @@
         {
           "Description": "<<Permanent>>  Insensible aux dégâts physiques"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7132,7 +7356,8 @@
         {
           "Description": "<<Permanent>>  Insensible aux dégâts physiques"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7163,7 +7388,8 @@
         {
           "Description": "<<Permanent>>  Insensible aux dégâts non physiques"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7194,7 +7420,8 @@
         {
           "Description": "<<Permanent>>  Insensible aux dégâts non physiques"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7225,7 +7452,8 @@
         {
           "Description": "<<Spécial>> Revient dans la main du joueur quand il meurt"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7256,7 +7484,8 @@
         {
           "Description": "<<Permanent>> Vous piochez 1 carte à chaque début de tour de chaque joueur"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7287,7 +7516,8 @@
         {
           "Description": "<<Permanent>> Furie des vents : Peut attaquer 2 fois par tour"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7318,7 +7548,8 @@
         {
           "Description": "<<Instantané>> Vous piochez 3 cartes"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7349,7 +7580,8 @@
         {
           "Description": "<<Permanent>> Sphère d'eau : Peut soit attaquer soit empêcher l'ennemi d'attaquer. Les pouvoirs de l'adversaire restent actifs"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7380,7 +7612,8 @@
         {
           "Description": "<<Activate>> Entraves de glace : Tant qu'il est vivant, le ninja ennemi ciblé ne peut attaquer"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7411,7 +7644,8 @@
         {
           "Description": "<<Permanent>> Gagne +2 PV quand il défend"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7442,7 +7676,8 @@
         {
           "Description": "<<Permanent>> Protection"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7473,7 +7708,8 @@
         {
           "Description": "<<Activate>> Invoque 2 policiers de Konoha"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7507,7 +7743,8 @@
         {
           "Description": "<<Instantané>> Manteau de Kyûbi: Le ninja ciblé ne peut être la cible d'attaques ou de Ninjutsu"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7541,7 +7778,8 @@
         {
           "Description": "<<Activate>> Mille oiseaux : inflige 1D6 dégâts à la cible"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7575,7 +7813,8 @@
         {
           "Description": "<<Permanent>> Se soigne de 1 PV par tour"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7609,7 +7848,8 @@
         {
           "Description": "<<Permanent>>  Protection"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7640,7 +7880,8 @@
         {
           "Description": "<<Activate>> Rasengan : Inflige 1D6 de dégât sans subir de dégâts en retour"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7674,7 +7915,8 @@
         {
           "Description": "<<Activate>> Poison pourpre : Inflige 1D2 de dégât au ninja ciblé"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7708,7 +7950,8 @@
         {
           "Description": "<<Activate>> Barrière d'insectes : Ajoute 2 PV à Shino Aburame"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7739,7 +7982,8 @@
         {
           "Description": "<<Permanent>> Protection : Barrière de morve "
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7770,7 +8014,8 @@
         {
           "Description": "<<Permanent>> Attaque 2 cibles adjacentes "
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7804,7 +8049,8 @@
         {
           "Description": "<<Instantané>> Byakugan : Pioche 2 cartes"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7835,7 +8081,8 @@
         {
           "Description": "<<Activate>> Fûinjutsu : Le ninja ciblé est directement envoyé au cimetière"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7869,7 +8116,8 @@
         {
           "Description": "<<Spécial>> Soigne 1D4 PV au ninja ciblé, utilisable une fois par tour"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7903,7 +8151,8 @@
         {
           "Description": "<<Spécial>> Si 3 membres du trio Ino-Shika-Cho sont présents, ceux-ci gagnent +3 ATK et +3 PV"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7940,7 +8189,8 @@
         {
           "Description": "<<Spécial>> Si 3 membres du trio Ino-Shika-Cho sont présents, ceux-ci gagnent +3 ATK et +3 PV"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -7974,7 +8224,8 @@
         {
           "Description": "<<Spécial>> Si 3 membres d'une configuration Ino-Shika-Cho sont présents, ceux-ci gagnent +3 ATK et +3 PV"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8005,7 +8256,8 @@
         {
           "Description": "<<Permanent>> Les poings souples : Tout ninja touché par cette attaque ne peut plus lancer de ninjutsu"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8039,7 +8291,8 @@
         {
           "Description": "<<Permanent>> Se soigne de 1 PV par tour"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8070,7 +8323,8 @@
         {
           "Description": "<<Spécial>> Ajoute 1 point à la réserve de chakra"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8101,7 +8355,8 @@
         {
           "Description": "<<Permanent>> Multi clonage : Peut attaquer jusqu'à 3 fois par tour"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8135,7 +8390,8 @@
         {
           "Description": "<<Spécial>> Quand Chiyo meure, elle ramène à la vie le ninja du cimetière allié ciblé"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -8166,7 +8422,8 @@
         {
           "Description": "<<Activate>> Kusanagi no Tsurugi : Fait parcourir les Mille Oiseaux au travers de son katana pour infliger 2 dégâts à 2 ennemis adjacents"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8197,7 +8454,8 @@
         {
           "Description": "<<Permanent>> Griffe de chakra : Gagne +1 ATK contre les ennemis qui ont protection"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8228,7 +8486,8 @@
         {
           "Description": "<<Spécial>> Limelight : À chacun des tours du joueur, ajouter un jeton, et au bout de 3 jetons, 8 points de dégâts sont infligés à tous les personnages adverses"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8259,7 +8518,8 @@
         {
           "Description": "<<Activate>>Raigô : Assassinat aux Mille Bras : Inflige autant de dégâts que de PV restants"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8290,7 +8550,8 @@
         {
           "Description": "<<Instantané>> Tornade de Shakujô : Renvoie le ninja ciblé dans la main de son propriétaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8321,7 +8582,8 @@
         {
           "Description": "<<Permanent>>Stratège : Tous les ninjas de la terre gagnent +1/+1"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8352,7 +8614,8 @@
         {
           "Description": "<<Permanent>> À chaque début de tour, peut choisir une nouvelle affinité pour 1 tour"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8383,7 +8646,8 @@
         {
           "Description": "<<Permanent>> Armure de diamant: Protection"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8414,7 +8678,8 @@
         {
           "Description": "<<Activate>>Lame Noire : Exécute instantanément la cible"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8445,7 +8710,8 @@
         {
           "Description": "<<Permanent>>Lecture de l'Esprit : Ne reçoit aucun dégât la première fois qu'il attaque, valable à chaque début de tour"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8476,7 +8742,8 @@
         {
           "Description": "<<Permanent>> Danse sous la Nouvelle Lune : Ne subit jamais de contre-attaque"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8510,7 +8777,8 @@
         {
           "Description": "<<Spécial>> Tous les membres alliés du clan Ôtsutsuki gagnent +2 ATK/+2 PV"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninjutsu",
@@ -8544,7 +8812,8 @@
         {
           "Description": "<<Spécial>> Utilisable à n'importe quel tour, y compris de l'adversaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8575,7 +8844,8 @@
         {
           "Description": "<<Activate>> Éclair pourfendeur : Inflige 2 dégâts à chaque adversaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8606,7 +8876,8 @@
         {
           "Description": "<<Spécial>> Sharingan : Esquive la première attaque de chaque tour"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8637,7 +8908,8 @@
         {
           "Description": "<<Spécial>> Technique de la Paume Mystique : Soigne 2 PV à un ninja ciblé à chaque début de tour du joueur"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8671,7 +8943,8 @@
         {
           "Description": "<<Spécial>> Attaque 2 fois par tour si Kuromaru est en vie"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8702,7 +8975,8 @@
         {
           "Description": "<<Spécial>> Attaque 2 fois par tour si Tsume Inuzuka est en vie"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8733,7 +9007,8 @@
         {
           "Description": "<<Activate>> Lame de vent : Inflige 2 points de dégâts au ninja ciblé"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8767,7 +9042,8 @@
         {
           "Description": "<<Instantané>> Dôme de Glace : Protège de tout dégât l'allié ciblé tant qu'il est en vie"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8798,7 +9074,8 @@
         {
           "Description": "<<Instantané>> Vague du Chaos : Renvoie dans la main de son propriétaire le ninja ciblé"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8829,7 +9106,8 @@
         {
           "Description": "<<Instantané>>Shuriken géant : Inflige 2 points de dégâts à distance au ninja ciblé"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8860,7 +9138,8 @@
         {
           "Description": "<<Instantané>>Lancé de kunaïs : Inflige 1 point de dégât à 2 ninjas"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8891,7 +9170,8 @@
         {
           "Description": "<<Permanent>>Montée de Foudre : Inflige 1 dégât supplémentaire aux ninjas adjacents à la cible"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8922,7 +9202,8 @@
         {
           "Description": "<<Permanent>> Protection"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -8953,7 +9234,8 @@
         {
           "Description": "<<Activate>>Transfert de Chakra : Donne +1 ATK/+1 PV aux alliés adjacents"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninjutsu",
@@ -8987,7 +9269,8 @@
         {
           "Description": "<<Spécial>> Nécessite au moins 4 ninjas dans le camp"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninjutsu",
@@ -9018,7 +9301,8 @@
         {
           "Description": "<<Instantané>> Élimine tous les ninjas des 2 camps"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninjutsu",
@@ -9052,7 +9336,8 @@
         {
           "Description": "<<Spécial>> Nécessite au moins 4 ninjas dans le camp"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninjutsu",
@@ -9086,7 +9371,8 @@
         {
           "Description": "<<Spécial>> Inflige 5 dégâts au héros"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninjutsu",
@@ -9117,7 +9403,8 @@
         {
           "Description": "<<Instantané>> Les 2 héros sont tous les 2 éliminés (match nul)"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninjutsu",
@@ -9151,7 +9438,8 @@
         {
           "Description": "<<Spécial>> Inflige 2 points de dégâts au lanceur"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninjutsu",
@@ -9182,7 +9470,8 @@
         {
           "Description": "<<Instantané>> Sacrifie un allié avec toute sa vie pour en faire revenir un autre en jeu de n'importe quel cimetière"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninjutsu",
@@ -9216,7 +9505,8 @@
         {
           "Description": "<<Spécial>> Inflige 2 dégâts au héros"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninjutsu",
@@ -9250,7 +9540,8 @@
         {
           "Description": "<<Spécial>> Au choix : Inflige 2 dégâts au héros ou  détruit le kinjutsu"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninjutsu",
@@ -9284,7 +9575,8 @@
         {
           "Description": "<<Spécial>> Quand l'allié attaque, 1 point de dégât est transféré au héros ou détruit le kinjutsu"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninjutsu",
@@ -9318,7 +9610,8 @@
         {
           "Description": "<<Spécial>> Inflige X points de dégâts au héros lançant le sort"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninjutsu",
@@ -9352,7 +9645,8 @@
         {
           "Description": "<<Spécial>> Inflige 2 dégâts au héros"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninjutsu",
@@ -9383,7 +9677,8 @@
         {
           "Description": "<<Instantané>> Le héros attaque X fois avec l'arme équipée"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninjutsu",
@@ -9414,7 +9709,8 @@
         {
           "Description": "<<Instantané>> Au prochain tour, le héros adverse ne peut que faire attaquer ses alliés (rien qui ne consomme de chakra)"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninjutsu",
@@ -9448,7 +9744,8 @@
         {
           "Description": "<<Spécial>> Inflige 2 dégâts au héros"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -9479,7 +9776,8 @@
         {
           "Description": "<<Instantané>> Ouragan Autruche : Charge"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -9510,7 +9808,8 @@
         {
           "Description": "<<Instantané>> Pioche une carte"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -9541,7 +9840,8 @@
         {
           "Description": "<<Instantané>> Pioche une carte"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -9572,7 +9872,8 @@
         {
           "Description": "<<Activate>> Invocation Roi Conch"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -9603,7 +9904,8 @@
         {
           "Description": "<<Instantané>> Prends le contrôle du ninja ciblé tant qu'il est en vie"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -9634,7 +9936,8 @@
         {
           "Description": "<<Instantané>> Pioche une carte"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -9665,7 +9968,8 @@
         {
           "Description": "<<Permanent>> Toutes les armes du héros gagnent +2 ATK"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -9696,7 +10000,8 @@
         {
           "Description": "<<Permanent>> Toutes les armures du héros gagnent +2 DEF"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -9727,7 +10032,8 @@
         {
           "Description": "<<Permanent>> Au choix : Absorbe 2 dégâts d'une seule attaque ou inflige 1 dégât à distance à 2 alliés"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -9758,7 +10064,8 @@
         {
           "Description": "<<Permanent>> Inflige 1 point de dégât à distance à 2 alliés adjacents"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -9789,7 +10096,8 @@
         {
           "Description": "<<Permanent>> Inflige 2 points de dégâts distants à 2 alliées adjacents"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -9820,7 +10128,8 @@
         {
           "Description": "<<Instantané>> Empêche l'allié ciblé de toute action tant qu'il est en vie"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -9851,7 +10160,8 @@
         {
           "Description": "<<Activate>> Mitrailleuse à parchemins explosifs : Inflige 2 points de dégât à tous les alliés adverses"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -9882,7 +10192,8 @@
         {
           "Description": "<<Permanent>> S'il achève un ennemi, peut attaquer une deuxieme fois"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -9913,7 +10224,8 @@
         {
           "Description": "<<Permanent>> Fin cuisinier : Au début de son tour, soigne 1 PV à tous les alliés"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -9944,7 +10256,8 @@
         {
           "Description": "<<Instantané>>Genjutsu du chat : Prends le contrôle du ninja ciblé tant qu'il est en vie"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -9975,7 +10288,8 @@
         {
           "Description": "<<Instantané>> Pioche une carte"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10006,7 +10320,8 @@
         {
           "Description": "<<Instantané>> Hante un ninja adverse et lui fait attaquer un de ses alliés (Utilisable 1 fois par tour)"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10037,7 +10352,8 @@
         {
           "Description": "<<Instantané>> Pioche une carte"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10068,7 +10384,8 @@
         {
           "Description": "<<Instantané>> Pioche une carte"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10099,7 +10416,8 @@
         {
           "Description": "<<Instantané>> Jet de glue : Immobilise l'allié ciblé l'empêchant de porter des attaques physiques"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10130,7 +10448,8 @@
         {
           "Description": "<<Instantané>> Retire 1 point de chakra de l'adversaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10161,7 +10480,8 @@
         {
           "Description": "<<Instantané>> Retire 1 point de chakra de l'adversaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10192,7 +10512,8 @@
         {
           "Description": "<<Instantané>> Retire 1 point de chakra de l'adversaire"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10223,7 +10544,8 @@
         {
           "Description": "<<Activate>> Séparation de l'âme : L'attaque de l'allié ciblé passe à 0"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10254,7 +10576,8 @@
         {
           "Description": "<<Instantané>>Pistage : Pioche une carte"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10285,7 +10608,8 @@
         {
           "Description": "<<Instantané>>Pistage : Pioche une carte"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10316,7 +10640,8 @@
         {
           "Description": "<<Instantané>>Pistage : Pioche une carte"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10347,7 +10672,8 @@
         {
           "Description": "<<Instantané>>Pistage : Pioche une carte"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10378,7 +10704,8 @@
         {
           "Description": "<<Instantané>>Pistage : Pioche une carte"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10409,7 +10736,8 @@
         {
           "Description": "<<Instantané>>Pistage : Pioche une carte"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10440,7 +10768,8 @@
         {
           "Description": "<<Instantané>>Pistage : Pioche une carte"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10471,7 +10800,8 @@
         {
           "Description": "<<Instantané>>Pistage : Pioche une carte"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10502,7 +10832,8 @@
         {
           "Description": "<<Permanent>> Tout dégat non physique le touchant et renvoyé à son lanceur"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10533,7 +10864,8 @@
         {
           "Description": "<<Permanent>> Tout dégat non physique le touchant et renvoyé à son lanceur"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10564,7 +10896,8 @@
         {
           "Description": "<<Permanent>> Tout dégat non physique le touchant et renvoyé à son lanceur"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10595,7 +10928,8 @@
         {
           "Description": "<<Activate>> Invoque le Ninken de Ni"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10626,7 +10960,8 @@
         {
           "Description": "<<Instantané>> Lance d'os : Inflige 2 dégats à distance à l'allié ciblé"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10657,7 +10992,8 @@
         {
           "Description": "<<Permanent>> Armure de pierre : réduit tous les dégêts subits de 1"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10688,7 +11024,8 @@
         {
           "Description": "<<Instantané>> Assassine le ninja de feu ciblé"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10719,7 +11056,8 @@
         {
           "Description": "<<Instantané>> Assassine le ninja d'eau ciblé"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10750,7 +11088,8 @@
         {
           "Description": "<<Instantané>> Assassine le ninja de foudre ciblé"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10781,7 +11120,8 @@
         {
           "Description": "<<Instantané>> Assassine le ninja blessé ciblé"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10812,7 +11152,8 @@
         {
           "Description": "<<Instantané>> Assassine le ninja de vent ciblé"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10843,7 +11184,8 @@
         {
           "Description": "<<Instantané>> Assassine le ninja de vent ciblé"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10874,7 +11216,8 @@
         {
           "Description": "<<Instantané>> Assassine le ninja de terre ciblé"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10905,7 +11248,8 @@
         {
           "Description": "<<Instantané>> Assassine le ninja de terre ciblé"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10936,7 +11280,8 @@
         {
           "Description": "<<Instantané>> Prends définitivement le contrôle du ninja ciblé"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10967,7 +11312,8 @@
         {
           "Description": "<<Instantané>> Assassine le ninja de foudre ciblé"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -10998,7 +11344,8 @@
         {
           "Description": "<<Activate>>Danse sous la Nouvelle Lune : Inflige 2 points dégâts à 2 ninjas adjacents sans contre-attaque possible"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -11029,7 +11376,8 @@
         {
           "Description": "<<Permanent>> Amplifie les attaques des ninjas de vent de 1"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -11060,7 +11408,8 @@
         {
           "Description": "<<Instantané>> Le tour de son entrée en jeu, emêche l'adversaire de gagner 1 point de chakra"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -11091,7 +11440,8 @@
         {
           "Description": "<<Permanent>> Protection"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -11122,7 +11472,8 @@
         {
           "Description": "<<Permanent>> Protection"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -11156,7 +11507,8 @@
         {
           "Description": "<<Spécial>> La voie du samouraï : Tous les dégats qui lui sont infligés sont réduits de 1"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -11190,7 +11542,8 @@
         {
           "Description": "<<Activate>> Invoque Ponta"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -11221,7 +11574,8 @@
         {
           "Description": "<<Instantané>> protection"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -11252,7 +11606,8 @@
         {
           "Description": "<<Permanent>> Bruine de limaille de fer : Insensible aux attaques au corps à corps ou distance"
         }
-      ]
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -11283,7 +11638,8 @@
         {
           "Description": "<<Instantané>> Pioche une carte"
         }
-      ]
+      ],
+      "Warning": false
     }
   ],
   "SkinFile": "Naruto.original.skin"

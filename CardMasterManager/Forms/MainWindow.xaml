@@ -156,6 +156,15 @@
                             </DataGrid.Resources>
                             <DataGrid.Columns>
 
+                                <DataGridTemplateColumn Header="Warning" MinWidth="50" CanUserSort="True" SortMemberPath="Warning" >
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <!--<TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True}" BorderBrush="Transparent"/>-->
+                                            <CheckBox IsChecked="{Binding Warning, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True}" BorderBrush="Transparent" Width="30" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                
                                 <DataGridTemplateColumn Header="Nom" MinWidth="120" CanUserSort="True" SortMemberPath="Name" >
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>

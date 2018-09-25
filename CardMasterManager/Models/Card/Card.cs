@@ -40,6 +40,8 @@ namespace CardMasterManager
         private int? _intfield2;
         private int? _intfield3;
         private int? _intfield4;
+        private Boolean? _warning;
+
 
         public String Kind { get { return _kind; } set { _kind = value; RaisePropertyChanged("Kind"); } }
         public String Name { get { return _name; } set { _name = value; RaisePropertyChanged("Name"); } }
@@ -58,6 +60,8 @@ namespace CardMasterManager
         public String BackSide { get { return _backside; } set { _backside = value; RaisePropertyChanged("BackSide"); } }
         public String BackSkinName { get { return _backskinname; } set { _backskinname = value; RaisePropertyChanged("BackSkinName"); } }
         public String FrontSkinName { get { return _frontskinname; } set { _frontskinname = value; RaisePropertyChanged("FrontSkinName"); } }
+        public Boolean? Warning { get { return _warning; }  set { _warning = value; RaisePropertyChanged("Warning"); }
+        }
 
         //Custo
         public String StringField1 { get { return _stringfield1; } set { _stringfield1 = value; RaisePropertyChanged("StringField1"); } }
@@ -92,6 +96,7 @@ namespace CardMasterManager
             toReturn.BackSide = card.BackSide;
             toReturn.FrontSkinName = card.FrontSkinName;
             toReturn.BackSkinName = card.BackSkinName;
+            toReturn.Warning = card.Warning;
             //custo
             toReturn.StringField1 = card.StringField1;
             toReturn.StringField2 = card.StringField2;
@@ -128,6 +133,7 @@ namespace CardMasterManager
             toReturn.BackSide = card.BackSide;
             toReturn.FrontSkinName = card.FrontSkinName;
             toReturn.BackSkinName = card.BackSkinName;
+            toReturn.Warning = card.Warning;
             //custo
             toReturn.StringField1 = card.StringField1;
             toReturn.StringField2 = card.StringField2;

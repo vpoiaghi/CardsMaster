@@ -35,6 +35,8 @@ namespace CardMasterCard.Card
         public JsonTexture Background { get; set; }
         public List<JsonPower> Powers { get; set; }
 
+        public Boolean? Warning { get; set; }
+
         public JsonCard() : this(null)
         {
         }
