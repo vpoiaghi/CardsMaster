@@ -142,7 +142,7 @@
                         </ToolBarTray>
                     </DockPanel>
                     <StackPanel Orientation="Horizontal">
-                        <DataGrid Name="cardGrid" Margin="5" Width="1271" Height="813" SelectionMode="Single" AutoGenerateColumns="False" AlternatingRowBackground="Azure" AlternationCount="2" IsReadOnly="False" ItemsSource="{Binding Path=GridCardsList, NotifyOnSourceUpdated=True, Mode=TwoWay}"
+                        <DataGrid Name="cardGrid" Margin="5" Width="1271" Height="813" SelectionMode="Single" AutoGenerateColumns="False" AlternationCount="2" IsReadOnly="False" ItemsSource="{Binding Path=GridCardsList, NotifyOnSourceUpdated=True, Mode=TwoWay}"
                         SelectionChanged="CardGrid_SelectionChanged" FrozenColumnCount ="1" EnableColumnVirtualization="True" EnableRowVirtualization="True" CanUserAddRows="False" CanUserDeleteRows="True" SourceUpdated="CardGrid_SourceUpdated" Background="AliceBlue" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Visible">
                             <DataGrid.Resources>
                                 <Style TargetType="{x:Type DataGridColumnHeader}">
@@ -150,17 +150,36 @@
                                     <Setter Property="BorderBrush" Value="AliceBlue"/>
                                 </Style>
                                 <Style TargetType="{x:Type DataGridCell}">
-                                    <Setter Property="Background" Value="AliceBlue" />
+                                    
                                     <Setter Property="BorderBrush" Value="AliceBlue"/>
                                 </Style>
-                            </DataGrid.Resources>
+                             
+                            </DataGrid.Resources> 
+                            <DataGrid.RowStyle>
+                                <Style TargetType="{x:Type DataGridRow}">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Warning}" Value="True">
+                                            <Setter Property="Background" Value="Pink" />
+                                            <Setter Property="BorderBrush" Value="Pink" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Warning}" Value="False">
+                                            <Setter Property="Background" Value="AliceBlue" />
+                                            <Setter Property="BorderBrush" Value="AliceBlue" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </DataGrid.RowStyle>
                             <DataGrid.Columns>
 
                                 <DataGridTemplateColumn Header="Warning" MinWidth="50" CanUserSort="True" SortMemberPath="Warning" >
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <!--<TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True}" BorderBrush="Transparent"/>-->
-                                            <CheckBox IsChecked="{Binding Warning, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True}" BorderBrush="Transparent" Width="30" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            <CheckBox IsChecked="{Binding Warning, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True}" BorderBrush="Transparent" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                
+                                                <CheckBox.LayoutTransform>
+                                                    <ScaleTransform ScaleX="1.5" ScaleY="1.5" />
+                                                </CheckBox.LayoutTransform>
+                                            </CheckBox>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>

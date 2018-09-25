@@ -33,7 +33,7 @@
           "Description": "<<activate>>  Astre Divin : Détruit un ninja ennemi"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
