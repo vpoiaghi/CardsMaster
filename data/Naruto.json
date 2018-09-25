@@ -11610,6 +11610,38 @@
       "Warning": false
     },
     {
+      "Kind": "Piège",
+      "Name": "Miroirs de Glace",
+      "Rank": "",
+      "Team": "Piège",
+      "Chakra": "Glace",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "Makyô Hyôshô",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Trap>>Naruto's Ambush",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Spécial>> La première attaque dirigée vers un de vos alliés est déviée vers un des miroirs (Attaque à 0)"
+        }
+      ],
+      "Warning": false
+    },
+    {
       "Kind": "Ninja",
       "Name": "Tôfu",
       "Rank": "",
