@@ -11671,7 +11671,7 @@
           "Description": "<<Spécial>>Quand votre adversaire joue un serviteur, lui inflige 4 points de dégâts"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Piège",
@@ -11735,15 +11735,15 @@
           "Description": "<<Spécial>>Quand votre adversaire joue un serviteur, ses points de vie sont réduits à 1"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Piège",
       "Name": "Piège de renvoi",
       "Rank": "",
       "Team": "Piège",
-      "Chakra": "",
-      "Element": "",
+      "Chakra": "Eau",
+      "Element": "Glace",
       "Cost": "2",
       "Attack": "",
       "Defense": "",
@@ -11767,7 +11767,7 @@
           "Description": "<<Spécial>>Inflige au héros adverse autant de dégâts que ceux subis par votre héros"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Piège",
