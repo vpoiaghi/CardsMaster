@@ -11799,7 +11799,7 @@
           "Description": "<<Spécial>>Quand un serviteur adverse attaque, le renvoie dans la main de son propriétaire"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Piège",
@@ -11831,7 +11831,7 @@
           "Description": "<<Spécial>>Quand votre héros est attaqué, inflige 2 points de dégâts à tous les adversaires"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Piège",
@@ -11895,11 +11895,11 @@
           "Description": "<<Spécial>> Quand un de vos alliés est attaqué, invoque trois serpents 1/1"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
-      "Name": "Serpents",
+      "Name": "Serpent",
       "Rank": "",
       "Team": "Invocation",
       "Chakra": "Vent",
@@ -11923,7 +11923,7 @@
       "IntField4": null,
       "Background": null,
       "Powers": [],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Piège",

@@ -72,10 +72,7 @@ namespace CardMasterCommon.Converters
 
             }
 
-            if (strResult.Equals(""))
-            {
-                strResult = "Liste vide";
-            }
+      
 
             return strResult;
         }
