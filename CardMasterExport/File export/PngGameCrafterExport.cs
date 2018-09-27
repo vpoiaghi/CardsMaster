@@ -4,6 +4,7 @@ using CardMasterImageBuilder;
 using CardMasterSkin.Skins;
 using System;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 
 namespace CardMasterExport.FileExport
@@ -36,35 +37,58 @@ namespace CardMasterExport.FileExport
                 .Replace("|", " ");
 
          
-            string targetFolder = null;
+            string targetFolderHD = null;
+            string targetFolderSD = null;
 
             lock (_lock){
-                targetFolder = this.targetFolder.FullName + "\\" + card.BackSide;
+                targetFolderHD = this.targetFolder.FullName + "\\HD\\" + card.BackSide;
+                targetFolderSD = this.targetFolder.FullName + "\\SD\\" + card.BackSide;
             }
 
+            ImageCodecInfo encoderJpg = GetEncoder(ImageFormat.Jpeg);
+            Encoder myEncoder = Encoder.Quality;
+            EncoderParameters myEncoderParameters = new EncoderParameters(1);
+            //100 high Quality
+            EncoderParameter myEncoderParameter = new EncoderParameter(myEncoder, 50L);
+            myEncoderParameters.Param[0] = myEncoderParameter;
+
             drawer = new Drawer(card, skinsFile, null);
-            Directory.CreateDirectory(targetFolder);
+            Directory.CreateDirectory(targetFolderHD);
+            Directory.CreateDirectory(targetFolderSD);
+
             for (int i = 1; i <= card.Nb; i++)
             {
-                Image imgFront = null;
-                imgFront = drawer.DrawCard();
-                imgFront.Save(Path.Combine(targetFolder, fileName + "-" + i + ".png"));
-                imgFront.Dispose();
-                imgFront = null;
+                Image imgFrontHD = null;
+                imgFrontHD = drawer.DrawCard();
+                imgFrontHD.Save(Path.Combine(targetFolderHD, fileName + "-" + i + ".png"));
+
+                
+
+                imgFrontHD.Save(Path.Combine(targetFolderSD, fileName + "-" + i + ".jpg"),encoderJpg, myEncoderParameters);
+                imgFrontHD.Dispose();
+                imgFrontHD = null;
             }
-            if (!File.Exists(Path.Combine(targetFolder, "0-Back" + ".png")))
+            if (!File.Exists(Path.Combine(targetFolderHD, "0-Back" + ".png")))
             {
-                Image imgBack = null;
-                imgBack = drawer.DrawBackCard();
+                Image imgBackHD = null;
+                imgBackHD = drawer.DrawBackCard();
            
-                imgBack.Save(Path.Combine(targetFolder, "0-Back" + ".png"));
-           
-                imgBack.Dispose();
-                imgBack = null;
+                imgBackHD.Save(Path.Combine(targetFolderHD, "0-Back" + ".png"));
+                imgBackHD.Save(Path.Combine(targetFolderSD, "0-Back" + ".jpg"), encoderJpg, myEncoderParameters);
+                imgBackHD.Dispose();
+                imgBackHD = null;
             }
             drawer = null;
             
 
+        }
+
+        public static ImageCodecInfo GetEncoder(ImageFormat format)
+        {
+            foreach (var info in ImageCodecInfo.GetImageEncoders())
+                if (info.FormatID == format.Guid)
+                    return info;
+            return null;
         }
 
         protected override void AfterCardsExport()
