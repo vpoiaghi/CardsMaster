@@ -57,6 +57,10 @@ Revoir inochika cho
 Pot de purification ambrée : plus image : ajouter qu'on peut le détruire
 Vallée de la foudre : pas d'atk / les autres
 
+http://fr.naruto.wikia.com/wiki/Iggy
+http://naruto.wikia.com/wiki/Banna
+http://fr.naruto.wikia.com/wiki/Shizuka
+
 
 
 
