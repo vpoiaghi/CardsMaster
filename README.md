@@ -62,5 +62,18 @@ http://naruto.wikia.com/wiki/Banna
 http://fr.naruto.wikia.com/wiki/Shizuka
 
 
+Test - 7 cartes départ
+choji akimichi : ajouter mode papillon libellé
+libelle des pieges : "entre en jeu"
+Quand on joue un pouvoir activate, on ne peut ataquer le meme tour
+Ajouter pouvoirs destruction items
+Chausse trape : pouvoir instantanné
+Kawaki : 2 pv
+Mu : inciblable
+Karin : soin pour le joueur aussi
+Kabuto : Edo tensei les remet en jeu
+San  : EST renvoyé + Regle d'attaque cac
+shikamaru adulte :  instantanné
+Marque maudite : Permanent 
 
 
