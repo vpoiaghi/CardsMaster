@@ -75,5 +75,5 @@ Kabuto : Edo tensei les remet en jeu
 San  : EST renvoyé + Regle d'attaque cac
 shikamaru adulte :  instantanné
 Marque maudite : Permanent 
-
+Shuriken de l'ombre : tous les textes à 1
 
