@@ -76,4 +76,7 @@ San  : EST renvoyé + Regle d'attaque cac
 shikamaru adulte :  instantanné
 Marque maudite : Permanent 
 Shuriken de l'ombre : tous les textes à 1
-
+Notice d atak du heros avec arme qui peut pas contrataquer en def
+Naruto adulte : tant qu"'il est en vie
+Yoroi : Majuscule
+Ajouter booleen carte peut ou pas attaquer
