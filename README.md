@@ -80,3 +80,5 @@ Notice d atak du heros avec arme qui peut pas contrataquer en def
 Naruto adulte : tant qu"'il est en vie
 Yoroi : Majuscule
 Ajouter booleen carte peut ou pas attaquer
+
+Passer à 50 PV
