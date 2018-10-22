@@ -63,4 +63,16 @@ Ajouter booleen carte peut ou pas attaquer
 
 Passer à 50 PV
 
+liste des kagés des pays
+Kû
+Kokuyô
+Sekiei
+Kirara
+Professeur a coté de sir Kû
+Assistant tsuchikage kurotsuchi
+
+
+
+
+
 
