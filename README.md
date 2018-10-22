@@ -62,3 +62,5 @@ Notice d atak du heros avec arme qui peut pas contrataquer en def
 Ajouter booleen carte peut ou pas attaquer
 
 Passer à 50 PV
+
+

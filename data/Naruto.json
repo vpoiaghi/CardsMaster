@@ -793,9 +793,9 @@
       "Team": "Clan Hyûga",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "1",
+      "Cost": "2",
       "Attack": "0",
-      "Defense": "3",
+      "Defense": "2",
       "Citation": "Byakugan",
       "Comments": "",
       "Nb": 1,
@@ -3168,7 +3168,7 @@
       "Kind": "Ninja",
       "Name": "Blue Bee",
       "Rank": "Jinchūriki",
-      "Team": "Ancien",
+      "Team": "Jinchûriki",
       "Chakra": "Foudre",
       "Element": "",
       "Cost": "4",
@@ -8237,7 +8237,7 @@
       "Cost": "6",
       "Attack": "2",
       "Defense": "5",
-      "Citation": "",
+      "Citation": "Byakugan",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -9014,7 +9014,7 @@
       "Kind": "Ninja",
       "Name": "Utakata",
       "Rank": "Jinchūriki",
-      "Team": "Renégat",
+      "Team": "Jinchûriki",
       "Chakra": "Eau",
       "Element": "Bulles",
       "Cost": "7",
@@ -11613,12 +11613,12 @@
       "Kind": "Ninja",
       "Name": "Banna",
       "Rank": "",
-      "Team": "",
+      "Team": "Voleur",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "1",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -11636,27 +11636,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Charge"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Iggy",
       "Rank": "",
-      "Team": "",
+      "Team": "Voleur",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "1",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -11674,23 +11668,49 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Charge"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Tokiwa",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Physique",
+      "Team": "Kunoichi",
+      "Chakra": "Terre",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>> Prison de Fer : Immobilise le ninja ciblé et l'empêche d'attaquer tant qu'elle est en vie"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Shizuka",
+      "Rank": "",
+      "Team": "Kunoichi",
+      "Chakra": "Vent",
       "Element": "",
       "Cost": "",
       "Attack": "",
@@ -11712,54 +11732,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Danse Aérienne : Lance un barrage de kunaï infligeant 1 dégat à chaque adversaire et héros"
         }
       ],
-      "Warning": true
-    },
-    {
-      "Kind": "Ninja",
-      "Name": "Shizuka",
-      "Rank": "",
-      "Team": "",
-      "Chakra": "Vent",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
-      "Comments": "",
-      "Nb": 1,
-      "BackSide": "Back-Draw",
-      "BackSkinName": "BackSkin1",
-      "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
-      "StringField2": "",
-      "StringField3": "",
-      "StringField4": "",
-      "IntField1": null,
-      "IntField2": null,
-      "IntField3": null,
-      "IntField4": null,
-      "Background": null,
-      "Powers": [
-        {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
-        }
-      ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -12173,13 +12149,13 @@
       "Kind": "Ninja",
       "Name": "Tokuma Hyûga",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Team": "Clan Hyûga",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "0",
+      "Defense": "2",
+      "Citation": "Byakugan",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -12196,28 +12172,25 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "<<Permanent>>  Protection"
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>  Byakugan : Révèle 3 cartes de pioche, en garde une, défausse les autres"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
-      "Name": "Natsu Hyûga ",
+      "Name": "Natsu Hyûga",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Team": "Clan Hyûga",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "0",
+      "Defense": "2",
+      "Citation": "Byakugan",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -12234,28 +12207,25 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "<<Permanent>>  Protection"
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>  Byakugan : Révèle 3 cartes de pioche, en garde une, défausse les autres"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Iroha Hyûga",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Team": "Clan Hyûga",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "0",
+      "Defense": "2",
+      "Citation": "Byakugan",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -12272,28 +12242,25 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "<<Permanent>>  Protection"
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>  Byakugan : Révèle 3 cartes de pioche, en garde une, défausse les autres"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Hoheto Hyûga",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Team": "Clan Hyûga",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "0",
+      "Defense": "2",
+      "Citation": "Byakugan",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -12310,28 +12277,25 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "<<Permanent>>  Protection"
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>  Byakugan : Révèle 3 cartes de pioche, en garde une, défausse les autres"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Hizashi Hyûga",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Team": "Clan Hyûga",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "0",
+      "Defense": "2",
+      "Citation": "Byakugan",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -12348,28 +12312,25 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "<<Permanent>>  Protection"
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>  Byakugan : Révèle 3 cartes de pioche, en garde une, défausse les autres"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Hiashi Hyûga",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Team": "Clan Hyûga",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "0",
+      "Defense": "2",
+      "Citation": "Byakugan",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -12386,16 +12347,13 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "<<Permanent>>  Protection"
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>  Byakugan : Révèle 3 cartes de pioche, en garde une, défausse les autres"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -13124,6 +13082,196 @@
       "Name": "Atsui",
       "Rank": "",
       "Team": "",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Yagura Karatachi",
+      "Rank": "",
+      "Team": "Jinchûriki",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Rôshi",
+      "Rank": "",
+      "Team": "Jinchûriki",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Han",
+      "Rank": "",
+      "Team": "Jinchûriki",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Fû",
+      "Rank": "",
+      "Team": "Jinchûriki",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Yugito Nii",
+      "Rank": "",
+      "Team": "Jinchûriki",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
