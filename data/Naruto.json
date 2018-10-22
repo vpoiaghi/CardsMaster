@@ -423,7 +423,7 @@
           "Description": "<<Permanent>>  Décuplement partiel : Protection"
         },
         {
-          "Description": "<<Instantané>>   Charge"
+          "Description": "<<Instantané>>   Mode Papillon : Charge"
         }
       ],
       "Warning": false
@@ -2958,7 +2958,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Soigne 1D3 PV à un allié (Utilisable 1 fois par tour)"
+          "Description": "<<activate>>  Soigne 1D3 PV à un allié ou au héros (Utilisable 1 fois par tour)"
         },
         {
           "Description": "<<Spécial>>  Détruit 1 bijù adverse lorsqu'elle meurt"
@@ -4012,7 +4012,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Suiton, Le grand typhon : englouti 1 ennemi sous les flots"
+          "Description": "<<Activate>> Suiton, Le grand typhon : Englouti 1 ennemi sous les flots"
         }
       ],
       "Warning": false
@@ -4367,7 +4367,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Ressuscite 2 alliés du cimetière et les remet dans la main du joueur"
+          "Description": "<<activate>> Edo Tenseï : Ressuscite 2 alliés du cimetière et les remet en jeu (ne peuvent être utilisés qu'au tour suivant)"
         }
       ],
       "Warning": false
@@ -4495,7 +4495,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Dissimulation du chakra : Intouchable tant qu'il n'a pas attaqué 1 fois"
+          "Description": "<<Permanent>>  Dissimulation du chakra : Inciblable tant qu'il n'a pas attaqué 1 fois"
         }
       ],
       "Warning": false
@@ -5747,7 +5747,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Inflige 1 dégât à distance sans contre-attaque possible au ninja ciblé et reçoit normalement les dégâts (Utilisable 1 fois par tour, en attaque ou en défense)"
+          "Description": "<<Permanent>>  Inflige 1 dégât à distance sans contre-attaque possible au ninja ciblé et reçoit normalement les dégâts (Utilisable 1 fois par tour, en attaque ou en défense)"
         }
       ],
       "Warning": false
@@ -5779,7 +5779,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Inflige 2 dégâts au corps à corps au ninja ciblé et reçoit normalement les dégâts (Utilisable 1 fois par tour, en attaque ou en défense)"
+          "Description": "<<Permanent>>  Inflige 2 dégâts au corps à corps au ninja ciblé et reçoit normalement les dégâts (Utilisable 1 fois par tour, en attaque ou en défense)"
         }
       ],
       "Warning": false
@@ -5792,7 +5792,7 @@
       "Chakra": "Equipement",
       "Element": "2 mains",
       "Cost": "4",
-      "Attack": "2",
+      "Attack": "1",
       "Defense": "",
       "Citation": "Fuuma Shuriken",
       "Comments": "3 exemplaires",
@@ -5811,7 +5811,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Inflige 1 dégât à distance sans contre-attaque possible à 2 ninjas ciblés (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Inflige 1 dégât à distance sans contre-attaque possible à 2 ninjas ciblés (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -6003,7 +6003,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Empêche un ninja ciblé d'attaquer pendant 2 tours. Est détruit après utilisation"
+          "Description": "<<Instantané>>  Empêche un ninja ciblé d'attaquer pendant 2 tours. Est détruit après utilisation"
         }
       ],
       "Warning": false
@@ -7432,7 +7432,7 @@
       "Element": "",
       "Cost": "2",
       "Attack": "1",
-      "Defense": "3",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -7741,7 +7741,7 @@
           "Description": "<<Permanent>> Charge"
         },
         {
-          "Description": "<<Instantané>> Manteau de Kyûbi: Le ninja ciblé ne peut être la cible d'attaques ou de Ninjutsu"
+          "Description": "<<Instantané>> Manteau de Kyûbi : Le ninja ciblé ne peut être la cible d'attaques ou de Ninjutsu tant que Naruto est en vie"
         }
       ],
       "Warning": false
@@ -8146,7 +8146,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Désigne un ninja et l'immobilise, l'empêchant d'attaquer et de lancer des sorts. Le ninja est libéré à la mort de Shikamaru"
+          "Description": "<<Instantané>> Désigne un ninja et l'immobilise, l'empêchant d'attaquer et de lancer des sorts. Le ninja est libéré à la mort de Shikamaru"
         },
         {
           "Description": "<<Spécial>> Si 3 membres du trio Ino-Shika-Cho sont présents, ceux-ci gagnent +3 ATK et +3 PV"
@@ -9433,10 +9433,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Inflige 5 points de dégâts à 2 ninjas adjacents"
+          "Description": "<<Instantané>> Inflige 5 points de dégâts distants à 2 ninjas adjacents"
         },
         {
-          "Description": "<<Spécial>> Inflige 2 points de dégâts au lanceur"
+          "Description": "<<Spécial>> Inflige 3 points de dégâts au lanceur"
         }
       ],
       "Warning": false
@@ -9570,10 +9570,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Donne +2 ATK/ +2 PV au ninja ciblé"
+          "Description": "<<Permanent>> Donne +2 ATK/ +2 PV au ninja ciblé"
         },
         {
-          "Description": "<<Spécial>> Quand l'allié attaque, 1 point de dégât est transféré au héros ou détruit le kinjutsu"
+          "Description": "<<Spécial>> Quand l'allié attaque, 2 points de dégât sont transférés au héros ou détruit le kinjutsu"
         }
       ],
       "Warning": false
@@ -10894,7 +10894,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Tout dégat non physique le touchant et renvoyé à son lanceur"
+          "Description": "<<Permanent>> Tout dégat non physique au corps à corps le touchant est renvoyé à son lanceur"
         }
       ],
       "Warning": false
@@ -11820,7 +11820,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>>Quand votre adversaire joue un serviteur, lui inflige 4 points de dégâts"
+          "Description": "<<Spécial>>Quand votre adversaire met un serviteur en jeu , lui inflige 4 points de dégâts"
         }
       ],
       "Warning": false
@@ -11884,7 +11884,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>>Quand votre adversaire joue un serviteur, ses points de vie sont réduits à 1"
+          "Description": "<<Spécial>>Quand votre adversaire met un serviteur en jeu, ses points de vie sont réduits à 1"
         }
       ],
       "Warning": false
@@ -12104,7 +12104,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>>Invoque un défenseur 2/1 qui devient la cible de l'adversaire sur le point d'attaquer"
+          "Description": "<<Spécial>> Invoque un défenseur 2/1 qui devient la cible de l'adversaire sur le point d'attaquer"
         }
       ],
       "Warning": false
