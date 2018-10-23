@@ -3035,8 +3035,8 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Meï Terumi",
-      "Rank": "Rare",
+      "Name": "Meï Terumi (Godaime Mizukage)",
+      "Rank": "Kage",
       "Team": "Équipe 5° Misukage",
       "Chakra": "Feu",
       "Element": "Lave",
@@ -3198,8 +3198,8 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "A",
-      "Rank": "Légendaire",
+      "Name": "A (Yondaime Raikage)",
+      "Rank": "Kage",
       "Team": "Équipe 4° Raikage",
       "Chakra": "Foudre",
       "Element": "",
@@ -3827,8 +3827,8 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Onoki",
-      "Rank": "Légendaire",
+      "Name": "Onoki (Sandaime Tsuchikage)",
+      "Rank": "Kage",
       "Team": "Équipe 3° Tsuchikage ",
       "Chakra": "Terre",
       "Element": "Jinton",
@@ -4375,7 +4375,7 @@
     {
       "Kind": "Ninja",
       "Name": "Nidaime 2° Mizukage",
-      "Rank": "Rare",
+      "Rank": "Kage",
       "Team": "Edo Tenseï",
       "Chakra": "Eau",
       "Element": "",
@@ -4406,8 +4406,8 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Sandaime 3° Raikage",
-      "Rank": "Rare",
+      "Name": "A (Sandaime Raikage)",
+      "Rank": "Kage",
       "Team": "Edo Tenseï",
       "Chakra": "Foudre",
       "Element": "",
@@ -4438,8 +4438,8 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Rasa - Yondaime 4° Kazekage",
-      "Rank": "Rare",
+      "Name": "Rasa (Yondaime Kazekage)",
+      "Rank": "Kage",
       "Team": "Edo Tenseï",
       "Chakra": "Terre",
       "Element": "Sable",
@@ -4470,8 +4470,8 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Mû  2° Tsuchikage",
-      "Rank": "Rare",
+      "Name": "Mû (Nidaime Tsuchikage)",
+      "Rank": "Kage",
       "Team": "Edo Tenseï",
       "Chakra": "Terre",
       "Element": "Sable",
@@ -7714,7 +7714,7 @@
     {
       "Kind": "Ninja",
       "Name": "Naruto Uzumaki (Adulte)",
-      "Rank": "Jinchūriki",
+      "Rank": "Kage",
       "Team": "Nanadaime 7° Hokage",
       "Chakra": "Vent",
       "Element": "",
@@ -11579,9 +11579,9 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Sandaime 3° Kazekage",
-      "Rank": "",
-      "Team": "Kazekage",
+      "Name": "Sandaime Kazekage",
+      "Rank": "Kage",
+      "Team": "Ancien Kage",
       "Chakra": "Terre",
       "Element": "Limaille de fer",
       "Cost": "5",
@@ -12585,158 +12585,6 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Sekiei (boruto)",
-      "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
-      "Comments": "",
-      "Nb": 1,
-      "BackSide": "Back-Draw",
-      "BackSkinName": "BackSkin1",
-      "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
-      "StringField2": "",
-      "StringField3": "",
-      "StringField4": "",
-      "IntField1": null,
-      "IntField2": null,
-      "IntField3": null,
-      "IntField4": null,
-      "Background": null,
-      "Powers": [
-        {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
-        }
-      ],
-      "Warning": true
-    },
-    {
-      "Kind": "Ninja",
-      "Name": "Aoda",
-      "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
-      "Comments": "",
-      "Nb": 1,
-      "BackSide": "Back-Draw",
-      "BackSkinName": "BackSkin1",
-      "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
-      "StringField2": "",
-      "StringField3": "",
-      "StringField4": "",
-      "IntField1": null,
-      "IntField2": null,
-      "IntField3": null,
-      "IntField4": null,
-      "Background": null,
-      "Powers": [
-        {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
-        }
-      ],
-      "Warning": true
-    },
-    {
-      "Kind": "Ninja",
-      "Name": "Serpent Blanc Ermite",
-      "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
-      "Comments": "",
-      "Nb": 1,
-      "BackSide": "Back-Draw",
-      "BackSkinName": "BackSkin1",
-      "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
-      "StringField2": "",
-      "StringField3": "",
-      "StringField4": "",
-      "IntField1": null,
-      "IntField2": null,
-      "IntField3": null,
-      "IntField4": null,
-      "Background": null,
-      "Powers": [
-        {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
-        }
-      ],
-      "Warning": true
-    },
-    {
-      "Kind": "Ninja",
-      "Name": "Garaga",
-      "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
-      "Comments": "",
-      "Nb": 1,
-      "BackSide": "Back-Draw",
-      "BackSkinName": "BackSkin1",
-      "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
-      "StringField2": "",
-      "StringField3": "",
-      "StringField4": "",
-      "IntField1": null,
-      "IntField2": null,
-      "IntField3": null,
-      "IntField4": null,
-      "Background": null,
-      "Powers": [
-        {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
-        }
-      ],
-      "Warning": true
-    },
-    {
-      "Kind": "Ninja",
       "Name": "Meizu",
       "Rank": "",
       "Team": "Frères démons",
@@ -12890,8 +12738,8 @@
     {
       "Kind": "Ninja",
       "Name": "A (Nidaime Raikage)",
-      "Rank": "",
-      "Team": "",
+      "Rank": "Kage",
+      "Team": "Ancien Kage",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -12928,8 +12776,8 @@
     {
       "Kind": "Ninja",
       "Name": "A (Shodai Raikage)",
-      "Rank": "",
-      "Team": "",
+      "Rank": "Kage",
+      "Team": "Ancien Kage",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -12965,9 +12813,9 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Nidaime Raikage",
-      "Rank": "",
-      "Team": "",
+      "Name": "A (Nidaime Raikage)",
+      "Rank": "Kage",
+      "Team": "Ancien Kage",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -13082,8 +12930,8 @@
       "Name": "Atsui",
       "Rank": "",
       "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Chakra": "Foudre",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -13117,9 +12965,9 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Yagura Karatachi",
-      "Rank": "",
-      "Team": "Jinchûriki",
+      "Name": "Yagura Karatachi (Yondaime Mizukage)",
+      "Rank": "Kage",
+      "Team": "Kage",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -13307,7 +13155,159 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Ganryu",
+      "Name": "Shamon (Nidaime Kazekage)",
+      "Rank": "Kage",
+      "Team": "Kage",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Byakuren (Shodai Mizukage)",
+      "Rank": "Kage",
+      "Team": "Kage",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Sandaime Mizukage",
+      "Rank": "Kage",
+      "Team": "Kage",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Gengetsu Hôzuki (Nidaime Mizukage)",
+      "Rank": "Kage",
+      "Team": "Kage",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Ishikawa (Shodai Tsuchikage)",
       "Rank": "",
       "Team": "",
       "Chakra": "Eau",
@@ -13322,6 +13322,348 @@
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
       "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Reto (Shodai Kazekage)",
+      "Rank": "Kage",
+      "Team": "Kage",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Ganryu",
+      "Rank": "",
+      "Team": "Déserteur",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Aoda",
+      "Rank": "",
+      "Team": "",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Kirara",
+      "Rank": "",
+      "Team": "",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Kokuyô",
+      "Rank": "",
+      "Team": "",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Kû",
+      "Rank": "",
+      "Team": "",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Sekiei",
+      "Rank": "",
+      "Team": "",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Garaga",
+      "Rank": "",
+      "Team": "",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Serpent Blanc Ermite",
+      "Rank": "",
+      "Team": "",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
