@@ -58,9 +58,17 @@ Ajouter booleen carte peut ou pas attaquer
 
 Passer à 50 PV
 
-liste des kagés des pays
+Raikage
+5 : Darui
 
+Kazekage
+5 : Gaara boruto
 
+Mizukage
+6 : Chôjûrô boruto
+
+Tsuchikage
+4 : Kurotsuchi Boruto
 
 
 
