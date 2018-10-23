@@ -4347,10 +4347,10 @@
       "Team": "Espion",
       "Chakra": "Eau",
       "Element": "Soin",
-      "Cost": "7",
-      "Attack": "4",
-      "Defense": "4",
-      "Citation": "Kuchiyose : Edo Tensei",
+      "Cost": "4",
+      "Attack": "3",
+      "Defense": "3",
+      "Citation": "",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -4367,7 +4367,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>> Edo Tenseï : Ressuscite 2 alliés du cimetière et les remet en jeu (ne peuvent être utilisés qu'au tour suivant)"
+          "Description": "<<Permanent>> Scalpel de chakra : Ignore la protection et l'armure de la cible"
         }
       ],
       "Warning": false
@@ -12154,7 +12154,7 @@
       "Element": "",
       "Cost": "2",
       "Attack": "0",
-      "Defense": "2",
+      "Defense": "1",
       "Citation": "Byakugan",
       "Comments": "",
       "Nb": 1,
@@ -12189,7 +12189,7 @@
       "Element": "",
       "Cost": "2",
       "Attack": "0",
-      "Defense": "2",
+      "Defense": "1",
       "Citation": "Byakugan",
       "Comments": "",
       "Nb": 1,
@@ -12224,7 +12224,7 @@
       "Element": "",
       "Cost": "2",
       "Attack": "0",
-      "Defense": "2",
+      "Defense": "1",
       "Citation": "Byakugan",
       "Comments": "",
       "Nb": 1,
@@ -12259,7 +12259,7 @@
       "Element": "",
       "Cost": "2",
       "Attack": "0",
-      "Defense": "2",
+      "Defense": "1",
       "Citation": "Byakugan",
       "Comments": "",
       "Nb": 1,
@@ -12294,7 +12294,7 @@
       "Element": "",
       "Cost": "2",
       "Attack": "0",
-      "Defense": "2",
+      "Defense": "1",
       "Citation": "Byakugan",
       "Comments": "",
       "Nb": 1,
@@ -12329,7 +12329,7 @@
       "Element": "",
       "Cost": "2",
       "Attack": "0",
-      "Defense": "2",
+      "Defense": "1",
       "Citation": "Byakugan",
       "Comments": "",
       "Nb": 1,
@@ -12359,9 +12359,105 @@
       "Kind": "Ninja",
       "Name": "Motoï",
       "Rank": "",
-      "Team": "",
+      "Team": "Gardien de l'île-Tortue",
+      "Chakra": "Foudre",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "2",
+      "Citation": "Raiton  Amigumo",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>> Toile d'Araignée : Empêche le ninja ciblé d'attaquer ou de lancer de ninjutsu"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Biwako Sarutobi",
+      "Rank": "",
+      "Team": "Infirmière",
       "Chakra": "Eau",
-      "Element": "Eau",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Soigne 1 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Kabuto Yakushi Hermite",
+      "Rank": "",
+      "Team": "Hermite",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "7",
+      "Attack": "4",
+      "Defense": "4",
+      "Citation": "Kuchiyose : Edo Tensei",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<activate>> Edo Tenseï : Ressuscite 2 alliés du cimetière et les remet en jeu (ne peuvent être utilisés qu'au tour suivant)"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Mito Uzumaki",
+      "Rank": "",
+      "Team": "",
+      "Chakra": "Vent",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -12395,87 +12491,11 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Iwako",
+      "Name": "Emi Uzumaki",
       "Rank": "",
       "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
-      "Comments": "",
-      "Nb": 1,
-      "BackSide": "Back-Draw",
-      "BackSkinName": "BackSkin1",
-      "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
-      "StringField2": "",
-      "StringField3": "",
-      "StringField4": "",
-      "IntField1": null,
-      "IntField2": null,
-      "IntField3": null,
-      "IntField4": null,
-      "Background": null,
-      "Powers": [
-        {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
-        }
-      ],
-      "Warning": true
-    },
-    {
-      "Kind": "Ninja",
-      "Name": "Kabuto Senin",
-      "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
-      "Comments": "",
-      "Nb": 1,
-      "BackSide": "Back-Draw",
-      "BackSkinName": "BackSkin1",
-      "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
-      "StringField2": "",
-      "StringField3": "",
-      "StringField4": "",
-      "IntField1": null,
-      "IntField2": null,
-      "IntField3": null,
-      "IntField4": null,
-      "Background": null,
-      "Powers": [
-        {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
-        }
-      ],
-      "Warning": true
-    },
-    {
-      "Kind": "Ninja",
-      "Name": "Mito",
-      "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Chakra": "Vent",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -12547,7 +12567,7 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Dan Kato",
+      "Name": "Dan Katô",
       "Rank": "",
       "Team": "",
       "Chakra": "Eau",
@@ -13626,6 +13646,158 @@
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
       "StringField1": "<<Konoha>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Darui Adulte (Godaime Raikage)",
+      "Rank": "Kage",
+      "Team": "Kage",
+      "Chakra": "Foudre",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Chôjurô Adulte (Rokudaime Mizukage)",
+      "Rank": "Kage",
+      "Team": "Kage",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Kurotsuchi Adulte (Yondaime Tsuchikage)",
+      "Rank": "Kage",
+      "Team": "Kage",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Gaara Adulte (Godaime Kazekage)",
+      "Rank": "Kage",
+      "Team": "Kage",
+      "Chakra": "Terre",
+      "Element": "Sable",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
