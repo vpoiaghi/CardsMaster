@@ -47,11 +47,6 @@ Maintenant que la fonctionnalité est validée, voir comment elle sera intégré
 
 UPD cartes :
 
-http://fr.naruto.wikia.com/wiki/Iggy
-http://naruto.wikia.com/wiki/Banna
-http://fr.naruto.wikia.com/wiki/Shizuka
-
-
 Test - 7 cartes départ
 Quand on joue un pouvoir activate, on ne peut ataquer le meme tour
 
@@ -64,12 +59,7 @@ Ajouter booleen carte peut ou pas attaquer
 Passer à 50 PV
 
 liste des kagés des pays
-Kû
-Kokuyô
-Sekiei
-Kirara
-Professeur a coté de sir Kû
-Assistant tsuchikage kurotsuchi
+
 
 
 
