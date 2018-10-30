@@ -2227,7 +2227,7 @@
       "Rank": "",
       "Team": "Akatsuki",
       "Chakra": "Terre",
-      "Element": "",
+      "Element": "Argile Explosive",
       "Cost": "3",
       "Attack": "2",
       "Defense": "3",
@@ -12455,12 +12455,12 @@
       "Kind": "Ninja",
       "Name": "Mito Uzumaki",
       "Rank": "",
-      "Team": "",
+      "Team": "Kunoichi ",
       "Chakra": "Vent",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -12478,27 +12478,85 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>Reserve de chakra : Donne un chakra supplémentaire ou pioche une carte si déjà au maximum de chakra"
         }
       ],
-      "Warning": true
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Menma Uzumaki",
+      "Rank": "",
+      "Team": "Alter-égo sombre",
+      "Chakra": "Vent",
+      "Element": "",
+      "Cost": "5",
+      "Attack": "3",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>> Rasengan d'ombre : inflige 4 dégâts à distance à l'adversaire ciblé"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Ashina Uzumaki",
+      "Rank": "",
+      "Team": "Chef de clan",
+      "Chakra": "Vent",
+      "Element": "",
+      "Cost": "4",
+      "Attack": "1",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<instantané>>Scellement : L'unité ciblée est envoyée au cimetière"
+        }
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Emi Uzumaki",
       "Rank": "",
-      "Team": "",
+      "Team": "Kunoichi ",
       "Chakra": "Vent",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "1",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -12516,28 +12574,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<instantané>>Scellement : L'unité ciblée est envoyée au cimetière"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Gari du Bakuton",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Team": "Edo Tenseï",
+      "Chakra": "Terre",
+      "Element": "Bakuton",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "4",
+      "Citation": "Bakuton : Jiraiken",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -12554,28 +12606,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Poing Explosif : Chaque coup porté inflige 2 points de dégâts aux alliés adjacents à l'adversaire"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Dan Katô",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Team": "Edo Tenseï",
+      "Chakra": "Spécial",
+      "Element": "",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Reika no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -12592,16 +12638,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<instantané>>Technique de spiritualisation : Désigne 2 cibles qui s'attaquent mutuellement (peut importe le camp)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -12609,10 +12649,10 @@
       "Rank": "",
       "Team": "Frères démons",
       "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -12630,16 +12670,13 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "<<Instantané>> Charge"
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Ignore la protection et l'armure"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -12647,10 +12684,10 @@
       "Rank": "",
       "Team": "Frères démons",
       "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -12668,23 +12705,20 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "<<Instantané>> Charge"
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Ignore la protection et l'armure"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Santa Yamanaka",
       "Rank": "",
       "Team": "",
-      "Chakra": "Eau",
+      "Chakra": "Spécial",
       "Element": "Eau",
       "Cost": "",
       "Attack": "",
@@ -12987,7 +13021,7 @@
       "Kind": "Ninja",
       "Name": "Yagura Karatachi (Yondaime Mizukage)",
       "Rank": "Kage",
-      "Team": "Kage",
+      "Team": "Ancien Kage",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -13177,7 +13211,7 @@
       "Kind": "Ninja",
       "Name": "Shamon (Nidaime Kazekage)",
       "Rank": "Kage",
-      "Team": "Kage",
+      "Team": "Ancien Kage",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -13215,7 +13249,7 @@
       "Kind": "Ninja",
       "Name": "Byakuren (Shodai Mizukage)",
       "Rank": "Kage",
-      "Team": "Kage",
+      "Team": "Ancien Kage",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -13253,7 +13287,7 @@
       "Kind": "Ninja",
       "Name": "Sandaime Mizukage",
       "Rank": "Kage",
-      "Team": "Kage",
+      "Team": "Ancien Kage",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -13291,7 +13325,7 @@
       "Kind": "Ninja",
       "Name": "Gengetsu Hôzuki (Nidaime Mizukage)",
       "Rank": "Kage",
-      "Team": "Kage",
+      "Team": "Ancien Kage",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -13329,7 +13363,7 @@
       "Kind": "Ninja",
       "Name": "Ishikawa (Shodai Tsuchikage)",
       "Rank": "",
-      "Team": "",
+      "Team": "Ancien Kage",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -13367,7 +13401,7 @@
       "Kind": "Ninja",
       "Name": "Reto (Shodai Kazekage)",
       "Rank": "Kage",
-      "Team": "Kage",
+      "Team": "Ancien Kage",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -13520,8 +13554,8 @@
       "Name": "Kokuyô",
       "Rank": "",
       "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Chakra": "Physique",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -13542,7 +13576,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "Power 1 expert corps a corps"
         },
         {
           "Description": "Power 2"
@@ -13596,8 +13630,8 @@
       "Name": "Sekiei",
       "Rank": "",
       "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Chakra": "Terre",
+      "Element": "Argile Explosive",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -14355,7 +14389,7 @@
       "Kind": "Ninja",
       "Name": "Daimyô du Pays du Feu",
       "Rank": "",
-      "Team": "",
+      "Team": "-",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -14393,7 +14427,7 @@
       "Kind": "Ninja",
       "Name": "Daimyô du Pays de la Terre",
       "Rank": "",
-      "Team": "",
+      "Team": "-",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -14431,7 +14465,7 @@
       "Kind": "Ninja",
       "Name": "Daimyô du Pays du Vent",
       "Rank": "",
-      "Team": "",
+      "Team": "-",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -14469,7 +14503,7 @@
       "Kind": "Ninja",
       "Name": "Daimyô du Pays de l'Eau",
       "Rank": "",
-      "Team": "",
+      "Team": "-",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -14507,7 +14541,7 @@
       "Kind": "Ninja",
       "Name": "Daimyô du Pays de la Foudre",
       "Rank": "",
-      "Team": "",
+      "Team": "-",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -14545,7 +14579,7 @@
       "Kind": "Ninja",
       "Name": "Daimyô de Ci",
       "Rank": "",
-      "Team": "",
+      "Team": "-",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -14583,7 +14617,7 @@
       "Kind": "Ninja",
       "Name": "Daimyô des Sources Chaudes",
       "Rank": "",
-      "Team": "",
+      "Team": "-",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -14621,7 +14655,7 @@
       "Kind": "Ninja",
       "Name": "Daimyô du Pays des Nouilles",
       "Rank": "",
-      "Team": "",
+      "Team": "-",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -14659,7 +14693,7 @@
       "Kind": "Ninja",
       "Name": "Daimyô du Pays du Gel",
       "Rank": "",
-      "Team": "",
+      "Team": "-",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
