@@ -470,7 +470,7 @@
       "Cost": "3",
       "Attack": "1",
       "Defense": "3",
-      "Citation": "Kagemane No jutsu",
+      "Citation": "Kagemane no jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -502,7 +502,7 @@
       "Cost": "5",
       "Attack": "2",
       "Defense": "3",
-      "Citation": "Kage Kubishibari No jutsu",
+      "Citation": "Kagemane no jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -6496,7 +6496,7 @@
       "Cost": "2",
       "Attack": "2",
       "Defense": "2",
-      "Citation": "Kagemane no Jutsu",
+      "Citation": "Kagemane no jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -12717,13 +12717,13 @@
       "Kind": "Ninja",
       "Name": "Santa Yamanaka",
       "Rank": "",
-      "Team": "",
+      "Team": "Alliance shinobi",
       "Chakra": "Spécial",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Element": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Shintenshin no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -12740,28 +12740,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>>Technique de la Transposition : Prends le contrôle de la cible, prends fin à la mort du ninja"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Maki",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Team": "Alliance shinobi",
+      "Chakra": "Terre",
+      "Element": "Sable",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Nunoshibari no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -12778,27 +12772,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>>Étreinte de Tissu : Envoie la cible dans son cimetière"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "A (Nidaime Raikage)",
       "Rank": "Kage",
       "Team": "Ancien Kage",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Foudre",
+      "Element": "",
+      "Cost": "5",
+      "Attack": "3",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -12816,27 +12804,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Attaque éclair : Peut attaquer 2 fois par tour"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "A (Shodai Raikage)",
       "Rank": "Kage",
       "Team": "Ancien Kage",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Foudre",
+      "Element": "",
+      "Cost": "5",
+      "Attack": "3",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -12854,66 +12836,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Attaque éclair : Peut attaquer 2 fois par tour"
         }
       ],
-      "Warning": true
-    },
-    {
-      "Kind": "Ninja",
-      "Name": "A (Nidaime Raikage)",
-      "Rank": "Kage",
-      "Team": "Ancien Kage",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
-      "Comments": "",
-      "Nb": 1,
-      "BackSide": "Back-Draw",
-      "BackSkinName": "BackSkin1",
-      "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
-      "StringField2": "",
-      "StringField3": "",
-      "StringField4": "",
-      "IntField1": null,
-      "IntField2": null,
-      "IntField3": null,
-      "IntField4": null,
-      "Background": null,
-      "Powers": [
-        {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
-        }
-      ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Ensui Nara",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Team": "Alliance Shinobi",
+      "Chakra": "Spécial",
+      "Element": "Ombre",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
+      "Citation": "Kagemane no jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -12930,28 +12868,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<activate>>  Manipulation des ombres : Prends le contrôle d'un adversaire"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Pakura",
       "Rank": "",
-      "Team": "",
+      "Team": "Edo Tenseï",
       "Chakra": "Feu",
-      "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Element": "Evaporation",
+      "Cost": "6",
+      "Attack": "1",
+      "Defense": "5",
+      "Citation": "Shakuton : Kajôsatsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -12968,28 +12900,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 absorbsion eau"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Toute cible recevant des dégats de sa part est envoyée au cimetière"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Atsui",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Foudre",
-      "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Team": "Alliance Shinobi",
+      "Chakra": "Feu",
+      "Element": "Épéiste",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Kumo-Ryû Kaengiri",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -13006,16 +12932,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Entailles de flammes : Inflige des dégâts de feu ignorant l'armure et la protection"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
