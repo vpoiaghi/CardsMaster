@@ -58,15 +58,19 @@ namespace CardMasterExport.FileExport
 
             for (int i = 1; i <= card.Nb; i++)
             {
-                Image imgFrontHD = null;
-                imgFrontHD = drawer.DrawCard();
-                imgFrontHD.Save(Path.Combine(targetFolderHD, fileName + "-" + i + ".png"));
+                if (card.Warning == false)
+                {
 
-                
+                    Image imgFrontHD = null;
+                    imgFrontHD = drawer.DrawCard();
+                    imgFrontHD.Save(Path.Combine(targetFolderHD, fileName + "-" + i + ".png"));
 
-                imgFrontHD.Save(Path.Combine(targetFolderSD, fileName + "-" + i + ".jpg"),encoderJpg, myEncoderParameters);
-                imgFrontHD.Dispose();
-                imgFrontHD = null;
+
+
+                    imgFrontHD.Save(Path.Combine(targetFolderSD, fileName + "-" + i + ".jpg"), encoderJpg, myEncoderParameters);
+                    imgFrontHD.Dispose();
+                    imgFrontHD = null;
+                }
             }
             if (!File.Exists(Path.Combine(targetFolderHD, "0-Back" + ".png")))
             {
