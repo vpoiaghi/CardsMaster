@@ -12941,13 +12941,13 @@
       "Kind": "Ninja",
       "Name": "Yagura Karatachi (Yondaime Mizukage)",
       "Rank": "Kage",
-      "Team": "Ancien Kage",
+      "Team": "Jinchûriki",
       "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Element": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "3",
+      "Citation": "Suiton : Mizukagami no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -12964,13 +12964,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Mirroir d'eau : Insensible aux attaques et jutsus d'eau"
         }
       ],
       "Warning": true
@@ -12980,12 +12974,12 @@
       "Name": "Rôshi",
       "Rank": "",
       "Team": "Jinchûriki",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Chakra": "Feu",
+      "Element": "Lave",
+      "Cost": "4",
+      "Attack": "1",
+      "Defense": "5",
+      "Citation": "Yôton Chakura Môdo",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -13002,16 +12996,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Pour chaque point de dégât qu'il reçoit, Rôshi en inflige 1 de lave à la cible de son choix"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -13019,11 +13007,11 @@
       "Rank": "",
       "Team": "Jinchûriki",
       "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Element": "Vapeur",
+      "Cost": "4",
+      "Attack": "3",
+      "Defense": "3",
+      "Citation": "Funsuiken",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -13040,24 +13028,18 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Armure de vapeur : insensible aux attaques et jutsus de feu"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Fû",
       "Rank": "",
       "Team": "Jinchûriki",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Chakra": "Vent",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
