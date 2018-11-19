@@ -13040,10 +13040,10 @@
       "Team": "Jinchûriki",
       "Chakra": "Vent",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Rinpen Kakure No Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -13060,28 +13060,25 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "<<Activate>> Prison de l'araignée : Fû fait sortir de ses mains une toile d'araignée ayant la capacité de soigner 3 pv à la cible"
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Voile de chakra : Tant qu'elle est en vie, les alliés subissent 1 dégât en moins pour tout dégât reçu"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Yugito Nii",
       "Rank": "",
       "Team": "Jinchûriki",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Chakra": "Feu",
+      "Element": "",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Nezumi Kedama",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -13098,27 +13095,24 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "<<Activate>> Brasier Du Chat : Projete une boule de feu infligeant 2 points de dégâts à la cible et 1 à chacun des alliés adjacents"
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Voile de chakra : Tant qu'elle est en vie, les alliés subissent 1 dégât en moins pour tout dégât reçu"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Shamon (Nidaime Kazekage)",
       "Rank": "Kage",
       "Team": "Ancien Kage",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Terre",
+      "Element": "Sable",
+      "Cost": "5",
+      "Attack": "3",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -13136,16 +13130,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Donne +2 PV à tous les alliés de Terre"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -13153,10 +13141,10 @@
       "Rank": "Kage",
       "Team": "Ancien Kage",
       "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Element": "",
+      "Cost": "5",
+      "Attack": "3",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -13174,16 +13162,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Donne +2 PV à tous les alliés d'Eau"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -13191,10 +13173,10 @@
       "Rank": "Kage",
       "Team": "Ancien Kage",
       "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Element": "",
+      "Cost": "5",
+      "Attack": "3",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -13212,16 +13194,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Donne +2 PV à tous les alliés d'Eau"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -13229,7 +13205,106 @@
       "Rank": "Kage",
       "Team": "Ancien Kage",
       "Chakra": "Eau",
-      "Element": "Eau",
+      "Element": "Vapeur",
+      "Cost": "5",
+      "Attack": "3",
+      "Defense": "3",
+      "Citation": "Suika no Jutsu",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Technique de Liquéfaction : Insensible aux attaques physiques"
+        },
+        {
+          "Description": "<<Activate>> Pistolet à Eau : Inflige 4 dégâts à l'allié ciblé"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Ishikawa (Shodai Tsuchikage)",
+      "Rank": "Kage",
+      "Team": "Ancien Kage",
+      "Chakra": "Terre",
+      "Element": "",
+      "Cost": "5",
+      "Attack": "3",
+      "Defense": "3",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Donne +2 PV à tous les alliés de Terre"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Reto (Shodai Kazekage)",
+      "Rank": "Kage",
+      "Team": "Ancien Kage",
+      "Chakra": "Terre",
+      "Element": "Sable",
+      "Cost": "5",
+      "Attack": "3",
+      "Defense": "3",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Donne +2 PV à tous les alliés de Terre"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Kurobachi",
+      "Rank": "",
+      "Team": "Clan Kamizuru",
+      "Chakra": "Vent",
+      "Element": "Insectes",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -13263,9 +13338,85 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Ishikawa (Shodai Tsuchikage)",
+      "Name": "Jibachi",
       "Rank": "",
-      "Team": "Ancien Kage",
+      "Team": "Clan Kamizuru",
+      "Chakra": "Vent",
+      "Element": "Insectes",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Suzumebachi",
+      "Rank": "",
+      "Team": "Clan Kamizuru",
+      "Chakra": "Vent",
+      "Element": "Insectes",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Ninja Name",
+      "Rank": "",
+      "Team": "",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -13301,9 +13452,9 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Reto (Shodai Kazekage)",
-      "Rank": "Kage",
-      "Team": "Ancien Kage",
+      "Name": "Ninja Name",
+      "Rank": "",
+      "Team": "",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
