@@ -13305,10 +13305,10 @@
       "Team": "Clan Kamizuru",
       "Chakra": "Vent",
       "Element": "Insectes",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Hachi Senbon no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -13325,16 +13325,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Attaque des mille dards :  Inflige 1 point de dégât à tous les adversaires, même le héros"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -13343,10 +13337,10 @@
       "Team": "Clan Kamizuru",
       "Chakra": "Vent",
       "Element": "Insectes",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Hachi Senbon no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -13363,16 +13357,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Attaque des mille dards :  Inflige 1 point de dégât à tous les adversaires, même le héros"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -13384,7 +13372,7 @@
       "Cost": "",
       "Attack": "",
       "Defense": "",
-      "Citation": "",
+      "Citation": "Hachi Senbon no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -13401,103 +13389,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Attaque des mille dards :  Inflige 1 point de dégât à tous les adversaires, même le héros"
         }
       ],
-      "Warning": true
-    },
-    {
-      "Kind": "Ninja",
-      "Name": "Ninja Name",
-      "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
-      "Comments": "",
-      "Nb": 1,
-      "BackSide": "Back-Draw",
-      "BackSkinName": "BackSkin1",
-      "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
-      "StringField2": "",
-      "StringField3": "",
-      "StringField4": "",
-      "IntField1": null,
-      "IntField2": null,
-      "IntField3": null,
-      "IntField4": null,
-      "Background": null,
-      "Powers": [
-        {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
-        }
-      ],
-      "Warning": true
-    },
-    {
-      "Kind": "Ninja",
-      "Name": "Ninja Name",
-      "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
-      "Comments": "",
-      "Nb": 1,
-      "BackSide": "Back-Draw",
-      "BackSkinName": "BackSkin1",
-      "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
-      "StringField2": "",
-      "StringField3": "",
-      "StringField4": "",
-      "IntField1": null,
-      "IntField2": null,
-      "IntField3": null,
-      "IntField4": null,
-      "Background": null,
-      "Powers": [
-        {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
-        }
-      ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Ganryu",
       "Rank": "",
       "Team": "Déserteur",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Physique",
+      "Element": "Épéiste",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -13515,27 +13421,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Frappe éclair : Peut attaquer 2 fois à la suite"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Aoda",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Team": "Serpent",
+      "Chakra": "Vent",
+      "Element": "Poison",
+      "Cost": "2",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -13553,34 +13453,28 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Etreinte : L'ennemi ciblé ne peut ni attaquer, ni lancer de jutsu tant que Aoda est en vie"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Kirara",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Team": "Clan Kū",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Konoha>>Boruto",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -13591,27 +13485,53 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Prends le contrôle définitif de la cible"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Akuta de Kokuyô",
       "Rank": "",
-      "Team": "",
+      "Team": "Clan Kū",
+      "Chakra": "Terre",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "4",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Force de la nature : Ignore la protection et l'armure"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Kakô",
+      "Rank": "",
+      "Team": "Clan Kū",
       "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Element": "",
+      "Cost": "4",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -13629,23 +13549,49 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Soigne d'autant tous les membres de son camp qu'il fait de dégât."
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Kokuyô",
       "Rank": "",
-      "Team": "",
+      "Team": "Clan Kū",
       "Chakra": "Physique",
+      "Element": "",
+      "Cost": "4",
+      "Attack": "4",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Force de la nature : Ignore la protection et l'armure"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Kû",
+      "Rank": "",
+      "Team": "Clan Kū",
+      "Chakra": "Terre",
       "Element": "",
       "Cost": "",
       "Attack": "",
@@ -13656,45 +13602,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
-      "StringField2": "",
-      "StringField3": "",
-      "StringField4": "",
-      "IntField1": null,
-      "IntField2": null,
-      "IntField3": null,
-      "IntField4": null,
-      "Background": null,
-      "Powers": [
-        {
-          "Description": "Power 1 expert corps a corps"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
-        }
-      ],
-      "Warning": true
-    },
-    {
-      "Kind": "Ninja",
-      "Name": "Kû",
-      "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
-      "Comments": "",
-      "Nb": 1,
-      "BackSide": "Back-Draw",
-      "BackSkinName": "BackSkin1",
-      "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Konoha>>Boruto",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -13720,13 +13628,13 @@
       "Kind": "Ninja",
       "Name": "Sekiei",
       "Rank": "",
-      "Team": "",
+      "Team": "Clan Kū",
       "Chakra": "Terre",
       "Element": "Argile Explosive",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Kibaku Nendo",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -13743,27 +13651,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 animaux explosifs"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>>Animaux explosifs :  Contre 3 points de chakra, inflige 2 points de dégâts à tous les adversaires (Réutilisable 1 fois par tour)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Garaga",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Team": "Serpent",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -13781,16 +13683,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Etreinte : L'ennemi ciblé ne peut ni attaquer, ni lancer de jutsu tant que garaga est en vie"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -13832,11 +13728,11 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Chôjurô Adulte (Rokudaime Mizukage)",
+      "Name": "Chôjurô Adulte(Rokudaime Mizukage)",
       "Rank": "Kage",
       "Team": "Kage",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Chakra": "Physique",
+      "Element": "Épéiste",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -13870,11 +13766,11 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Kurotsuchi Adulte (Yondaime Tsuchikage)",
+      "Name": "Kurotsuchi (Yondaime Tsuchikage)",
       "Rank": "Kage",
       "Team": "Kage",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Chakra": "Terre",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -13948,9 +13844,9 @@
       "Kind": "Ninja",
       "Name": "Muta Aburame",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Team": "Clan Aburame",
+      "Chakra": "Vent",
+      "Element": "Insectes",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -13986,47 +13882,9 @@
       "Kind": "Ninja",
       "Name": "Shikuro Aburame",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
-      "Comments": "",
-      "Nb": 1,
-      "BackSide": "Back-Draw",
-      "BackSkinName": "BackSkin1",
-      "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
-      "StringField2": "",
-      "StringField3": "",
-      "StringField4": "",
-      "IntField1": null,
-      "IntField2": null,
-      "IntField3": null,
-      "IntField4": null,
-      "Background": null,
-      "Powers": [
-        {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
-        }
-      ],
-      "Warning": true
-    },
-    {
-      "Kind": "Ninja",
-      "Name": "Hana Inuzuka",
-      "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Team": "Clan Aburame",
+      "Chakra": "Vent",
+      "Element": "Insectes",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -14062,9 +13920,85 @@
       "Kind": "Ninja",
       "Name": "Shibi Aburame",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Team": "Clan Aburame",
+      "Chakra": "Vent",
+      "Element": "Insectes",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Tokara Aburame",
+      "Rank": "",
+      "Team": "Clan Aburame",
+      "Chakra": "Vent",
+      "Element": "Insectes",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Hana Inuzuka",
+      "Rank": "",
+      "Team": "Clan Inuzuka",
+      "Chakra": "Physique",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -14100,9 +14034,9 @@
       "Kind": "Ninja",
       "Name": "Yoshino Nara",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Team": "Clan Nara",
+      "Chakra": "Physique",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -14123,7 +14057,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "Power 1 Attaque à la poelle"
         },
         {
           "Description": "Power 2"
@@ -14138,9 +14072,9 @@
       "Kind": "Ninja",
       "Name": "Serpent Blanc Ermite",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Team": "Ermite",
+      "Chakra": "Vent",
+      "Element": "Poison",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -14176,7 +14110,7 @@
       "Kind": "Ninja",
       "Name": "Yakumo Kurama",
       "Rank": "",
-      "Team": "",
+      "Team": "Clan Kurama",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -14214,7 +14148,7 @@
       "Kind": "Ninja",
       "Name": "Unkai Kurama",
       "Rank": "",
-      "Team": "",
+      "Team": "Clan Kurama",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -14252,7 +14186,7 @@
       "Kind": "Ninja",
       "Name": "Murakumo Kurama",
       "Rank": "",
-      "Team": "",
+      "Team": "Clan Kurama",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -14290,7 +14224,7 @@
       "Kind": "Ninja",
       "Name": "Uroko Kurama",
       "Rank": "",
-      "Team": "",
+      "Team": "Clan Kurama",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -14328,7 +14262,7 @@
       "Kind": "Ninja",
       "Name": "Itama Senju",
       "Rank": "",
-      "Team": "",
+      "Team": "Clan Senju",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -14366,7 +14300,7 @@
       "Kind": "Ninja",
       "Name": "Kawarama Senju",
       "Rank": "",
-      "Team": "",
+      "Team": "Clan Senju",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -14404,7 +14338,7 @@
       "Kind": "Ninja",
       "Name": "Butsuma Senju",
       "Rank": "",
-      "Team": "",
+      "Team": "Clan Senju",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -14442,13 +14376,13 @@
       "Kind": "Ninja",
       "Name": "Chûkichi",
       "Rank": "",
-      "Team": "",
+      "Team": "Edo Tenseï",
       "Chakra": "Eau",
       "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "3",
+      "Citation": "Kanchi no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -14465,13 +14399,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Détection de chakra : Pioche 2 cartes"
         }
       ],
       "Warning": true
@@ -14480,7 +14408,7 @@
       "Kind": "Ninja",
       "Name": "Daimyô du Pays du Feu",
       "Rank": "",
-      "Team": "-",
+      "Team": "Seigneur féodal",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -14518,7 +14446,7 @@
       "Kind": "Ninja",
       "Name": "Daimyô du Pays de la Terre",
       "Rank": "",
-      "Team": "-",
+      "Team": "Seigneur féodal",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -14556,7 +14484,7 @@
       "Kind": "Ninja",
       "Name": "Daimyô du Pays du Vent",
       "Rank": "",
-      "Team": "-",
+      "Team": "Seigneur féodal",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -14594,7 +14522,7 @@
       "Kind": "Ninja",
       "Name": "Daimyô du Pays de l'Eau",
       "Rank": "",
-      "Team": "-",
+      "Team": "Seigneur féodal",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -14632,7 +14560,7 @@
       "Kind": "Ninja",
       "Name": "Daimyô du Pays de la Foudre",
       "Rank": "",
-      "Team": "-",
+      "Team": "Seigneur féodal",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -14670,7 +14598,7 @@
       "Kind": "Ninja",
       "Name": "Daimyô de Ci",
       "Rank": "",
-      "Team": "-",
+      "Team": "Seigneur féodal",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -14708,7 +14636,7 @@
       "Kind": "Ninja",
       "Name": "Daimyô des Sources Chaudes",
       "Rank": "",
-      "Team": "-",
+      "Team": "Seigneur féodal",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -14746,7 +14674,7 @@
       "Kind": "Ninja",
       "Name": "Daimyô du Pays des Nouilles",
       "Rank": "",
-      "Team": "-",
+      "Team": "Seigneur féodal",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -14784,7 +14712,7 @@
       "Kind": "Ninja",
       "Name": "Daimyô du Pays du Gel",
       "Rank": "",
-      "Team": "-",
+      "Team": "Seigneur féodal",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -14823,8 +14751,8 @@
       "Name": "Yokozuna",
       "Rank": "",
       "Team": "Sumo",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Chakra": "Physique",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -14959,7 +14887,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "Power 1 Détection du chakra"
         },
         {
           "Description": "Power 2"
@@ -14974,7 +14902,7 @@
       "Kind": "Ninja",
       "Name": "Amaï",
       "Rank": "",
-      "Team": "",
+      "Team": "Escouade A",
       "Chakra": "Eau",
       "Element": "",
       "Cost": "",
@@ -15012,9 +14940,9 @@
       "Kind": "Ninja",
       "Name": "Nigai",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Team": "Escouade A",
+      "Chakra": "Foudre",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -15035,7 +14963,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "Power 1 Explosion de lui même à sa mort"
         },
         {
           "Description": "Power 2"
@@ -15050,7 +14978,7 @@
       "Kind": "Ninja",
       "Name": "Karai",
       "Rank": "",
-      "Team": "",
+      "Team": "Escouade A",
       "Chakra": "Foudre",
       "Element": "",
       "Cost": "",
@@ -15088,9 +15016,9 @@
       "Kind": "Ninja",
       "Name": "Clan Nokizaru.png",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Team": "Mercenaires",
+      "Chakra": "Spécial",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -15111,51 +15039,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
-        }
-      ],
-      "Warning": true
-    },
-    {
-      "Kind": "Ninja",
-      "Name": "Tokara Aburame",
-      "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
-      "Comments": "",
-      "Nb": 1,
-      "BackSide": "Back-Draw",
-      "BackSkinName": "BackSkin1",
-      "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
-      "StringField2": "",
-      "StringField3": "",
-      "StringField4": "",
-      "IntField1": null,
-      "IntField2": null,
-      "IntField3": null,
-      "IntField4": null,
-      "Background": null,
-      "Powers": [
-        {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Explosion de chakra : Tant qu'ils sont en vie, tout ninjutsu lancé déclence l'explosion du lanceur (le ninjutsu est tout de même lancé)"
         }
       ],
       "Warning": true
@@ -15164,12 +15048,12 @@
       "Kind": "Ninja",
       "Name": "Torifu Akimichi",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Team": "Clan Akimichi",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "4",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -15187,24 +15071,18 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Protection"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Shiseru",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Team": "Garde",
+      "Chakra": "Physique",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -15240,7 +15118,7 @@
       "Kind": "Ninja",
       "Name": "Dokku",
       "Rank": "",
-      "Team": "",
+      "Team": "Garde",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -15276,9 +15154,47 @@
     },
     {
       "Kind": "Ninja",
+      "Name": "Disonasu",
+      "Rank": "",
+      "Team": "Ancien",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "Chikara",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1Che"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
       "Name": "leo",
       "Rank": "",
-      "Team": "",
+      "Team": "Orphelin",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -15316,7 +15232,7 @@
       "Kind": "Ninja",
       "Name": "Miina",
       "Rank": "",
-      "Team": "",
+      "Team": "Orphelin",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -15354,45 +15270,7 @@
       "Kind": "Ninja",
       "Name": "Fazu",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
-      "Comments": "",
-      "Nb": 1,
-      "BackSide": "Back-Draw",
-      "BackSkinName": "BackSkin1",
-      "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
-      "StringField2": "",
-      "StringField3": "",
-      "StringField4": "",
-      "IntField1": null,
-      "IntField2": null,
-      "IntField3": null,
-      "IntField4": null,
-      "Background": null,
-      "Powers": [
-        {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
-        }
-      ],
-      "Warning": true
-    },
-    {
-      "Kind": "Ninja",
-      "Name": "Zosa",
-      "Rank": "",
-      "Team": "",
+      "Team": "Orphelin",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -15430,7 +15308,45 @@
       "Kind": "Ninja",
       "Name": "Lando",
       "Rank": "",
-      "Team": "",
+      "Team": "Orphelin",
+      "Chakra": "Eau",
+      "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Sorra",
+      "Rank": "",
+      "Team": "Orphelin",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -15696,7 +15612,7 @@
       "Kind": "Ninja",
       "Name": "Yota",
       "Rank": "",
-      "Team": "",
+      "Team": "Edo Tenseï",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -15734,7 +15650,7 @@
       "Kind": "Ninja",
       "Name": "Osoï",
       "Rank": "",
-      "Team": "",
+      "Team": "Edo Tenseï",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -15772,7 +15688,7 @@
       "Kind": "Ninja",
       "Name": "Chen",
       "Rank": "",
-      "Team": "",
+      "Team": "Edo Tenseï",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -15810,7 +15726,7 @@
       "Kind": "Ninja",
       "Name": "Chûkaku",
       "Rank": "",
-      "Team": "",
+      "Team": "Edo Tenseï",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -15848,7 +15764,7 @@
       "Kind": "Ninja",
       "Name": "Daimaru",
       "Rank": "",
-      "Team": "",
+      "Team": "Edo Tenseï",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -15886,7 +15802,7 @@
       "Kind": "Ninja",
       "Name": "Tatewaki",
       "Rank": "",
-      "Team": "",
+      "Team": "Samouraï",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -15924,7 +15840,7 @@
       "Kind": "Ninja",
       "Name": "Io",
       "Rank": "",
-      "Team": "",
+      "Team": "Escouade médicale",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -15962,7 +15878,7 @@
       "Kind": "Ninja",
       "Name": "Yokaze",
       "Rank": "",
-      "Team": "",
+      "Team": "Escouade médicale",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -16000,7 +15916,7 @@
       "Kind": "Ninja",
       "Name": "Sukui",
       "Rank": "",
-      "Team": "",
+      "Team": "Escouade médicale",
       "Chakra": "Eau",
       "Element": "Eau",
       "Cost": "",
@@ -16024,44 +15940,6 @@
       "Powers": [
         {
           "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
-        }
-      ],
-      "Warning": true
-    },
-    {
-      "Kind": "Ninja",
-      "Name": "Disonasu",
-      "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
-      "Comments": "Chikara",
-      "Nb": 1,
-      "BackSide": "Back-Draw",
-      "BackSkinName": "BackSkin1",
-      "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
-      "StringField2": "",
-      "StringField3": "",
-      "StringField4": "",
-      "IntField1": null,
-      "IntField2": null,
-      "IntField3": null,
-      "IntField4": null,
-      "Background": null,
-      "Powers": [
-        {
-          "Description": "Power 1Che"
         },
         {
           "Description": "Power 2"
