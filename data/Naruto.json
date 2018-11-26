@@ -13695,10 +13695,10 @@
       "Team": "Kage",
       "Chakra": "Foudre",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "5",
+      "Attack": "5",
+      "Defense": "5",
+      "Citation": "Raiton : Kuro pansa",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -13715,16 +13715,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<activate>>  Envoie une panthère de foudre noire sur l'ennemi et inflige 1D6+2 dégâts"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -13733,10 +13727,10 @@
       "Team": "Kage",
       "Chakra": "Physique",
       "Element": "Épéiste",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "4",
+      "Attack": "5",
+      "Defense": "5",
+      "Citation": "Chôjurô Style",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -13753,16 +13747,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>  Insensible aux attaques physiques et spéciales"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -13771,9 +13759,9 @@
       "Team": "Kage",
       "Chakra": "Terre",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "5",
+      "Attack": "3",
+      "Defense": "5",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -13791,16 +13779,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Ensevelissement : Envoie le ninja ciblé au cimetière"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -13809,10 +13791,10 @@
       "Team": "Kage",
       "Chakra": "Terre",
       "Element": "Sable",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "4",
+      "Attack": "3",
+      "Defense": "3",
+      "Citation": "Sabaku sotaisô",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -13829,16 +13811,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Le grand mausolée de sable : Scelle le ninja ciblé et l'envoi au cimetière"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -14409,11 +14385,11 @@
       "Name": "Daimyô du Pays du Feu",
       "Rank": "",
       "Team": "Seigneur féodal",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -14431,27 +14407,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Ressources accrues : Octroie 1 point de chakra par tour tant qu'il est envie (le maximum peut donc être dépassé)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Daimyô du Pays de la Terre",
       "Rank": "",
       "Team": "Seigneur féodal",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -14469,27 +14439,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Ressources accrues : Octroie 1 point de chakra par tour tant qu'il est envie (le maximum peut donc être dépassé)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Daimyô du Pays du Vent",
       "Rank": "",
       "Team": "Seigneur féodal",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -14507,27 +14471,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Ressources accrues : Octroie 1 point de chakra par tour tant qu'il est envie (le maximum peut donc être dépassé)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Daimyô du Pays de l'Eau",
       "Rank": "",
       "Team": "Seigneur féodal",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -14545,27 +14503,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Ressources accrues : Octroie 1 point de chakra par tour tant qu'il est envie (le maximum peut donc être dépassé)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Daimyô du Pays de la Foudre",
       "Rank": "",
       "Team": "Seigneur féodal",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -14583,27 +14535,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Ressources accrues : Octroie 1 point de chakra par tour tant qu'il est envie (le maximum peut donc être dépassé)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Daimyô de Ci",
       "Rank": "",
       "Team": "Seigneur féodal",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -14621,27 +14567,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Ressources accrues : Octroie 1 point de chakra par tour tant qu'il est envie (le maximum peut donc être dépassé)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Daimyô des Sources Chaudes",
       "Rank": "",
       "Team": "Seigneur féodal",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -14659,27 +14599,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Ressources accrues : Octroie 1 point de chakra par tour tant qu'il est envie (le maximum peut donc être dépassé)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Daimyô du Pays des Nouilles",
       "Rank": "",
       "Team": "Seigneur féodal",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -14697,27 +14631,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Ressources accrues : Octroie 1 point de chakra par tour tant qu'il est envie (le maximum peut donc être dépassé)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Daimyô du Pays du Gel",
       "Rank": "",
       "Team": "Seigneur féodal",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -14735,16 +14663,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Ressources accrues : Octroie 1 point de chakra par tour tant qu'il est envie (le maximum peut donc être dépassé)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -15881,6 +15803,44 @@
       "Team": "Escouade médicale",
       "Chakra": "Eau",
       "Element": "Eau",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Unité du nuage orageux",
+      "Rank": "",
+      "Team": "Escouade de ravitaillement",
+      "Chakra": "Foudre",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
