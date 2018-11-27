@@ -3990,7 +3990,7 @@
       "Name": "Yoroï Akadô",
       "Rank": "",
       "Team": "Équipe Kabuto",
-      "Chakra": "Genjutsu",
+      "Chakra": "Eau",
       "Element": "",
       "Cost": "3",
       "Attack": "2",
@@ -12964,10 +12964,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Mirroir d'eau : Insensible aux attaques et jutsus d'eau"
+          "Description": "<<Permanent>> Mirroir d'eau : Insensible aux attaques et aux sorts d'eau"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -13463,8 +13463,8 @@
       "Name": "Kirara",
       "Rank": "",
       "Team": "Clan Kū",
-      "Chakra": "Spécial",
-      "Element": "Genjutsu",
+      "Chakra": "Genjutsu",
+      "Element": "",
       "Cost": "4",
       "Attack": "2",
       "Defense": "2",
@@ -13951,10 +13951,10 @@
       "Team": "Clan Inuzuka",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "4",
+      "Citation": "Gatenga",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -13971,16 +13971,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Attaque de la meute : Peut attaquer jusqu'à 3 fois par tour"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -13989,9 +13983,9 @@
       "Team": "Clan Nara",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "1",
+      "Attack": "1",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -14009,16 +14003,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Attaque à la poelle"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Coup de poêle : Inflige 2 points de dégâts à la cible"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -14027,9 +14015,9 @@
       "Team": "Ermite",
       "Chakra": "Vent",
       "Element": "Poison",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "6",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -14047,28 +14035,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Serpentification : Inflige 1 point de dégât à tous ses alliés et soigne d'autant de points la cible de son choix"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Yakumo Kurama",
       "Rank": "",
       "Team": "Clan Kurama",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Chakra": "Genjutsu",
+      "Element": "",
+      "Cost": "0",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Mateki Mugen Onsa",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -14085,28 +14067,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Démon intérieur : Perd 1 point de vie à la fin de chaque tour du joueur la contrôlant"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Unkai Kurama",
       "Rank": "",
       "Team": "Clan Kurama",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Chakra": "Genjutsu",
+      "Element": "",
+      "Cost": "0",
+      "Attack": "2",
+      "Defense": "1",
+      "Citation": "Mateki Mugen Onsa",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -14123,28 +14099,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Démon intérieur : Perd 1 point de vie à la fin de chaque tour du joueur le contrôlant"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Murakumo Kurama",
       "Rank": "",
       "Team": "Clan Kurama",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Chakra": "Genjutsu",
+      "Element": "",
+      "Cost": "0",
+      "Attack": "2",
+      "Defense": "1",
+      "Citation": "Mateki Mugen Onsa",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -14161,28 +14131,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Démon intérieur : Perd 1 point de vie à la fin de chaque tour du joueur le contrôlant"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Uroko Kurama",
       "Rank": "",
       "Team": "Clan Kurama",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Chakra": "Genjutsu",
+      "Element": "",
+      "Cost": "0",
+      "Attack": "2",
+      "Defense": "1",
+      "Citation": "Mateki Mugen Onsa",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -14199,16 +14163,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Démon intérieur : Perd 1 point de vie à la fin de chaque tour du joueur la contrôlant"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -14630,12 +14588,12 @@
       "Kind": "Ninja",
       "Name": "Yokozuna",
       "Rank": "",
-      "Team": "Sumo",
+      "Team": "Lutteur Sumo",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "5",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -14653,28 +14611,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Protection"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Ruka",
       "Rank": "",
-      "Team": "",
+      "Team": "3° division",
       "Chakra": "Eau",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Suiton : Suijin Heki",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -14691,28 +14643,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Barrière d'eau : Renvoie le ninja ciblé dans la main de son propriétaire"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Monga",
       "Rank": "",
-      "Team": "",
+      "Team": "3° division",
       "Chakra": "Terre",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "3",
+      "Citation": "Doton : Doryûheki",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -14729,27 +14675,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Mur de terre"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Mur de terre : L'adversaire ne peut plus lancer de sort d'eau tant que Monga est en vie"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Zaji",
       "Rank": "",
-      "Team": "",
+      "Team": "Unité embuscade",
       "Chakra": "Spécial",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -14767,16 +14707,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Détection du chakra"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Détection du chakra : les adversaires ont -1 en attaque tant que Zaji est en vie"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -14785,10 +14719,10 @@
       "Team": "Escouade A",
       "Chakra": "Eau",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
+      "Citation": "Shôsen Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -14805,16 +14739,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Soin"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Paume mystique : soigne 1 PV à un allié (Utilisable 1 fois par tour)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -14823,9 +14751,9 @@
       "Team": "Escouade A",
       "Chakra": "Foudre",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -14843,16 +14771,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Explosion de lui même à sa mort"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Spécial>> Lors de sa mort, explose en une bombe de foudre infligeant 2 points de dégât à tous les adversaires"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -14861,9 +14783,9 @@
       "Team": "Escouade A",
       "Chakra": "Foudre",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -14881,16 +14803,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Frappe d'éclairs"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Frappe d'éclairs : Les attaques lancées ne subissent pas de contre-attaque"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -14899,10 +14815,10 @@
       "Team": "Mercenaires",
       "Chakra": "Spécial",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "4",
+      "Attack": "1",
+      "Defense": "4",
+      "Citation": "Bakuretsuchû",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -14922,7 +14838,7 @@
           "Description": "<<Permanent>> Explosion de chakra : Tant qu'ils sont en vie, tout ninjutsu lancé déclence l'explosion du lanceur (le ninjutsu est tout de même lancé)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -14967,7 +14883,7 @@
       "Attack": "",
       "Defense": "",
       "Citation": "",
-      "Comments": "",
+      "Comments": "Chikara",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
@@ -14999,13 +14915,13 @@
       "Name": "Dokku",
       "Rank": "",
       "Team": "Garde",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Chakra": "Physique",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
       "Citation": "",
-      "Comments": "",
+      "Comments": "Chikara",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
@@ -15037,8 +14953,8 @@
       "Name": "Disonasu",
       "Rank": "",
       "Team": "Ancien",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Chakra": "Physique",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -15075,13 +14991,13 @@
       "Name": "leo",
       "Rank": "",
       "Team": "Orphelin",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Chakra": "Physique",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
       "Citation": "",
-      "Comments": "",
+      "Comments": "Chikara",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
@@ -15113,13 +15029,13 @@
       "Name": "Miina",
       "Rank": "",
       "Team": "Orphelin",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Chakra": "Physique",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
       "Citation": "",
-      "Comments": "",
+      "Comments": "Chikara",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
@@ -15151,13 +15067,13 @@
       "Name": "Fazu",
       "Rank": "",
       "Team": "Orphelin",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Chakra": "Physique",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
       "Citation": "",
-      "Comments": "",
+      "Comments": "Chikara",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
@@ -15189,13 +15105,13 @@
       "Name": "Lando",
       "Rank": "",
       "Team": "Orphelin",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Chakra": "Physique",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
       "Citation": "",
-      "Comments": "",
+      "Comments": "Chikara",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
@@ -15227,13 +15143,13 @@
       "Name": "Sorra",
       "Rank": "",
       "Team": "Orphelin",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Chakra": "Physique",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
       "Citation": "",
-      "Comments": "",
+      "Comments": "Chikara",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
@@ -15253,6 +15169,44 @@
         },
         {
           "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninjutsu",
+      "Name": "Saezuri",
+      "Rank": "",
+      "Team": "Kinjutsu",
+      "Chakra": "Spécial",
+      "Element": "Son",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "Chikara",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1 rempli la jauge de chakra"
+        },
+        {
+          "Description": "Power 2 perds 5 pv"
         },
         {
           "Description": "Power 3"
@@ -15291,44 +15245,6 @@
         },
         {
           "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
-        }
-      ],
-      "Warning": true
-    },
-    {
-      "Kind": "Ninjutsu",
-      "Name": "Saezuri",
-      "Rank": "",
-      "Team": "Kinjutsu",
-      "Chakra": "Spécial",
-      "Element": "Son",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
-      "Comments": "",
-      "Nb": 1,
-      "BackSide": "Back-Draw",
-      "BackSkinName": "BackSkin1",
-      "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
-      "StringField2": "",
-      "StringField3": "",
-      "StringField4": "",
-      "IntField1": null,
-      "IntField2": null,
-      "IntField3": null,
-      "IntField4": null,
-      "Background": null,
-      "Powers": [
-        {
-          "Description": "Power 1 rempli la jauge de chakra"
-        },
-        {
-          "Description": "Power 2 perds 5 pv"
         },
         {
           "Description": "Power 3"
@@ -15481,11 +15397,11 @@
       "Name": "Yota",
       "Rank": "",
       "Team": "Edo Tenseï",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Spécial",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "3",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -15503,16 +15419,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Peut choisir la nature des éléments de ses attaques a tout moment"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -15673,9 +15583,9 @@
       "Team": "Samouraï",
       "Chakra": "Physique",
       "Element": "Épéiste",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "3",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -15693,16 +15603,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Art du katana : Ignore la protection et l'armure"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -15734,7 +15638,7 @@
           "Description": "<<Permanent>> Soigne 3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -15766,7 +15670,7 @@
           "Description": "<<Permanent>> Soigne 3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -15798,7 +15702,7 @@
           "Description": "<<Permanent>> Soigne 3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
