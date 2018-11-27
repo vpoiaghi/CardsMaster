@@ -229,6 +229,8 @@ namespace CardMasterManager
                     //Card c = GridCardsList[selectedIndex];
                     Card c = (Card)cardGrid.SelectedItem;
                     UpdateStats(c);
+                    //dISPLAY COMMENT
+                    CommentTextBlock.Text = c.Comments;
                     //If not preview
                     if (!(c == previousCard) && previewCheckBox.IsChecked == true)
                     {
@@ -265,6 +267,7 @@ namespace CardMasterManager
                     frontImage.Source = (ImageSource)converter.Convert(drawer.DrawCard(), null, null, System.Globalization.CultureInfo.CurrentCulture);
                     backCardImage.Source = (ImageSource)converter.Convert(drawer.DrawBackCard(), null, null, System.Globalization.CultureInfo.CurrentCulture);
                 }));
+                
             }
         }
 

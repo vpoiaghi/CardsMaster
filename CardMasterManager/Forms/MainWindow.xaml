@@ -56,8 +56,11 @@
             <StatusBar DockPanel.Dock="Bottom" Height="30">
                 <StackPanel Orientation="Horizontal">
                 <StatusBarItem>
-                    <TextBlock x:Name="debug" Width="625"/>
-                </StatusBarItem>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock x:Name="debug" Width="300"/>
+                            <TextBlock Name="CommentTextBlock" Width="320"></TextBlock>
+                        </StackPanel>
+                    </StatusBarItem>
                 <StatusBarItem>
                     <TextBlock x:Name="nbCards" Height="27" Width="592"></TextBlock>
                 </StatusBarItem>
@@ -65,10 +68,13 @@
             </StatusBar>
 
             <DockPanel DockPanel.Dock="Left">
+                
                 <Border Width="412.5" Height="562.5" Margin="15,6,15,0" DockPanel.Dock="Top" BorderThickness="1" BorderBrush="#FF000000">
                     <Image Name="cardImage"></Image>
                 </Border>
-                 <CheckBox Name="previewCheckBox" IsChecked="False" DockPanel.Dock="Right" Height="30" IsThreeState="False">Preview</CheckBox>
+               
+                <CheckBox Name="previewCheckBox" IsChecked="False" DockPanel.Dock="Right" Height="30" IsThreeState="False">Preview</CheckBox>
+                
                 <StackPanel Orientation="Horizontal">
               
                 <Border Width="207" Height="281" Margin="20,0,0,0" DockPanel.Dock="Bottom" BorderThickness="1" BorderBrush="#FF000000">
@@ -85,8 +91,9 @@
                                BorderThickness="0"     
                                Background="AliceBlue"
                  />
-                   
+                    
                 </StackPanel>
+                
             </DockPanel>
 
             <DockPanel DockPanel.Dock="Right">
