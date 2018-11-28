@@ -409,6 +409,11 @@ namespace CardMasterManager
 
         private void ClearSearch(object sender, RoutedEventArgs e)
         {
+            ClearSearch();
+        }
+
+       private void ClearSearch()
+        {
             searchText.Text = "";
             Dispatcher.BeginInvoke(new Action(delegate ()
             {
@@ -417,7 +422,6 @@ namespace CardMasterManager
             }));
         }
 
-       
         private void DisplayConfigurator(object sender, RoutedEventArgs e)
         {
             GridConfigurator form = new GridConfigurator(cardGrid)
@@ -647,6 +651,27 @@ namespace CardMasterManager
                    
                 }
             }
+        }
+
+       
+
+        private void UnfilterWarningList(object sender, RoutedEventArgs e)
+        {
+            ClearSearch();
+        }
+
+        private void FilterWarningList(object sender, RoutedEventArgs e)
+        {
+
+            Dispatcher.BeginInvoke(new Action(delegate ()
+            {
+
+                cardGrid.Items.Filter = (c) =>
+                {
+                    return CardMatcher.IsWarning((Card)c);
+                };
+                GridCount = cardGrid.Items.Count;
+            }));
         }
     }
 }

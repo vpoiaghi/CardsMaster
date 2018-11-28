@@ -11,6 +11,19 @@ namespace CardMasterManager.Utils
     {
         private static EnumConverter enumConverter = new EnumConverter();
 
+        public static Boolean IsWarning(Card card)
+        {
+            if (card.Warning.HasValue)
+            {
+                return card.Warning.Value;
+            }
+            else
+            {
+                return false;
+            }
+          
+        }
+
         public static Boolean Matches(Card card, String filterText)
         {
             bool found = StrContains(card.Name,filterText) ||

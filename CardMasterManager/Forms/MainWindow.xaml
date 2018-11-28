@@ -104,7 +104,8 @@
                         <Button x:Name="clearSearchButton" Width="19" Click="ClearSearch" Background="AliceBlue">
                             <TextBlock>X</TextBlock>
                         </Button>
-
+                        <Separator Width="50" Background="Transparent"/>
+                        <CheckBox Name="FilterWarning" Content="Filter Warning ?" Checked="FilterWarningList" Unchecked="UnfilterWarningList" Margin="1"></CheckBox>
 
                     </StackPanel>
                     <DockPanel>
