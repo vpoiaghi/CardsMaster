@@ -3099,6 +3099,38 @@
     },
     {
       "Kind": "Ninja",
+      "Name": "Nonota",
+      "Rank": "",
+      "Team": "Alliance shinobi",
+      "Chakra": "Terre",
+      "Element": "Sable",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "3",
+      "Citation": "Nunoshibari no Jutsu",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>> Scellement de tissu : Envoie la cible au cimetière"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
       "Name": "Ao",
       "Rank": "",
       "Team": "Équipe 5° Misukage",
@@ -15183,7 +15215,7 @@
       "Team": "Kinjutsu",
       "Chakra": "Spécial",
       "Element": "Son",
-      "Cost": "",
+      "Cost": "7",
       "Attack": "",
       "Defense": "",
       "Citation": "",
@@ -15203,16 +15235,13 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 rempli la jauge de chakra"
+          "Description": "<<Instantané>>Rempli la jauge de chakra au maximum qu'elle peut atteindre"
         },
         {
-          "Description": "Power 2 perds 5 pv"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Spécial>> A la fin du tour, inflige 5 points de dégât par point de chakra non consommé"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -15256,12 +15285,12 @@
       "Kind": "Ninja",
       "Name": "Musai",
       "Rank": "",
-      "Team": "",
+      "Team": "Alliance shinobi",
       "Chakra": "Foudre",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -15279,16 +15308,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Connaissance du terrain  : Les attaques qu'il reçoit font 2 points de dégât en moins"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -15297,10 +15320,10 @@
       "Team": "Edo Tenseï",
       "Chakra": "Spécial",
       "Element": "Magnétisme",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Jiton : Jakuhô no Sôjin",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -15317,16 +15340,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Shuriken Magnétique : Magnétise les shurikens de chacun de ses alliés et inflige 1 point de dégât par allié (aux cibles de son choix)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Equipement",
@@ -15543,11 +15560,11 @@
       "Name": "Daimaru",
       "Rank": "",
       "Team": "Edo Tenseï",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Terre",
+      "Element": "Sable",
+      "Cost": "4",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -15565,16 +15582,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>Déclaration d'amour : Toutes les femmes du camp adverse voient leur vie passer à 1 point"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
