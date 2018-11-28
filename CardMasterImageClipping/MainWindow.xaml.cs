@@ -83,7 +83,7 @@ namespace CardMasterImageClipping
 
         private void LvwSourceImagesList_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
-            if (e.AddedItems != null)
+            if (e.AddedItems.Count>0)
             {
                 selectedItem = ((CardImage)(e.AddedItems[0]));
                 imgSourceImage.Source = selectedItem.Image;
