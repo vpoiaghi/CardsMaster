@@ -46,12 +46,10 @@ namespace CardMasterImageClipping
 
         private void MenuItemOpenResourcesFolder_Click(object sender, RoutedEventArgs e)
         {
-            DirectoryInfo d = new DirectoryInfo("F:/Programmation/VB .Net/Cartes Bruno/CardsMaster/data/Resources/Images");
-
-            if (!d.Exists)
-            {
-                d = FolderDialog.SelectFolder();
-            }
+          
+                string dir = FolderDialog.SelectFolder("D:\\workspace\\Workspace-perso\\CardsMaster\\data\\Resources\\Images");
+                DirectoryInfo d = new DirectoryInfo(dir);
+          
             if (d != null)
             {
                 LoadImages(d);
@@ -85,15 +83,18 @@ namespace CardMasterImageClipping
 
         private void LvwSourceImagesList_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
-            selectedItem = ((CardImage)(e.AddedItems[0]));
-            imgSourceImage.Source = selectedItem.Image;
-            imgSourceImage.UpdateLayout();
+            if (e.AddedItems != null)
+            {
+                selectedItem = ((CardImage)(e.AddedItems[0]));
+                imgSourceImage.Source = selectedItem.Image;
+                imgSourceImage.UpdateLayout();
 
-            this.selRectangle = new SelectRectangle(imgSourceImage, selectedItem.SourceImage, TARGET_WIDTH, TARGET_HEIGHT, TARGET_RESOLUTION);
-            this.selRectangle.txt = sTxtSelInfos;
+                this.selRectangle = new SelectRectangle(imgSourceImage, selectedItem.SourceImage, TARGET_WIDTH, TARGET_HEIGHT, TARGET_RESOLUTION);
+                this.selRectangle.txt = sTxtSelInfos;
 
-            selState = SelectionState.NoSelection;
-            CleanSelection();
+                selState = SelectionState.NoSelection;
+                CleanSelection();
+            }
         }
 
         private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
