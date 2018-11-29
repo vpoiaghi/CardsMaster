@@ -13625,10 +13625,10 @@
       "Team": "Clan Kū",
       "Chakra": "Terre",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Jinton : Genkai Hakuri no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -13645,16 +13645,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Détachement du Monde Primitif : Envoie l'adversaire directement au cimetière"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -15020,14 +15014,14 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "leo",
+      "Name": "Leo",
       "Rank": "",
       "Team": "Orphelin",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "1",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "",
       "Comments": "Chikara",
       "Nb": 1,
@@ -15045,16 +15039,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Protégez les orphelins : Ne peut être la cibles d'attaques tant qu'au moins un autre ninja est en vie (Peut être blessé par un effet de zone)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -15063,9 +15051,9 @@
       "Team": "Orphelin",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "1",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "",
       "Comments": "Chikara",
       "Nb": 1,
@@ -15083,16 +15071,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Protégez les orphelins : Ne peut être la cibles d'attaques tant qu'au moins un autre ninja est en vie (Peut être blessé par un effet de zone)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -15101,9 +15083,9 @@
       "Team": "Orphelin",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "1",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "",
       "Comments": "Chikara",
       "Nb": 1,
@@ -15121,16 +15103,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Protégez les orphelins : Ne peut être la cibles d'attaques tant qu'au moins un autre ninja est en vie (Peut être blessé par un effet de zone)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -15139,9 +15115,9 @@
       "Team": "Orphelin",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "1",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "",
       "Comments": "Chikara",
       "Nb": 1,
@@ -15159,16 +15135,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Protégez les orphelins : Ne peut être la cibles d'attaques tant qu'au moins un autre ninja est en vie (Peut être blessé par un effet de zone)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -15177,9 +15147,9 @@
       "Team": "Orphelin",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "1",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "",
       "Comments": "Chikara",
       "Nb": 1,
@@ -15197,16 +15167,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Protégez les orphelins : Ne peut être la cibles d'attaques tant qu'au moins un autre ninja est en vie (Peut être blessé par un effet de zone)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninjutsu",
@@ -15250,10 +15214,10 @@
       "Team": "Anbu",
       "Chakra": "Terre",
       "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
+      "Citation": "Shôsen Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -15270,16 +15234,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Paume mystique : soigne 1 PV à un allié (Utilisable 1 fois par tour)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -15446,11 +15404,11 @@
       "Name": "Osoï",
       "Rank": "",
       "Team": "Edo Tenseï",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Foudre",
+      "Element": "",
+      "Cost": "1",
+      "Attack": "1",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -15468,28 +15426,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Eternel Genin : Baisse l'attaque de 1 de tous ses alliés (saud le héros)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Chen",
       "Rank": "",
       "Team": "Edo Tenseï",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Chakra": "Physique",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
-      "Citation": "",
+      "Citation": "Konoha Ryûjin",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -15506,27 +15458,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Dieu Dragon de Konoha : Frappe une cible en lui infligeant 4 points de dégâts et 2 à ses alliés adjacents"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Chûkaku",
       "Rank": "",
       "Team": "Edo Tenseï",
-      "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Spécial",
+      "Element": "",
+      "Cost": "4",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -15544,16 +15490,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Prière : Ressuscite un ninja d'un cimetière au choix"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
