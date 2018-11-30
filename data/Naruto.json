@@ -14905,9 +14905,9 @@
       "Team": "Garde",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "2",
+      "Attack": "2",
+      "Defense": "3",
       "Citation": "",
       "Comments": "Chikara",
       "Nb": 1,
@@ -14925,16 +14925,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Protecteur dévoué : Double ses points d'attaque lorsqu'elle défend"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -14943,9 +14937,9 @@
       "Team": "Garde",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "1",
+      "Attack": "0",
+      "Defense": "4",
       "Citation": "",
       "Comments": "Chikara",
       "Nb": 1,
@@ -14963,16 +14957,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Protection"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -14981,9 +14969,9 @@
       "Team": "Ancien",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "3",
       "Citation": "",
       "Comments": "Chikara",
       "Nb": 1,
@@ -15001,16 +14989,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1Che"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Malédiction : Réduit la vie de ses alliés de 1 et augmente leur attaque de 1 point (Ce procédé peut tuer l'allié)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
