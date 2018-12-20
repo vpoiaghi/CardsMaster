@@ -2330,7 +2330,7 @@
       "Cost": "4",
       "Attack": "2",
       "Defense": "2",
-      "Citation": "Uchiha Kaenjin",
+      "Citation": "Uchiwa Kaenjin",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -6456,7 +6456,7 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Sarada Uchiha",
+      "Name": "Sarada Uchiwa",
       "Rank": "",
       "Team": "Équipe 7",
       "Chakra": "Feu",
@@ -7329,7 +7329,7 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Shin Uchiha Senior",
+      "Name": "Shin Uchiwa Senior",
       "Rank": "",
       "Team": "Neo Akatsuki",
       "Chakra": "Spécial",
@@ -7361,7 +7361,7 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Shin Uchiha Junior",
+      "Name": "Shin Uchiwa Junior",
       "Rank": "",
       "Team": "Neo Akatsuki",
       "Chakra": "Spécial",
@@ -8118,7 +8118,7 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Sakura Uchiha (Adulte)",
+      "Name": "Sakura Uchiwa (Adulte)",
       "Rank": "",
       "Team": "Adulte",
       "Chakra": "Physique",
@@ -11285,7 +11285,7 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Shisui Uchiha",
+      "Name": "Shisui Uchiwa",
       "Rank": "",
       "Team": "Anbu",
       "Chakra": "Genjutsu",
@@ -15699,15 +15699,15 @@
           "Description": "<<Permanent>> Soigne 1D3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Jûzô Biwa",
       "Rank": "",
       "Team": "Akatsuki",
-      "Chakra": "Eau",
-      "Element": "",
+      "Chakra": "Physique",
+      "Element": "Épéiste",
       "Cost": "4",
       "Attack": "5",
       "Defense": "5",
@@ -15731,7 +15731,7 @@
           "Description": "<<Permanent>> Couteau à Découper Décapitant : S'il élimine sa cible en phase d'attaque, il peut réattaquer immédiatement"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -15763,7 +15763,7 @@
           "Description": "<<Permanent>> Pour L'akatsuki ! : Gagne +1/+1 pour chaque membre de l'Akatsuki présent dans les 2 camps"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -15772,9 +15772,9 @@
       "Team": "Akatsuki",
       "Chakra": "Terre",
       "Element": "Lave",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "Yôton : Sekkaigyô no Jutsu",
       "Comments": "",
       "Nb": 1,
@@ -15792,16 +15792,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 attaque de chaux"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Dissolution dans la chaux : Envoi la cible au cimetière"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -15810,9 +15804,9 @@
       "Team": "Akatsuki",
       "Chakra": "Eau",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "2",
       "Citation": "Suirô no Jutsu",
       "Comments": "",
       "Nb": 1,
@@ -15830,24 +15824,18 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Prison aqueuse"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Prison aqueuse : Tant que Daibutsu est en vie, la cible ne peut ni attaquer, ni lancer de ninjutsu"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Kinoto",
       "Rank": "",
       "Team": "La Racine",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Chakra": "Physique",
+      "Element": "Épéiste",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -15884,8 +15872,8 @@
       "Name": "Shinku Yûhi",
       "Rank": "",
       "Team": "Jônin de Konoha",
-      "Chakra": "Eau",
-      "Element": "Eau",
+      "Chakra": "Physique",
+      "Element": "Épéiste",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -15906,7 +15894,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "Power 1 "
         },
         {
           "Description": "Power 2"
@@ -15934,6 +15922,108 @@
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
       "StringField1": "<<Konoha>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Grand serpent blanc",
+      "Rank": "",
+      "Team": "Expérimentation",
+      "Chakra": "Vent",
+      "Element": "Poison",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Spécial>> A sa mort, diffuse des vapeurs toxiques infligeant 2 points de dégât à tous les adversaires"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Tenzô",
+      "Rank": "",
+      "Team": "Anbu",
+      "Chakra": "Terre",
+      "Element": "Bois",
+      "Cost": "4",
+      "Attack": "1",
+      "Defense": "4",
+      "Citation": "Mokuton : Daijurin no Jutsu",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Grande forêt : Lance une étreinte sur tous les adversaires et leur inflige 1 pv de dégât par tour"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Kagami Uchiwa",
+      "Rank": "",
+      "Team": "Clan Uchiwa",
+      "Chakra": "Spécial",
+      "Element": "Sharingan",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
