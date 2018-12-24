@@ -15836,9 +15836,9 @@
       "Team": "La Racine",
       "Chakra": "Physique",
       "Element": "Épéiste",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "3",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -15856,16 +15856,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<permanent>>Insensible aux attaques physiques"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -15874,9 +15868,9 @@
       "Team": "Jônin de Konoha",
       "Chakra": "Physique",
       "Element": "Épéiste",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -15894,16 +15888,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 "
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<permanent>>Insensible aux attaques physiques"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -15912,10 +15900,10 @@
       "Team": "Genin d'Iwa",
       "Chakra": "Terre",
       "Element": "Terre",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": "Inperiarusākuru",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -15932,16 +15920,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Cercle impérial des six carapaces : Inflige un coup puissant renvoyant la cible dans la main de son propriétaire"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -15953,7 +15935,7 @@
       "Cost": "3",
       "Attack": "1",
       "Defense": "1",
-      "Citation": "",
+      "Citation": "Yudoku suchimu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -15973,7 +15955,7 @@
           "Description": "<<Spécial>> A sa mort, diffuse des vapeurs toxiques infligeant 2 points de dégât à tous les adversaires"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -16014,10 +15996,10 @@
       "Team": "Clan Uchiwa",
       "Chakra": "Spécial",
       "Element": "Sharingan",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "5",
+      "Attack": "3",
+      "Defense": "3",
+      "Citation": "Kotoamatsukami",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -16034,16 +16016,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>Déités Célestes : Peut faire s'entretuer les adversaires, dans la limite d'une d'attaque par personnage"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -16051,11 +16027,11 @@
       "Rank": "",
       "Team": "Mère supérieure",
       "Chakra": "Eau",
-      "Element": "Eau",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Element": "",
+      "Cost": "5",
+      "Attack": "3",
+      "Defense": "3",
+      "Citation": "Shôsen Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -16072,16 +16048,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Soigne 3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
-      "Warning": true
+      "Warning": false
     }
   ],
   "SkinFile": "Naruto.original.skin"
