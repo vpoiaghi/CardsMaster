@@ -1209,7 +1209,7 @@
           "Description": "<<Instantané>>   Lame de chakra blanc : Inflige 4 points de dégâts à un ninja ennemi"
         },
         {
-          "Description": "<<Spécial>>  Attaque 2 fois par tour"
+          "Description": "<<Permanent>>  Peut attaquer 2 fois par tour"
         }
       ],
       "Warning": false
@@ -3421,7 +3421,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Mur de Caoutchouc : Donne +1 HP aux membres de l'équipe"
+          "Description": "<<Activate>> Mur de Caoutchouc : Donne +1 PV aux alliés"
         }
       ],
       "Warning": false
@@ -4012,7 +4012,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Clone aqueux : permet d'annuler les dégâts reçus"
+          "Description": "<<Activate>> Clone aqueux : permet d'annuler les dégâts reçus pendant ce tour. Utilisable même pendant le tour adverse"
         }
       ],
       "Warning": false
@@ -6003,7 +6003,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Confère camouflage à l'allié ciblé. Est détruit après utilisation"
+          "Description": "<<Instantané>>  Confère camouflage à l'allié ciblé (Ne peut être ciblé par une attaque ou un Ninjutsu). Est détruit après utilisation"
         }
       ],
       "Warning": false
@@ -7770,7 +7770,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Charge"
+          "Description": "<<Instantané>> Charge"
         },
         {
           "Description": "<<Instantané>> Manteau de Kyûbi : Le ninja ciblé ne peut être la cible d'attaques ou de Ninjutsu tant que Naruto est en vie"
@@ -8740,7 +8740,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>Lecture de l'Esprit : Ne reçoit aucun dégât la première fois qu'il attaque, valable à chaque début de tour"
+          "Description": "<<Permanent>>Lecture de l'Esprit : Ne reçoit aucun dégât la première fois qu'il subit des dégats, valable à chaque début de son tour"
         }
       ],
       "Warning": false
@@ -11956,7 +11956,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>>Quand un serviteur adverse attaque, le renvoie dans la main de son propriétaire"
+          "Description": "<<Spécial>>Quand un allié adverse attaque, le renvoie dans la main de son propriétaire original"
         }
       ],
       "Warning": false
@@ -12020,7 +12020,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>> Quand un de vos alliés est attaqué, prends définitivement le contrôle de l'assaillant"
+          "Description": "<<Spécial>> Quand un de vos alliés est attaqué, prends définitivement le contrôle de l'assaillant. Les dégâts sont d'abord comptabilisés, puis le contrôle est effectué"
         }
       ],
       "Warning": false
@@ -13517,7 +13517,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Prends le contrôle définitif de la cible"
+          "Description": "<<Instantané>> Prends le contrôle de la cible tant qu'elle est en vie. La cible retourne dans son camp avec son niveau de vie actuel"
         }
       ],
       "Warning": false
@@ -14107,7 +14107,7 @@
       "Element": "",
       "Cost": "0",
       "Attack": "2",
-      "Defense": "1",
+      "Defense": "2",
       "Citation": "Mateki Mugen Onsa",
       "Comments": "",
       "Nb": 1,
@@ -14139,7 +14139,7 @@
       "Element": "",
       "Cost": "0",
       "Attack": "2",
-      "Defense": "1",
+      "Defense": "2",
       "Citation": "Mateki Mugen Onsa",
       "Comments": "",
       "Nb": 1,
@@ -14171,7 +14171,7 @@
       "Element": "",
       "Cost": "0",
       "Attack": "2",
-      "Defense": "1",
+      "Defense": "2",
       "Citation": "Mateki Mugen Onsa",
       "Comments": "",
       "Nb": 1,
