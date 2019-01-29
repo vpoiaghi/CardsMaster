@@ -1,4 +1,5 @@
-﻿using CardMasterCommon.Converters;
+﻿using CardMasterCard.Card;
+using CardMasterCommon.Converters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,7 +45,21 @@ namespace CardMasterManager.Utils
                     IntEquals(card.IntField2, filterText) ||
                     IntEquals(card.IntField3, filterText) ||
                     IntEquals(card.IntField4, filterText) ||
+                    PowerContains(card.Powers, filterText) ||
                     StrContains(card.Team, filterText);
+            return found;
+        }
+
+        private static bool PowerContains(List<JsonPower> powers, string filterText)
+        {
+            bool found = false;
+            foreach (JsonPower p in powers)
+            {
+                if (StrContains(p.Description, filterText))
+                {
+                    found = true;
+                }
+            }
             return found;
         }
 

@@ -27,7 +27,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Insensible aux dégâts non physiques"
+          "Description": "<<Permanent>><<Instantané>>  Insensible aux dégâts non physiques"
         },
         {
           "Description": "<<activate>>  Astre Divin : Détruit un ninja ennemi"
@@ -40,8 +40,8 @@
       "Name": "Kaguya Ôtsutsuki",
       "Rank": "Légendaire",
       "Team": "Clan Ôtsutsuki",
-      "Chakra": "Genjutsu",
-      "Element": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
       "Cost": "9",
       "Attack": "6",
       "Defense": "5",
@@ -62,7 +62,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Insensible aux dégâts non physiques"
+          "Description": "<<Permanent>><<Instantané>>  Insensible aux dégâts non physiques"
         },
         {
           "Description": "<<activate>>  Inflige 2 dégâts à tous les ennemis"
@@ -97,7 +97,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas de vent alliés gagnent +3/+3"
+          "Description": "<<Permanent>><<Instantané>>   Les ninjas de vent alliés gagnent +3/+3"
         }
       ],
       "Warning": false
@@ -129,7 +129,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas de feu gagnent +3/+3"
+          "Description": "<<Permanent>><<Instantané>>   Les ninjas de feu gagnent +3/+3"
         }
       ],
       "Warning": false
@@ -260,7 +260,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Soigne 1D4 PV à un allié (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>><<Instantané>>   Soigne 1D4 PV à un allié (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -433,8 +433,8 @@
       "Name": "Ino Yamanaka",
       "Rank": "",
       "Team": "Ino-Shika-Chô",
-      "Chakra": "Genjutsu",
-      "Element": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
       "Cost": "3",
       "Attack": "1",
       "Defense": "3",
@@ -529,8 +529,8 @@
       "Name": "Inoichi Yamanaka",
       "Rank": "",
       "Team": "Ino-Shika-Chô",
-      "Chakra": "Genjutsu",
-      "Element": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
       "Cost": "5",
       "Attack": "2",
       "Defense": "3",
@@ -596,8 +596,8 @@
       "Name": "Ibiki Morino",
       "Rank": "Capitaine",
       "Team": "Renseignements",
-      "Chakra": "Genjutsu",
-      "Element": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
       "Cost": "4",
       "Attack": "4",
       "Defense": "3",
@@ -660,8 +660,8 @@
       "Name": "Kotetsu Hagane",
       "Rank": "",
       "Team": "Jônin de Konoha",
-      "Chakra": "Genjutsu",
-      "Element": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
       "Cost": "3",
       "Attack": "2",
       "Defense": "2",
@@ -682,7 +682,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Insensible au Genjutsu"
+          "Description": "<<Permanent>><<Instantané>>   Insensible aux dégâts spéciaux"
         }
       ],
       "Warning": false
@@ -724,8 +724,8 @@
       "Name": "Kurenaï Yûhi",
       "Rank": "Capitaine",
       "Team": "Équipe 8",
-      "Chakra": "Genjutsu",
-      "Element": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
       "Cost": "3",
       "Attack": "2",
       "Defense": "2",
@@ -1273,7 +1273,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Régénère 2 PV à la fin de chaque tour"
+          "Description": "<<Permanent>><<Instantané>>  Régénère 2 PV à la fin de chaque tour"
         }
       ],
       "Warning": false
@@ -1385,8 +1385,8 @@
       "Name": "Shima",
       "Rank": "",
       "Team": "Invocation",
-      "Chakra": "Genjutsu",
-      "Element": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
       "Cost": "",
       "Attack": "1",
       "Defense": "1",
@@ -1417,8 +1417,8 @@
       "Name": "Fukasaku",
       "Rank": "",
       "Team": "Invocation",
-      "Chakra": "Genjutsu",
-      "Element": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
       "Cost": "",
       "Attack": "1",
       "Defense": "1",
@@ -1506,7 +1506,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Insensible aux attaques physiques, de Terre et d'Eau"
+          "Description": "<<Permanent>><<Instantané>>  Insensible aux attaques physiques, de Terre et d'Eau"
         },
         {
           "Description": "<<Spécial>>  Manipulation du Shôton : Gagne +5 PV tant qu'elle n'a pas encore attaqué"
@@ -1541,7 +1541,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>Ultrason : Un flot de chauve-souris empêche les 2 camps de lancer des ninjutsu tant qu'il est en vie"
+          "Description": "<<Permanent>><<Instantané>>Ultrason : Un flot de chauve-souris empêche les 2 camps de lancer des ninjutsu tant qu'il est en vie"
         }
       ],
       "Warning": false
@@ -1573,7 +1573,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Insensible aux attaques physiques"
+          "Description": "<<Permanent>><<Instantané>> Insensible aux attaques physiques"
         }
       ],
       "Warning": false
@@ -1605,7 +1605,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>Nuage de fumée : Empêche les 2 camps de lancer des ninjutsu tant qu'il est en vie"
+          "Description": "<<Permanent>><<Instantané>>Nuage de fumée : Empêche les 2 camps de lancer des ninjutsu tant qu'il est en vie"
         }
       ],
       "Warning": false
@@ -1637,7 +1637,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>Nuage de fumée : Empêche les 2 camps de lancer des ninjutsu tant qu'il est en vie"
+          "Description": "<<Permanent>><<Instantané>>Nuage de fumée : Empêche les 2 camps de lancer des ninjutsu tant qu'il est en vie"
         }
       ],
       "Warning": false
@@ -1669,7 +1669,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Insensible aux attaques physiques"
+          "Description": "<<Permanent>><<Instantané>> Insensible aux attaques physiques"
         }
       ],
       "Warning": false
@@ -1999,8 +1999,8 @@
       "Name": "Itachi Uchiwa",
       "Rank": "",
       "Team": "Akatsuki",
-      "Chakra": "Genjutsu",
-      "Element": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
       "Cost": "5",
       "Attack": "4",
       "Defense": "6",
@@ -2283,7 +2283,7 @@
           "Description": "<<activate>>  Invoque le Théâtre des 100 marionnettes"
         },
         {
-          "Description": "<<Permanent>>  Poison : Détruit le ninja blessé par Sasori à la fin du tour"
+          "Description": "<<Permanent>><<Instantané>>  Poison : Détruit le ninja blessé par Sasori à la fin du tour"
         }
       ],
       "Warning": false
@@ -2325,8 +2325,8 @@
       "Name": "Obito Uchiwa",
       "Rank": "",
       "Team": "Akatsuki",
-      "Chakra": "Genjutsu",
-      "Element": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
       "Cost": "4",
       "Attack": "2",
       "Defense": "2",
@@ -2347,7 +2347,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Donne +3 PV aux Uchiwa alliés"
+          "Description": "<<Permanent>><<Instantané>>  Donne +3 PV aux Uchiwa alliés"
         }
       ],
       "Warning": false
@@ -2411,7 +2411,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Insensible aux attaques non physiques"
+          "Description": "<<Permanent>><<Instantané>>  Insensible aux attaques non physiques"
         }
       ],
       "Warning": false
@@ -2507,7 +2507,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Lecture de l'esprit : Esquive les premiers dégâts devant lui être infligés à chaque tour"
+          "Description": "<<Permanent>><<Instantané>> Lecture de l'esprit : Esquive les premiers dégâts devant lui être infligés à chaque tour"
         }
       ],
       "Warning": false
@@ -2603,7 +2603,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>Absorbe tous les ninjutsu et y est insensible"
+          "Description": "<<Permanent>><<Instantané>>Absorbe tous les ninjutsu et y est insensible"
         }
       ],
       "Warning": false
@@ -2993,7 +2993,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Insensible aux attaques physiques"
+          "Description": "<<Permanent>><<Instantané>>  Insensible aux attaques physiques"
         }
       ],
       "Warning": false
@@ -3028,7 +3028,7 @@
           "Description": "<<Permanent>>  Protection"
         },
         {
-          "Description": "<<Spécial>>  Berserker : Gagne +4/-2 lorsqu'il attaque"
+          "Description": "<<Permanent>><<Instantané>>  Berserker : Gagne +4/-2 lorsqu'il attaque"
         }
       ],
       "Warning": false
@@ -3159,7 +3159,7 @@
           "Description": "<<Permanent>>  Protection"
         },
         {
-          "Description": "<<activate>>  Byakugan : Révèle 3 cartes de pioche, en garde une, défausse les autres"
+          "Description": "<<Instantané>>  Byakugan : Révèle 3 cartes de pioche, en garde une, défausse les autres"
         }
       ],
       "Warning": false
@@ -3322,7 +3322,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Attaque 2 ninjas adjacents"
+          "Description": "<<Permanent>>  Attaque 2 alliés adjacents à la fois"
         },
         {
           "Description": "<<activate>>  Se transforme en Hachibi"
@@ -3485,7 +3485,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Katana de foudre : Gagne +2 ATK contre la Terre"
+          "Description": "<<Permanent>><<Instantané>>  Katana de foudre : Gagne +2 ATK contre la Terre"
         }
       ],
       "Warning": false
@@ -3517,7 +3517,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Katana de foudre : Gagne +2 ATK contre la Terre"
+          "Description": "<<Permanent>><<Instantané>>  Katana de foudre : Gagne +2 ATK contre la Terre"
         }
       ],
       "Warning": false
@@ -3549,7 +3549,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Poison : Détruit le ninja blessé par Torune à la fin du tour"
+          "Description": "<<Permanent>><<Instantané>>  Poison : Détruit le ninja blessé par Torune à la fin du tour"
         }
       ],
       "Warning": false
@@ -3591,7 +3591,7 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Izanagi d' Danzô Shimura",
+      "Name": "Izanagi de Danzô Shimura",
       "Rank": "Capitaine",
       "Team": "Invocation",
       "Chakra": "Vent",
@@ -3686,7 +3686,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Les autres ninjas alliés gagnent +2 ATK"
+          "Description": "<<Permanent>><<Instantané>> Les autres ninjas alliés gagnent +2 ATK"
         }
       ],
       "Warning": false
@@ -3696,8 +3696,8 @@
       "Name": "Dimension parallèle",
       "Rank": "",
       "Team": "Lieu Légendaire",
-      "Chakra": "Genjutsu",
-      "Element": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
       "Cost": "5",
       "Attack": "",
       "Defense": "3",
@@ -3948,7 +3948,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas de terre gagnent +3 PV"
+          "Description": "<<Permanent>><<Instantané>>  Les ninjas de terre gagnent +3 PV"
         }
       ],
       "Warning": false
@@ -4172,7 +4172,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Sécrétion de la toile : Le ninja ciblé ne peut plus attaquer tant que Kidômaru est en jeu"
+          "Description": "<<Permanent>><<Instantané>> Sécrétion de la toile : Le ninja ciblé ne peut plus attaquer tant que Kidômaru est en jeu"
         }
       ],
       "Warning": false
@@ -4278,8 +4278,8 @@
       "Name": "Tayuya",
       "Rank": "",
       "Team": "Quartet d'Oto",
-      "Chakra": "Genjutsu",
-      "Element": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
       "Cost": "5",
       "Attack": "4",
       "Defense": "4",
@@ -4332,7 +4332,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Danse du camélia : Gagne +2 d'ATK contre les ninjas physiques"
+          "Description": "<<Permanent>><<Instantané>>  Danse du camélia : Gagne +2 d'ATK contre les ninjas physiques"
         }
       ],
       "Warning": false
@@ -4463,7 +4463,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Armure de foudre : Insensible aux attaques de foudre"
+          "Description": "<<Permanent>><<Instantané>>  Armure de foudre : Insensible aux attaques de foudre"
         }
       ],
       "Warning": false
@@ -4693,7 +4693,7 @@
           "Description": "<<Instantané>>   Charge : Attaque éclair"
         },
         {
-          "Description": "<<Permanent>>  Déplacement <<Instantané>> Attaque 2 fois par tour"
+          "Description": "<<Permanent>><<Instantané>>  Déplacement instantané :  Attaque 2 fois par tour"
         }
       ],
       "Warning": false
@@ -4990,7 +4990,7 @@
           "Description": "<<Permanent>>  Insensible aux attaques d'eau"
         },
         {
-          "Description": "<<Spécial>>  Gagne +1/+1 pour chaque ninja de type Eau dans son camp"
+          "Description": "<<Permanent>><<Instantané>>  Gagne +1 ATK / +1 PV pour chaque ninja de type Eau dans son camp"
         }
       ],
       "Warning": false
@@ -5267,7 +5267,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas en affinité avec l'eau gagnent +1/+1"
+          "Description": "<<Permanent>>  Les ninjas en affinité avec l'eau gagnent +1 ATK / +1 PV"
         }
       ],
       "Warning": false
@@ -5299,7 +5299,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas physiques gagnent +1/+1"
+          "Description": "<<Permanent>>  Les ninjas physiques gagnent +1 ATK / +1 PV"
         }
       ],
       "Warning": false
@@ -5331,7 +5331,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas en affinité avec le vent gagnent +1/+1"
+          "Description": "<<Permanent>>  Les ninjas en affinité avec le vent gagnent +1 ATK / +1 PV"
         }
       ],
       "Warning": false
@@ -5363,7 +5363,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas en affinité avec la foudre gagnent +1/+1"
+          "Description": "<<Permanent>>  Les ninjas en affinité avec la foudre gagnent +1 ATK / +1 PV"
         }
       ],
       "Warning": false
@@ -5395,7 +5395,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas en affinité avec la terre gagnent +1/+1"
+          "Description": "<<Permanent>>  Les ninjas en affinité avec la terre gagnent +1 ATK / +1 PV"
         }
       ],
       "Warning": false
@@ -5427,7 +5427,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas en affinité spéciale gagnent +1/+1"
+          "Description": "<<Permanent>>  Les ninjas en affinité spéciale gagnent +1 ATK / +1 PV"
         }
       ],
       "Warning": false
@@ -5491,7 +5491,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Les ninjas en affinité avec l'eau gagnent +1/+1"
+          "Description": "<<Permanent>> Les ninjas en affinité avec l'eau gagnent +1 ATK / +1 PV"
         }
       ],
       "Warning": false
@@ -5523,7 +5523,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas en affinité avec le feu gagnent +1/+1"
+          "Description": "<<Permanent>>  Les ninjas en affinité avec le feu gagnent +1 ATK / +1 PV"
         }
       ],
       "Warning": false
@@ -6220,8 +6220,8 @@
       "Name": "Kaï",
       "Rank": "",
       "Team": "Ninjutsu",
-      "Chakra": "Genjutsu",
-      "Element": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
       "Cost": "3",
       "Attack": "",
       "Defense": "",
@@ -6740,7 +6740,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Intimidation : Gagne +2/+1 tant qu'il est le seul ninja en lice"
+          "Description": "<<Permanent>> Intimidation : Gagne +2 ATK / +1 PV tant qu'il est le seul ninja en lice"
         }
       ],
       "Warning": false
@@ -7290,7 +7290,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Ses équipiers gagnent +1 ATK tant qu'il est en vie"
+          "Description": "<<Permanent>><<Instantané>> Ses équipiers gagnent +1 ATK tant qu'il est en vie"
         }
       ],
       "Warning": false
@@ -7610,7 +7610,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Sphère d'eau : Peut soit attaquer soit empêcher l'ennemi d'attaquer. Les pouvoirs de l'adversaire restent actifs"
+          "Description": "<<Permanent>><<Instantané>> Sphère d'eau : Peut soit attaquer soit empêcher l'ennemi d'attaquer. Les pouvoirs de l'adversaire restent actifs"
         }
       ],
       "Warning": false
@@ -8229,8 +8229,8 @@
       "Name": "Ino Yamanaka (Adulte)",
       "Rank": "",
       "Team": "Ino-Shika-Chô",
-      "Chakra": "Genjutsu",
-      "Element": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
       "Cost": "8",
       "Attack": "5",
       "Defense": "5",
@@ -8484,7 +8484,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Griffe de chakra : Gagne +1 ATK contre les ennemis qui ont protection"
+          "Description": "<<Permanent>><<Instantané>> Griffe de chakra : Gagne +1 ATK contre les ennemis qui ont protection"
         }
       ],
       "Warning": false
@@ -8612,7 +8612,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>Stratège : Tous les ninjas de la terre gagnent +1/+1"
+          "Description": "<<Permanent>><<Instantané>>Stratège : Tous les ninjas de la terre gagnent +1 ATK / +1 PV"
         }
       ],
       "Warning": false
@@ -8623,7 +8623,7 @@
       "Rank": "",
       "Team": "Équipe Furido",
       "Chakra": "Spécial",
-      "Element": "",
+      "Element": "Adaptation",
       "Cost": "3",
       "Attack": "2",
       "Defense": "3",
@@ -8740,7 +8740,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>Lecture de l'Esprit : Ne reçoit aucun dégât la première fois qu'il subit des dégats, valable à chaque début de son tour"
+          "Description": "<<Permanent>><<Instantané>>Lecture de l'Esprit : Ne reçoit aucun dégât la première fois qu'il subit des dégats, valable à chaque début de son tour"
         }
       ],
       "Warning": false
@@ -8807,7 +8807,7 @@
           "Description": "<<Permanent>> Insensible aux dégâts physiques"
         },
         {
-          "Description": "<<Spécial>> Tous les membres alliés du clan Ôtsutsuki gagnent +2 ATK/+2 PV"
+          "Description": "<<Permanent>><<Instantané>> Tous les membres alliés du clan Ôtsutsuki gagnent +2 ATK/+2 PV"
         }
       ],
       "Warning": false
@@ -9264,7 +9264,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>>Transfert de Chakra : Donne +1 ATK/+1 PV aux alliés adjacents"
+          "Description": "<<Activate>>Transfert de Chakra : Donne +1 ATK / +1 PV aux alliés adjacents"
         }
       ],
       "Warning": false
@@ -9602,7 +9602,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Donne +2 ATK/ +2 PV au ninja ciblé"
+          "Description": "<<Permanent>><<Instantané>> Donne +2 ATK/ +2 PV au ninja ciblé"
         },
         {
           "Description": "<<Spécial>> Quand l'allié attaque, 2 points de dégât sont transférés au héros ou détruit le kinjutsu"
@@ -9998,7 +9998,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Toutes les armes du héros gagnent +2 ATK"
+          "Description": "<<Permanent>><<Instantané>> Toutes les armes du héros gagnent +2 ATK"
         }
       ],
       "Warning": false
@@ -10030,7 +10030,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Toutes les armures du héros gagnent +2 DEF"
+          "Description": "<<Permanent>><<Instantané>> Toutes les armures du héros gagnent +2 DEF"
         }
       ],
       "Warning": false
@@ -10062,7 +10062,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Au choix : Absorbe 2 dégâts d'une seule attaque ou inflige 1 dégât à distance à 2 alliés"
+          "Description": "<<Permanent>><<Instantané>> Au choix : Absorbe 2 dégâts d'une seule attaque ou inflige 1 dégât à distance à 2 alliés"
         }
       ],
       "Warning": false
@@ -10136,8 +10136,8 @@
       "Name": "Gamariki",
       "Rank": "",
       "Team": "Invocation",
-      "Chakra": "Genjutsu",
-      "Element": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
       "Cost": "",
       "Attack": "2",
       "Defense": "2",
@@ -10222,7 +10222,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> S'il achève un ennemi, peut attaquer une deuxieme fois"
+          "Description": "<<Permanent>> S'il achève un ennemi, peut attaquer une nouvelle fois"
         }
       ],
       "Warning": false
@@ -10296,8 +10296,8 @@
       "Name": "Hanare",
       "Rank": "",
       "Team": "Espionne",
-      "Chakra": "Genjutsu",
-      "Element": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
       "Cost": "2",
       "Attack": "1",
       "Defense": "1",
@@ -10328,7 +10328,7 @@
       "Name": "Kisuke Maboroshi",
       "Rank": "",
       "Team": "Fantôme",
-      "Chakra": "Genjutsu",
+      "Chakra": "Spécial",
       "Element": "Esprit",
       "Cost": "4",
       "Attack": "0",
@@ -10488,8 +10488,8 @@
       "Name": "Genshô Ryûdôin",
       "Rank": "",
       "Team": "Trois frères Ryûdôin",
-      "Chakra": "Genjutsu",
-      "Element": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
       "Cost": "2",
       "Attack": "1",
       "Defense": "1",
@@ -10552,8 +10552,8 @@
       "Name": "Sabiru",
       "Rank": "",
       "Team": "Espion",
-      "Chakra": "Genjutsu",
-      "Element": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
       "Cost": "4",
       "Attack": "2",
       "Defense": "3",
@@ -10840,7 +10840,7 @@
       "Name": "Hiruko",
       "Rank": "",
       "Team": "Nukenin",
-      "Chakra": "Genjutsu",
+      "Chakra": "Spécial",
       "Element": "Chimère",
       "Cost": "5",
       "Attack": "3",
@@ -10862,7 +10862,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Tout dégat non physique le touchant et renvoyé à son lanceur"
+          "Description": "<<Permanent>><<Instantané>> Tout dégat non physique le touchant et renvoyé à son lanceur"
         }
       ],
       "Warning": false
@@ -10872,7 +10872,7 @@
       "Name": "Ichi",
       "Rank": "",
       "Team": "Nukenin",
-      "Chakra": "Genjutsu",
+      "Chakra": "Spécial",
       "Element": "Chimère",
       "Cost": "3",
       "Attack": "1",
@@ -10894,7 +10894,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Tout dégat non physique le touchant et renvoyé à son lanceur"
+          "Description": "<<Permanent>><<Instantané>> Tout dégat non physique le touchant et renvoyé à son lanceur"
         }
       ],
       "Warning": false
@@ -10904,7 +10904,7 @@
       "Name": "San",
       "Rank": "",
       "Team": "Nukenin",
-      "Chakra": "Genjutsu",
+      "Chakra": "Spécial",
       "Element": "Chimère",
       "Cost": "3",
       "Attack": "1",
@@ -10926,7 +10926,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Tout dégat non physique au corps à corps le touchant est renvoyé à son lanceur"
+          "Description": "<<Permanent>><<Instantané>> Tout dégat non physique au corps à corps le touchant est renvoyé à son lanceur"
         }
       ],
       "Warning": false
@@ -10936,7 +10936,7 @@
       "Name": "Ni",
       "Rank": "",
       "Team": "Nukenin",
-      "Chakra": "Genjutsu",
+      "Chakra": "Spécial",
       "Element": "Chimère",
       "Cost": "3",
       "Attack": "1",
@@ -10968,7 +10968,7 @@
       "Name": "Ninken de Ni",
       "Rank": "",
       "Team": "Invocation",
-      "Chakra": "Genjutsu",
+      "Chakra": "Spécial",
       "Element": "Chimère",
       "Cost": "",
       "Attack": "1",
@@ -11022,7 +11022,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Armure de pierre : réduit tous les dégêts subits de 1"
+          "Description": "<<Permanent>><<Instantané>> Armure de pierre : réduit tous les dégêts subits de 1"
         }
       ],
       "Warning": false
@@ -11288,7 +11288,7 @@
       "Name": "Shisui Uchiwa",
       "Rank": "",
       "Team": "Anbu",
-      "Chakra": "Genjutsu",
+      "Chakra": "Spécial",
       "Element": "Sharingan",
       "Cost": "5",
       "Attack": "3",
@@ -11406,7 +11406,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Amplifie les attaques des ninjas de vent de 1"
+          "Description": "<<Permanent>><<Instantané>> Amplifie les attaques des ninjas de vent de 1"
         }
       ],
       "Warning": false
@@ -11636,7 +11636,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Bruine de limaille de fer : Insensible aux attaques au corps à corps ou distance"
+          "Description": "<<Permanent>><<Instantané>> Bruine de limaille de fer : Insensible aux attaques au corps à corps ou distance"
         }
       ],
       "Warning": false
@@ -11998,8 +11998,8 @@
       "Name": "Geôle de Paille",
       "Rank": "",
       "Team": "Piège",
-      "Chakra": "Genjutsu",
-      "Element": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
       "Cost": "2",
       "Attack": "",
       "Defense": "",
@@ -12446,7 +12446,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Soigne 1 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>><<Instantané>> Soigne 1 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -12996,7 +12996,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Mirroir d'eau : Insensible aux attaques et aux sorts d'eau"
+          "Description": "<<Permanent>><<Instantané>> Mirroir d'eau : Insensible aux attaques et aux sorts d'eau"
         }
       ],
       "Warning": false
@@ -13060,7 +13060,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>Armure de vapeur : insensible aux attaques et jutsus de feu"
+          "Description": "<<Permanent>><<Instantané>>Armure de vapeur : insensible aux attaques et jutsus de feu"
         }
       ],
       "Warning": false
@@ -13162,7 +13162,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Donne +2 PV à tous les alliés de Terre"
+          "Description": "<<Permanent>><<Instantané>> Donne +2 PV à tous les alliés de Terre"
         }
       ],
       "Warning": false
@@ -13194,7 +13194,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Donne +2 PV à tous les alliés d'Eau"
+          "Description": "<<Permanent>><<Instantané>> Donne +2 PV à tous les alliés d'Eau"
         }
       ],
       "Warning": false
@@ -13226,7 +13226,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Donne +2 PV à tous les alliés d'Eau"
+          "Description": "<<Permanent>><<Instantané>> Donne +2 PV à tous les alliés d'Eau"
         }
       ],
       "Warning": false
@@ -13293,7 +13293,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Donne +2 PV à tous les alliés de Terre"
+          "Description": "<<Permanent>><<Instantané>> Donne +2 PV à tous les alliés de Terre"
         }
       ],
       "Warning": false
@@ -13325,7 +13325,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Donne +2 PV à tous les alliés de Terre"
+          "Description": "<<Permanent>><<Instantané>> Donne +2 PV à tous les alliés de Terre"
         }
       ],
       "Warning": false
@@ -13495,8 +13495,8 @@
       "Name": "Kirara",
       "Rank": "",
       "Team": "Clan Kū",
-      "Chakra": "Genjutsu",
-      "Element": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
       "Cost": "4",
       "Attack": "2",
       "Defense": "2",
@@ -13581,7 +13581,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Soigne d'autant tous les membres de son camp qu'il fait de dégât."
+          "Description": "<<Permanent>> Soigne d'autant tous les membres de son camp qu'il fait de dégât lorsqu'il attaque"
         }
       ],
       "Warning": false
@@ -14071,8 +14071,8 @@
       "Name": "Yakumo Kurama",
       "Rank": "",
       "Team": "Clan Kurama",
-      "Chakra": "Genjutsu",
-      "Element": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
       "Cost": "0",
       "Attack": "2",
       "Defense": "2",
@@ -14103,8 +14103,8 @@
       "Name": "Unkai Kurama",
       "Rank": "",
       "Team": "Clan Kurama",
-      "Chakra": "Genjutsu",
-      "Element": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
       "Cost": "0",
       "Attack": "2",
       "Defense": "2",
@@ -14135,8 +14135,8 @@
       "Name": "Murakumo Kurama",
       "Rank": "",
       "Team": "Clan Kurama",
-      "Chakra": "Genjutsu",
-      "Element": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
       "Cost": "0",
       "Attack": "2",
       "Defense": "2",
@@ -14167,8 +14167,8 @@
       "Name": "Uroko Kurama",
       "Rank": "",
       "Team": "Clan Kurama",
-      "Chakra": "Genjutsu",
-      "Element": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
       "Cost": "0",
       "Attack": "2",
       "Defense": "2",
@@ -15568,7 +15568,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Soigne 3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>> Soigne 1D3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -15600,7 +15600,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Soigne 3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>> Soigne 1D3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -15632,7 +15632,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Soigne 3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>> Soigne 1D3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -15760,7 +15760,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Pour L'akatsuki ! : Gagne +1/+1 pour chaque membre de l'Akatsuki présent dans les 2 camps"
+          "Description": "<<Permanent>><<instantané>> Pour L'akatsuki ! : Gagne +1 ATK / +1 PV pour chaque membre de l'Akatsuki présent en jeu"
         }
       ],
       "Warning": false

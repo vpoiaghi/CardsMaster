@@ -45,16 +45,7 @@ Maintenant que la fonctionnalité est validée, voir comment elle sera intégré
 
 * Pendant un export par le manager si on clique sur un item de la grille l'application plante. J'ai du mal gérer quelquechose au niveau des threads.
 
-UPD cartes :
 
-Test - 7 cartes départ
-Quand on joue un pouvoir activate, on ne peut ataquer le meme tour
-
-Ajouter pouvoirs destruction items
-
-Notice d atak du heros avec arme qui peut pas contrataquer en def
-
-Ajouter booleen carte peut ou pas attaquer
 
 
 

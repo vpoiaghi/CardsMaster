@@ -183,7 +183,7 @@ namespace CardMasterImageBuilder.Elements.TextFormater
         {
             TElementImage element = new TElementImage(owner.GetResourceImage(fileName));
 
-            if ((TextArea.TextAlign == HorizontalAlignment.LeftWithIcon) && ((this.lastElement == null) || (this.lastElement is TElementReturn)))
+            if ((TextArea.TextAlign == HorizontalAlignment.LeftWithIcon) && ((this.lastElement == null) || (this.lastElement is TElementSpace) ||(this.lastElement is TElementReturn) || (this.lastElement is TElementImage)))
             {
                 element.ImageSize = this.TextArea.LeftIconsSize;
             }
