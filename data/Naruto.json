@@ -2699,7 +2699,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> À chacun de ses tours,  peut au choix attaquer ou se camoufler et devient ainsi inciblable"
+          "Description": "<<Permanent>> À chacun de ses tours,  peut au choix attaquer ou se camoufler (Ne peut être ciblé par une attaque ou un Ninjutsu tant qu'il n'a pas attaqué)"
         }
       ],
       "Warning": false
@@ -4885,7 +4885,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>   Camouflage : Bombe de fumée"
+          "Description": "<<Instantané>>  Bombe de fumée : Confère camouflage à l'allié ciblé (Ne peut être ciblé par une attaque ou un Ninjutsu tant qu'il n'a pas attaqué)"
         }
       ],
       "Warning": false
@@ -4952,7 +4952,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>   Camouflage"
+          "Description": "<<Instantané>>   Camouflage : Ne peut être ciblé par une attaque ou un Ninjutsu tant qu'il n'a pas attaqué"
         },
         {
           "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
@@ -6003,7 +6003,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>  Confère camouflage à l'allié ciblé (Ne peut être ciblé par une attaque ou un Ninjutsu). Est détruit après utilisation"
+          "Description": "<<Instantané>>  Confère camouflage à l'allié ciblé (Ne peut être ciblé par une attaque ou un Ninjutsu tant qu'il n'a pas attaqué). Est détruit après utilisation"
         }
       ],
       "Warning": false
@@ -16060,9 +16060,9 @@
       "Team": "Genin de Kuza",
       "Chakra": "Vent",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -16080,13 +16080,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Déferlente de vent : inflige 1 point de dégât à tous les adversaires (y compris le héros)"
         }
       ],
       "Warning": true
@@ -16098,10 +16092,10 @@
       "Team": "Genin de Kuza",
       "Chakra": "Terre",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "3",
+      "Citation": "Doton: Moguragakure no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -16118,13 +16112,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Camouflage dans la terre"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>  Camouflage dans la terre : Ne peut être ciblé par une attaque ou un Ninjutsu tant qu'il n'a pas attaqué"
         }
       ],
       "Warning": true
@@ -16174,10 +16162,10 @@
       "Team": "Genin de Kuza",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "2",
+      "Attack": "0",
+      "Defense": "4",
+      "Citation": "Sumerudama",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -16194,16 +16182,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Protection"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
