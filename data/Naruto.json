@@ -16063,13 +16063,13 @@
       "Cost": "2",
       "Attack": "1",
       "Defense": "3",
-      "Citation": "",
+      "Citation": "Futon : Kazekiri no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -16083,7 +16083,7 @@
           "Description": "<<Activate>> Déferlente de vent : inflige 1 point de dégât à tous les adversaires (y compris le héros)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -16095,13 +16095,13 @@
       "Cost": "2",
       "Attack": "1",
       "Defense": "3",
-      "Citation": "Doton: Moguragakure no Jutsu",
+      "Citation": "Doton : Moguragakure no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -16114,12 +16114,11 @@
         {
           "Description": "<<Instantané>>  Camouflage dans la terre : Ne peut être ciblé par une attaque ou un Ninjutsu tant qu'il n'a pas attaqué"
         },
-		{
+        {
           "Description": "<<Activate>>  Invoque Moguranmaru"
         }
       ],
-      ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -16128,16 +16127,16 @@
       "Team": "Invocation",
       "Chakra": "Terre",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "0",
+      "Attack": "2",
+      "Defense": "5",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Select3",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -16148,16 +16147,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>  Camouflage dans la terre : Ne peut être ciblé par une attaque ou un Ninjutsu tant qu'il n'a pas attaqué"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -16175,7 +16168,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -16198,16 +16191,16 @@
       "Team": "Genin de Suna 1",
       "Chakra": "Eau",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "2",
+      "Citation": "Shôsen Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -16221,7 +16214,7 @@
           "Description": "<<Activate>> Soigne 1d3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -16239,7 +16232,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -16250,13 +16243,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 poing de grès : quand il est attaqué, il inflige 2 dmg de +"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Poing de grès : Quand il défend, inflige  +2 ATK"
         }
       ],
       "Warning": true
@@ -16271,13 +16258,13 @@
       "Cost": "",
       "Attack": "",
       "Defense": "",
-      "Citation": "Mōbaku Sajin: Noizu",
+      "Citation": "Mōbaku Sajin : Noizu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -16309,7 +16296,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -16347,7 +16334,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -16385,7 +16372,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -16423,7 +16410,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -16461,7 +16448,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -16493,13 +16480,13 @@
       "Cost": "",
       "Attack": "",
       "Defense": "",
-      "Citation": "",
+      "Citation": "Shôsen Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -16537,7 +16524,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -16575,7 +16562,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -16613,7 +16600,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -16651,7 +16638,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -16689,7 +16676,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -16727,7 +16714,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -16765,7 +16752,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -16803,7 +16790,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -16841,7 +16828,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -16879,7 +16866,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -16917,7 +16904,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -16955,7 +16942,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto Shippuden",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
