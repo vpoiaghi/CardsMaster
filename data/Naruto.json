@@ -16223,6 +16223,70 @@
       "Team": "Genin de Suna 1",
       "Chakra": "Terre",
       "Element": "",
+      "Cost": "2",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Saganken",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Poing de grès : Quand il défend, inflige  +2 ATK"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Shishio",
+      "Rank": "",
+      "Team": "Genin de Suna 1",
+      "Chakra": "Terre",
+      "Element": "Sable",
+      "Cost": "2",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Mobaku Sajin : Noizu",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Formation de Sable Aveuglant : les adversaires infligent tous 1 points de dégât en moins"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Mikoshi",
+      "Rank": "",
+      "Team": "Genin de Suna 2",
+      "Chakra": "Terre",
+      "Element": "Sable",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -16243,39 +16307,13 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Poing de grès : Quand il défend, inflige  +2 ATK"
-        }
-      ],
-      "Warning": true
-    },
-    {
-      "Kind": "Ninja",
-      "Name": "Shishio",
-      "Rank": "",
-      "Team": "Genin de Suna 1",
-      "Chakra": "Terre",
-      "Element": "Sable",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "Mōbaku Sajin : Noizu",
-      "Comments": "",
-      "Nb": 1,
-      "BackSide": "Back-Draw",
-      "BackSkinName": "BackSkin1",
-      "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Shippuden>>Naruto Shippuden",
-      "StringField2": "",
-      "StringField3": "",
-      "StringField4": "",
-      "IntField1": null,
-      "IntField2": null,
-      "IntField3": null,
-      "IntField4": null,
-      "Background": null,
-      "Powers": [
+          "Description": "Power 1"
+        },
         {
-          "Description": "<<Instantané>> Formation de Sable Aveuglant : les adversaires infligent tous 2 points de dégât en moins"
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
         }
       ],
       "Warning": true
@@ -16285,7 +16323,7 @@
       "Name": "Yukata",
       "Rank": "",
       "Team": "Genin de Suna 2",
-      "Chakra": "Terre",
+      "Chakra": "Vent",
       "Element": "",
       "Cost": "",
       "Attack": "",
@@ -16322,7 +16360,7 @@
       "Kind": "Ninja",
       "Name": "Sari",
       "Rank": "",
-      "Team": "Genin de Suna 2",
+      "Team": "Genin de Suna X",
       "Chakra": "Terre",
       "Element": "",
       "Cost": "",
@@ -16361,12 +16399,12 @@
       "Name": "Matsuri",
       "Rank": "",
       "Team": "Genin de Suna 2",
-      "Chakra": "Terre",
+      "Chakra": "Vent",
       "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
-      "Citation": "",
+      "Citation": "Hissatsu Hoguryusei",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -16954,6 +16992,44 @@
       "Powers": [
         {
           "Description": "Power 1 "
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Hōichi",
+      "Rank": "",
+      "Team": "",
+      "Chakra": "Spécial",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
         },
         {
           "Description": "Power 2"
