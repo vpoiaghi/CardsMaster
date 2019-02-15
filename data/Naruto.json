@@ -2958,7 +2958,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Soigne 1D3 PV à un allié ou au héros (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Soigne 1D3 PV à un allié ou au héros (Utilisable 1 fois par tour)"
         },
         {
           "Description": "<<Spécial>>  Détruit 1 bijù adverse lorsqu'elle meurt"
@@ -3191,7 +3191,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Soin : Pile soigne 1, Face soigne 2 (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>> Paume Mystique : Soigne 1D3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -3721,7 +3721,7 @@
           "Description": "<<Instantané>>   Soigne tous les ninjas alliés"
         },
         {
-          "Description": "<<activate>>  Soigne entièrement un ninja au choix (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Soigne entièrement un ninja au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -4725,7 +4725,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Soigne X PV à un allié (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Paume Mystique : Soigne 1D4 PV à un allié ou au héros (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -4853,7 +4853,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Soigne 1D4 PV à tous les alliés (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Soigne 1D4 PV à tous les alliés (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -5683,7 +5683,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Soigne 2 PV au ninja ciblé (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Soigne 2 PV au ninja ciblé (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -8146,7 +8146,7 @@
           "Description": "<<Instantané>> Shanaro : Élimine un ninja ciblé"
         },
         {
-          "Description": "<<Spécial>> Soigne 1D4 PV au ninja ciblé, utilisable une fois par tour"
+          "Description": "<<Permanent>> Paume Mystique : Soigne 1D4 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -8251,7 +8251,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Technique de la Paume Mystique : Soigne 2 PV à un ninja. Utilisable 1 fois par tour"
+          "Description": "<<Permanent>> Technique de la Paume Mystique : Soigne 2 PV à un ninja. Utilisable 1 fois par tour"
         },
         {
           "Description": "<<Spécial>> Si 3 membres d'une configuration Ino-Shika-Cho sont présents, ceux-ci gagnent +3 ATK et +3 PV"
@@ -8918,9 +8918,9 @@
       "Team": "Équipe Minato",
       "Chakra": "Eau",
       "Element": "",
-      "Cost": "3",
-      "Attack": "2",
-      "Defense": "2",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "Shôsen Jutsu",
       "Comments": "",
       "Nb": 1,
@@ -8938,7 +8938,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>> Technique de la Paume Mystique : Soigne 2 PV à un ninja ciblé à chaque début de tour du joueur"
+          "Description": "<<Permanent>> Paume Mystique : Soigne 1PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -12446,7 +12446,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>> Soigne 1 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>><<Instantané>>  Paume Mystique : Soigne 1 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -14765,7 +14765,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Paume mystique : soigne 1 PV à un allié (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>> Paume mystique : soigne 1 PV à un allié (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -15216,7 +15216,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Paume mystique : soigne 1 PV à un allié (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>> Paume mystique : soigne 1 PV à un allié (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -15568,7 +15568,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Soigne 1D3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Paume Mystique : Soigne 1D3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -15600,7 +15600,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Soigne 1D3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Paume Mystique : Soigne 1D3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -15632,7 +15632,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Soigne 1D3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Paume Mystique : Soigne 1D3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -15696,7 +15696,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Soigne 1D3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Paume Mystique : Soigne 1D3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -16048,7 +16048,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Soigne 3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Paume Mystique : Soigne 3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -16211,7 +16211,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Soigne 1d3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Paume Mystique : Soigne 1d3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -16325,10 +16325,10 @@
       "Team": "Genin de Suna 2",
       "Chakra": "Vent",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "3",
+      "Citation": "Futon : Kazekiri no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -16345,16 +16345,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Déferlente de vent : inflige 1 point de dégât à tous les adversaires (y compris le héros)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -16439,10 +16433,10 @@
       "Team": "Genin de Suna 3",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Shichi Tenkohō",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -16459,28 +16453,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Sept Respirations Célestes : rapidoté + force"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Sept Respirations Célestes : Gagne définitivement +2 ATK et peut attaquer 2 fois par tour"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Sen",
       "Rank": "",
       "Team": "Genin de Suna 3",
-      "Chakra": "Physique",
-      "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": "Saboten no Genjutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -16497,16 +16485,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Attaque de kunai"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Illusion du cactus : Quand elle entre en jeu, l'allié ciblé est envouté et ne peut plus rien faire tant qu'elle est en vie"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -16515,9 +16497,9 @@
       "Team": "Genin de Suna 3",
       "Chakra": "Eau",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "2",
       "Citation": "Shôsen Jutsu",
       "Comments": "",
       "Nb": 1,
@@ -16535,16 +16517,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Soin"
-        },
-        {
-          "Description": "Power 2 Perception"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>  Paume Mystique : Soigne 1d2 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -16553,10 +16529,10 @@
       "Team": "Nukenin de Taki",
       "Chakra": "Feu",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Katon : Gōkakyū no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -16573,16 +16549,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Boule de feu"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Grande boule de feu : inflige 1D4 points de dégâts au héros adverse, ignorant son armure et en détruisant une pièce"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
