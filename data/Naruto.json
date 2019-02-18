@@ -11776,7 +11776,7 @@
       "Team": "Espion",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "3",
+      "Cost": "2",
       "Attack": "1",
       "Defense": "1",
       "Citation": "",
@@ -16354,7 +16354,7 @@
       "Kind": "Ninja",
       "Name": "Sari",
       "Rank": "",
-      "Team": "Genin de Suna X",
+      "Team": "Genin de Suna",
       "Chakra": "Terre",
       "Element": "",
       "Cost": "",
@@ -16599,9 +16599,9 @@
       "Team": "Espion",
       "Chakra": "Terre",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -16619,16 +16619,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Pioche une carte"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -16865,9 +16859,9 @@
       "Team": "Genin de Suna 4",
       "Chakra": "Terre",
       "Element": "Sable",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "2",
       "Citation": "Sunaarashi no Jutsu",
       "Comments": "",
       "Nb": 1,
@@ -16885,16 +16879,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Tempete de sable"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Tempête de sable : Les adversaires sont aveuglés tant qu'elle est en vie, et ne peuvent plus lancer de jutsu (les attaques et invocations sont encore possibles)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -16903,10 +16891,10 @@
       "Team": "Genin de Suna 4",
       "Chakra": "Vent",
       "Element": "Poison",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
+      "Citation": "Sen'eijashu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -16923,16 +16911,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Protection"
-        },
-        {
-          "Description": "Power 2 Empoisone l'ennemi"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>><<Permanent>> Poigne de serpents spectrale : Détruit tout allié touché par l'attaque"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -16941,10 +16923,10 @@
       "Team": "Genin de Suna 4",
       "Chakra": "Terre",
       "Element": "Marionnettiste",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "2",
+      "Citation": "Kugutsu Modoki no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -16961,16 +16943,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 "
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<activate>> Contre-attaque du pantin : Prends le contrôle d'un adversaire tant qu'elle est en vie"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -16979,10 +16955,10 @@
       "Team": "",
       "Chakra": "Spécial",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Hôriki Fûin",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -16999,16 +16975,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>Sceau Sacré : Scelle l'allié ciblé et l'envoie au cimetière"
         }
       ],
-      "Warning": true
+      "Warning": false
     }
   ],
   "SkinFile": "Naruto.original.skin"
