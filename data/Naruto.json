@@ -16112,7 +16112,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>  Camouflage dans la terre : Ne peut être ciblé par une attaque ou un Ninjutsu tant qu'il n'a pas attaqué"
+          "Description": "<<Instantané>>  Camouflage dans la terre : Confère camouflage aux alliés de type terre(Ne peut être ciblé par une attaque ou un Ninjutsu tant qu'il n'a pas attaqué"
         },
         {
           "Description": "<<Activate>>  Invoque Moguranmaru"
@@ -16147,7 +16147,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>  Camouflage dans la terre : Ne peut être ciblé par une attaque ou un Ninjutsu tant qu'il n'a pas attaqué"
+          "Description": "<<Instantané>>  Camouflage dans la terre : Confère camouflage aux alliés de type terre (Ne peut être ciblé par une attaque ou un Ninjutsu tant qu'il n'a pas attaqué"
         }
       ],
       "Warning": false
@@ -16561,10 +16561,10 @@
       "Team": "Nukenin de Taki",
       "Chakra": "Eau",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "5",
+      "Citation": "Eiyu no Mizu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -16581,16 +16581,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Eau des héros : Gagne de la force mais perds des pv a chaque tour"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Eau des héros : Gagne +2 ATK mais perds 1 PV à la fin de chacun de ses tours"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -16631,9 +16625,9 @@
       "Team": "Chef du village de Taki",
       "Chakra": "Eau",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -16651,16 +16645,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Pioche deux cartes"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -16669,9 +16657,9 @@
       "Team": "Jônin de Taki",
       "Chakra": "Eau",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -16689,16 +16677,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 shuriken multiple"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Pioche une carte"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -16707,9 +16689,9 @@
       "Team": "Jônin de Taki",
       "Chakra": "Eau",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -16727,16 +16709,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Pioche une carte"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -16765,7 +16741,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "Power 1 invocation d'armes de jet"
         },
         {
           "Description": "Power 2"
@@ -16783,10 +16759,10 @@
       "Team": "Genin d'Ame",
       "Chakra": "Eau",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": "Suiton : Kirisamegakure no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -16803,16 +16779,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Camouflage dans la brume : Confère camouflage aux alliés de type eau (Ne peut être ciblé par une attaque ou un Ninjutsu tant qu'il n'a pas attaqué)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -16821,10 +16791,10 @@
       "Team": "Genin d'Ame",
       "Chakra": "Eau",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": "Jouro Senbon",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -16841,16 +16811,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Pluie d'aiguilles : inflige 1 point de dégât à chaque allié adverse"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
