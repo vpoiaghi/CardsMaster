@@ -16282,6 +16282,44 @@
     },
     {
       "Kind": "Ninja",
+      "Name": "Sari",
+      "Rank": "",
+      "Team": "Genin de Suna",
+      "Chakra": "Terre",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
       "Name": "Mikoshi",
       "Rank": "",
       "Team": "Genin de Suna 2",
@@ -16349,44 +16387,6 @@
         }
       ],
       "Warning": false
-    },
-    {
-      "Kind": "Ninja",
-      "Name": "Sari",
-      "Rank": "",
-      "Team": "Genin de Suna",
-      "Chakra": "Terre",
-      "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
-      "Comments": "",
-      "Nb": 1,
-      "BackSide": "Back-Draw",
-      "BackSkinName": "BackSkin1",
-      "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Shippuden>>Naruto Shippuden",
-      "StringField2": "",
-      "StringField3": "",
-      "StringField4": "",
-      "IntField1": null,
-      "IntField2": null,
-      "IntField3": null,
-      "IntField4": null,
-      "Background": null,
-      "Powers": [
-        {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
-        }
-      ],
-      "Warning": true
     },
     {
       "Kind": "Ninja",
@@ -16902,6 +16902,38 @@
       "Powers": [
         {
           "Description": "<<activate>> Contre-attaque du pantin : Prends le contrôle d'un adversaire tant qu'elle est en vie"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Fugi",
+      "Rank": "",
+      "Team": "",
+      "Chakra": "Terre",
+      "Element": "Sable",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>>L'adversaire ne peut piocher de carte le prochain tour"
         }
       ],
       "Warning": false
