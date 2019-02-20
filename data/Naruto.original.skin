@@ -218,7 +218,7 @@
 				"PowerIconWidth" : 30,
 				"PowerIconHeight" : 30,
 				"FontName" : "Bell MT",
-				"FontSize" : 8,
+				"FontSize" : 7,
 				"Style" : "Bold",
 				"NameAttribute" : "Powers",
 				"HorizontalAlign" : "Left-WithIcon",
