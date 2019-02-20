@@ -16721,10 +16721,10 @@
       "Team": "Genin d'Ame",
       "Chakra": "Eau",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "2",
+      "Citation": "Fûnyû no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -16741,16 +16741,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 invocation d'armes de jet"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Pluie d'aiguilles : inflige 1 point de dégât à chaque allié adverse (Utilisable 1 fois par tour)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
