@@ -16287,9 +16287,9 @@
       "Team": "Genin de Suna",
       "Chakra": "Terre",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -16307,16 +16307,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Jet de kunaï : inflige 1 point de dégât à la cible"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -16325,9 +16319,9 @@
       "Team": "Genin de Suna 2",
       "Chakra": "Terre",
       "Element": "Sable",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -16345,16 +16339,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Jet de kunaï : inflige 1 point de dégât à la cible"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -16395,9 +16383,9 @@
       "Team": "Genin de Suna 2",
       "Chakra": "Vent",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "Hissatsu Hoguryusei",
       "Comments": "",
       "Nb": 1,
@@ -16415,16 +16403,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Jet de kunaï : inflige 1 point de dégât à la cible"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
