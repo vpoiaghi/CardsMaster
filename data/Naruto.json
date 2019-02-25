@@ -16922,6 +16922,38 @@
     },
     {
       "Kind": "Ninja",
+      "Name": "Bunpuku",
+      "Rank": "",
+      "Team": "Jinchûriki ",
+      "Chakra": "Terre",
+      "Element": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "4",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>><<Permanent>> Reserve de chakra : Le héros dispose d'un point de chakra en plus que sa réserve"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
       "Name": "Hōichi",
       "Rank": "",
       "Team": "Nukenin de Suna",
