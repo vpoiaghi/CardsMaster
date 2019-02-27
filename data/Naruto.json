@@ -260,7 +260,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>>   Soigne 1D4 PV à un allié (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>><<Instantané>>   Soigne 1D4 points de vie à un allié (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -1273,7 +1273,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>>  Régénère 2 PV à la fin de chaque tour"
+          "Description": "<<Permanent>><<Instantané>>  Régénère 2 points de vie à la fin de chaque tour"
         }
       ],
       "Warning": false
@@ -1509,7 +1509,7 @@
           "Description": "<<Permanent>><<Instantané>>  Insensible aux attaques physiques, de Terre et d'Eau"
         },
         {
-          "Description": "<<Spécial>>  Manipulation du Shôton : Gagne +5 PV tant qu'elle n'a pas encore attaqué"
+          "Description": "<<Spécial>>  Manipulation du Shôton : Gagne +5 points de vie tant qu'elle n'a pas encore attaqué"
         }
       ],
       "Warning": false
@@ -2347,7 +2347,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>>  Donne +3 PV aux Uchiwa alliés"
+          "Description": "<<Permanent>><<Instantané>>  Donne +3 points de vie aux Uchiwa alliés"
         }
       ],
       "Warning": false
@@ -2958,7 +2958,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Soigne 1D3 PV à un allié ou au héros (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Soigne 1D3 points de vie à un allié ou au héros (Utilisable 1 fois par tour)"
         },
         {
           "Description": "<<Spécial>>  Détruit 1 bijù adverse lorsqu'elle meurt"
@@ -3191,7 +3191,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Paume Mystique : Soigne 1D3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>> Paume Mystique : Soigne 1D3 points de vie à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -3421,7 +3421,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Mur de Caoutchouc : Donne +1 PV aux alliés"
+          "Description": "<<Activate>> Mur de Caoutchouc : Donne +1 point de vie aux alliés"
         }
       ],
       "Warning": false
@@ -3753,7 +3753,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Défense ultime : Réduit chaque dégât reçu de 3 (s'applique avant le décompte de PV)"
+          "Description": "<<Permanent>>  Défense ultime : Réduit chaque dégât reçu de 3 (s'applique avant le décompte de points de vie)"
         },
         {
           "Description": "<<Spécial>>  Le tombeau du désert : Si Gaara élimine un Ninja et qu'il survit au combat, peut détruire n'importe quel autre Ninja"
@@ -3948,7 +3948,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>>  Les ninjas de terre gagnent +3 PV"
+          "Description": "<<Permanent>><<Instantané>>  Les ninjas de terre gagnent +3 points de vie"
         }
       ],
       "Warning": false
@@ -4204,7 +4204,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>   Rempart de terre : les alliés gagnent +2 PV tant qu'il est en vie"
+          "Description": "<<Instantané>>   Rempart de terre : les alliés gagnent +2 points de vie tant qu'il est en vie"
         }
       ],
       "Warning": false
@@ -4725,7 +4725,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Paume Mystique : Soigne 1D4 PV à un allié ou au héros (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Paume Mystique : Soigne 1D4 points de vie à un allié ou au héros (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -4853,7 +4853,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Soigne 1D4 PV à tous les alliés (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Soigne 1D4 points de vie à tous les alliés (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -4920,7 +4920,7 @@
           "Description": "<<Instantané>>   Détruit tous les Bijù adverses"
         },
         {
-          "Description": "<<Spécial>>  Donne +4 PV aux Bijù alliés"
+          "Description": "<<Spécial>>  Donne +4 points de vie aux Bijù alliés"
         }
       ],
       "Warning": false
@@ -4990,7 +4990,7 @@
           "Description": "<<Permanent>>  Insensible aux attaques d'eau"
         },
         {
-          "Description": "<<Permanent>><<Instantané>>  Gagne +1 ATK / +1 PV pour chaque ninja de type Eau dans son camp"
+          "Description": "<<Permanent>><<Instantané>>  Gagne +1 ATK / +1 point de vie pour chaque ninja de type Eau dans son camp"
         }
       ],
       "Warning": false
@@ -5267,7 +5267,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas en affinité avec l'eau gagnent +1 ATK / +1 PV"
+          "Description": "<<Permanent>>  Les ninjas en affinité avec l'eau gagnent +1 ATK / +1 point de vie"
         }
       ],
       "Warning": false
@@ -5299,7 +5299,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas physiques gagnent +1 ATK / +1 PV"
+          "Description": "<<Permanent>>  Les ninjas physiques gagnent +1 ATK / +1 point de vie"
         }
       ],
       "Warning": false
@@ -5331,7 +5331,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas en affinité avec le vent gagnent +1 ATK / +1 PV"
+          "Description": "<<Permanent>>  Les ninjas en affinité avec le vent gagnent +1 ATK / +1 point de vie"
         }
       ],
       "Warning": false
@@ -5363,7 +5363,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas en affinité avec la foudre gagnent +1 ATK / +1 PV"
+          "Description": "<<Permanent>>  Les ninjas en affinité avec la foudre gagnent +1 ATK / +1 point de vie"
         }
       ],
       "Warning": false
@@ -5395,7 +5395,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas en affinité avec la terre gagnent +1 ATK / +1 PV"
+          "Description": "<<Permanent>>  Les ninjas en affinité avec la terre gagnent +1 ATK / +1 point de vie"
         }
       ],
       "Warning": false
@@ -5427,7 +5427,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas en affinité spéciale gagnent +1 ATK / +1 PV"
+          "Description": "<<Permanent>>  Les ninjas en affinité spéciale gagnent +1 ATK / +1 point de vie"
         }
       ],
       "Warning": false
@@ -5459,7 +5459,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Les ninjas  en affinité avec la terre gagnent +2 PV"
+          "Description": "<<Permanent>> Les ninjas  en affinité avec la terre gagnent +2 points de vie"
         }
       ],
       "Warning": false
@@ -5491,7 +5491,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Les ninjas en affinité avec l'eau gagnent +1 ATK / +1 PV"
+          "Description": "<<Permanent>> Les ninjas en affinité avec l'eau gagnent +1 ATK / +1 point de vie"
         }
       ],
       "Warning": false
@@ -5523,7 +5523,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas en affinité avec le feu gagnent +1 ATK / +1 PV"
+          "Description": "<<Permanent>>  Les ninjas en affinité avec le feu gagnent +1 ATK / +1 point de vie"
         }
       ],
       "Warning": false
@@ -5683,7 +5683,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Soigne 2 PV au ninja ciblé (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Soigne 2 points de vie au ninja ciblé (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -6676,7 +6676,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Soutien Technologique : Donne +2 PV à tous les alliés tant qu'il est en vie"
+          "Description": "<<Permanent>>  Soutien Technologique : Donne +2 points de vie à tous les alliés tant qu'il est en vie"
         }
       ],
       "Warning": false
@@ -6740,7 +6740,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Intimidation : Gagne +2 ATK / +1 PV tant qu'il est le seul ninja en lice"
+          "Description": "<<Permanent>> Intimidation : Gagne +2 ATK / +1 point de vie tant qu'il est le seul ninja en lice"
         }
       ],
       "Warning": false
@@ -7162,7 +7162,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>>  Nuage de limaille : Tous les alliés gagnent +2 PV tant qu'il est en vie"
+          "Description": "<<Activate>>  Nuage de limaille : Tous les alliés gagnent +2 points de vie tant qu'il est en vie"
         }
       ],
       "Warning": false
@@ -7674,7 +7674,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Gagne +2 PV quand il défend"
+          "Description": "<<Permanent>> Gagne +2 points de vie quand il défend"
         }
       ],
       "Warning": false
@@ -7843,7 +7843,7 @@
           "Description": "<<Instantané>> Volonté d'Ashirama : Tant que Moegi est présente, le ninja ciblé ne peut ni attaquer, ni lancer de sort "
         },
         {
-          "Description": "<<Permanent>> Se soigne de 1 PV par tour"
+          "Description": "<<Permanent>> Se soigne de 1 point de vie par tour"
         }
       ],
       "Warning": false
@@ -7980,7 +7980,7 @@
           "Description": "<<Spécial>> Empoisonnement par les insectes : Un ninja ciblé subit 1 point de dégât par tour"
         },
         {
-          "Description": "<<Activate>> Barrière d'insectes : Ajoute 2 PV à Shino Aburame"
+          "Description": "<<Activate>> Barrière d'insectes : Ajoute 2 points de vie à Shino Aburame"
         }
       ],
       "Warning": false
@@ -8146,7 +8146,7 @@
           "Description": "<<Instantané>> Shanaro : Élimine un ninja ciblé"
         },
         {
-          "Description": "<<Permanent>> Paume Mystique : Soigne 1D4 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>> Paume Mystique : Soigne 1D4 points de vie à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -8181,7 +8181,7 @@
           "Description": "<<Instantané>> Désigne un ninja et l'immobilise, l'empêchant d'attaquer et de lancer des sorts. Le ninja est libéré à la mort de Shikamaru"
         },
         {
-          "Description": "<<Spécial>> Si 3 membres du trio Ino-Shika-Cho sont présents, ceux-ci gagnent +3 ATK et +3 PV"
+          "Description": "<<Spécial>> Si 3 membres du trio Ino-Shika-Cho sont présents, ceux-ci gagnent +3 ATK et +3 points de vie"
         }
       ],
       "Warning": false
@@ -8219,7 +8219,7 @@
           "Description": "<<Activate>> Pilules des 3 couleurs  :  Soigne entièrement Chôji mais passe son attaque à 0"
         },
         {
-          "Description": "<<Spécial>> Si 3 membres du trio Ino-Shika-Cho sont présents, ceux-ci gagnent +3 ATK et +3 PV"
+          "Description": "<<Spécial>> Si 3 membres du trio Ino-Shika-Cho sont présents, ceux-ci gagnent +3 ATK et +3 points de vie"
         }
       ],
       "Warning": false
@@ -8251,10 +8251,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Technique de la Paume Mystique : Soigne 2 PV à un ninja. Utilisable 1 fois par tour"
+          "Description": "<<Permanent>> Technique de la Paume Mystique : Soigne 2 points de vie à un ninja. Utilisable 1 fois par tour"
         },
         {
-          "Description": "<<Spécial>> Si 3 membres d'une configuration Ino-Shika-Cho sont présents, ceux-ci gagnent +3 ATK et +3 PV"
+          "Description": "<<Spécial>> Si 3 membres d'une configuration Ino-Shika-Cho sont présents, ceux-ci gagnent +3 ATK et +3 points de vie"
         }
       ],
       "Warning": false
@@ -8321,7 +8321,7 @@
           "Description": "<<Activate>> Projette au choix une décharge à distance de feu, de vent ou de foudre qui inflige 1D6 de dégâts"
         },
         {
-          "Description": "<<Permanent>> Se soigne de 1 PV par tour"
+          "Description": "<<Permanent>> Se soigne de 1 point de vie par tour"
         }
       ],
       "Warning": false
@@ -8548,7 +8548,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>>Raigô : Assassinat aux Mille Bras : Inflige autant de dégâts que de PV restants"
+          "Description": "<<Activate>>Raigô : Assassinat aux Mille Bras : Inflige autant de dégâts que de points de vie restants"
         }
       ],
       "Warning": false
@@ -8612,7 +8612,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>>Stratège : Tous les ninjas de la terre gagnent +1 ATK / +1 PV"
+          "Description": "<<Permanent>><<Instantané>>Stratège : Tous les ninjas de la terre gagnent +1 ATK / +1 point de vie"
         }
       ],
       "Warning": false
@@ -8807,7 +8807,7 @@
           "Description": "<<Permanent>> Insensible aux dégâts physiques"
         },
         {
-          "Description": "<<Permanent>><<Instantané>> Tous les membres alliés du clan Ôtsutsuki gagnent +2 ATK/+2 PV"
+          "Description": "<<Permanent>><<Instantané>> Tous les membres alliés du clan Ôtsutsuki gagnent +2 ATK/+2 points de vie"
         }
       ],
       "Warning": false
@@ -8938,7 +8938,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Paume Mystique : Soigne 1PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>> Paume Mystique : Soigne 1 point de vie à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -9264,7 +9264,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>>Transfert de Chakra : Donne +1 ATK / +1 PV aux alliés adjacents"
+          "Description": "<<Activate>>Transfert de Chakra : Donne +1 ATK / +1 point de vie aux alliés adjacents"
         }
       ],
       "Warning": false
@@ -9567,7 +9567,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Amaterasu : Retire 1 pv à chaque ninja en jeu ennemi, à chaque tour"
+          "Description": "<<Instantané>> Amaterasu : Retire 1 point de vie à chaque ninja en jeu ennemi, à chaque tour"
         },
         {
           "Description": "<<Spécial>> Au choix : Inflige 2 dégâts au héros ou  détruit le kinjutsu"
@@ -9602,7 +9602,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>> Donne +2 ATK/ +2 PV au ninja ciblé"
+          "Description": "<<Permanent>><<Instantané>> Donne +2 ATK/ +2 points de vie au ninja ciblé"
         },
         {
           "Description": "<<Spécial>> Quand l'allié attaque, 2 points de dégât sont transférés au héros ou détruit le kinjutsu"
@@ -10254,7 +10254,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Fin cuisinier : Au début de son tour, soigne 1 PV à tous les alliés"
+          "Description": "<<Permanent>> Fin cuisinier : Au début de son tour, soigne 1 point de vie à tous les alliés"
         }
       ],
       "Warning": false
@@ -11860,7 +11860,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>>Quand un de vos serviteurs meurt, il est ressuscité avec 1 PV"
+          "Description": "<<Spécial>>Quand un de vos serviteurs meurt, il est ressuscité avec 1 point de vie"
         }
       ],
       "Warning": false
@@ -12446,7 +12446,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>>  Paume Mystique : Soigne 1 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>><<Instantané>>  Paume Mystique : Soigne 1 point de vie à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -13092,7 +13092,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Prison de l'araignée : Fû fait sortir de ses mains une toile d'araignée ayant la capacité de soigner 3 pv à la cible"
+          "Description": "<<Activate>> Prison de l'araignée : Fû fait sortir de ses mains une toile d'araignée ayant la capacité de soigner 3 points de vie à la cible"
         },
         {
           "Description": "<<Permanent>>Voile de chakra : Tant qu'elle est en vie, les alliés subissent 1 dégât en moins pour tout dégât reçu"
@@ -13162,7 +13162,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>> Donne +2 PV à tous les alliés de Terre"
+          "Description": "<<Permanent>><<Instantané>> Donne +2 points de vie à tous les alliés de Terre"
         }
       ],
       "Warning": false
@@ -13194,7 +13194,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>> Donne +2 PV à tous les alliés d'Eau"
+          "Description": "<<Permanent>><<Instantané>> Donne +2 points de vie à tous les alliés d'Eau"
         }
       ],
       "Warning": false
@@ -13226,7 +13226,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>> Donne +2 PV à tous les alliés d'Eau"
+          "Description": "<<Permanent>><<Instantané>> Donne +2 points de vie à tous les alliés d'Eau"
         }
       ],
       "Warning": false
@@ -13293,7 +13293,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>> Donne +2 PV à tous les alliés de Terre"
+          "Description": "<<Permanent>><<Instantané>> Donne +2 points de vie à tous les alliés de Terre"
         }
       ],
       "Warning": false
@@ -13325,7 +13325,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>> Donne +2 PV à tous les alliés de Terre"
+          "Description": "<<Permanent>><<Instantané>> Donne +2 points de vie à tous les alliés de Terre"
         }
       ],
       "Warning": false
@@ -14221,7 +14221,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>Sceau de la Force Blanche : Se soigne de 2 pv à la fin de son tour d'attaque"
+          "Description": "<<Permanent>>Sceau de la Force Blanche : Se soigne de 2 points de vie à la fin de son tour d'attaque"
         }
       ],
       "Warning": false
@@ -14253,7 +14253,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>Sceau de la Force Blanche : Se soigne de 2 pv à la fin de son tour d'attaque"
+          "Description": "<<Permanent>>Sceau de la Force Blanche : Se soigne de 2 points de vie à la fin de son tour d'attaque"
         }
       ],
       "Warning": false
@@ -14285,7 +14285,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>Sceau de la Force Blanche : Se soigne de 5 pv à la fin de son tour d'attaque"
+          "Description": "<<Permanent>>Sceau de la Force Blanche : Se soigne de 5 points de vie à la fin de son tour d'attaque"
         }
       ],
       "Warning": false
@@ -14765,7 +14765,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Paume mystique : soigne 1 PV à un allié (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>> Paume mystique : soigne 1 point de vie à un allié (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -14861,7 +14861,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Explosion de chakra : Tant qu'ils sont en vie, tout ninjutsu lancé déclence l'explosion du lanceur (le ninjutsu est tout de même lancé)"
+          "Description": "<<Permanent>> Explosion de chakra : Tant qu'ils sont en vie, tout ninjutsu lancé déclenche l'explosion du lanceur (le ninjutsu est tout de même lancé)"
         }
       ],
       "Warning": false
@@ -15216,7 +15216,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Paume mystique : soigne 1 PV à un allié (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>> Paume mystique : soigne 1 point de vie à un allié (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -15408,7 +15408,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Eternel Genin : Baisse l'attaque de 1 de tous ses alliés (saud le héros)"
+          "Description": "<<Permanent>> Éternel Genin : Baisse l'attaque de 1 de tous ses alliés (saud le héros)"
         }
       ],
       "Warning": false
@@ -15568,7 +15568,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Paume Mystique : Soigne 1D3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Paume Mystique : Soigne 1D3 points de vie à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -15600,7 +15600,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Paume Mystique : Soigne 1D3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Paume Mystique : Soigne 1D3 points de vie à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -15632,7 +15632,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Paume Mystique : Soigne 1D3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Paume Mystique : Soigne 1D3 points de vie à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -15696,7 +15696,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Paume Mystique : Soigne 1D3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Paume Mystique : Soigne 1D3 points de vie à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -15760,7 +15760,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<instantané>> Pour L'akatsuki ! : Gagne +1 ATK / +1 PV pour chaque membre de l'Akatsuki présent en jeu"
+          "Description": "<<Permanent>><<instantané>> Pour L'akatsuki ! : Gagne +1 ATK / +1 point de vie pour chaque membre de l'Akatsuki présent en jeu"
         }
       ],
       "Warning": false
@@ -15984,7 +15984,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Grande forêt : Lance une étreinte sur tous les adversaires et leur inflige 1 pv de dégât par tour"
+          "Description": "<<Permanent>> Grande forêt : Lance une étreinte sur tous les adversaires et leur inflige 1 point de dégât de dégât par tour"
         }
       ],
       "Warning": false
@@ -16016,7 +16016,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>Déités Célestes : Peut faire s'entretuer les adversaires, dans la limite d'une d'attaque par personnage"
+          "Description": "<<Instantané>>Déités Célestes : Peut faire s’entre-tuer les adversaires, dans la limite d'une d'attaque par personnage"
         }
       ],
       "Warning": false
@@ -16048,7 +16048,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Paume Mystique : Soigne 3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Paume Mystique : Soigne 3 points de vie à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -16080,7 +16080,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Déferlente de vent : inflige 1 point de dégât à tous les adversaires (y compris le héros)"
+          "Description": "<<Activate>> Déferlante de vent : inflige 1 point de dégât à tous les adversaires (y compris le héros)"
         }
       ],
       "Warning": false
@@ -16147,7 +16147,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>  Camouflage dans la terre : Confère camouflage aux alliés de type terre (Ne peut être ciblé par une attaque ou un Ninjutsu tant qu'il n'a pas attaqué"
+          "Description": "<<Instantané>>  Camouflage dans la terre : Confère camouflage aux alliés de type terre (Ne peut être ciblé par une attaque ou un ninjutsu tant qu'il n'a pas attaqué"
         }
       ],
       "Warning": false
@@ -16211,7 +16211,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Paume Mystique : Soigne 1d3 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Paume Mystique : Soigne 1d3 points de vie à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -16371,7 +16371,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Déferlente de vent : inflige 1 point de dégât à tous les adversaires (y compris le héros)"
+          "Description": "<<Activate>> Déferlante de vent : inflige 1 point de dégât à tous les adversaires (y compris le héros)"
         }
       ],
       "Warning": false
@@ -16499,7 +16499,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Paume Mystique : Soigne 1d2 PV à un allié ou héros au choix (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>>  Paume Mystique : Soigne 1d2 points de vie à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -16563,7 +16563,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Eau des héros : Gagne +2 ATK mais perds 1 PV à la fin de chacun de ses tours"
+          "Description": "<<Activate>> Eau des héros : Gagne +2 ATK mais perds 1 points de vie à la fin de chacun de ses tours"
         }
       ],
       "Warning": false
@@ -16819,7 +16819,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Tempête de sable : Les adversaires sont aveuglés tant qu'elle est en vie, et ne peuvent plus lancer de jutsu (les attaques et invocations sont encore possibles)"
+          "Description": "<<Activate>> Tempête de sable : Les adversaires sont aveuglés tant qu'elle est en vie, et ne peuvent plus lancer de ninjutsu (les attaques et invocations sont encore possibles)"
         }
       ],
       "Warning": false
@@ -16947,7 +16947,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>><<Permanent>> Reserve de chakra : Le héros dispose d'un point de chakra en plus que sa réserve"
+          "Description": "<<Instantané>><<Permanent>> Réserve de chakra : Le héros dispose d'un point de chakra en plus que sa réserve"
         }
       ],
       "Warning": false
