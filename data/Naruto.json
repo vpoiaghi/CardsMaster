@@ -5498,6 +5498,38 @@
     },
     {
       "Kind": "Environnement",
+      "Name": "Village de Taki",
+      "Rank": "",
+      "Team": "Environnement",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "Takigakure no Sato",
+      "Comments": "Carte à part",
+      "Nb": 1,
+      "BackSide": "Back-Select",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Les ninjas en affinité avec l'eau gagnent +2 points de vie"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Environnement",
       "Name": "Temple du feu",
       "Rank": "",
       "Team": "Environnement",
