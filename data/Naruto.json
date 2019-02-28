@@ -201,7 +201,7 @@
     {
       "Kind": "Ninja",
       "Name": "Naruto Uzumaki",
-      "Rank": "Jinchūriki",
+      "Rank": "Légendaire",
       "Team": "Équipe 7",
       "Chakra": "Vent",
       "Element": "",
@@ -1249,7 +1249,7 @@
     {
       "Kind": "Ninja",
       "Name": "Gamabunta",
-      "Rank": "Rare",
+      "Rank": "Épique",
       "Team": "Invocation",
       "Chakra": "Eau",
       "Element": "",
@@ -1281,7 +1281,7 @@
     {
       "Kind": "Ninja",
       "Name": "Gamaken",
-      "Rank": "Rare",
+      "Rank": "Épique",
       "Team": "Invocation",
       "Chakra": "Physique",
       "Element": "",
@@ -1313,7 +1313,7 @@
     {
       "Kind": "Ninja",
       "Name": "Gamahiro",
-      "Rank": "Rare",
+      "Rank": "Épique",
       "Team": "Invocation",
       "Chakra": "Physique",
       "Element": "",
@@ -1482,7 +1482,7 @@
     {
       "Kind": "Ninja",
       "Name": "Guren",
-      "Rank": "Rare",
+      "Rank": "Épique",
       "Team": "Ninja",
       "Chakra": "Spécial",
       "Element": "Cristal",
@@ -1709,7 +1709,7 @@
     {
       "Kind": "Ninja",
       "Name": "Shukaku (Ichibi)",
-      "Rank": "Jinchūriki",
+      "Rank": "Légendaire",
       "Team": "Bijù",
       "Chakra": "Spécial",
       "Element": "Orbe Bijù",
@@ -1741,7 +1741,7 @@
     {
       "Kind": "Ninja",
       "Name": "Matatabi (Nibi)",
-      "Rank": "Jinchūriki",
+      "Rank": "Légendaire",
       "Team": "Bijù",
       "Chakra": "Spécial",
       "Element": "Orbe Bijù",
@@ -1773,7 +1773,7 @@
     {
       "Kind": "Ninja",
       "Name": "Son Gokû (Yonbi)",
-      "Rank": "Jinchūriki",
+      "Rank": "Légendaire",
       "Team": "Bijù",
       "Chakra": "Spécial",
       "Element": "Orbe Bijù",
@@ -1805,7 +1805,7 @@
     {
       "Kind": "Ninja",
       "Name": "Kokuô (Gobi)",
-      "Rank": "Jinchūriki",
+      "Rank": "Légendaire",
       "Team": "Bijù",
       "Chakra": "Spécial",
       "Element": "Orbe Bijù",
@@ -1837,7 +1837,7 @@
     {
       "Kind": "Ninja",
       "Name": "Saiken (Rokubi)",
-      "Rank": "Jinchūriki",
+      "Rank": "Légendaire",
       "Team": "Bijù",
       "Chakra": "Spécial",
       "Element": "Orbe Bijù",
@@ -1869,7 +1869,7 @@
     {
       "Kind": "Ninja",
       "Name": "Chômei (Nanabi)",
-      "Rank": "Jinchūriki",
+      "Rank": "Légendaire",
       "Team": "Bijù",
       "Chakra": "Spécial",
       "Element": "Orbe Bijù",
@@ -1901,7 +1901,7 @@
     {
       "Kind": "Ninja",
       "Name": "Isobu (Sanbi)",
-      "Rank": "Jinchūriki",
+      "Rank": "Légendaire",
       "Team": "Invocation",
       "Chakra": "Spécial",
       "Element": "Orbe Bijù",
@@ -1933,7 +1933,7 @@
     {
       "Kind": "Ninja",
       "Name": "Gyûki (Hachibi)",
-      "Rank": "Jinchūriki",
+      "Rank": "Légendaire",
       "Team": "Invocation",
       "Chakra": "Spécial",
       "Element": "Orbe Bijù",
@@ -1965,7 +1965,7 @@
     {
       "Kind": "Ninja",
       "Name": "Kurama (Kyûbi)",
-      "Rank": "Jinchūriki",
+      "Rank": "Légendaire",
       "Team": "Invocation",
       "Chakra": "Spécial",
       "Element": "Orbe Bijù",
@@ -3036,7 +3036,7 @@
     {
       "Kind": "Ninja",
       "Name": "Meï Terumi (Godaime Mizukage)",
-      "Rank": "Kage",
+      "Rank": "Épique",
       "Team": "Équipe 5° Misukage",
       "Chakra": "Feu",
       "Element": "Lave",
@@ -3199,7 +3199,7 @@
     {
       "Kind": "Ninja",
       "Name": "Blue Bee (Fukai)",
-      "Rank": "Jinchūriki",
+      "Rank": "Légendaire",
       "Team": "Jinchûriki",
       "Chakra": "Foudre",
       "Element": "",
@@ -3231,7 +3231,7 @@
     {
       "Kind": "Ninja",
       "Name": "A (Yondaime Raikage)",
-      "Rank": "Kage",
+      "Rank": "Épique",
       "Team": "Équipe 4° Raikage",
       "Chakra": "Foudre",
       "Element": "",
@@ -3298,7 +3298,7 @@
     {
       "Kind": "Ninja",
       "Name": "Killer B",
-      "Rank": "Jinchūriki",
+      "Rank": "Légendaire",
       "Team": "Équipe 4° Raikage",
       "Chakra": "Foudre",
       "Element": "",
@@ -3729,7 +3729,7 @@
     {
       "Kind": "Ninja",
       "Name": "Gaara",
-      "Rank": "Jinchūriki",
+      "Rank": "Légendaire",
       "Team": "Équipe Sable",
       "Chakra": "Terre",
       "Element": "Sable",
@@ -3860,7 +3860,7 @@
     {
       "Kind": "Ninja",
       "Name": "Onoki (Sandaime Tsuchikage)",
-      "Rank": "Kage",
+      "Rank": "Épique",
       "Team": "Équipe 3° Tsuchikage ",
       "Chakra": "Terre",
       "Element": "Jinton",
@@ -4375,7 +4375,7 @@
     {
       "Kind": "Ninja",
       "Name": "Kabuto Yakushi",
-      "Rank": "Rare",
+      "Rank": "Épique",
       "Team": "Espion",
       "Chakra": "Eau",
       "Element": "Soin",
@@ -4407,7 +4407,7 @@
     {
       "Kind": "Ninja",
       "Name": "Nidaime 2° Mizukage",
-      "Rank": "Kage",
+      "Rank": "Épique",
       "Team": "Edo Tenseï",
       "Chakra": "Eau",
       "Element": "",
@@ -4439,7 +4439,7 @@
     {
       "Kind": "Ninja",
       "Name": "A (Sandaime Raikage)",
-      "Rank": "Kage",
+      "Rank": "Épique",
       "Team": "Edo Tenseï",
       "Chakra": "Foudre",
       "Element": "",
@@ -4471,7 +4471,7 @@
     {
       "Kind": "Ninja",
       "Name": "Rasa (Yondaime Kazekage)",
-      "Rank": "Kage",
+      "Rank": "Épique",
       "Team": "Edo Tenseï",
       "Chakra": "Terre",
       "Element": "Sable",
@@ -4503,7 +4503,7 @@
     {
       "Kind": "Ninja",
       "Name": "Mû (Nidaime Tsuchikage)",
-      "Rank": "Kage",
+      "Rank": "Épique",
       "Team": "Edo Tenseï",
       "Chakra": "Terre",
       "Element": "Sable",
@@ -4535,7 +4535,7 @@
     {
       "Kind": "Ninja",
       "Name": "Shinju",
-      "Rank": "Rare",
+      "Rank": "Légendaire",
       "Team": "Bijù",
       "Chakra": "Spécial",
       "Element": "Orbe Bijù",
@@ -4634,7 +4634,7 @@
     {
       "Kind": "Ninja",
       "Name": "Hanzô la salamandre",
-      "Rank": "Rare",
+      "Rank": "Épique",
       "Team": "Edo Tenseï",
       "Chakra": "Vent",
       "Element": "Poison",
@@ -4797,7 +4797,7 @@
     {
       "Kind": "Ninja",
       "Name": "Manda",
-      "Rank": "Rare",
+      "Rank": "Épique",
       "Team": "Invocation",
       "Chakra": "Vent",
       "Element": "Poison",
@@ -4829,7 +4829,7 @@
     {
       "Kind": "Ninja",
       "Name": "Katsuyu",
-      "Rank": "Rare",
+      "Rank": "Épique",
       "Team": "Invocation",
       "Chakra": "Eau",
       "Element": "Soin",
@@ -4928,7 +4928,7 @@
     {
       "Kind": "Ninja",
       "Name": "Zabuza Momochi",
-      "Rank": "Rare",
+      "Rank": "Épique",
       "Team": "7 Épéistes",
       "Chakra": "Eau",
       "Element": "Épéiste",
@@ -4998,7 +4998,7 @@
     {
       "Kind": "Ninja",
       "Name": "Kushimaru Kuriarare",
-      "Rank": "Rare",
+      "Rank": "Épique",
       "Team": "7 Épéistes",
       "Chakra": "Vent",
       "Element": "Épéiste",
@@ -5033,7 +5033,7 @@
     {
       "Kind": "Ninja",
       "Name": "Jinin Akebino",
-      "Rank": "Rare",
+      "Rank": "Épique",
       "Team": "7 Épéistes",
       "Chakra": "Terre",
       "Element": "Épéiste",
@@ -5068,7 +5068,7 @@
     {
       "Kind": "Ninja",
       "Name": "Mangetsu Hôzuki",
-      "Rank": "Rare",
+      "Rank": "Épique",
       "Team": "7 Épéistes",
       "Chakra": "Eau",
       "Element": "Épéiste",
@@ -5103,7 +5103,7 @@
     {
       "Kind": "Ninja",
       "Name": "Ameyuri Ringo",
-      "Rank": "Rare",
+      "Rank": "Épique",
       "Team": "7 Épéistes",
       "Chakra": "Foudre",
       "Element": "Épéiste",
@@ -5138,7 +5138,7 @@
     {
       "Kind": "Ninja",
       "Name": "Fuguki Suikazan",
-      "Rank": "Rare",
+      "Rank": "Épique",
       "Team": "7 Épéistes",
       "Chakra": "Terre",
       "Element": "Épéiste",
@@ -5173,7 +5173,7 @@
     {
       "Kind": "Ninja",
       "Name": "Jinpachi Munashi",
-      "Rank": "Rare",
+      "Rank": "Épique",
       "Team": "7 Épéistes",
       "Chakra": "Feu",
       "Element": "Épéiste",
@@ -7103,7 +7103,7 @@
     {
       "Kind": "Ninja",
       "Name": "Mirai Sarutobi",
-      "Rank": "Rare",
+      "Rank": "Épique",
       "Team": "Garde du corps",
       "Chakra": "Feu",
       "Element": "",
@@ -7746,7 +7746,7 @@
     {
       "Kind": "Ninja",
       "Name": "Naruto Uzumaki (Adulte)",
-      "Rank": "Kage",
+      "Rank": "Épique",
       "Team": "Nanadaime 7° Hokage",
       "Chakra": "Vent",
       "Element": "",
@@ -8154,7 +8154,7 @@
     {
       "Kind": "Ninja",
       "Name": "Shikamaru Nara (Adulte)",
-      "Rank": "",
+      "Rank": "Capitaine",
       "Team": "Ino-Shika-Chô",
       "Chakra": "Spécial",
       "Element": "Ombre",
@@ -8460,7 +8460,7 @@
     {
       "Kind": "Ninja",
       "Name": "Sora",
-      "Rank": "",
+      "Rank": "Capitaine",
       "Team": "Moine",
       "Chakra": "Vent",
       "Element": "Vent",
@@ -8524,7 +8524,7 @@
     {
       "Kind": "Ninja",
       "Name": "Chiriku",
-      "Rank": "",
+      "Rank": "Capitaine",
       "Team": "Ninjas gardiens",
       "Chakra": "Feu",
       "Element": "",
@@ -8850,7 +8850,7 @@
     {
       "Kind": "Ninja",
       "Name": "Kakashi Hatake (Jeune)",
-      "Rank": "",
+      "Rank": "Capitaine",
       "Team": "Équipe Minato",
       "Chakra": "Foudre",
       "Element": "",
@@ -9045,7 +9045,7 @@
     {
       "Kind": "Ninja",
       "Name": "Utakata",
-      "Rank": "Jinchūriki",
+      "Rank": "Légendaire",
       "Team": "Jinchûriki",
       "Chakra": "Eau",
       "Element": "Bulles",
@@ -10806,7 +10806,7 @@
     {
       "Kind": "Ninja",
       "Name": "Pakkun",
-      "Rank": "",
+      "Rank": "Capitaine",
       "Team": "Crocs traqueurs",
       "Chakra": "Physique",
       "Element": "",
@@ -11094,7 +11094,7 @@
     {
       "Kind": "Ninja",
       "Name": "Raïga Kurosuki",
-      "Rank": "",
+      "Rank": "Capitaine",
       "Team": "Anbu",
       "Chakra": "Foudre",
       "Element": "",
@@ -11286,7 +11286,7 @@
     {
       "Kind": "Ninja",
       "Name": "Shisui Uchiwa",
-      "Rank": "",
+      "Rank": "Capitaine",
       "Team": "Anbu",
       "Chakra": "Spécial",
       "Element": "Sharingan",
@@ -11612,7 +11612,7 @@
     {
       "Kind": "Ninja",
       "Name": "Sandaime Kazekage",
-      "Rank": "Kage",
+      "Rank": "Épique",
       "Team": "Ancien Kage",
       "Chakra": "Terre",
       "Element": "Limaille de fer",
@@ -12812,7 +12812,7 @@
     {
       "Kind": "Ninja",
       "Name": "A (Nidaime Raikage)",
-      "Rank": "Kage",
+      "Rank": "Épique",
       "Team": "Ancien Kage",
       "Chakra": "Foudre",
       "Element": "",
@@ -12844,7 +12844,7 @@
     {
       "Kind": "Ninja",
       "Name": "A (Shodai Raikage)",
-      "Rank": "Kage",
+      "Rank": "Épique",
       "Team": "Ancien Kage",
       "Chakra": "Foudre",
       "Element": "",
@@ -12972,7 +12972,7 @@
     {
       "Kind": "Ninja",
       "Name": "Yagura Karatachi (Yondaime Mizukage)",
-      "Rank": "Kage",
+      "Rank": "Légendaire",
       "Team": "Jinchûriki",
       "Chakra": "Eau",
       "Element": "",
@@ -13004,7 +13004,7 @@
     {
       "Kind": "Ninja",
       "Name": "Rôshi",
-      "Rank": "",
+      "Rank": "Légendaire",
       "Team": "Jinchûriki",
       "Chakra": "Feu",
       "Element": "Lave",
@@ -13036,7 +13036,7 @@
     {
       "Kind": "Ninja",
       "Name": "Han",
-      "Rank": "",
+      "Rank": "Légendaire",
       "Team": "Jinchûriki",
       "Chakra": "Eau",
       "Element": "Vapeur",
@@ -13068,7 +13068,7 @@
     {
       "Kind": "Ninja",
       "Name": "Fû",
-      "Rank": "",
+      "Rank": "Légendaire",
       "Team": "Jinchûriki",
       "Chakra": "Vent",
       "Element": "",
@@ -13103,7 +13103,7 @@
     {
       "Kind": "Ninja",
       "Name": "Yugito Nii",
-      "Rank": "",
+      "Rank": "Légendaire",
       "Team": "Jinchûriki",
       "Chakra": "Feu",
       "Element": "",
@@ -13138,7 +13138,7 @@
     {
       "Kind": "Ninja",
       "Name": "Shamon (Nidaime Kazekage)",
-      "Rank": "Kage",
+      "Rank": "Épique",
       "Team": "Ancien Kage",
       "Chakra": "Terre",
       "Element": "Sable",
@@ -13170,7 +13170,7 @@
     {
       "Kind": "Ninja",
       "Name": "Byakuren (Shodai Mizukage)",
-      "Rank": "Kage",
+      "Rank": "Épique",
       "Team": "Ancien Kage",
       "Chakra": "Eau",
       "Element": "",
@@ -13202,7 +13202,7 @@
     {
       "Kind": "Ninja",
       "Name": "Sandaime Mizukage",
-      "Rank": "Kage",
+      "Rank": "Épique",
       "Team": "Ancien Kage",
       "Chakra": "Eau",
       "Element": "",
@@ -13234,7 +13234,7 @@
     {
       "Kind": "Ninja",
       "Name": "Gengetsu Hôzuki (Nidaime Mizukage)",
-      "Rank": "Kage",
+      "Rank": "Épique",
       "Team": "Ancien Kage",
       "Chakra": "Eau",
       "Element": "Vapeur",
@@ -13269,7 +13269,7 @@
     {
       "Kind": "Ninja",
       "Name": "Ishikawa (Shodai Tsuchikage)",
-      "Rank": "Kage",
+      "Rank": "Épique",
       "Team": "Ancien Kage",
       "Chakra": "Terre",
       "Element": "",
@@ -13301,7 +13301,7 @@
     {
       "Kind": "Ninja",
       "Name": "Reto (Shodai Kazekage)",
-      "Rank": "Kage",
+      "Rank": "Épique",
       "Team": "Ancien Kage",
       "Chakra": "Terre",
       "Element": "Sable",
@@ -13717,7 +13717,7 @@
     {
       "Kind": "Ninja",
       "Name": "Darui Adulte (Godaime Raikage)",
-      "Rank": "Kage",
+      "Rank": "Épique",
       "Team": "Kage",
       "Chakra": "Foudre",
       "Element": "",
@@ -13749,7 +13749,7 @@
     {
       "Kind": "Ninja",
       "Name": "Chôjurô Adulte(Rokudaime Mizukage)",
-      "Rank": "Kage",
+      "Rank": "Épique",
       "Team": "Kage",
       "Chakra": "Physique",
       "Element": "Épéiste",
@@ -13781,7 +13781,7 @@
     {
       "Kind": "Ninja",
       "Name": "Kurotsuchi (Yondaime Tsuchikage)",
-      "Rank": "Kage",
+      "Rank": "Épique",
       "Team": "Kage",
       "Chakra": "Terre",
       "Element": "",
@@ -13813,7 +13813,7 @@
     {
       "Kind": "Ninja",
       "Name": "Gaara Adulte (Godaime Kazekage)",
-      "Rank": "Kage",
+      "Rank": "Épique",
       "Team": "Kage",
       "Chakra": "Terre",
       "Element": "Sable",
@@ -16923,7 +16923,7 @@
     {
       "Kind": "Ninja",
       "Name": "Bunpuku",
-      "Rank": "",
+      "Rank": "Légendaire",
       "Team": "Jinchûriki ",
       "Chakra": "Terre",
       "Element": "",

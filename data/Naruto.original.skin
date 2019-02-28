@@ -16,11 +16,10 @@
 		"Piège":"darkRed1"
 	},
 	"MapRareteColor" : {
-		"": "Black",
-		"Capitaine": "Blue",
-		"Rare": "Green",
-		"Jinchūriki": "Orange",
-		"Légendaire": "Purple"
+		"": "Lavender",
+		"Capitaine": "SkyBlue",
+		"Épique": "SeaGreen",
+		"Légendaire": "Orange"
 	},
 	"MapLibelleBorderColor" : {
 		"Quête": "#00AA00",
