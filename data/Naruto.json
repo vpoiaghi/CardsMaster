@@ -6431,7 +6431,7 @@
       "Defense": "",
       "Citation": "",
       "Comments": "",
-      "Nb": 1,
+      "Nb": 2,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
@@ -6450,6 +6450,111 @@
         },
         {
           "Description": "<<Récompense>>Vous piochez 1 carte"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Quête",
+      "Name": "Académie des ninjas",
+      "Rank": "",
+      "Team": "Quête",
+      "Chakra": "Quête",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 2,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Book>>Naruto Stories",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Conditions>> Avoir moins de 3 alliés dans son camp"
+        },
+        {
+          "Description": "<<Récompense>> Piocher et mettre en jeu la carte piochée"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Quête",
+      "Name": "Serment par la douleur",
+      "Rank": "",
+      "Team": "Quête",
+      "Chakra": "Quête",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 2,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Book>>Naruto Stories",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Conditions>> Suite à un combat, il ne reste que 1 points de vie à un allié"
+        },
+        {
+          "Description": "<<Récompense>> Il peut immédiatement réattaquer une deuxième fois"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Quête",
+      "Name": "Equipe de trois",
+      "Rank": "",
+      "Team": "Quête",
+      "Chakra": "Quête",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 2,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Book>>Naruto Stories",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Conditions>> 3 alliés présents sur le champs de bataille"
+        },
+        {
+          "Description": "<<Récompense>> Pioche une carte"
         }
       ],
       "Warning": false
