@@ -17187,6 +17187,198 @@
         }
       ],
       "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Koyuki Kazahana",
+      "Rank": "",
+      "Team": "Héritière des neiges",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "Princesse neige",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>> Don de comédie : Feind la mort pendant 1 tour et ne peut pas subir de dommages"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Fubuki Kakuyoku",
+      "Rank": "",
+      "Team": "Nukenin du pays des neiges",
+      "Chakra": "Eau",
+      "Element": "Glace",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "Princesse neige",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Armure de chakra : Le ninja n'est sensible qu'aux attaques au corps à corps"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Mizore Fuyakuma",
+      "Rank": "",
+      "Team": "Nukenin du pays des neiges",
+      "Chakra": "Eau",
+      "Element": "Glace",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "Princesse neige",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Armure de chakra : Le ninja n'est sensible qu'aux attaques au corps à corps"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Nadare Rôga",
+      "Rank": "",
+      "Team": "Nukenin du pays des neiges",
+      "Chakra": "Eau",
+      "Element": "Glace",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "Princesse neige",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Armure de chakra : Le ninja n'est sensible qu'aux attaques au corps à corps"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Dotô Kazahana",
+      "Rank": "",
+      "Team": "Nukenin du pays des neiges",
+      "Chakra": "Eau",
+      "Element": "Glace",
+      "Cost": "5",
+      "Attack": "3",
+      "Defense": "4",
+      "Citation": "Hyôton : Sôryû Bôfûsetsu",
+      "Comments": "Princesse neige",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>> Blizzard des Dragons Noirs Jumeaux : Inflige 1D6 dégâts à l'allié ciblé"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Sandayû Asama",
+      "Rank": "",
+      "Team": "Protecteur de la princesse",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "2",
+      "Defense": "1",
+      "Citation": "",
+      "Comments": "Princesse neige",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>> Courage du samouraï : Devient insensible aux dégâts jusqu'à la fin du tour"
+        }
+      ],
+      "Warning": true
     }
   ],
   "SkinFile": "Naruto.original.skin"
