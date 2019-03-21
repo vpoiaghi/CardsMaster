@@ -17387,9 +17387,9 @@
       "Team": "Chevalier d'Utopia",
       "Chakra": "Spécial",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "5",
+      "Attack": "3",
+      "Defense": "4",
       "Citation": "Maboroshi no Chiteiiseki",
       "Comments": "pierre de Guelel",
       "Nb": 1,
@@ -17407,16 +17407,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Épée de chakra : Ignore la protection et l'armure"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -17425,9 +17419,9 @@
       "Team": "Souverain d'Utopia",
       "Chakra": "Spécial",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "3",
       "Citation": "Maboroshi no Chiteiiseki",
       "Comments": "pierre de Guelel",
       "Nb": 1,
@@ -17445,22 +17439,16 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>>Manipulateur : Sacrifie un allié de son camp et le remplace par un du camp adverse "
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Kahiko",
       "Rank": "",
-      "Team": "",
+      "Team": "Ancien de la source de Guelel",
       "Chakra": "Physique",
       "Element": "",
       "Cost": "",
@@ -17498,12 +17486,12 @@
       "Kind": "Ninja",
       "Name": "Nerugui",
       "Rank": "",
-      "Team": "",
+      "Team": "Ancien de la source de Guelel",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "5",
+      "Attack": "0",
+      "Defense": "0",
       "Citation": "Maboroshi no Chiteiiseki",
       "Comments": "pierre de Guelel",
       "Nb": 1,
@@ -17521,16 +17509,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Immortel"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -17562,7 +17544,7 @@
           "Description": "<<Permanent>><<Instantané>>Attaque de Dracula : si elle ne meure pas à la fin d'un combat, se régénère de tous ses PVs"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -17594,7 +17576,7 @@
           "Description": "<<Permanent>> Attaque du loup-garou : Peut attaquer 3 fois si le désire"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -17626,7 +17608,7 @@
           "Description": "<<Activate>>Boule de plasma de Frankenstein : Inflige 1D4 dégâts à 2 cibles adjacentes"
         }
       ],
-      "Warning": true
+      "Warning": false
     }
   ],
   "SkinFile": "Naruto.original.skin"
