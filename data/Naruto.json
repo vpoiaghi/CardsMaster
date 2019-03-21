@@ -17198,7 +17198,7 @@
       "Cost": "4",
       "Attack": "2",
       "Defense": "2",
-      "Citation": "",
+      "Citation": "Yuki Hime Ninpōchō",
       "Comments": "Princesse neige",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -17218,7 +17218,7 @@
           "Description": "<<Activate>> Don de comédie : Feind la mort pendant 1 tour et ne peut pas subir de dommages"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -17230,7 +17230,7 @@
       "Cost": "4",
       "Attack": "2",
       "Defense": "2",
-      "Citation": "",
+      "Citation": "Yuki Hime Ninpōchō",
       "Comments": "Princesse neige",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -17250,7 +17250,7 @@
           "Description": "<<Permanent>> Armure de chakra : Le ninja n'est sensible qu'aux attaques au corps à corps"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -17262,7 +17262,7 @@
       "Cost": "4",
       "Attack": "2",
       "Defense": "2",
-      "Citation": "",
+      "Citation": "Yuki Hime Ninpōchō",
       "Comments": "Princesse neige",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -17282,7 +17282,7 @@
           "Description": "<<Permanent>> Armure de chakra : Le ninja n'est sensible qu'aux attaques au corps à corps"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -17294,7 +17294,7 @@
       "Cost": "4",
       "Attack": "2",
       "Defense": "2",
-      "Citation": "",
+      "Citation": "Yuki Hime Ninpōchō",
       "Comments": "Princesse neige",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -17314,7 +17314,7 @@
           "Description": "<<Permanent>> Armure de chakra : Le ninja n'est sensible qu'aux attaques au corps à corps"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -17326,7 +17326,7 @@
       "Cost": "5",
       "Attack": "3",
       "Defense": "4",
-      "Citation": "Hyôton : Sôryû Bôfûsetsu",
+      "Citation": "Yuki Hime Ninpōchō",
       "Comments": "Princesse neige",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -17346,7 +17346,7 @@
           "Description": "<<Activate>> Blizzard des Dragons Noirs Jumeaux : Inflige 1D6 dégâts à l'allié ciblé"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -17358,7 +17358,7 @@
       "Cost": "2",
       "Attack": "2",
       "Defense": "1",
-      "Citation": "",
+      "Citation": "Yuki Hime Ninpōchō",
       "Comments": "Princesse neige",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -17378,19 +17378,19 @@
           "Description": "<<Activate>> Courage du samouraï : Devient insensible aux dégâts jusqu'à la fin du tour"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Temujin",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
+      "Team": "Chevalier d'Utopia",
+      "Chakra": "Spécial",
       "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
-      "Citation": "",
+      "Citation": "Maboroshi no Chiteiiseki",
       "Comments": "pierre de Guelel",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -17422,13 +17422,13 @@
       "Kind": "Ninja",
       "Name": "Haido",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
+      "Team": "Souverain d'Utopia",
+      "Chakra": "Spécial",
       "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
-      "Citation": "",
+      "Citation": "Maboroshi no Chiteiiseki",
       "Comments": "pierre de Guelel",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -17461,12 +17461,50 @@
       "Name": "Kahiko",
       "Rank": "",
       "Team": "",
-      "Chakra": "Eau",
+      "Chakra": "Physique",
       "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
-      "Citation": "",
+      "Citation": "Maboroshi no Chiteiiseki",
+      "Comments": "pierre de Guelel",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Konoha>>Naruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Nerugui",
+      "Rank": "",
+      "Team": "",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "Maboroshi no Chiteiiseki",
       "Comments": "pierre de Guelel",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -17498,13 +17536,13 @@
       "Kind": "Ninja",
       "Name": "Kamira",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
+      "Team": "Chevalière d'Utopia",
+      "Chakra": "Spécial",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "5",
+      "Attack": "3",
+      "Defense": "4",
+      "Citation": "Maboroshi no Chiteiiseki",
       "Comments": "pierre de Guelel",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -17521,28 +17559,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>><<Instantané>>Attaque de Dracula : si elle ne meure pas à la fin d'un combat, se régénère de tous ses PVs"
         }
       ],
       "Warning": true
     },
     {
       "Kind": "Ninja",
-      "Name": "Emina",
+      "Name": "Fugaï",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
+      "Team": "Chevalière d'Utopia",
+      "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "5",
+      "Attack": "3",
+      "Defense": "4",
+      "Citation": "Maboroshi no Chiteiiseki",
       "Comments": "pierre de Guelel",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -17559,51 +17591,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
-        }
-      ],
-      "Warning": true
-    },
-    {
-      "Kind": "Ninja",
-      "Name": "Fugai",
-      "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
-      "Comments": "pierre de Guelel",
-      "Nb": 1,
-      "BackSide": "Back-Draw",
-      "BackSkinName": "BackSkin1",
-      "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Konoha>>Naruto",
-      "StringField2": "",
-      "StringField3": "",
-      "StringField4": "",
-      "IntField1": null,
-      "IntField2": null,
-      "IntField3": null,
-      "IntField4": null,
-      "Background": null,
-      "Powers": [
-        {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Attaque du loup-garou : Peut attaquer 3 fois si le désire"
         }
       ],
       "Warning": true
@@ -17612,13 +17600,13 @@
       "Kind": "Ninja",
       "Name": "Ranke",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
+      "Team": "Chevalière d'Utopia",
+      "Chakra": "Foudre",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "5",
+      "Attack": "3",
+      "Defense": "4",
+      "Citation": "Maboroshi no Chiteiiseki",
       "Comments": "pierre de Guelel",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -17635,13 +17623,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>>Boule de plasma de Frankenstein : Inflige 1D4 dégâts à 2 cibles adjacentes"
         }
       ],
       "Warning": true
