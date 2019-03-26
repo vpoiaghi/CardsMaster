@@ -17451,9 +17451,9 @@
       "Team": "Ancien de la source de Guelel",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "Maboroshi no Chiteiiseki",
       "Comments": "pierre de Guelel",
       "Nb": 1,
@@ -17471,16 +17471,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>Détruit 2 points de chakras de l'adversaire"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -17617,10 +17611,10 @@
       "Team": "Garde du corps",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "5",
+      "Citation": "Mikazuki Shima no Animal Panic",
       "Comments": "Croissant de lune",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -17637,28 +17631,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Protection"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Karenbana",
       "Rank": "",
       "Team": "Mercenaire",
-      "Chakra": "Eau",
-      "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Chakra": "Spécial",
+      "Element": "Genjutsu",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "4",
+      "Citation": "Mikazuki Shima no Animal Panic",
       "Comments": "Croissant de lune",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -17675,28 +17663,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Attaque dans le brouillard : Inflige 2 points de dégâts sans contre-attaque possible"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Kongô",
       "Rank": "",
       "Team": "Mercenaire",
-      "Chakra": "Eau",
+      "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "4",
+      "Attack": "3",
+      "Defense": "4",
+      "Citation": "Mikazuki Shima no Animal Panic",
       "Comments": "Croissant de lune",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -17713,28 +17695,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Gagne +1 ATK  face à des adversaires de type Physique"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Ishidate",
       "Rank": "",
       "Team": "Mercenaire",
-      "Chakra": "Eau",
+      "Chakra": "Terre",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "5",
+      "Attack": "1",
+      "Defense": "4",
+      "Citation": "Mikazuki Shima no Animal Panic",
       "Comments": "Croissant de lune",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -17751,28 +17727,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Pétrification : Tout dégât infligé engendre la mort de l'allié ciblé"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Shabadaba",
       "Rank": "",
       "Team": "Traître",
-      "Chakra": "Eau",
+      "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "4",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": "Mikazuki Shima no Animal Panic",
       "Comments": "Croissant de lune",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -17789,28 +17759,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>Coup d'état : Fait combattre 2 alliés entre eux"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Chamû et Kiki",
       "Rank": "",
       "Team": "Compagnons",
-      "Chakra": "Eau",
+      "Chakra": "Physique",
       "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
-      "Citation": "",
+      "Citation": "Mikazuki Shima no Animal Panic",
       "Comments": "Croissant de lune",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -17843,12 +17807,12 @@
       "Name": "Hikaru Tsuki",
       "Rank": "",
       "Team": "Héritier du trône",
-      "Chakra": "Eau",
+      "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "4",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": "Mikazuki Shima no Animal Panic",
       "Comments": "Croissant de lune",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -17865,16 +17829,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>>Tir mortel : Envoie la cible directement au cimetière"
         }
       ],
-      "Warning": true
+      "Warning": false
     }
   ],
   "SkinFile": "Naruto.original.skin"
