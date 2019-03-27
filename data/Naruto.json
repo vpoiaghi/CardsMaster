@@ -17771,9 +17771,9 @@
       "Team": "Compagnons",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "4",
       "Citation": "Mikazuki Shima no Animal Panic",
       "Comments": "Croissant de lune",
       "Nb": 1,
@@ -17791,16 +17791,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Agilité : Ignorent la protection et attaquent 2 fois"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
