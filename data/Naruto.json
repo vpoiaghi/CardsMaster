@@ -17830,6 +17830,386 @@
     },
     {
       "Kind": "Ninja",
+      "Name": "Shizuku",
+      "Rank": "",
+      "Team": "Disciple de Yomi",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "Gekijōban Naruto Shippūden",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1 Dragon aqueu : "
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Gitai",
+      "Rank": "",
+      "Team": "Disciple de Yomi",
+      "Chakra": "Terre",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "Gekijōban Naruto Shippūden",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1 Technique de durcissement"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Setsuna",
+      "Rank": "",
+      "Team": "Disciple de Yomi",
+      "Chakra": "Vent",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "Gekijōban Naruto Shippūden",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1 Shurikens rotatives"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Kusuna",
+      "Rank": "",
+      "Team": "Disciple de Yomi",
+      "Chakra": "Feu",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "Gekijōban Naruto Shippūden",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1 Course de feu : dégâts de feu à tous les adversaires"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Yomi",
+      "Rank": "",
+      "Team": "",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "Gekijōban Naruto Shippūden",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1 Injection de Chakra"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Taruho",
+      "Rank": "",
+      "Team": "Garde du corps",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "4",
+      "Citation": "Gekijōban Naruto Shippūden",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1 Attaques à l'arc  : Les attaques ne subissent pas de contre-attaque"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Shion",
+      "Rank": "",
+      "Team": "Prêtresse",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "Gekijōban Naruto Shippūden",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Shinnô",
+      "Rank": "",
+      "Team": "",
+      "Chakra": "Spécial",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "Gekijōban Naruto Shippūden : Kizuna",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Reibi",
+      "Rank": "",
+      "Team": "Démon sans queue",
+      "Chakra": "Spécial",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Amaru",
+      "Rank": "",
+      "Team": "",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "Gekijōban Naruto Shippūden : Kizuna",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
       "Name": "Jūgo adulte",
       "Rank": "",
       "Team": "Berzerker",
@@ -17880,6 +18260,234 @@
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
       "StringField1": "<<Boruto>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Sasame",
+      "Rank": "",
+      "Team": "Clan Fuma",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Kamikiri",
+      "Rank": "",
+      "Team": "Clan Fuma",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Kagerō",
+      "Rank": "",
+      "Team": "Clan Fuma",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Kotohime",
+      "Rank": "",
+      "Team": "Clan Fuma",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Hanzaki",
+      "Rank": "",
+      "Team": "Clan Fuma",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Arashi",
+      "Rank": "",
+      "Team": "Clan Fuma",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
