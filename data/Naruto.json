@@ -17835,9 +17835,9 @@
       "Team": "Disciple de Yomi",
       "Chakra": "Eau",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "3",
       "Citation": "Gekijōban Naruto Shippūden",
       "Comments": "",
       "Nb": 1,
@@ -17855,16 +17855,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Dragon aqueu : "
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<activate>>Dragon aqueu :  Inflige 1D4 dégats d'eau à la cible"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -17873,9 +17867,9 @@
       "Team": "Disciple de Yomi",
       "Chakra": "Terre",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "3",
       "Citation": "Gekijōban Naruto Shippūden",
       "Comments": "",
       "Nb": 1,
@@ -17893,16 +17887,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Technique de durcissement"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Technique de durcissement : absorbe la totalité des dégâts jusqu'à ce ce soit à nouveau à lui de jouer"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -17911,9 +17899,9 @@
       "Team": "Disciple de Yomi",
       "Chakra": "Vent",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "3",
       "Citation": "Gekijōban Naruto Shippūden",
       "Comments": "",
       "Nb": 1,
@@ -17931,16 +17919,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Shurikens rotatives"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>>Shurikens de vent : Inflige 1D3 points de dégât à tous les adversaires sans contre-attaque possible"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -17949,9 +17931,9 @@
       "Team": "Disciple de Yomi",
       "Chakra": "Feu",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "3",
       "Citation": "Gekijōban Naruto Shippūden",
       "Comments": "",
       "Nb": 1,
@@ -17969,22 +17951,16 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Course de feu : dégâts de feu à tous les adversaires"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Course de feu : Inflige 1D3 points de dégâts de feu à tous les adversaires sans contre-attaque possible"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Yomi",
       "Rank": "",
-      "Team": "",
+      "Team": "Disciple de Môryô",
       "Chakra": "Eau",
       "Element": "",
       "Cost": "",
@@ -18045,16 +18021,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Attaques à l'arc  : Les attaques ne subissent pas de contre-attaque"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Attaques à l'arc  : Les attaques ne subissent pas de contre-attaque"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -18083,7 +18053,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "Power 1 Divination : Esquive la première attaque de chaque tour"
         },
         {
           "Description": "Power 2"
@@ -18098,7 +18068,7 @@
       "Kind": "Ninja",
       "Name": "Shinnô",
       "Rank": "",
-      "Team": "",
+      "Team": "Roi du pays du ciel",
       "Chakra": "Spécial",
       "Element": "",
       "Cost": "",
@@ -18121,7 +18091,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "Power 1 Régénération"
         },
         {
           "Description": "Power 2"
@@ -18159,7 +18129,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "Power 1 Chaos"
         },
         {
           "Description": "Power 2"
@@ -18174,12 +18144,12 @@
       "Kind": "Ninja",
       "Name": "Amaru",
       "Rank": "",
-      "Team": "",
+      "Team": "Ninja infirmier",
       "Chakra": "Eau",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "3",
       "Citation": "Gekijōban Naruto Shippūden : Kizuna",
       "Comments": "",
       "Nb": 1,
@@ -18197,16 +18167,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Infirmier de combat : Chaque point de dégât infligé est transféré en points de soin à la cible "
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -18270,7 +18234,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "Power 1 connaisance de l'environnement"
         },
         {
           "Description": "Power 2"
@@ -18297,7 +18261,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField1": "<<Konoha>>Naruto",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -18335,7 +18299,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField1": "<<Konoha>>Naruto",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -18373,7 +18337,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField1": "<<Konoha>>Naruto",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -18411,7 +18375,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField1": "<<Konoha>>Naruto",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -18449,7 +18413,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField1": "<<Konoha>>Naruto",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -18487,7 +18451,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField1": "<<Konoha>>Naruto",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
