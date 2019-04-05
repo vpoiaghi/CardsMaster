@@ -11017,7 +11017,7 @@
       "Cost": "5",
       "Attack": "3",
       "Defense": "5",
-      "Citation": "Kimera no Jutsu",
+      "Citation": "Hi no Ishi wo tsugu mono",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -11049,7 +11049,7 @@
       "Cost": "3",
       "Attack": "1",
       "Defense": "3",
-      "Citation": "",
+      "Citation": "Hi no Ishi wo tsugu mono",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -11081,7 +11081,7 @@
       "Cost": "3",
       "Attack": "1",
       "Defense": "3",
-      "Citation": "",
+      "Citation": "Hi no Ishi wo tsugu mono",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -11113,7 +11113,7 @@
       "Cost": "3",
       "Attack": "1",
       "Defense": "3",
-      "Citation": "",
+      "Citation": "Hi no Ishi wo tsugu mono",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -11145,7 +11145,7 @@
       "Cost": "",
       "Attack": "1",
       "Defense": "2",
-      "Citation": "",
+      "Citation": "Hi no Ishi wo tsugu mono",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Select3",
@@ -18071,9 +18071,9 @@
       "Team": "Roi du pays du ciel",
       "Chakra": "Spécial",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "4",
       "Citation": "Gekijōban Naruto Shippūden : Kizuna",
       "Comments": "",
       "Nb": 1,
@@ -18091,16 +18091,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Régénération"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>><<Instantané>> Régénération de chakra noir : A la fin de son tour, regagne tous ses points de vie s'il est encore en vie"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -18109,9 +18103,9 @@
       "Team": "Démon sans queue",
       "Chakra": "Spécial",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "3",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -18129,16 +18123,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Chaos"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Tous les adversaires perdent 1 point de dégât tant que Reibi est en vie"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -18214,9 +18202,9 @@
       "Team": "Ornithologue",
       "Chakra": "Spécial",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "1",
+      "Defense": "4",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -18234,16 +18222,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 connaisance de l'environnement"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>><<Instantané>> Connaissance du terrain : Tous les bonus du terrain de partie sont augmentés de 1 pour le camp de Tosaka uniquement"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
