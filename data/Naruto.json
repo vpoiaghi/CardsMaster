@@ -12698,7 +12698,7 @@
       "Attack": "3",
       "Defense": "2",
       "Citation": "",
-      "Comments": "",
+      "Comments": "Road to Ninja",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
@@ -17838,8 +17838,8 @@
       "Cost": "4",
       "Attack": "2",
       "Defense": "3",
-      "Citation": "Gekijōban Naruto Shippūden",
-      "Comments": "",
+      "Citation": "",
+      "Comments": "Mort de Naruto",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
@@ -17870,8 +17870,8 @@
       "Cost": "4",
       "Attack": "2",
       "Defense": "3",
-      "Citation": "Gekijōban Naruto Shippūden",
-      "Comments": "",
+      "Citation": "",
+      "Comments": "Mort de Naruto",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
@@ -17902,8 +17902,8 @@
       "Cost": "4",
       "Attack": "2",
       "Defense": "3",
-      "Citation": "Gekijōban Naruto Shippūden",
-      "Comments": "",
+      "Citation": "",
+      "Comments": "Mort de Naruto",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
@@ -17935,7 +17935,7 @@
       "Attack": "2",
       "Defense": "3",
       "Citation": "Gekijōban Naruto Shippūden",
-      "Comments": "",
+      "Comments": "Mort de Naruto",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
@@ -17967,7 +17967,7 @@
       "Attack": "",
       "Defense": "",
       "Citation": "Gekijōban Naruto Shippūden",
-      "Comments": "",
+      "Comments": "Mort de Naruto",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
@@ -18005,7 +18005,7 @@
       "Attack": "2",
       "Defense": "4",
       "Citation": "Gekijōban Naruto Shippūden",
-      "Comments": "",
+      "Comments": "Mort de Naruto",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
@@ -18037,7 +18037,7 @@
       "Attack": "",
       "Defense": "",
       "Citation": "Gekijōban Naruto Shippūden",
-      "Comments": "",
+      "Comments": "Mort de Naruto",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
@@ -18075,7 +18075,7 @@
       "Attack": "2",
       "Defense": "4",
       "Citation": "Gekijōban Naruto Shippūden : Kizuna",
-      "Comments": "",
+      "Comments": "Liens",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
@@ -18139,7 +18139,7 @@
       "Attack": "2",
       "Defense": "3",
       "Citation": "Gekijōban Naruto Shippūden : Kizuna",
-      "Comments": "",
+      "Comments": "Liens",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
@@ -18244,6 +18244,44 @@
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
       "StringField1": "<<Konoha>>Naruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Jigumo",
+      "Rank": "",
+      "Team": "Clan Fuma",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -18454,6 +18492,216 @@
         }
       ],
       "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Sêramu",
+      "Rank": "",
+      "Team": "Reine de Rôran ",
+      "Chakra": "Spécial",
+      "Element": "",
+      "Cost": "7",
+      "Attack": "1",
+      "Defense": "5",
+      "Citation": "Rosutotawā",
+      "Comments": "Tour perdue",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Manipulation de la veine du dragon : Octroie 2 points chakra (peut faire dépasser le maximum autorisé)"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Mukade",
+      "Rank": "",
+      "Team": "",
+      "Chakra": "Terre",
+      "Element": "Marionnettiste",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "Rosutotawā",
+      "Comments": "Tour perdue",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1 Marionettiste"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Sâra",
+      "Rank": "",
+      "Team": "Reine de Rôran ",
+      "Chakra": "Spécial",
+      "Element": "",
+      "Cost": "7",
+      "Attack": "1",
+      "Defense": "5",
+      "Citation": "Rosutotawā",
+      "Comments": "Tour perdue",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Manipulation de la veine du dragon : Octroie 2 points chakra (peut faire dépasser le maximum autorisé)"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Muku",
+      "Rank": "",
+      "Team": "",
+      "Chakra": "Vent",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "Buraddo Purizun",
+      "Comments": "Prison de sang",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Mui",
+      "Rank": "",
+      "Team": "",
+      "Chakra": "Feu",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "Buraddo Purizun",
+      "Comments": "Prison de sang",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1 scellement"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Ryûzetsu",
+      "Rank": "",
+      "Team": "Anbu de Kusa",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "3",
+      "Citation": "Buraddo Purizun",
+      "Comments": "Prison de sang",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Spécial>> Lors de sa mort, réssucite un allié du cimetière de son camp"
+        }
+      ],
+      "Warning": false
     }
   ],
   "SkinFile": "Naruto.original.skin"
