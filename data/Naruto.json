@@ -8525,7 +8525,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>> Ajoute 1 point à la réserve de chakra"
+          "Description": "<<Permanent>> Réserve de chakra : Ajoute 1 point à la réserve de chakra (peut dépasser le maximum)"
         }
       ],
       "Warning": false
@@ -17961,11 +17961,11 @@
       "Name": "Yomi",
       "Rank": "",
       "Team": "Disciple de Môryô",
-      "Chakra": "Eau",
-      "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Spécial",
+      "Element": "Chaos",
+      "Cost": "6",
+      "Attack": "1",
+      "Defense": "4",
       "Citation": "Gekijōban Naruto Shippūden",
       "Comments": "Mort de Naruto",
       "Nb": 1,
@@ -17983,16 +17983,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Injection de Chakra"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Injection de Chakra : Tous les alliés gagnent +1/+1 tant que Yomi est vivant"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -18033,9 +18027,9 @@
       "Team": "Prêtresse",
       "Chakra": "Eau",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "5",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "Gekijōban Naruto Shippūden",
       "Comments": "Mort de Naruto",
       "Nb": 1,
@@ -18053,16 +18047,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Divination : Esquive la première attaque de chaque tour"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Divination : Permet à un allié ou héros d'esquiver l'attaque . Les dégâts de contre-attaque sont éxécutés normalement (Réutilisable pendant chaque tour de l'adversaire)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -18520,7 +18508,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Manipulation de la veine du dragon : Octroie 2 points chakra (peut faire dépasser le maximum autorisé)"
+          "Description": "<<Permanent>> Manipulation de la veine du Ryûmyaku : Octroie 2 points chakra (peut faire dépasser le maximum autorisé)"
         }
       ],
       "Warning": false
@@ -18529,12 +18517,12 @@
       "Kind": "Ninja",
       "Name": "Mukade",
       "Rank": "",
-      "Team": "",
+      "Team": "Nukenin",
       "Chakra": "Terre",
       "Element": "Marionnettiste",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "4",
       "Citation": "Rosutotawā",
       "Comments": "Tour perdue",
       "Nb": 1,
@@ -18552,16 +18540,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Marionettiste"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Marionettiste ultime : à la fin de son tour d'attaque, se régénère tous ses points de vie"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -18590,7 +18572,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Manipulation de la veine du dragon : Octroie 2 points chakra (peut faire dépasser le maximum autorisé)"
+          "Description": "<<Permanent>> Manipulation de la veine du Ryûmyaku : Octroie 2 points chakra (peut faire dépasser le maximum autorisé)"
         }
       ],
       "Warning": false
@@ -18599,12 +18581,12 @@
       "Kind": "Ninja",
       "Name": "Muku",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Vent",
+      "Team": "Démon Satori",
+      "Chakra": "Feu",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "6",
+      "Attack": "2",
+      "Defense": "5",
       "Citation": "Buraddo Purizun",
       "Comments": "Prison de sang",
       "Nb": 1,
@@ -18622,27 +18604,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Volée de plumes noires : inflige 2 points de dégâts à tous les adversaires (y compris le héros)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Mui",
       "Rank": "",
-      "Team": "",
+      "Team": "Gardien",
       "Chakra": "Feu",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "4",
       "Citation": "Buraddo Purizun",
       "Comments": "Prison de sang",
       "Nb": 1,
@@ -18660,16 +18636,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 scellement"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Sceau de scellement : tant qu'il est en vie, les ninjas adverses ne peuvent plus lancer de Ninjutsus"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -18699,6 +18669,38 @@
       "Powers": [
         {
           "Description": "<<Spécial>> Lors de sa mort, réssucite un allié du cimetière de son camp"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Hamura Ôtsutsuki",
+      "Rank": "Légendaire",
+      "Team": "Clan Ôtsutsuki",
+      "Chakra": "Spécial",
+      "Element": "Tenseigan",
+      "Cost": "9",
+      "Attack": "5",
+      "Defense": "6",
+      "Citation": "Za Rasuto: Naruto za Mûbî",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>>Mode Chakra du Tenseigan : Permet d'attaquer 2 fois par tour"
         }
       ],
       "Warning": false
