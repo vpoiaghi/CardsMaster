@@ -673,5 +673,12 @@ namespace CardMasterManager
                 GridCount = cardGrid.Items.Count;
             }));
         }
+
+        private void PreviewCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            CardGrid_SelectionChanged(null, null);
+
+
+        }
     }
 }
