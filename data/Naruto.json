@@ -18675,6 +18675,108 @@
     },
     {
       "Kind": "Ninja",
+      "Name": "Tamaki",
+      "Rank": "",
+      "Team": "Maître chat",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Boruto>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Attaque féline : Ses attaques ne subissent pas de contre-attaque"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Daï Maito",
+      "Rank": "",
+      "Team": "Éternel Gennin",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "6",
+      "Attack": "3",
+      "Defense": "3",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>> Ouverture de la 8° porte  :  Gagne +5 Atk et peut attaquer jusqu'à 3 fois s'il ne meure pas avant."
+        },
+        {
+          "Description": "<<Spécial>> Meure après avoir activé la 8° porte à la fin du tour quoi qu'il arrive"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Gaï Maito (Après guerre)",
+      "Rank": "",
+      "Team": "Maître Gros sourcils",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "6",
+      "Attack": "3",
+      "Defense": "3",
+      "Citation": "Gekimayu-sensei",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Boruto>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>> Ouverture de la 8° porte  :  Gagne +5 Atk et peut attaquer jusqu'à 3 fois s'il ne meure pas avant."
+        },
+        {
+          "Description": "<<Spécial>> Meure après avoir activé la 8° porte à la fin du tour quoi qu'il arrive"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
       "Name": "Hamura Ôtsutsuki",
       "Rank": "Légendaire",
       "Team": "Clan Ôtsutsuki",
