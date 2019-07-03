@@ -18814,9 +18814,9 @@
       "Team": "Clan Chinoike",
       "Chakra": "Spécial",
       "Element": "Ketsuryûgan",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -18834,16 +18834,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Explosion des corps"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Explosion des corps : si un ennemi meure, il explose en infligeant 1 point de dégât aux alliés adjacents"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -18852,9 +18846,9 @@
       "Team": "Clan Chinoike",
       "Chakra": "Spécial",
       "Element": "Ketsuryûgan",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -18872,16 +18866,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 exposion des corps"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Explosion des corps : si un ennemi meure, il explose en infligeant 1 point de dégât aux alliés adjacents"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -19042,9 +19030,9 @@
       "Team": "Anbu",
       "Chakra": "Terre",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "4",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -19062,16 +19050,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 masquage de présence"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Masquage du chakra, ne peut être la cible de jutsu"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -19156,16 +19138,16 @@
       "Team": "Ichiraku Ramen",
       "Chakra": "Eau",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "3",
+      "Attack": "0",
+      "Defense": "3",
+      "Citation": "Itadakimasu ",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField1": "<<Konoha>>Naruto",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -19176,16 +19158,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Tournée de ramen : Au début de son tour, soigne tous les alliés et le héros de 1 point"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -19194,16 +19170,16 @@
       "Team": "Ichiraku Ramen",
       "Chakra": "Eau",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "3",
+      "Attack": "0",
+      "Defense": "3",
+      "Citation": "Itadakimasu ",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField1": "<<Konoha>>Naruto",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -19214,28 +19190,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Tournée de ramen : Au début de son tour, soigne tous les alliés et le héros de 1 point"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Momo (Ninneko)",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
+      "Team": "Chat Ninja",
+      "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "4",
+      "Attack": "1",
+      "Defense": "2",
+      "Citation": "Mew",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -19252,16 +19222,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Clône de nourriture pour chat : un clône subit les dégats à la place de la cible désignée (Peut être lancé à n'importe quel moment"
         }
       ],
-      "Warning": true
+      "Warning": false
     }
   ],
   "SkinFile": "Naruto.original.skin"
