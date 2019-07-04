@@ -18878,10 +18878,10 @@
       "Team": "Bande des Raikô",
       "Chakra": "Vent",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "5",
+      "Attack": "1",
+      "Defense": "3",
+      "Citation": "Taiton : Môfû Daireppa",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -18898,7 +18898,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Tornade"
+          "Description": "<<activate>>Furie du Cyclone : Envoie la cible dans son cimetière"
         },
         {
           "Description": "Power 2"
@@ -18907,7 +18907,7 @@
           "Description": "Power 3"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -19059,13 +19059,13 @@
       "Kind": "Ninja",
       "Name": "Mizuki",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
+      "Team": "Nukenin",
+      "Chakra": "Terre",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Doton : Dochû Eigyo no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -19082,16 +19082,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<spécial>>Technique de Projection Souterraine : Ne peut être ciblé tant qu'il n'a pas attaqué au moins 1 fois. Sa première attaque ne subit pas de contre-attaque"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
