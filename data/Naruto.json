@@ -18916,10 +18916,10 @@
       "Team": "Pays du silence",
       "Chakra": "Spécial",
       "Element": "Hypnose",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Magen : Kowaku no Kangen",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -18936,16 +18936,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 convertit par sa vois : chaque tour fait attaquer un adversaire contre ses alliés"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> A chaque début de son tour, fait s'affronter 2 personnages"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
