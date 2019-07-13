@@ -53,6 +53,7 @@ harashi cousin
 Kagero : Araignée fils argent ; transfo
 gigoro 
 kamegiri
+Hanzaki : atk sabre Clan fuma
 
 
 
