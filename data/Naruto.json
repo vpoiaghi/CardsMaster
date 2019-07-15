@@ -18216,15 +18216,50 @@
       "Warning": false
     },
     {
-      "Kind": "Ninja",
-      "Name": "Sasame",
+      "Kind": "Quête",
+      "Name": "Intrigue à Tanzakugaï",
       "Rank": "",
-      "Team": "Clan Fuma",
-      "Chakra": "Eau",
+      "Team": "Quête",
+      "Chakra": "Quête",
       "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 2,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Book>>Naruto Stories",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Conditions>> 2 de vos alliés tombés au combat pendant le tour de l'adversaire"
+        },
+        {
+          "Description": "<<Récompense>> Pioche deux cartes"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Sasame",
+      "Rank": "",
+      "Team": "Clan Fuma",
+      "Chakra": "Vent",
+      "Element": "Poison",
+      "Cost": "4",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "ep 136-141",
       "Nb": 1,
@@ -18242,16 +18277,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Tout adversaire touché par Sasame prend un jeton poison, et perds 1 point de vie à chacun des tours de la cible"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -18269,7 +18298,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField1": "<<Konoha>>Naruto",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -18948,10 +18977,10 @@
       "Team": "Anbu",
       "Chakra": "Vent",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "4",
+      "Attack": "1",
+      "Defense": "3",
+      "Citation": "Chakura no Hari",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -18968,16 +18997,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 trait de chakra qui bloque les jutsus"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Tout adveraire touché par Soku perd ses aptitudes de Ninjutsu. Celles-ci reviennent lors de la mort ou le retrait de Soku."
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
