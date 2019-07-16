@@ -18287,11 +18287,11 @@
       "Name": "Jigumo",
       "Rank": "",
       "Team": "Clan Fuma",
-      "Chakra": "Eau",
+      "Chakra": "Terre",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "2",
       "Citation": "",
       "Comments": "ep 136-141",
       "Nb": 1,
@@ -18309,27 +18309,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Toile enchevêtrante : Le ninja ciblé ne joue pas lors de son prochain tour"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Kamikiri",
       "Rank": "",
       "Team": "Clan Fuma",
-      "Chakra": "Eau",
+      "Chakra": "Foudre",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "1",
+      "Attack": "1",
+      "Defense": "1",
       "Citation": "",
       "Comments": "ep 136-141",
       "Nb": 1,
@@ -18347,28 +18341,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>>Trait de foudre : Inflige 1 point de foudre à la cible"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Kagerō",
       "Rank": "",
       "Team": "Clan Fuma",
-      "Chakra": "Eau",
+      "Chakra": "Terre",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "4",
+      "Attack": "1",
+      "Defense": "4",
+      "Citation": "Henge no Jutsu",
       "Comments": "ep 136-141",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -18385,24 +18373,18 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Sauvetage : Se sacrifie pour renvoyer un allié dans la main"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Kotohime",
       "Rank": "",
       "Team": "Clan Fuma",
-      "Chakra": "Eau",
-      "Element": "",
+      "Chakra": "Terre",
+      "Element": "Poison",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -18423,7 +18405,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "Power 1 Araignée poison"
         },
         {
           "Description": "Power 2"
@@ -18493,7 +18475,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "Power 1 Kinjutsu absorption"
         },
         {
           "Description": "Power 2"
@@ -19001,7 +18983,7 @@
       "Name": "Yurito",
       "Rank": "",
       "Team": "Assistant",
-      "Chakra": "Eau",
+      "Chakra": "Physique",
       "Element": "",
       "Cost": "",
       "Attack": "",
@@ -19103,11 +19085,11 @@
       "Name": "Ryūki",
       "Rank": "",
       "Team": "Disciple de Jashin",
-      "Chakra": "Eau",
+      "Chakra": "Spécial",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "6",
+      "Attack": "2",
+      "Defense": "5",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -19125,16 +19107,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Vol de vie : Tout dégât infligé lui est ajouté à sa vie, sans la dépasser"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
