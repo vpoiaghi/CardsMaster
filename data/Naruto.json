@@ -1251,7 +1251,7 @@
       "Name": "Gamabunta",
       "Rank": "Épique",
       "Team": "Invocation",
-      "Chakra": "Eau",
+      "Chakra": "Feu",
       "Element": "",
       "Cost": "",
       "Attack": "2",
@@ -3000,7 +3000,7 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Jûgo",
+      "Name": "Jūgo",
       "Rank": "",
       "Team": "Équipe Taka",
       "Chakra": "Physique",
@@ -7090,7 +7090,7 @@
       "Cost": "2",
       "Attack": "1",
       "Defense": "2",
-      "Citation": null,
+      "Citation": "Shadanheki",
       "Comments": null,
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -7107,7 +7107,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>Charge"
+          "Description": "<<Instantané>>Muraille : A chaque tour de l'adversaire, Renga érige une muraille qui absorbera les 3 prochains points de dégâts dont son équipe sera cible"
         }
       ],
       "Warning": false
@@ -7118,7 +7118,7 @@
       "Rank": "",
       "Team": "Équipe 25",
       "Chakra": "Physique",
-      "Element": "",
+      "Element": "Marionnettiste",
       "Cost": "2",
       "Attack": "2",
       "Defense": "2",
@@ -13864,7 +13864,7 @@
       "Cost": "2",
       "Attack": "2",
       "Defense": "2",
-      "Citation": "",
+      "Citation": "Kssssssssss",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -18122,7 +18122,7 @@
       "Rank": "",
       "Team": "Ninja infirmier",
       "Chakra": "Eau",
-      "Element": "",
+      "Element": "Soin",
       "Cost": "3",
       "Attack": "2",
       "Defense": "3",
@@ -18439,11 +18439,11 @@
       "Name": "Hanzaki",
       "Rank": "",
       "Team": "Clan Fuma",
-      "Chakra": "Eau",
-      "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Physique",
+      "Element": "Épéiste",
+      "Cost": "4",
+      "Attack": "3",
+      "Defense": "2",
       "Citation": "",
       "Comments": "ep 136-141",
       "Nb": 1,
@@ -18461,13 +18461,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
         }
       ],
       "Warning": true
@@ -19202,6 +19196,102 @@
       "Powers": [
         {
           "Description": "<<Permanent>>Tournée de ramen : Au début de son tour, soigne tous les alliés et le héros de 1 point"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Suigetsu Hôzuki (Adulte)",
+      "Rank": "",
+      "Team": "Assistant d'Oroshimaru",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "4",
+      "Attack": "4",
+      "Defense": "3",
+      "Citation": "Suika No Jutsu",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Boruto>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>><<Instantané>>  Insensible aux attaques physiques"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Karin (Adulte)",
+      "Rank": "",
+      "Team": "Assistante d'Oroshimaru",
+      "Chakra": "Eau",
+      "Element": "Soin",
+      "Cost": "4",
+      "Attack": "3",
+      "Defense": "3",
+      "Citation": "Shôsen Jutsu",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Boruto>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Paume Mystique : Soigne 1D3 points de vie à un allié ou héros au choix (Utilisable 1 fois par tour)"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Cobayes d'Oroshimaru",
+      "Rank": "",
+      "Team": "Biologistes",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Boruto>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<activate>> Marques maudites : Gagnent +2 ATK/ +2 PV"
         }
       ],
       "Warning": false
