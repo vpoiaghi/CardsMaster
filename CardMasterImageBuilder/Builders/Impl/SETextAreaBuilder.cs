@@ -2,12 +2,19 @@
 using CardMasterImageBuilder.SkinElements;
 using CardMasterImageBuilder.Skins;
 using CardMasterSkin.Skins;
+using System;
+using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Text;
+using System.IO;
 
 namespace CardMasterImageBuilder.Builders.Impl
 {
     public class SETextAreaBuilder : AbstractBuilder
     {
+
+        private PrivateFontCollection pfc = new PrivateFontCollection();
+        Dictionary<string, FontFamily> dicoFonts = new Dictionary<string, FontFamily>();
         public override string TYPE { get { return "SETextArea"; } }
 
         public SETextAreaBuilder(BuilderParameter builderParameter)
@@ -19,8 +26,31 @@ namespace CardMasterImageBuilder.Builders.Impl
         {
 
             SETextArea skinElement = new SETextArea(builderParameter.ResourcesDirectory, item.X, item.Y, item.Width, item.Height, item.Comment, "<Texte>");
+            //TODO load external font if exists, system else
+            string fontFullPath = builderParameter.ResourcesDirectory + "\\Fonts\\" + item.FontName;
+            if (File.Exists(fontFullPath))
+            {
+                // Si existe pas
+                if (!dicoFonts.ContainsKey(fontFullPath))
+                {
+                    pfc.AddFontFile(fontFullPath);
+                    dicoFonts.Add(fontFullPath, pfc.Families[pfc.Families.Length - 1]);
+                }
 
-            skinElement.TextFont = new Font(item.FontName, item.FontSize.Value, GetStyle(item.Style));
+                Font localFont = new Font(dicoFonts[fontFullPath], item.FontSize.Value, GetStyle(item.Style));
+                if (localFont == null | pfc.Families[0].Name == null)
+                {
+                    throw new Exception("ERROR LOADING CUSTOM FONT");
+                  
+                }
+                skinElement.TextFont = localFont;
+
+            }
+            else
+            {
+                skinElement.TextFont = new Font(item.FontName, item.FontSize.Value, GetStyle(item.Style));
+            }
+          
             skinElement.TextAttribute = item.NameAttribute;
             skinElement.TextAlign = GetHorizontalAlignment(item.HorizontalAlign);
             skinElement.TextVerticalAlign = GetVerticalAlignment(item.VerticalAlign);

@@ -47,14 +47,5 @@ Maintenant que la fonctionnalité est validée, voir comment elle sera intégré
 
 
 
-Tanzaku-gai
-Sasame fuma
-harashi cousin
-Kagero : Araignée fils argent ; transfo
-gigoro 
-kamegiri
-Hanzaki : atk sabre Clan fuma
-
-
 
 

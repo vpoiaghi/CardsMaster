@@ -230,10 +230,10 @@
 				"Y":880,
 				"Width": 628,
 				"Height" : 45,
-				"FontName" : "Garamond",
+				"FontName" : "shocktherapybb_ital.ttf",
 				"FontSize" : 8,
 				"FontColor" : "Black",
-				"Style" : "Bold,Italic",
+				"Style" : "Italic",
 				"NameAttribute" : "Citation",
 				"HorizontalAlign" : "Center",
 				"VerticalAlign" : "Center"
