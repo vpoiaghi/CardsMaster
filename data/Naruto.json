@@ -18446,7 +18446,7 @@
           "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -18985,9 +18985,9 @@
       "Team": "Assistant",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -19005,16 +19005,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Support : "
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Soutient tactique : les alliés adjacents gagnent +1 ATK"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
