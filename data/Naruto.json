@@ -18385,9 +18385,9 @@
       "Team": "Clan Fuma",
       "Chakra": "Terre",
       "Element": "Poison",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "ep 136-141",
       "Nb": 1,
@@ -18405,16 +18405,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Araignée poison"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Tout adversaire touché par Kotohime prend un jeton poison, et perds 1 point de vie à chacun des tours de la cible"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -18453,12 +18447,12 @@
       "Name": "Arashi",
       "Rank": "",
       "Team": "Clan Fuma",
-      "Chakra": "Eau",
-      "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Chakra": "Terre",
+      "Element": "Sable",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "4",
+      "Citation": "Jubaku Mandara",
       "Comments": "ep 136-141",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -18475,16 +18469,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 Kinjutsu absorption"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>>Malédiction de Mandala : Une fois lancée, la malédiction inflige 2 points de dégâts au début de chaque tour de la cible, et ce tant que Arashi est en vie"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
