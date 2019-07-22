@@ -8,6 +8,7 @@ using CardMasterManager.Forms;
 using CardMasterManager.Models.Card;
 using CardMasterManager.Utils;
 using Microsoft.Win32;
+using Notifications.Wpf;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -679,6 +680,23 @@ namespace CardMasterManager
             CardGrid_SelectionChanged(null, null);
 
 
+        }
+
+        private void CardGrid_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.S && Keyboard.IsKeyDown(Key.LeftCtrl))
+            {
+                var notificationManager = new NotificationManager();
+
+                notificationManager.Show(new NotificationContent
+                {
+                    Title = "Saving File",
+                    
+                    Type = NotificationType.Success
+                },expirationTime:TimeSpan.FromSeconds(1));
+                SaveProject(cardsFile);
+                e.Handled = true;
+            }
         }
     }
 }

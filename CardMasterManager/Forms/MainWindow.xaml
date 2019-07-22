@@ -151,7 +151,7 @@
                     </DockPanel>
                     <StackPanel Orientation="Horizontal">
                         <DataGrid Name="cardGrid" Margin="5" Width="1271" Height="813" SelectionMode="Single" AutoGenerateColumns="False" AlternationCount="2" IsReadOnly="False" ItemsSource="{Binding Path=GridCardsList, NotifyOnSourceUpdated=True, Mode=TwoWay}"
-                        SelectionChanged="CardGrid_SelectionChanged" FrozenColumnCount ="2" EnableColumnVirtualization="True" EnableRowVirtualization="True" CanUserAddRows="False" CanUserDeleteRows="True" SourceUpdated="CardGrid_SourceUpdated" Background="AliceBlue" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Visible">
+                        SelectionChanged="CardGrid_SelectionChanged" FrozenColumnCount ="2" EnableColumnVirtualization="True" EnableRowVirtualization="True" CanUserAddRows="False" CanUserDeleteRows="True" SourceUpdated="CardGrid_SourceUpdated" Background="AliceBlue" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Visible" KeyDown="CardGrid_KeyDown">
                             <DataGrid.Resources>
                                 <Style TargetType="{x:Type DataGridColumnHeader}">
                                     <Setter Property="Background" Value="AliceBlue" />
