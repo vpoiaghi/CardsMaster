@@ -97,7 +97,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>>   Les ninjas de vent alliés gagnent +3/+3"
+          "Description": "<<Permanent>><<Instantané>>   Les ninjas de vent alliés gagnent 3 points d'attaque et 3 points de vie supplémentaires"
         }
       ],
       "Warning": false
@@ -129,7 +129,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>>   Les ninjas de feu gagnent +3/+3"
+          "Description": "<<Permanent>><<Instantané>>   Les ninjas de feu gagnent 3 points d'attaque et 3 points de vie supplémentaires "
         }
       ],
       "Warning": false
@@ -1349,10 +1349,10 @@
       "Team": "Sanin",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "8",
-      "Attack": "7",
-      "Defense": "7",
-      "Citation": "",
+      "Cost": "9",
+      "Attack": "5",
+      "Defense": "5",
+      "Citation": "Chô Ôdama Rasengan",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -1369,7 +1369,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>   Détruit l'adversaire d'une puissante frappe"
+          "Description": "<<Instantané>> Méga orbe tourbillonnant : Détruit l'adversaire d'une puissante frappe"
         },
         {
           "Description": "<<Activate>>Invoque Shima et Fukasaku"
@@ -1390,7 +1390,7 @@
       "Cost": "",
       "Attack": "1",
       "Defense": "1",
-      "Citation": "",
+      "Citation": "Magen - Gama Rinshô",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Select3",
@@ -1422,7 +1422,7 @@
       "Cost": "",
       "Attack": "1",
       "Defense": "1",
-      "Citation": "",
+      "Citation": "Magen : Gama Rinshô",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Select3",
@@ -1509,7 +1509,7 @@
           "Description": "<<Permanent>><<Instantané>>  Insensible aux attaques physiques, de Terre et d'Eau"
         },
         {
-          "Description": "<<Spécial>>  Manipulation du Shôton : Gagne +5 points de vie tant qu'elle n'a pas encore attaqué"
+          "Description": "<<Spécial>>  Manipulation du Shôton : Gagne 5 points de vie supplémentaires tant qu'elle n'a pas encore attaqué"
         }
       ],
       "Warning": false
@@ -2067,7 +2067,7 @@
       "Element": "",
       "Cost": "",
       "Attack": "1",
-      "Defense": "1",
+      "Defense": "3",
       "Citation": "Suiton : Daikôdan No jutsu",
       "Comments": "",
       "Nb": 1,
@@ -2347,7 +2347,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>>  Donne +3 points de vie aux Uchiwa alliés"
+          "Description": "<<Permanent>><<Instantané>>  Donne 3 points de vie aux Uchiwa alliés"
         }
       ],
       "Warning": false
@@ -3028,7 +3028,7 @@
           "Description": "<<Permanent>>  Protection"
         },
         {
-          "Description": "<<Permanent>><<Instantané>>  Berserker : Gagne +4/-2 lorsqu'il attaque"
+          "Description": "<<Permanent>><<Instantané>>  Berserker : Gagne 4 points d'attaque et perds 2 points de vie lorsqu'il attaque"
         }
       ],
       "Warning": false
@@ -3060,7 +3060,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Volcan : Tous les ninjas de feu gagnent +2 ATK"
+          "Description": "<<activate>>  Volcan : Tous les ninjas de feu gagnent 2 points d'attaque"
         }
       ],
       "Warning": false
@@ -3421,7 +3421,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Mur de Caoutchouc : Donne +1 point de vie aux alliés"
+          "Description": "<<Activate>> Mur de Caoutchouc : Donne 1 point de vie aux alliés"
         }
       ],
       "Warning": false
@@ -3485,7 +3485,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>>  Katana de foudre : Gagne +2 ATK contre la Terre"
+          "Description": "<<Permanent>><<Instantané>>  Katana de foudre : Gagne 2 points d'attaque contre la Terre"
         }
       ],
       "Warning": false
@@ -3517,7 +3517,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>>  Katana de foudre : Gagne +2 ATK contre la Terre"
+          "Description": "<<Permanent>><<Instantané>>  Katana de foudre : Gagne 2 points d'attaque contre la Terre"
         }
       ],
       "Warning": false
@@ -3686,7 +3686,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>> Les autres ninjas alliés gagnent +2 ATK"
+          "Description": "<<Permanent>><<Instantané>> Les autres ninjas alliés gagnent 2 points d'attaque"
         }
       ],
       "Warning": false
@@ -3948,7 +3948,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>>  Les ninjas de terre gagnent +3 points de vie"
+          "Description": "<<Permanent>><<Instantané>>  Les ninjas de terre gagnent 3 points de vie supplémentaires "
         }
       ],
       "Warning": false
@@ -4204,7 +4204,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>   Rempart de terre : les alliés gagnent +2 points de vie tant qu'il est en vie"
+          "Description": "<<Instantané>>   Rempart de terre : les alliés gagnent 2 points de vie supplémentaires tant qu'il est en vie"
         }
       ],
       "Warning": false
@@ -4332,7 +4332,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>>  Danse du camélia : Gagne +2 d'ATK contre les ninjas physiques"
+          "Description": "<<Permanent>><<Instantané>>  Danse du camélia : Gagne 2 points d'attaque contre les ninjas physiques"
         }
       ],
       "Warning": false
@@ -4594,7 +4594,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>>  Chakra de Kyûbi : Gagne +3/+3 si présence de Kinkaku à ses côtés"
+          "Description": "<<Spécial>>  Chakra de Kyûbi : Gagne 3 points d'attaque et 3 points de vie supplémentaire si Kinkaku est présent à ses côtés"
         }
       ],
       "Warning": false
@@ -4626,7 +4626,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>>  Chakra de Kyûbi : Gagne +3/+3 si présence de Ginkaku à ses côtés"
+          "Description": "<<Spécial>>  Chakra de Kyûbi : Gagne 3 points d'attaque et 3 points de vie supplémentaires  si Kinkaku est présent à ses côtés"
         }
       ],
       "Warning": false
@@ -4920,7 +4920,7 @@
           "Description": "<<Instantané>>   Détruit tous les Bijù adverses"
         },
         {
-          "Description": "<<Spécial>>  Donne +4 points de vie aux Bijù alliés"
+          "Description": "<<Spécial>>  Donne 4 points de vie supplémentaires aux Bijù alliés"
         }
       ],
       "Warning": false
@@ -4990,7 +4990,7 @@
           "Description": "<<Permanent>>  Insensible aux attaques d'eau"
         },
         {
-          "Description": "<<Permanent>><<Instantané>>  Gagne +1 ATK / +1 point de vie pour chaque ninja de type Eau dans son camp"
+          "Description": "<<Permanent>><<Instantané>>  Gagne 1 point d'attaque et 1 point de vie supplémentaire  pour chaque ninja de type Eau dans son camp"
         }
       ],
       "Warning": false
@@ -5267,7 +5267,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas en affinité avec l'eau gagnent +1 ATK / +1 point de vie"
+          "Description": "<<Permanent>>  Les ninjas en affinité avec l'eau gagnent 1 point d'attaque et 1 point de vie supplémentaire "
         }
       ],
       "Warning": false
@@ -5282,7 +5282,7 @@
       "Cost": "",
       "Attack": "",
       "Defense": "",
-      "Citation": "Konoha Arinà",
+      "Citation": "Konoha Arina",
       "Comments": "Carte à part",
       "Nb": 1,
       "BackSide": "Back-Select",
@@ -5299,7 +5299,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas physiques gagnent +1 ATK / +1 point de vie"
+          "Description": "<<Permanent>>  Les ninjas physiques gagnent 1 point d'attaque et 1 point de vie supplémentaire"
         }
       ],
       "Warning": false
@@ -5331,7 +5331,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas en affinité avec le vent gagnent +1 ATK / +1 point de vie"
+          "Description": "<<Permanent>>  Les ninjas en affinité avec le vent gagnent 1 point d'attaque et 1 point de vie supplémentaire"
         }
       ],
       "Warning": false
@@ -5363,7 +5363,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas en affinité avec la foudre gagnent +1 ATK / +1 point de vie"
+          "Description": "<<Permanent>>  Les ninjas en affinité avec la foudre gagnent 1 point d'attaque et 1 point de vie supplémentaire"
         }
       ],
       "Warning": false
@@ -5395,7 +5395,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas en affinité avec la terre gagnent +1 ATK / +1 point de vie"
+          "Description": "<<Permanent>>  Les ninjas en affinité avec la terre gagnent 1 point d'attaque et 1 point de vie supplémentaire"
         }
       ],
       "Warning": false
@@ -5427,7 +5427,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas en affinité spéciale gagnent +1 ATK / +1 point de vie"
+          "Description": "<<Permanent>>  Les ninjas en affinité spéciale gagnent 1 point d'attaque et 1 point de vie supplémentaire"
         }
       ],
       "Warning": false
@@ -5459,7 +5459,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Les ninjas  en affinité avec la terre gagnent +2 points de vie"
+          "Description": "<<Permanent>> Les ninjas  en affinité avec la terre gagnent 2 points de vie supplémentaires"
         }
       ],
       "Warning": false
@@ -5491,7 +5491,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Les ninjas en affinité avec l'eau gagnent +1 ATK / +1 point de vie"
+          "Description": "<<Permanent>> Les ninjas en affinité avec l'eau gagnent 1 point d'attaque et 1 point de vie supplémentaire"
         }
       ],
       "Warning": false
@@ -5523,7 +5523,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Les ninjas en affinité avec l'eau gagnent +2 points de vie"
+          "Description": "<<Permanent>> Les ninjas en affinité avec l'eau gagnent 2 points de vie supplémentaires"
         }
       ],
       "Warning": false
@@ -5555,7 +5555,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Les ninjas en affinité avec le feu gagnent +1 ATK / +1 point de vie"
+          "Description": "<<Permanent>>  Les ninjas en affinité avec le feu gagnent 1 point d'attaque et 1 point de vie supplémentaire"
         }
       ],
       "Warning": false
@@ -6621,7 +6621,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Jûken : Gagne +1 ATK lorsqu'il attaque"
+          "Description": "<<Permanent>>  Jûken : Gagne 1 point d'attaque lorsqu'il attaque"
         }
       ],
       "Warning": false
@@ -6848,7 +6848,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Soutien Technologique : Donne +2 points de vie à tous les alliés tant qu'il est en vie"
+          "Description": "<<Permanent>>  Soutien Technologique : Donne 2 points de vie supplémentaires à tous les alliés tant qu'il est en vie"
         }
       ],
       "Warning": false
@@ -6912,7 +6912,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Intimidation : Gagne +2 ATK / +1 point de vie tant qu'il est le seul ninja en lice"
+          "Description": "<<Permanent>> Intimidation : Gagne 2 points d'attaque et 1 point de vie supplémentaire tant qu'il est le seul ninja en lice"
         }
       ],
       "Warning": false
@@ -7334,7 +7334,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>>  Nuage de limaille : Tous les alliés gagnent +2 points de vie tant qu'il est en vie"
+          "Description": "<<Activate>>  Nuage de limaille : Tous les alliés gagnent 2 points de vie supplémentaires supplémentaires tant qu'il est en vie"
         }
       ],
       "Warning": false
@@ -7462,7 +7462,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>> Ses équipiers gagnent +1 ATK tant qu'il est en vie"
+          "Description": "<<Permanent>><<Instantané>> Ses équipiers gagnent 1 point d'attaque tant qu'il est en vie"
         }
       ],
       "Warning": false
@@ -7846,7 +7846,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Gagne +2 points de vie quand il défend"
+          "Description": "<<Permanent>> Gagne 2 points de vie supplémentaires  quand il défend "
         }
       ],
       "Warning": false
@@ -8097,7 +8097,7 @@
       "Cost": "6",
       "Attack": "5",
       "Defense": "3",
-      "Citation": null,
+      "Citation": "Sôjasôsai no Jutsu",
       "Comments": null,
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -8353,7 +8353,7 @@
           "Description": "<<Instantané>> Désigne un ninja et l'immobilise, l'empêchant d'attaquer et de lancer des sorts. Le ninja est libéré à la mort de Shikamaru"
         },
         {
-          "Description": "<<Spécial>> Si 3 membres du trio Ino-Shika-Cho sont présents, ceux-ci gagnent +3 ATK et +3 points de vie"
+          "Description": "<<Spécial>> Si 3 membres du trio Ino-Shika-Cho sont présents, ceux-ci gagnent 3 points d'attaque 3 points de vie supplémentaires "
         }
       ],
       "Warning": false
@@ -8391,7 +8391,7 @@
           "Description": "<<Activate>> Pilules des 3 couleurs  :  Soigne entièrement Chôji mais passe son attaque à 0"
         },
         {
-          "Description": "<<Spécial>> Si 3 membres du trio Ino-Shika-Cho sont présents, ceux-ci gagnent +3 ATK et +3 points de vie"
+          "Description": "<<Spécial>> Si 3 membres du trio Ino-Shika-Cho sont présents, ceux-ci gagnent 3 points d'attaque et 3 points de vie supplémentaires"
         }
       ],
       "Warning": false
@@ -8426,7 +8426,7 @@
           "Description": "<<Permanent>> Technique de la Paume Mystique : Soigne 2 points de vie à un ninja. Utilisable 1 fois par tour"
         },
         {
-          "Description": "<<Spécial>> Si 3 membres d'une configuration Ino-Shika-Cho sont présents, ceux-ci gagnent +3 ATK et +3 points de vie"
+          "Description": "<<Spécial>> Si 3 membres d'une configuration Ino-Shika-Cho sont présents, ceux-ci gagnent 3 points d'attaque 3 points de vie supplémentaires"
         }
       ],
       "Warning": false
@@ -8656,7 +8656,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>> Griffe de chakra : Gagne +1 ATK contre les ennemis qui ont protection"
+          "Description": "<<Permanent>><<Instantané>> Griffe de chakra : Gagne 1 point d'attaque contre les ennemis qui ont protection"
         }
       ],
       "Warning": false
@@ -8784,7 +8784,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>>Stratège : Tous les ninjas de la terre gagnent +1 ATK / +1 point de vie"
+          "Description": "<<Permanent>><<Instantané>>Stratège : Tous les ninjas de la terre gagnent 1 point d'attaque et 1 point de vie supplémentaire"
         }
       ],
       "Warning": false
@@ -8979,7 +8979,7 @@
           "Description": "<<Permanent>> Insensible aux dégâts physiques"
         },
         {
-          "Description": "<<Permanent>><<Instantané>> Tous les membres alliés du clan Ôtsutsuki gagnent +2 ATK/+2 points de vie"
+          "Description": "<<Permanent>><<Instantané>> Tous les membres alliés du clan Ôtsutsuki gagnent 2 points d'attaque et 2 points de vie supplémentaires "
         }
       ],
       "Warning": false
@@ -9436,7 +9436,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>>Transfert de Chakra : Donne +1 ATK / +1 point de vie aux alliés adjacents"
+          "Description": "<<Activate>>Transfert de Chakra : Donne 1 point d'attaque et 1 point de vie aux alliés adjacents"
         }
       ],
       "Warning": false
@@ -9774,7 +9774,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>> Donne +2 ATK/ +2 points de vie au ninja ciblé"
+          "Description": "<<Permanent>><<Instantané>> Donne 2 points d'attaque et 2 points de vie au ninja ciblé"
         },
         {
           "Description": "<<Spécial>> Quand l'allié attaque, 2 points de dégât sont transférés au héros ou détruit le kinjutsu"
@@ -10170,7 +10170,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>> Toutes les armes du héros gagnent +2 ATK"
+          "Description": "<<Permanent>><<Instantané>> Toutes les armes du héros gagnent 2 points d'attaque supplémentaires "
         }
       ],
       "Warning": false
@@ -10202,7 +10202,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>> Toutes les armures du héros gagnent +2 DEF"
+          "Description": "<<Permanent>><<Instantané>> Toutes les armures du héros gagnent 2 points de défense supplémentaires "
         }
       ],
       "Warning": false
@@ -11741,7 +11741,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Chant du Enka  : Motive les ninjas alliés en leur donnant +1 ATK pour 1 tour"
+          "Description": "<<Instantané>> Chant du Enka  : Motive les ninjas alliés en leur donnant 1 point d'attaque en plus pour 1 tour"
         },
         {
           "Description": "<<Activate>> Invoque Ponta"
@@ -13334,7 +13334,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>> Donne +2 points de vie à tous les alliés de Terre"
+          "Description": "<<Permanent>><<Instantané>> Donne 2 points de vie à tous les alliés de Terre"
         }
       ],
       "Warning": false
@@ -13366,7 +13366,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>> Donne +2 points de vie à tous les alliés d'Eau"
+          "Description": "<<Permanent>><<Instantané>> Donne 2 points de vie à tous les alliés d'Eau"
         }
       ],
       "Warning": false
@@ -13398,7 +13398,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>> Donne +2 points de vie à tous les alliés d'Eau"
+          "Description": "<<Permanent>><<Instantané>> Donne 2 points de vie à tous les alliés d'Eau"
         }
       ],
       "Warning": false
@@ -13465,7 +13465,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>> Donne +2 points de vie à tous les alliés de Terre"
+          "Description": "<<Permanent>><<Instantané>> Donne 2 points de vie à tous les alliés de Terre"
         }
       ],
       "Warning": false
@@ -13497,7 +13497,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>> Donne +2 points de vie à tous les alliés de Terre"
+          "Description": "<<Permanent>><<Instantané>> Donne 2 points de vie à tous les alliés de Terre"
         }
       ],
       "Warning": false
@@ -15932,7 +15932,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<instantané>> Pour L'akatsuki ! : Gagne +1 ATK / +1 point de vie pour chaque membre de l'Akatsuki présent en jeu"
+          "Description": "<<Permanent>><<instantané>> Pour L'akatsuki ! : Gagne 1 point d'attaque et 1 point de vie supplémentaires pour chaque membre de l'Akatsuki présent en jeu"
         }
       ],
       "Warning": false
@@ -16415,7 +16415,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Poing de grès : Quand il défend, inflige  +2 ATK"
+          "Description": "<<Permanent>> Poing de grès : Quand il défend, inflige  2 points d'attaque"
         }
       ],
       "Warning": false
@@ -16607,7 +16607,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Sept Respirations Célestes : Gagne définitivement +2 ATK et peut attaquer 2 fois par tour"
+          "Description": "<<Activate>> Sept Respirations Célestes : Gagne définitivement 2 points d'attaque et peut attaquer 2 fois par tour"
         }
       ],
       "Warning": false
@@ -16735,7 +16735,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Eau des héros : Gagne +2 ATK mais perds 1 points de vie à la fin de chacun de ses tours"
+          "Description": "<<Activate>> Eau des héros : Gagne 2 points d'attaque mais perd 1 points de vie à la fin de chacun de ses tours"
         }
       ],
       "Warning": false
@@ -17695,7 +17695,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Gagne +1 ATK  face à des adversaires de type Physique"
+          "Description": "<<Permanent>> Gagne 1 point d'attaque face à des adversaires de type Physique"
         }
       ],
       "Warning": false
@@ -17983,7 +17983,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Injection de Chakra : Tous les alliés gagnent +1/+1 tant que Yomi est vivant"
+          "Description": "<<Permanent>> Injection de Chakra : Tous les alliés gagnent 1 point d'attasue et 1 point de vie supplémentaires tant que Yomi est vivant"
         }
       ],
       "Warning": false
@@ -18178,7 +18178,7 @@
           "Description": "<<Instantané>> Attaque éclair"
         },
         {
-          "Description": "<<Permanent>><<Instantané>>  Berserker : Gagne +4/-2 lorsqu'il attaque"
+          "Description": "<<Permanent>><<Instantané>>  Berserker : Gagne 4 points d'attaque et perds 2 points de vie lorsqu'il attaque"
         }
       ],
       "Warning": false
@@ -18725,7 +18725,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Ouverture de la 8° porte  :  Gagne +5 Atk et peut attaquer jusqu'à 3 fois s'il ne meure pas avant."
+          "Description": "<<Activate>> Ouverture de la 8° porte  :  Gagne 5 points d'attaque et peut attaquer jusqu'à 3 fois s'il ne meure pas avant."
         },
         {
           "Description": "<<Spécial>> Meure après avoir activé la 8° porte à la fin du tour quoi qu'il arrive"
@@ -18760,7 +18760,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Ouverture de la 8° porte  :  Gagne +5 Atk et peut attaquer jusqu'à 3 fois s'il ne meure pas avant."
+          "Description": "<<Activate>> Ouverture de la 8° porte  :  Gagne 5 points d'attaque et peut attaquer jusqu'à 3 fois s'il ne meure pas avant."
         },
         {
           "Description": "<<Spécial>> Meure après avoir activé la 8° porte à la fin du tour quoi qu'il arrive"
@@ -18993,7 +18993,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Soutient tactique : les alliés adjacents gagnent +1 ATK"
+          "Description": "<<Permanent>> Soutient tactique : les alliés adjacents gagnent 1 point d'attaque"
         }
       ],
       "Warning": false
@@ -19249,7 +19249,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>> Marques maudites : Gagnent +2 ATK/ +2 PV"
+          "Description": "<<activate>> Marques maudites : Gagnent 2 points d'attaque et 2 points de vie supplémentaires "
         }
       ],
       "Warning": false
