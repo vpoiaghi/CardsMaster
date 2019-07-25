@@ -11916,9 +11916,9 @@
       "Team": "Kunoichi",
       "Chakra": "Vent",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -13573,9 +13573,9 @@
       "Team": "Clan Kamizuru",
       "Chakra": "Vent",
       "Element": "Insectes",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "Hachi Senbon no Jutsu",
       "Comments": "",
       "Nb": 1,
@@ -15592,9 +15592,9 @@
       "Team": "Edo Tenseï",
       "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "4",
       "Citation": "Konoha Ryûjin",
       "Comments": "",
       "Nb": 1,
@@ -17535,7 +17535,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>>Attaque de Dracula : si elle ne meure pas à la fin d'un combat, se régénère de tous ses PVs"
+          "Description": "<<Permanent>><<Instantané>>Attaque de Dracula : si elle ne meure pas à la fin d'un combat, se régénère de tous ses points de vie"
         }
       ],
       "Warning": false
@@ -18892,12 +18892,6 @@
       "Powers": [
         {
           "Description": "<<activate>>Furie du Cyclone : Envoie la cible dans son cimetière"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
         }
       ],
       "Warning": false
