@@ -8350,7 +8350,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Désigne un ninja et l'immobilise, l'empêchant d'attaquer et de lancer des sorts. Le ninja est libéré à la mort de Shikamaru"
+          "Description": "<<Instantané>> Immobilise le ninja ciblé, l'empêchant d'attaquer et de lancer des sorts. Le ninja est libéré à la mort de Shikamaru"
         },
         {
           "Description": "<<Spécial>> Si 3 membres du trio Ino-Shika-Cho sont présents, ceux-ci gagnent 3 points d'attaque 3 points de vie supplémentaires "
@@ -19284,12 +19284,12 @@
       "Kind": "Ninja",
       "Name": "Lemon Yoimura",
       "Rank": "",
-      "Team": "",
+      "Team": "Clan Yoimura",
       "Chakra": "Spécial",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -19307,16 +19307,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 amnésie"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>>Invoque Sōma"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -19326,11 +19320,11 @@
       "Chakra": "Spécial",
       "Element": "Esprit",
       "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Attack": "1",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
-      "Nb": 1,
+      "Nb": 2,
       "BackSide": "Back-Select3",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
@@ -19345,27 +19339,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<instantané>>Prends le contrôle d'un allié adverse jusqu'à ce qu'un des deux meure"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Kankitsu Akitsuki",
       "Rank": "",
-      "Team": "",
+      "Team": "Clan Yoimura",
       "Chakra": "Spécial",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -19383,16 +19371,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 amnésie"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>>Invoque Sōma"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -19401,9 +19383,9 @@
       "Team": "Fossile ",
       "Chakra": "Spécial",
       "Element": "Voyage temporel",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "7",
+      "Attack": "0",
+      "Defense": "0",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -19421,28 +19403,25 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "<<Instantané>>Envoie toutes les cartes du plateau de jeu dans le cimetière"
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Spécial>>Doit être lancé en début de tour"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Asaki",
       "Rank": "",
-      "Team": "",
+      "Team": "Clan Yoimura",
       "Chakra": "Eau",
-      "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Element": "Soin",
+      "Cost": "4",
+      "Attack": "3",
+      "Defense": "3",
+      "Citation": "Shôsen Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -19459,16 +19438,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Paume Mystique : Soigne 1D3 points de vie à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
-      "Warning": true
+      "Warning": false
     }
   ],
   "SkinFile": "Naruto.original.skin"
