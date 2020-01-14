@@ -19378,6 +19378,38 @@
     },
     {
       "Kind": "Ninja",
+      "Name": "Asaki",
+      "Rank": "",
+      "Team": "Clan Yoimura",
+      "Chakra": "Eau",
+      "Element": "Soin",
+      "Cost": "4",
+      "Attack": "3",
+      "Defense": "3",
+      "Citation": "Shôsen Jutsu",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Boruto>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Paume Mystique : Soigne 1D3 points de vie à un allié ou héros au choix (Utilisable 1 fois par tour)"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
       "Name": "Karasuki",
       "Rank": "",
       "Team": "Fossile ",
@@ -19413,15 +19445,15 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Asaki",
+      "Name": "Tsubaki Kurogane",
       "Rank": "",
-      "Team": "Clan Yoimura",
-      "Chakra": "Eau",
-      "Element": "Soin",
-      "Cost": "4",
-      "Attack": "3",
-      "Defense": "3",
-      "Citation": "Shôsen Jutsu",
+      "Team": "Équipe 15",
+      "Chakra": "Physique",
+      "Element": "Épéiste",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "5",
+      "Citation": "",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -19438,7 +19470,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Paume Mystique : Soigne 1D3 points de vie à un allié ou héros au choix (Utilisable 1 fois par tour)"
+          "Description": "<<Permanent>> Contre-attaque toujours 2 fois"
         }
       ],
       "Warning": false
