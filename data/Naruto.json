@@ -2894,7 +2894,7 @@
           "Description": "<<activate>>  Mille oiseaux : Inflige 1D4 dégâts à 2 ninjas adjacents"
         },
         {
-          "Description": "<<Instantané>>   Invocation de Susanô"
+          "Description": "<<Instantané>>   Invoque le Susanô"
         }
       ],
       "Warning": false
@@ -3035,7 +3035,7 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Meï Terumi (Godaime Mizukage)",
+      "Name": "Meï Terumi (Godaimdaime Mizukage)",
       "Rank": "Épique",
       "Team": "Équipe 5° Misukage",
       "Chakra": "Feu",
@@ -3789,6 +3789,9 @@
       "Powers": [
         {
           "Description": "<<Instantané>>   Lame du vent : Renvoie le ninja ciblé dans la main de son propriétaire"
+        },
+        {
+          "Description": "<<spécial>> Lors de sa mort invoque Kamatari, son compagnon"
         }
       ],
       "Warning": false
@@ -3801,12 +3804,12 @@
       "Chakra": "Physique",
       "Element": "",
       "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
-      "BackSide": "Back-Draw",
+      "BackSide": "Back-Select3",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
       "StringField1": "<<Shippuden>>Naruto Shippuden",
@@ -3820,16 +3823,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 attaque au Kama"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>><<Permanent>> Attaque au Kama : attaque 2 fois pendant son tour"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -4632,7 +4629,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>>  Chakra de Kyûbi : Gagne 3 points d'attaque et 3 points de vie supplémentaire si Kinkaku est présent à ses côtés"
+          "Description": "<<Spécial>>  Chakra de Kyûbi : Gagne 3 points d'attaque et 3 points de vie supplémentaire si Kinkaku est présent en jeu"
         }
       ],
       "Warning": false
@@ -4664,7 +4661,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>>  Chakra de Kyûbi : Gagne 3 points d'attaque et 3 points de vie supplémentaires  si Kinkaku est présent à ses côtés"
+          "Description": "<<Spécial>>  Chakra de Kyûbi : Gagne 3 points d'attaque et 3 points de vie supplémentaires  si Kinkaku est présent en jeu"
         }
       ],
       "Warning": false
@@ -6379,10 +6376,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Conditions>>  1 Bijù est envoyé au cimetière ce tour-ci (peu importe le camp) "
+          "Description": "<<Conditions>>  1 Bijù est envoyé au cimetière ce tour-ci peu importe le camp (Utilisable pendant son tour)"
         },
         {
-          "Description": "<<Récompense>>  Ressuscite un bijù du cimetière directement en jeu"
+          "Description": "<<Récompense>>  Ressuscite un bijù du cimetière directement dans le camps du valideur de la quête"
         }
       ],
       "Warning": false
@@ -6414,7 +6411,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Conditions>>  2 membres de l'akatsuki sont sur le champs de bataille (peu importe le camp)"
+          "Description": "<<Conditions>>  2 membres de l'akatsuki sont sur le champs de bataille (Utilisable pendant son tour)"
         },
         {
           "Description": "<<Récompense>>  Piochez 2 cartes"
@@ -6449,7 +6446,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Conditions>>  Un membre de la famille Ôtsutsuki est sur le champs de bataille (peu importe le camp)"
+          "Description": "<<Conditions>>  Un membre de la famille Ôtsutsuki est sur le champs de bataille (Utilisable pendant son tour)"
         },
         {
           "Description": "<<Récompense>>  Vous gagnez un tour supplémentaire"
@@ -6484,7 +6481,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Conditions>>Un membre de l'équipe 7 ou de l'équipe 10 de Konoha est sur le champs de bataille (peu importe le camp)"
+          "Description": "<<Conditions>>Un membre de l'équipe 7 ou de l'équipe 10 de Konoha est sur le champs de bataille (Utilisable pendant son tour)"
         },
         {
           "Description": "<<Récompense>>Vous piochez 1 carte"
@@ -6519,7 +6516,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Conditions>> Avoir moins de 3 alliés dans son camp"
+          "Description": "<<Conditions>> Avoir moins de 3 alliés dans son camp (Utilisable pendant son tour)"
         },
         {
           "Description": "<<Récompense>> Piocher et mettre en jeu la carte piochée"
@@ -6554,7 +6551,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Conditions>> Suite à un combat, il ne reste que 1 points de vie à un allié"
+          "Description": "<<Conditions>> Suite à un combat, il ne reste que 1 points de vie à un allié (Utilisable pendant son tour)"
         },
         {
           "Description": "<<Récompense>> Il peut immédiatement réattaquer une deuxième fois"
@@ -6589,7 +6586,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Conditions>> 3 alliés présents sur le champs de bataille"
+          "Description": "<<Conditions>> 3 alliés présents sur le champs de bataille (Utilisable pendant son tour)"
         },
         {
           "Description": "<<Récompense>> Pioche une carte"
@@ -6624,7 +6621,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Conditions>> 2 de vos alliés tombés au combat pendant le tour de l'adversaire"
+          "Description": "<<Conditions>> 2 de vos alliés tombés au combat pendant le tour de l'adversaire (Utilisable à tout moment)"
         },
         {
           "Description": "<<Récompense>> Piochez une carte, si c'est un allié celui-ci entre directement en jeu, sinon est envoyée au cimetière"
@@ -7692,7 +7689,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>> Revient dans la main du joueur quand il meurt"
+          "Description": "<<Spécial>> Revient dans la main du joueur quand il meurt, sauf s'il est envoyé directement au cimetière"
         }
       ],
       "Warning": false
@@ -9608,7 +9605,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>Soigne tous les alliés dans le camp du héros"
+          "Description": "<<Instantané>>Soigne tous les alliés dans le camp du héros (Déclenchable à n'importe quel tour)"
         },
         {
           "Description": "<<Spécial>> Inflige 5 dégâts au héros"
@@ -9643,7 +9640,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Les 2 héros sont tous les 2 éliminés (match nul)"
+          "Description": "<<Instantané>> Les 2 héros sont tous les 2 éliminés (Déclenchable pendant son tour uniquement)"
         }
       ],
       "Warning": false
@@ -9675,7 +9672,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Inflige 5 points de dégâts distants à 2 ninjas adjacents"
+          "Description": "<<Instantané>> Inflige 5 points de dégâts distants à 2 ninjas adjacents (Déclenchable pendant son tour uniquement)"
         },
         {
           "Description": "<<Spécial>> Inflige 3 points de dégâts au lanceur"
@@ -9710,7 +9707,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Sacrifie un allié avec toute sa vie pour en faire revenir un autre en jeu de n'importe quel cimetière"
+          "Description": "<<Instantané>> Sacrifie un allié avec toute sa vie pour en faire revenir un autre en jeu de n'importe quel cimetière (Déclenchable pendant son tour uniquement)"
         }
       ],
       "Warning": false
@@ -9742,10 +9739,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Lancé sur un allié, permet de le remettre directement en jeu lors de sa mort"
+          "Description": "<<Instantané>> Lancé sur un allié, permet de le remettre directement en jeu lors de sa mort (Déclenchable pendant son tour uniquement)"
         },
         {
-          "Description": "<<Spécial>> Inflige 2 dégâts au héros"
+          "Description": "<<Spécial>> Inflige 2 points de dégâts au héros"
         }
       ],
       "Warning": false
@@ -9777,10 +9774,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Amaterasu : Retire 1 point de vie à chaque ninja en jeu ennemi, à chaque tour"
+          "Description": "<<Permanent>><<Instantané>> Amaterasu : Retire 1 point de vie à chaque ninja adversei, au début de chaque tour du joueur"
         },
         {
-          "Description": "<<Spécial>> Au choix : Inflige 2 dégâts au héros ou  détruit le kinjutsu"
+          "Description": "<<Spécial>> Au choix : Inflige 2 points de dégâts au héros ou  détruit le kinjutsu"
         }
       ],
       "Warning": false
@@ -9812,10 +9809,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>> Donne 2 points d'attaque et 2 points de vie au ninja ciblé"
+          "Description": "<<Permanent>><<Instantané>> Donne +2 points d'attaque et +2 points de vie au ninja ciblé (Déclenchable juste avant qu'il subisse de dégàt)"
         },
         {
-          "Description": "<<Spécial>> Quand l'allié attaque, 2 points de dégât sont transférés au héros ou détruit le kinjutsu"
+          "Description": "<<Spécial>> Quand l'allié ciblé attaque, 2 points de dégât sont transférés au héros ou détruit le kinjutsu"
         }
       ],
       "Warning": false
@@ -9827,7 +9824,7 @@
       "Team": "Kinjutsu",
       "Chakra": "",
       "Element": "",
-      "Cost": "X",
+      "Cost": "6",
       "Attack": "",
       "Defense": "",
       "Citation": "",
@@ -9847,10 +9844,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Inflige X points de dégâts à la cible"
+          "Description": "<<Instantané>> Inflige 5 points de dégâts à la cible et détruit tous ses équipements"
         },
         {
-          "Description": "<<Spécial>> Inflige X points de dégâts au héros lançant le sort"
+          "Description": "<<Spécial>> Inflige 4 points de dégâts au héros lançant le sort"
         }
       ],
       "Warning": false
@@ -9882,10 +9879,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Réduit les coûts de 3 pendant ce tour uniquement"
+          "Description": "<<Instantané>> Réduit les coûts de 3 pendant ce tour  (Déclenchable pendant son tour uniquement)"
         },
         {
-          "Description": "<<Spécial>> Inflige 2 dégâts au héros"
+          "Description": "<<Spécial>> Inflige 2 points de dégâts au héros"
         }
       ],
       "Warning": false
@@ -9917,7 +9914,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Le héros attaque X fois avec l'arme équipée"
+          "Description": "<<Instantané>> Le héros attaque X fois avec l'arme équipée  (Déclenchable pendant son tour uniquement)"
         }
       ],
       "Warning": false
@@ -9934,7 +9931,7 @@
       "Defense": "",
       "Citation": "",
       "Comments": "",
-      "Nb": 2,
+      "Nb": 3,
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
@@ -9949,7 +9946,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Au prochain tour, le héros adverse ne peut que faire attaquer ses alliés (rien qui ne consomme de chakra)"
+          "Description": "<<Instantané>> Au prochain tour, le héros adverse ne peut rien lancer qui ne consomme de chakra"
         }
       ],
       "Warning": false
@@ -9981,10 +9978,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Le tour prochain, le héros adverse ne peut utiliser son chakra "
+          "Description": "<<Instantané>> Le tour prochain, le héros adverse ne peut  ni regagner de chakra, ni augmenter son maximum de chakra (Il conservera la même valeur qu'au moment de pose de la carte)"
         },
         {
-          "Description": "<<Spécial>> Inflige 2 dégâts au héros"
+          "Description": "<<Spécial>> Inflige 2 points de dégâts au héros"
         }
       ],
       "Warning": false
@@ -10112,7 +10109,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Invocation Roi Conch"
+          "Description": "<<Activate>> Invoque le Roi Conch"
         }
       ],
       "Warning": false
@@ -12134,7 +12131,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>>Inflige au héros adverse autant de dégâts que ceux subis par votre héros"
+          "Description": "<<Spécial>>Renvoi au héros adverse tous les dégâts qu'aurait dû subir votre héros sans qu'il soit blessé"
         }
       ],
       "Warning": false
@@ -12166,7 +12163,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>>Quand un allié adverse attaque, le renvoie dans la main de son propriétaire original"
+          "Description": "<<Spécial>>Quand un allié adverse attaque, le renvoie dans la main de son propriétaire original sans qu'il n'inflige de dégât)"
         }
       ],
       "Warning": false
@@ -14560,6 +14557,9 @@
       "Powers": [
         {
           "Description": "<<Permanent>> Ressources accrues : Octroie 1 point de chakra par tour tant qu'il est envie (le maximum peut donc être dépassé)"
+        },
+        {
+          "Description": "<<spécial>> A sa mort, tous les points de chakra au delà du maximum sont perdus"
         }
       ],
       "Warning": false
@@ -14592,6 +14592,9 @@
       "Powers": [
         {
           "Description": "<<Permanent>> Ressources accrues : Octroie 1 point de chakra par tour tant qu'il est envie (le maximum peut donc être dépassé)"
+        },
+        {
+          "Description": "<<spécial>> A sa mort, tous les points de chakra au delà du maximum sont perdus"
         }
       ],
       "Warning": false
@@ -14624,6 +14627,9 @@
       "Powers": [
         {
           "Description": "<<Permanent>> Ressources accrues : Octroie 1 point de chakra par tour tant qu'il est envie (le maximum peut donc être dépassé)"
+        },
+        {
+          "Description": "<<spécial>> A sa mort, tous les points de chakra au delà du maximum sont perdus"
         }
       ],
       "Warning": false
@@ -14656,6 +14662,9 @@
       "Powers": [
         {
           "Description": "<<Permanent>> Ressources accrues : Octroie 1 point de chakra par tour tant qu'il est envie (le maximum peut donc être dépassé)"
+        },
+        {
+          "Description": "<<spécial>> A sa mort, tous les points de chakra au delà du maximum sont perdus"
         }
       ],
       "Warning": false
@@ -14688,6 +14697,9 @@
       "Powers": [
         {
           "Description": "<<Permanent>> Ressources accrues : Octroie 1 point de chakra par tour tant qu'il est envie (le maximum peut donc être dépassé)"
+        },
+        {
+          "Description": "<<spécial>> A sa mort, tous les points de chakra au delà du maximum sont perdus"
         }
       ],
       "Warning": false
@@ -14720,6 +14732,9 @@
       "Powers": [
         {
           "Description": "<<Permanent>> Ressources accrues : Octroie 1 point de chakra par tour tant qu'il est envie (le maximum peut donc être dépassé)"
+        },
+        {
+          "Description": "<<spécial>> A sa mort, tous les points de chakra au delà du maximum sont perdus"
         }
       ],
       "Warning": false
@@ -14752,6 +14767,9 @@
       "Powers": [
         {
           "Description": "<<Permanent>> Ressources accrues : Octroie 1 point de chakra par tour tant qu'il est envie (le maximum peut donc être dépassé)"
+        },
+        {
+          "Description": "<<spécial>> A sa mort, tous les points de chakra au delà du maximum sont perdus"
         }
       ],
       "Warning": false
@@ -14784,6 +14802,9 @@
       "Powers": [
         {
           "Description": "<<Permanent>> Ressources accrues : Octroie 1 point de chakra par tour tant qu'il est envie (le maximum peut donc être dépassé)"
+        },
+        {
+          "Description": "<<spécial>> A sa mort, tous les points de chakra au delà du maximum sont perdus"
         }
       ],
       "Warning": false
@@ -14816,6 +14837,9 @@
       "Powers": [
         {
           "Description": "<<Permanent>> Ressources accrues : Octroie 1 point de chakra par tour tant qu'il est envie (le maximum peut donc être dépassé)"
+        },
+        {
+          "Description": "<<spécial>> A sa mort, tous les points de chakra au delà du maximum sont perdus"
         }
       ],
       "Warning": false
@@ -17829,7 +17853,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Agilité : Ignorent la protection et attaquent 2 fois"
+          "Description": "<<Permanent>> Agilité : Ignorent les équipements de protection et les ninja protecteurs et attaquent 2 fois pendant leur tour"
         }
       ],
       "Warning": false
@@ -18280,7 +18304,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Conditions>> 2 de vos alliés tombés au combat pendant le tour de l'adversaire"
+          "Description": "<<Conditions>> 2 de vos alliés tombés au combat pendant le tour de l'adversaire  (Utilisable à tout moment)"
         },
         {
           "Description": "<<Récompense>> Pioche deux cartes"
@@ -18865,7 +18889,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>Explosion des corps : si un ennemi meure, il explose en infligeant 1 point de dégât aux alliés adjacents"
+          "Description": "<<Permanent>>Explosion des corps : si un adversaire meure, il explose en infligeant 1 point de dégât aux alliés adjacents"
         }
       ],
       "Warning": false
@@ -18897,7 +18921,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>Explosion des corps : si un ennemi meure, il explose en infligeant 1 point de dégât aux alliés adjacents"
+          "Description": "<<Permanent>>Explosion des corps : si un adversaire meure, il explose en infligeant 1 point de dégât aux alliés adjacents"
         }
       ],
       "Warning": false
@@ -19529,7 +19553,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField1": "<<Boruto>>Boruto",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -19567,7 +19591,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField1": "<<Boruto>>Boruto",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -19605,7 +19629,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField1": "<<Boruto>>Boruto",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -19643,7 +19667,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField1": "<<Boruto>>Boruto",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -19681,7 +19705,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField1": "<<Boruto>>Boruto",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -19719,7 +19743,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField1": "<<Boruto>>Boruto",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -19757,7 +19781,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField1": "<<Boruto>>Boruto",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
@@ -19795,7 +19819,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField1": "<<Boruto>>Boruto",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
