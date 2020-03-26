@@ -2389,8 +2389,8 @@
       "Name": "Kakuzu",
       "Rank": "",
       "Team": "Akatsuki",
-      "Chakra": "Terre",
-      "Element": "Tous",
+      "Chakra": "Spécial",
+      "Element": "",
       "Cost": "3",
       "Attack": "4",
       "Defense": "2",
@@ -2411,7 +2411,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>>  Insensible aux attaques non physiques"
+          "Description": "<<Permanent>><<Instantané>>  Insensible aux attaques non physiques, choisit l'élément qu'il veut utliliser pour chaque tour"
         }
       ],
       "Warning": false
@@ -2839,7 +2839,7 @@
       "Team": "Akatsuki",
       "Chakra": "Spécial",
       "Element": "Rinnegan",
-      "Cost": "5",
+      "Cost": "7",
       "Attack": "4",
       "Defense": "4",
       "Citation": "Gedô Rinne Tensei No Jutsu",
@@ -3290,7 +3290,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Transfert instantanné : Vous pouvez dérober jusqu'à 2 pièces d'équipement à l'adversaire "
+          "Description": "<<Instantané>> Transfert instantanné : Vous pouvez dérober jusqu'à 2 pièces d'équipement à l'adversaire et les mettre en jeu"
         }
       ],
       "Warning": false
@@ -5697,7 +5697,7 @@
       "Rank": "",
       "Team": "Armure",
       "Chakra": "Equipement",
-      "Element": "Main",
+      "Element": "Mains",
       "Cost": "2",
       "Attack": "",
       "Defense": "1",
@@ -5718,7 +5718,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Réduit de 1 dégât tous les dégâts reçus par le héros pour chaque adversaire"
+          "Description": "<<Permanent>>  Réduit de 1 dégât tous les dégâts reçus par le héros pour chaque adversaire. Une seule paire peut être portée à la fois"
         }
       ],
       "Warning": false
@@ -6102,7 +6102,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>  Empêche un ninja ciblé d'attaquer pendant 2 tours. Est détruit après utilisation"
+          "Description": "<<Instantané>> Immobilise un  ninja  pendant 2 tours. Est détruit après utilisation"
         }
       ],
       "Warning": false
@@ -8624,10 +8624,42 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Arcanes Blancs :  Les  dix pantins de Chikamatsu "
+          "Description": "<<Activate>> Arcanes Blancs :  Invoque les  dix pantins de Chikamatsu "
         },
         {
           "Description": "<<Spécial>> Quand Chiyo meure, elle ramène à la vie le ninja du cimetière allié ciblé"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Les dix pantins de Chikamatsu",
+      "Rank": "",
+      "Team": "Invocation",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "",
+      "Attack": "0",
+      "Defense": "5",
+      "Citation": "Yubi ni sū",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Select3",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Protection"
         }
       ],
       "Warning": false
@@ -8723,7 +8755,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>> Limelight : À chacun des tours du joueur, ajouter un jeton, et au bout de 3 jetons, 8 points de dégâts sont infligés à tous les personnages adverses"
+          "Description": "<<Spécial>> Limelight : À chacun des tours du joueur, ajouter un jeton, et au bout de 3 jetons, 4 points de dégâts sont infligés à tous les personnages adverses"
         }
       ],
       "Warning": false
@@ -15555,7 +15587,7 @@
       "Kind": "Equipement",
       "Name": "Miroir de Yata",
       "Rank": "",
-      "Team": "Armure",
+      "Team": "Arme",
       "Chakra": "Equipement",
       "Element": "Main G",
       "Cost": "3",
@@ -16477,7 +16509,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Poing de grès : Quand il défend, inflige  2 points d'attaque"
+          "Description": "<<Permanent>> Poing de grès : Quand il défend, inflige  2 points d'attaque supplémentaires"
         }
       ],
       "Warning": false
@@ -17085,7 +17117,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>><<Permanent>> Poigne de serpents spectrale : Détruit tout allié touché par l'attaque"
+          "Description": "<<Instantané>><<Permanent>> Poigne de serpents spectrale : Détruit tout ninja blessé par lui"
         }
       ],
       "Warning": false
@@ -19542,12 +19574,12 @@
       "Name": "Tsukiyo",
       "Rank": "",
       "Team": "Bandit de Mujina",
-      "Chakra": "Eau",
-      "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Chakra": "Spécial",
+      "Element": "Lune",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "3",
+      "Citation": "Tsukikage no Jutsu",
       "Comments": "n° 2 du clan",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -19564,27 +19596,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Eclair rose : Inflige 1D4 points de dégât à la cible sans contre-attaque"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Kokuri",
       "Rank": "",
       "Team": "Prisonnier d'Hōzuki",
-      "Chakra": "Eau",
+      "Chakra": "Physique",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "le traitre",
       "Nb": 1,
@@ -19602,28 +19628,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Voleur de magot  : Pioche 2 cartes"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Mujō",
       "Rank": "",
       "Team": "Maitre d'Hōzuki",
-      "Chakra": "Eau",
+      "Chakra": "Feu",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "3",
+      "Citation": "Katon : Tenrô",
       "Comments": "le gars à la marque",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -19640,27 +19660,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Entrave : Annule définitivement les pouvoirs d'un ninja ciblé"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Doragu",
       "Rank": "",
       "Team": "Prisonnier d'Hōzuki",
-      "Chakra": "Eau",
+      "Chakra": "Foudre",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "traquenard",
       "Nb": 1,
@@ -19678,27 +19692,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Voleur de magot  : Pioche 2 cartes"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Arai",
       "Rank": "",
       "Team": "Prisonnier d'Hōzuki",
-      "Chakra": "Eau",
+      "Chakra": "Feu",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -19716,16 +19724,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Voleur de magot  : Pioche 2 cartes"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -19734,9 +19736,9 @@
       "Team": "Prisonnier d'Hōzuki",
       "Chakra": "Eau",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -19754,27 +19756,21 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Voleur de magot  : Pioche 2 cartes"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Kedama",
       "Rank": "",
       "Team": "Prisonnier d'Hōzuki",
-      "Chakra": "Eau",
+      "Chakra": "Terre",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -19792,28 +19788,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Voleur de magot  : Pioche 2 cartes"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Benga",
       "Rank": "",
       "Team": "Gardien d'Hōzuki",
-      "Chakra": "Eau",
+      "Chakra": "Feu",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": "Kuchiyose no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -19830,16 +19820,42 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Invoque le cerbère d'Hozuki"
         }
       ],
-      "Warning": true
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Cerbère d'Hozuki",
+      "Rank": "",
+      "Team": "Invocation",
+      "Chakra": "Feu",
+      "Element": "",
+      "Cost": "",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Select3",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Boruto>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>><<Permanent>> Attaque 2 fois pendant son tour"
+        }
+      ],
+      "Warning": false
     }
   ],
   "SkinFile": "Naruto.original.skin"
