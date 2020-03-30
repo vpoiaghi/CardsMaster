@@ -2248,7 +2248,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>>  Bombe d'argile explosive : Inflige 2 dégâts à tous les ennemis (Utilisable 1 fois par tour)"
+          "Description": "<<activate>>  Bombe d'argile explosive : Inflige 2 points de dégâts à tous les autres alliés en jeu"
         }
       ],
       "Warning": false
@@ -3290,7 +3290,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Transfert instantanné : Vous pouvez dérober jusqu'à 2 pièces d'équipement à l'adversaire et les mettre en jeu"
+          "Description": "<<Instantané>> Transfert instantané : Vous pouvez dérober jusqu'à 2 pièces d'équipement à l'adversaire et les mettre en jeu"
         }
       ],
       "Warning": false
@@ -4335,7 +4335,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Flûte démoniaque: L'ennemi ciblé ne peut plus attaquer, ne peut plus lancer de sort et annule ses pouvoirs tant que Tayuya est en vie"
+          "Description": "<<Instantané>><<Permanent>>  Flûte démoniaque: L'ennemi ciblé ne peut plus attaquer, ne peut plus lancer de sort et annule ses pouvoirs tant que Tayuya est en vie"
         }
       ],
       "Warning": false
@@ -7369,7 +7369,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>>  Nuage de limaille : Tous les alliés gagnent 2 points de vie supplémentaires supplémentaires tant qu'il est en vie"
+          "Description": "<<Activate>>  Nuage de limaille : Tous les alliés gagnent 2 points de vie supplémentaires tant qu'il est en vie"
         }
       ],
       "Warning": false
@@ -10010,7 +10010,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Le tour prochain, le héros adverse ne peut  ni regagner de chakra, ni augmenter son maximum de chakra (Il conservera la même valeur qu'au moment de pose de la carte)"
+          "Description": "<<Instantané>> Le tour prochain, le héros adverse ne regagne pas de chakra et n'augmenter pas son maximum de chakra (Il ne pourra utiliser que le chakra non consommé au moment de la pose)"
         },
         {
           "Description": "<<Spécial>> Inflige 2 points de dégâts au héros"
@@ -10333,7 +10333,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Inflige 1 point de dégât à distance à 2 alliés adjacents"
+          "Description": "<<Permanent>> Lance à distance : Inflige 1 point de dégât à distance supplémentaire à 1 allié adjacent (Utilisable 1 fois par tour)"
         }
       ],
       "Warning": false
@@ -12131,7 +12131,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>>Quand votre adversaire met un serviteur en jeu, ses points de vie sont réduits à 1"
+          "Description": "<<Spécial>>Quand votre adversaire met une carte avec points de vie en jeu, ses points de vie sont réduits à 1"
         }
       ],
       "Warning": false
@@ -14300,7 +14300,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Serpentification : Inflige 1 point de dégât à tous ses alliés et soigne d'autant de points la cible de son choix"
+          "Description": "<<Instantané>> Serpentification : Inflige 1 point de dégât à tous ses alliés et soigne d'autant de points la cible de son choix"
         }
       ],
       "Warning": false
@@ -18013,7 +18013,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>>Shurikens de vent : Inflige 1D3 points de dégât à tous les adversaires sans contre-attaque possible"
+          "Description": "<<Activate>>Shurikens de vent : Inflige 1D3 points de dégât à tous les adversaires"
         }
       ],
       "Warning": false
@@ -18371,7 +18371,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Tout adversaire touché par Sasame prend un jeton poison, et perds 1 point de vie à chacun des tours de la cible"
+          "Description": "<<Permanent>> Tout adversaire touché par Sasame prend un jeton poison, et perds 1 point de vie à chaque tour, tant qu'elle est en vie"
         }
       ],
       "Warning": false
