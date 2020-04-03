@@ -13,7 +13,8 @@
 		"Foudre": "foudre",
 		"Eau": "eau",
 		"Physique": "blanc_cassé",
-		"Piège":"darkRed1"
+		"Piège":"darkRed1",
+		"Affinité": "Affinite"
 	},
 	"MapRareteColor" : {
 		"": "Lavender",
@@ -34,7 +35,8 @@
 		"Foudre": "#FFD700",
 		"Eau": "#1E90FF",
 		"Physique": "#FFDEAD",
-		"Piège":"#FF0000"
+		"Piège":"#FF0000",
+		"Affinité":"#AAAAAA"
 	},
     "MapKindField": {
 		"Ninja": "Chakra",
@@ -44,7 +46,8 @@
 		"Environnement": "Kind",
 		"Equipement": "Kind",
 		"Ninjutsu": "Kind",
-		"Piège": "Kind"
+		"Piège": "Kind",
+		"Affinité":"Kind"
 	},
 	"Skins" : [
 		{

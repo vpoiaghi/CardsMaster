@@ -19856,6 +19856,310 @@
         }
       ],
       "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Shoshoji",
+      "Rank": "",
+      "Team": "",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Boruto>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Affinité",
+      "Name": "Affinité avec le Feu",
+      "Rank": "Légendaire",
+      "Team": "",
+      "Chakra": "",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Select2",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Affinites>>Affinités",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "- Insensible aux attaques de Feu "
+        },
+        {
+          "Description": "- Fort contre le Vent "
+        },
+        {
+          "Description": "- Faible contre les attaques d'Eau"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Affinité",
+      "Name": "Affinité avec le Vent",
+      "Rank": "Légendaire",
+      "Team": "",
+      "Chakra": "",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Select2",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Affinites>>Affinités",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "- Insensible aux attaques de Vent"
+        },
+        {
+          "Description": "- Fort contre la Foudre "
+        },
+        {
+          "Description": "- Faible contre les attaques de Feu"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Affinité",
+      "Name": "Affinité avec la Foudre",
+      "Rank": "Légendaire",
+      "Team": "",
+      "Chakra": "",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Select2",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Affinites>>Affinités",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "- Insensible aux attaques de Foudre"
+        },
+        {
+          "Description": "- Fort contre le Spécial"
+        },
+        {
+          "Description": "- Faible contre les attaques de Vent"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Affinité",
+      "Name": "Affinité avec les attaques Spéciales",
+      "Rank": "Légendaire",
+      "Team": "",
+      "Chakra": "",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Select2",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Affinites>>Affinités",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "- Insensible aux attaques Spéciales"
+        },
+        {
+          "Description": "- Fort contre le Physique"
+        },
+        {
+          "Description": "- Faible contre les attaques de Foudre"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Affinité",
+      "Name": "Affinité avec les attaques Physiques",
+      "Rank": "Légendaire",
+      "Team": "",
+      "Chakra": "",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Select2",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Affinites>>Affinités",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "- Insensible aux attaques Physiques"
+        },
+        {
+          "Description": "- Fort contre la Terre "
+        },
+        {
+          "Description": "- Faible contre les attaques Spéciales"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Affinité",
+      "Name": "Affinité avec la Terre",
+      "Rank": "Légendaire",
+      "Team": "",
+      "Chakra": "",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Select2",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Affinites>>Affinités",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "- Insensible aux attaques de Terre "
+        },
+        {
+          "Description": "- Fort contre l'Eau"
+        },
+        {
+          "Description": "- Faible contre les attaques Physiques"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Affinité",
+      "Name": "Affinité avec l'Eau",
+      "Rank": "Légendaire",
+      "Team": "",
+      "Chakra": "",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Select2",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Affinites>>Affinités",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "- Insensible aux attaques d'Eau"
+        },
+        {
+          "Description": "- Fort contre le Feu"
+        },
+        {
+          "Description": "- Faible contre les attaques de Terre"
+        }
+      ],
+      "Warning": false
     }
   ],
   "SkinFile": "Naruto.original.skin"
