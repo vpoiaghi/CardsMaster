@@ -15655,7 +15655,7 @@
       "Chakra": "Foudre",
       "Element": "",
       "Cost": "1",
-      "Attack": "1",
+      "Attack": "2",
       "Defense": "2",
       "Citation": "",
       "Comments": "",
@@ -15674,7 +15674,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Éternel Genin : Baisse l'attaque de 1 de tous ses alliés (saud le héros)"
+          "Description": "<<Permanent>> Éternel Genin : Baisse l'attaque de 1 de tous ses alliés (sauf le héros)"
         }
       ],
       "Warning": false
@@ -15975,8 +15975,8 @@
       "Chakra": "Physique",
       "Element": "Épéiste",
       "Cost": "4",
-      "Attack": "5",
-      "Defense": "5",
+      "Attack": "3",
+      "Defense": "4",
       "Citation": "Kubikiribôchô",
       "Comments": "",
       "Nb": 1,
@@ -18186,7 +18186,7 @@
       "Chakra": "Spécial",
       "Element": "",
       "Cost": "4",
-      "Attack": "3",
+      "Attack": "1",
       "Defense": "3",
       "Citation": "",
       "Comments": "",
@@ -18205,7 +18205,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Tous les adversaires perdent 1 point de dégât tant que Reibi est en vie"
+          "Description": "<<Permanent>> Tous les adversaires perdent 1 point d'Attaque tant que Reibi est en vie"
         }
       ],
       "Warning": false
