@@ -65,7 +65,7 @@
           "Description": "<<Permanent>><<Instantané>>  Insensible aux dégâts non physiques"
         },
         {
-          "Description": "<<activate>>  Inflige 2 dégâts à tous les ennemis"
+          "Description": "<<activate>>  Inflige 2 dégâts à tous les adversaires"
         }
       ],
       "Warning": false
@@ -551,7 +551,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>   Grande confusion : Choisissez 2 ennemis qui doivent s'affronter"
+          "Description": "<<Instantané>>   Grande confusion : Choisissez 2 adversaires qui doivent s'affronter"
         }
       ],
       "Warning": false
@@ -1337,7 +1337,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>  Destruction des échoppes : Inflige 2 points de dégâts à tous les ninjas ennemis"
+          "Description": "<<Instantané>>  Destruction des échoppes : Inflige 2 points de dégâts à tous les adversaires"
         }
       ],
       "Warning": false
@@ -3791,7 +3791,7 @@
           "Description": "<<Instantané>>   Lame du vent : Renvoie le ninja ciblé dans la main de son propriétaire"
         },
         {
-          "Description": "<<spécial>> Lors de sa mort invoque Kamatari, son compagnon"
+          "Description": "<<spécial>> Lors de sa mort invoque Kamatari"
         }
       ],
       "Warning": false
@@ -4079,7 +4079,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Suiton, Le grand typhon : Englouti 1 ennemi sous les flots"
+          "Description": "<<Activate>> Suiton, Le grand typhon : Englouti un ennemi sous les flots et l'envoi au cimetière"
         }
       ],
       "Warning": false
@@ -4661,7 +4661,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>>  Chakra de Kyûbi : Gagne 3 points d'attaque et 3 points de vie supplémentaires  si Kinkaku est présent en jeu"
+          "Description": "<<Spécial>>  Chakra de Kyûbi : Gagne 3 points d'attaque et 3 points de vie supplémentaires  si Ginkaku est présent en jeu"
         }
       ],
       "Warning": false
@@ -5162,7 +5162,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Porte du tonnerre : Inflige 1 dégât de foudre à tous les ennemis"
+          "Description": "<<Instantané>> Porte du tonnerre : Inflige 1 dégât de foudre à tous les adversaires"
         },
         {
           "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
@@ -5197,7 +5197,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>   Mille aiguilles : Inflige 1 dégât de terre à tous les ennemis"
+          "Description": "<<Instantané>>   Mille aiguilles : Inflige 1 dégât de terre à tous les adversaires"
         },
         {
           "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
@@ -5759,7 +5759,7 @@
       "Kind": "Equipement",
       "Name": "Etuis à shurikens",
       "Rank": "",
-      "Team": "Accessoire",
+      "Team": "Arme",
       "Chakra": "Equipement",
       "Element": "Cuisse",
       "Cost": "3",
@@ -6102,7 +6102,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Immobilise un  ninja  pendant 2 tours. Est détruit après utilisation"
+          "Description": "<<Instantané>> Inflige 1 point de dégât et immobilise un  ninja  pendant 2 tours. Est détruit après utilisation"
         }
       ],
       "Warning": false
@@ -6979,7 +6979,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Stratège : Les ennemis infligent 1 dégâts de moins"
+          "Description": "<<Permanent>> Stratège : Les adversaires infligent 1 point de dégâts en moins"
         },
         {
           "Description": "<<Activate>> Stratège : Invoque Nué"
@@ -7046,7 +7046,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Onde sonore : Les ninjas ennemis ne peuvent pas attaquer au prochain tour"
+          "Description": "<<Activate>> Onde sonore : Les ninjas adverses ne peuvent pas attaquer au prochain tour"
         }
       ],
       "Warning": false
@@ -7337,7 +7337,7 @@
           "Description": "<<Permanent>> Protection"
         },
         {
-          "Description": "<<Activate>> Pilier de feu : Inflige 3 dégâts de feu à 2 ennemis adjacents"
+          "Description": "<<Activate>> Pilier de feu : Inflige 3 dégâts de feu à 2 adversaires adjacents"
         }
       ],
       "Warning": false
@@ -8691,7 +8691,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Kusanagi no Tsurugi : Fait parcourir les Mille Oiseaux au travers de son katana pour infliger 2 dégâts à 2 ennemis adjacents"
+          "Description": "<<Activate>> Kusanagi no Tsurugi : Fait parcourir les Mille Oiseaux au travers de son katana pour infliger 2 dégâts à 2 adversaires adjacents"
         }
       ],
       "Warning": false
@@ -8723,7 +8723,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>> Griffe de chakra : Gagne 1 point d'attaque contre les ennemis qui ont protection"
+          "Description": "<<Permanent>><<Instantané>> Griffe de chakra : Gagne 1 point d'attaque contre les adversaires qui ont protection"
         }
       ],
       "Warning": false
@@ -15930,7 +15930,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Bombe de foudre : Inflige 1 point de dégât à tous les ennemis pour chaque équipier de nature de foudre"
+          "Description": "<<Activate>> Bombe de foudre : Inflige 1 point de dégât à tous les adversaires pour chaque équipier de nature de foudre"
         }
       ],
       "Warning": false
