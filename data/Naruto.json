@@ -7826,7 +7826,7 @@
       "Kind": "Ninja",
       "Name": "Ryôgi",
       "Rank": "",
-      "Team": "Le Ruban Blanc",
+      "Team": "Clan Byakuya",
       "Chakra": "Eau",
       "Element": "Glace",
       "Cost": "4",
@@ -7856,9 +7856,41 @@
     },
     {
       "Kind": "Ninja",
+      "Name": "Oko",
+      "Rank": "",
+      "Team": "Clan Byakuya",
+      "Chakra": "Feu",
+      "Element": "",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "2",
+      "Citation": "Katon : Kitsunebi",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Boruto>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Activate>> Renard de feu : Déchaîne un renard enflammé inflige 1 point de dégât à tous les adversaires"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
       "Name": "Gekkô",
       "Rank": "",
-      "Team": "Le Ruban Blanc",
+      "Team": "Clan Byakuya",
       "Chakra": "Eau",
       "Element": "Glace",
       "Cost": "4",
@@ -18691,7 +18723,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Activate>> Volée de plumes noires : inflige 2 points de dégâts à tous les adversaires (y compris le héros)"
+          "Description": "<<Activate>> Volée de plumes noires : Inflige 2 points de dégâts à tous les adversaires (y compris le héros)"
         }
       ],
       "Warning": false
@@ -18723,7 +18755,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>> Sceau de scellement : tant qu'il est en vie, les ninjas adverses ne peuvent plus lancer de Ninjutsus"
+          "Description": "<<Instantané>> Sceau de scellement : Tant qu'il est en vie, les ninjas adverses ne peuvent plus lancer de Ninjutsus"
         }
       ],
       "Warning": false
@@ -19859,14 +19891,14 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Shoshoji",
+      "Name": "Shojoji",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
+      "Team": "Bandit de Mujina",
+      "Chakra": "Vent",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -19884,16 +19916,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Clonage de Cadavre : Réssuscite le ninja ciblé et les met en  jeu"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Affinité",
@@ -20157,6 +20183,102 @@
         },
         {
           "Description": "- Faible contre les attaques de Terre"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Garashi Tono",
+      "Rank": "",
+      "Team": "Kara",
+      "Chakra": "Eau",
+      "Element": "",
+      "Cost": "4",
+      "Attack": "1",
+      "Defense": "1",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Boruto>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Attaque au gaz : Inflige 1 point de dégât à tous les ninjas du champs de bataille (Héros y compris)"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Mugino",
+      "Rank": "",
+      "Team": "Jônin de Konoha",
+      "Chakra": "Terre",
+      "Element": "",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "3",
+      "Citation": "Doton : Iwayado Kuzushi",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Eboulement : le héros adverse ne pourra mettre aucun allié en jeu"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Katasuke Tono",
+      "Rank": "",
+      "Team": "Scientifique",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "4",
+      "Attack": "0",
+      "Defense": "4",
+      "Citation": "Ninja Gun",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Invention géniale : Les ninjas alliés peuvent choisir leur affinité quand ils attaquent ou défendent"
         }
       ],
       "Warning": false
