@@ -20323,7 +20323,7 @@
       "Name": "Deepa",
       "Rank": "",
       "Team": "Kara",
-      "Chakra": "Eau",
+      "Chakra": "Spécial",
       "Element": "",
       "Cost": "",
       "Attack": "",
@@ -20358,11 +20358,49 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Azaka",
+      "Name": "Asaka",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "",
+      "Team": "Nukenin",
+      "Chakra": "Vent",
+      "Element": "Poison",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Boruto>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Yoruga",
+      "Rank": "",
+      "Team": "Nukenin",
+      "Chakra": "Vent",
+      "Element": "Poison",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -20398,9 +20436,9 @@
       "Kind": "Ninja",
       "Name": "Hiruga",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "",
+      "Team": "Nukenin",
+      "Chakra": "Vent",
+      "Element": "Poison",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -20436,9 +20474,9 @@
       "Kind": "Ninja",
       "Name": "Yûga",
       "Rank": "",
-      "Team": "",
-      "Chakra": "Eau",
-      "Element": "",
+      "Team": "Nukenin",
+      "Chakra": "Vent",
+      "Element": "Poison",
       "Cost": "",
       "Attack": "",
       "Defense": "",
@@ -20501,6 +20539,120 @@
         },
         {
           "Description": "<<Permanent>> Paume Mystique : Soigne 1D6 points de vie à un allié ou héros au choix (Utilisable 1 fois par tour)"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Kakui",
+      "Rank": "",
+      "Team": "Equipe Omoï",
+      "Chakra": "Foudre",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Boruto>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Marui",
+      "Rank": "",
+      "Team": "Equipe Omoï",
+      "Chakra": "Foudre",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Boruto>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Omoï (Adulte)",
+      "Rank": "",
+      "Team": "Equipe Omoï",
+      "Chakra": "Foudre",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Boruto>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
         }
       ],
       "Warning": true
