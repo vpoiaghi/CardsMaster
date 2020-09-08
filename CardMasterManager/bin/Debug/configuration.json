@@ -1,0 +1,29 @@
+{
+  "fields": {
+    "Warning": 0,
+    "Nom": 0,
+    "Genre": 0,
+    "Equipe": 0,
+    "Rareté/Grade": 0,
+    "Nature chakra": 0,
+    "Element": 0,
+    "Cout": 0,
+    "Atk": 0,
+    "Def.": 0,
+    "Pouvoirs": 0,
+    "Citation": 0,
+    "Nb": 0,
+    "Commentaires": 0,
+    "Image Arrière": 0,
+    "Back Skin Name": 0,
+    "Front Skin Name": 0,
+    "String Field 1": 0,
+    "String Field 2": 1,
+    "String Field 3": 1,
+    "String Field 4": 1,
+    "Int Field 1": 1,
+    "Int Field 2": 1,
+    "Int Field 3": 1,
+    "Int Field 4": 1
+  }
+}
