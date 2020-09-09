@@ -4966,7 +4966,7 @@
       "Rank": "Épique",
       "Team": "7 Épéistes",
       "Chakra": "Eau",
-      "Element": "Épéiste",
+      "Element": "Kenjutsu",
       "Cost": "8",
       "Attack": "5",
       "Defense": "4",
@@ -5036,7 +5036,7 @@
       "Rank": "Épique",
       "Team": "7 Épéistes",
       "Chakra": "Vent",
-      "Element": "Épéiste",
+      "Element": "Kenjutsu",
       "Cost": "6",
       "Attack": "2",
       "Defense": "6",
@@ -5071,7 +5071,7 @@
       "Rank": "Épique",
       "Team": "7 Épéistes",
       "Chakra": "Terre",
-      "Element": "Épéiste",
+      "Element": "Kenjutsu",
       "Cost": "2",
       "Attack": "1",
       "Defense": "2",
@@ -5106,7 +5106,7 @@
       "Rank": "Épique",
       "Team": "7 Épéistes",
       "Chakra": "Eau",
-      "Element": "Épéiste",
+      "Element": "Kenjutsu",
       "Cost": "2",
       "Attack": "2",
       "Defense": "2",
@@ -5141,7 +5141,7 @@
       "Rank": "Épique",
       "Team": "7 Épéistes",
       "Chakra": "Foudre",
-      "Element": "Épéiste",
+      "Element": "Kenjutsu",
       "Cost": "4",
       "Attack": "2",
       "Defense": "3",
@@ -5176,7 +5176,7 @@
       "Rank": "Épique",
       "Team": "7 Épéistes",
       "Chakra": "Terre",
-      "Element": "Épéiste",
+      "Element": "Kenjutsu",
       "Cost": "7",
       "Attack": "3",
       "Defense": "5",
@@ -5211,7 +5211,7 @@
       "Rank": "Épique",
       "Team": "7 Épéistes",
       "Chakra": "Feu",
-      "Element": "Épéiste",
+      "Element": "Kenjutsu",
       "Cost": "7",
       "Attack": "4",
       "Defense": "5",
@@ -7412,7 +7412,7 @@
       "Rank": "",
       "Team": "Équipe Shinki",
       "Chakra": "Terre",
-      "Element": "Épéiste",
+      "Element": "Kenjutsu",
       "Cost": "1",
       "Attack": "3",
       "Defense": "1",
@@ -7796,7 +7796,7 @@
       "Rank": "",
       "Team": "7 Épéistes",
       "Chakra": "Eau",
-      "Element": "Épéiste",
+      "Element": "Kenjutsu",
       "Cost": "6",
       "Attack": "3",
       "Defense": "4",
@@ -10216,7 +10216,7 @@
       "Rank": "",
       "Team": "Épéiste",
       "Chakra": "Physique",
-      "Element": "Épéiste",
+      "Element": "Kenjutsu",
       "Cost": "2",
       "Attack": "1",
       "Defense": "2",
@@ -10472,7 +10472,7 @@
       "Rank": "",
       "Team": "Épéiste",
       "Chakra": "Physique",
-      "Element": "Épéiste",
+      "Element": "Kenjutsu",
       "Cost": "2",
       "Attack": "2",
       "Defense": "3",
@@ -11624,7 +11624,7 @@
       "Rank": "",
       "Team": "Anbu",
       "Chakra": "Physique",
-      "Element": "Épéiste",
+      "Element": "Kenjutsu",
       "Cost": "4",
       "Attack": "2",
       "Defense": "4",
@@ -11784,7 +11784,7 @@
       "Rank": "",
       "Team": "Épéiste",
       "Chakra": "Physique",
-      "Element": "Épéiste",
+      "Element": "Kenjutsu",
       "Cost": "5",
       "Attack": "2",
       "Defense": "4",
@@ -13214,7 +13214,7 @@
       "Rank": "",
       "Team": "Alliance Shinobi",
       "Chakra": "Feu",
-      "Element": "Épéiste",
+      "Element": "Kenjutsu",
       "Cost": "3",
       "Attack": "2",
       "Defense": "2",
@@ -13703,7 +13703,7 @@
       "Rank": "",
       "Team": "Déserteur",
       "Chakra": "Physique",
-      "Element": "Épéiste",
+      "Element": "Kenjutsu",
       "Cost": "2",
       "Attack": "1",
       "Defense": "1",
@@ -14023,7 +14023,7 @@
       "Rank": "Épique",
       "Team": "Kage",
       "Chakra": "Physique",
-      "Element": "Épéiste",
+      "Element": "Kenjutsu",
       "Cost": "4",
       "Attack": "5",
       "Defense": "5",
@@ -15813,7 +15813,7 @@
       "Rank": "",
       "Team": "Samouraï",
       "Chakra": "Physique",
-      "Element": "Épéiste",
+      "Element": "Kenjutsu",
       "Cost": "4",
       "Attack": "3",
       "Defense": "2",
@@ -16005,7 +16005,7 @@
       "Rank": "",
       "Team": "Akatsuki",
       "Chakra": "Physique",
-      "Element": "Épéiste",
+      "Element": "Kenjutsu",
       "Cost": "4",
       "Attack": "3",
       "Defense": "4",
@@ -16133,7 +16133,7 @@
       "Rank": "",
       "Team": "La Racine",
       "Chakra": "Physique",
-      "Element": "Épéiste",
+      "Element": "Kenjutsu",
       "Cost": "4",
       "Attack": "3",
       "Defense": "2",
@@ -16165,7 +16165,7 @@
       "Rank": "",
       "Team": "Jônin de Konoha",
       "Chakra": "Physique",
-      "Element": "Épéiste",
+      "Element": "Kenjutsu",
       "Cost": "3",
       "Attack": "2",
       "Defense": "2",
@@ -18542,7 +18542,7 @@
       "Rank": "",
       "Team": "Clan Fuma",
       "Chakra": "Physique",
-      "Element": "Épéiste",
+      "Element": "Kenjutsu",
       "Cost": "4",
       "Attack": "3",
       "Defense": "2",
@@ -19575,7 +19575,7 @@
       "Rank": "",
       "Team": "Équipe 15",
       "Chakra": "Physique",
-      "Element": "Épéiste",
+      "Element": "Kenjutsu",
       "Cost": "5",
       "Attack": "2",
       "Defense": "5",
@@ -20549,10 +20549,10 @@
       "Rank": "",
       "Team": "Equipe Omoï",
       "Chakra": "Foudre",
-      "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Element": "Kenjutsu",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -20570,13 +20570,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
         }
       ],
       "Warning": true
@@ -20587,10 +20581,10 @@
       "Rank": "",
       "Team": "Equipe Omoï",
       "Chakra": "Foudre",
-      "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Element": "Kenjutsu",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -20608,13 +20602,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
         }
       ],
       "Warning": true
@@ -20625,10 +20613,10 @@
       "Rank": "",
       "Team": "Equipe Omoï",
       "Chakra": "Foudre",
-      "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Element": "Kenjutsu",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -20646,13 +20634,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
         }
       ],
       "Warning": true
