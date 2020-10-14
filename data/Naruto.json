@@ -20553,7 +20553,7 @@
       "Cost": "3",
       "Attack": "2",
       "Defense": "3",
-      "Citation": "",
+      "Citation": "Raiton : Kage Bunshin no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -20573,7 +20573,7 @@
           "Description": "<<Permanent>>  Ignore la protection et l'armure d'un adversaire"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -20585,7 +20585,7 @@
       "Cost": "3",
       "Attack": "2",
       "Defense": "3",
-      "Citation": "",
+      "Citation": "Raiton : Kage Bunshin no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -20605,7 +20605,7 @@
           "Description": "<<Permanent>>  Ignore la protection et l'armure d'un adversaire"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -20617,7 +20617,7 @@
       "Cost": "3",
       "Attack": "2",
       "Defense": "3",
-      "Citation": "",
+      "Citation": "Raiton : Kage Bunshin no Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -20637,7 +20637,7 @@
           "Description": "<<Permanent>>  Ignore la protection et l'armure d'un adversaire"
         }
       ],
-      "Warning": true
+      "Warning": false
     }
   ],
   "SkinFile": "Naruto.original.skin"
