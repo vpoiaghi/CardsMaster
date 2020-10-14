@@ -20323,7 +20323,7 @@
       "Name": "Deepa",
       "Rank": "",
       "Team": "Kara",
-      "Chakra": "Spécial",
+      "Chakra": "Terre",
       "Element": "",
       "Cost": "",
       "Attack": "",
@@ -20345,7 +20345,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "Power 1 insensible aux attaque de corps à corps"
         },
         {
           "Description": "Power 2"
@@ -20361,12 +20361,12 @@
       "Name": "Asaka",
       "Rank": "",
       "Team": "Nukenin",
-      "Chakra": "Vent",
-      "Element": "Poison",
+      "Chakra": "Eau",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
-      "Citation": "",
+      "Citation": "Kinjutsu: Higanbana",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -20383,7 +20383,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "Power 1 fleur explosive rose sacrifice"
         },
         {
           "Description": "Power 2"
@@ -20404,7 +20404,7 @@
       "Cost": "",
       "Attack": "",
       "Defense": "",
-      "Citation": "",
+      "Citation": "Kinjutsu: Kakuriyo Kaimon",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -20421,7 +20421,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "Power 1 desactivation de pouvoirs sacrifice"
         },
         {
           "Description": "Power 2"
@@ -20437,12 +20437,12 @@
       "Name": "Hiruga",
       "Rank": "",
       "Team": "Nukenin",
-      "Chakra": "Vent",
-      "Element": "Poison",
+      "Chakra": "Terre",
+      "Element": "",
       "Cost": "",
       "Attack": "",
       "Defense": "",
-      "Citation": "",
+      "Citation": "Kinjutsu: Jigoku Messatsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -20459,7 +20459,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "Power 1 absorbsion dans marécage sacrifice"
         },
         {
           "Description": "Power 2"
@@ -20480,7 +20480,7 @@
       "Cost": "",
       "Attack": "",
       "Defense": "",
-      "Citation": "",
+      "Citation": "Kinjutsu: Kagerō Ichigo",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -20497,7 +20497,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "<<Permanent>> Forme éphémère : retire 1 point de chakra si la cible est un héros"
         },
         {
           "Description": "Power 2"
@@ -20570,7 +20570,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
+          "Description": "<<Permanent>>  Ignore la protection et l'armure d'un adversaire"
         }
       ],
       "Warning": true
@@ -20602,7 +20602,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
+          "Description": "<<Permanent>>  Ignore la protection et l'armure d'un adversaire"
         }
       ],
       "Warning": true
@@ -20634,7 +20634,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>  Ignore la protection et l'armure d'un ennemi"
+          "Description": "<<Permanent>>  Ignore la protection et l'armure d'un adversaire"
         }
       ],
       "Warning": true
