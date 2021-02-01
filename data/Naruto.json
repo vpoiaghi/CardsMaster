@@ -7664,38 +7664,6 @@
     },
     {
       "Kind": "Ninja",
-      "Name": "Kawaki",
-      "Rank": "",
-      "Team": "New Age",
-      "Chakra": "Physique",
-      "Element": "",
-      "Cost": "2",
-      "Attack": "1",
-      "Defense": "2",
-      "Citation": "",
-      "Comments": "",
-      "Nb": 1,
-      "BackSide": "Back-Draw",
-      "BackSkinName": "BackSkin1",
-      "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Boruto>>Boruto",
-      "StringField2": "",
-      "StringField3": "",
-      "StringField4": "",
-      "IntField1": null,
-      "IntField2": null,
-      "IntField3": null,
-      "IntField4": null,
-      "Background": null,
-      "Powers": [
-        {
-          "Description": "<<Spécial>> Revient dans la main du joueur quand il meurt, sauf s'il est envoyé directement au cimetière"
-        }
-      ],
-      "Warning": false
-    },
-    {
-      "Kind": "Ninja",
       "Name": "Tento Madoka",
       "Rank": "",
       "Team": "New Age",
@@ -20290,12 +20258,12 @@
       "Kind": "Ninja",
       "Name": "Asaka",
       "Rank": "",
-      "Team": "Nukenin",
+      "Team": "Pays du silence",
       "Chakra": "Eau",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "Kinjutsu: Higanbana",
       "Comments": "",
       "Nb": 1,
@@ -20313,27 +20281,24 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 fleur explosive rose sacrifice"
+          "Description": "<<activate>> Lycoris rouge : Fait éclore une fleur explosive qui inflige 1 point de dégât à tous les adversaires"
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<spécial>> Se sacrifie une fois son sort lancé"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Yoruga",
       "Rank": "",
-      "Team": "Nukenin",
+      "Team": "Pays du silence",
       "Chakra": "Vent",
       "Element": "Poison",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "Kinjutsu: Kakuriyo Kaimon",
       "Comments": "",
       "Nb": 1,
@@ -20351,27 +20316,24 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 desactivation de pouvoirs sacrifice"
+          "Description": "<<activate>>Porte Inter-Mondes : Annule définitivement les pouvoirs de 2 adversaires au choix"
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<spécial>> Se sacrifie une fois son sort lancé"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Hiruga",
       "Rank": "",
-      "Team": "Nukenin",
+      "Team": "Pays du silence",
       "Chakra": "Terre",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "Kinjutsu: Jigoku Messatsu",
       "Comments": "",
       "Nb": 1,
@@ -20389,27 +20351,24 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1 absorbsion dans marécage sacrifice"
+          "Description": "<<activate>> Annihilation Infernale : Le ninja ciblé est envoyé au cimetière"
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<spécial>> Se sacrifie une fois son sort lancé"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Yûga",
       "Rank": "",
-      "Team": "Nukenin",
+      "Team": "Pays du silence",
       "Chakra": "Vent",
       "Element": "Poison",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "3",
+      "Attack": "2",
+      "Defense": "2",
       "Citation": "Kinjutsu: Kagerō Ichigo",
       "Comments": "",
       "Nb": 1,
@@ -20427,16 +20386,13 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Forme éphémère : retire 1 point de chakra si la cible est un héros"
+          "Description": "<<activate>> Forme éphémère : Retire 1 point de chakra définitivement à l'adversaire"
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<spécial>> Se sacrifie une fois son sort lancé"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -20447,7 +20403,7 @@
       "Element": "",
       "Cost": "4",
       "Attack": "1",
-      "Defense": "4",
+      "Defense": "3",
       "Citation": "Shōsen Jutsu",
       "Comments": "",
       "Nb": 1,
@@ -20471,7 +20427,7 @@
           "Description": "<<Permanent>> Paume Mystique : Soigne 1D6 points de vie à un allié ou héros au choix (Utilisable 1 fois par tour)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -20573,9 +20529,9 @@
       "Kind": "Ninja",
       "Name": "Garashi Tono",
       "Rank": "",
-      "Team": "Partisant de Kara",
-      "Chakra": "Eau",
-      "Element": "",
+      "Team": "Externe Kara",
+      "Chakra": "Vent",
+      "Element": "Poison",
       "Cost": "4",
       "Attack": "1",
       "Defense": "1",
@@ -20605,7 +20561,7 @@
       "Kind": "Ninja",
       "Name": "Garō",
       "Rank": "",
-      "Team": "Partisant de Kara",
+      "Team": "Externe Kara",
       "Chakra": "Eau",
       "Element": "",
       "Cost": "",
@@ -20643,7 +20599,7 @@
       "Kind": "Ninja",
       "Name": "Secrétaire de Victor",
       "Rank": "",
-      "Team": "Partisant de Kara",
+      "Team": "Externe Kara",
       "Chakra": "Eau",
       "Element": "",
       "Cost": "",
@@ -20719,7 +20675,7 @@
       "Kind": "Ninja",
       "Name": "Koji Kashin (II)",
       "Rank": "",
-      "Team": "Kara",
+      "Team": "Interne Kara",
       "Chakra": "Eau",
       "Element": "",
       "Cost": "",
@@ -20757,13 +20713,13 @@
       "Kind": "Ninja",
       "Name": "Boro (III)",
       "Rank": "",
-      "Team": "kara",
-      "Chakra": "Eau",
-      "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Team": "Interne kara",
+      "Chakra": "Feu",
+      "Element": "Lave",
+      "Cost": "7",
+      "Attack": "4",
+      "Defense": "4",
+      "Citation": "Yôton : Rakuseiha",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -20780,22 +20736,19 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "<<activate>> Destruction de Planète : Engloutit tous les adversaires dans la lave et les envoie au cimetiere"
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<spécial>> Nécessite 5 points de chakras qui seront consommés à l'utilisation"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Jigen (IV)",
       "Rank": "",
-      "Team": "Kara",
+      "Team": "Interne Kara",
       "Chakra": "Eau",
       "Element": "",
       "Cost": "",
@@ -20833,8 +20786,8 @@
       "Kind": "Ninja",
       "Name": "Victor (V)",
       "Rank": "",
-      "Team": "Kara",
-      "Chakra": "Eau",
+      "Team": "Interne Kara",
+      "Chakra": "Terre",
       "Element": "",
       "Cost": "",
       "Attack": "",
@@ -20871,7 +20824,7 @@
       "Kind": "Ninja",
       "Name": "Code (VI)",
       "Rank": "",
-      "Team": "Kara",
+      "Team": "Interne Kara",
       "Chakra": "Eau",
       "Element": "",
       "Cost": "",
@@ -20909,7 +20862,7 @@
       "Kind": "Ninja",
       "Name": "Deepa (VII)",
       "Rank": "",
-      "Team": "Kara",
+      "Team": "Interne Kara",
       "Chakra": "Terre",
       "Element": "",
       "Cost": "5",
@@ -20939,9 +20892,41 @@
     },
     {
       "Kind": "Ninja",
+      "Name": "Kawaki (IX)",
+      "Rank": "",
+      "Team": "Interne Kara",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "2",
+      "Attack": "1",
+      "Defense": "2",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Boruto>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Spécial>> Revient dans la main du joueur quand il meurt, sauf s'il est envoyé directement au cimetière"
+        }
+      ],
+      "Warning": false
+    },
+    {
+      "Kind": "Ninja",
       "Name": "Ao (Kara)",
       "Rank": "",
-      "Team": "Kara",
+      "Team": "Externe Kara",
       "Chakra": "Eau",
       "Element": "",
       "Cost": "",
@@ -20979,7 +20964,7 @@
       "Kind": "Ninja",
       "Name": "Isshiki Ōtsutsuki",
       "Rank": "",
-      "Team": "Kara",
+      "Team": "Interne Kara",
       "Chakra": "Eau",
       "Element": "",
       "Cost": "",
@@ -21017,7 +21002,7 @@
       "Kind": "Ninja",
       "Name": "Amado",
       "Rank": "",
-      "Team": "Kara",
+      "Team": "Interne Kara",
       "Chakra": "Eau",
       "Element": "",
       "Cost": "",
@@ -21041,6 +21026,82 @@
       "Powers": [
         {
           "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Chamaru",
+      "Rank": "",
+      "Team": "Invocation",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Select3",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Boruto>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "Power 1"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
+        }
+      ],
+      "Warning": true
+    },
+    {
+      "Kind": "Ninja",
+      "Name": "Akita Inuzuka",
+      "Rank": "",
+      "Team": "Maître chien",
+      "Chakra": "Physique",
+      "Element": "",
+      "Cost": "",
+      "Attack": "",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Boruto>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Instantané>> Invoque Chamaru"
         },
         {
           "Description": "Power 2"
