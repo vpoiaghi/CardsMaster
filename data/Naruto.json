@@ -20602,10 +20602,10 @@
       "Team": "Externe Kara",
       "Chakra": "Eau",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "2",
+      "Citation": "Shôsen Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -20622,16 +20622,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Soigne le ninja ciblé de 2 points de vie"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -20868,7 +20862,7 @@
       "Cost": "5",
       "Attack": "3",
       "Defense": "4",
-      "Citation": "",
+      "Citation": "Carbon Jutsu",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -20888,7 +20882,7 @@
           "Description": "<<permanent>> Manipulation du carbone : Insensible aux attaque de corps à corps"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -20927,11 +20921,11 @@
       "Name": "Ao (Kara)",
       "Rank": "",
       "Team": "Externe Kara",
-      "Chakra": "Eau",
-      "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Spécial",
+      "Element": "Outils ninja",
+      "Cost": "4",
+      "Attack": "1",
+      "Defense": "4",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -20949,16 +20943,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>>Inflige 1 point de dégât à chaque adversaire (utilisable 1 fois par tour)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
