@@ -1541,7 +1541,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>>Ultrason : Un flot de chauve-souris empêche les 2 camps de lancer des ninjutsu tant qu'il est en vie"
+          "Description": "<<Permanent>><<Instantané>>Ultrason : Un flot de chauve-souris empêche les 2 camps de lancer des ninjutsu tant que celui-ci est en vie"
         }
       ],
       "Warning": false
@@ -1605,7 +1605,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>>Nuage de fumée : Empêche les 2 camps de lancer des ninjutsu tant qu'il est en vie"
+          "Description": "<<Permanent>><<Instantané>>Nuage de fumée : Empêche les 2 camps de lancer tout ninjutsu tant que celui-ci est en vie"
         }
       ],
       "Warning": false
@@ -1637,7 +1637,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>><<Instantané>>Nuage de fumée : Empêche les 2 camps de lancer des ninjutsu tant qu'il est en vie"
+          "Description": "<<Permanent>><<Instantané>>Nuage de fumée : Empêche les 2 camps de lancer tout ninjutsu tant que celui-ci est en vie"
         }
       ],
       "Warning": false
@@ -4239,7 +4239,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Instantané>>   Rempart de terre : les alliés gagnent 2 points de vie supplémentaires tant qu'il est en vie"
+          "Description": "<<Instantané>>  Rempart de terre : les autres alliés gagnent 2 points de vie supplémentaires tant qu'il est en vie"
         }
       ],
       "Warning": false
@@ -18499,7 +18499,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> Tout adversaire touché par Kotohime prend un jeton poison, et perds 1 point de vie à chacun des tours de la cible"
+          "Description": "<<Permanent>> Tout adversaire touché par Kotohime perd 1 point de vie au debut de chacun des tours de la cible"
         }
       ],
       "Warning": false
@@ -19017,7 +19017,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>> A chaque début de son tour, fait s'affronter 2 personnages"
+          "Description": "<<Permanent>> A chaque début de son tour, fait s'affronter 2 ninjas au choix"
         }
       ],
       "Warning": false
@@ -19916,13 +19916,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "- Insensible aux attaques de Feu "
+          "Description": "<<Permanent>> Insensible aux attaques de Feu "
         },
         {
-          "Description": "- Fort contre le Vent "
-        },
-        {
-          "Description": "- Faible contre les attaques d'Eau"
+          "Description": "<<spécial>> Fort contre le Vent (Le héros inflige +1 point de dégat lorsqu'il attaque avec une arme)"
         }
       ],
       "Warning": false
@@ -19954,13 +19951,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "- Insensible aux attaques de Vent"
+          "Description": "<<Permanent>> Insensible aux attaques de Vent"
         },
         {
-          "Description": "- Fort contre la Foudre "
-        },
-        {
-          "Description": "- Faible contre les attaques de Feu"
+          "Description": "<<spécial>> Fort contre la Foudre (Le héros inflige +1 point de dégat lorsqu'il attaque avec une arme)"
         }
       ],
       "Warning": false
@@ -19992,13 +19986,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "- Insensible aux attaques de Foudre"
+          "Description": "<<Permanent>> Insensible aux attaques de Foudre"
         },
         {
-          "Description": "- Fort contre le Spécial"
-        },
-        {
-          "Description": "- Faible contre les attaques de Vent"
+          "Description": "<<spécial>> Fort contre le Spécial (Le héros inflige +1 point de dégat lorsqu'il attaque avec une arme)"
         }
       ],
       "Warning": false
@@ -20030,13 +20021,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "- Insensible aux attaques Spéciales"
+          "Description": "<<Permanent>> Insensible aux attaques Spéciales"
         },
         {
-          "Description": "- Fort contre le Physique"
-        },
-        {
-          "Description": "- Faible contre les attaques de Foudre"
+          "Description": "<<spécial>> Fort contre le Physique (Le héros inflige +1 point de dégat lorsqu'il attaque avec une arme)"
         }
       ],
       "Warning": false
@@ -20068,13 +20056,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "- Insensible aux attaques Physiques"
+          "Description": "<<Permanent>> Insensible aux attaques Physiques"
         },
         {
-          "Description": "- Fort contre la Terre "
-        },
-        {
-          "Description": "- Faible contre les attaques Spéciales"
+          "Description": "<<spécial>> Fort contre la Terre (Le héros inflige +1 point de dégat lorsqu'il attaque avec une arme)"
         }
       ],
       "Warning": false
@@ -20106,13 +20091,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "- Insensible aux attaques de Terre "
+          "Description": "<<Permanent>> Insensible aux attaques de Terre "
         },
         {
-          "Description": "- Fort contre l'Eau"
-        },
-        {
-          "Description": "- Faible contre les attaques Physiques"
+          "Description": "<<spécial>> Fort contre l'Eau (Le héros inflige +1 point de dégat lorsqu'il attaque avec une arme)"
         }
       ],
       "Warning": false
@@ -20144,13 +20126,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "- Insensible aux attaques d'Eau"
+          "Description": "<<Permanent>> Insensible aux attaques d'Eau"
         },
         {
-          "Description": "- Fort contre le Feu"
-        },
-        {
-          "Description": "- Faible contre les attaques de Terre"
+          "Description": "<<spécial>> Fort contre le Feu (Le héros inflige +1 point de dégat lorsqu'il attaque avec une arme)"
         }
       ],
       "Warning": false
@@ -20238,7 +20217,7 @@
       "BackSide": "Back-Draw",
       "BackSkinName": "BackSkin1",
       "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Shippuden>>Naruto Shippuden",
+      "StringField1": "<<Boruto>>Boruto",
       "StringField2": "",
       "StringField3": "",
       "StringField4": "",
