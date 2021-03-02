@@ -20541,11 +20541,11 @@
       "Name": "Garō",
       "Rank": "",
       "Team": "Externe Kara",
-      "Chakra": "Eau",
+      "Chakra": "Feu",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "2",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -20563,16 +20563,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Activate>> Rayon laser : Inflige 2 point de dégâts à un adversaire sans contre-attaque possible"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -20762,10 +20756,10 @@
       "Team": "Interne Kara",
       "Chakra": "Terre",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "3",
+      "Attack": "1",
+      "Defense": "4",
+      "Citation": "Doton : Retsudo Tenshô",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -20782,16 +20776,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Régenération : Une fois un combat terminé, s'il n'est pas mort, se soigne de 3 points de vie"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
