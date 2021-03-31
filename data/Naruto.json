@@ -20881,7 +20881,7 @@
           "Description": "<<Spécial>> Revient dans la main du joueur quand il meurt, sauf s'il est envoyé directement au cimetière"
         }
       ],
-      "Warning": false
+      "Warning": true
     },
     {
       "Kind": "Ninja",
@@ -20992,6 +20992,38 @@
       "Warning": true
     },
     {
+      "Kind": "Equipement",
+      "Name": "Epée de chakra",
+      "Rank": "",
+      "Team": "Arme",
+      "Chakra": "Equipement",
+      "Element": "Main D",
+      "Cost": "4",
+      "Attack": "2",
+      "Defense": "",
+      "Citation": "",
+      "Comments": "",
+      "Nb": 1,
+      "BackSide": "Back-Draw",
+      "BackSkinName": "BackSkin1",
+      "FrontSkinName": "FrontSkin1",
+      "StringField1": "<<Boruto>>Boruto",
+      "StringField2": "",
+      "StringField3": "",
+      "StringField4": "",
+      "IntField1": null,
+      "IntField2": null,
+      "IntField3": null,
+      "IntField4": null,
+      "Background": null,
+      "Powers": [
+        {
+          "Description": "<<Permanent>> Draine l'intégralité des points de chakra quand utilisée"
+        }
+      ],
+      "Warning": true
+    },
+    {
       "Kind": "Ninja",
       "Name": "Chamaru",
       "Rank": "",
@@ -21025,38 +21057,6 @@
         },
         {
           "Description": "Power 3"
-        }
-      ],
-      "Warning": true
-    },
-    {
-      "Kind": "Equipement",
-      "Name": "Epée de chakra",
-      "Rank": "",
-      "Team": "Arme",
-      "Chakra": "Equipement",
-      "Element": "Main D",
-      "Cost": "4",
-      "Attack": "2",
-      "Defense": "",
-      "Citation": "",
-      "Comments": "",
-      "Nb": 1,
-      "BackSide": "Back-Draw",
-      "BackSkinName": "BackSkin1",
-      "FrontSkinName": "FrontSkin1",
-      "StringField1": "<<Boruto>>Boruto",
-      "StringField2": "",
-      "StringField3": "",
-      "StringField4": "",
-      "IntField1": null,
-      "IntField2": null,
-      "IntField3": null,
-      "IntField4": null,
-      "Background": null,
-      "Powers": [
-        {
-          "Description": "<<Permanent>> Draine l'intégralité des points de chakra quand utilisée"
         }
       ],
       "Warning": true
