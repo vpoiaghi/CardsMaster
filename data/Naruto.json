@@ -20604,12 +20604,12 @@
       "Kind": "Ninja",
       "Name": "Delta (I)",
       "Rank": "",
-      "Team": "Kara",
-      "Chakra": "Eau",
-      "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Team": "Interne Kara",
+      "Chakra": "Spécial",
+      "Element": "Outils ninja",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "4",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -20627,28 +20627,22 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Instantané>> Rayon de lumière : Inflige 3 points de dégâts à 2 cibles conjointes"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
       "Name": "Koji Kashin (II)",
       "Rank": "",
       "Team": "Interne Kara",
-      "Chakra": "Eau",
-      "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Chakra": "Feu",
+      "Element": "Outils ninja",
+      "Cost": "5",
+      "Attack": "2",
+      "Defense": "4",
+      "Citation": "Zanmai no Shinka",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -20665,16 +20659,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<Permanent>> Feu de Samadhi : La cible désignée perd 1 point de vie par tour. Ne peut être annulé que par une annulation du sort (La mort du lanceur n'arrête pas le sort)"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -20682,11 +20670,11 @@
       "Rank": "",
       "Team": "Interne kara",
       "Chakra": "Feu",
-      "Element": "Lave",
+      "Element": "Outils ninja",
       "Cost": "7",
       "Attack": "4",
       "Defense": "4",
-      "Citation": "Yôton : Rakuseiha",
+      "Citation": "Kuroi Moya",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -20703,10 +20691,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<activate>> Destruction de Planète : Engloutit tous les adversaires dans la lave et les envoie au cimetiere"
-        },
-        {
-          "Description": "<<spécial>> Nécessite 5 points de chakras qui seront consommés à l'utilisation"
+          "Description": "<<Permanent>> Nuage noir :  La cible désignée perd 1 point de vie par tour. Ne peut être annulé que par une annulation du sort (La mort du lanceur n'arrête pas le sort)"
         }
       ],
       "Warning": false
@@ -20716,12 +20701,12 @@
       "Name": "Jigen (IV)",
       "Rank": "",
       "Team": "Interne Kara",
-      "Chakra": "Eau",
-      "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Chakra": "Physique",
+      "Element": "Outils ninja",
+      "Cost": "6",
+      "Attack": "3",
+      "Defense": "3",
+      "Citation": "Kâma",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -20738,16 +20723,13 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "<<permanent>> Kâma : Quand il attaque, ses dégat sont infligés avant que la contre-attaque ait lieu "
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<spécial>>La cible peut donc mourrir sans pouvoir infliger de contre attaque, ne s'applique pas s'il défend d'une attaque sans contre-attaque possible ou d'un ninjutsu"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -20755,7 +20737,7 @@
       "Rank": "",
       "Team": "Interne Kara",
       "Chakra": "Terre",
-      "Element": "",
+      "Element": "Outils ninja",
       "Cost": "3",
       "Attack": "1",
       "Defense": "4",
@@ -20786,12 +20768,12 @@
       "Name": "Code (VI)",
       "Rank": "",
       "Team": "Interne Kara",
-      "Chakra": "Eau",
-      "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Chakra": "Physique",
+      "Element": "Outils ninja",
+      "Cost": "4",
+      "Attack": "3",
+      "Defense": "3",
+      "Citation": "Kâma",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -20808,16 +20790,13 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
+          "Description": "<<permanent>> Kâma : Quand il attaque, ses dégat sont infligés avant que la contre-attaque ait lieu "
         },
         {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<spécial>>La cible peut donc mourrir sans pouvoir infliger de contre attaque, ne s'applique pas s'il défend d'une attaque sans contre-attaque possible ou d'un ninjutsu"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -20825,7 +20804,7 @@
       "Rank": "",
       "Team": "Interne Kara",
       "Chakra": "Terre",
-      "Element": "",
+      "Element": "Outils ninja",
       "Cost": "5",
       "Attack": "3",
       "Defense": "4",
@@ -20847,6 +20826,12 @@
       "Powers": [
         {
           "Description": "<<permanent>> Manipulation du carbone : Insensible aux attaque de corps à corps"
+        },
+        {
+          "Description": "Power 2"
+        },
+        {
+          "Description": "Power 3"
         }
       ],
       "Warning": false
@@ -20857,11 +20842,11 @@
       "Rank": "",
       "Team": "Interne Kara",
       "Chakra": "Physique",
-      "Element": "",
-      "Cost": "2",
-      "Attack": "1",
-      "Defense": "2",
-      "Citation": "",
+      "Element": "Outils ninja",
+      "Cost": "4",
+      "Attack": "3",
+      "Defense": "3",
+      "Citation": "Kâma",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -20878,7 +20863,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Spécial>> Revient dans la main du joueur quand il meurt, sauf s'il est envoyé directement au cimetière"
+          "Description": "<<permanent>> Kâma : Quand il attaque, ses dégat sont infligés avant que la contre-attaque ait lieu "
+        },
+        {
+          "Description": "<<spécial>>La cible peut donc mourrir sans pouvoir infliger de contre attaque, ne s'applique pas s'il défend d'une attaque sans contre-attaque possible ou d'un ninjutsu"
         }
       ],
       "Warning": true
@@ -20920,12 +20908,12 @@
       "Name": "Isshiki Ōtsutsuki",
       "Rank": "",
       "Team": "Interne Kara",
-      "Chakra": "Eau",
+      "Chakra": "Spécial",
       "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
-      "Citation": "",
+      "Cost": "7",
+      "Attack": "4",
+      "Defense": "5",
+      "Citation": "Kâma",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -20940,17 +20928,7 @@
       "IntField3": null,
       "IntField4": null,
       "Background": null,
-      "Powers": [
-        {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
-        }
-      ],
+      "Powers": [],
       "Warning": true
     },
     {
@@ -20958,11 +20936,11 @@
       "Name": "Amado",
       "Rank": "",
       "Team": "Interne Kara",
-      "Chakra": "Eau",
-      "Element": "",
-      "Cost": "",
-      "Attack": "",
-      "Defense": "",
+      "Chakra": "Spécial",
+      "Element": "Outils ninja",
+      "Cost": "4",
+      "Attack": "1",
+      "Defense": "3",
       "Citation": "",
       "Comments": "",
       "Nb": 1,
@@ -20980,16 +20958,10 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "Power 1"
-        },
-        {
-          "Description": "Power 2"
-        },
-        {
-          "Description": "Power 3"
+          "Description": "<<permanent>> Les alliés gagnent 1 point de vie et un point d'attaque tant qu'il est en vie"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Equipement",
