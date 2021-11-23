@@ -7088,12 +7088,12 @@
       "Name": "Hoki Taketori",
       "Rank": "",
       "Team": "Équipe 25",
-      "Chakra": "Physique",
+      "Chakra": "Terre",
       "Element": "",
       "Cost": "2",
       "Attack": "1",
       "Defense": "2",
-      "Citation": null,
+      "Citation": "Doton : Tôjinbô",
       "Comments": null,
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -7110,7 +7110,7 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<Permanent>>Charge"
+          "Description": "<<Instantané>> Lames de pierre : Inflige 1 point de dégât de pierre à 2 adversaires adjacents"
         }
       ],
       "Warning": false
