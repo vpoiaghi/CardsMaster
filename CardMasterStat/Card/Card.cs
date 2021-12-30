@@ -61,13 +61,15 @@ namespace CardMasterStat
 
         public static NatureCard ParseNature(String nature)
         {
-            NatureCard.TryParse(nature, out NatureCard toReturn);
+            NatureCard toReturn;
+            NatureCard.TryParse(nature, out toReturn);
             return toReturn;
         }
 
         public static CardKind ParseKind(String kind)
         {
-            CardKind.TryParse(kind, out CardKind toReturn);
+            CardKind toReturn;
+            CardKind.TryParse(kind, out toReturn);
             if (kind.Equals("Lieu légendaire"))
                 toReturn = CardKind.Lieu;
             return toReturn;

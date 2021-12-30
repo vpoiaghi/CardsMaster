@@ -98,7 +98,8 @@ namespace CardMasterManager
 
         private double GetInt(string cost)
         {
-            Double.TryParse(cost, out double mvalue);
+            double mvalue;
+            Double.TryParse(cost, out mvalue);
             return mvalue;
         }
 

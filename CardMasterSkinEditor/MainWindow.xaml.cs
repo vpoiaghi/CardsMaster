@@ -35,8 +35,6 @@ namespace CardMasterSkinEditor
         String currentSkinDirectoryFullName;
         public DrawingQuality DQuality { get; set; } = new DrawingQuality();
         DrawingImageToImageSourceConverter converter = new DrawingImageToImageSourceConverter();
-        int currentSkinItemIndex0 = -1;
-        int currentSkinItemIndex1 = -1;
         Dictionary<String, int> mapCurrentIndexes = new Dictionary<string, int>();
         
 
