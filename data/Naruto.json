@@ -20863,13 +20863,13 @@
       "Background": null,
       "Powers": [
         {
-          "Description": "<<permanent>> Kâma : Quand il attaque, ses dégat sont infligés avant que la contre-attaque ait lieu "
+          "Description": "<<permanent>> Kâma : Quand il attaque, ses dégats sont infligés avant que la contre-attaque ait lieu"
         },
         {
           "Description": "<<spécial>>La cible peut donc mourrir sans pouvoir infliger de contre attaque, ne s'applique pas s'il défend d'une attaque sans contre-attaque possible ou d'un ninjutsu"
         }
       ],
-      "Warning": true
+      "Warning": false
     },
     {
       "Kind": "Ninja",
@@ -20913,7 +20913,7 @@
       "Cost": "7",
       "Attack": "4",
       "Defense": "5",
-      "Citation": "Kâma",
+      "Citation": "Sukunahikona",
       "Comments": "",
       "Nb": 1,
       "BackSide": "Back-Draw",
@@ -20928,8 +20928,12 @@
       "IntField3": null,
       "IntField4": null,
       "Background": null,
-      "Powers": [],
-      "Warning": true
+      "Powers": [
+        {
+          "Description": "<<permanent>> Sukunahikona : En réduisant sa taille, il ne peut être attaqué au corps à corps"
+        }
+      ],
+      "Warning": false
     },
     {
       "Kind": "Ninja",
